@@ -1,0 +1,116 @@
+{
+    "sportsMetadata": {
+        "fixtureKey": "event-stats",
+        "fixtureName": "Event Score and Stats",
+        "language": "en-US",
+        "documentClass": "event-summary",
+        "sportsContentCodes": [
+            {
+                "codeName": "Opta",
+                "codeKey": "optasports.com",
+                "codeType": "publisher"
+            },
+            {
+                "codeName": "XML Team Solutions, Inc.",
+                "codeKey": "xmlteam.com",
+                "codeType": "distributor"
+            },
+            {
+                "codeName": "Soccer",
+                "codeKey": "15054000",
+                "codeType": "sport"
+            },
+            {
+                "codeKey": "99",
+                "codeType": "tournament"
+            },
+            {
+                "codeName": "Portuguese Primeira Liga",
+                "codeKey": "l.lpfp.pt",
+                "codeType": "league",
+                "codeSource": "xmlteam.com"
+            },
+            {
+                "codeKey": "2015",
+                "codeType": "season"
+            },
+            {
+                "codeKey": "1981",
+                "codeType": "team"
+            },
+            {
+                "codeKey": "196",
+                "codeType": "team"
+            }
+        ],
+        "dateTime": "2015-09-15T17:18:21+01:00",
+        "sportsProperties": [
+            {
+                "value": "soccer:2015:99:event-stats:816041",
+                "formalName": "compound-key"
+            }
+        ],
+        "docId": "xt.opta.20150915171821-816041-post-event"
+    },
+    "sportsEvent": {
+        "eventMetadata": {
+            "site": {
+                "siteStats": {
+                    "alignment": "home",
+                    "attendance": "3763"
+                },
+                "siteMetadata": {
+                    "siteKey": "s.2316",
+                    "homeLocation": {
+                        "country": "Portugal"
+                    },
+                    "name": {
+                        "first": "Est�dio do Bessa XXI",
+                        "full": "Est�dio do Bessa XXI",
+                        "abbreviation": "Est�dio do Bessa XXI"
+                    }
+                }
+            },
+            "eventStatusNote": "Result",
+            "dateCoverageType": "event",
+            "eventKey": "816041",
+            "eventOutcomeType": "regular",
+            "eventStatus": "post-event",
+            "eventName": "Boavista v Pa�os de Ferreira",
+            "eventMetadataSoccer": {
+                "timeAdjustment": {
+                    "periodExtraTimeElapsed": "5"
+                },
+                "week": "4",
+                "minutesElapsed": "90"
+            },
+            "startDateTime": "2015-09-14T20:00:00+01:00"
+        },
+        "teams": [
+            {
+                "teamMetadata": {
+                    "alignment": "home",
+                    "name": {
+                        "first": "Boavista",
+                        "full": "Boavista",
+                        "abbreviation": "Boavista",
+                        "nickname": "Boavista"
+                    },
+                    "teamKey": "196"
+                }
+            },
+            {
+                "teamMetadata": {
+                    "alignment": "away",
+                    "name": {
+                        "first": "Pa�os de Ferreira",
+                        "full": "Pa�os de Ferreira",
+                        "abbreviation": "Pa�os de Ferreira",
+                        "nickname": "Pa�os de Ferreira"
+                    },
+                    "teamKey": "1981"
+                }
+            }
+        ]
+    }
+}

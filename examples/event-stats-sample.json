@@ -1,0 +1,1832 @@
+{
+    "sportsMetadata": {
+        "fixtureKey": "event-stats",
+        "fixtureName": "Event Score and Stats",
+        "language": "en-US",
+        "documentClass": "event-summary",
+        "sportsContentCodes": [
+            {
+                "codeName": "Opta",
+                "codeKey": "optasports.com",
+                "codeType": "publisher"
+            },
+            {
+                "codeName": "XML Team Solutions, Inc.",
+                "codeKey": "xmlteam.com",
+                "codeType": "distributor"
+            },
+            {
+                "codeName": "Soccer",
+                "codeKey": "15054000",
+                "codeType": "sport"
+            },
+            {
+                "codeKey": "99",
+                "codeType": "tournament"
+            },
+            {
+                "codeName": "Portuguese Primeira Liga",
+                "codeKey": "l.lpfp.pt",
+                "codeType": "league",
+                "codeSource": "xmlteam.com"
+            },
+            {
+                "codeKey": "2015",
+                "codeType": "season"
+            },
+            {
+                "codeKey": "1981",
+                "codeType": "team"
+            },
+            {
+                "codeKey": "196",
+                "codeType": "team"
+            }
+        ],
+        "dateTime": "2015-09-15T17:18:21+01:00",
+        "sportsProperties": [
+            {
+                "value": "soccer:2015:99:event-stats:816041",
+                "formalName": "compound-key"
+            }
+        ],
+        "docId": "xt.opta.20150915171821-816041-post-event"
+    },
+    "sportsEvent": {
+        "officials": [
+            {
+                "officialMetadata": {
+                    "officialKey": "PO42112",
+                    "position": "main-official",
+                    "name": {
+                        "first": "Manuel",
+                        "full": "Manuel Mota",
+                        "abbreviation": "Mota",
+                        "last": "Mota"
+                    }
+                }
+            }
+        ],
+        "teams": [
+            {
+                "teamMetadata": {
+                    "alignment": "home",
+                    "name": {
+                        "first": "Boavista",
+                        "full": "Boavista",
+                        "abbreviation": "Boavista",
+                        "nickname": "Boavista"
+                    },
+                    "teamKey": "196"
+                },
+                "teamStats": {
+                    "timeOfPossessionPercentage": "47.1",
+                    "subScore": [
+                        {
+                            "periodValue": "1",
+                            "score": "0"
+                        },
+                        {
+                            "periodValue": "2",
+                            "score": "0"
+                        }
+                    ],
+                    "score": "0",
+                    "teamStatsSoccer": {
+                        "statsSoccerFoul": {
+                            "foulsCommited": "14"
+                        },
+                        "lineFormation": "4231",
+                        "statsSoccerOffensive": {
+                            "shotsOnGoalTotal": "5",
+                            "cornerKicks": "5",
+                            "shotsTotal": "13"
+                        }
+                    },
+                    "eventOutcome": "loss",
+                    "scoreOpposing": "1"
+                },
+                "id": "e.816041-t.196",
+                "associate": {
+                    "id": "man44429",
+                    "associateMetadata": {
+                        "positionSource": "optasports.com",
+                        "position": "Manager",
+                        "name": {
+                            "first": "Armando",
+                            "full": "Armando Teixeira",
+                            "abbreviation": "Teixeira",
+                            "last": "Teixeira"
+                        },
+                        "associateKey": "man44429"
+                    }
+                },
+                "players": [
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "90",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerDefensive": {
+                                    "savePercentage": "0.667",
+                                    "goalsAgainstTotal": "1",
+                                    "saves": "2"
+                                },
+                                "touches": "39",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "1",
+                                    "passesIncomplete": "23",
+                                    "passesTotal": "37",
+                                    "passesComplete": "14",
+                                    "passesCompleteLong": "8"
+                                }
+                            }
+                        },
+                        "id": "p.81061",
+                        "playerMetadata": {
+                            "uniformNumber": "1",
+                            "playerKey": "81061",
+                            "positionRegular": "goalkeeper",
+                            "name": {
+                                "first": "Michael",
+                                "full": "Mika",
+                                "abbreviation": "Sim�es Domingues",
+                                "last": "Sim�es Domingues"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "1"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "53",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "3"
+                                },
+                                "statsSoccerDefensive": {
+                                    "interceptions": "3",
+                                    "clearancesSuccessful": "2",
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "32",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "2",
+                                    "passesIncomplete": "8",
+                                    "tacklesWon": "2",
+                                    "passesTotal": "14",
+                                    "passesComplete": "6",
+                                    "tacklesTotal": "2",
+                                    "tacklesLost": "0",
+                                    "crosses18YardPlus": "1",
+                                    "passesCompleteLong": "1"
+                                }
+                            }
+                        },
+                        "id": "p.66153",
+                        "playerMetadata": {
+                            "uniformNumber": "2",
+                            "playerKey": "66153",
+                            "positionRegular": "defender",
+                            "name": {
+                                "first": "Samuel",
+                                "full": "Samuel Inkoom",
+                                "abbreviation": "Inkoom",
+                                "last": "Inkoom"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "2"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "90",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "2",
+                                    "cautionsTotal": "1"
+                                },
+                                "statsSoccerDefensive": {
+                                    "shotsBlockedOutfielder": "1",
+                                    "shotsBlockedCross": "1",
+                                    "interceptions": "2",
+                                    "clearancesSuccessful": "6",
+                                    "goalsAgainstTotal": "1"
+                                },
+                                "touches": "40",
+                                "statsSoccerOffensive": {
+                                    "passesIncomplete": "14",
+                                    "tacklesWon": "1",
+                                    "passesTotal": "24",
+                                    "passesComplete": "10",
+                                    "tacklesTotal": "1",
+                                    "tacklesLost": "0",
+                                    "passesCompleteLong": "3"
+                                }
+                            }
+                        },
+                        "id": "p.101300",
+                        "playerMetadata": {
+                            "uniformNumber": "23",
+                            "playerKey": "101300",
+                            "positionRegular": "defender",
+                            "name": {
+                                "first": "Nuno Henrique",
+                                "full": "Nuno Henrique",
+                                "abbreviation": "Gon�alves Nogueira",
+                                "last": "Gon�alves Nogueira"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "5"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "89",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "aerialsWon": "1",
+                                "statsSoccerDefensive": {
+                                    "interceptions": "3",
+                                    "clearancesSuccessful": "5",
+                                    "goalsAgainstTotal": "1"
+                                },
+                                "touches": "41",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "1",
+                                    "shotsOnGoalTotal": "1",
+                                    "passesIncomplete": "10",
+                                    "passesTotal": "29",
+                                    "passesComplete": "19",
+                                    "shotsTotal": "1",
+                                    "passesCompleteLong": "4"
+                                }
+                            }
+                        },
+                        "id": "p.46638",
+                        "playerMetadata": {
+                            "uniformNumber": "5",
+                            "playerKey": "46638",
+                            "positionRegular": "defender",
+                            "name": {
+                                "first": "Paulo",
+                                "full": "Paulo Vin�cius",
+                                "abbreviation": "Vin�cius",
+                                "last": "Vin�cius"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "6"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "90",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "2",
+                                    "foulsSuffered": "3"
+                                },
+                                "statsSoccerDefensive": {
+                                    "interceptions": "2",
+                                    "clearancesSuccessful": "1",
+                                    "goalsAgainstTotal": "1"
+                                },
+                                "touches": "73",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "5",
+                                    "passesIncomplete": "15",
+                                    "tacklesWon": "5",
+                                    "passesTotal": "33",
+                                    "passesComplete": "18",
+                                    "tacklesTotal": "5",
+                                    "tacklesLost": "0",
+                                    "crosses18YardPlus": "1",
+                                    "crosses18Yard": "1",
+                                    "passesCompleteLong": "2"
+                                }
+                            }
+                        },
+                        "id": "p.189562",
+                        "playerMetadata": {
+                            "uniformNumber": "25",
+                            "playerKey": "189562",
+                            "positionRegular": "defender",
+                            "name": {
+                                "first": "Afonso Mendes",
+                                "full": "Afonso Figueiredo",
+                                "abbreviation": "Ribeiro Figueiredo",
+                                "last": "Ribeiro Figueiredo"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "3"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "90",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "4",
+                                    "foulsSuffered": "1"
+                                },
+                                "aerialsWon": "4",
+                                "statsSoccerDefensive": {
+                                    "interceptions": "4",
+                                    "goalsAgainstTotal": "1"
+                                },
+                                "touches": "44",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "9",
+                                    "shotsOnGoalTotal": "1",
+                                    "passesIncomplete": "7",
+                                    "tacklesWon": "3",
+                                    "passesTotal": "30",
+                                    "passesComplete": "23",
+                                    "tacklesTotal": "4",
+                                    "tacklesLost": "1",
+                                    "shotsTotal": "1",
+                                    "passesCompleteLong": "4"
+                                }
+                            }
+                        },
+                        "id": "p.149963",
+                        "playerMetadata": {
+                            "uniformNumber": "4",
+                            "playerKey": "149963",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "Reuben",
+                                "full": "Reuben Gabriel",
+                                "abbreviation": "Gabriel",
+                                "last": "Gabriel"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "8"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "90",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "1",
+                                    "foulsSuffered": "1"
+                                },
+                                "aerialsWon": "3",
+                                "statsSoccerDefensive": {
+                                    "interceptions": "3",
+                                    "clearancesSuccessful": "1",
+                                    "goalsAgainstTotal": "1"
+                                },
+                                "touches": "45",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "5",
+                                    "shotsOnGoalTotal": "2",
+                                    "passesIncomplete": "7",
+                                    "tacklesWon": "1",
+                                    "passesTotal": "28",
+                                    "passesComplete": "21",
+                                    "tacklesTotal": "1",
+                                    "tacklesLost": "0",
+                                    "shotsTotal": "3",
+                                    "shotsOffGoalTotal": "1",
+                                    "passesCompleteLong": "1"
+                                }
+                            }
+                        },
+                        "id": "p.149624",
+                        "playerMetadata": {
+                            "uniformNumber": "42",
+                            "playerKey": "149624",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "Idrissa",
+                                "full": "Idris",
+                                "abbreviation": "Mandiang",
+                                "last": "Mandiang"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "4"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "90",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsSuffered": "2"
+                                },
+                                "statsSoccerDefensive": {
+                                    "interceptions": "1",
+                                    "goalsAgainstTotal": "1"
+                                },
+                                "touches": "60",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "6",
+                                    "passesIncomplete": "5",
+                                    "tacklesWon": "1",
+                                    "passesTotal": "26",
+                                    "passesComplete": "21",
+                                    "tacklesTotal": "2",
+                                    "tacklesLost": "1",
+                                    "shotsTotal": "1",
+                                    "shotsOffGoalTotal": "1",
+                                    "crosses18YardPlus": "3",
+                                    "crosses18Yard": "5"
+                                }
+                            }
+                        },
+                        "id": "p.212293",
+                        "playerMetadata": {
+                            "uniformNumber": "77",
+                            "playerKey": "212293",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "Lu�s Miguel",
+                                "full": "Luisinho",
+                                "abbreviation": "Pinheiro Andrade",
+                                "last": "Pinheiro Andrade"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "7"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "55",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsSuffered": "2"
+                                },
+                                "aerialsWon": "2",
+                                "statsSoccerDefensive": {
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "28",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "4",
+                                    "shotsOnGoalTotal": "1",
+                                    "passesIncomplete": "5",
+                                    "tacklesWon": "0",
+                                    "passesTotal": "18",
+                                    "passesComplete": "13",
+                                    "tacklesTotal": "1",
+                                    "tacklesLost": "1",
+                                    "shotsTotal": "2",
+                                    "shotsOffGoalTotal": "1"
+                                }
+                            }
+                        },
+                        "id": "p.119238",
+                        "playerMetadata": {
+                            "uniformNumber": "10",
+                            "playerKey": "119238",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "Diego da Costa",
+                                "full": "Diego Lima",
+                                "abbreviation": "Lima",
+                                "last": "Lima"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "10"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "82",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsSuffered": "1"
+                                },
+                                "aerialsWon": "7",
+                                "statsSoccerDefensive": {
+                                    "clearancesSuccessful": "3",
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "39",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "4",
+                                    "passesIncomplete": "9",
+                                    "tacklesWon": "1",
+                                    "passesTotal": "17",
+                                    "passesComplete": "8",
+                                    "tacklesTotal": "1",
+                                    "tacklesLost": "0",
+                                    "shotsTotal": "1",
+                                    "shotsOffGoalTotal": "1",
+                                    "crosses18Yard": "2"
+                                }
+                            }
+                        },
+                        "id": "p.80784",
+                        "playerMetadata": {
+                            "uniformNumber": "75",
+                            "playerKey": "80784",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "Michael",
+                                "full": "Michael Uchebo",
+                                "abbreviation": "Uchebo",
+                                "last": "Uchebo"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "11"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "90",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "1",
+                                    "foulsSuffered": "2"
+                                },
+                                "aerialsWon": "2",
+                                "statsSoccerDefensive": {
+                                    "goalsAgainstTotal": "1"
+                                },
+                                "touches": "36",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "6",
+                                    "passesIncomplete": "6",
+                                    "tacklesWon": "2",
+                                    "passesTotal": "23",
+                                    "passesComplete": "17",
+                                    "tacklesTotal": "2",
+                                    "tacklesLost": "0",
+                                    "shotsTotal": "2",
+                                    "shotsOffGoalTotal": "2",
+                                    "crosses18YardPlus": "1",
+                                    "crosses18Yard": "1",
+                                    "passesCompleteLong": "2"
+                                }
+                            }
+                        },
+                        "id": "p.61608",
+                        "playerMetadata": {
+                            "uniformNumber": "70",
+                            "playerKey": "61608",
+                            "positionRegular": "forward",
+                            "name": {
+                                "first": "Jos� Manuel",
+                                "full": "Z� Manuel",
+                                "abbreviation": "Silva Oliveira",
+                                "last": "Silva Oliveira"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "9"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "8",
+                            "teamCoverage": "single-team",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "cautionsTotal": "1"
+                                },
+                                "statsSoccerDefensive": {
+                                    "goalsAgainstTotal": "1"
+                                },
+                                "touches": "6",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "2",
+                                    "passesIncomplete": "0",
+                                    "passesTotal": "3",
+                                    "passesComplete": "3",
+                                    "shotsTotal": "1",
+                                    "shotsOffGoalTotal": "1"
+                                }
+                            }
+                        },
+                        "id": "p.176151",
+                        "playerMetadata": {
+                            "uniformNumber": "6",
+                            "playerKey": "176151",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "Anderson",
+                                "full": "Anderson Correia",
+                                "abbreviation": "Correia de Barros",
+                                "last": "Correia de Barros"
+                            },
+                            "status": "bench",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "0"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "35",
+                            "teamCoverage": "single-team",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "1"
+                                },
+                                "aerialsWon": "1",
+                                "statsSoccerDefensive": {
+                                    "shotsBlockedOutfielder": "1",
+                                    "clearancesSuccessful": "1",
+                                    "goalsAgainstTotal": "1"
+                                },
+                                "touches": "23",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "3",
+                                    "passesIncomplete": "4",
+                                    "tacklesWon": "1",
+                                    "passesTotal": "14",
+                                    "passesComplete": "10",
+                                    "tacklesTotal": "2",
+                                    "tacklesLost": "1",
+                                    "passesCompleteLong": "1"
+                                }
+                            }
+                        },
+                        "id": "p.59216",
+                        "playerMetadata": {
+                            "uniformNumber": "8",
+                            "playerKey": "59216",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "Bernardo David Mendes",
+                                "full": "Tengarrinha",
+                                "abbreviation": "Salgeiro Campos Tengarrinha",
+                                "last": "Salgeiro Campos Tengarrinha"
+                            },
+                            "status": "bench",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "0"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "1",
+                            "teamCoverage": "single-team",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsSuffered": "1"
+                                },
+                                "aerialsWon": "2",
+                                "statsSoccerDefensive": {
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "3",
+                                "statsSoccerOffensive": {
+                                    "passesIncomplete": "NaN",
+                                    "passesTotal": "1",
+                                    "passesComplete": ""
+                                }
+                            }
+                        },
+                        "id": "p.42298",
+                        "playerMetadata": {
+                            "uniformNumber": "11",
+                            "playerKey": "42298",
+                            "positionRegular": "forward",
+                            "name": {
+                                "first": "Christian",
+                                "full": "Christian Pouga",
+                                "abbreviation": "Pouga",
+                                "last": "Pouga"
+                            },
+                            "status": "bench",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "0"
+                            }
+                        }
+                    },
+                    {
+                        "id": "p.116510",
+                        "playerMetadata": {
+                            "uniformNumber": "12",
+                            "playerKey": "116510",
+                            "positionRegular": "goalkeeper",
+                            "name": {
+                                "first": "Gide�o",
+                                "full": "Gide�o",
+                                "abbreviation": "Lima de Castro",
+                                "last": "Lima de Castro"
+                            },
+                            "status": "bench",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "0"
+                            }
+                        }
+                    },
+                    {
+                        "id": "p.60008",
+                        "playerMetadata": {
+                            "uniformNumber": "17",
+                            "playerKey": "60008",
+                            "positionRegular": "forward",
+                            "name": {
+                                "first": "Renato Jo�o",
+                                "full": "Renato Santos",
+                                "abbreviation": "Saleiro Santos",
+                                "last": "Saleiro Santos"
+                            },
+                            "status": "bench",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "0"
+                            }
+                        }
+                    },
+                    {
+                        "id": "p.179776",
+                        "playerMetadata": {
+                            "uniformNumber": "94",
+                            "playerKey": "179776",
+                            "positionRegular": "defender",
+                            "name": {
+                                "first": "Philipe",
+                                "full": "Philipe Sampaio",
+                                "abbreviation": "Sampaio",
+                                "last": "Sampaio"
+                            },
+                            "status": "bench",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "0"
+                            }
+                        }
+                    },
+                    {
+                        "id": "p.178508",
+                        "playerMetadata": {
+                            "uniformNumber": "99",
+                            "playerKey": "178508",
+                            "positionRegular": "forward",
+                            "name": {
+                                "first": "Rivaldo Vitor",
+                                "full": "Rivaldinho",
+                                "abbreviation": "Borba Ferreira J�nior",
+                                "last": "Borba Ferreira J�nior"
+                            },
+                            "status": "bench",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "0"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "teamMetadata": {
+                    "alignment": "away",
+                    "name": {
+                        "first": "Pa�os de Ferreira",
+                        "full": "Pa�os de Ferreira",
+                        "abbreviation": "Pa�os de Ferreira",
+                        "nickname": "Pa�os de Ferreira"
+                    },
+                    "teamKey": "1981"
+                },
+                "teamStats": {
+                    "timeOfPossessionPercentage": "52.9",
+                    "subScore": [
+                        {
+                            "periodValue": "1",
+                            "score": "0"
+                        },
+                        {
+                            "periodValue": "2",
+                            "score": "1"
+                        }
+                    ],
+                    "score": "1",
+                    "teamStatsSoccer": {
+                        "statsSoccerFoul": {
+                            "foulsCommited": "13"
+                        },
+                        "lineFormation": "4231",
+                        "statsSoccerOffensive": {
+                            "shotsOnGoalTotal": "3",
+                            "cornerKicks": "1",
+                            "shotsTotal": "12"
+                        }
+                    },
+                    "eventOutcome": "win",
+                    "scoreOpposing": "0"
+                },
+                "id": "e.816041-t.1981",
+                "associate": {
+                    "id": "man45376",
+                    "associateMetadata": {
+                        "positionSource": "optasports.com",
+                        "position": "Manager",
+                        "name": {
+                            "first": "Jorge",
+                            "full": "Jorge Simao",
+                            "abbreviation": "Simao",
+                            "last": "Simao"
+                        },
+                        "associateKey": "man45376"
+                    }
+                },
+                "players": [
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "90",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerDefensive": {
+                                    "shutouts": "1",
+                                    "savePercentage": "NaN",
+                                    "catchesPunches": "2",
+                                    "goalsAgainstTotal": "0",
+                                    "saves": "6"
+                                },
+                                "touches": "45",
+                                "statsSoccerOffensive": {
+                                    "passesIncomplete": "13",
+                                    "passesTotal": "34",
+                                    "passesComplete": "21",
+                                    "passesCompleteLong": "8"
+                                }
+                            }
+                        },
+                        "id": "p.84627",
+                        "playerMetadata": {
+                            "uniformNumber": "28",
+                            "playerKey": "84627",
+                            "positionRegular": "goalkeeper",
+                            "name": {
+                                "first": "Jos� Carlos",
+                                "full": "Marafona",
+                                "abbreviation": "Coentr�o Marafona",
+                                "last": "Coentr�o Marafona"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "1"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "90",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "2",
+                                    "foulsSuffered": "1"
+                                },
+                                "aerialsWon": "3",
+                                "statsSoccerDefensive": {
+                                    "shutouts": "1",
+                                    "shotsBlockedCross": "1",
+                                    "interceptions": "5",
+                                    "clearancesSuccessful": "3",
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "80",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "7",
+                                    "passesIncomplete": "10",
+                                    "tacklesWon": "5",
+                                    "passesTotal": "33",
+                                    "passesComplete": "23",
+                                    "tacklesTotal": "7",
+                                    "tacklesLost": "2",
+                                    "crosses18YardPlus": "2",
+                                    "crosses18Yard": "1",
+                                    "passesCompleteLong": "3"
+                                }
+                            }
+                        },
+                        "id": "p.204351",
+                        "playerMetadata": {
+                            "uniformNumber": "13",
+                            "playerKey": "204351",
+                            "positionRegular": "defender",
+                            "name": {
+                                "first": "Jo�o Duarte",
+                                "full": "Jo�o G�is",
+                                "abbreviation": "Teixeira G�is",
+                                "last": "Teixeira G�is"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "2"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "90",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "1",
+                                    "cautionsTotal": "1"
+                                },
+                                "aerialsWon": "5",
+                                "statsSoccerDefensive": {
+                                    "shutouts": "1",
+                                    "interceptions": "5",
+                                    "clearancesSuccessful": "8",
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "67",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "5",
+                                    "passesIncomplete": "9",
+                                    "tacklesWon": "1",
+                                    "passesTotal": "50",
+                                    "passesComplete": "41",
+                                    "tacklesTotal": "1",
+                                    "tacklesLost": "0",
+                                    "passesCompleteLong": "4"
+                                }
+                            }
+                        },
+                        "id": "p.165804",
+                        "playerMetadata": {
+                            "uniformNumber": "6",
+                            "playerKey": "165804",
+                            "positionRegular": "defender",
+                            "name": {
+                                "first": "F�bio Rafael",
+                                "full": "F�bio Cardoso",
+                                "abbreviation": "Rodrigues Cardoso",
+                                "last": "Rodrigues Cardoso"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "5"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "90",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "2",
+                                    "foulsSuffered": "1",
+                                    "cautionsTotal": "1"
+                                },
+                                "aerialsWon": "5",
+                                "statsSoccerDefensive": {
+                                    "shutouts": "1",
+                                    "interceptions": "1",
+                                    "clearancesSuccessful": "4",
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "52",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "1",
+                                    "passesIncomplete": "16",
+                                    "passesTotal": "44",
+                                    "passesComplete": "28"
+                                }
+                            }
+                        },
+                        "id": "p.39005",
+                        "playerMetadata": {
+                            "uniformNumber": "19",
+                            "playerKey": "39005",
+                            "positionRegular": "defender",
+                            "name": {
+                                "first": "Ricardo Jorge",
+                                "full": "Ricardo",
+                                "abbreviation": "Ferreira Pinto da Silva",
+                                "last": "Ferreira Pinto da Silva"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "6"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "90",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "1"
+                                },
+                                "aerialsWon": "5",
+                                "statsSoccerDefensive": {
+                                    "shutouts": "1",
+                                    "shotsBlockedOutfielder": "1",
+                                    "shotsBlockedCross": "1",
+                                    "interceptions": "3",
+                                    "clearancesSuccessful": "2",
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "43",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "1",
+                                    "passesIncomplete": "10",
+                                    "tacklesWon": "0",
+                                    "passesTotal": "21",
+                                    "passesComplete": "11",
+                                    "tacklesTotal": "2",
+                                    "tacklesLost": "2",
+                                    "passesCompleteLong": "2"
+                                }
+                            }
+                        },
+                        "id": "p.179311",
+                        "playerMetadata": {
+                            "uniformNumber": "22",
+                            "playerKey": "179311",
+                            "positionRegular": "defender",
+                            "name": {
+                                "first": "Luis Miguel",
+                                "full": "Miguel Vieira",
+                                "abbreviation": "Vieira Silva",
+                                "last": "Vieira Silva"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "3"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "84",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "1",
+                                    "cautionsTotal": "1"
+                                },
+                                "aerialsWon": "4",
+                                "statsSoccerDefensive": {
+                                    "clearancesSuccessful": "2",
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "41",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "7",
+                                    "passesIncomplete": "9",
+                                    "tacklesWon": "2",
+                                    "passesTotal": "31",
+                                    "freeKicks": "1",
+                                    "passesComplete": "22",
+                                    "tacklesTotal": "2",
+                                    "tacklesLost": "0",
+                                    "shotsTotal": "1",
+                                    "shotsOffGoalTotal": "1",
+                                    "passesCompleteLong": "2"
+                                }
+                            }
+                        },
+                        "id": "p.59229",
+                        "playerMetadata": {
+                            "uniformNumber": "25",
+                            "playerKey": "59229",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "Judilson Mamadu",
+                                "full": "Pel�",
+                                "abbreviation": "Tuncar� Gomes",
+                                "last": "Tuncar� Gomes"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "8"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "90",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "3",
+                                    "foulsSuffered": "1"
+                                },
+                                "aerialsWon": "3",
+                                "statsSoccerDefensive": {
+                                    "shutouts": "1",
+                                    "interceptions": "2",
+                                    "clearancesSuccessful": "2",
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "53",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "4",
+                                    "passesIncomplete": "9",
+                                    "tacklesWon": "1",
+                                    "passesTotal": "35",
+                                    "freeKicks": "1",
+                                    "passesComplete": "26",
+                                    "tacklesTotal": "2",
+                                    "tacklesLost": "1",
+                                    "shotsTotal": "2",
+                                    "shotsOffGoalTotal": "2",
+                                    "crosses18Yard": "1",
+                                    "passesCompleteLong": "2"
+                                }
+                            }
+                        },
+                        "id": "p.168811",
+                        "playerMetadata": {
+                            "uniformNumber": "8",
+                            "playerKey": "168811",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "Christian",
+                                "full": "Christian",
+                                "abbreviation": "da Silva Fiel",
+                                "last": "da Silva Fiel"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "4"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "66",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "1",
+                                    "foulsSuffered": "3"
+                                },
+                                "aerialsWon": "1",
+                                "statsSoccerDefensive": {
+                                    "shotsBlockedCross": "1",
+                                    "interceptions": "1",
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "27",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "3",
+                                    "passesIncomplete": "9",
+                                    "tacklesWon": "1",
+                                    "passesTotal": "16",
+                                    "passesComplete": "7",
+                                    "tacklesTotal": "1",
+                                    "tacklesLost": "0"
+                                }
+                            }
+                        },
+                        "id": "p.130594",
+                        "playerMetadata": {
+                            "uniformNumber": "12",
+                            "playerKey": "130594",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "Edson",
+                                "full": "Edson",
+                                "abbreviation": "Rodrigues Farias",
+                                "last": "Rodrigues Farias"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "7"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "57",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "1",
+                                    "cautionsTotal": "1"
+                                },
+                                "statsSoccerDefensive": {
+                                    "interceptions": "1",
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "30",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "5",
+                                    "passesIncomplete": "7",
+                                    "tacklesWon": "1",
+                                    "passesTotal": "21",
+                                    "passesComplete": "14",
+                                    "tacklesTotal": "1",
+                                    "tacklesLost": "0",
+                                    "shotsTotal": "1",
+                                    "shotsOffGoalTotal": "1"
+                                }
+                            }
+                        },
+                        "id": "p.202556",
+                        "playerMetadata": {
+                            "uniformNumber": "20",
+                            "playerKey": "202556",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "Andr� Filipe",
+                                "full": "Andrezinho",
+                                "abbreviation": "Carneiro Leal",
+                                "last": "Carneiro Leal"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "10"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "90",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsSuffered": "3"
+                                },
+                                "statsSoccerDefensive": {
+                                    "shutouts": "1",
+                                    "interceptions": "1",
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "50",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "6",
+                                    "goalsTotal": "1",
+                                    "passesComplete": "14",
+                                    "tacklesLost": "1",
+                                    "goalsHead": "0",
+                                    "shotsTotal": "3",
+                                    "shotsOnGoalTotal": "1",
+                                    "goalsRightFoot": "0",
+                                    "passesIncomplete": "9",
+                                    "goalsLeftFoot": "0",
+                                    "tacklesWon": "1",
+                                    "passesTotal": "23",
+                                    "tacklesTotal": "2",
+                                    "shotsOffGoalTotal": "2"
+                                }
+                            }
+                        },
+                        "id": "p.194634",
+                        "playerMetadata": {
+                            "uniformNumber": "18",
+                            "playerKey": "194634",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "Diogo Jos�",
+                                "full": "Diogo Jota",
+                                "abbreviation": "Teixeira da Silva",
+                                "last": "Teixeira da Silva"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "11"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "90",
+                            "teamCoverage": "single-team",
+                            "eventsStarted": "1",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsSuffered": "3"
+                                },
+                                "aerialsWon": "6",
+                                "statsSoccerDefensive": {
+                                    "shutouts": "1",
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "22",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "5",
+                                    "shotsOnGoalTotal": "1",
+                                    "passesIncomplete": "5",
+                                    "passesTotal": "13",
+                                    "passesComplete": "8",
+                                    "shotsTotal": "2",
+                                    "shotsOffGoalTotal": "1",
+                                    "crosses18Yard": "1",
+                                    "passesCompleteLong": "1"
+                                }
+                            }
+                        },
+                        "id": "p.83446",
+                        "playerMetadata": {
+                            "uniformNumber": "21",
+                            "playerKey": "83446",
+                            "positionRegular": "forward",
+                            "name": {
+                                "first": "Jo�o Pedro",
+                                "full": "Jo�o Silva",
+                                "abbreviation": "Pereira Silva",
+                                "last": "Pereira Silva"
+                            },
+                            "status": "starter",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "9"
+                            }
+                        }
+                    },
+                    {
+                        "id": "p.176200",
+                        "playerMetadata": {
+                            "uniformNumber": "1",
+                            "playerKey": "176200",
+                            "positionRegular": "goalkeeper",
+                            "name": {
+                                "first": "Rafael",
+                                "full": "Rafael Defendi",
+                                "abbreviation": "Garcia Tonioli Defendi",
+                                "last": "Garcia Tonioli Defendi"
+                            },
+                            "status": "bench",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "0"
+                            }
+                        }
+                    },
+                    {
+                        "id": "p.108959",
+                        "playerMetadata": {
+                            "uniformNumber": "4",
+                            "playerKey": "108959",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "Marcos Romeu",
+                                "full": "Romeu Rocha",
+                                "abbreviation": "Moreira da Rocha",
+                                "last": "Moreira da Rocha"
+                            },
+                            "status": "bench",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "0"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "24",
+                            "teamCoverage": "single-team",
+                            "playerStatsSoccer": {
+                                "statsSoccerDefensive": {
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "9",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "2",
+                                    "passesIncomplete": "3",
+                                    "passesTotal": "7",
+                                    "passesComplete": "4",
+                                    "crosses18Yard": "1"
+                                }
+                            }
+                        },
+                        "id": "p.178651",
+                        "playerMetadata": {
+                            "uniformNumber": "10",
+                            "playerKey": "178651",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "N�lson Alexandre",
+                                "full": "Minhoca",
+                                "abbreviation": "Farpelha Estrela",
+                                "last": "Farpelha Estrela"
+                            },
+                            "status": "bench",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "0"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "6",
+                            "teamCoverage": "single-team",
+                            "playerStatsSoccer": {
+                                "aerialsWon": "1",
+                                "statsSoccerDefensive": {
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "5",
+                                "statsSoccerOffensive": {
+                                    "passesIncomplete": "2",
+                                    "passesTotal": "4",
+                                    "passesComplete": "2"
+                                }
+                            }
+                        },
+                        "id": "p.170879",
+                        "playerMetadata": {
+                            "uniformNumber": "16",
+                            "playerKey": "170879",
+                            "positionRegular": "forward",
+                            "name": {
+                                "first": "Barnes",
+                                "full": "Barnes Osei",
+                                "abbreviation": "Osei",
+                                "last": "Osei"
+                            },
+                            "status": "bench",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "0"
+                            }
+                        }
+                    },
+                    {
+                        "id": "p.213205",
+                        "playerMetadata": {
+                            "uniformNumber": "23",
+                            "playerKey": "213205",
+                            "positionRegular": "defender",
+                            "name": {
+                                "first": "Paulo Henrique",
+                                "full": "Paulo Henrique",
+                                "abbreviation": "Rodrigues Cabral",
+                                "last": "Rodrigues Cabral"
+                            },
+                            "status": "bench",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "0"
+                            }
+                        }
+                    },
+                    {
+                        "playerStats": {
+                            "dateCoverageType": "event",
+                            "timePlayedTotal": "33",
+                            "teamCoverage": "single-team",
+                            "playerStatsSoccer": {
+                                "statsSoccerFoul": {
+                                    "foulsCommited": "1",
+                                    "foulsSuffered": "1",
+                                    "cautionsTotal": "1"
+                                },
+                                "statsSoccerDefensive": {
+                                    "goalsAgainstTotal": "0"
+                                },
+                                "touches": "19",
+                                "statsSoccerOffensive": {
+                                    "passesComplete3rdFinal": "6",
+                                    "shotsOnGoalTotal": "1",
+                                    "passesIncomplete": "2",
+                                    "tacklesWon": "1",
+                                    "passesTotal": "12",
+                                    "passesComplete": "10",
+                                    "tacklesTotal": "1",
+                                    "tacklesLost": "0",
+                                    "shotsTotal": "1"
+                                }
+                            }
+                        },
+                        "id": "p.179320",
+                        "playerMetadata": {
+                            "uniformNumber": "47",
+                            "playerKey": "179320",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "F�bio",
+                                "full": "F�bio Martins",
+                                "abbreviation": "Santos Martins",
+                                "last": "Santos Martins"
+                            },
+                            "status": "bench",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "0"
+                            }
+                        }
+                    },
+                    {
+                        "id": "p.212764",
+                        "playerMetadata": {
+                            "uniformNumber": "94",
+                            "playerKey": "212764",
+                            "positionRegular": "midfielder",
+                            "name": {
+                                "first": "Bruno",
+                                "full": "Bruno dos Santos",
+                                "abbreviation": "Araujo dos Santos",
+                                "last": "Araujo dos Santos"
+                            },
+                            "status": "bench",
+                            "playerMetadataSoccer": {
+                                "lineFormationPosition": "0"
+                            }
+                        }
+                    }
+                ]
+            }
+        ],
+        "eventMetadata": {
+            "site": {
+                "siteStats": {
+                    "alignment": "home",
+                    "attendance": "3763"
+                },
+                "siteMetadata": {
+                    "siteKey": "s.2316",
+                    "homeLocation": {
+                        "country": "Portugal"
+                    },
+                    "name": {
+                        "first": "Est�dio do Bessa XXI",
+                        "full": "Est�dio do Bessa XXI",
+                        "abbreviation": "Est�dio do Bessa XXI"
+                    }
+                }
+            },
+            "eventStatusNote": "Result",
+            "dateCoverageType": "event",
+            "eventKey": "816041",
+            "eventOutcomeType": "regular",
+            "eventStatus": "post-event",
+            "eventName": "Boavista v Pa�os de Ferreira",
+            "eventMetadataSoccer": {
+                "timeAdjustment": {
+                    "periodExtraTimeElapsed": "5"
+                },
+                "week": "4",
+                "minutesElapsed": "90"
+            },
+            "startDateTime": "2015-09-14T20:00:00+01:00"
+        },
+        "eventActions": {
+            "eventActionsSoccer": {
+                "actionSoccerSubstitution": [
+                    {
+                        "sequenceNumber": "0914211523",
+                        "teamIdref": "e.816041-t.196",
+                        "personOriginalIdref": "PO119238",
+                        "periodValue": "2",
+                        "personReplacingIdref": "PO59216",
+                        "personReplacingPosition": "midfielder",
+                        "id": "a.809228497",
+                        "minutesElapsed": "55",
+                        "substitutionReason": "Tactical"
+                    },
+                    {
+                        "sequenceNumber": "0914211729",
+                        "teamIdref": "e.816041-t.1981",
+                        "personOriginalIdref": "PO202556",
+                        "periodValue": "2",
+                        "personReplacingIdref": "PO179320",
+                        "personReplacingPosition": "midfielder",
+                        "id": "a.1707749092",
+                        "minutesElapsed": "57",
+                        "substitutionReason": "Tactical"
+                    },
+                    {
+                        "sequenceNumber": "0914212617",
+                        "teamIdref": "e.816041-t.1981",
+                        "personOriginalIdref": "PO130594",
+                        "periodValue": "2",
+                        "personReplacingIdref": "PO178651",
+                        "personReplacingPosition": "midfielder",
+                        "id": "a.903995935",
+                        "minutesElapsed": "66",
+                        "substitutionReason": "Tactical"
+                    },
+                    {
+                        "sequenceNumber": "0914214202",
+                        "teamIdref": "e.816041-t.196",
+                        "personOriginalIdref": "PO80784",
+                        "periodValue": "2",
+                        "personReplacingIdref": "PO176151",
+                        "personReplacingPosition": "defender",
+                        "id": "a.2052658037",
+                        "minutesElapsed": "82",
+                        "substitutionReason": "Tactical"
+                    },
+                    {
+                        "sequenceNumber": "0914214331",
+                        "teamIdref": "e.816041-t.1981",
+                        "personOriginalIdref": "PO59229",
+                        "periodValue": "2",
+                        "personReplacingIdref": "PO170879",
+                        "personReplacingPosition": "forward",
+                        "id": "a.723967624",
+                        "minutesElapsed": "84",
+                        "substitutionReason": "Tactical"
+                    },
+                    {
+                        "sequenceNumber": "0914215029",
+                        "teamIdref": "e.816041-t.196",
+                        "personOriginalIdref": "PO46638",
+                        "periodValue": "2",
+                        "personReplacingIdref": "PO42298",
+                        "personReplacingPosition": "forward",
+                        "id": "a.477765143",
+                        "minutesElapsed": "90",
+                        "substitutionReason": "Tactical"
+                    }
+                ],
+                "actionSoccerScore": [
+                    {
+                        "sequenceNumber": "0914214911",
+                        "teamIdref": "e.816041-t.1981",
+                        "scoreAttemptType": "regular",
+                        "periodValue": "2",
+                        "id": "a.1760269625",
+                        "minutesElapsed": "89",
+                        "actionSoccerPlayParticipants": [
+                            {
+                                "playerIdref": "PO194634",
+                                "teamIdref": "e.816041-t.1981",
+                                "role": "scorer"
+                            }
+                        ]
+                    }
+                ],
+                "actionSoccerPenalty": [
+                    {
+                        "penaltyType": "foul",
+                        "sequenceNumber": "0914201549",
+                        "recipientType": "player",
+                        "teamIdref": "e.816041-t.196",
+                        "periodValue": "1",
+                        "penaltyLevel": "yellow-card",
+                        "id": "a.1195000588",
+                        "minutesElapsed": "14",
+                        "recipientIdref": "p.101300",
+                        "comment": "Foul"
+                    },
+                    {
+                        "penaltyType": "foul",
+                        "sequenceNumber": "0914204829",
+                        "recipientType": "player",
+                        "teamIdref": "e.816041-t.1981",
+                        "periodValue": "1",
+                        "penaltyLevel": "yellow-card",
+                        "id": "a.1493485903",
+                        "minutesElapsed": "47",
+                        "recipientIdref": "p.165804",
+                        "comment": "Foul"
+                    },
+                    {
+                        "penaltyType": "foul",
+                        "sequenceNumber": "0914211134",
+                        "recipientType": "player",
+                        "teamIdref": "e.816041-t.196",
+                        "periodValue": "2",
+                        "penaltyLevel": "yellow-card",
+                        "id": "a.1489635890",
+                        "minutesElapsed": "52",
+                        "recipientIdref": "p.66153",
+                        "comment": "Foul"
+                    },
+                    {
+                        "penaltyType": "foul",
+                        "sequenceNumber": "0914211241",
+                        "recipientType": "player",
+                        "teamIdref": "e.816041-t.196",
+                        "periodValue": "2",
+                        "penaltyLevel": "yellow-red-card",
+                        "id": "a.1881727152",
+                        "minutesElapsed": "53",
+                        "recipientIdref": "p.66153",
+                        "comment": "Foul"
+                    },
+                    {
+                        "penaltyType": "foul",
+                        "sequenceNumber": "0914211455",
+                        "recipientType": "player",
+                        "teamIdref": "e.816041-t.1981",
+                        "periodValue": "2",
+                        "penaltyLevel": "yellow-card",
+                        "id": "a.452374899",
+                        "minutesElapsed": "55",
+                        "recipientIdref": "p.202556",
+                        "comment": "Foul"
+                    },
+                    {
+                        "penaltyType": "foul",
+                        "sequenceNumber": "0914212739",
+                        "recipientType": "player",
+                        "teamIdref": "e.816041-t.1981",
+                        "periodValue": "2",
+                        "penaltyLevel": "yellow-card",
+                        "id": "a.293151122",
+                        "minutesElapsed": "68",
+                        "recipientIdref": "p.179320",
+                        "comment": "Foul"
+                    },
+                    {
+                        "penaltyType": "foul",
+                        "sequenceNumber": "0914213244",
+                        "recipientType": "player",
+                        "teamIdref": "e.816041-t.1981",
+                        "periodValue": "2",
+                        "penaltyLevel": "yellow-card",
+                        "id": "a.212530647",
+                        "minutesElapsed": "73",
+                        "recipientIdref": "p.39005",
+                        "comment": "Foul"
+                    },
+                    {
+                        "penaltyType": "foul",
+                        "sequenceNumber": "0914214131",
+                        "recipientType": "player",
+                        "teamIdref": "e.816041-t.1981",
+                        "periodValue": "2",
+                        "penaltyLevel": "yellow-card",
+                        "id": "a.1829322926",
+                        "minutesElapsed": "82",
+                        "recipientIdref": "p.59229",
+                        "comment": "Foul"
+                    },
+                    {
+                        "penaltyType": "other",
+                        "sequenceNumber": "0914215215",
+                        "recipientType": "player",
+                        "teamIdref": "e.816041-t.196",
+                        "periodValue": "2",
+                        "penaltyLevel": "yellow-card",
+                        "id": "a.956318230",
+                        "minutesElapsed": "92",
+                        "recipientIdref": "p.176151",
+                        "comment": "Off the ball foul"
+                    }
+                ]
+            }
+        }
+    }
+}
