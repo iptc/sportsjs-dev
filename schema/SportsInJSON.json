@@ -71,6 +71,66 @@
                 }
             }
         },
+        "basePlayerMetadataComplexType": {
+          "type":"object",
+            "description":"",
+            "allOf": [
+                {
+                    "$ref": "#/definitions/basePersonMetadataComplexType"
+                }]
+            
+        },
+        "basePersonMetadataComplexType": {
+            "type": "object",
+            "description" : "Metadata that describes a person. | Generally does not change over the course of a sports-events. Extends the baseEntityMetadata type",
+            "properties": {
+                "dateOfBirth" : {
+                    "type":"string",
+                    "pattern":"",
+                    "description":""
+                    },
+                        "dateOfDeath": {
+                            "type":"string",
+                            "pattern":"",
+                            "description":""
+                        },
+                        "height": {
+                            "type":"integer",
+                            "minimum": 0,
+                            "description":"Height of the person. Generally in cm."
+                        },
+                        "weight": {
+                            "type":"integer",
+                            "minimum": 0,
+                            "description":"Weight of a person. Generally in kg."
+                        },
+                        "postitionRegular": {
+                            "description": "The code for the typical position of the person.",
+                            "type":"string",
+                            "pattern": "[^\\s:]+:[^\\s]+"
+                        },
+                "positionEvent": {
+                    "description":"The code for the position held by the person at this  particular sports-event.",
+                    "type":"string",
+                    "pattern": "[^\\s:]+:[^\\s]+"
+                },
+                "positionDepth" : {
+                    "description":"A ranking amongst players on the team who share the same position.",
+                    "type":"string"
+                },
+                "health": {
+                    "type":"string",
+                    "pattern": "[^\\s:]+:[^\\s]+",
+                    "description":"An indication of the health of the person"
+                },
+                "gender": {
+                    "type":"string",
+                    "description":"Male or female",
+                    "enum": ["male", "female"]
+                }
+                
+            }
+        },
         "sportsMetadataProperties": {
             "type": "object",
             "description": "Metadata for the document being published. | Holds metadata applying to the document as a whole.",
@@ -335,7 +395,19 @@
         "player": {
             "type": "object",
             "description": "A competitor. | Their athletic talents help them decide who wins a sports-event.",
-            "properties": {}
+            "properties": {
+                "playerMetadata": {
+                    "type":"object",
+                    "description": "Metadata that describes a person. | Generally does not change over the course of a sports-events.",
+                    "properties": {
+                                              
+                    }
+                    
+                },
+                "player-Stats" : {
+                    
+                }
+            }
         },
         "wageringStats": {
             "type": "object",
