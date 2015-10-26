@@ -5,9 +5,13 @@
     "$ref": "#/definitions/sportsContent",
     "definitions": {
         "globalAttributes": {
-            "id": {
-                "type": "string"
+            "type":"object",
+            "properties": {
+                "id": {
+                    "type": "string"    
+                }
             }
+            
         },
         "sportsContent": {
             "type": "object",
