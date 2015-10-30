@@ -216,6 +216,9 @@
                 "officials": {
                     "$ref": "#/definitions/officials"
                 },
+                "associates": {
+                    "$ref": "#/definitions/associates"
+                },
                 "actions": {
                     "$ref": "#/definitions/actions"
                 },
@@ -341,6 +344,21 @@
             "type": "object",
             "description": "An object to house lines and odds for wagering. | Includes moneylines, spreads, etc.",
             "properties": {}
+        },
+        "associates": {
+            "type":"array",
+            "description": "A set of associates",
+            "items": {
+                "$ref":"#/definitions/associate"
+            }
+        },
+        "associate": {
+            "type":"object",
+            "description":"Metadata that describes an associate | Generally does not change over the course of a sports-events",
+            "allOf": [
+                {
+                    "$ref": "#/definitions/basePersonMetadataComplexType"
+                }]
         },
         "officials": {
             "type": "object",
