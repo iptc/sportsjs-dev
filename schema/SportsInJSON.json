@@ -271,30 +271,44 @@
             "type": "object",
             "description": "Metadata and coverage of sporting news. | Good for scores, schedules, standings, statistics, etc.",
             "properties": {
-                "sportsMetadata": {"$ref": "#/definitions/sportsMetadata"},
+                "sportsMetadata": {
+                    "$ref": "#/definitions/sportsMetadata"
+                },
                 "sportsEvents": {
                     "type": "array",
-                    "items": {"$ref": "#/definitions/sportsEvent"}
+                    "items": {
+                        "$ref": "#/definitions/sportsEvent"
+                    }
                 },
                 "tournaments": {
                     "type": "array",
-                    "items": {"$ref": "#/definitions/tournament"}
+                    "items": {
+                        "$ref": "#/definitions/tournament"
+                    }
                 },
                 "schedules": {
                     "type": "array",
-                    "items": {"$ref": "#/definitions/schedule"}
+                    "items": {
+                        "$ref": "#/definitions/schedule"
+                    }
                 },
                 "standings": {
                     "type": "array",
-                    "items": {"$ref": "#/definitions/standing"}
+                    "items": {
+                        "$ref": "#/definitions/standing"
+                    }
                 },
                 "statistics": {
                     "type": "array",
-                    "items": {"$ref": "#/definitions/statistic"}
+                    "items": {
+                        "$ref": "#/definitions/statistic"
+                    }
                 },
                 "article": {
                     "type": "array",
-                    "items": {"$ref": "#/definitions/article"}
+                    "items": {
+                        "$ref": "#/definitions/article"
+                    }
                 }
             }
         },
@@ -303,11 +317,15 @@
             "properties": {
                 "sportsContentCodes": {
                     "type": "array",
-                    "items": {"$ref": "#/definitions/sportsContentCode"}
+                    "items": {
+                        "$ref": "#/definitions/sportsContentCode"
+                    }
                 },
                 "sportsProperties": {
                     "type": "array",
-                    "items": {"$ref": "#/definitions/sportsProperty"}
+                    "items": {
+                        "$ref": "#/definitions/sportsProperty"
+                    }
                 }
             }
         },
@@ -347,7 +365,9 @@
         "sportsMetadataProperties": {
             "type": "object",
             "description": "Metadata for the document being published. | Holds metadata applying to the document as a whole.",
-            "required": ["docId"],
+            "required": [
+                "docId"
+            ],
             "properties": {
                 "docId": {
                     "description": "The often-unique ID of the document, tracked by publishers.",
@@ -396,10 +416,16 @@
                 }
             }
         },
-        "sportsMetadata": {"allOf": [
-            {"$ref": "#/definitions/baseMetadata"},
-            {"$ref": "#/definitions/sportsMetadataProperties"}
-        ]},
+        "sportsMetadata": {
+            "allOf": [
+                {
+                    "$ref": "#/definitions/baseMetadata"
+                },
+                {
+                    "$ref": "#/definitions/sportsMetadataProperties"
+                }
+            ]
+        },
         "sportsContentCode": {
             "description": "An individual code that describes an entity one may want to filter for. | Describes what sports, what teams, etc., are covered.",
             "additionalProperties": false,
@@ -452,30 +478,50 @@
             "type": "object",
             "description": "A sporting competition. | A contest that generally ends with a winner.",
             "properties": {
-                "eventMetadata": {"$ref": "#/definitions/sportsMetadata"},
-                "eventStats": {"$ref": "#/definitions/eventStats"},
+                "eventMetadata": {
+                    "$ref": "#/definitions/sportsMetadata"
+                },
+                "eventStats": {
+                    "$ref": "#/definitions/eventStats"
+                },
                 "sportsEvents": {
                     "type": "array",
-                    "items": {"$ref": "#/definitions/sportsEvent"}
+                    "items": {
+                        "$ref": "#/definitions/sportsEvent"
+                    }
                 },
                 "teams": {
-                    "type": "array",
-                    "items": {"$ref": "#/definitions/team"}
+                  "type": "array",
+                  "items": {
+                      "$ref": "#/definitions/team"
+                  }
                 },
                 "players": {
-                    "type": "array",
-                    "items": {"$ref": "#/definitions/player"}
+                  "type": "array",
+                  "items": {
+                      "$ref": "#/definitions/player"
+                  }
                 },
-                "wageringStats": {"$ref": "#/definitions/wageringStats"},
-                "officials": {"$ref": "#/definitions/officials"},
-                "actions": {"$ref": "#/definitions/actions"},
+                "wageringStats": {
+                    "$ref": "#/definitions/wageringStats"
+                },
+                "officials": {
+                    "$ref": "#/definitions/officials"
+                },
+                "actions": {
+                    "$ref": "#/definitions/actions"
+                },
                 "highlights": {
                     "type": "array",
-                    "items": {"$ref": "#/definitions/highlight"}
+                    "items": {
+                        "$ref": "#/definitions/highlight"
+                    }
                 },
                 "awards": {
                     "type": "array",
-                    "items": {"$ref": "#/definitions/award"}
+                    "items": {
+                        "$ref": "#/definitions/award"
+                    }
                 }
             }
         },
@@ -591,6 +637,21 @@
             "description": "An object to house lines and odds for wagering. | Includes moneylines, spreads, etc.",
             "properties": {}
         },
+        "associates": {
+            "type":"array",
+            "description": "A set of associates",
+            "items": {
+                "$ref":"#/definitions/associate"
+            }
+        },
+        "associate": {
+            "type":"object",
+            "description":"Metadata that describes an associate | Generally does not change over the course of a sports-events",
+            "allOf": [
+                {
+                    "$ref": "#/definitions/basePersonMetadataComplexType"
+                }]
+        },
         "officials": {
             "type": "object",
             "description": "A set of officials.",
@@ -634,7 +695,11 @@
         "article": {
             "type": "object",
             "description": "URL or system identifier (or IDREF?) to an externally-located news article.",
-            "properties": {"url": {"type": "string"}}
+            "properties": {
+                "url": {
+                    "type": "string"
+                }
+            }
         }
     }
 }
