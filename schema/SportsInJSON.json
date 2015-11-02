@@ -17,12 +17,19 @@
         }
       }
     },
+    "ratings": {
+      "type": "array",
+      "definition": " A set of ratings",
+      "items": {
+        "$ref": "#/complexTypes/rating"
+      }
+    },
     "rating": {
       "type": "object",
       "description": "A judged value placed on the team or individual. | Often used in British soccer.",
       "allOf": [
         {
-          "$ref": "#/definitions/commonAttributes"
+          "$ref": "#/groups/commonAttributes"
         }
       ],
       "properties": {
@@ -54,64 +61,222 @@
     "rank": {
       "type": "object",
       "description": "How a team is doing in comparison to other teams or players. | May be qualified, so that one ranks teams or players according to, say, how they play at home, or within their division.",
+      "allOf": [
+        {
+          "$ref": "#/groups/commonAttributes"
+        },
+        {
+          "$ref": "#/groups/coverageAttributes"
+        },
+        {
+          "properties": {
+            "type": {
+              "$ref": "#/dataTypes/qCodeType",
+              "description": "The type of the rank. Generally a publisher-specific controlled vocabulary."
+            },
+            "issuer": {
+              "type": "string",
+              "description": "The entity or organization which issued the rank."
+            },
+            "value": {
+              "type": "string",
+              "description": "The value of the rank."
+            },
+            "valuePrevious": {
+              "type": "string",
+              "description": "The previous rank."
+            }
+          }
+        }
+      ]
+    },
+    "penaltyStats": {
+      "type": "object",
+      "description": "Statistics that detail the number of each type of penalty. | Can be recorded for either a team or a player.",
       "properties": {
         "type": {
-          "$ref": "#/dataTypes/qCodeType",
-          "description": "The type of the rank. Generally a publisher-specific controlled vocabulary."
-        },
-        "issuer": {
           "type": "string",
-          "description": "The entity or organization which issued the rank."
+          "description": "Could be a numeric value like 2, 5 or 10 for ice hockey, or yellow-card or red-card for soccer etc."
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "The number of that type of penalities for this team or player."
         },
         "value": {
           "type": "string",
-          "description": "The value of the rank."
-        },
-        "valuePrevious": {
-          "type": "string",
-          "description": "The previous rank."
+          "description": "Amount penalized. Eg. total minutes (ice-hockey, lacrosse, etc.) or yards (american-football)."
         }
+      }
+    },
+    "outcomeTotals": {
+      "type": "array",
+      "definition": " A set of outcomeTotal",
+      "items": {
+        "$ref": "#/complexTypes/outcomeTotal"
+      }
+    },
+    "outcomeTotal": {
+      "type": "object",
+      "description": "A report on the number of wins, losses, etc., the team or player had during a particular time period. | Can also be scoped with various coverage qualifications, such as just events played at home.",
+      "properties": {
+        "wins": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of wins."
+        },
+        "losses": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of losses."
+        },
+        "ties": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of ties."
+        },
+        "undecideds": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of events that were started, but ended up undecided."
+        },
+        "winningPercentage": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "The winning percentage. Generally, wins divided by total events completed."
+        },
+        "pointsScoredFor": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "The number of points a team has scored against its opponents during an extended time period."
+        },
+        "pointsScoredAgainst": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "The number of points scored against a team by its opponents during an extended time period."
+        },
+        "pointsDifference": {
+          "type": "integer",
+          "description": "The final calculated difference between points-scored-for and points-scored-against. Possibly takes into account other scoring aspects, such as penalties and differences in score-values."
+        },
+        "standingPoints": {
+          "type": "string",
+          "description": "A quantity used to rank teams, usually within a division, in order to decide who comes in first at the end of a season. Localized to the coverage-attributes."
+        },
+        "standingPointsAgainst": {
+          "type": "string",
+          "description": "Points counted against a team in rankings. Used in European handball standings, for example."
+        },
+        "streakType": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "Whether this is a streak of wins, of losses, etc. SportsML vocabulary uri: http://cv.iptc.org/newscodes/spstreaktype/"
+        },
+        "streakDuration": {
+          "type": "#/dataTypes/duration",
+          "description": "How long the streak lasted."
+        },
+        "streakTotal": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Holds the number of goals scored during a streak-type of score, for example."
+        },
+        "streakStart": {
+          "type": "#/dataTypes/truncatedDateTimeType",
+          "description": "Date on which the streak began."
+        },
+        "streakEnd": {
+          "type": "#/dataTypes/truncatedDateTimeType",
+          "description": "Date on which the streak ended."
+        },
+        "eventsPlayed": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of events played within the scope of play."
+        },
+        "eventsRemaining": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of events remaining within the scope of play."
+        },
+        "gamesBack": {
+          "type": "integer",
+          "description": "A number used to measure how behind one team is from first place. The first place team is 0 games back."
+        },
+        "lossesOvertime": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of losses in events which went into overtime. For leagues that use this as a top-level outcome category (eg. NHL), as opposed to just a derivative of scoping."
+        }
+      }
+    },
+    "outcomeResults": {
+      "type": "array",
+      "definition": " A set of outcomeResult",
+      "items": {
+        "$ref": "#/complexTypes/outcomeResult"
+      }
+    },
+    "outcomeResult": {
+      "type": "object",
+      "description": "A report on the result, if any, from the event etc.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "The type of outcome result. Can be things like relegation, promotion and qualification"
+        },
+        "key": {
+          "type": "string",
+          "description": "A key for the type of result described"
+        },
+        "comment": {
+          "type": "string",
+          "description": "Textual comment about the outcome result"
+        }
+      }
+    },
+    "genericStats": {
+      "type": "array",
+      "definition": " A set of genericStat",
+      "items": {
+        "$ref": "#/complexTypes/genericStat"
       }
     },
     "genericStat": {
       "type": "object",
+      "_extension": "",
       "description": "A generic stat element that can be used together with or instead of more specific stat element and attributes. With nested stats the lower levels should be regarded as having the same value as their parents if that attribute is not specifically set.",
       "properties": {
-        "stats": {
-          "items": {
-            "$ref": "#/complexTypes/genericStat"
-          },
-          "_comments": "This is a nested stats"
-        },
-        "items": {
-          "$ref": "#/definitions/conceptNameType",
+        "name": {
+          "type": "ConceptNameType",
           "description": "The name of the stat. SportsML names are same as attribute names of stats in the sport-specific plugins."
         },
-        "items1": {
-          "$ref": "#/definitions/genericStatAttributes",
-          "_comment": "resolve this issue. Refers to line 3562 in the sportsml-schema"
-        },
-        "items2": {
-          "$ref": "#/definitions/coverageAttributes",
-          "_comment": "resolve this issue. Refers to line XXXXX in the sportsml-schema"
+        "stat": {
+          "$ref": "#/complexTypes/genericStat",
+          "description": ""
         }
       }
     },
-    "base3Stats": {
+    "baseStats": {
       "type": "object",
-      "description": "Extends base2stats. Further extended in genericEntitystats. Used directly by groupStats",
+      "description": "The very basic stats type for persons and teams, Extended by base2stats and used directly by officalstats.",
       "allOf": [
         {
-          "$ref": "#/complexTypes/base2Stats"
+          "$ref": "#/groups/commonAttributes"
         },
         {
-          "$ref": "#/complexTypes/penaltyStats"
-        },
-        {
-          "$ref": "#/complexTypes/awards"
-        },
-        {
-          "$ref": "#/complexTypes/ranks"
+          "properties": {
+            "ratings": {
+              "$ref": "#/complexTypes/ratings",
+              "description": ""
+            },
+            "sportsProperties": {
+              "$ref": "#/definitions/sportsProperties"
+            },
+            "stats": {
+              "$ref": "#/complexTypes/genericStats",
+              "description": ""
+            }
+          }
         }
       ]
     },
@@ -124,12 +289,47 @@
         },
         {
           "properties": {
-            "outcomeTotals": {},
-            "outcomeResult": {},
+            "outcomeTotals": {
+              "$ref": "#/complexType/outcomeTotals"
+            },
+            "outcomeResults": {
+              "$ref": "#/complexType/outcomeResults"
+            },
             "points": {
               "type": "integer",
               "minimum": 0,
               "description": "Points accumulated by this associate. For example, points earned by a NASCAR owner."
+            }
+          }
+        }
+      ]
+    },
+    "base3Stats": {
+      "type": "object",
+      "description": "Extends base2stats. Further extended in genericEntitystats. Used directly by groupStats",
+      "allOf": [
+        {
+          "$ref": "#/complexTypes/base2Stats"
+        },
+        {
+          "$ref": "#/groups/coverageAttributes"
+        },
+        {
+          "$ref": "#/groups/statAttributes"
+        },
+        {
+          "properties": {
+            "penaltyStats": {
+              "$ref": "#/complexTypes/penaltyStats",
+              "description": ""
+            },
+            "awards": {
+              "$ref": "#/definitions/awards",
+              "description": ""
+            },
+            "ranks": {
+              "$ref": "#/complexTypes/ranks",
+              "description": ""
             }
           }
         }
@@ -147,6 +347,14 @@
         }]
           ,
           "properties": {
+            "subScore": {
+              "$ref": "#/complexTypes/subScore",
+              "description": ""
+            },
+            "eventRecord": {
+              "$ref": "#/complexTypes/eventRecord",
+              "description": ""
+            },
             "eventsPlayed": {
               "type": "integer",
               "minimum": 0,
@@ -158,6 +366,20 @@
             }
           }
         }
+    },
+    "eventRecord": {
+      "type": "object",
+      "description": "A world, national, state, or school record. | More than one record can be set by one participant at one sports-event.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "The type of record."
+        },
+        "previousRecord": {
+          "type": "string",
+          "description": "The score value of the previously-held record."
+        }
+      }
     },
     "subScore": {
       "type": "object",
@@ -194,6 +416,17 @@
         "scoreAttempts": {
           "type": "string",
           "description": "The attempts to score during the period (or scoring unit)."
+        }
+      }
+    },
+    "baseMetadata": {
+      "description": "Basic metadata objects and attributes. Used directly by sports, standing, schedule and statistics",
+      "properties": {
+        "sportsContentCodes": {
+          "$ref": "#/definitions/sportsContentCode"
+        },
+        "sportsProperties": {
+          "$ref": "#/definitions/sportsProperties"
         }
       }
     },
@@ -280,23 +513,6 @@
         }
       }
     },
-    "baseStats": {
-      "type": "object",
-      "description": "The very basic stats type for persons and teams, Extended by base2stats and used directly by officalstats.",
-      "properties": {
-        "rating": {
-          "items": {
-            "$ref": "#/complexTypes/rating"
-          }
-        },
-        "sportsProperty": {
-          "items": {
-            "$ref": "#/definitions/sportsProperty"
-          }
-        },
-        "stats": {}
-      }
-    },
     "basePlayerMetadata": {
       "type": "object",
       "description": "Metadata that describes a person. | Generally does not change over the course of a sports-events.",
@@ -355,10 +571,7 @@
           "type": "FlexLocationPropType"
         },
         "sportsProperties": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/sportsProperty"
-          }
+          "$ref": "#/definitions/sportsProperties"
         },
         "key": {
           "$ref": "#/dataTypes/QCodeType",
@@ -388,6 +601,11 @@
             },
             "alignment": {
               "type": "string",
+              "enum": [
+                "home",
+                "away",
+                "none"
+              ],
               "description": "Home or visiting. This is more information about the alignment of the team or player in the event regarding rules etc. It does not necessarily indicate that it is the geographical home-site of the team or player."
             },
             "established": {
@@ -422,22 +640,35 @@
         }
       ]
     },
-    "teamStats": {
-      "type": "object"
+    "baseTeamStats": {
+      "type": "object",
+      "description": "Statistics that apply to the team as a whole. | Not all stats are used in every sport.",
+      "allOf": [
+        {
+          "$ref": "#/complexTypes/baseGenericEntityStats"
+        }
+      ]
     },
-    "siteComplexType": {
+    "site": {
       "type": "object",
       "description": "An element housing data having to do with a venue, stadium, arena, field, etc.",
-      "properties": {
-        "siteMetadata": {
-          "$ref": "#/complexTypes/siteMetadata",
-          "description": ""
+      "allOf": [
+        {
+          "$ref": "#/groups/commonAttributes"
         },
-        "siteStats": {
-          "$ref": "#/complexTypes/siteStats",
-          "description": ""
+        {
+          "properties": {
+            "siteMetadata": {
+              "$ref": "#/complexTypes/siteMetadata",
+              "description": ""
+            },
+            "siteStats": {
+              "$ref": "#/complexTypes/siteStats",
+              "description": ""
+            }
+          }
         }
-      }
+      ]
     },
     "siteMetadata": {
       "type": "object",
@@ -502,48 +733,62 @@
     "siteStats": {
       "type": "object",
       "description": "Holder for statistics about the site.",
-      "properties": {
-        "alignment": {
-          "type": "string",
-          "description": "Statistics about the site, accurate for a particular occasion. home means the site is home for one of the teams or players. neutral that it is neutral to all participants in the event."
+      "allOf": [
+        {
+          "$ref": "#/groups/commonAttributes"
         },
-        "attendance": {
-          "type": "string",
-          "description": "How many spectators attended during the event."
+        {
+          "$ref": "#/groups/coverageAttributes"
         },
-        "attendanceAverage": {
-          "type": "string",
-          "description": "Average number of spectators that have attended."
-        },
-        "temperature": {
-          "type": "string",
-          "description": "Temperature of the event recorded during the competition."
-        },
-        "temperatureUnits": {
-          "type": "string",
-          "description": "Units of the temperature value."
-        },
-        "weatherCode": {
-          "type": "string",
-          "description": "A controlled-vocabulary description of the weather, such as sunny, partly-cloudy, etc."
-        },
-        "weatherLabel": {
-          "type": "string",
-          "description": "Additional comment about the weather."
-        },
-        "weatherWind": {
-          "type": "string",
-          "description": "Wind reading of the event recorded during the competition."
-        },
-        "weatherPrediction": {
-          "$ref": "#/dataTypes/qCodeType",
-          "description": "Predicted weather conditions for the event."
-        },
-        "probabilityOfPrecipitation": {
-          "type": "string",
-          "description": "Percentage likelihood of precipitation."
+        {
+          "properties": {
+            "alignment": {
+              "type": "string",
+              "enum": [
+                "home",
+                "neutral"
+              ],
+              "description": "Statistics about the site, accurate for a particular occasion. home means the site is home for one of the teams or players. neutral that it is neutral to all participants in the event."
+            },
+            "attendance": {
+              "type": "string",
+              "description": "How many spectators attended during the event."
+            },
+            "attendanceAverage": {
+              "type": "string",
+              "description": "Average number of spectators that have attended."
+            },
+            "temperature": {
+              "type": "string",
+              "description": "Temperature of the event recorded during the competition."
+            },
+            "temperatureUnits": {
+              "type": "string",
+              "description": "Units of the temperature value."
+            },
+            "weatherCode": {
+              "type": "string",
+              "description": "A controlled-vocabulary description of the weather, such as sunny, partly-cloudy, etc."
+            },
+            "weatherLabel": {
+              "type": "string",
+              "description": "Additional comment about the weather."
+            },
+            "weatherWind": {
+              "type": "string",
+              "description": "Wind reading of the event recorded during the competition."
+            },
+            "weatherPrediction": {
+              "$ref": "#/dataTypes/qCodeType",
+              "description": "Predicted weather conditions for the event."
+            },
+            "probabilityOfPrecipitation": {
+              "type": "string",
+              "description": "Percentage likelihood of precipitation."
+            }
+          }
         }
-      }
+      ]
     }
   },
   "dataTypes": {
@@ -567,12 +812,286 @@
       "description": "The type of a calendar date with an optional time part which may be truncated from the second part to the month part."
     }
   },
-  "definitions": {
+  "groups": {
     "globalAttributes": {
       "id": {
         "type": "string"
       }
     },
+    "commonAttributes": {
+      "type": "object",
+      "description": "Common attributes or properties used by various other objects",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "[a-zA-Z_][a-zA-Z0-9_.-]*",
+          "description": "An XML-specific identifier for the element."
+        },
+        "class": {
+          "type": "string",
+          "description": "An open placeholder for categorization."
+        },
+        "style": {
+          "type": "string",
+          "description": "An open placeholder for reference by an external stylesheet."
+        }
+      }
+    },
+    "coverageAttributes": {
+      "type": "object",
+      "properties": {
+        "statsCoverage": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "A relative indication of how many statistics are included in the item. SportsML vocab uri: http://cv.iptc.org/newscodes/spstatscoverage/"
+        },
+        "teamCoverage": {
+          "type": "string",
+          "enum": [
+            "single-team",
+            "multi-team"
+          ],
+          "description": "Indicates whether the item contains information about one team, or many teams."
+        },
+        "durationScope": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "Indicates what class of events the included statistics apply. Example: those events that went into overtime. SportsML vocab uri: http://cv.iptc.org/newscodes/spdurationscope/"
+        },
+        "alignmentScope": {
+          "type": "string",
+          "enum": [
+            "events-all",
+            "events-home",
+            "events-away"
+          ],
+          "description": "Indicates that the included statistics apply only to events played either at home or away."
+        },
+        "position": {
+          "type": "string",
+          "description": "Indicates that the included statistics apply only to while played at a particular position."
+        },
+        "recordMakingScope": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "Indicates that the included statistics apply only to values that set a record, such as a team-high, or an individual-low."
+        },
+        "scopingLabel": {
+          "type": "string",
+          "description": "A textual description for the scope."
+        },
+        "periodValue": {
+          "type": "string",
+          "description": "Used for tracking stats and events by period."
+        },
+        "periodType": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "For certain types of periods: overtime, declared (cricket), etc."
+        },
+        "startDateTime": {
+          "$ref": "#/dataTypes/truncatedDateTimeType",
+          "description": "The starting date, with optional time, of the event for which the stats are relevant."
+        },
+        "endDateTime": {
+          "$ref": "#/dataTypes/truncatedDateTimeType",
+          "description": "The ending date, with optional time, of the event for which the stats are relevant."
+        },
+        "periodStartDateTime": {
+          "$ref": "#/dataTypes/truncatedDateTimeType",
+          "description": "The starting date, with optional time, of the period for which the stats are relevant."
+        },
+        "periodEndDateTime": {
+          "$ref": "#/dataTypes/truncatedDateTimeType",
+          "description": "The ending date, with optional time, of the period for which the stats are relevant."
+        },
+        "temporalUnitType": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The unit of performance to which the stats apply eg. single-event, season, career."
+        },
+        "temporalUnitValue": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The key of performance unit to which the stats apply."
+        },
+        "eventSpan": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Qualifier of \"most-recent-events\" value for temporal-unit attribute. Specify the number of events eg. 10 for last 10 games."
+        },
+        "opponentValue": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The key of the player, team, division, conference, league or other unit which provide the opposition relevant to the stat."
+        },
+        "opponentType": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "Whether the opponent was a player, team, etc."
+        },
+        "team": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The key of the team for which the player or team generated the stats."
+        },
+        "competition": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The key of the league or competition for which the player or team generated the stats."
+        },
+        "unitValue": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The key, other than team or league/competition, of the competitive unit for which the player or team generated the stats."
+        },
+        "unitType": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The type, other than team or league/competition, of the competitive unit for which the player or team generated the stats."
+        },
+        "situation": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "Final or current score of the team or player."
+        },
+        "locationKey": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The key of the site,venue or location where the stats were generated."
+        },
+        "venueType": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The type of event (eg. indoor, outdoor, etc.) in which the stats were generated."
+        },
+        "surfaceType": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The type of surface (eg. clay, artificial grass, etc.) upon which the stats were generated."
+        },
+        "weatherType": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "A code for the weather situation in which the stats were generated. SportsML weather codes recommended."
+        },
+        "scopeValue": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "A generic scope indicator. Use only if none of the other coverage attributes are suitable."
+        },
+        "distance": {
+          "type": "string",
+          "description": "Measure of distance for the generated stat."
+        },
+        "distanceMaximum": {
+          "type": "string",
+          "description": "Maximum distance for the generated stat."
+        },
+        "distanceMinimum": {
+          "type": "string",
+          "description": "Minimum distance for the generated stat."
+        }
+      }
+    },
+    "statAttributes": {
+      "type": "object",
+      "properties": {
+        "score": {
+          "type": "string",
+          "description": "Final or current score of the team or player."
+        },
+        "scoreOpposing": {
+          "type": "string",
+          "description": "Final or current score of the opposing team or player."
+        },
+        "scoreAverage": {
+          "type": "string",
+          "description": "Average per-game score for the team or player."
+        },
+        "scoreOpposingAverage": {
+          "type": "string",
+          "description": "Average per-game score for the opposing team or player."
+        },
+        "scoreUnits": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "Describes how the score and score-opposing is valued."
+        },
+        "scoreBehind": {
+          "type": "string",
+          "description": "The points or time behind the leading score."
+        },
+        "scoreAttempts": {
+          "type": "string",
+          "description": "Final or current number of attempts to score by a team or player. Example: in ice hockey, would represent total shots on goal."
+        },
+        "scoreAttemptsOpposing": {
+          "type": "string",
+          "description": "Final or current number of attempts to score by an opposing team or player."
+        },
+        "scoreAttemptsOnGoal": {
+          "type": "string",
+          "description": "A subset of score-attempts. Only counts those attempts that were on-goal."
+        },
+        "scoreAttemptsOnGoalOpposing": {
+          "type": "string",
+          "description": "Final or current number of attempts to score by an opposing team or player that were on-goal."
+        },
+        "scorePercentage": {
+          "type": "string",
+          "description": "Percentage of attempted scores that reached their mark."
+        },
+        "scorePercentageOpposing": {
+          "type": "string",
+          "description": "Percentage of attempted scores by opposing team or player that reached their mark."
+        },
+        "resultEffect": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "Describes the effect that the result of the event or rank changing has had on the team. Example: Whether or not a team has qualified for the playoffs, or has been promoted or demoted to a different division."
+        },
+        "eventOutcome": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "Whether the competitor won, lost, or tied. SportsML vocab uri: http://cv.iptc.org/newscodes/speventoutcome/"
+        },
+        "eventStandingPoints": {
+          "type": "string",
+          "description": "How many points were earned as a result of the outcome of this particular event."
+        },
+        "eventStandingPointsAgainst": {
+          "type": "string",
+          "description": "How many points were deducted as a result of the outcome of this particular event. This occurs, for example, in the German Handball leagues."
+        },
+        "scoreType": {
+          "type": "string",
+          "description": "Qualifies \"score\" attribute."
+        },
+        "eventsRemaining": {
+          "type": "string",
+          "description": "Number of sports-events the player has yet to participate in."
+        },
+        "timeOfPossession": {
+          "type": "string",
+          "description": "Amount of time the team or player has possession of ball (or similar object like puck)."
+        },
+        "timeOfPossessionPercentage": {
+          "type": "string",
+          "description": "Amount of time the team or player has possession of ball (or similar object like puck) expressed as a percentage of the full time of the match."
+        },
+        "timeOfPossessionPercentageOpposing": {
+          "type": "string",
+          "description": "Amount of time the opposing team or player has possession of ball (or similar object like puck) expressed as a percentage of the full time of the match."
+        },
+        "timeOfPossessionAverage": {
+          "type": "string",
+          "description": "Amount of time the team or player has possession of ball (or similar object like puck) per game."
+        },
+        "timeOfPossessionAverageOpposing": {
+          "type": "string",
+          "description": "Amount of time the opposing team or player has possession of ball (or similar object like puck) per game."
+        },
+        "seriesScore": {
+          "type": "string",
+          "description": "Number of events in a series won by team or player."
+        },
+        "seriesScoreOpposing": {
+          "type": "string",
+          "description": "Number of events in a series won by opposing team or player."
+        },
+        "adjustedScoreFor": {
+          "type": "string",
+          "description": "The final score as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
+        },
+        "adjustedScoreAgainst": {
+          "type": "string",
+          "description": "The final score against as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
+        }
+      }
+    }
+  },
+
+  "definitions": {
     "sportsContent": {
       "type": "object",
       "description": "Metadata and coverage of sporting news. | Good for scores, schedules, standings, statistics, etc.",
@@ -618,39 +1137,6 @@
         }
       }
     },
-    "baseMetadata": {
-      "description": "Basic metadata objects and attributes. Used directly by sports, standing, schedule and statistics",
-      "properties": {
-        "sportsContentCodes": {
-          "$ref": "#/definitions/sportsContentCode"
-        },
-        "sportsProperties": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/sportsProperty"
-          }
-        }
-      }
-    },
-    "commonAttributes": {
-      "type": "object",
-      "description": "Common attributes or properties used by various other objects",
-      "properties": {
-        "id": {
-          "type": "string",
-          "pattern": "[a-zA-Z_][a-zA-Z0-9_.-]*",
-          "description": "An XML-specific identifier for the element."
-        },
-        "class": {
-          "type": "string",
-          "description": "An open placeholder for categorization."
-        },
-        "style": {
-          "type": "string",
-          "description": "An open placeholder for reference by an external stylesheet."
-        }
-      }
-    },
     "conceptNameType": {
       "type": "object",
       "description": "The type of a natural language name for the concept (Type defined in this XML Schema only)",
@@ -672,24 +1158,34 @@
       "type": "object",
       "_extension": "",
       "description": "A mechanism for assigning the membership of a player, team, or associate within a division or larger organizational structure. Also, to indicate an official's affiliation with a team, club or federation, for example.",
-      "properties": {
-        "membershipIdref": {
-          "type": "string",
-          "description": "A pointer to the ID for the larger organizational structure."
+      "allOf": [
+        {
+          "$ref": "#/groups/coverageAttributes"
         },
-        "membershipType": {
-          "type": "string",
-          "description": "The type of organizational structure in which this item is a member."
+        {
+          "$ref": "#/groups/commonAttributes"
         },
-        "membershipKey": {
-          "$ref": "#/dataTypes/qCodeType",
-          "description": "A unique key for the organizational structure in which this item is a member."
-        },
-        "membershipName": {
-          "type": "string",
-          "description": "The name associated with the organizational structure in which this item is a member."
+        {
+          "properties": {
+            "membershipIdref": {
+              "type": "string",
+              "description": "A pointer to the ID for the larger organizational structure."
+            },
+            "membershipType": {
+              "type": "string",
+              "description": "The type of organizational structure in which this item is a member."
+            },
+            "membershipKey": {
+              "$ref": "#/dataTypes/qCodeType",
+              "description": "A unique key for the organizational structure in which this item is a member."
+            },
+            "membershipName": {
+              "type": "string",
+              "description": "The name associated with the organizational structure in which this item is a member."
+            }
+          }
         }
-      }
+      ]
     },
     "sportsMetadataProperties": {
       "type": "object",
@@ -748,7 +1244,7 @@
     "sportsMetadata": {
       "allOf": [
         {
-          "$ref": "#/definitions/baseMetadata"
+          "$ref": "#/complexTypes/statAttributes"
         },
         {
           "$ref": "#/definitions/sportsMetadataProperties"
@@ -782,6 +1278,12 @@
           "description": "A displayable name for the code.",
           "type": "string"
         }
+      }
+    },
+    "sportsProperties": {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/sportsProperty"
       }
     },
     "sportsProperty": {
@@ -833,10 +1335,7 @@
           }
         },
         "players": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/player"
-          }
+          "$ref": "#/definitions/player"
         },
         "wageringStats": {
           "$ref": "#/definitions/wageringStats"
@@ -958,27 +1457,27 @@
       "properties": {
         "teamMetadata": {
           "$ref": "#/complexTypes/teamMetadata",
-          "description": "A team participating in a sporting event. | Holds metadata and statistical data for team."
+          "description": ""
         },
         "teamStats": {
           "$ref": "#/complexTypes/teamStats",
-          "description": "A team participating in a sporting event. | Holds metadata and statistical data for team."
+          "description": ""
         },
         "players": {
           "$ref": "#/definitions/players",
-          "description": "A team participating in a sporting event. | Holds metadata and statistical data for team."
+          "description": ""
         },
         "wageringStats": {
           "$ref": "#/definitions/wageringStats",
-          "description": "A team participating in a sporting event. | Holds metadata and statistical data for team."
+          "description": ""
         },
         "associates": {
           "$ref": "#/definitions/associates",
-          "description": "A team participating in a sporting event. | Holds metadata and statistical data for team."
+          "description": ""
         },
         "affiliations": {
           "#ref": "#/definitions/affiliations",
-          "description": "A team participating in a sporting event. | Holds metadata and statistical data for team."
+          "description": ""
         }
       }
     },
