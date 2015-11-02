@@ -68,26 +68,28 @@
         },
         {
             "$ref":"#/groups/coverageAttributes"
-        }],
-        "properties": {
-            "membershipIdref": {
-                "type":"string",
-                "description":"A pointer to the ID for the larger organizational structure."
-            },
-            "membershipType": {
-                "type":"string",
-                "description":"The type of organizational structure in which this item is a member."
-            },
-            "membershipKey": {
-                "$ref": "#/dataTypes/QCodeType",
-                "description":"A unique key for the organizational structure in which this item is a member."
-            },
-            "membershipName": {
-                "type":"string",
-                "description":"The name associated with the organizational structure in which this item is a member."
-            }
-            
+        },
+        {
+            "properties": {
+                "membershipIdref": {
+                    "type":"string",
+                    "description":"A pointer to the ID for the larger organizational structure."
+                },
+                "membershipType": {
+                    "type":"string",
+                    "description":"The type of organizational structure in which this item is a member."
+                },
+                "membershipKey": {
+                    "$ref": "#/dataTypes/QCodeType",
+                    "description":"A unique key for the organizational structure in which this item is a member."
+                },
+                "membershipName": {
+                    "type":"string",
+                    "description":"The name associated with the organizational structure in which this item is a member."
+                }
+             }   
         }
+        ]
     },
     "rating": {
       "type": "object",
@@ -95,26 +97,28 @@
       "allOf": [
         {
           "$ref": "#/definitions/commonAttributes"
+        },
+        {
+        "properties": {
+             "ratingType": {
+               "type": "string",
+               "description": "A classification for the rating."
+             },
+             "ratingIssuer": {
+               "type": "string",
+               "description": "The entity or organization which issued the rating."
+             },
+             "ratingValue": {
+               "type": "string",
+               "description": "The value of the rating."
+             },
+             "ratingMaximum": {
+               "type": "string",
+               "description": "The maximum value for the rating."
+             }
+           }
         }
-      ],
-      "properties": {
-        "ratingType": {
-          "type": "string",
-          "description": "A classification for the rating."
-        },
-        "ratingIssuer": {
-          "type": "string",
-          "description": "The entity or organization which issued the rating."
-        },
-        "ratingValue": {
-          "type": "string",
-          "description": "The value of the rating."
-        },
-        "ratingMaximum": {
-          "type": "string",
-          "description": "The maximum value for the rating."
-        }
-      }
+        ]
     },
     "ranks": {
       "type": "array",
@@ -462,13 +466,16 @@
         "allOf": [
         {
             "$ref": "#/complexTypes/basePersonMetadata"
-        }],
-        "properties": {
-            "uniformNumber": {
-                "type":"string",
-                "description":"The number currently displayed on the uniform or jersey of the official."
+        },
+        {
+            "properties": {
+                "uniformNumber": {
+                    "type":"string",
+                    "description":"The number currently displayed on the uniform or jersey of the official."
+                }
             }
         }
+        ]
     },
     "player": {
         "type":"object",
@@ -895,39 +902,44 @@
         "allOf": [
             {
                 "$ref":"#/groups/wageringAttributes"
-            }
-        ],
-        "properties": {
-            "prediction": {
-                "$ref": "#/dataTypes/qCodeType",
-                "description": "Whether this team or player is the favorite or the underdog." 
             },
-            "predicitionOpening": {
-                "$ref": "#/dataTypes/qCodeType",
-                "description": "The opening value for this prediction."
-            },
-            "vigorish": {
-                "type":"string",
-                "description":"The commission paid to the bookmaker."
-            }
-        }
+            {
+           "properties": {
+               "prediction": {
+                   "$ref": "#/dataTypes/qCodeType",
+                   "description": "Whether this team or player is the favorite or the underdog." 
+               },
+               "predicitionOpening": {
+                   "$ref": "#/dataTypes/qCodeType",
+                   "description": "The opening value for this prediction."
+               },
+               "vigorish": {
+                   "type":"string",
+                   "description":"The commission paid to the bookmaker."
+               }
+           }
+           }
+       ]
     },
     "wagering3Attributes": {
         "type": "object",
         "description": "",
         "allOf": [{
             "$ref": "#/groups/wagering2Attributes"
-        }],
-        "properties": {
-            "line": {
-                "type": "string",
-                "description": "The value of the runline."
-            },
-            "lineOpening": {
-                "type": "string",
-                "description": "The opening line for this runline."
+        },
+        {
+            "properties": {
+                "line": {
+                    "type": "string",
+                    "description": "The value of the runline."
+                },
+                "lineOpening": {
+                    "type": "string",
+                    "description": "The opening line for this runline."
+                }
             }
         }
+        ]
     },
     "coverageAttributes": {
       "type": "object",
@@ -1645,14 +1657,16 @@
       },
       {
           "$ref": "#/groups/commonAttributes"
-      }
-      ],
+      },
+      {
       "properties": {
           "comment": {
               "type":"string",
               "description": "A generic comment for the wagering stats." 
           }
       }
+      }
+      ]
     },
     "wageringTotalScore": {
         "type":"object",
@@ -1663,8 +1677,8 @@
         },
         {
             "$ref": "#/groups/wagering2Attributes"
-        }],
-        "properties": {
+        },
+        {"properties": {
             "lineOver": {
                 "type":"string",
                 "description": "The OVER section of an over/under line."
@@ -1690,6 +1704,7 @@
                 "description":"The opening value of the combined score for the two teams."
             }
         }
+        }]
     },
     "wageringOdds": {
         "type":"object",
@@ -1704,8 +1719,8 @@
         {
             "$ref": "#/groups/wageringAttributes"
         }
-        ],
-        "properties": {
+        ,
+        {"properties": {
             "numerator": {
                 "type":"string",
                 "description": "The numerator of the chances this team or player is given."
@@ -1730,7 +1745,7 @@
                 "type":"string",
                 "description":"The total amount paid back to the winning wagerer, including the amount invested."
             }
-        }
+        }}]
     },
     "wageringPrediction": {
         "type": "object",
@@ -1742,13 +1757,13 @@
         {
             "$ref": "#/groups/coverageAttributes"
         }
-        ],
-        "properties": {
+        ,
+        {"properties": {
             "prediction": {
                 "$ref": "#/dataTypes/qCodeType",
                 "description":"Whether this team or player is the favorite or the underdog."
             }
-        }  
+        }}]  
     },
     "wageringRunline": {
         "type":"object",
@@ -1760,8 +1775,8 @@
         {
             "$ref": "#/groups/wageringAttributes"
         }
-        ],
-        "properties": {
+        ,
+        {"properties": {
             "value": {
                 "type":"string",
                 "description":"Generally +1.5 or -1.5."
@@ -1770,7 +1785,7 @@
                 "type":"string",
                 "description":"The opening value for this runline."
             }   
-        }  
+        }}]  
     },
     "wageringMoneyline": {
         "type": "object",
@@ -1792,8 +1807,8 @@
         },
         {
             "$ref": "#/groups/wagering3Attributes"
-        }],
-        "properties": {
+        },
+        {"properties": {
             "value": {
                 "type":"string",
                 "description":"The number of points for which the two scores should differ."
@@ -1802,7 +1817,7 @@
                 "type":"string",
                 "description":"The opening value."
             }
-        }
+        }}]
     },
     "associates": {
       "type": "array",
