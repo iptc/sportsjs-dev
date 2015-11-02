@@ -29,7 +29,7 @@
       "description": "A judged value placed on the team or individual. | Often used in British soccer.",
       "allOf": [
         {
-          "$ref": "#/definitions/commonAttributes"
+          "$ref": "#/groups/commonAttributes"
         }
       ],
       "properties": {
@@ -63,10 +63,10 @@
       "description": "How a team is doing in comparison to other teams or players. | May be qualified, so that one ranks teams or players according to, say, how they play at home, or within their division.",
       "allOf": [
         {
-          "$ref": "#/definitions/commonAttributes"
+          "$ref": "#/groups/commonAttributes"
         },
         {
-          "$ref": "#/definitions/coverageAttributes"
+          "$ref": "#/groups/coverageAttributes"
         },
         {
           "properties": {
@@ -261,7 +261,7 @@
       "description": "The very basic stats type for persons and teams, Extended by base2stats and used directly by officalstats.",
       "allOf": [
         {
-          "$ref": "#/definitions/commonAttributes"
+          "$ref": "#/groups/commonAttributes"
         },
         {
           "properties": {
@@ -312,10 +312,10 @@
           "$ref": "#/complexTypes/base2Stats"
         },
         {
-          "$ref": "#/definitions/coverageAttributes"
+          "$ref": "#/groups/coverageAttributes"
         },
         {
-          "$ref": "#/definitions/statAttributes"
+          "$ref": "#/groups/statAttributes"
         },
         {
           "properties": {
@@ -414,6 +414,17 @@
         "scoreAttempts": {
           "type": "string",
           "description": "The attempts to score during the period (or scoring unit)."
+        }
+      }
+    },
+    "baseMetadata": {
+      "description": "Basic metadata objects and attributes. Used directly by sports, standing, schedule and statistics",
+      "properties": {
+        "sportsContentCodes": {
+          "$ref": "#/definitions/sportsContentCode"
+        },
+        "sportsProperties": {
+          "$ref": "#/definitions/sportsProperties"
         }
       }
     },
@@ -641,7 +652,7 @@
       "description": "An element housing data having to do with a venue, stadium, arena, field, etc.",
       "allOf": [
         {
-          "$ref": "#/definitions/commonAttributes"
+          "$ref": "#/groups/commonAttributes"
         },
         {
           "properties": {
@@ -722,10 +733,10 @@
       "description": "Holder for statistics about the site.",
       "allOf": [
         {
-          "$ref": "#/definitions/commonAttributes"
+          "$ref": "#/groups/commonAttributes"
         },
         {
-          "$ref": "#/definitions/coverageAttributes"
+          "$ref": "#/groups/coverageAttributes"
         },
         {
           "properties": {
@@ -799,66 +810,10 @@
       "description": "The type of a calendar date with an optional time part which may be truncated from the second part to the month part."
     }
   },
-  "definitions": {
+  "groups": {
     "globalAttributes": {
       "id": {
         "type": "string"
-      }
-    },
-    "sportsContent": {
-      "type": "object",
-      "description": "Metadata and coverage of sporting news. | Good for scores, schedules, standings, statistics, etc.",
-      "properties": {
-        "sportsMetadata": {
-          "$ref": "#/definitions/sportsMetadata"
-        },
-        "sportsEvents": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/sportsEvent"
-          }
-        },
-        "tournaments": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/tournament"
-          }
-        },
-        "schedules": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/schedule"
-          }
-        },
-        "standings": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/standing"
-          }
-        },
-        "statistics": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/statistic"
-          }
-        },
-        "article": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/article"
-          }
-        }
-      }
-    },
-    "baseMetadata": {
-      "description": "Basic metadata objects and attributes. Used directly by sports, standing, schedule and statistics",
-      "properties": {
-        "sportsContentCodes": {
-          "$ref": "#/definitions/sportsContentCode"
-        },
-        "sportsProperties": {
-          "$ref": "#/definitions/sportsProperties"
-        }
       }
     },
     "commonAttributes": {
@@ -1131,6 +1086,54 @@
           "description": "The final score against as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
         }
       }
+    }
+  },
+
+  "definitions": {
+    "sportsContent": {
+      "type": "object",
+      "description": "Metadata and coverage of sporting news. | Good for scores, schedules, standings, statistics, etc.",
+      "properties": {
+        "sportsMetadata": {
+          "$ref": "#/definitions/sportsMetadata"
+        },
+        "sportsEvents": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/sportsEvent"
+          }
+        },
+        "tournaments": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/tournament"
+          }
+        },
+        "schedules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/schedule"
+          }
+        },
+        "standings": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/standing"
+          }
+        },
+        "statistics": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/statistic"
+          }
+        },
+        "article": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/article"
+          }
+        }
+      }
     },
     "conceptNameType": {
       "type": "object",
@@ -1155,10 +1158,10 @@
       "description": "A mechanism for assigning the membership of a player, team, or associate within a division or larger organizational structure. Also, to indicate an official's affiliation with a team, club or federation, for example.",
       "allOf": [
         {
-          "$ref": "#/definitions/coverageAttributes"
+          "$ref": "#/groups/coverageAttributes"
         },
         {
-          "$ref": "#/definitions/commonAttributes"
+          "$ref": "#/groups/commonAttributes"
         },
         {
           "properties": {
@@ -1239,7 +1242,7 @@
     "sportsMetadata": {
       "allOf": [
         {
-          "$ref": "#/definitions/baseMetadata"
+          "$ref": "#/complexTypes/statAttributes"
         },
         {
           "$ref": "#/definitions/sportsMetadataProperties"
