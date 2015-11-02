@@ -1254,20 +1254,6 @@
         }
       }
     },
-    "baseMetadata": {
-      "description": "Basic metadata objects and attributes. Used directly by sports, standing, schedule and statistics",
-      "properties": {
-        "sportsContentCodes": {
-          "$ref": "#/definitions/sportsContentCode"
-        },
-        "sportsProperties": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/sportsProperty"
-          }
-        }
-      }
-    },
     "commonAttributes": {
       "type": "object",
       "description": "Common attributes or properties used by various other objects",
