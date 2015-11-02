@@ -1370,32 +1370,33 @@
     "team": {
       "type": "object",
       "description": "A team participating in a sporting event. | Holds metadata and statistical data for team.",
-      "properties": {
-        "teamMetadata": {
-          "$ref": "#/complexTypes/teamMetadata",
-          "description": "A team participating in a sporting event. | Holds metadata and statistical data for team."
+      "allOf": [
+        {
+          "$ref": "#/groups/commonAttributes"
         },
-        "teamStats": {
-          "$ref": "#/complexTypes/teamStats",
-          "description": "A team participating in a sporting event. | Holds metadata and statistical data for team."
-        },
-        "players": {
-          "$ref": "#/definitions/players",
-          "description": "A team participating in a sporting event. | Holds metadata and statistical data for team."
-        },
-        "wageringStats": {
-          "$ref": "#/definitions/wageringStats",
-          "description": "A team participating in a sporting event. | Holds metadata and statistical data for team."
-        },
-        "associates": {
-          "$ref": "#/definitions/associates",
-          "description": "A team participating in a sporting event. | Holds metadata and statistical data for team."
-        },
-        "affiliations": {
-          "#ref": "#/definitions/affiliations",
-          "description": "A team participating in a sporting event. | Holds metadata and statistical data for team."
+        {
+          "properties": {
+            "teamMetadata": {
+              "$ref": "#/complexTypes/teamMetadata"
+            },
+            "teamStats": {
+              "$ref": "#/complexTypes/teamStats"
+            },
+            "players": {
+              "$ref": "#/definitions/players"
+            },
+            "wageringStats": {
+              "$ref": "#/definitions/wageringStats"
+            },
+            "associates": {
+              "$ref": "#/definitions/associates"
+            },
+            "affiliations": {
+              "#ref": "#/definitions/affiliations"
+            }
+          }
         }
-      }
+      ]
     },
     "players": {
       "type": "array",
