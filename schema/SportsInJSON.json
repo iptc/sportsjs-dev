@@ -247,7 +247,7 @@
       "description": "A generic stat element that can be used together with or instead of more specific stat element and attributes. With nested stats the lower levels should be regarded as having the same value as their parents if that attribute is not specifically set.",
       "properties": {
         "name": {
-          "type": "ConceptNameType",
+          "$ref": "#/definitions/conceptNameType",
           "description": "The name of the stat. SportsML names are same as attribute names of stats in the sport-specific plugins."
         },
         "stat": {
@@ -290,10 +290,10 @@
         {
           "properties": {
             "outcomeTotals": {
-              "$ref": "#/complexType/outcomeTotals"
+              "$ref": "#/complexTypes/outcomeTotals"
             },
             "outcomeResults": {
-              "$ref": "#/complexType/outcomeResults"
+              "$ref": "#/complexTypes/outcomeResults"
             },
             "points": {
               "type": "integer",
@@ -419,14 +419,54 @@
     },
     "baseMetadata": {
       "description": "Basic metadata objects and attributes. Used directly by sports, standing, schedule and statistics",
-      "properties": {
-        "sportsContentCodes": {
-          "$ref": "#/definitions/sportsContentCode"
+      "allOf": [
+        {
+          "$ref": "#/groups/commonAttributes"
         },
-        "sportsProperties": {
-          "$ref": "#/definitions/sportsProperties"
+        {
+          "$ref": "#/groups/coverageAttributes"
+        },
+        {
+          "properties": {
+            "sportsContentCodes": {
+              "$ref": "#/definitions/sportsContentCode"
+            },
+            "sportsProperties": {
+              "$ref": "#/definitions/sportsProperties"
+            }
+          }
         }
-      }
+      ]
+    },
+    "base2Metadata": {
+      "type": "object",
+      "description": "Extends the baseMetadata with more elements and attributes. Used by baseEvent and baseTournament",
+      "allOf": [
+        {
+          "$ref": "#/complexTypes/baseMetadata"
+        },
+        {
+          "properties": {
+            "name": {
+              "type": "ConceptNameType",
+              "__comments": "need to import this from all spec",
+              "description": ""
+            },
+            "site": {
+              "$ref": "#/complexTypes/site",
+              "description": ""
+            },
+            "award": {
+              "type": "#/complexTypes/awards",
+              "description": ""
+            },
+            "key": {
+              "$ref": "#/dataTypes/qCodeType",
+              "description": "The symbol or identifying key for the tournament or tournament part."
+            }
+          }
+        }
+      ]
     },
     "basePersonMetadata": {
       "type": "object",
@@ -577,7 +617,7 @@
         },
         "nationality": {
           "type": "string",
-          "description": "The country of citizinship of the entity."
+          "description": "The country of citizenship of the entity."
         }
       }
     },
@@ -1088,7 +1128,6 @@
       }
     }
   },
-
   "definitions": {
     "sportsContent": {
       "type": "object",
@@ -1543,7 +1582,37 @@
     "award": {
       "type": "object",
       "description": "A medal, ribbon, placement, or other type of award. | Can be assigned to an event, a team, or a player.",
-      "properties": {}
+      "properties": {
+        "name": {
+          "$ref": "#/definitions/conceptNameType",
+          "description": ""
+        },
+        "awardType": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "Type of award."
+        },
+        "playerOrTeamIdref": {
+          "$ref": "#/dataTypes/idRef",
+          "description": "Reference to the player or team that received the award."
+        },
+        "total": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of these such awards given to the player or team. Can be used to count medals for each country."
+        },
+        "place": {
+          "type": "string",
+          "description": "The place for which this prize is offered. For example, place=\"1\" means the first-place prize."
+        },
+        "value": {
+          "type": "string",
+          "description": "The amount of money earned by the player who came in this place."
+        },
+        "currency": {
+          "type": "string",
+          "description": "The units of currency for the value attribute."
+        }
+      }
     },
     "tournament": {
       "type": "object",
