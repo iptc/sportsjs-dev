@@ -73,39 +73,57 @@
         }
       }
     },
-    "genericStat": {
-      "type": "object",
-      "description": "A generic stat element that can be used together with or instead of more specific stat element and attributes. With nested stats the lower levels should be regarded as having the same value as their parents if that attribute is not specifically set.",
-      "properties": {
-        "name": {
-          "$ref": "#/definitions/conceptNameType",
-          "description": "The name of the stat. SportsML names are same as attribute names of stats in the sport-specific plugins."
-        },
-        "items1": {
-          "$ref": "#/definitions/genericStatAttributes",
-          "_comment": "resolve this issue. Refers to line 3562 in the sportsml-schema"
-        },
-        "items2": {
-          "$ref": "#/definitions/coverageAttributes",
-          "_comment": "resolve this issue. Refers to line XXXXX in the sportsml-schema"
-        }
+    "genericStats": {
+      "type": "array",
+      "definition": " A set of rating",
+      "items": {
+        "$ref": "#/complexTypes/genericStat"
       }
     },
-    "base3Stats": {
+    "genericStat": {
       "type": "object",
-      "description": "Extends base2stats. Further extended in genericEntitystats. Used directly by groupStats",
+      "_extension": "",
+      "description": "A generic stat element that can be used together with or instead of more specific stat element and attributes. With nested stats the lower levels should be regarded as having the same value as their parents if that attribute is not specifically set.",
       "allOf": [
         {
-          "$ref": "#/complexTypes/base2Stats"
+          "$ref": "#/groups/genericStatAttributes"
         },
         {
-          "$ref": "#/complexTypes/penaltyStats"
+          "$ref": "#/groups/coverageAttributes"
         },
         {
-          "$ref": "#/complexTypes/awards"
+          "properties": {
+            "name": {
+              "$ref": "#/definitions/conceptNameType",
+              "description": "The name of the stat. SportsML names are same as attribute names of stats in the sport-specific plugins."
+            },
+            "stats": {
+              "$ref": "#/definitions/genericStats",
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    "baseStats": {
+      "type": "object",
+      "description": "The very basic stats type for persons and teams, Extended by base2stats and used directly by officalstats.",
+      "allOf": [
+        {
+          "$ref": "#/groups/commonAttributes"
         },
         {
-          "$ref": "#/complexTypes/ranks"
+          "properties": {
+            "ratings": {
+              "$ref": "#/complexTypes/ratings"
+            },
+            "sportsProperties": {
+              "$ref": "#/definitions/sportsProperties"
+            },
+            "stats": {
+              "$ref": "#/complexTypes/stats"
+            }
+          }
         }
       ]
     },
@@ -133,7 +151,38 @@
         }
       ]
     },
+    "base3Stats": {
+      "type": "object",
+      "description": "Extends base2stats. Further extended in genericEntitystats. Used directly by groupStats",
+      "allOf": [
+        {
+          "$ref": "#/groups/coverageAttributes"
+        },
+        {
+          "$ref": "#/groups/statAttributes"
+        },
+        {
+          "$ref": "#/complexTypes/base2Stats"
+        },
+        {
+          "$ref": "#/complexTypes/penaltyStats"
+        },
+        {
+          "$ref": "#/complexTypes/awards"
+        },
+        {
+          "$ref": "#/complexTypes/ranks"
+        }
+      ]
+    },
     "baseGenericEntityStats": {
+      "type": "array",
+      "definition": " A set of baseGenericEntityStat",
+      "items": {
+        "$ref": "#/complexTypes/baseGenericEntityStat"
+      }
+    },
+    "baseGenericEntityStat": {
       "type": "object",
       "description": "Statistics that apply to a team as a whole or a player. | Not all stats are used in every sport.",
       "allOf": [
@@ -224,8 +273,7 @@
         {
           "properties": {
             "name": {
-              "type": "ConceptNameType",
-              "__comments": "need to import this from all spec",
+              "$ref": "#/definitions/conceptNameType",
               "description": ""
             },
             "site": {
@@ -247,54 +295,61 @@
     "basePersonMetadata": {
       "type": "object",
       "description": "Metadata that describes a person. | Generally does not change over the course of a sports-events. Extends the baseEntityMetadata type",
-      "properties": {
-        "dateOfBirth": {
-          "type": "string",
-          "pattern": "(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2})",
-          "description": "The day on which a person was born, normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available. Can also be YYYY-MM or just YYYY if year and/or month not available."
+      "allOf": [
+        {
+          "$ref": "#/complexTypes/baseEntityMetadata"
         },
-        "dateOfDeath": {
-          "type": "string",
-          "pattern": "(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2})",
-          "description": "The day on which a person died, normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available."
-        },
-        "height": {
-          "type": "integer",
-          "minimum": 0,
-          "description": "Height of the person. Generally in cm."
-        },
-        "weight": {
-          "type": "integer",
-          "minimum": 0,
-          "description": "Weight of a person. Generally in kg."
-        },
-        "postitionRegular": {
-          "description": "The code for the typical position of the person.",
-          "$ref": "#/dataTypes/QCodeType"
-        },
-        "positionEvent": {
-          "description": "The code for the position held by the person at this  particular sports-event.",
-          "type": "string",
-          "pattern": "[^\\s:]+:[^\\s]+"
-        },
-        "positionDepth": {
-          "description": "A ranking amongst players on the team who share the same position.",
-          "type": "string"
-        },
-        "health": {
-          "type": "string",
-          "pattern": "[^\\s:]+:[^\\s]+",
-          "description": "An indication of the health of the person"
-        },
-        "gender": {
-          "type": "string",
-          "description": "Male or female",
-          "enum": [
-            "male",
-            "female"
-          ]
+        {
+          "properties": {
+            "dateOfBirth": {
+              "type": "string",
+              "pattern": "(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2})",
+              "description": "The day on which a person was born, normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available. Can also be YYYY-MM or just YYYY if year and/or month not available."
+            },
+            "dateOfDeath": {
+              "type": "string",
+              "pattern": "(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2})",
+              "description": "The day on which a person died, normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available."
+            },
+            "height": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Height of the person. Generally in cm."
+            },
+            "weight": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Weight of a person. Generally in kg."
+            },
+            "postitionRegular": {
+              "description": "The code for the typical position of the person.",
+              "$ref": "#/dataTypes/QCodeType"
+            },
+            "positionEvent": {
+              "description": "The code for the position held by the person at this  particular sports-event.",
+              "type": "string",
+              "pattern": "[^\\s:]+:[^\\s]+"
+            },
+            "positionDepth": {
+              "description": "A ranking amongst players on the team who share the same position.",
+              "type": "string"
+            },
+            "health": {
+              "type": "string",
+              "pattern": "[^\\s:]+:[^\\s]+",
+              "description": "An indication of the health of the person"
+            },
+            "gender": {
+              "type": "string",
+              "description": "Male or female",
+              "enum": [
+                "male",
+                "female"
+              ]
+            }
+          }
         }
-      }
+      ]
     },
     "playerMetadata": {
       "type": "object",
@@ -304,12 +359,13 @@
         }
       ]
     },
-    "playerStats" : {
-        "type":"object",
-        "allOf": [
+    "playerStats": {
+      "type": "object",
+      "allOf": [
         {
-            "$ref":"basePlayerStats"  
-        }]
+          "$ref": "#/complexTypes/basePlayerStats"
+        }
+      ]
     },
     "basePlayerStats": {
       "type": "object",
@@ -317,38 +373,48 @@
       "allOf": [
         {
           "$ref": "#/complexTypes/baseGenericEntityStats"
-        }
-      ],
-      "properties": {
-        "timePlayedEvent": {
-          "type": "string",
-          "description": "Value for the amount of time played by this player in a particular sports-event."
         },
-        "timePlayedEventAverage": {
-          "type": "string",
-          "description": "Value for the average amount of time played per-event by the player over the course of a particular time-span, such as a season."
-        },
-        "eventsStarted": {
-          "type": "string",
-          "description": "Number of sports-events the player has played in since the start of the event."
+        {
+          "properties": {
+            "timePlayedEvent": {
+              "type": "string",
+              "description": "Value for the amount of time played by this player in a particular sports-event."
+            },
+            "timePlayedEventAverage": {
+              "type": "string",
+              "description": "Value for the average amount of time played per-event by the player over the course of a particular time-span, such as a season."
+            },
+            "eventsStarted": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Number of sports-events the player has played in since the start of the event."
+            }
+          }
         }
-      }
+      ]
     },
-    "baseStats": {
+    "baseEntityMetadata": {
       "type": "object",
-      "description": "The very basic stats type for persons and teams, Extended by base2stats and used directly by officalstats.",
+      "description": "Base metadata for different entities. Extended by baseTeamMetadata and basePersonMetadata and siteMetadata",
       "properties": {
-        "rating": {
-          "items": {
-            "$ref": "#/complexTypes/rating"
-          }
+        "name": {
+          "$ref": "#/definitions/conceptNameType"
         },
-        "sportsProperty": {
-          "items": {
-            "$ref": "#/definitions/sportsProperty"
-          }
+        "homeLocation": {
+          "_comments": "Need to pull this prop",
+          "type": "FlexLocationPropType"
         },
-        "stats": {}
+        "sportsProperties": {
+          "$ref": "#/definitions/sportsProperties"
+        },
+        "key": {
+          "$ref": "#/dataTypes/QCodeType",
+          "description": "The symbol or identifying key for the entity."
+        },
+        "nationality": {
+          "type": "string",
+          "description": "The country of citizenship of the entity."
+        }
       }
     },
     "basePlayerMetadata": {
@@ -396,33 +462,6 @@
           }
         }
       ]
-    },
-    "baseEntityMetadata": {
-      "type": "object",
-      "description": "Base metadata for different entities. Extended by baseTeamMetadata and basePersonMetadata and siteMetadata",
-      "properties": {
-        "name": {
-          "$ref": "#/definitions/conceptNameType"
-        },
-        "homeLocation": {
-          "_comments": "Need to pull this prop",
-          "type": "FlexLocationPropType"
-        },
-        "sportsProperties": {
-          "type": "array",
-          "items": {
-            "$ref": "#/definitions/sportsProperty"
-          }
-        },
-        "key": {
-          "$ref": "#/dataTypes/QCodeType",
-          "description": "The symbol or identifying key for the entity."
-        },
-        "nationality": {
-          "type": "string",
-          "description": "The country of citizenship of the entity."
-        }
-      }
     },
     "baseTeamMetadata": {
       "type": "object",
@@ -473,6 +512,15 @@
       "allOf": [
         {
           "$ref": "#/complexTypes/baseTeamMetadata"
+        }
+      ]
+    },
+    "baseTeamStats": {
+      "type": "object",
+      "description": "Statistics that apply to the team as a whole. | Not all stats are used in every sport.",
+      "allOf": [
+        {
+          "$ref": "#/complexTypes/baseGenericEntityStats"
         }
       ]
     },
@@ -599,6 +647,21 @@
         }
       }
     },
+    "eventRecord": {
+      "type": "object",
+      "description": "A world, national, state, or school record. | More than one record can be set by one participant at one sports-event.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "The type of record."
+        },
+        "previousRecord": {
+          "type": "string",
+          "description": "The score value of the previously-held record."
+        }
+      }
+    }
+  },
   "dataTypes": {
     "uri": {
       "type": "string"
@@ -620,7 +683,7 @@
       "description": "The type of a calendar date with an optional time part which may be truncated from the second part to the month part."
     }
   },
-  "definitions": {
+  "groups": {
     "globalAttributes": {
       "id": {
         "type": "string"
@@ -894,6 +957,32 @@
         "adjustedScoreAgainst": {
           "type": "string",
           "description": "The final score against as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
+        }
+      }
+    },
+    "genericStatAttributes": {
+      "type": "object",
+      "description": "List of attributes used in generic stats",
+      "properties": {
+        "sport": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The sport to which the stats belong."
+        },
+        "class": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The general classification of the stat within the sport eg ofensive, defensive, rebounding (basketball), special teams (american football)."
+        },
+        "statType": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The formal identifier of the kind of stat."
+        },
+        "valueType": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The formal type of the stat value eg. integer, string, etc."
+        },
+        "value": {
+          "type": "string",
+          "description": "The value of the stat."
         }
       }
     }
