@@ -17,6 +17,78 @@
         }
       }
     },
+    "associate": {
+      "type":"object",
+      "description":"Manager or coach or jockey, etc. | An individual or a group that assists a team or player, and functions in a supporting capacity.",
+      "allOf": [
+      {
+          "$ref":"#/complexTypes/associateMetadata"
+      },
+      {
+          "$ref":"#/complexTypes/associateStats"
+      },
+      {
+          "$ref":"#/complexTypes/affiliation"
+      },
+      {
+          "$ref":"#/groups/commonAttributes"
+      }]
+    },
+    "associateMetadata": {
+        "type":"object",
+        "allOf": [
+        {
+            "$ref":"#/complexTypes/baseAssociateMetadata"
+        }]
+    },
+    "associateStats": {
+        "type":"object",
+        "description": "",
+        "allOf": [
+        {
+            "$ref":"#/complexTypes/base2Stats"
+        }
+        ]
+    },
+    "baseAssociateMetadata": {
+        "type":"object",
+        "description": "Metadata that describes an associate | Generally does not change over the course of a sports-events.",
+        "allOf":
+        [
+        {
+            "$ref":"#/complexTypes/basePersonMetadata"
+        }
+        ]
+    },
+    "affiliation": {
+        "type":"object",
+        "description":"A mechanism for assigning the membership of a player, team, or associate within a division or larger organizational structure. Also, to indicate an official's affiliation with a team, club or federation, for example.",
+        "allOf": [{
+            "$ref":"#/groups/commonAttributes"
+        },
+        {
+            "$ref":"#/groups/coverageAttributes"
+        }],
+        "properties": {
+            "membershipIdref": {
+                "type":"string",
+                "description":"A pointer to the ID for the larger organizational structure."
+            },
+            "membershipType": {
+                "type":"string",
+                "description":"The type of organizational structure in which this item is a member."
+            },
+            "membershipKey": {
+                "$ref": "#/dataTypes/QCodeType",
+                "description":"A unique key for the organizational structure in which this item is a member."
+            },
+            "membershipName": {
+                "type":"string",
+                "description":"The name associated with the organizational structure in which this item is a member."
+            }
+            
+        }
+    },
     "rating": {
       "type": "object",
       "description": "A judged value placed on the team or individual. | Often used in British soccer.",
@@ -348,6 +420,77 @@
               ]
             }
           }
+        }
+      ]
+    },
+    "official": {
+        "type":"object",
+        "description":"Also referred to as umpire or referree. | Ensures that the sports-event is played according to its rules.",
+        "allOf": [
+        {
+            "$ref":"#/complexTypes/officialMetadata"
+        },
+        {
+            "$ref":"#/complexTypes/officialStats"
+        },
+        {
+            "$ref":"#/complexTypes/affiliation"
+        },
+        {
+            "$ref": "#/groups/commonAttributes"
+        }
+        ]
+    },
+    "officialMetadata": {
+        "type":"object",
+        "allOf": [
+        {
+            "$ref": "#/complexTypes/baseOfficialMetadata"
+        }]
+    },
+    "officialStats": {
+        "type":"object",
+        "allOf": [
+        {
+            "$ref":"#/complexTypes/baseStats"
+        }
+        ]
+    },
+    "baseOfficialMetadata": {
+        "type":"object",
+        "description": "Metadata about the official. | Generally does not change over the course of a sports-events.",
+        "allOf": [
+        {
+            "$ref": "#/complexTypes/basePersonMetadata"
+        }],
+        "properties": {
+            "uniformNumber": {
+                "type":"string",
+                "description":"The number currently displayed on the uniform or jersey of the official."
+            }
+        }
+    },
+    "player": {
+        "type":"object",
+        "description":"A competitor. | Their athletic talents help them decide who wins a sports-event.",
+        "allOf": [
+        {
+          "$ref": "#/complexTypes/playerMetadata"
+        },
+        {
+            "$ref":"#/complexTypes/playerStats"
+        },
+        {
+            "$ref":"#/definitions/wageringStats"
+        },
+        {
+            "$ref": "#/complesTypes/associate"
+        },
+        {
+            "$ref": "#/complexTypes/affiliation"
+        },
+        {
+            "$ref": "#/groups/commonAttributes"
         }
       ]
     },
@@ -707,6 +850,84 @@
           "description": "An open placeholder for reference by an external stylesheet."
         }
       }
+    },
+    "baseEventStateAttributeGroup": {
+        
+    },
+    "wageringAttributes": {
+        "type": "object",
+        "description": "Basic wagering attributes, used in all wagering elements",
+        "properties": {
+            "bookmakerKey": {
+                "$ref": "#/dataTypes/qCodeType",
+                "description": "Unique ID for the make of the line."
+            },
+            "bookmakerName": {
+                "type":"string",
+                "descripition":"Name of the maker of the line."
+            },
+            "rotationKey": {
+                "type":"string",
+                "description": "Reusable ID for the team generally agreed upon by a pool of bookmakers."
+            },
+            "comment": {
+                "type":"string",
+                "description":"A comment for this line. Often the same comment is supplied for  both teams in a game."
+            },
+            "dateTime": {
+                "type":"string",
+                "pattern": "(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2})",
+                "descrption": "The date and time which this wagering info was assigned by the bookmaker, normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available."
+            },
+            "context": {
+                "type": "string",
+                "description": "An indication of whether this line is a current line, or a repeat of a special-interest line from the past.",
+                "enum": [
+                    "opening",
+                    "closing",
+                    "current"
+               ]
+            }
+        }
+    },
+    "wagering2Attributes" : {
+        "type": "object",
+        "allOf": [
+            {
+                "$ref":"#/groups/wageringAttributes"
+            }
+        ],
+        "properties": {
+            "prediction": {
+                "$ref": "#/dataTypes/qCodeType",
+                "description": "Whether this team or player is the favorite or the underdog." 
+            },
+            "predicitionOpening": {
+                "$ref": "#/dataTypes/qCodeType",
+                "description": "The opening value for this prediction."
+            },
+            "vigorish": {
+                "type":"string",
+                "description":"The commission paid to the bookmaker."
+            }
+        }
+    },
+    "wagering3Attributes": {
+        "type": "object",
+        "description": "",
+        "allOf": [{
+            "$ref": "#/groups/wagering2Attributes"
+        }],
+        "properties": {
+            "line": {
+                "type": "string",
+                "description": "The value of the runline."
+            },
+            "lineOpening": {
+                "type": "string",
+                "description": "The opening line for this runline."
+            }
+        }
     },
     "coverageAttributes": {
       "type": "object",
@@ -1420,7 +1641,182 @@
     "wageringStats": {
       "type": "object",
       "description": "An object to house lines and odds for wagering. | Includes moneylines, spreads, etc.",
-      "properties": {}
+      "allOf": [
+      {
+          "$ref": "#/definitions/wageringMoneyline"
+      },
+      {
+          "$ref": "#/definitions/wageringTotalScore"
+      },
+      {
+          "$ref": "#/definitions/wageringRunline"
+      },
+      {
+          "$ref": "#/definitions/wageringOdds"
+      },
+      {
+          "$ref": "#/definitions/wageringStraightSpread"
+      },
+      {
+          "$ref": "#/groups/commonAttributes"
+      }
+      ],
+      "properties": {
+          "comment": {
+              "type":"string",
+              "description": "A generic comment for the wagering stats." 
+          }
+      }
+    },
+    "wageringTotalScore": {
+        "type":"object",
+        "description": "Total combined point/runs/goals scored in a game.",
+        "allOf": [
+        {
+          "$ref": "#/groups/commonAttributes"
+        },
+        {
+            "$ref": "#/groups/wagering2Attributes"
+        }],
+        "properties": {
+            "lineOver": {
+                "type":"string",
+                "description": "The OVER section of an over/under line."
+            },
+            "lineUnder": {
+                "type": "string",
+                "description": "The UNDER section of an over/under line."
+            },
+            "total": {
+                "type": "string",
+                "description": "The combined total of the score for the two teams."
+            },
+            "lineOverOpening": {
+                "type":"string",
+                "description":"The opening value of the OVER section of an over/under line."
+            },
+            "lineUnderOpening": {
+                "type":"string",
+                "description":"The opening value of the UNDER section of an over/under line."
+            },
+            "totalOpening": {
+                "type":"string",
+                "description":"The opening value of the combined score for the two teams."
+            }
+        }
+    },
+    "wageringOdds": {
+        "type":"object",
+        "description": "A line that gives formal odds on a team or player winning, such as 3-to-1 odds.",
+        "allOf": [
+        {
+          "$ref": "#/definitions/wageringPrediction"  
+        },
+        {
+          "$ref": "#/groups/commonAttributes"
+        },
+        {
+            "$ref": "#/groups/wageringAttributes"
+        }
+        ],
+        "properties": {
+            "numerator": {
+                "type":"string",
+                "description": "The numerator of the chances this team or player is given."
+            },
+            "denominator": {
+                "type":"string",
+                "description":"The denominator of the chances this team or player is given."
+            },
+            "numeratorOpening": {
+                "type":"string",
+                "description":"The opening value of the numerator."
+            },
+            "denominatorOpening": {
+                "type":"string",
+                "description":"The opening value of the denominator."
+            },
+            "payoutCalculation": {
+                "type":"string",
+                "description":"How much money additional gets paid should this team or player or team win."
+            },
+            "paybackAmount": {
+                "type":"string",
+                "description":"The total amount paid back to the winning wagerer, including the amount invested."
+            }
+        }
+    },
+    "wageringPrediction": {
+        "type": "object",
+        "description": "A prediction as to whether a team or player is a favorite or an underdog.",
+        "allOf": [
+        {
+          "$ref": "#/groups/commonAttributes"
+        },
+        {
+            "$ref": "#/groups/coverageAttributes"
+        }
+        ],
+        "properties": {
+            "prediction": {
+                "$ref": "#/dataTypes/qCodeType",
+                "description":"Whether this team or player is the favorite or the underdog."
+            }
+        }  
+    },
+    "wageringRunline": {
+        "type":"object",
+        "description": "A line used in baseball.",
+        "allOf": [
+        {
+          "$ref": "#/groups/commonAttributes"
+        },
+        {
+            "$ref": "#/groups/wageringAttributes"
+        }
+        ],
+        "properties": {
+            "value": {
+                "type":"string",
+                "description":"Generally +1.5 or -1.5."
+            },
+            "valueOpening": {
+                "type":"string",
+                "description":"The opening value for this runline."
+            }   
+        }  
+    },
+    "wageringMoneyline": {
+        "type": "object",
+        "description": "Odds in terms of money. | Negative amount indicates wagerer must lay that amount to win say a hundred dollars. Positive amount indicates wagerer gets that amount for every hundred dollars wagered.",
+        "allOf": [
+        {
+          "$ref": "#/groups/commonAttributes"
+        },
+        {
+            "$ref": "#/groups/wagering3Attributes"
+        }]
+    },
+    "wageringStraightSpread": {
+        "type":"object",
+        "description":"A wager built around the different between the scores of two teams.",
+        "allOf": [
+        {
+          "$ref": "#/groups/commonAttributes"
+        },
+        {
+            "$ref": "#/groups/wagering3Attributes"
+        }],
+        "properties": {
+            "value": {
+                "type":"string",
+                "description":"The number of points for which the two scores should differ."
+            },
+            "valueOpening": {
+                "type":"string",
+                "description":"The opening value."
+            }
+        }
     },
     "associates": {
       "type": "array",
