@@ -143,6 +143,9 @@
           "$ref": "#/complexTypes/base3Stats"
         },
         {
+          "$ref": "#/complexType/subScore"  
+        }]
+          ,
           "properties": {
             "eventsPlayed": {
               "type": "integer",
@@ -155,7 +158,6 @@
             }
           }
         }
-      ]
     },
     "subScore": {
       "type": "object",
@@ -261,7 +263,7 @@
       "allOf": [
         {
           "$ref": "#/complexTypes/baseGenericEntityStats"
-        }
+        } 
       ],
       "properties": {
         "timePlayedEvent": {
