@@ -70,7 +70,7 @@
                     "description":"The type of organizational structure in which this item is a member."
                 },
                 "membershipKey": {
-                    "$ref": "#/dataTypes/QCodeType",
+                    "$ref": "#/dataTypes/qCodeType",
                     "description":"A unique key for the organizational structure in which this item is a member."
                 },
                 "membershipName": {
@@ -480,7 +480,7 @@
               "optional": "true"
             },
             "status": {
-              "$ref": "#/dataTypes/QCodeType",
+              "$ref": "#/dataTypes/qCodeType",
               "description": "Whether a player starts playing at the beginning of a sports-event, joins mid-game, or is not available to participate.",
               "optional": "true"
             },
@@ -495,7 +495,7 @@
               "optional": "true"
             },
             "scratchReason": {
-              "$ref": "#/dataTypes/QCodeType",
+              "$ref": "#/dataTypes/qCodeType",
               "description": "An indication as to why this player did not play in an event.",
               "optional": "true"
             },
@@ -970,11 +970,11 @@
           "description": "The score for that period (or scoring unit)."
         },
         "subScoreType": {
-          "$ref": "#/dataTypes/QCodeType",
+          "$ref": "#/dataTypes/qCodeType",
           "description": "The type of sub-score."
         },
         "subScoreKey": {
-          "$ref": "#/dataTypes/QCodeType",
+          "$ref": "#/dataTypes/qCodeType",
           "description": "The symbol for the sub-score unit."
         },
         "subScoreName": {
@@ -1000,7 +1000,7 @@
     "uri": {
       "type": "string"
     },
-    "QCodeType": {
+    "qCodeType": {
       "type": "string",
       "pattern": "[^\\s:]+:[^\\s]+"
     },
