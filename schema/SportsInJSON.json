@@ -810,6 +810,130 @@
           "description": "The score value of the previously-held record."
         }
       }
+    },
+    "tournament": {
+        "type": "object",
+        "description": "A structured series of competitions within one sport. | Generally organized by a particular sponsoring body. Can happen all in one day, or be spread out - like the Davis Cup in tennis.",
+        "allOf": [
+        {
+            "$ref":"#/complexTypes/tournamentMetadata"
+        },
+        {
+            "$ref":"#/complexTypes/standing"
+        },
+        {
+            "$ref":"#/complexTypes/tournamentDivision"
+        },
+        {
+            "$ref":"#/complexTypes/tournamentPart"
+        },
+        {
+            "$ref":"#/complexTypes/sportsEvent"
+        },
+        {
+            "$ref":"#/groups/commonAttributes"
+        }
+        ]
+    },
+    "tourmamentPartMetadata": {
+        "type":"object",
+        "description": "General information about the division of this tournament. | Where and when this division is competing.",
+        "allOf": [
+        {
+            "$ref": "#/complexTypes/baseTournamentMetadata"
+        },
+        {
+            "properties": {
+                "type": {
+                    "$ref": "#/dataTypes/qCodeType",
+                    "description": "The type of phase of the tournament: group, elimination, etc. SportsML vocab uri: http://cv.iptc.org/newscodes/sptournamentstage/"
+                }
+            }
+        }
+        ],
+        "required": ["type"]
+    },
+    "tourmamentPart": {
+        "type":"object",
+        "description":"A tournament part. Use it do group specific parts of a tournament, like a stage or a round.",
+        "allOf": [
+        {
+            "$ref": "#/complexType/tournamentPartMetadata"
+        },
+        {
+            "$ref": "#/complexType/standing"
+        },
+        {
+            "$ref": "#/complexType/tournamentPart"
+        },
+        {
+            "$ref": "#/complexType/sportsEvent"
+        },
+        {
+            "$ref": "#/groups/commonAttributes"
+        }, 
+        {
+            "properties": {
+                "partIndex": {
+                    "type":"string",
+                    "description":" For provider-specific tournament indexing systems. DPA, for example, has one that looks like this: part-name='Group A' part-index='p1/1/p2/A'",
+                    "optional": "true"
+                }
+            }
+        }
+        ]
+    },
+    "baseTournamentMetadata": {
+        "type":"object",
+        "description":"Background data about a tournament or tournament part. | Where and when the this tournament took place.",
+        "allOf": [
+        {
+            "$ref": "#/complexTypes/base2Metadata"
+        },
+        {
+            "$ref": "#/groups/tournamentAttributes"
+        }
+        ]
+    },
+    "tournamentMetadata": {
+        "type": "object",
+        "description": "Background data about a tournament. | Where and when the this tournament took place",
+        "allOf": [
+        {
+            "$ref": "#/complexTypes/baseTournamentMetadata"
+        }
+        ]
+    },
+    "standing": {
+        "type":"object",
+        "description": "Also known as a (league) table | A ranked, comparative list of team or individual records."
+    },
+    "standingMetadata": {
+        "type":"object",
+        "description": "A series of team or individual records. | A series of team or individual records.",
+        "allOf": [
+        {
+            "$ref": "#/complexTypes/baseMetadata"   
+        },
+        {
+            "$ref": "#/groups/commonAttributes"
+        },
+        {
+            "$ref": "#/complexTypes/player"
+        },
+        {
+            "$ref": "#/complexTypes/team"
+        },
+        {
+            "properties": {
+                "contentLabel": {
+                    "type":"string",
+                    "description": "A displayable label describing this standing.",
+                    "optional":"true"
+                }
+            }
+        }
+        ]
     }
   },
   "dataTypes": {
@@ -838,6 +962,31 @@
       "id": {
         "type": "string"
       }
+    },
+    "tournamentAttributes": {
+        "type": "object",
+        "description": "Attributes that are used in all tournament constructions.",
+        "properties": {
+            "status": {
+               "$ref": "#/dataTypes/qCodeType",
+               "description": "The state of the tournament or tournament part, describing whether it has started, is in progress, etc."
+            },
+            "minimumSubparts": {
+                "type":"integer",
+                "description":"The minimum number of subparts for this level in a tournament. The subparts can either be tournament-part or sports-event.",
+                "minimum": 0
+            },
+            "maximumSubparts": {
+                "type":"integer",
+                "description":"The maximum number of subparts for this level in a tournament. The subparts can either be tournament-part or sports-event.",
+                "minimum":0
+            },
+            "number": {
+                "type":"integer",
+                "description":"The number of the particular tournament part eg. 2 for second round or second leg",
+                "minimum":0
+            }
+        }
     },
     "commonAttributes": {
       "type": "object",
