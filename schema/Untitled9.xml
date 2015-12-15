@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sports-content xmlns="http://iptc.org/std/SportsML/2008-04-01/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://iptc.org/std/SportsML/2008-04-01/ file:/C:/Utvikling/IPTC/std/SportsML/2.2/specification/sportsml.xsd">
+    <sports-metadata doc-id="ffdsaf">
+        <sports-title>Travløp i dag</sports-title>
+    </sports-metadata>
+    
+</sports-content>

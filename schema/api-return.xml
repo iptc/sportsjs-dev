@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sports-content xmlns="http://iptc.org/std/nar/2006-10-01/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://iptc.org/std/nar/2006-10-01/ file:/C:/Utvikling/IPTC/std/SportsML/sportsml-3-dev/3.0/sportsml.xsd">
+    <api-response>
+        <sports-content>
+            <teams>
+                <team>
+                    <team-metadata/>
+                    <player>
+                        <player-metadata/>
+                    </player>
+                </team>
+            </teams>
+        </sports-content>
+    </api-response>
+
+    <api-response>
+        <sports-content>
+            <player>
+                <player-metadata/>
+            </player>
+        </sports-content>
+    </api-response>
+    
+    <api-response>
+        <sports-content>
+         <officials>
+             <official>
+                 <official-metadata />
+             </official>
+         </officials>
+        </sports-content>
+    </api-response>
+    
+    <players>
+        <player>
+            <player-metadata position-event="position:coach"/>
+        </player>
+    </players>
+    <sports-event>
+        <event-metadata>
+            <site>
+                <site-metadata >
+                    <home-location>
+                        <POIDetails>
+                        </POIDetails>
+                    </home-location>
+                </site-metadata>
+            </site>
+        </event-metadata>
+        <team>
+            <team-metadata/>
+            <player>
+                <player-metadata position-event="position:coach"/>
+            </player>
+        </team>
+        <officials>
+            <official>
+                <official-metadata/>
+            </official>
+        </officials>
+    </sports-event>
+</sports-content>

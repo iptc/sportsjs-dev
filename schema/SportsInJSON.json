@@ -1070,6 +1070,48 @@
     "baseEventStateAttributeGroup": {
         
     },
+    "conceptDefinitionGroup": {
+        "type": "object",
+        "description": "A group of properites required to define the concept",
+        "properties": {
+            "name": {
+                "type": "string"                
+            },
+            "definition": {
+                "type": "string"
+            },
+            "note": {
+                "type": "string"
+            }, 
+            "facet": {
+                "type": "string"
+            },
+            "remoteInfo": {
+                "type": "string"
+            },
+            "hierarchyInfo": {
+                "type": "string"
+            }
+        }
+    },
+    "conceptRelationshipsGroup": {
+      "type": "object",
+      "description": "A group of properites required to indicate relationships of the concept to other concepts",
+      "properties": {
+          "sameAs": {
+              "type": "sameAsType"
+          },
+          "broader": {
+              "type": "relatedConceptType"
+          },
+          "narrower": {
+              "type": "relatedConceptType"
+          },
+          "related": {
+              "type": "relatedConceptType"
+          }
+      }
+    },
     "wageringAttributes": {
         "type": "object",
         "description": "Basic wagering attributes, used in all wagering elements",
@@ -1503,6 +1545,9 @@
         "part": {},
         "parturi": {}
       }
+    },
+    "proptypes": {
+        "proptype": ""
     },
     "affiliations": {
       "type": "array",
