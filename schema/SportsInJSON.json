@@ -793,6 +793,46 @@
         }
       }
     },
+    "statusChange": {
+        "type": "object",
+        "description": "Indicates status change of an entity.",
+        "allOf": [
+        {
+          "$ref": "#/groups/commonAttributes"
+        },
+        {
+            "$ref": "#/groups/coverageAttributes"
+        }
+        ,
+        {"properties": {
+            "changer-idref": {
+            "$ref": "#/dataTypes/idRef",
+            "description": "A pointer to the player or team that has undergone the status change."
+            },
+            "status-change-type": {
+                "$ref": "#/dataTypes/qCodeType",
+                "description":"What type of change was made in the status of a player or team. Examples are injury, trade, cut."
+            },
+            "original-status": {
+                "type":"string",
+                "description": "What the original status of the player or team was. Examples are active, inactive, disabled-list."
+            },
+            "new-status": {
+                "type":"string",
+                "description": "What the new status of the player or team is. Examples are active, inactive, disabled-list."
+            },
+            "original-idref": {
+                "$ref": "#/dataTypes/idRef",
+                "description": "Generally, a pointer to the original team that the player in changer-idref was affiliated with."
+            },
+            "new-idref": {
+                "$ref": "#/dataTypes/idRef",
+                "description": "Generally, a pointer to the new team that the player in changer-idref is now affiliated with."
+            }
+        },
+        "required": ["status-change-type", "changer-idref"]
+        }]
+    },
     "eventRecord": {
       "type": "object",
       "description": "A world, national, state, or school record. | More than one record can be set by one participant at one sports-event.",
