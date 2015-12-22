@@ -871,7 +871,7 @@
         }
         ]
     },
-    "tourmamentPartMetadata": {
+    "tournamentPartMetadata": {
         "type":"object",
         "description": "General information about the division of this tournament. | Where and when this division is competing.",
         "allOf": [
@@ -889,7 +889,7 @@
         ],
         "required": ["type"]
     },
-    "tourmamentPart": {
+    "tournamentPart": {
         "type":"object",
         "description":"A tournament part. Use it do group specific parts of a tournament, like a stage or a round.",
         "allOf": [
