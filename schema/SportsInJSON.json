@@ -397,8 +397,8 @@
             "$ref": "#/complexTypes/site",
             "description": ""
           },
-          "award": {
-            "type": "#/complexTypes/awards",
+          "awards": {
+            "$ref": "#/complexTypes/awards",
             "description": ""
           },
           "key": {
@@ -2086,7 +2086,7 @@
     },
     "participantAttributes": {
       "type": "object",
-      "allOf": ["#/groups/commonParticipantAttributes"]
+      "allOf": [ {"$ref": "#/groups/commonParticipantAttributes" }]
     }
   },
   "definitions": {
