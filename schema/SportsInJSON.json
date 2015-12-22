@@ -5,7 +5,7 @@
   "vocab": {
     "bodySideList": {
       "type": "string",
-      "enum": [ "right", "left", "both" ]
+      "enum": ["right", "left", "both"]
     }
   },
   "complexTypes": {
@@ -24,101 +24,88 @@
       }
     },
     "associate": {
-      "type":"object",
-      "description":"Manager or coach or jockey, etc. | An individual or a group that assists a team or player, and functions in a supporting capacity.",
-      "allOf": [
-      {
-          "$ref":"#/complexTypes/associateMetadata"
-      },
-      {
-          "$ref":"#/complexTypes/associateStats"
-      },
-      {
-          "$ref":"#/complexTypes/affiliation"
-      },
-      {
-          "$ref":"#/groups/commonAttributes"
+      "type": "object",
+      "description": "Manager or coach or jockey, etc. | An individual or a group that assists a team or player, and functions in a supporting capacity.",
+      "allOf": [{
+        "$ref": "#/complexTypes/associateMetadata"
+      }, {
+        "$ref": "#/complexTypes/associateStats"
+      }, {
+        "$ref": "#/complexTypes/affiliation"
+      }, {
+        "$ref": "#/groups/commonAttributes"
       }]
     },
     "associateMetadata": {
-        "type":"object",
-        "allOf": [
-        {
-            "$ref":"#/complexTypes/baseAssociateMetadata"
-        }]
+      "type": "object",
+      "allOf": [{
+        "$ref": "#/complexTypes/baseAssociateMetadata"
+      }]
     },
     "associateStats": {
-        "type":"object",
-        "description": "",
-        "allOf": [
-        {
-            "$ref":"#/complexTypes/base2Stats"
-        }
-        ]
+      "type": "object",
+      "description": "",
+      "allOf": [{
+        "$ref": "#/complexTypes/base2Stats"
+      }]
     },
     "affiliation": {
-        "type":"object",
-        "description":"A mechanism for assigning the membership of a player, team, or associate within a division or larger organizational structure. Also, to indicate an official's affiliation with a team, club or federation, for example.",
-        "allOf": [{
-            "$ref":"#/groups/commonAttributes"
-        },
-        {
-            "$ref":"#/groups/coverageAttributes"
-        },
-        {
-            "properties": {
-                "membershipIdref": {
-                    "type":"string",
-                    "description":"A pointer to the ID for the larger organizational structure."
-                },
-                "membershipType": {
-                    "type":"string",
-                    "description":"The type of organizational structure in which this item is a member."
-                },
-                "membershipKey": {
-                    "$ref": "#/dataTypes/qCodeType",
-                    "description":"A unique key for the organizational structure in which this item is a member."
-                },
-                "membershipName": {
-                    "type":"string",
-                    "description":"The name associated with the organizational structure in which this item is a member."
-                }
-             }   
+      "type": "object",
+      "description": "A mechanism for assigning the membership of a player, team, or associate within a division or larger organizational structure. Also, to indicate an official's affiliation with a team, club or federation, for example.",
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "$ref": "#/groups/coverageAttributes"
+      }, {
+        "properties": {
+          "membershipIdref": {
+            "type": "string",
+            "description": "A pointer to the ID for the larger organizational structure."
+          },
+          "membershipType": {
+            "type": "string",
+            "description": "The type of organizational structure in which this item is a member."
+          },
+          "membershipKey": {
+            "$ref": "#/dataTypes/qCodeType",
+            "description": "A unique key for the organizational structure in which this item is a member."
+          },
+          "membershipName": {
+            "type": "string",
+            "description": "The name associated with the organizational structure in which this item is a member."
+          }
         }
-        ]
+      }]
     },
     "rating": {
       "type": "object",
       "description": "A judged value placed on the team or individual. | Often used in British soccer.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/commonAttributes"
-        },
-        {
+      "allOf": [{
+        "$ref": "#/definitions/commonAttributes"
+      }, {
         "properties": {
-             "ratingType": {
-               "type": "string",
-               "description": "A classification for the rating."
-             },
-             "ratingIssuer": {
-               "type": "string",
-               "description": "The entity or organization which issued the rating."
-             },
-             "ratingValue": {
-               "type": "string",
-               "description": "The value of the rating."
-             },
-             "ratingMaximum": {
-               "type": "string",
-               "description": "The maximum value for the rating."
-             }
-           }
+          "ratingType": {
+            "type": "string",
+            "description": "A classification for the rating."
+          },
+          "ratingIssuer": {
+            "type": "string",
+            "description": "The entity or organization which issued the rating."
+          },
+          "ratingValue": {
+            "type": "string",
+            "description": "The value of the rating."
+          },
+          "ratingMaximum": {
+            "type": "string",
+            "description": "The maximum value for the rating."
+          }
         }
-        ]
+      }]
     },
     "ranks": {
       "type": "array",
-      "definition": " A set of ranks",
+      "description": " A set of ranks",
       "items": {
         "$ref": "#/complexTypes/rank"
       }
@@ -147,7 +134,7 @@
     },
     "genericStats": {
       "type": "array",
-      "definition": " A set of rating",
+      "description": " A set of rating",
       "items": {
         "$ref": "#/complexTypes/genericStat"
       }
@@ -156,60 +143,53 @@
       "type": "object",
       "_extension": "",
       "description": "A generic stat element that can be used together with or instead of more specific stat element and attributes. With nested stats the lower levels should be regarded as having the same value as their parents if that attribute is not specifically set.",
-      "allOf": [
-        {
-          "$ref": "#/groups/genericStatAttributes"
-        },
-        {
-          "$ref": "#/groups/coverageAttributes"
-        },
-        {
-          "properties": {
-            "name": {
-              "$ref": "#/definitions/conceptNameType",
-              "description": "The name of the stat. SportsML names are same as attribute names of stats in the sport-specific plugins."
-            },
-            "stats": {
-              "$ref": "#/definitions/genericStats",
-              "description": ""
-            }
+      "allOf": [{
+        "$ref": "#/groups/genericStatAttributes"
+      }, {
+        "$ref": "#/groups/coverageAttributes"
+      }, {
+        "properties": {
+          "name": {
+            "$ref": "#/definitions/conceptNameType",
+            "description": "The name of the stat. SportsML names are same as attribute names of stats in the sport-specific plugins."
+          },
+          "stats": {
+            "$ref": "#/definitions/genericStats",
+            "description": ""
           }
         }
-      ]
+      }]
     },
     "baseAction": {
       "type": "object",
-      "allOf": [
-        { "$ref": "#/groups/action" },
-        {
-          "properties": {
-            "actions": { "$ref": "#/complexTypes/actions" },
-            "participants": { "$ref": "#/complexTypes/participants" }
+      "allOf": [{
+        "$ref": "#/groups/action"
+      }, {
+        "properties": {
+          "actions": {
+            "$ref": "#/complexTypes/actions"
+          },
+          "participants": {
+            "$ref": "#/complexTypes/participants"
           }
         }
-      ]
+      }]
     },
     "baseAssociateMetadata": {
-        "type":"object",
-        "description": "Metadata that describes an associate | Generally does not change over the course of a sports-events.",
-        "allOf":
-        [
-        {
-            "$ref":"#/complexTypes/basePersonMetadata"
-        }
-        ]
+      "type": "object",
+      "description": "Metadata that describes an associate | Generally does not change over the course of a sports-events.",
+      "allOf": [{
+        "$ref": "#/complexTypes/basePersonMetadata"
+      }]
     },
     "baseEventMetadata": {
       "type": "object",
       "description": "Background information about an event. | Where, when, and what an event is.",
-      "allOf": [
-        {
-          "$ref":"#/complexTypes/base2Metadata"
-        },
-        {
-          "$ref":"#/groups/baseEventState"
-        },
-        {
+      "allOf": [{
+        "$ref": "#/complexTypes/base2Metadata"
+      }, {
+        "$ref": "#/groups/baseEventState"
+      }, {
         "properties": {
           "eventSponsors": {
             "description": "A displayable name for the event-recurring-key.",
@@ -292,94 +272,77 @@
             "type": "string"
           }
         }
-      }
-      ]
+      }]
     },
     "baseTournamentMetadata": {
-        "type":"object",
-        "description":"Background data about a tournament or tournament part. | Where and when the this tournament took place.",
-        "allOf": [
-        {
-            "$ref": "#/complexTypes/base2Metadata"
-        },
-        {
-            "$ref": "#/groups/tournamentAttributes"
-        }
-        ]
+      "type": "object",
+      "description": "Background data about a tournament or tournament part. | Where and when the this tournament took place.",
+      "allOf": [{
+        "$ref": "#/complexTypes/base2Metadata"
+      }, {
+        "$ref": "#/groups/tournamentAttributes"
+      }]
     },
     "baseStats": {
       "type": "object",
       "description": "The very basic stats type for persons and teams, Extended by base2stats and used directly by officalstats.",
-      "allOf": [
-        {
-          "$ref": "#/groups/commonAttributes"
-        },
-        {
-          "properties": {
-            "ratings": {
-              "$ref": "#/complexTypes/ratings"
-            },
-            "sportsProperties": {
-              "$ref": "#/definitions/sportsProperties"
-            },
-            "stats": {
-              "$ref": "#/complexTypes/stats"
-            }
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "properties": {
+          "ratings": {
+            "$ref": "#/complexTypes/ratings"
+          },
+          "sportsProperties": {
+            "$ref": "#/definitions/sportsProperties"
+          },
+          "stats": {
+            "$ref": "#/complexTypes/stats"
           }
         }
-      ]
+      }]
     },
     "base2Stats": {
       "type": "object",
       "description": "Second level stats. Extends baseStats. Extended further in base3stats and used directly in associate",
-      "allOf": [
-        {
-          "$ref": "#/complexTypes/baseStats"
-        },
-        {
-          "properties": {
-            "outcomeTotals": {
-              "$ref": "#/complexTypes/outcomeTotals"
-            },
-            "outcomeResults": {
-              "$ref": "#/complexTypes/outcomeResults"
-            },
-            "points": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "Points accumulated by this associate. For example, points earned by a NASCAR owner."
-            }
+      "allOf": [{
+        "$ref": "#/complexTypes/baseStats"
+      }, {
+        "properties": {
+          "outcomeTotals": {
+            "$ref": "#/complexTypes/outcomeTotals"
+          },
+          "outcomeResults": {
+            "$ref": "#/complexTypes/outcomeResults"
+          },
+          "points": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Points accumulated by this associate. For example, points earned by a NASCAR owner."
           }
         }
-      ]
+      }]
     },
     "base3Stats": {
       "type": "object",
       "description": "Extends base2stats. Further extended in genericEntitystats. Used directly by groupStats",
-      "allOf": [
-        {
-          "$ref": "#/groups/coverageAttributes"
-        },
-        {
-          "$ref": "#/groups/statAttributes"
-        },
-        {
-          "$ref": "#/complexTypes/base2Stats"
-        },
-        {
-          "$ref": "#/complexTypes/penaltyStats"
-        },
-        {
-          "$ref": "#/complexTypes/awards"
-        },
-        {
-          "$ref": "#/complexTypes/ranks"
-        }
-      ]
+      "allOf": [{
+        "$ref": "#/groups/coverageAttributes"
+      }, {
+        "$ref": "#/groups/statAttributes"
+      }, {
+        "$ref": "#/complexTypes/base2Stats"
+      }, {
+        "$ref": "#/complexTypes/penaltyStats"
+      }, {
+        "$ref": "#/complexTypes/awards"
+      }, {
+        "$ref": "#/complexTypes/ranks"
+      }]
     },
     "baseGenericEntityStats": {
       "type": "array",
-      "definition": " A set of baseGenericEntityStat",
+      "description": " A set of baseGenericEntityStat",
       "items": {
         "$ref": "#/complexTypes/baseGenericEntityStat"
       }
@@ -387,171 +350,136 @@
     "baseGenericEntityStat": {
       "type": "object",
       "description": "Statistics that apply to a team as a whole or a player. | Not all stats are used in every sport.",
-      "allOf": [
-        {
-          "$ref": "#/complexTypes/base3Stats"
-        },
-        {
-          "properties": {
-            "eventsPlayed": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "The number of sports-events in which this team or player has already participated."
-            },
-            "timePlayedTotal": {
-              "type": "string",
-              "description": "Value for the amount of time played by the team or player over the course of a particular time-span, such as a season."
-            }
+      "allOf": [{
+        "$ref": "#/complexTypes/base3Stats"
+      }, {
+        "properties": {
+          "eventsPlayed": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "The number of sports-events in which this team or player has already participated."
+          },
+          "timePlayedTotal": {
+            "type": "string",
+            "description": "Value for the amount of time played by the team or player over the course of a particular time-span, such as a season."
           }
         }
-      ]
+      }]
     },
     "baseMetadata": {
       "description": "Basic metadata objects and attributes. Used directly by sports, standing, schedule and statistics",
-      "allOf": [
-        {
-          "$ref": "#/groups/commonAttributes"
-        },
-        {
-          "$ref": "#/groups/coverageAttributes"
-        },
-        {
-          "properties": {
-            "sportsContentCodes": {
-              "$ref": "#/definitions/sportsContentCode"
-            },
-            "sportsProperties": {
-              "$ref": "#/definitions/sportsProperties"
-            }
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "$ref": "#/groups/coverageAttributes"
+      }, {
+        "properties": {
+          "sportsContentCodes": {
+            "$ref": "#/definitions/sportsContentCode"
+          },
+          "sportsProperties": {
+            "$ref": "#/definitions/sportsProperties"
           }
         }
-      ]
+      }]
     },
     "base2Metadata": {
       "type": "object",
       "description": "Extends the baseMetadata with more elements and attributes. Used by baseEvent and baseTournament",
-      "allOf": [
-        {
-          "$ref": "#/complexTypes/baseMetadata"
-        },
-        {
-          "properties": {
-            "name": {
-              "$ref": "#/definitions/conceptNameType",
-              "description": ""
-            },
-            "site": {
-              "$ref": "#/complexTypes/site",
-              "description": ""
-            },
-            "award": {
-              "type": "#/complexTypes/awards",
-              "description": ""
-            },
-            "key": {
-              "$ref": "#/dataTypes/qCodeType",
-              "description": "The symbol or identifying key for the tournament or tournament part."
-            }
+      "allOf": [{
+        "$ref": "#/complexTypes/baseMetadata"
+      }, {
+        "properties": {
+          "name": {
+            "$ref": "#/definitions/conceptNameType",
+            "description": ""
+          },
+          "site": {
+            "$ref": "#/complexTypes/site",
+            "description": ""
+          },
+          "award": {
+            "type": "#/complexTypes/awards",
+            "description": ""
+          },
+          "key": {
+            "$ref": "#/dataTypes/qCodeType",
+            "description": "The symbol or identifying key for the tournament or tournament part."
           }
         }
-      ]
+      }]
     },
     "basePersonMetadata": {
       "type": "object",
       "description": "Metadata that describes a person. | Generally does not change over the course of a sports-events. Extends the baseEntityMetadata type",
-      "allOf": [
-        {
-          "$ref": "#/complexTypes/baseEntityMetadata"
-        },
-        {
-          "properties": {
-            "dateOfBirth": {
-              "type": "string",
-              "pattern": "(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2})",
-              "description": "The day on which a person was born, normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available. Can also be YYYY-MM or just YYYY if year and/or month not available.",
-              "optional": "true"
-            },
-            "dateOfDeath": {
-              "type": "string",
-              "pattern": "(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2})",
-              "description": "The day on which a person died, normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available.",
-              "optional": "true"
-            },
-            "height": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "Height of the person. Generally in cm.",
-              "optional": "true"
-            },
-            "weight": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "Weight of a person. Generally in kg.",
-              "optional": "true"
-            },
-            "postitionRegular": {
-              "description": "The code for the typical position of the person.",
-              "$ref": "#/dataTypes/qCodeType",
-              "optional": "true"
-            },
-            "positionEvent": {
-              "description": "The code for the position held by the person at this  particular sports-event.",
-              "type": "string",
-              "pattern": "[^\\s:]+:[^\\s]+",
-              "optional": "true"
-            },
-            "positionDepth": {
-              "description": "A ranking amongst players on the team who share the same position.",
-              "type": "string",
-              "optional": "true"
-            },
-            "health": {
-              "type": "string",
-              "pattern": "[^\\s:]+:[^\\s]+",
-              "description": "An indication of the health of the person",
-              "optional": "true"
-            },
-            "gender": {
-              "type": "string",
-              "description": "Male or female",
-              "enum": [
-                "male",
-                "female"
-              ],
-              "optional": "true"
-            }
+      "allOf": [{
+        "$ref": "#/complexTypes/baseEntityMetadata"
+      }, {
+        "properties": {
+          "dateOfBirth": {
+            "$ref": "#/dataTypes/dateTime",
+            "description": "The day on which a person was born, normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available. Can also be YYYY-MM or just YYYY if year and/or month not available."
+          },
+          "dateOfDeath": {
+            "$ref": "#/dataTypes/dateTime",
+            "description": "The day on which a person died, normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available."
+          },
+          "height": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Height of the person. Generally in cm."
+          },
+          "weight": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Weight of a person. Generally in kg."
+          },
+          "postitionRegular": {
+            "description": "The code for the typical position of the person.",
+            "$ref": "#/dataTypes/qCodeType"
+          },
+          "positionEvent": {
+            "description": "The code for the position held by the person at this  particular sports-event.",
+            "$ref": "#/dataTypes/qCodeType"
+          },
+          "positionDepth": {
+            "description": "A ranking amongst players on the team who share the same position.",
+            "type": "string"
+          },
+          "health": {
+            "description": "An indication of the health of the person",
+            "$ref": "#/dataTypes/qCodeType"
+          },
+          "gender": {
+            "type": "string",
+            "description": "Male or female",
+            "enum": ["male", "female"]
           }
         }
-      ]
+      }]
     },
     "basePlayerStats": {
       "type": "object",
       "description": "Statistics that capture how a player has performed. | Generally does change over the course of a sports-event.",
-      "allOf": [
-        {
-          "$ref": "#/complexTypes/baseGenericEntityStats"
-        },
-        {
-          "properties": {
-            "timePlayedEvent": {
-              "type": "string",
-              "description": "Value for the amount of time played by this player in a particular sports-event.",
-              "optional": "true"
-            },
-            "timePlayedEventAverage": {
-              "type": "string",
-              "description": "Value for the average amount of time played per-event by the player over the course of a particular time-span, such as a season.",
-              "optional": "true"
-            },
-            "eventsStarted": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "Number of sports-events the player has played in since the start of the event.",
-              "optional": "true"
-            }
+      "allOf": [{
+        "$ref": "#/complexTypes/baseGenericEntityStats"
+      }, {
+        "properties": {
+          "timePlayedEvent": {
+            "type": "string",
+            "description": "Value for the amount of time played by this player in a particular sports-event."
+          },
+          "timePlayedEventAverage": {
+            "type": "string",
+            "description": "Value for the average amount of time played per-event by the player over the course of a particular time-span, such as a season."
+          },
+          "eventsStarted": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of sports-events the player has played in since the start of the event."
           }
         }
-      ]
+      }]
     },
     "baseEntityMetadata": {
       "type": "object",
@@ -569,158 +497,134 @@
         },
         "key": {
           "$ref": "#/dataTypes/qCodeType",
-          "description": "The symbol or identifying key for the entity.",
-          "optional": "true"
+          "description": "The symbol or identifying key for the entity."
         },
         "nationality": {
           "type": "string",
-          "description": "The country of citizenship of the entity.",
-          "optional": "true"
+          "description": "The country of citizenship of the entity."
         }
       }
     },
     "basePlayerMetadata": {
       "type": "object",
       "description": "Metadata that describes a person. | Generally does not change over the course of a sports-events.",
-      "allOf": [
-        {
-          "$ref": "#/complexTypes/basePersonMetadata"
-        },
-        {
-          "properties": {
-            "teamIdref": {
-              "type": "string",
-              "description": "A reference to the team for which this player competes.",
-              "optional": "true"
-            },
-            "status": {
-              "$ref": "#/dataTypes/qCodeType",
-              "description": "Whether a player starts playing at the beginning of a sports-event, joins mid-game, or is not available to participate.",
-              "optional": "true"
-            },
-            "lineupSlot": {
-              "type": "string",
-              "description": "The order in which a player participated in an event.",
-              "optional": "true"
-            },
-            "lineupSlotSequence": {
-              "type": "string",
-              "description": "For baseball, cricket, relay races if they substituted for a player in the original lineup, the order in which they served at the above lineup-slot value. Defaults to 1.",
-              "optional": "true"
-            },
-            "scratchReason": {
-              "$ref": "#/dataTypes/qCodeType",
-              "description": "An indication as to why this player did not play in an event.",
-              "optional": "true"
-            },
-            "uniformNumber": {
-              "type": "string",
-              "description": "The number currently displayed on the uniform or jersey of the player.",
-              "optional": "true"
-            },
-            "homePageUrl": {
-              "type": "string",
-              "--comment": "in xsd this is defined as type xs:anyURI",
-              "description": "The fully-qualified URL for the official home page of the team.",
-              "optional": "true"
-            },
-            "roundPosition": {
-              "type": "string",
-              "description": "The seed or position in this particular round for which this player started. Useful for bracketed tournaments, such as tennis.",
-              "optional": "true"
-            }
+      "allOf": [{
+        "$ref": "#/complexTypes/basePersonMetadata"
+      }, {
+        "properties": {
+          "teamIdref": {
+            "type": "string",
+            "description": "A reference to the team for which this player competes."
+          },
+          "status": {
+            "$ref": "#/dataTypes/qCodeType",
+            "description": "Whether a player starts playing at the beginning of a sports-event, joins mid-game, or is not available to participate."
+          },
+          "lineupSlot": {
+            "type": "string",
+            "description": "The order in which a player participated in an event."
+          },
+          "lineupSlotSequence": {
+            "type": "string",
+            "description": "For baseball, cricket, relay races if they substituted for a player in the original lineup, the order in which they served at the above lineup-slot value. Defaults to 1."
+          },
+          "scratchReason": {
+            "$ref": "#/dataTypes/qCodeType",
+            "description": "An indication as to why this player did not play in an event."
+          },
+          "uniformNumber": {
+            "type": "string",
+            "description": "The number currently displayed on the uniform or jersey of the player."
+          },
+          "homePageUrl": {
+            "type": "string",
+            "--comment": "in xsd this is defined as type xs:anyURI",
+            "description": "The fully-qualified URL for the official home page of the team."
+          },
+          "roundPosition": {
+            "type": "string",
+            "description": "The seed or position in this particular round for which this player started. Useful for bracketed tournaments, such as tennis."
           }
         }
-      ]
+      }]
     },
     "baseTeamMetadata": {
       "type": "object",
       "description": "Info about the team. Properties of a team that are not based on their competitive performance. | An included sports-content-code element can hold what division it is in, etc.",
-      "allOf": [
-        {
-          "$ref": "#/complexTypes/baseEntityMetadata"
-        },
-        {
-          "properties": {
-            "site": {
-              "$ref": "#/complexTypes/site"
-            },
-            "sportsContentCodes": {
-              "$ref": "#/definitions/sportsContentCodes",
-              "description": "Info about the team. Properties of a team that are not based on their competitive performance. | An included sports-content-code element can hold what division it is in, etc."
-            },
-            "alignment": {
-              "type": "string",
-              "description": "Home or visiting. This is more information about the alignment of the team or player in the event regarding rules etc. It does not necessarily indicate that it is the geographical home-site of the team or player."
-            },
-            "established": {
-              "$ref": "#/dataTypes/truncatedDateTimeType",
-              "description": "Date (and time) when the team was established."
-            },
-            "dissolved": {
-              "$ref": "#/dataTypes/truncatedDateTimeType",
-              "description": "Date (and time) when the team was dissolved."
-            },
-            "teamIdref": {
-              "$ref": "#/dataTypes/idRef",
-              "description": "Optional reference to a team in which this team is a member. Example: The U.S. Davis Cup team consists of many sub-teams."
-            },
-            "homePageUrl": {
-              "$ref": "#/dataTypes/uri",
-              "description": "The fully-qualified URL for the official home page of the team."
-            },
-            "roundPosition": {
-              "type": "string",
-              "description": "The seed or position in this particular round for which this team started. Useful for bracketed tournaments, such as tennis."
-            }
+      "allOf": [{
+        "$ref": "#/complexTypes/baseEntityMetadata"
+      }, {
+        "properties": {
+          "site": {
+            "$ref": "#/complexTypes/site"
+          },
+          "sportsContentCodes": {
+            "$ref": "#/definitions/sportsContentCodes",
+            "description": "Info about the team. Properties of a team that are not based on their competitive performance. | An included sports-content-code element can hold what division it is in, etc."
+          },
+          "alignment": {
+            "type": "string",
+            "description": "Home or visiting. This is more information about the alignment of the team or player in the event regarding rules etc. It does not necessarily indicate that it is the geographical home-site of the team or player."
+          },
+          "established": {
+            "$ref": "#/dataTypes/truncatedDateTimeType",
+            "description": "Date (and time) when the team was established."
+          },
+          "dissolved": {
+            "$ref": "#/dataTypes/truncatedDateTimeType",
+            "description": "Date (and time) when the team was dissolved."
+          },
+          "teamIdref": {
+            "$ref": "#/dataTypes/idRef",
+            "description": "Optional reference to a team in which this team is a member. Example: The U.S. Davis Cup team consists of many sub-teams."
+          },
+          "homePageUrl": {
+            "$ref": "#/dataTypes/uri",
+            "description": "The fully-qualified URL for the official home page of the team."
+          },
+          "roundPosition": {
+            "type": "string",
+            "description": "The seed or position in this particular round for which this team started. Useful for bracketed tournaments, such as tennis."
           }
         }
-      ]
+      }]
     },
     "baseTimeAdjustment": {
       "type": "object",
       "description": "Record time added by referee. | Holds values for the time added by the referee and how much extra time was actually played.",
-      "allOf": [
-        {
-          "$ref": "#/groups/commonAttributes"
-        },
-        {
-          "properties": {
-            "periodExtraTimeAdded": {
-              "type": "string"
-            },
-            "periodExtraTimeElapsed": {
-              "type": "string"
-            }
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "properties": {
+          "periodExtraTimeAdded": {
+            "type": "string"
+          },
+          "periodExtraTimeElapsed": {
+            "type": "string"
           }
         }
-      ]
+      }]
     },
     "baseOfficialMetadata": {
-        "type":"object",
-        "description": "Metadata about the official. | Generally does not change over the course of a sports-events.",
-        "allOf": [
-        {
-            "$ref": "#/complexTypes/basePersonMetadata"
-        },
-        {
-            "properties": {
-                "uniformNumber": {
-                    "type":"string",
-                    "description":"The number currently displayed on the uniform or jersey of the official."
-                }
-            }
+      "type": "object",
+      "description": "Metadata about the official. | Generally does not change over the course of a sports-events.",
+      "allOf": [{
+        "$ref": "#/complexTypes/basePersonMetadata"
+      }, {
+        "properties": {
+          "uniformNumber": {
+            "type": "string",
+            "description": "The number currently displayed on the uniform or jersey of the official."
+          }
         }
-        ]
+      }]
     },
     "baseTeamStats": {
       "type": "object",
       "description": "Statistics that apply to the team as a whole. | Not all stats are used in every sport.",
-      "allOf": [
-        {
-          "$ref": "#/complexTypes/baseGenericEntityStats"
-        }
-      ]
+      "allOf": [{
+        "$ref": "#/complexTypes/baseGenericEntityStats"
+      }]
     },
     "groups": {
       "type": "array",
@@ -730,306 +634,293 @@
       }
     },
     "group": {
-      "definition": "A holder for statistics about a particular bracket or division or conference or league. | Holds metadata and stats. Also appropriate for expressing general organization/league membership and structure.",
+      "description": "A holder for statistics about a particular bracket or division or conference or league. | Holds metadata and stats. Also appropriate for expressing general organization/league membership and structure.",
       "type": "object",
-      "allOf": [
-        { "$ref": "#/groups/commonAttributes" },
-        {
-          "properties": {
-            "groupMetadata": { "$ref": "#/complexTypes/groupMetadata" },
-            "groupStats": { "$ref": "#/complexTypes/groupStats" },
-            "groups": { "$ref": "#/complexTypes/groups" },
-            "teams": { "$ref": "#/definitions/teams" },
-            "players": { "$ref": "#/definitions/players" },
-            "affiliations": { "$ref": "#/definitions/affiliations" }
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "properties": {
+          "groupMetadata": {
+            "$ref": "#/complexTypes/groupMetadata"
+          },
+          "groupStats": {
+            "$ref": "#/complexTypes/groupStats"
+          },
+          "groups": {
+            "$ref": "#/complexTypes/groups"
+          },
+          "teams": {
+            "$ref": "#/definitions/teams"
+          },
+          "players": {
+            "$ref": "#/definitions/players"
+          },
+          "affiliations": {
+            "$ref": "#/definitions/affiliations"
           }
         }
-      ]
-
+      }]
     },
     "groupMetadata": {
-      "definition": "Metadata about the group.",
+      "description": "Metadata about the group.",
       "type": "object",
-      "allOf": [
-        {"$ref": "$/complexTypes/base2Metadata" },
-        {
-          "properties": {
-            "groupType": {
-              "definition": "The type of group. For example: conference, division, etc.",
-              "type": "string"
-            },
-            "homePageUrl": {
-              "definition": "The home page URL for the group.",
-              "type": { "$ref": "#/dataTypes/uri"}
-            }
+      "allOf": [{
+        "$ref": "$/complexTypes/base2Metadata"
+      }, {
+        "properties": {
+          "groupType": {
+            "description": "The type of group. For example: conference, division, etc.",
+            "type": "string"
+          },
+          "homePageUrl": {
+            "description": "The home page URL for the group.",
+            "$ref": "#/dataTypes/uri"
           }
         }
-      ]
+      }]
     },
     "groupStats": {
-      "definition": "Statistics that apply to the group as a whole. | Not all stats are used in every sport.",
+      "description": "Statistics that apply to the group as a whole. | Not all stats are used in every sport.",
       "type": "object",
-      "allOf": [
-        { "$ref": "#/complexTypes/base3Stats" }
-      ]
-
+      "allOf": [{
+        "$ref": "#/complexTypes/base3Stats"
+      }]
     },
     "official": {
-        "type":"object",
-        "description":"Also referred to as umpire or referree. | Ensures that the sports-event is played according to its rules.",
-        "allOf": [
-        {
-            "$ref":"#/complexTypes/officialMetadata"
-        },
-        {
-            "$ref":"#/complexTypes/officialStats"
-        },
-        {
-            "$ref":"#/complexTypes/affiliation"
-        },
-        {
-            "$ref": "#/groups/commonAttributes"
-        }
-        ]
+      "type": "object",
+      "description": "Also referred to as umpire or referree. | Ensures that the sports-event is played according to its rules.",
+      "allOf": [{
+        "$ref": "#/complexTypes/officialMetadata"
+      }, {
+        "$ref": "#/complexTypes/officialStats"
+      }, {
+        "$ref": "#/complexTypes/affiliation"
+      }, {
+        "$ref": "#/groups/commonAttributes"
+      }]
     },
     "officialMetadata": {
-        "type":"object",
-        "allOf": [
-        {
-            "$ref": "#/complexTypes/baseOfficialMetadata"
-        }]
+      "type": "object",
+      "allOf": [{
+        "$ref": "#/complexTypes/baseOfficialMetadata"
+      }]
     },
     "officialStats": {
-        "type":"object",
-        "allOf": [
-        {
-            "$ref":"#/complexTypes/baseStats"
-        }
-        ]
+      "type": "object",
+      "allOf": [{
+        "$ref": "#/complexTypes/baseStats"
+      }]
     },
-    "outcomeResults":  {
-      "definition": "A set of outcome results",
+    "outcomeResults": {
+      "description": "A set of outcome results",
       "type": "array",
       "items": {
         "$ref": "#/complexTypes/outcomeResults"
       }
     },
     "outcomeResult": {
-      "definition": "A report on the result, if any, from the event etc.",
+      "description": "A report on the result, if any, from the event etc.",
       "type": "object",
-      "allOf": [
-        { "$ref": "#/groups/commonAttributes" },
-        { "$ref": "#/groups/coverageAttributes" },
-        {
-          "properties": {
-            "type": {
-              "definition": "The type of outcome result. Can be things like relegation, promotion and qualification",
-              "type": "string"
-            },
-            "key": {
-              "definition": "A key for the type of result described.",
-              "type": "string"
-            },
-            "comment": {
-              "definition": "Textual comment about the outcome result.",
-              "type": "string"
-            }
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "$ref": "#/groups/coverageAttributes"
+      }, {
+        "properties": {
+          "type": {
+            "description": "The type of outcome result. Can be things like relegation, promotion and qualification",
+            "type": "string"
+          },
+          "key": {
+            "description": "A key for the type of result described.",
+            "type": "string"
+          },
+          "comment": {
+            "description": "Textual comment about the outcome result.",
+            "type": "string"
           }
         }
-      ]
+      }]
     },
-    "outcomeTotals":  {
-      "definition": "A set of outcome totals",
+    "outcomeTotals": {
+      "description": "A set of outcome totals",
       "type": "array",
       "items": {
         "$ref": "#/complexTypes/outcomeTotal"
       }
     },
     "outcomeTotal": {
-      "definition": "A report on the number of wins, losses, etc., the team or player had during a particular time period. | Can also be scoped with various coverage qualifications, such as just events played at home.",
+      "description": "A report on the number of wins, losses, etc., the team or player had during a particular time period. | Can also be scoped with various coverage qualifications, such as just events played at home.",
       "type": "object",
-      "allOf": [
-        { "$ref": "#/groups/commonAttributes" },
-        { "$ref": "#/groups/coverageAttributes" },
-        {
-          "properties": {
-            "wins": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "Number of wins."
-            },
-            "losses": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "Number of losses."
-            },
-            "ties": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "Number of ties."
-            },
-            "undecideds": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "Number of events that were started, but ended up undecided."
-            },
-            "winningPercentage": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "The winning percentage. Generally, wins divided by total events completed."
-            },
-            "pointsScoredFor": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "The number of points a team has scored against its opponents during an extended time period."
-            },
-            "pointsScoredAgainst": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "The number of points scored against a team by its opponents during an extended time period."
-            },
-            "pointsDifference": {
-              "type": "integer",
-              "description": "The final calculated difference between points-scored-for and points-scored-against. Possibly takes into account other scoring aspects, such as penalties and differences in score-values."
-            },
-            "standingPoints": {
-              "type": "string",
-              "description": "A quantity used to rank teams, usually within a division, in order to decide who comes in first at the end of a season. Localized to the coverage-attributes."
-            },
-            "standingPointsAgainst": {
-              "type": "string",
-              "description": "Points counted against a team in rankings. Used in European handball standings, for example."
-            },
-            "streakType": {
-              "type": "#/dataTypes/qCodeType",
-              "description": "Whether this is a streak of wins, of losses, etc. SportsML vocabulary uri: http://cv.iptc.org/newscodes/spstreaktype/"
-            },
-            "streakDuration": {
-              "type": "#/dataTypes/duration",
-              "description": "How long the streak lasted."
-            },
-            "streakTotal": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "Holds the number of goals scored during a streak-type of score, for example."
-            },
-            "streakStart": {
-              "type": "#/dataTypes/truncatedDateTime",
-              "description": "Date on which the streak began."
-            },
-            "streakEnd": {
-              "type": "#/dataTypes/truncatedDateTime",
-              "description": "Date on which the streak ended."
-            },
-            "eventsPlayed": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "Number of events played within the scope of play."
-            },
-            "eventsRemaining": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "Number of events remaining within the scope of play."
-            },
-            "gamesBack": {
-              "type": "integer",
-              "description": "A number used to measure how behind one team is from first place. The first place team is 0 games back."
-            },
-            "lossesOvertime": {
-              "type": "integer",
-              "minimum": 0,
-              "description": "Number of losses in events which went into overtime. For leagues that use this as a top-level outcome category (eg. NHL), as opposed to just a derivative of scoping."
-            }
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "$ref": "#/groups/coverageAttributes"
+      }, {
+        "properties": {
+          "wins": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of wins."
+          },
+          "losses": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of losses."
+          },
+          "ties": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of ties."
+          },
+          "undecideds": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of events that were started, but ended up undecided."
+          },
+          "winningPercentage": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "The winning percentage. Generally, wins divided by total events completed."
+          },
+          "pointsScoredFor": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "The number of points a team has scored against its opponents during an extended time period."
+          },
+          "pointsScoredAgainst": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "The number of points scored against a team by its opponents during an extended time period."
+          },
+          "pointsDifference": {
+            "type": "integer",
+            "description": "The final calculated difference between points-scored-for and points-scored-against. Possibly takes into account other scoring aspects, such as penalties and differences in score-values."
+          },
+          "standingPoints": {
+            "type": "string",
+            "description": "A quantity used to rank teams, usually within a division, in order to decide who comes in first at the end of a season. Localized to the coverage-attributes."
+          },
+          "standingPointsAgainst": {
+            "type": "string",
+            "description": "Points counted against a team in rankings. Used in European handball standings, for example."
+          },
+          "streakType": {
+            "type": "#/dataTypes/qCodeType",
+            "description": "Whether this is a streak of wins, of losses, etc. SportsML vocabulary uri: http://cv.iptc.org/newscodes/spstreaktype/"
+          },
+          "streakDuration": {
+            "type": "#/dataTypes/duration",
+            "description": "How long the streak lasted."
+          },
+          "streakTotal": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Holds the number of goals scored during a streak-type of score, for example."
+          },
+          "streakStart": {
+            "type": "#/dataTypes/truncatedDateTime",
+            "description": "Date on which the streak began."
+          },
+          "streakEnd": {
+            "type": "#/dataTypes/truncatedDateTime",
+            "description": "Date on which the streak ended."
+          },
+          "eventsPlayed": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of events played within the scope of play."
+          },
+          "eventsRemaining": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of events remaining within the scope of play."
+          },
+          "gamesBack": {
+            "type": "integer",
+            "description": "A number used to measure how behind one team is from first place. The first place team is 0 games back."
+          },
+          "lossesOvertime": {
+            "type": "integer",
+            "minimum": 0,
+            "description": "Number of losses in events which went into overtime. For leagues that use this as a top-level outcome category (eg. NHL), as opposed to just a derivative of scoping."
           }
         }
-      ]
+      }]
     },
     "participants": {},
     "baseParticipant": {
-      "definition": "Base structure for a participant.",
+      "description": "Base structure for a participant.",
       "type": "object",
-      "allOf": [
-        { "$ref": "#/groups/commonAttributes" },
-        { "$ref": "#/groups/participantAttributes" },
-        {
-          "properties": {
-            "fieldLocation": {
-              "type": "string",
-              "description": "Recommended x,y 0-100."
-            },
-            "goalsCumulative": {
-              "type": "string",
-              "description": "Total number goals at time of goal scored."
-            },
-            "assistsCumulative": {
-              "type": "string",
-              "description": "Total number assists at time of assist scored."
-            },
-            "lineupSlot": {
-              "type": "integer",
-              "description": ""
-            },
-            "yardsGained": {
-              "type": "integer",
-              "description": ""
-            },
-            "scoreCredit": {
-              "type": "integer",
-              "minimum": 0,
-              "maximum": 1,
-              "description": "Whether the participant in the play can be given credit for the goal or score."
-            }
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "$ref": "#/groups/participantAttributes"
+      }, {
+        "properties": {
+          "fieldLocation": {
+            "type": "string",
+            "description": "Recommended x,y 0-100."
+          },
+          "goalsCumulative": {
+            "type": "string",
+            "description": "Total number goals at time of goal scored."
+          },
+          "assistsCumulative": {
+            "type": "string",
+            "description": "Total number assists at time of assist scored."
+          },
+          "lineupSlot": {
+            "type": "integer",
+            "description": ""
+          },
+          "yardsGained": {
+            "type": "integer",
+            "description": ""
+          },
+          "scoreCredit": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Whether the participant in the play can be given credit for the goal or score."
           }
         }
-      ]
+      }]
     },
     "player": {
-        "type":"object",
-        "description":"A competitor. | Their athletic talents help them decide who wins a sports-event.",
-        "allOf": [
-        {
-          "$ref": "#/complexTypes/playerMetadata"
-        },
-        {
-            "$ref":"#/complexTypes/playerStats"
-        },
-        {
-            "$ref":"#/definitions/wageringStats"
-        },
-        {
-            "$ref": "#/complesTypes/associate"
-        },
-        {
-            "$ref": "#/complexTypes/affiliation"
-        },
-        {
-            "$ref": "#/groups/commonAttributes"
-        }
-      ]
+      "type": "object",
+      "description": "A competitor. | Their athletic talents help them decide who wins a sports-event.",
+      "allOf": [{
+        "$ref": "#/complexTypes/playerMetadata"
+      }, {
+        "$ref": "#/complexTypes/playerStats"
+      }, {
+        "$ref": "#/definitions/wageringStats"
+      }, {
+        "$ref": "#/complesTypes/associate"
+      }, {
+        "$ref": "#/complexTypes/affiliation"
+      }, {
+        "$ref": "#/groups/commonAttributes"
+      }]
     },
     "playerMetadata": {
       "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/complexTypes/basePlayerMetadata"
-        }
-      ]
+      "allOf": [{
+        "$ref": "#/complexTypes/basePlayerMetadata"
+      }]
     },
     "playerStats": {
       "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/complexTypes/basePlayerStats"
-        }
-      ]
+      "allOf": [{
+        "$ref": "#/complexTypes/basePlayerStats"
+      }]
     },
     "teamMetadata": {
       "type": "object",
-      "allOf": [
-        {
-          "$ref": "#/complexTypes/baseTeamMetadata"
-        }
-      ]
+      "allOf": [{
+        "$ref": "#/complexTypes/baseTeamMetadata"
+      }]
     },
     "teamStats": {
       "type": "object"
@@ -1051,62 +942,58 @@
     "siteMetadata": {
       "type": "object",
       "description": "Metadata about the site.",
-      "allOf": [
-        {
-          "$ref": "#/complexTypes/baseEntityMetadata"
-        },
-        {
-          "$ref": "#/definitions/sportsContentCodes"
-        },
-        {
-          "properties": {
-            "capacity": {
-              "type": "string",
-              "description": "How many spectators can fill the site."
-            },
-            "siteStyle": {
-              "$ref": "#/dataTypes/qCodeType",
-              "description": "Whether it is an indoor or outdoor site."
-            },
-            "surface": {
-              "type": "string",
-              "description": "Describes the surface upon which events are played. For example, in tennis, could be hard-court or grass or clay."
-            },
-            "shape": {
-              "type": "string",
-              "description": "A controlled vocabulary for the site's shape. Example for motor-racing: oval."
-            },
-            "incline": {
-              "type": "string",
-              "description": "The pitch or embankment of the field of play. Generally in degrees. Example for motor-racing: 13."
-            },
-            "length": {
-              "type": "string",
-              "description": "The length of the arena or field of play."
-            },
-            "lengthUnits": {
-              "type": "string",
-              "description": "The units used for the length attribute."
-            },
-            "type": {
-              "type": "string",
-              "description": "A controlled vocabulary for the type or class of arena. Example for motor-racing: super-speedway."
-            },
-            "homePageUrl": {
-              "$ref": "#/dataTypes/uri",
-              "description": "The website for the venue or arena."
-            },
-            "created": {
-              "type": "#/dataTypes/truncatedDateTimeType",
-              "description": "Date (and time) when a place was built, opened or so."
-            },
-            "ceasedToExist": {
-              "type": "#/dataTypes/truncatedDateTimeType",
-              "description": "Date (and time) when a place ceased to exist."
-            }
+      "allOf": [{
+        "$ref": "#/complexTypes/baseEntityMetadata"
+      }, {
+        "$ref": "#/definitions/sportsContentCodes"
+      }, {
+        "properties": {
+          "capacity": {
+            "type": "string",
+            "description": "How many spectators can fill the site."
+          },
+          "siteStyle": {
+            "$ref": "#/dataTypes/qCodeType",
+            "description": "Whether it is an indoor or outdoor site."
+          },
+          "surface": {
+            "type": "string",
+            "description": "Describes the surface upon which events are played. For example, in tennis, could be hard-court or grass or clay."
+          },
+          "shape": {
+            "type": "string",
+            "description": "A controlled vocabulary for the site's shape. Example for motor-racing: oval."
+          },
+          "incline": {
+            "type": "string",
+            "description": "The pitch or embankment of the field of play. Generally in degrees. Example for motor-racing: 13."
+          },
+          "length": {
+            "type": "string",
+            "description": "The length of the arena or field of play."
+          },
+          "lengthUnits": {
+            "type": "string",
+            "description": "The units used for the length attribute."
+          },
+          "type": {
+            "type": "string",
+            "description": "A controlled vocabulary for the type or class of arena. Example for motor-racing: super-speedway."
+          },
+          "homePageUrl": {
+            "$ref": "#/dataTypes/uri",
+            "description": "The website for the venue or arena."
+          },
+          "created": {
+            "type": "#/dataTypes/truncatedDateTimeType",
+            "description": "Date (and time) when a place was built, opened or so."
+          },
+          "ceasedToExist": {
+            "type": "#/dataTypes/truncatedDateTimeType",
+            "description": "Date (and time) when a place ceased to exist."
           }
         }
-      ]
+      }]
     },
     "siteStats": {
       "type": "object",
@@ -1155,66 +1042,64 @@
       }
     },
     "statusChange": {
-        "type": "object",
-        "description": "Indicates status change of an entity.",
-        "allOf": [
-        {
-          "$ref": "#/groups/commonAttributes"
-        },
-        {
-            "$ref": "#/groups/coverageAttributes"
-        }
-        ,
-        {"properties": {
-            "changer-idref": {
+      "type": "object",
+      "description": "Indicates status change of an entity.",
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "$ref": "#/groups/coverageAttributes"
+      }, {
+        "properties": {
+          "changer-idref": {
             "$ref": "#/dataTypes/idRef",
             "description": "A pointer to the player or team that has undergone the status change."
-            },
-            "status-change-type": {
-                "$ref": "#/dataTypes/qCodeType",
-                "description":"What type of change was made in the status of a player or team. Examples are injury, trade, cut."
-            },
-            "original-status": {
-                "type":"string",
-                "description": "What the original status of the player or team was. Examples are active, inactive, disabled-list."
-            },
-            "new-status": {
-                "type":"string",
-                "description": "What the new status of the player or team is. Examples are active, inactive, disabled-list."
-            },
-            "original-idref": {
-                "$ref": "#/dataTypes/idRef",
-                "description": "Generally, a pointer to the original team that the player in changer-idref was affiliated with."
-            },
-            "new-idref": {
-                "$ref": "#/dataTypes/idRef",
-                "description": "Generally, a pointer to the new team that the player in changer-idref is now affiliated with."
-            }
+          },
+          "status-change-type": {
+            "$ref": "#/dataTypes/qCodeType",
+            "description": "What type of change was made in the status of a player or team. Examples are injury, trade, cut."
+          },
+          "original-status": {
+            "type": "string",
+            "description": "What the original status of the player or team was. Examples are active, inactive, disabled-list."
+          },
+          "new-status": {
+            "type": "string",
+            "description": "What the new status of the player or team is. Examples are active, inactive, disabled-list."
+          },
+          "original-idref": {
+            "$ref": "#/dataTypes/idRef",
+            "description": "Generally, a pointer to the original team that the player in changer-idref was affiliated with."
+          },
+          "new-idref": {
+            "$ref": "#/dataTypes/idRef",
+            "description": "Generally, a pointer to the new team that the player in changer-idref is now affiliated with."
+          }
         },
         "required": ["status-change-type", "changer-idref"]
-        }]
+      }]
     },
     "eventActions": {
-      "definition": "Complex type for sports events, both generic and sport specific.",
+      "description": "Complex type for sports events, both generic and sport specific.",
       "type": "object",
-      "allOf": [
-        { "$ref": "#/groups/commonAttribtues" },
-        {
-          "properties": {
-            "actions": {
-              "type": "array",
-              "items": { "$ref": "#/complexTypes/baseAction"}
+      "allOf": [{
+        "$ref": "#/groups/commonAttribtues"
+      }, {
+        "properties": {
+          "actions": {
+            "type": "array",
+            "items": {
+              "$ref": "#/complexTypes/baseAction"
             }
           }
         }
-      ]
+      }]
     },
     "eventMetadata": {
       "type": "object",
-      "definition": "Background information about a game. | Where, when, and what about the event.",
-      "allOf": [
-        { "$ref": "#/complexTypes/baseEventMetadata" }
-      ]
+      "description": "Background information about a game. | Where, when, and what about the event.",
+      "allOf": [{
+        "$ref": "#/complexTypes/baseEventMetadata"
+      }]
     },
     "eventRecord": {
       "type": "object",
@@ -1232,200 +1117,165 @@
     },
     "eventSponsor": {
       "type": "object",
-      "definition": "A sponsor for an event. | Events can have more than one sponsor.",
-      "allOf": [
-        { "$ref": "#/groups/commonAttributes" },
-        {
-          "properties": {
-            "name": {
-              "$ref": "#/definitions/conceptNameType"
-            },
-            "type": {
-              "definition": "Could be main, supporting, etc.",
-              "type": "string"
-            }
+      "description": "A sponsor for an event. | Events can have more than one sponsor.",
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "properties": {
+          "name": {
+            "$ref": "#/definitions/conceptNameType"
+          },
+          "type": {
+            "description": "Could be main, supporting, etc.",
+            "type": "string"
           }
         }
-      ]
-
+      }]
     },
     "tournament": {
-        "type": "object",
-        "description": "A structured series of competitions within one sport. | Generally organized by a particular sponsoring body. Can happen all in one day, or be spread out - like the Davis Cup in tennis.",
-        "allOf": [
-        {
-            "$ref":"#/complexTypes/tournamentMetadata"
-        },
-        {
-            "$ref":"#/complexTypes/standing"
-        },
-        {
-            "$ref":"#/complexTypes/tournamentDivision"
-        },
-        {
-            "$ref":"#/complexTypes/tournamentPart"
-        },
-        {
-            "$ref":"#/complexTypes/sportsEvent"
-        },
-        {
-            "$ref":"#/groups/commonAttributes"
-        }
-        ]
+      "type": "object",
+      "description": "A structured series of competitions within one sport. | Generally organized by a particular sponsoring body. Can happen all in one day, or be spread out - like the Davis Cup in tennis.",
+      "allOf": [{
+        "$ref": "#/complexTypes/tournamentMetadata"
+      }, {
+        "$ref": "#/complexTypes/standing"
+      }, {
+        "$ref": "#/complexTypes/tournamentDivision"
+      }, {
+        "$ref": "#/complexTypes/tournamentPart"
+      }, {
+        "$ref": "#/complexTypes/sportsEvent"
+      }, {
+        "$ref": "#/groups/commonAttributes"
+      }]
     },
     "tournamentPartMetadata": {
-        "type":"object",
-        "description": "General information about the division of this tournament. | Where and when this division is competing.",
-        "allOf": [
-        {
-            "$ref": "#/complexTypes/baseTournamentMetadata"
-        },
-        {
-            "properties": {
-                "type": {
-                    "$ref": "#/dataTypes/qCodeType",
-                    "description": "The type of phase of the tournament: group, elimination, etc. SportsML vocab uri: http://cv.iptc.org/newscodes/sptournamentstage/"
-                }
-            }
+      "type": "object",
+      "description": "General information about the division of this tournament. | Where and when this division is competing.",
+      "allOf": [{
+        "$ref": "#/complexTypes/baseTournamentMetadata"
+      }, {
+        "properties": {
+          "type": {
+            "$ref": "#/dataTypes/qCodeType",
+            "description": "The type of phase of the tournament: group, elimination, etc. SportsML vocab uri: http://cv.iptc.org/newscodes/sptournamentstage/"
+          }
         }
-        ],
-        "required": ["type"]
+      }],
+      "required": ["type"]
     },
     "tournamentPart": {
-        "type":"object",
-        "description":"A tournament part. Use it do group specific parts of a tournament, like a stage or a round.",
-        "allOf": [
-        {
-            "$ref": "#/complexType/tournamentPartMetadata"
-        },
-        {
-            "$ref": "#/complexType/standing"
-        },
-        {
-            "$ref": "#/complexType/tournamentPart"
-        },
-        {
-            "$ref": "#/complexType/sportsEvent"
-        },
-        {
-            "$ref": "#/groups/commonAttributes"
-        }, 
-        {
-            "properties": {
-                "partIndex": {
-                    "type":"string",
-                    "description":" For provider-specific tournament indexing systems. DPA, for example, has one that looks like this: part-name='Group A' part-index='p1/1/p2/A'",
-                    "optional": "true"
-                }
-            }
+      "type": "object",
+      "description": "A tournament part. Use it do group specific parts of a tournament, like a stage or a round.",
+      "allOf": [{
+        "$ref": "#/complexType/tournamentPartMetadata"
+      }, {
+        "$ref": "#/complexType/standing"
+      }, {
+        "$ref": "#/complexType/tournamentPart"
+      }, {
+        "$ref": "#/complexType/sportsEvent"
+      }, {
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "properties": {
+          "partIndex": {
+            "type": "string",
+            "description": " For provider-specific tournament indexing systems. DPA, for example, has one that looks like this: part-name='Group A' part-index='p1/1/p2/A'"
+          }
         }
-        ]
+      }]
     },
     "tournamentDivision": {
-        "type": "object",
-        "description": "A tournament subcategory, often with its own trophy and prize. | Use it to divide specific overall competitions in a large multi-sport tournament such as Olympics. Can also divide gender competitions, for example in tennis tournaments. Can be nested to divide gender at a higher level (tournament/tournament-division) and then to divide specific sport competitions futher down the tree (tournament-part/tournament-division). ",
-        "allOf": [
-        {
-            "$ref": "#/complexType/tournamentDivisionMetadata"
-        },
-        {
-            "$ref": "#/complexType/standing"
-        },
-        {
-            "$ref": "#/complexType/tournamentPart"
-        },
-        {
-            "$ref": "#/complexType/sportsEvent"
-        },
-        {
-            "$ref": "#/groups/commonAttributes"
-        }]
+      "type": "object",
+      "description": "A tournament subcategory, often with its own trophy and prize. | Use it to divide specific overall competitions in a large multi-sport tournament such as Olympics. Can also divide gender competitions, for example in tennis tournaments. Can be nested to divide gender at a higher level (tournament/tournament-division) and then to divide specific sport competitions futher down the tree (tournament-part/tournament-division). ",
+      "allOf": [{
+        "$ref": "#/complexType/tournamentDivisionMetadata"
+      }, {
+        "$ref": "#/complexType/standing"
+      }, {
+        "$ref": "#/complexType/tournamentPart"
+      }, {
+        "$ref": "#/complexType/sportsEvent"
+      }, {
+        "$ref": "#/groups/commonAttributes"
+      }]
     },
     "tournamentDivisionMetadata": {
-        "type": "object",
-        "description": "General information about the division of this tournament. | Where and when this division is competing.",
-        "allOf": [
-        {
-            "$ref": "baseTournamentMetadata"
-        },
-        {
-            "properties": {
-                "divisionnumber": {
-                    "type": "string",
-                    "description": "The number of the division.",
-                    "optional": "true"
-                }
-            }
+      "type": "object",
+      "description": "General information about the division of this tournament. | Where and when this division is competing.",
+      "allOf": [{
+        "$ref": "baseTournamentMetadata"
+      }, {
+        "properties": {
+          "divisionnumber": {
+            "type": "string",
+            "description": "The number of the division."
+          }
         }
-        ]
+      }]
     },
     "tournamentMetadata": {
-        "type": "object",
-        "description": "Background data about a tournament. | Where and when the this tournament took place",
-        "allOf": [
-        {
-            "$ref": "#/complexTypes/baseTournamentMetadata"
-        }
-        ]
+      "type": "object",
+      "description": "Background data about a tournament. | Where and when the this tournament took place",
+      "allOf": [{
+        "$ref": "#/complexTypes/baseTournamentMetadata"
+      }]
     },
     "schedule": {
       "type": "object",
       "description": "A series of games. | Usually grouped by date.",
-      "allOf": [
-        { "$ref": "#/groups/commonAttributes" },
-        {
-          "properties": {
-            "dateLabel": {
-              "definition": "Displayable label that describes what dates this schedule covers.",
-              "type": "string"
-            },
-            "contentLabel": {
-              "definition": "Displayable label that describes what events this schedule includes.",
-              "type": "string"
-            },
-            "scheduleMetadata": { "$ref": "#/complexTypes/scheduleMetadata" },
-            "sportsEvents": { "$ref": "#/definitions/sportsEvents" }
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "properties": {
+          "dateLabel": {
+            "description": "Displayable label that describes what dates this schedule covers.",
+            "type": "string"
+          },
+          "contentLabel": {
+            "description": "Displayable label that describes what events this schedule includes.",
+            "type": "string"
+          },
+          "scheduleMetadata": {
+            "$ref": "#/complexTypes/scheduleMetadata"
+          },
+          "sportsEvents": {
+            "$ref": "#/definitions/sportsEvents"
           }
         }
-      ]
+      }]
     },
     "scheduleMetadata": {
-      "definition": "Background information about the schedule. | Describes the time period which the schedule covers, and which teams or events may be covered.",
+      "description": "Background information about the schedule. | Describes the time period which the schedule covers, and which teams or events may be covered.",
       "type": "object",
-      "allOf": [
-        { "$ref": "#/complexTypes/baseMetadata" }
-      ]
+      "allOf": [{
+        "$ref": "#/complexTypes/baseMetadata"
+      }]
     },
     "standing": {
-        "type":"object",
-        "description": "Also known as a (league) table | A ranked, comparative list of team or individual records."
+      "type": "object",
+      "description": "Also known as a (league) table | A ranked, comparative list of team or individual records."
     },
     "standingMetadata": {
-        "type":"object",
-        "description": "A series of team or individual records. | A series of team or individual records.",
-        "allOf": [
-        {
-            "$ref": "#/complexTypes/baseMetadata"   
-        },
-        {
-            "$ref": "#/groups/commonAttributes"
-        },
-        {
-            "$ref": "#/complexTypes/player"
-        },
-        {
-            "$ref": "#/complexTypes/team"
-        },
-        {
-            "properties": {
-                "contentLabel": {
-                    "type":"string",
-                    "description": "A displayable label describing this standing.",
-                    "optional":"true"
-                }
-            }
+      "type": "object",
+      "description": "A series of team or individual records. | A series of team or individual records.",
+      "allOf": [{
+        "$ref": "#/complexTypes/baseMetadata"
+      }, {
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "$ref": "#/complexTypes/player"
+      }, {
+        "$ref": "#/complexTypes/team"
+      }, {
+        "properties": {
+          "contentLabel": {
+            "type": "string",
+            "description": "A displayable label describing this standing."
+          }
         }
-        ]
+      }]
     },
     "subScore": {
       "type": "object",
@@ -1501,29 +1351,29 @@
       }
     },
     "tournamentAttributes": {
-        "type": "object",
-        "description": "Attributes that are used in all tournament constructions.",
-        "properties": {
-            "status": {
-               "$ref": "#/dataTypes/qCodeType",
-               "description": "The state of the tournament or tournament part, describing whether it has started, is in progress, etc."
-            },
-            "minimumSubparts": {
-                "type":"integer",
-                "description":"The minimum number of subparts for this level in a tournament. The subparts can either be tournament-part or sports-event.",
-                "minimum": 0
-            },
-            "maximumSubparts": {
-                "type":"integer",
-                "description":"The maximum number of subparts for this level in a tournament. The subparts can either be tournament-part or sports-event.",
-                "minimum":0
-            },
-            "number": {
-                "type":"integer",
-                "description":"The number of the particular tournament part eg. 2 for second round or second leg",
-                "minimum":0
-            }
+      "type": "object",
+      "description": "Attributes that are used in all tournament constructions.",
+      "properties": {
+        "status": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The state of the tournament or tournament part, describing whether it has started, is in progress, etc."
+        },
+        "minimumSubparts": {
+          "type": "integer",
+          "description": "The minimum number of subparts for this level in a tournament. The subparts can either be tournament-part or sports-event.",
+          "minimum": 0
+        },
+        "maximumSubparts": {
+          "type": "integer",
+          "description": "The maximum number of subparts for this level in a tournament. The subparts can either be tournament-part or sports-event.",
+          "minimum": 0
+        },
+        "number": {
+          "type": "integer",
+          "description": "The number of the particular tournament part eg. 2 for second round or second leg",
+          "minimum": 0
         }
+      }
     },
     "commonAttributes": {
       "type": "object",
@@ -1548,21 +1398,15 @@
       "type": "object",
       "properties": {
         "idref": {
-          "type": {
-            "$ref": "#/dataTypes/idRef"
-          },
+          "$ref": "#/dataTypes/idRef",
           "description": "A pointer to a player who participated in the play."
         },
         "teamIdref": {
-          "type": {
-            "$ref": "#/dataTypes/idRef"
-          },
+          "$ref": "#/dataTypes/idRef",
           "description": "A pointer to the participant's team."
         },
         "role": {
-          "type": {
-            "$ref": "#/dataTypes/qCodeType"
-          },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "The role of the participant in the particular action, as opposed to their designated position on the team."
         }
       }
@@ -1586,126 +1430,117 @@
       }
     },
     "conceptDefinitionGroup": {
-        "type": "object",
-        "description": "A group of properites required to define the concept",
-        "properties": {
-            "name": {
-                "type": "string"                
-            },
-            "definition": {
-                "type": "string"
-            },
-            "note": {
-                "type": "string"
-            }, 
-            "facet": {
-                "type": "string"
-            },
-            "remoteInfo": {
-                "type": "string"
-            },
-            "hierarchyInfo": {
-                "type": "string"
-            }
+      "type": "object",
+      "description": "A group of properites required to define the concept",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "definition": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        },
+        "facet": {
+          "type": "string"
+        },
+        "remoteInfo": {
+          "type": "string"
+        },
+        "hierarchyInfo": {
+          "type": "string"
         }
+      }
     },
     "conceptRelationshipsGroup": {
       "type": "object",
-      "description": "A group of properites required to indicate relationships of the concept to other concepts",
+      "description": "A group of properties required to indicate relationships of the concept to other concepts",
       "properties": {
-          "sameAs": {
-              "type": "sameAsType"
-          },
-          "broader": {
-              "type": "relatedConceptType"
-          },
-          "narrower": {
-              "type": "relatedConceptType"
-          },
-          "related": {
-              "type": "relatedConceptType"
-          }
+        "sameAs": {
+          "type": "sameAsType"
+        },
+        "broader": {
+          "type": "relatedConceptType"
+        },
+        "narrower": {
+          "type": "relatedConceptType"
+        },
+        "related": {
+          "type": "relatedConceptType"
+        }
       }
     },
     "wageringAttributes": {
-        "type": "object",
-        "description": "Basic wagering attributes, used in all wagering elements",
-        "properties": {
-            "bookmakerKey": {
-                "$ref": "#/dataTypes/qCodeType",
-                "description": "Unique ID for the make of the line."
-            },
-            "bookmakerName": {
-                "type":"string",
-                "descripition":"Name of the maker of the line."
-            },
-            "rotationKey": {
-                "type":"string",
-                "description": "Reusable ID for the team generally agreed upon by a pool of bookmakers."
-            },
-            "comment": {
-                "type":"string",
-                "description":"A comment for this line. Often the same comment is supplied for  both teams in a game."
-            },
-            "dateTime": {
-                "type":"string",
-                "pattern": "(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2})",
-                "descrption": "The date and time which this wagering info was assigned by the bookmaker, normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available."
-            },
-            "context": {
-                "type": "string",
-                "description": "An indication of whether this line is a current line, or a repeat of a special-interest line from the past.",
-                "enum": [
-                    "opening",
-                    "closing",
-                    "current"
-               ]
-            }
+      "type": "object",
+      "description": "Basic wagering attributes, used in all wagering elements",
+      "properties": {
+        "bookmakerKey": {
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "Unique ID for the make of the line."
+        },
+        "bookmakerName": {
+          "type": "string",
+          "description": "Name of the maker of the line."
+        },
+        "rotationKey": {
+          "type": "string",
+          "description": "Reusable ID for the team generally agreed upon by a pool of bookmakers."
+        },
+        "comment": {
+          "type": "string",
+          "description": "A comment for this line. Often the same comment is supplied for  both teams in a game."
+        },
+        "dateTime": {
+          "type": "string",
+          "pattern": "(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2})",
+          "description": "The date and time which this wagering info was assigned by the bookmaker, normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available."
+        },
+        "context": {
+          "type": "string",
+          "description": "An indication of whether this line is a current line, or a repeat of a special-interest line from the past.",
+          "enum": ["opening", "closing", "current"]
         }
+      }
     },
-    "wagering2Attributes" : {
-        "type": "object",
-        "allOf": [
-            {
-                "$ref":"#/groups/wageringAttributes"
-            },
-            {
-           "properties": {
-               "prediction": {
-                   "$ref": "#/dataTypes/qCodeType",
-                   "description": "Whether this team or player is the favorite or the underdog." 
-               },
-               "predicitionOpening": {
-                   "$ref": "#/dataTypes/qCodeType",
-                   "description": "The opening value for this prediction."
-               },
-               "vigorish": {
-                   "type":"string",
-                   "description":"The commission paid to the bookmaker."
-               }
-           }
-           }
-       ]
+    "wagering2Attributes": {
+      "type": "object",
+      "allOf": [{
+        "$ref": "#/groups/wageringAttributes"
+      }, {
+        "properties": {
+          "prediction": {
+            "$ref": "#/dataTypes/qCodeType",
+            "description": "Whether this team or player is the favorite or the underdog."
+          },
+          "predicitionOpening": {
+            "$ref": "#/dataTypes/qCodeType",
+            "description": "The opening value for this prediction."
+          },
+          "vigorish": {
+            "type": "string",
+            "description": "The commission paid to the bookmaker."
+          }
+        }
+      }]
     },
     "wagering3Attributes": {
-        "type": "object",
-        "description": "",
-        "allOf": [{
-            "$ref": "#/groups/wagering2Attributes"
-        },
-        {
-            "properties": {
-                "line": {
-                    "type": "string",
-                    "description": "The value of the runline."
-                },
-                "lineOpening": {
-                    "type": "string",
-                    "description": "The opening line for this runline."
-                }
-            }
+      "type": "object",
+      "description": "",
+      "allOf": [{
+        "$ref": "#/groups/wagering2Attributes"
+      }, {
+        "properties": {
+          "line": {
+            "type": "string",
+            "description": "The value of the runline."
+          },
+          "lineOpening": {
+            "type": "string",
+            "description": "The opening line for this runline."
+          }
         }
-        ]
+      }]
     },
     "coverageAttributes": {
       "type": "object",
@@ -1716,10 +1551,7 @@
         },
         "teamCoverage": {
           "type": "string",
-          "enum": [
-            "single-team",
-            "multi-team"
-          ],
+          "enum": ["single-team", "multi-team"],
           "description": "Indicates whether the item contains information about one team, or many teams."
         },
         "durationScope": {
@@ -1728,11 +1560,7 @@
         },
         "alignmentScope": {
           "type": "string",
-          "enum": [
-            "events-all",
-            "events-home",
-            "events-away"
-          ],
+          "enum": ["events-all", "events-home", "events-away"],
           "description": "Indicates that the included statistics apply only to events played either at home or away."
         },
         "position": {
@@ -1782,7 +1610,7 @@
         "eventSpan": {
           "type": "integer",
           "minimum": 0,
-          "description": "Qualifier of \"most-recent-events\" value for temporal-unit attribute. Specify the number of events eg. 10 for last 10 games."
+          "description": "Qualifier of 'most-recent-events' value for temporal-unit attribute. Specify the number of events eg. 10 for last 10 games."
         },
         "opponentValue": {
           "$ref": "#/dataTypes/qCodeType",
@@ -1915,7 +1743,7 @@
         },
         "scoreType": {
           "type": "string",
-          "description": "Qualifies \"score\" attribute."
+          "description": "Qualifies 'score' attribute."
         },
         "eventsRemaining": {
           "type": "string",
@@ -1998,12 +1826,12 @@
           "description": ""
         },
         "created": {
-          "type": { "$ref": "#/dataTypes/dateTime" },
+          "$ref": "#/dataTypes/dateTime",
           "description": ""
         },
         "result": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
-          "description": "The result of the play or action. See \"result\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spamfresult/ http://cv.iptc.org/newscodes/spsocresult/"
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The result of the play or action. See 'result' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spamfresult/ http://cv.iptc.org/newscodes/spsocresult/"
         },
         "sequenceNumber": {
           "type": "integer",
@@ -2014,20 +1842,20 @@
           "description": "Textual comment of the action"
         },
         "type": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
-          "description": "The type of competitive action taken on the field of play. See \"action\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spamfaction/ http://cv.iptc.org/newscodes/spbblaction/ http://cv.iptc.org/newscodes/spbkbaction/ http://cv.iptc.org/newscodes/spichaction/ http://cv.iptc.org/newscodes/spmcraction/ http://cv.iptc.org/newscodes/rgxaction/ http://cv.iptc.org/newscodes/spsocaction/ http://cv.iptc.org/newscodes/sptenaction/"
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The type of competitive action taken on the field of play. See 'action' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spamfaction/ http://cv.iptc.org/newscodes/spbblaction/ http://cv.iptc.org/newscodes/spbkbaction/ http://cv.iptc.org/newscodes/spichaction/ http://cv.iptc.org/newscodes/spmcraction/ http://cv.iptc.org/newscodes/rgxaction/ http://cv.iptc.org/newscodes/spsocaction/ http://cv.iptc.org/newscodes/sptenaction/"
         },
         "timeElapsed": {
-          "type": { "$ref": "#/dataTypes/truncatedDateTimeType" },
+          "$ref": "#/dataTypes/truncatedDateTimeType",
           "description": "Total time elapsed of event"
         },
         "timeRemaining": {
-          "type": { "$ref": "#/dataTypes/truncatedDateTimeType" },
+          "$ref": "#/dataTypes/truncatedDateTimeType",
           "description": "Time remaining of event"
         },
         "playerCount": {
           "type": "integer",
-          "description": "Number of players in the \"current\" team"
+          "description": "Number of players in the 'current' team"
         },
         "playerCountOpposing": {
           "type": "integer",
@@ -2042,11 +1870,11 @@
           "description": "A string indicating where on the court the action occured. Could be an approximate region, or a more complex value adhering to some elaborate coordinate system."
         },
         "zone": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "The zone on the playing field where the action took place. qcoded value that can be sport specific"
         },
         "powerPlayTimeRemaining": {
-          "type": { "$ref": "#/dataTypes/truncatedDateTimeType" },
+          "$ref": "#/dataTypes/truncatedDateTimeType",
           "description": "Time remaining of powerplay"
         },
         "powerPlayAdvantage": {
@@ -2055,11 +1883,11 @@
           "description": "Number of players more on the team in power play, also see the player count attributes"
         },
         "callerType": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "Who called the timeout, either team or official. ID is given under participant. SportsML vocab uri: http://cv.iptc.org/newscodes/spamfcaller/"
         },
         "strength": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": ""
         },
         "points": {
@@ -2067,7 +1895,7 @@
           "description": "How many points this score was worth for the scoring team."
         },
         "turnoverType": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "How the initiative changed. Steal, lost-ball etc."
         },
         "periodValue": {
@@ -2075,7 +1903,7 @@
           "description": "Number or name of current period of event. Normally a number but can be things like OT etc"
         },
         "periodLength": {
-          "type": { "$ref": "#/dataTypes/truncatedDateTimeType" },
+          "$ref": "#/dataTypes/truncatedDateTimeType",
           "description": "Length of current period of event"
         },
         "scoreTeam": {
@@ -2095,35 +1923,35 @@
           "description": "Length of timeout"
         },
         "timeoutType": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "Type of timeout. SportsML vocab uri: http://cv.iptc.org/newscodes/spamftimeout/"
         },
         "scoreType": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "The type of score for sports with more than one way to gain points (american-football) in which every play is a score attempt. For other sports use score-attempt-type. SportsML vocab uri: http://cv.iptc.org/newscodes/spamfscore/"
         },
         "saveType": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": ""
         },
         "saveMethod": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": ""
         },
         "passType": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": ""
         },
         "passDescription": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": ""
         },
         "passMethod": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": ""
         },
         "shotType": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "The type of shot taken. See 'infractionresult'  SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spgolshot/ http://cv.iptc.org/newscodes/sptenshot/"
         },
         "shotDistance": {
@@ -2131,11 +1959,11 @@
           "description": ""
         },
         "shotDistanceUnits": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "SportsML vocab uri: http://cv.iptc.org/newscodes/spshotdistanceunits/"
         },
         "penaltyType": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "Whether the receiver of the penalty was the team, the player, a coach, a ref, etc."
         },
         "penaltyLength": {
@@ -2151,40 +1979,40 @@
           "description": "The sum of penalties recieved by this team/participant this event"
         },
         "penaltyLevel": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
-          "description": "The severity or classification of the penalty eg. major, minor, game misconduct. See \"infractionresult\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbpenaltylevel/ http://cv.iptc.org/newscodes/spichpenaltylevel/ http://cv.iptc.org/newscodes/sprgxpenaltylevel/ http://cv.iptc.org/newscodes/spsocpenaltylevel/"
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The severity or classification of the penalty eg. major, minor, game misconduct. See 'infractionresult' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbpenaltylevel/ http://cv.iptc.org/newscodes/spichpenaltylevel/ http://cv.iptc.org/newscodes/sprgxpenaltylevel/ http://cv.iptc.org/newscodes/spsocpenaltylevel/"
         },
         "penaltyStatus": {
           "type": "string",
-          "enum": [ "start", "end" ],
+          "enum": ["start", "end"],
           "description": ""
         },
         "recipientType": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "Whether the receiver of the penalty was the team, the player, a coach, a ref, etc. SportsML vocab uri: http://cv.iptc.org/newscodes/sprecipienttype/"
         },
         "scoreAttemptType": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
-          "description": "The type of score that was attempted. See \"scoreattempt\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbscoreattempt/ http://cv.iptc.org/newscodes/spichscoreattempt/ http://cv.iptc.org/newscodes/sprgxscoreattempt/ http://cv.iptc.org/newscodes/spsocscoreattempt/"
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The type of score that was attempted. See 'scoreattempt' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbscoreattempt/ http://cv.iptc.org/newscodes/spichscoreattempt/ http://cv.iptc.org/newscodes/sprgxscoreattempt/ http://cv.iptc.org/newscodes/spsocscoreattempt/"
         },
         "scoreAttemptResult": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
-          "description": "The result of the score attempt eg. blocked, missed, etc. See \"scoreattemptresult\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbscoreattemptresult/ http://cv.iptc.org/newscodes/spichscoreattemtresult/ http://cv.iptc.org/newscodes/sprgxscoreattemptresult/ http://cv.iptc.org/newscodes/spsocscoreattemptresult/"
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "The result of the score attempt eg. blocked, missed, etc. See 'scoreattemptresult' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbscoreattemptresult/ http://cv.iptc.org/newscodes/spichscoreattemtresult/ http://cv.iptc.org/newscodes/sprgxscoreattemptresult/ http://cv.iptc.org/newscodes/spsocscoreattemptresult/"
         },
         "scoreAttemptSide": {
           "type": "#/vocab/bodySideList",
           "description": "Side of the body of the player attempting to score"
         },
         "scoreAttemptMethod": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
-          "description": "What part of the body or equipment the player used to attempt to score. See \"scoreattemptmethod\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spsocscoreattemptmethod/"
+          "$ref": "#/dataTypes/qCodeType",
+          "description": "What part of the body or equipment the player used to attempt to score. See 'scoreattemptmethod' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spsocscoreattemptmethod/"
         },
         "scoreAttemptSituation": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": ""
         },
         "goalZone": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "Part of the goal where the score or score-attempt was aimed."
         },
         "angle": {
@@ -2196,7 +2024,7 @@
           "description": "Angle on the field of the play."
         },
         "bodyPart": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "Angle on the field of the play."
         },
         "fieldLocation": {
@@ -2216,23 +2044,23 @@
           "description": "When this shot was take, amongst all the shootout shots of a game for one particular team. For example: 3 (if it was the third shot of the shootout)."
         },
         "infractionType": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "The name of the type of infraction. See 'infraction' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spamfinfraction/ http://cv.iptc.org/newscodes/spichinfraction/ http://cv.iptc.org/newscodes/sprgxinfraction/ http://cv.iptc.org/newscodes/spsocinfraction/"
         },
         "infractionLevel": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "The degree of punishment for the infraction eg. yellow or red card. See 'penaltylevel' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbpenaltylevel/ http://cv.iptc.org/newscodes/spichpenaltylevel/ http://cv.iptc.org/newscodes/sprgxpenaltylevel/ http://cv.iptc.org/newscodes/spsocpenaltylevel/"
         },
         "infractionResult": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "What the foul resulted in. See 'infractionresult' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/sprgxinfractionresult/ http://cv.iptc.org/newscodes/spsocinfractionresult/"
         },
         "infractionSide": {
-          "type": { "$ref": "#/dataTypes/qCodeType" },
+          "$ref": "#/dataTypes/qCodeType",
           "description": "Which side committed the infraction, usually offense or defense. SportsML vocab uri: http://cv.iptc.org/newscodes/spinfractionside/"
         },
         "faceoffWinner": {
-          "type": { "$ref": "#/dataTypes/nCName" },
+          "$ref": "#/dataTypes/nCName",
           "description": "also used to show winner of jumpball in basket."
         },
         "substitutionReason": {
@@ -2243,9 +2071,7 @@
     },
     "participantAttributes": {
       "type": "object",
-      "allOf": [
-        "#/groups/commonParticipantAttributes"
-      ]
+      "allOf": ["#/groups/commonParticipantAttributes"]
     }
   },
   "definitions": {
@@ -2257,8 +2083,8 @@
           "$ref": "#/definitions/sportsMetadata"
         },
         "sportsEvents": {
-            "$ref": "#/definitions/sportsEvents"
-          },
+          "$ref": "#/definitions/sportsEvents"
+        },
         "tournaments": {
           "type": "array",
           "items": {
@@ -2320,9 +2146,6 @@
         "parturi": {}
       }
     },
-    "proptypes": {
-        "proptype": ""
-    },
     "affiliations": {
       "type": "array",
       "description": "A set of affiliations",
@@ -2332,7 +2155,6 @@
     },
     "affiliation": {
       "type": "object",
-      "_extension": "",
       "description": "A mechanism for assigning the membership of a player, team, or associate within a division or larger organizational structure. Also, to indicate an official's affiliation with a team, club or federation, for example.",
       "properties": {
         "membershipIdref": {
@@ -2356,9 +2178,7 @@
     "sportsMetadataProperties": {
       "type": "object",
       "description": "Metadata for the document being published. | Holds metadata applying to the document as a whole.",
-      "required": [
-        "docId"
-      ],
+      "required": ["docId"],
       "properties": {
         "docId": {
           "description": "The often-unique ID of the document, tracked by publishers.",
@@ -2370,7 +2190,7 @@
         },
         "dateTime": {
           "description": "Date-timestamp for the document",
-          "type": { "$ref": "#/dataTypes/dateTime" }
+          "$ref": "#/dataTypes/dateTime"
         },
         "language": {
           "description": "The default language of the document. ",
@@ -2407,14 +2227,11 @@
       }
     },
     "sportsMetadata": {
-      "allOf": [
-        {
-          "$ref": "#/definitions/baseMetadata"
-        },
-        {
-          "$ref": "#/definitions/sportsMetadataProperties"
-        }
-      ]
+      "allOf": [{
+        "$ref": "#/definitions/baseMetadata"
+      }, {
+        "$ref": "#/definitions/sportsMetadataProperties"
+      }]
     },
     "sportsContentCodes": {
       "type": "array",
@@ -2480,99 +2297,94 @@
     "sportsEvent": {
       "type": "object",
       "description": "A sporting competition. | A contest that generally ends with a winner.",
-      "allOf": [
-        { "$ref": "#/groups/commonAttributes" },
-        {
-          "properties": {
-            "eventMetadata": {
-              "$ref": "#/definitions/sportsMetadata"
-            },
-            "eventStats": {
-              "$ref": "#/definitions/eventStats"
-            },
-            "sportsEvents": {
-                "$ref": "#/definitions/sportsEvents"
-            },
-            "teams": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/team"
-              }
-            },
-            "players": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/player"
-              }
-            },
-            "wageringStats": {
-              "$ref": "#/definitions/wageringStats"
-            },
-            "officials": {
-              "$ref": "#/definitions/officials"
-            },
-            "actions": {
-              "$ref": "#/definitions/actions"
-            },
-            "highlights": {
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/highlight"
-              }
-            },
-            "awards": {
-              "#ref": "#/definitions/awards"
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "properties": {
+          "eventMetadata": {
+            "$ref": "#/definitions/sportsMetadata"
+          },
+          "eventStats": {
+            "$ref": "#/definitions/eventStats"
+          },
+          "sportsEvents": {
+            "$ref": "#/definitions/sportsEvents"
+          },
+          "teams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/team"
             }
+          },
+          "players": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/player"
+            }
+          },
+          "wageringStats": {
+            "$ref": "#/definitions/wageringStats"
+          },
+          "officials": {
+            "$ref": "#/definitions/officials"
+          },
+          "actions": {
+            "$ref": "#/definitions/actions"
+          },
+          "highlights": {
+            "type": "array",
+            "items": {
+              "$ref": "#/definitions/highlight"
+            }
+          },
+          "awards": {
+            "$ref": "#/definitions/awards"
           }
         }
-      ]
+      }]
     },
     "eventStats": {
       "type": "object",
       "description": "Stats applying to the game as a whole. Initially designed for motor-racing, but potentially applicable to many sports.",
-
-      "allOf": [
-        { "$ref": "#/groups/commonAttributes" },
-        { "$ref": "#/groups/coverageAttributes" },
-        {
-          "properties": {
-            "sportsProperties": {
-              "$ref": "#/definitions/sportsProperties"
-            }
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "$ref": "#/groups/coverageAttributes"
+      }, {
+        "properties": {
+          "sportsProperties": {
+            "$ref": "#/definitions/sportsProperties"
           }
         }
-      ]
+      }]
     },
     "team": {
       "type": "object",
       "description": "A team participating in a sporting event. | Holds metadata and statistical data for team.",
-      "allOf": [
-        {
-          "$ref": "#/groups/commonAttributes"
-        },
-        {
-          "properties": {
-            "teamMetadata": {
-              "$ref": "#/complexTypes/teamMetadata"
-            },
-            "teamStats": {
-              "$ref": "#/complexTypes/teamStats"
-            },
-            "players": {
-              "$ref": "#/definitions/players"
-            },
-            "wageringStats": {
-              "$ref": "#/definitions/wageringStats"
-            },
-            "associates": {
-              "$ref": "#/definitions/associates"
-            },
-            "affiliations": {
-              "#ref": "#/definitions/affiliations"
-            }
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "properties": {
+          "teamMetadata": {
+            "$ref": "#/complexTypes/teamMetadata"
+          },
+          "teamStats": {
+            "$ref": "#/complexTypes/teamStats"
+          },
+          "players": {
+            "$ref": "#/definitions/players"
+          },
+          "wageringStats": {
+            "$ref": "#/definitions/wageringStats"
+          },
+          "associates": {
+            "$ref": "#/definitions/associates"
+          },
+          "affiliations": {
+            "$ref": "#/definitions/affiliations"
           }
         }
-      ]
+      }]
     },
     "players": {
       "type": "array",
@@ -2596,196 +2408,165 @@
     "wageringStats": {
       "type": "object",
       "description": "An object to house lines and odds for wagering. | Includes moneylines, spreads, etc.",
-      "allOf": [
-      {
-          "$ref": "#/definitions/wageringMoneyline"
-      },
-      {
-          "$ref": "#/definitions/wageringTotalScore"
-      },
-      {
-          "$ref": "#/definitions/wageringRunline"
-      },
-      {
-          "$ref": "#/definitions/wageringOdds"
-      },
-      {
-          "$ref": "#/definitions/wageringStraightSpread"
-      },
-      {
-          "$ref": "#/groups/commonAttributes"
-      },
-      {
-      "properties": {
+      "allOf": [{
+        "$ref": "#/definitions/wageringMoneyline"
+      }, {
+        "$ref": "#/definitions/wageringTotalScore"
+      }, {
+        "$ref": "#/definitions/wageringRunline"
+      }, {
+        "$ref": "#/definitions/wageringOdds"
+      }, {
+        "$ref": "#/definitions/wageringStraightSpread"
+      }, {
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "properties": {
           "comment": {
-              "type":"string",
-              "description": "A generic comment for the wagering stats.",
-              "optional": "true"
+            "type": "string",
+            "description": "A generic comment for the wagering stats."
           }
-      }
-      }
-      ]
+        }
+      }]
     },
     "wageringTotalScore": {
-        "type":"object",
-        "description": "Total combined point/runs/goals scored in a game.",
-        "allOf": [
-        {
-          "$ref": "#/groups/commonAttributes"
-        },
-        {
-            "$ref": "#/groups/wagering2Attributes"
-        },
-        {"properties": {
-            "lineOver": {
-                "type":"string",
-                "description": "The OVER section of an over/under line.",
-                "optional": "true"
-            },
-            "lineUnder": {
-                "type": "string",
-                "description": "The UNDER section of an over/under line.",
-                "optional": "true"
-            },
-            "total": {
-                "type": "string",
-                "description": "The combined total of the score for the two teams.",
-                "optional": "true"
-            },
-            "lineOverOpening": {
-                "type":"string",
-                "description":"The opening value of the OVER section of an over/under line.",
-                "optional": "true"
-            },
-            "lineUnderOpening": {
-                "type":"string",
-                "description":"The opening value of the UNDER section of an over/under line.",
-                "optional": "true"
-            },
-            "totalOpening": {
-                "type":"string",
-                "description":"The opening value of the combined score for the two teams.",
-                "optional": "true"
-            }
+      "type": "object",
+      "description": "Total combined point/runs/goals scored in a game.",
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "$ref": "#/groups/wagering2Attributes"
+      }, {
+        "properties": {
+          "lineOver": {
+            "type": "string",
+            "description": "The OVER section of an over/under line."
+          },
+          "lineUnder": {
+            "type": "string",
+            "description": "The UNDER section of an over/under line."
+          },
+          "total": {
+            "type": "string",
+            "description": "The combined total of the score for the two teams."
+          },
+          "lineOverOpening": {
+            "type": "string",
+            "description": "The opening value of the OVER section of an over/under line."
+          },
+          "lineUnderOpening": {
+            "type": "string",
+            "description": "The opening value of the UNDER section of an over/under line."
+          },
+          "totalOpening": {
+            "type": "string",
+            "description": "The opening value of the combined score for the two teams."
+          }
         }
-        }]
+      }]
     },
     "wageringOdds": {
-        "type":"object",
-        "description": "A line that gives formal odds on a team or player winning, such as 3-to-1 odds.",
-        "allOf": [
-        {
-          "$ref": "#/definitions/wageringPrediction"  
-        },
-        {
-          "$ref": "#/groups/commonAttributes"
-        },
-        {
-            "$ref": "#/groups/wageringAttributes"
+      "type": "object",
+      "description": "A line that gives formal odds on a team or player winning, such as 3-to-1 odds.",
+      "allOf": [{
+        "$ref": "#/definitions/wageringPrediction"
+      }, {
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "$ref": "#/groups/wageringAttributes"
+      }, {
+        "properties": {
+          "numerator": {
+            "type": "string",
+            "description": "The numerator of the chances this team or player is given."
+          },
+          "denominator": {
+            "type": "string",
+            "description": "The denominator of the chances this team or player is given."
+          },
+          "numeratorOpening": {
+            "type": "string",
+            "description": "The opening value of the numerator."
+          },
+          "denominatorOpening": {
+            "type": "string",
+            "description": "The opening value of the denominator."
+          },
+          "payoutCalculation": {
+            "type": "string",
+            "description": "How much money additional gets paid should this team or player or team win."
+          },
+          "paybackAmount": {
+            "type": "string",
+            "description": "The total amount paid back to the winning wagerer, including the amount invested."
+          }
         }
-        ,
-        {"properties": {
-            "numerator": {
-                "type":"string",
-                "description": "The numerator of the chances this team or player is given."
-            },
-            "denominator": {
-                "type":"string",
-                "description":"The denominator of the chances this team or player is given."
-            },
-            "numeratorOpening": {
-                "type":"string",
-                "description":"The opening value of the numerator."
-            },
-            "denominatorOpening": {
-                "type":"string",
-                "description":"The opening value of the denominator."
-            },
-            "payoutCalculation": {
-                "type":"string",
-                "description":"How much money additional gets paid should this team or player or team win."
-            },
-            "paybackAmount": {
-                "type":"string",
-                "description":"The total amount paid back to the winning wagerer, including the amount invested."
-            }
-        }}]
+      }]
     },
     "wageringPrediction": {
-        "type": "object",
-        "description": "A prediction as to whether a team or player is a favorite or an underdog.",
-        "allOf": [
-        {
-          "$ref": "#/groups/commonAttributes"
-        },
-        {
-            "$ref": "#/groups/coverageAttributes"
+      "type": "object",
+      "description": "A prediction as to whether a team or player is a favorite or an underdog.",
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "$ref": "#/groups/coverageAttributes"
+      }, {
+        "properties": {
+          "prediction": {
+            "$ref": "#/dataTypes/qCodeType",
+            "description": "Whether this team or player is the favorite or the underdog."
+          }
         }
-        ,
-        {"properties": {
-            "prediction": {
-                "$ref": "#/dataTypes/qCodeType",
-                "description":"Whether this team or player is the favorite or the underdog."
-            }
-        }}]  
+      }]
     },
     "wageringRunline": {
-        "type":"object",
-        "description": "A line used in baseball.",
-        "allOf": [
-        {
-          "$ref": "#/groups/commonAttributes"
-        },
-        {
-            "$ref": "#/groups/wageringAttributes"
+      "type": "object",
+      "description": "A line used in baseball.",
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "$ref": "#/groups/wageringAttributes"
+      }, {
+        "properties": {
+          "value": {
+            "type": "string",
+            "description": "Generally +1.5 or -1.5."
+          },
+          "valueOpening": {
+            "type": "string",
+            "description": "The opening value for this runline."
+          }
         }
-        ,
-        {"properties": {
-            "value": {
-                "type":"string",
-                "description":"Generally +1.5 or -1.5.",
-                "optional": "true"
-            },
-            "valueOpening": {
-                "type":"string",
-                "description":"The opening value for this runline.",
-                "optional": "true"
-            }   
-        }}]  
+      }]
     },
     "wageringMoneyline": {
-        "type": "object",
-        "description": "Odds in terms of money. | Negative amount indicates wagerer must lay that amount to win say a hundred dollars. Positive amount indicates wagerer gets that amount for every hundred dollars wagered.",
-        "allOf": [
-        {
-          "$ref": "#/groups/commonAttributes"
-        },
-        {
-            "$ref": "#/groups/wagering3Attributes"
-        }]
+      "type": "object",
+      "description": "Odds in terms of money. | Negative amount indicates wagerer must lay that amount to win say a hundred dollars. Positive amount indicates wagerer gets that amount for every hundred dollars wagered.",
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "$ref": "#/groups/wagering3Attributes"
+      }]
     },
     "wageringStraightSpread": {
-        "type":"object",
-        "description":"A wager built around the different between the scores of two teams.",
-        "allOf": [
-        {
-          "$ref": "#/groups/commonAttributes"
-        },
-        {
-            "$ref": "#/groups/wagering3Attributes"
-        },
-        {"properties": {
-            "value": {
-                "type":"string",
-                "description":"The number of points for which the two scores should differ.",
-                "optional": "true"
-            },
-            "valueOpening": {
-                "type":"string",
-                "description":"The opening value.",
-                "optional": "true"
-            }
-        }}]
+      "type": "object",
+      "description": "A wager built around the different between the scores of two teams.",
+      "allOf": [{
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "$ref": "#/groups/wagering3Attributes"
+      }, {
+        "properties": {
+          "value": {
+            "type": "string",
+            "description": "The number of points for which the two scores should differ."
+          },
+          "valueOpening": {
+            "type": "string",
+            "description": "The opening value."
+          }
+        }
+      }]
     },
     "associates": {
       "type": "array",
@@ -2797,11 +2578,9 @@
     "associate": {
       "type": "object",
       "description": "Metadata that describes an associate | Generally does not change over the course of a sports-events",
-      "allOf": [
-        {
-          "$ref": "#/complexTypes/basePersonMetadata"
-        }
-      ]
+      "allOf": [{
+        "$ref": "#/complexTypes/basePersonMetadata"
+      }]
     },
     "officials": {
       "type": "object",
