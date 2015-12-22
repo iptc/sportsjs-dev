@@ -141,7 +141,6 @@
     },
     "genericStat": {
       "type": "object",
-      "_extension": "",
       "description": "A generic stat element that can be used together with or instead of more specific stat element and attributes. With nested stats the lower levels should be regarded as having the same value as their parents if that attribute is not specifically set.",
       "allOf": [{
         "$ref": "#/groups/genericStatAttributes"
@@ -489,8 +488,7 @@
           "$ref": "#/definitions/conceptNameType"
         },
         "homeLocation": {
-          "_comments": "Need to pull this prop",
-          "type": "FlexLocationPropType"
+          "$ref": "#/complexTypes/FlexLocationPropType"
         },
         "sportsProperties": {
           "$ref": "#/definitions/sportsProperties"
@@ -538,7 +536,7 @@
           },
           "homePageUrl": {
             "type": "string",
-            "--comment": "in xsd this is defined as type xs:anyURI",
+            "$ref": "#/dataTypes/uri",
             "description": "The fully-qualified URL for the official home page of the team."
           },
           "roundPosition": {
@@ -625,6 +623,11 @@
       "allOf": [{
         "$ref": "#/complexTypes/baseGenericEntityStats"
       }]
+    },
+    "flexLocationPropType": {
+      "type": "object",
+      "description": "Geo Location and Address information",
+      "properties": {}
     },
     "groups": {
       "type": "array",
@@ -806,11 +809,11 @@
             "description": "Points counted against a team in rankings. Used in European handball standings, for example."
           },
           "streakType": {
-            "type": "#/dataTypes/qCodeType",
+            "$ref": "#/dataTypes/qCodeType",
             "description": "Whether this is a streak of wins, of losses, etc. SportsML vocabulary uri: http://cv.iptc.org/newscodes/spstreaktype/"
           },
           "streakDuration": {
-            "type": "#/dataTypes/duration",
+            "$ref": "#/dataTypes/duration",
             "description": "How long the streak lasted."
           },
           "streakTotal": {
@@ -819,11 +822,11 @@
             "description": "Holds the number of goals scored during a streak-type of score, for example."
           },
           "streakStart": {
-            "type": "#/dataTypes/truncatedDateTime",
+            "$ref": "#/dataTypes/truncatedDateTime",
             "description": "Date on which the streak began."
           },
           "streakEnd": {
-            "type": "#/dataTypes/truncatedDateTime",
+            "$ref": "#/dataTypes/truncatedDateTime",
             "description": "Date on which the streak ended."
           },
           "eventsPlayed": {
@@ -985,11 +988,11 @@
             "description": "The website for the venue or arena."
           },
           "created": {
-            "type": "#/dataTypes/truncatedDateTimeType",
+            "$ref": "#/dataTypes/truncatedDateTimeType",
             "description": "Date (and time) when a place was built, opened or so."
           },
           "ceasedToExist": {
-            "type": "#/dataTypes/truncatedDateTimeType",
+            "$ref": "#/dataTypes/truncatedDateTimeType",
             "description": "Date (and time) when a place ceased to exist."
           }
         }
@@ -1132,95 +1135,15 @@
         }
       }]
     },
-    "tournament": {
+    "relatedConceptType": {
       "type": "object",
-      "description": "A structured series of competitions within one sport. | Generally organized by a particular sponsoring body. Can happen all in one day, or be spread out - like the Davis Cup in tennis.",
-      "allOf": [{
-        "$ref": "#/complexTypes/tournamentMetadata"
-      }, {
-        "$ref": "#/complexTypes/standing"
-      }, {
-        "$ref": "#/complexTypes/tournamentDivision"
-      }, {
-        "$ref": "#/complexTypes/tournamentPart"
-      }, {
-        "$ref": "#/complexTypes/sportsEvent"
-      }, {
-        "$ref": "#/groups/commonAttributes"
-      }]
+      "description": "",
+      "properties": {}
     },
-    "tournamentPartMetadata": {
+    "sameAsType": {
       "type": "object",
-      "description": "General information about the division of this tournament. | Where and when this division is competing.",
-      "allOf": [{
-        "$ref": "#/complexTypes/baseTournamentMetadata"
-      }, {
-        "properties": {
-          "type": {
-            "$ref": "#/dataTypes/qCodeType",
-            "description": "The type of phase of the tournament: group, elimination, etc. SportsML vocab uri: http://cv.iptc.org/newscodes/sptournamentstage/"
-          }
-        }
-      }],
-      "required": ["type"]
-    },
-    "tournamentPart": {
-      "type": "object",
-      "description": "A tournament part. Use it do group specific parts of a tournament, like a stage or a round.",
-      "allOf": [{
-        "$ref": "#/complexType/tournamentPartMetadata"
-      }, {
-        "$ref": "#/complexType/standing"
-      }, {
-        "$ref": "#/complexType/tournamentPart"
-      }, {
-        "$ref": "#/complexType/sportsEvent"
-      }, {
-        "$ref": "#/groups/commonAttributes"
-      }, {
-        "properties": {
-          "partIndex": {
-            "type": "string",
-            "description": " For provider-specific tournament indexing systems. DPA, for example, has one that looks like this: part-name='Group A' part-index='p1/1/p2/A'"
-          }
-        }
-      }]
-    },
-    "tournamentDivision": {
-      "type": "object",
-      "description": "A tournament subcategory, often with its own trophy and prize. | Use it to divide specific overall competitions in a large multi-sport tournament such as Olympics. Can also divide gender competitions, for example in tennis tournaments. Can be nested to divide gender at a higher level (tournament/tournament-division) and then to divide specific sport competitions futher down the tree (tournament-part/tournament-division). ",
-      "allOf": [{
-        "$ref": "#/complexType/tournamentDivisionMetadata"
-      }, {
-        "$ref": "#/complexType/standing"
-      }, {
-        "$ref": "#/complexType/tournamentPart"
-      }, {
-        "$ref": "#/complexType/sportsEvent"
-      }, {
-        "$ref": "#/groups/commonAttributes"
-      }]
-    },
-    "tournamentDivisionMetadata": {
-      "type": "object",
-      "description": "General information about the division of this tournament. | Where and when this division is competing.",
-      "allOf": [{
-        "$ref": "baseTournamentMetadata"
-      }, {
-        "properties": {
-          "divisionnumber": {
-            "type": "string",
-            "description": "The number of the division."
-          }
-        }
-      }]
-    },
-    "tournamentMetadata": {
-      "type": "object",
-      "description": "Background data about a tournament. | Where and when the this tournament took place",
-      "allOf": [{
-        "$ref": "#/complexTypes/baseTournamentMetadata"
-      }]
+      "description": "",
+      "properties": {}
     },
     "schedule": {
       "type": "object",
@@ -1314,6 +1237,96 @@
           "description": "The attempts to score during the period (or scoring unit)."
         }
       }
+    },
+    "tournament": {
+      "type": "object",
+      "description": "A structured series of competitions within one sport. | Generally organized by a particular sponsoring body. Can happen all in one day, or be spread out - like the Davis Cup in tennis.",
+      "allOf": [{
+        "$ref": "#/complexTypes/tournamentMetadata"
+      }, {
+        "$ref": "#/complexTypes/standing"
+      }, {
+        "$ref": "#/complexTypes/tournamentDivision"
+      }, {
+        "$ref": "#/complexTypes/tournamentPart"
+      }, {
+        "$ref": "#/complexTypes/sportsEvent"
+      }, {
+        "$ref": "#/groups/commonAttributes"
+      }]
+    },
+    "tournamentPartMetadata": {
+      "type": "object",
+      "description": "General information about the division of this tournament. | Where and when this division is competing.",
+      "allOf": [{
+        "$ref": "#/complexTypes/baseTournamentMetadata"
+      }, {
+        "properties": {
+          "type": {
+            "$ref": "#/dataTypes/qCodeType",
+            "description": "The type of phase of the tournament: group, elimination, etc. SportsML vocab uri: http://cv.iptc.org/newscodes/sptournamentstage/"
+          }
+        }
+      }],
+      "required": ["type"]
+    },
+    "tournamentPart": {
+      "type": "object",
+      "description": "A tournament part. Use it do group specific parts of a tournament, like a stage or a round.",
+      "allOf": [{
+        "$ref": "#/complexType/tournamentPartMetadata"
+      }, {
+        "$ref": "#/complexType/standing"
+      }, {
+        "$ref": "#/complexType/tournamentPart"
+      }, {
+        "$ref": "#/complexType/sportsEvent"
+      }, {
+        "$ref": "#/groups/commonAttributes"
+      }, {
+        "properties": {
+          "partIndex": {
+            "type": "string",
+            "description": " For provider-specific tournament indexing systems. DPA, for example, has one that looks like this: part-name='Group A' part-index='p1/1/p2/A'"
+          }
+        }
+      }]
+    },
+    "tournamentDivision": {
+      "type": "object",
+      "description": "A tournament subcategory, often with its own trophy and prize. | Use it to divide specific overall competitions in a large multi-sport tournament such as Olympics. Can also divide gender competitions, for example in tennis tournaments. Can be nested to divide gender at a higher level (tournament/tournament-division) and then to divide specific sport competitions futher down the tree (tournament-part/tournament-division). ",
+      "allOf": [{
+        "$ref": "#/complexType/tournamentDivisionMetadata"
+      }, {
+        "$ref": "#/complexType/standing"
+      }, {
+        "$ref": "#/complexType/tournamentPart"
+      }, {
+        "$ref": "#/complexType/sportsEvent"
+      }, {
+        "$ref": "#/groups/commonAttributes"
+      }]
+    },
+    "tournamentDivisionMetadata": {
+      "type": "object",
+      "description": "General information about the division of this tournament. | Where and when this division is competing.",
+      "allOf": [{
+        "$ref": "baseTournamentMetadata"
+      }, {
+        "properties": {
+          "divisionnumber": {
+            "type": "string",
+            "description": "The number of the division."
+          }
+        }
+      }]
+    },
+    "tournamentMetadata": {
+      "type": "object",
+      "description": "Background data about a tournament. | Where and when the this tournament took place",
+      "allOf": [{
+        "$ref": "#/complexTypes/baseTournamentMetadata"
+      }]
     }
   },
   "dataTypes": {
@@ -1346,8 +1359,10 @@
   },
   "groups": {
     "globalAttributes": {
-      "id": {
-        "type": "string"
+      "properties": {
+        "id": {
+          "type": "string"
+        }
       }
     },
     "tournamentAttributes": {
@@ -1458,16 +1473,16 @@
       "description": "A group of properties required to indicate relationships of the concept to other concepts",
       "properties": {
         "sameAs": {
-          "type": "sameAsType"
+          "$ref": "#/complexTypes/sameAsType"
         },
         "broader": {
-          "type": "relatedConceptType"
+          "$ref": "#/complexTypes/relatedConceptType"
         },
         "narrower": {
-          "type": "relatedConceptType"
+          "$ref": "#/complexTypes/relatedConceptType"
         },
         "related": {
-          "type": "relatedConceptType"
+          "$ref": "#/complexTypes/relatedConceptType"
         }
       }
     },
@@ -2000,7 +2015,7 @@
           "description": "The result of the score attempt eg. blocked, missed, etc. See 'scoreattemptresult' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbscoreattemptresult/ http://cv.iptc.org/newscodes/spichscoreattemtresult/ http://cv.iptc.org/newscodes/sprgxscoreattemptresult/ http://cv.iptc.org/newscodes/spsocscoreattemptresult/"
         },
         "scoreAttemptSide": {
-          "type": "#/vocab/bodySideList",
+          "$ref": "#/vocab/bodySideList",
           "description": "Side of the body of the player attempting to score"
         },
         "scoreAttemptMethod": {
