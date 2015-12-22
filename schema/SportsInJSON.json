@@ -2074,7 +2074,7 @@
           "$ref": "#/dataTypes/qCodeType",
           "description": "Which side committed the infraction, usually offense or defense. SportsML vocab uri: http://cv.iptc.org/newscodes/spinfractionside/"
         },
-        "faceoffWinner": {
+        "faceOffWinner": {
           "$ref": "#/dataTypes/nCName",
           "description": "also used to show winner of jumpball in basket."
         },
