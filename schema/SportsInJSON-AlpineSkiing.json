@@ -1,0 +1,6 @@
+{
+  "id": "",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsInJSON Soccer schema contains properties common to Alpine Skiing.",
+  "definitions": {}
+}

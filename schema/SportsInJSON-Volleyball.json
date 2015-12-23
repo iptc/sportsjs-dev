@@ -1,0 +1,283 @@
+{
+  "id": "",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsInJSON Soccer schema contains properties common to Volleyball.",
+  "definitions": {
+    "volleyballTeamStats": {
+      "type": "object",
+
+      "description": "Volleyball specific stats for one team. | Team-stats that are specific to volleyball and does not apply to all sports.",
+      "properties": {
+        "statsVolleyballAttacks": {
+          "$ref": "#/definitions/volleyballStatsAttacks",
+          "description": ""
+        },
+        "statsVolleyballBlocks": {
+          "$ref": "#/definitions/volleyballStatsBlocks",
+          "description": ""
+        },
+        "statsVolleyballService": {
+          "$ref": "#/definitions/volleyballStatsService",
+          "description": ""
+        },
+        "statsVolleyballDefense": {
+          "$ref": "#/definitions/volleyballStatsDefense",
+          "description": ""
+        },
+        "statsVolleyballSetting": {
+          "$ref": "#/definitions/volleyballStatsSetting",
+          "description": ""
+        },
+        "statsVolleyballReceiving": {
+          "$ref": "#/definitions/volleyballStatsReceiving",
+          "description": ""
+        },
+        "errorsOppenent": {
+          "type": "string",
+          "description": ""
+        },
+        "faultsOpponent": {
+          "type": "string",
+          "description": ""
+        },
+        "points": {
+          "type": "string",
+          "description": ""
+        },
+        "pointAttempts": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "volleyballStatsAttacks": {
+      "type": "object",
+
+      "description": "Attack stats specific to volleyball.",
+      "properties": {
+        "attacksRank": {
+          "type": "string",
+          "description": ""
+        },
+        "attacksTotal": {
+          "type": "string",
+          "description": ""
+        },
+        "attackAttempts": {
+          "type": "string",
+          "description": ""
+        },
+        "attackFaults": {
+          "type": "string",
+          "description": ""
+        },
+        "attacksInPlay": {
+          "type": "string",
+          "description": ""
+        },
+        "attacksPercentage": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "volleyballStatsBlocks": {
+      "type": "object",
+
+      "description": "Blocking stats specific to volleyball.",
+      "properties": {
+        "blocksRank": {
+          "type": "string",
+          "description": ""
+        },
+        "blocksTotal": {
+          "type": "string",
+          "description": ""
+        },
+        "blockAttempts": {
+          "type": "string",
+          "description": ""
+        },
+        "blockFaults": {
+          "type": "string",
+          "description": ""
+        },
+        "blocksInPlay": {
+          "type": "string",
+          "description": ""
+        },
+        "blocksAveragePerSet": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "volleyballStatsService": {
+      "type": "object",
+
+      "description": "Service stats specific to volleyball.",
+      "properties": {
+        "serviceRank": {
+          "type": "string",
+          "description": ""
+        },
+        "aces": {
+          "type": "string",
+          "description": ""
+        },
+        "servicesTotal": {
+          "type": "string",
+          "description": ""
+        },
+        "serviceFaults": {
+          "type": "string",
+          "description": ""
+        },
+        "servicesInPlay": {
+          "type": "string",
+          "description": ""
+        },
+        "acesAveragePerSet": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "volleyballStatsDefense": {
+      "type": "object",
+
+      "description": "Defensive stats (or digs) specific to volleyball.",
+      "properties": {
+        "defenseRank": {
+          "type": "string",
+          "description": ""
+        },
+        "digsTotal": {
+          "type": "string",
+          "description": ""
+        },
+        "digAttempts": {
+          "type": "string",
+          "description": ""
+        },
+        "digsFaults": {
+          "type": "string",
+          "description": ""
+        },
+        "digsInPlay": {
+          "type": "string",
+          "description": ""
+        },
+        "digsAveragePerSet": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "volleyballStatsSetting": {
+      "type": "object",
+
+      "description": "Sets stats specific to volleyball",
+      "properties": {
+        "defenseRankSets": {
+          "type": "string",
+          "description": ""
+        },
+        "runningSetsTotal": {
+          "type": "string",
+          "description": ""
+        },
+        "setsAttempts": {
+          "type": "string",
+          "description": ""
+        },
+        "setsFaults": {
+          "type": "string",
+          "description": ""
+        },
+        "setsInPlay": {
+          "type": "string",
+          "description": ""
+        },
+        "setsAveragePerSet": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "volleyballStatsReceiving": {
+      "type": "object",
+
+      "description": "Reception stats specific to volleyball.",
+      "properties": {
+        "receptionsRank": {
+          "type": "string",
+          "description": ""
+        },
+        "receptionsExcellent": {
+          "type": "string",
+          "description": ""
+        },
+        "receptionsAttempts": {
+          "type": "string",
+          "description": ""
+        },
+        "receptionFaults": {
+          "type": "string",
+          "description": ""
+        },
+        "receptionsInPlay": {
+          "type": "string",
+          "description": ""
+        },
+        "receptionPercentage": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "volleyballPlayerStats": {
+      "type": "object",
+
+      "description": "Player statistics that are specific to volleyball. | Volleyball specific statistic information about a player.",
+      "properties": {
+        "statsVolleyballAttacks": {
+          "$ref": "#/definitions/volleyballStatsAttacks",
+          "description": ""
+        },
+        "statsVolleyballBlocks": {
+          "$ref": "#/definitions/volleyballStatsBlocks",
+          "description": ""
+        },
+        "statsVolleyballService": {
+          "$ref": "#/definitions/volleyballStatsService",
+          "description": ""
+        },
+        "statsVolleyballDefense": {
+          "$ref": "#/definitions/volleyballStatsDefense",
+          "description": ""
+        },
+        "statsVolleyballSetting": {
+          "$ref": "#/definitions/volleyballStatsSetting",
+          "description": ""
+        },
+        "statsVolleyballReceiving": {
+          "$ref": "#/definitions/volleyballStatsReceiving",
+          "description": ""
+        },
+        "pointsPlayer": {
+          "type": "string",
+          "description": ""
+        },
+        "pointAttemptsPlayer": {
+          "type": "string",
+          "description": ""
+        },
+        "pointsPercentageOfTeam": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    }
+  }
+}
