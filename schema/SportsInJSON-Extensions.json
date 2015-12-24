@@ -6,186 +6,186 @@
     "metadataExtensions": {
       "oneOf": [
         {
-          "$ref": "#/definitions/americanFootballEventMetadata"
+          "$ref": "SportsInJSON-American-Football.json/#/definitions/americanFootbalEventMetadata"
         },
         {
-          "$ref": "#/definitions/baseballEventMetadata"
+          "$ref": "SportsInJSON-Baseball.json/#/definitions/baseballEventMetadata"
         },
         {
-          "$ref": "#/definitions/golfEventMetadata"
+          "$ref": "SportsInJSON-Golf.json/#/definitions/golfEventMetadata"
         },
         {
-          "$ref": "#/definitions/iceHockeyEventMetadata"
+          "$ref": "SportsInJSON-Ice-Hockey.json/#/definitions/iceHockeyEventMetadata"
         },
         {
-          "$ref": "#/definitions/soccerEventMetadata"
+          "$ref": "SportsInJSON-Soccer.json/#/definitions/soccerEventMetadata"
         },
         {
-          "$ref": "#/definitions/tennisEventMetadata"
+          "$ref": "SportsInJSON-Tennis.json/#/definitions/tennisEventMetadata"
         },
         {
-          "$ref": "#/definitions/motorRacingEventMetadata"
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingEventMetadata"
         },
         {
-          "$ref": "#/definitions/curlingEventMetadata"
+          "$ref": "SportsInJSON-Curling.json/#/definitions/curlingEventMetadata"
         },
         {
-          "$ref": "#/definitions/rugbyEventMetadata"
+          "$ref": "SportsInJSON-Rugby.json/#/definitions/rugbyEventMetadata"
         }
       ]
     },
     "eventMetadataExtension": {
       "oneOf": [
         {
-          "$ref": "americanFootballEventMetadataComplexType"
+          "$ref": "SportsInJSON-American-Football.json/#/definitions/americanFootbalEventMetadata"
         },
         {
-          "$ref": "baseballEventMetadataComplexType"
+          "$ref": "SportsInJSON-Baseball.json/#/definitions/baseballEventMetadata"
         },
         {
-          "$ref": "golfEventMetadataComplexType"
+          "$ref": "SportsInJSON-Golf.json/#/definitions/golfEventMetadata"
         },
         {
-          "$ref": "iceHockeyEventMetadataComplexType"
+          "$ref": "SportsInJSON-Ice-Hockey.json/#/definitions/iceHockeyEventMetadata"
         },
         {
-          "$ref": "soccerEventMetadataComplexType"
+          "$ref": "SportsInJSON-Soccer.json/#/definitions/soccerEventMetadata"
         },
         {
-          "$ref": "tennisEventMetadataComplexType"
+          "$ref": "SportsInJSON-Tennis.json/#/definitions/tennisEventMetadata"
         },
         {
-          "$ref": "motorRacingEventMetadataComplexType"
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingEventMetadata"
         },
         {
-          "$ref": "curlingEventMetadataComplexType"
+          "$ref": "SportsInJSON-Curling.json/#/definitions/curlingEventMetadata"
         },
         {
-          "$ref": "rugbyEventMetadataComplexType"
+          "$ref": "SportsInJSON-Rugby.json/#/definitions/rugbyEventMetadata"
         }
       ]
     },
     "eventStatsExtension": {
       "oneOf": [
         {
-          "$ref": "#/definitions/motorRacingEventStats"
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingEventStats"
         }
       ]
     },
     "tournamentMetadataExtension": {
       "oneOf": [
         {
-          "$ref": "#/definitions/golfTournamentMetadata"
+          "$ref": "SportsInJSON-Golf.json/#/definitions/golfTournamentMetadata"
         },
         {
-          "$ref": "#/definitions/tennisTournamentMetadata"
+          "$ref": "SportsInJSON-Tennis.json/#/definitions/tennisTournamentMetadata"
         }
       ]
     },
     "teamMetadataExtension": {
       "oneOf": [
         {
-          "$ref": "#/definitions/baseballTeamMetadataComplexType"
+          "$ref": "SportsInJSON-Baseball.json/#/definitions/baseballTeamMetadata"
         },
         {
-          "$ref": "#/definitions/golfTeamMetadataComplexType"
+          "$ref": "SportsInJSON-Golf.json/#/definitions/golfTeamMetadata"
         },
         {
-          "$ref": "#/definitions/motorRacingTeamMetadataComplexType"
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingTeamMetadata"
         }
       ]
     },
     "teamStatsExtension": {
       "oneOf": [
         {
-          "$ref": "americanFootballTeamStatsComplexType"
+          "$ref": "SportsInJSON-American-Football.json/#/definitions/americanFootbalTeamStats"
         },
         {
-          "$ref": "baseballTeamStatsComplexType"
+          "$ref": "SportsInJSON-Baseball.json/#/definitions/baseballTeamStats"
         },
         {
-          "$ref": "basketballTeamStatsComplexType"
+          "$ref": "SportsInJSON-Basketball.json/#/definitions/basketballTeamStats"
         },
         {
-          "$ref": "iceHockeyTeamStatsComplexType"
+          "$ref": "SportsInJSON-Ice-Hockey.json/#/definitions/iceHockeyTeamStats"
         },
         {
-          "$ref": "soccerTeamStatsComplexType"
+          "$ref": "SportsInJSON-Soccer.json/#/definitions/soccerTeamStats"
         },
         {
-          "$ref": "tennisTeamStatsComplexType"
+          "$ref": "SportsInJSON-Tennis.json/#/definitions/tennisTeamStats"
         },
         {
-          "$ref": "motorRacingTeamStatsComplexType"
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingTeamStats"
         },
         {
-          "$ref": "curlingTeamStatsComplexType"
+          "$ref": "SportsInJSON-Curling.json/#/definitions/curlingTeamStats"
         },
         {
-          "$ref": "rugbyTeamStatsComplexType"
+          "$ref": "SportsInJSON-Rugby.json/#/definitions/rugbyTeamStats"
         }
       ]
     },
     "playerMetadataExtension": {
       "oneOf": [
         {
-          "$ref": "baseballPlayerMetadataComplexType"
+          "$ref": "SportsInJSON-Baseball.json/#/definitions/baseballPlayerMetadata"
         },
         {
-          "$ref": "golfPlayerMetadataComplexType"
+          "$ref": "SportsInJSON-Golf.json/#/definitions/golfPlayerMetadata"
         },
         {
-          "$ref": "iceHockeyPlayerMetadataComplexType"
+          "$ref": "SportsInJSON-Ice-Hockey.json/#/definitions/iceHockeyPlayerMetadata"
         },
         {
-          "$ref": "soccerPlayerMetadataComplexType"
+          "$ref": "SportsInJSON-Soccer.json/#/definitions/soccerPlayerMetadata"
         },
         {
-          "$ref": "motorRacingPlayerMetadataComplexType"
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingPlayerMetadata"
         },
         {
-          "$ref": "curlingPlayerMetadataComplexType"
+          "$ref": "SportsInJSON-Curling.json/#/definitions/curlingPlayerMetadata"
         }
       ]
     },
     "playerStatsExtension": {
       "oneOf": [
         {
-          "$ref": "americanFootballPlayerStatsComplexType"
+          "$ref": "SportsInJSON-American-Football.json/#/definitions/americanFootbalPlayerStats"
         },
         {
-          "$ref": "baseballPlayerStatsComplexType"
+          "$ref": "SportsInJSON-Baseball.json/#/definitions/baseballPlayerStats"
         },
         {
-          "$ref": "basketballPlayerStatsComplexType"
+          "$ref": "SportsInJSON-Basketball.json/#/definitions/basketballPlayerStats"
         },
         {
-          "$ref": "golfPlayerStatsComplexType"
+          "$ref": "SportsInJSON-Golf.json/#/definitions/golfPlayerStats"
         },
         {
-          "$ref": "iceHockeyPlayerStatsComplexType"
+          "$ref": "SportsInJSON-Ice-Hockey.json/#/definitions/iceHockeyPlayerStats"
         },
         {
-          "$ref": "soccerPlayerStatsComplexType"
+          "$ref": "SportsInJSON-Soccer.json/#/definitions/soccerPlayerStats"
         },
         {
-          "$ref": "tennisPlayerStatsComplexType"
+          "$ref": "SportsInJSON-Tennis.json/#/definitions/tennisPlayerStats"
         },
         {
-          "$ref": "motorRacingPlayerStatsComplexType"
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingPlayerStats"
         },
         {
-          "$ref": "curlingPlayerStatsComplexType"
+          "$ref": "SportsInJSON-Curling.json/#/definitions/curlingPlayerStats"
         },
         {
-          "$ref": "rugbyPlayerStatsComplexType"
+          "$ref": "SportsInJSON-Rugby.json/#/definitions/rugbyPlayerStats"
         }
       ]
     },
     "associateMetadataExtension": {
       "oneOf": [
         {
-          "$ref": "motorRacingAssociateMetadataComplexType"
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingAssociateMetadata"
         }
       ]
     }
