@@ -215,6 +215,9 @@
       "allOf": [
         {
           "$ref": "#/complexTypes/basePersonMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Extensions.json/#/definitions/associateMetadataExtension"
         }
       ]
     },
@@ -227,6 +230,9 @@
         },
         {
           "$ref": "#/groups/baseEventState"
+        },
+        {
+          "$ref": "SportsInJSON-Extensions.json/#/definitions/eventMetadataExtension"
         },
         {
           "properties": {
@@ -323,6 +329,9 @@
         },
         {
           "$ref": "#/groups/tournamentAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Extensions.json/#/definitions/tournamentMetadataExtension"
         }
       ]
     },
@@ -538,6 +547,9 @@
           "$ref": "#/complexTypes/baseGenericEntityStats"
         },
         {
+          "$ref": "SportsInJSON-Extensions.json/#/definitions/playerStatsExtension"
+        },
+        {
           "properties": {
             "timePlayedEvent": {
               "type": "string",
@@ -587,6 +599,9 @@
           "$ref": "#/complexTypes/basePersonMetadata"
         },
         {
+          "$ref": "SportsInJSON-Extensions.json/#/definitions/playerMetadataExtension"
+        },
+        {
           "properties": {
             "teamIdref": {
               "$ref": "#/dataTypes/idRef",
@@ -630,6 +645,9 @@
       "allOf": [
         {
           "$ref": "#/complexTypes/baseEntityMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Extensions.json/#/definitions/teamMetadataExtension"
         },
         {
           "properties": {
@@ -710,6 +728,9 @@
       "allOf": [
         {
           "$ref": "#/complexTypes/baseGenericEntityStats"
+        },
+        {
+          "$ref": "SportsInJSON-Extensions.json/#/definitions/teamStatsExtension"
         }
       ]
     },
@@ -2707,6 +2728,9 @@
         },
         {
           "$ref": "#/groups/coverageAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Extensions.json/#/definitions/eventStatsExtension"
         },
         {
           "properties": {
