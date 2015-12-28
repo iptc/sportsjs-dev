@@ -12,7 +12,7 @@
           "description": ""
         },
         "kickOffTeamIdref": {
-          "$ref": "SportsInJSON.json/#/dataTypes/idRef",
+          "$ref": "SportsInJSON.json#/definitions/idRef",
           "description": "Pointer to the team doing the kick-off for the period covered."
         },
         "week": {
@@ -25,7 +25,7 @@
       "type": "object",
       "description": "Record time added by referee. | Holds values for the time added by the referee and how much extra time was actually played.",
       "allOf": [{
-        "$ref": "#/definitions/baseTimeAdjustment"
+        "$ref": "SportsInJSON.json#/definitions/baseTimeAdjustment"
       }]
     },
     "soccerPlayerMetadata": {
@@ -61,7 +61,7 @@
       "type": "object",
       "description": "Player statistics that are specific to soccer. | Soccer specific statistic information about a player.",
       "allOf": [{
-        "$ref": "#/defintions/baseSoccerStats"
+        "$ref": "#/definitions/baseSoccerStats"
       }, {
         "properties": {
           "timeEnteredEvent": {

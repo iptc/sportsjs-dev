@@ -1,18 +1,21 @@
 'use strict';
 
-var $RefParser = require('json-schema-ref-parser');
-var $Validator = require('jsonschema').Validator;
+var tv4 = require('tv4');
+var path = require('path');
+var fs = require('fs');
 
-var validator = new $Validator();
+var sample  = require('../samples/sportsEvent.json');
 var core = require('../schema/SportsInJSON.json');
 
-$RefParser.dereference(core, function(err, schema) {
-    if (err) {
-        console.error(err);
-    }
-    else {
-        var sample  = require('../examples/sports-events-sample.json');
-        var results = validator.validate(sample, schema);
-        console.log(results.errors);
+var schemaDir = '../schema/';
+fs.readdirSync(schemaDir).forEach(function(name) {
+    if (name.indexOf('SportsInJSON') > -1) {
+        var filePath = path.join(schemaDir, name);
+        console.log('Adding ' + name);
+        tv4.addSchema(name, require(filePath));
     }
 });
+
+var result =  tv4.validateMultiple(sample, core, true);
+console.log(result);
+

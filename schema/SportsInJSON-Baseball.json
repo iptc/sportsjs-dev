@@ -13,7 +13,7 @@
       "description": "Metadata about the team. | Specific to the sport of baseball.",
       "properties": {
         "probableStartingPitcherIdref": {
-          "$ref": "SportsInJSON.json/#/dataTypes/idRef",
+          "$ref": "SportsInJSON.json#/definitions/idRef",
           "description": "ID of the pitcher who will probably start the game."
         }
       }
@@ -23,11 +23,11 @@
       "description": "Metadata about the player. | Specific to the sport of baseball.",
       "properties": {
         "battingHand": {
-          "$ref": "SportsInJSON.json/#/vocab/bodySideList",
+          "$ref": "SportsInJSON.json#/definitions/bodySideList",
           "description": "Indicates whether player bats left, right, or is a switch-hitter."
         },
         "throwingHand": {
-          "$ref": "SportsInJSON.json/#/vocab/bodySideList",
+          "$ref": "SportsInJSON.json#/definitions/bodySideList",
           "description": "Indicates whether player throws left, right, or is a switch-thrower."
         }
       }
@@ -37,7 +37,7 @@
       "description": "Stats collected by a player. | Includes offensive, pitching, and defensive stats.",
       "allOf": [
         {
-          "$ref": "#/defintions/baseBaseballStats"
+          "$ref": "#/definitions/baseBaseballStats"
         }
       ]
     },
@@ -46,7 +46,7 @@
       "description": "Specific statistics for baseball. | Includes offensive, pitching, and defensive stats.",
       "allOf": [
         {
-          "$ref": "#/defintions/baseBaseballStats"
+          "$ref": "#/definitions/baseBaseballStats"
         }
       ]
     },
@@ -589,7 +589,7 @@
           "description": "Whether or not a player is standing on first base. Either true or false."
         },
         "runnerOnFirstIdref": {
-          "$ref": "SportsInJSON.json/#/dataTypes/idRef",
+          "$ref": "SportsInJSON.json#/definitions/idRef",
           "description": "A pointer to the player on first base."
         },
         "runnerOnSecond": {
@@ -597,7 +597,7 @@
           "description": "Whether or not a player is standing on second base. Either true or false."
         },
         "runnerOnSecondIdref": {
-          "$ref": "SportsInJSON.json/#/dataTypes/idRef",
+          "$ref": "SportsInJSON.json#/definitions/idRef",
           "description": "A pointer to the player on second base."
         },
         "runnerOnThird": {
@@ -605,7 +605,7 @@
           "description": "Whether or not a player is standing on third base. Either true or false."
         },
         "runnerOnThirdIdref": {
-          "$ref": "SportsInJSON.json/#/dataTypes/idRef",
+          "$ref": "SportsInJSON.json#/definitions/idRef",
           "description": "A pointer to the player on third base."
         },
         "runsThisInningHalf": {
@@ -613,15 +613,15 @@
           "description": "An integer."
         },
         "pitcherIdref": {
-          "$ref": "SportsInJSON.json/#/dataTypes/idRef",
+          "$ref": "SportsInJSON.json#/definitions/idRef",
           "description": "A pointer to the player element for the pitcher standing on the mound."
         },
         "batterIdref": {
-          "$ref": "SportsInJSON.json/#/dataTypes/idRef",
+          "$ref": "SportsInJSON.json#/definitions/idRef",
           "description": "A pointer to the player element for the batter at the plate."
         },
         "batterSide": {
-          "$ref": "SportsInJSON.json/#/vocab/bodySideList",
+          "$ref": "SportsInJSON.json#/definitions/bodySideList",
           "description": "Which side of the plate the batter was on when taking the pitch."
         },
         "atBatNumber": {

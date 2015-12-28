@@ -3,13 +3,26 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The SportsInJSON Soccer schema contains properties common to Tennis.",
   "definitions": {
+    "tennisGameResult": {
+      "type": "string",
+      "description": "The score of the player or team presently serving, either love, 15, 30, 40, game.",
+      "enum": [
+        "love",
+        "15",
+        "30",
+        "40",
+        "game",
+        "ad",
+        "deuce"
+      ]
+    },
     "tennisTournamentMetadata": {
       "type": "object",
 
       "description": "For holding metadata having to do with a tennis tournament. Includes an attribute for the name of the tennis tour.",
       "properties": {
         "tourName": {
-          "$ref": "#/definitions/ConceptNameType",
+          "$ref": "SportsInJSON.json#/definitions/conceptNameType",
           "description": "The name of the tour."
         }
       }
@@ -80,7 +93,7 @@
       "description": "Holds the score of a game. | Also holds details of each point.",
       "properties": {
         "score": {
-          "$ref": "#/definitions/gameResult.Tennis",
+          "$ref": "#/definitions/tennisGameResult",
           "description": "Either love, 15, 30, 40, or game."
         },
         "duration": {
@@ -319,19 +332,19 @@
           "description": "Wich game in the current set this item covers. Generally 1 through 7."
         },
         "serverIdref": {
-          "$ref": "SportsInJSON.json/#/dataTypes/idRef",
+          "$ref": "#/definitions/idRef",
           "description": "A pointer to the player-id or team-id who served the ball on this point."
         },
         "serverScore": {
-          "$ref": "#/definitions/gameResult.Tennis",
+          "$ref": "#/definitions/tennisGameResult",
           "description": "The score of the player or team presently serving, either love, 15, 30, 40, game."
         },
         "receiverIdref": {
-          "$ref": "SportsInJSON.json/#/dataTypes/idRef",
+          "$ref": "#/definitions/idRef",
           "description": "A pointer to the player-id or team-id who received the served ball on this point."
         },
         "receiverScore": {
-          "$ref": "#/definitions/gameResult.Tennis",
+          "$ref": "#/definitions/tennisGameResult",
           "description": "The score of the player or team presently receiving, either love, 15, 30, 40, game."
         },
         "serveNumber": {

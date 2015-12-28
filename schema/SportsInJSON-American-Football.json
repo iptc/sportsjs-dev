@@ -1198,7 +1198,7 @@
           ]
         },
         "teamInPossessionIdref": {
-          "$ref": "SportsInJSON.json/#/dataTypes/idRef",
+          "$ref": "#/definitions/idRef",
           "description": "The ID of the team with the football."
         },
         "down": {

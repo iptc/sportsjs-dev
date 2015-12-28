@@ -13,7 +13,7 @@
           "description": ""
         },
         "kickOffTeamIdref": {
-          "$ref": "SportsInJSON.json/#/dataTypes/idRef",
+          "$ref": "SportsInJSON.json#/definitions/idRef",
           "description": "Pointer to the team doing the kick-off for the period covered."
         }
       }

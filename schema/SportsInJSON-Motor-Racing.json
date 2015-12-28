@@ -43,7 +43,7 @@
       "description": "Details on the car, motorcycle, etc., being driven. | Includes manufacturing information.",
       "properties": {
         "makeName": {
-          "$ref": "#/definitions/ConceptNameType",
+          "$ref": "SportsInJSON.json#/definitions/conceptNameType",
           "description": "A display-name for the make-key."
         },
         "number": {
@@ -51,7 +51,7 @@
           "description": "The number written on the side of the vehicle."
         },
         "makeKey": {
-          "$ref": "#/definitions/QCodeType",
+          "$ref": "SportsInJSON.json#/definitions/qCode",
           "description": "A unique identifier for the make of the car. For example: m.dodge"
         },
         "sponsor": {
@@ -357,7 +357,7 @@
           "description": "The time elapsed in the race."
         },
         "flagState": {
-          "$ref": "#/definitions/QCodeType",
+          "$ref": "SportsInJSON.json#/definitions/qCode",
           "description": "The current flag issued within the race."
         }
       }

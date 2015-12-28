@@ -13,11 +13,11 @@
       "description": "Metadata for a player. | Specific to ice-hockey.",
       "properties": {
         "shootingHand": {
-          "$ref": "SportsInJSON.json/#/vocab/bodySideList",
+          "$ref": "SportsInJSON.json#/definitions/bodySideList",
           "description": "The side from which a player normally shoots."
         },
         "catchingHand": {
-          "$ref": "SportsInJSON.json/#/vocab/bodySideList",
+          "$ref": "SportsInJSON.json#/definitions/bodySideList",
           "description": "The hand with which a player, generally a goaltender, catches the puck."
         }
       }
@@ -53,19 +53,19 @@
       "description": "Stats for a player specific to ice-hockey. | Includes the same offensive and defensive stats available for a team.",
       "properties": {
         "statsIceHockeyOffensive": {
-          "$ref": "#/definition/iceHockeyStatsOffensive",
+          "$ref": "#/definitions/iceHockeyStatsOffensive",
           "description": ""
         },
         "statsIceHockeyDefensive": {
-          "$ref": "#/definition/iceHockeyStatsDefensive",
+          "$ref": "#/definitions/iceHockeyStatsDefensive",
           "description": ""
         },
         "statsIceHockeyFaceoffs": {
-          "$ref": "#/definition/iceHockeyStatsFaceoffs",
+          "$ref": "#/definitions/iceHockeyStatsFaceoffs",
           "description": ""
         },
         "statsIceHockeyTimeOnIce": {
-          "$ref": "#/definition/iceHockeyStatsTimeOnIce",
+          "$ref": "#/definitions/iceHockeyStatsTimeOnIce",
           "description": ""
         },
         "plusMinus": {
