@@ -17,5 +17,5 @@ fs.readdirSync(schemaDir).forEach(function(name) {
 });
 
 var result =  tv4.validateMultiple(sample, core, true);
-console.log(result);
+console.log(JSON.stringify(result, null, 4));
 
