@@ -1,0 +1,10 @@
+{
+  "name": "sports-in-json-tests",
+  "version": "1.0.0",
+  "description": "Test suite for SportsInJSON Schemas.",
+  "main": "test.js",
+  "dependencies": {
+    "json-schema-ref-parser": "^1.4.0",
+    "jsonschema": "^1.0.2"
+  }
+}

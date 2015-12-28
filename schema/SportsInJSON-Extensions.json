@@ -1,0 +1,193 @@
+{
+  "id": "",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsInJSON Extension schema contains properties that group together all specific sport extensions.",
+  "definitions": {
+    "metadataExtensions": {
+      "oneOf": [
+        {
+          "$ref": "SportsInJSON-American-Football.json/#/definitions/americanFootbalEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Baseball.json/#/definitions/baseballEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Golf.json/#/definitions/golfEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Ice-Hockey.json/#/definitions/iceHockeyEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Soccer.json/#/definitions/soccerEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Tennis.json/#/definitions/tennisEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Curling.json/#/definitions/curlingEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Rugby.json/#/definitions/rugbyEventMetadata"
+        }
+      ]
+    },
+    "eventMetadataExtension": {
+      "oneOf": [
+        {
+          "$ref": "SportsInJSON-American-Football.json/#/definitions/americanFootbalEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Baseball.json/#/definitions/baseballEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Golf.json/#/definitions/golfEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Ice-Hockey.json/#/definitions/iceHockeyEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Soccer.json/#/definitions/soccerEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Tennis.json/#/definitions/tennisEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Curling.json/#/definitions/curlingEventMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Rugby.json/#/definitions/rugbyEventMetadata"
+        }
+      ]
+    },
+    "eventStatsExtension": {
+      "oneOf": [
+        {
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingEventStats"
+        }
+      ]
+    },
+    "tournamentMetadataExtension": {
+      "oneOf": [
+        {
+          "$ref": "SportsInJSON-Golf.json/#/definitions/golfTournamentMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Tennis.json/#/definitions/tennisTournamentMetadata"
+        }
+      ]
+    },
+    "teamMetadataExtension": {
+      "oneOf": [
+        {
+          "$ref": "SportsInJSON-Baseball.json/#/definitions/baseballTeamMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Golf.json/#/definitions/golfTeamMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingTeamMetadata"
+        }
+      ]
+    },
+    "teamStatsExtension": {
+      "oneOf": [
+        {
+          "$ref": "SportsInJSON-American-Football.json/#/definitions/americanFootbalTeamStats"
+        },
+        {
+          "$ref": "SportsInJSON-Baseball.json/#/definitions/baseballTeamStats"
+        },
+        {
+          "$ref": "SportsInJSON-Basketball.json/#/definitions/basketballTeamStats"
+        },
+        {
+          "$ref": "SportsInJSON-Ice-Hockey.json/#/definitions/iceHockeyTeamStats"
+        },
+        {
+          "$ref": "SportsInJSON-Soccer.json/#/definitions/soccerTeamStats"
+        },
+        {
+          "$ref": "SportsInJSON-Tennis.json/#/definitions/tennisTeamStats"
+        },
+        {
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingTeamStats"
+        },
+        {
+          "$ref": "SportsInJSON-Curling.json/#/definitions/curlingTeamStats"
+        },
+        {
+          "$ref": "SportsInJSON-Rugby.json/#/definitions/rugbyTeamStats"
+        }
+      ]
+    },
+    "playerMetadataExtension": {
+      "oneOf": [
+        {
+          "$ref": "SportsInJSON-Baseball.json/#/definitions/baseballPlayerMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Golf.json/#/definitions/golfPlayerMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Ice-Hockey.json/#/definitions/iceHockeyPlayerMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Soccer.json/#/definitions/soccerPlayerMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingPlayerMetadata"
+        },
+        {
+          "$ref": "SportsInJSON-Curling.json/#/definitions/curlingPlayerMetadata"
+        }
+      ]
+    },
+    "playerStatsExtension": {
+      "oneOf": [
+        {
+          "$ref": "SportsInJSON-American-Football.json/#/definitions/americanFootbalPlayerStats"
+        },
+        {
+          "$ref": "SportsInJSON-Baseball.json/#/definitions/baseballPlayerStats"
+        },
+        {
+          "$ref": "SportsInJSON-Basketball.json/#/definitions/basketballPlayerStats"
+        },
+        {
+          "$ref": "SportsInJSON-Golf.json/#/definitions/golfPlayerStats"
+        },
+        {
+          "$ref": "SportsInJSON-Ice-Hockey.json/#/definitions/iceHockeyPlayerStats"
+        },
+        {
+          "$ref": "SportsInJSON-Soccer.json/#/definitions/soccerPlayerStats"
+        },
+        {
+          "$ref": "SportsInJSON-Tennis.json/#/definitions/tennisPlayerStats"
+        },
+        {
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingPlayerStats"
+        },
+        {
+          "$ref": "SportsInJSON-Curling.json/#/definitions/curlingPlayerStats"
+        },
+        {
+          "$ref": "SportsInJSON-Rugby.json/#/definitions/rugbyPlayerStats"
+        }
+      ]
+    },
+    "associateMetadataExtension": {
+      "oneOf": [
+        {
+          "$ref": "SportsInJSON-Motor-Racing.json/#/definitions/motorRacingAssociateMetadata"
+        }
+      ]
+    }
+  }
+}

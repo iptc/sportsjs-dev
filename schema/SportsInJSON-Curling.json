@@ -1,0 +1,144 @@
+{
+  "id": "",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsInJSON Soccer schema contains properties common to Curling",
+  "definitions": {
+    "curlingEventMetadata": {
+      "type": "object",
+      "description": "An element holding sport-specific metadata about a curling game.",
+      "properties": {
+        "sheet": {
+          "type": "string",
+          "description": "The playing field (ice) for one curling game is called the sheet. In various tournaments the sheets could be identified with numbers, letters or a combination."
+        },
+        "draw": {
+          "type": "string",
+          "description": "In curling a game is also called a draw. This is not to be confused with the shot type draw. This attributes can be used to record any curling-specific identification this game/draw has."
+        }
+      }
+    },
+    "curlingPlayerMetadata": {
+      "type": "object",
+      "description": "Holds metadata specific to a curling player.",
+      "properties": {
+        "delivery": {
+          "type": "string",
+          "description": "If the player is playing righthanded or lefthanded."
+        },
+        "role": {
+          "type": "string",
+          "description": "If the player has a named role in the team. For example skip or vice skip."
+        }
+      }
+    },
+    "curlingPlayerStats": {
+      "type": "object",
+      "description": "Holds curling-specific stats for certain player.",
+      "properties": {
+        "statsCurlingAccuracy": {
+          "$ref": "#/definitions/curlingStatsAccuracy",
+          "description": ""
+        }
+      }
+    },
+    "curlingTeamStats": {
+      "type": "object",
+      "description": "Statistics summarizing the actions of one team.",
+      "properties": {
+        "statsCurlingStone": {
+          "$ref": "#/definitions/curlingStatsStone",
+          "description": ""
+        },
+        "statsCurlingEnd": {
+          "$ref": "#/definitions/curlingStatsEnd",
+          "description": ""
+        },
+        "statsCurlingAccuracy": {
+          "$ref": "#/definitions/curlingStatsAccuracy",
+          "description": ""
+        },
+        "hammer": {
+          "type": "boolean",
+          "description": ""
+        }
+      }
+    },
+    "curlingStatsStone": {
+      "type": "object",
+      "description": "Description of an individual stone used in a curling game.",
+      "properties": {
+        "stoneNumber": {
+          "type": "string",
+          "description": "The number on the stone."
+        },
+        "stoneColor": {
+          "type": "string",
+          "description": "The color of the stone."
+        }
+      }
+    },
+    "curlingStatsEnd": {
+      "type": "object",
+      "description": "Statistics for one end (round) for one team in a curling game.",
+      "properties": {
+        "endNumber": {
+          "type": "string",
+          "description": "Which number the end has."
+        },
+        "score": {
+          "type": "string",
+          "description": "What was the score for this team this end."
+        },
+        "throwOrder": {
+          "type": "string",
+          "enum": ["first", "last"],
+          "description": "What order of play, did this team play the first or last stone this end."
+        },
+        "timeUsed": {
+          "type": "string",
+          "description": "How much time was used by this team this end."
+        }
+      }
+    },
+    "curlingStatsAccuracy": {
+      "type": "object",
+      "description": "Holds the summary for shots and percentage for one team or one player and optionally for just one type of shots.",
+      "properties": {
+        "shotType": {
+          "type": "string",
+          "enum": ["draw","come around","front","guard","raise","freeze","split","tick","takeout","hit and roll","clearing","double","raise takeout","not considered","team fault","blank"],
+          "description": "If the stats cover a specific shot-type."
+        },
+        "turn": {
+          "type": "string",
+          "enum": ["inturn", "outturn"],
+          "description": "If the stats show the values for a specific turn-type inhand or outhand."
+        },
+        "percentage": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 150,
+          "description": "The calculated percentage of the shots covered in this stats summary."
+        },
+        "numberOfShots": {
+          "type": "string",
+          "description": "Number of shots covered in this stats summary."
+        }
+      }
+    },
+    "eventStateCurling": {
+      "type": "object",
+      "description": "",
+      "properties": {
+        "stoneIdref": {
+          "type": "string",
+          "description": "A reference to an id of the stone used."
+        },
+        "endNumber": {
+          "type": "string",
+          "description": "The number of the end. Rounds of normally 8+8 stones are called ends in curling."
+        }
+      }
+    }
+  }
+}

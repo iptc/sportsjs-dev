@@ -1,0 +1,527 @@
+{
+  "id": "",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsInJSON Soccer schema contains properties common to Ice Hockey.",
+  "definitions": {
+    "iceHockeyEventMetadata": {
+      "type": "object",
+      "description": "Metadata about the event itself. | Specific to ice-hockey.",
+      "properties": {}
+    },
+    "iceHockeyPlayerMetadata": {
+      "type": "object",
+      "description": "Metadata for a player. | Specific to ice-hockey.",
+      "properties": {
+        "shootingHand": {
+          "$ref": "SportsInJSON.json/#/vocab/bodySideList",
+          "description": "The side from which a player normally shoots."
+        },
+        "catchingHand": {
+          "$ref": "SportsInJSON.json/#/vocab/bodySideList",
+          "description": "The hand with which a player, generally a goaltender, catches the puck."
+        }
+      }
+    },
+    "iceHockeyTeamStats": {
+      "type": "object",
+      "description": "Stats about one team. | Specific to ice-hockey.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseIceHockeyStats"
+        }
+      ]
+    },
+    "iceHockeyPlayerStats": {
+      "type": "object",
+      "description": "Stats for a player specific to ice-hockey. | Includes the same offensive and defensive stats available for a team.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseIceHockeyStats"
+        },
+        {
+          "properties": {
+            "minutesPlayed": {
+              "type": "string",
+              "description": "Number of minutes player was on ice."
+            }
+          }
+        }
+      ]
+    },
+    "baseIceHockeyStats": {
+      "type": "object",
+      "description": "Stats for a player specific to ice-hockey. | Includes the same offensive and defensive stats available for a team.",
+      "properties": {
+        "statsIceHockeyOffensive": {
+          "$ref": "#/definition/iceHockeyStatsOffensive",
+          "description": ""
+        },
+        "statsIceHockeyDefensive": {
+          "$ref": "#/definition/iceHockeyStatsDefensive",
+          "description": ""
+        },
+        "statsIceHockeyFaceoffs": {
+          "$ref": "#/definition/iceHockeyStatsFaceoffs",
+          "description": ""
+        },
+        "statsIceHockeyTimeOnIce": {
+          "$ref": "#/definition/iceHockeyStatsTimeOnIce",
+          "description": ""
+        },
+        "plusMinus": {
+          "type": "string",
+          "description": "Number of times team/player was on ice when own team scored minus the number of times team/player was on ice when opponent scored."
+        },
+        "plusTotal": {
+          "type": "string",
+          "description": "Number of team/times player was on ice when own team scored."
+        },
+        "minusTotal": {
+          "type": "string",
+          "description": "Number of times tteam/player was on ice when opponent scored."
+        },
+        "penaltyMinutes": {
+          "type": "string",
+          "description": "Total number of penalty minutes accrued by a single player or team."
+        }
+      }
+    },
+    "iceHockeyStatsOffensive": {
+      "type": "object",
+      "description": "Offensive stats for one team. | Specific to ice-hockey, including stats on shots, goals, and faceoffs.",
+      "properties": {
+        "goalsTotal": {
+          "type": "string",
+          "description": "Total number of goals by the team. Could differ from the score if score-points are awarded for shootout, for example."
+        },
+        "goalsGameWinning": {
+          "type": "string",
+          "description": "Goals that provided the winning margin in a game."
+        },
+        "goalsGameTying": {
+          "type": "string",
+          "description": "Goals that caused the game to be tied."
+        },
+        "goalsPowerPlay": {
+          "type": "string",
+          "description": "Goals scored while the team was having a power-play."
+        },
+        "goalsShortHanded": {
+          "type": "string",
+          "description": "Goals scored while the team was playing short-handed."
+        },
+        "goalsEvenStrength": {
+          "type": "string",
+          "description": "Goals scored while the teams were at even strength."
+        },
+        "goalsEmptyNet": {
+          "type": "string",
+          "description": "Goals scored on an empty goal, with the opposing goalie pulled from the net."
+        },
+        "goalsOvertime": {
+          "type": "string",
+          "description": "Goals scored during overtime."
+        },
+        "goalsShootout": {
+          "type": "string",
+          "description": "Goals scored during a shootout."
+        },
+        "goalsShootoutAttempts": {
+          "type": "string",
+          "description": "Goals attempted during a shootout."
+        },
+        "goalsPenaltyShot": {
+          "type": "string",
+          "description": "Goals scored as penalty shots."
+        },
+        "goalsPerGame": {
+          "type": "string",
+          "description": "Average of goals scored per game."
+        },
+        "assists": {
+          "type": "string",
+          "description": "Total number of assists."
+        },
+        "assistsPowerPlay": {
+          "type": "string",
+          "description": "Total number of assists made during a power play."
+        },
+        "assistsShortHanded": {
+          "type": "string",
+          "description": "Total number of assists made while short-handed."
+        },
+        "assistsGameWinning": {
+          "type": "string",
+          "description": "Assists on goals that provided the winning margin in a game."
+        },
+        "assistsGameTying": {
+          "type": "string",
+          "description": "Assists on goals that caused the game to be tied."
+        },
+        "assistsOvertime": {
+          "type": "string",
+          "description": "Assists on goals scored during overtime."
+        },
+        "points": {
+          "type": "string",
+          "description": "Total number of points, with a score and an assist generally counted as one point each."
+        },
+        "pointsPowerPlay": {
+          "type": "string",
+          "description": "Total number of points during power plays, with a score and an assist generally counted as one point each."
+        },
+        "pointsShortHanded": {
+          "type": "string",
+          "description": "Total number of points while short-handed, with a score and an assist generally counted as one point each."
+        },
+        "powerPlayAmount": {
+          "type": "string",
+          "description": "Number of power-play opportunities a team has had."
+        },
+        "powerPlayPercentage": {
+          "type": "string",
+          "description": "Measure of success at power plays. Figured by dividing goals-power-play by power-play-amount."
+        },
+        "shotsPenaltyShotTaken": {
+          "type": "string",
+          "description": "Total number of penalty shots taken by a shooting player."
+        },
+        "shotsPenaltyShotMissed": {
+          "type": "string",
+          "description": "Total number of penalty shots missed by a shooting player."
+        },
+        "shotsPenaltyShotPercentage": {
+          "type": "string",
+          "description": "Percentage of penalty shots that resulted in goals."
+        },
+        "giveaways": {
+          "type": "string",
+          "description": "Number of times that passes were attempted but intercepted. A judgment call whose exact conditions vary."
+        },
+        "minutesPowerPlay": {
+          "type": "string",
+          "description": "Total number of minutes played in a power-play."
+        },
+        "scoringChances": {
+          "type": "string",
+          "description": "Total number of qualified chances to score."
+        },
+        "hatTricks": {
+          "type": "string",
+          "description": "Total number of hat-trick games."
+        },
+        "shotsMissed": {
+          "type": "string",
+          "description": "Total number of shots missed."
+        },
+        "shotAttemptsBlocked": {
+          "type": "string",
+          "description": "Number of shots taken which were blocked by an opponent."
+        },
+        "shotsEvenStrength": {
+          "type": "string",
+          "description": "Number of shots taken at even strength."
+        },
+        "shotsPowerPlay": {
+          "type": "string",
+          "description": "Number of shots taken on power play."
+        },
+        "shotsShortHanded": {
+          "type": "string",
+          "description": "Number of shots taken while short-handed."
+        }
+      }
+    },
+    "iceHockeyStatsDefensive": {
+      "type": "object",
+      "description": "Defensive stats for the team. | Specific to ice-hockey, including saves and shots allowed.",
+      "properties": {
+        "shotsPowerPlayAllowed": {
+          "type": "string",
+          "description": "Total number of shots on goal allowed during power-play."
+        },
+        "shotsPenaltyShotAllowed": {
+          "type": "string",
+          "description": "Total number of shots allowed as penalty-shots."
+        },
+        "goalsPowerPlayAllowed": {
+          "type": "string",
+          "description": "Total number of goals allowed while the opposing team has a power-play."
+        },
+        "goalsPenaltyShotAllowed": {
+          "type": "string",
+          "description": "Total number of goals allowed as penalty-shots."
+        },
+        "goalsEmptyNetAllowed": {
+          "type": "string",
+          "description": "Total number of goals allowed while the net was empty."
+        },
+        "goalsShortHandedAllowed": {
+          "type": "string",
+          "description": "Total number of goals allowed while playing short-handed."
+        },
+        "goalsAgainstTotal": {
+          "type": "string",
+          "description": "Total number of goals against for the given period. Could differ from the score if score-points are deducted for some reason."
+        },
+        "goalsAgainstAverage": {
+          "type": "string",
+          "description": "Average number of goals per game allowed by the team."
+        },
+        "saves": {
+          "type": "string",
+          "description": "Total number of saves."
+        },
+        "savePercentage": {
+          "type": "string",
+          "description": "Percentage of saves compared to total number of shots."
+        },
+        "goalsShootoutAllowed": {
+          "type": "string",
+          "description": "Number of shootout goals that went in for a score for the opposing team."
+        },
+        "shotsShootoutAllowed": {
+          "type": "string",
+          "description": "Number of shootout shots that were attempted by the opposing team."
+        },
+        "penaltyKillingAmount": {
+          "type": "string",
+          "description": "Number of penalty-killing sessions, aka number of short-handed sessions."
+        },
+        "penaltyKillingPercentage": {
+          "type": "string",
+          "description": "Equals goals-penalty-allowed divided by penalty-killing-amount."
+        },
+        "shotsBlocked": {
+          "type": "string",
+          "description": "Number of shots that were blocked. This statistic is generally tracked for non-goalies."
+        },
+        "takeaways": {
+          "type": "string",
+          "description": "Number of intercepted passes. A judgment call whose exact conditions vary."
+        },
+        "shutouts": {
+          "type": "string",
+          "description": "Total number of games where the opposing team did not score."
+        },
+        "minutesPenaltyKilling": {
+          "type": "string",
+          "description": "Total number of minutes played short-handed, while the other team had a power-play."
+        },
+        "hits": {
+          "type": "string",
+          "description": "Number of body checks made against an opposing player."
+        },
+        "goaltenderWins": {
+          "type": "string",
+          "description": "Total number of games with this goaltender."
+        },
+        "goaltenderLosses": {
+          "type": "string",
+          "description": "Total number of games lost with this goaltender."
+        },
+        "goaltenderTies": {
+          "type": "string",
+          "description": "Total number of games tied with this goaltender."
+        },
+        "goaltenderWinsOvertime": {
+          "type": "string",
+          "description": "Number of games won while play is in overtime."
+        },
+        "goaltenderLossesOvertime": {
+          "type": "string",
+          "description": "Number of games lost while play is in overtime."
+        }
+      }
+    },
+    "iceHockeyStatsFaceoffs": {
+      "type": "object",
+      "description": "Defensive stats for the team. | Specific to ice-hockey, including saves and shots allowed.",
+      "properties": {
+        "faceoffsTotal": {
+          "type": "string",
+          "description": "Total number of faceoffs taken."
+        },
+        "faceoffWins": {
+          "type": "string",
+          "description": "Total number of won faceoffs."
+        },
+        "faceoffLosses": {
+          "type": "string",
+          "description": "Total number of lost faceoffs."
+        },
+        "faceoffWinPercentage": {
+          "type": "string",
+          "description": "Percentage of faceoffs that were won."
+        },
+        "faceoffsEvenStrengthTotal": {
+          "type": "string",
+          "description": "Number of faceoffs taken at even strength."
+        },
+        "faceoffsEvenStrengthWins": {
+          "type": "string",
+          "description": "Number of faceoffs won at even strength."
+        },
+        "faceoffsEvenStrengthLosses": {
+          "type": "string",
+          "description": "Number of faceoffs lost at even strength."
+        },
+        "faceoffsEvenStrengthWinPercentage": {
+          "type": "string",
+          "description": "Percentage of faceoffs won at even strength."
+        },
+        "faceoffsPowerPlayTotal": {
+          "type": "string",
+          "description": "Number of faceoffs taken on power play."
+        },
+        "faceoffsPowerPlayWins": {
+          "type": "string",
+          "description": "Number of faceoffs won on power play."
+        },
+        "faceoffsPowerPlayLosses": {
+          "type": "string",
+          "description": "Number of faceoffs lost on power play."
+        },
+        "faceoffsPowerPlayWinPercentage": {
+          "type": "string",
+          "description": "Percentage of faceoffs won on power play."
+        },
+        "faceoffsShortHandedTotal": {
+          "type": "string",
+          "description": "Number of faceoffs taken while short-handed."
+        },
+        "faceoffsShortHandedWins": {
+          "type": "string",
+          "description": "Number of faceoffs won while short-handed."
+        },
+        "faceoffsShortHandedLosses": {
+          "type": "string",
+          "description": "Number of faceoffs lost while short-handed."
+        },
+        "faceoffsShortHandedWinPercentage": {
+          "type": "string",
+          "description": "Percentage of faceoffs won while short-handed."
+        }
+      }
+    },
+    "iceHockeyStatsTimeOnIce": {
+      "type": "object",
+      "description": "Defensive stats for the team. | Specific to ice-hockey, including saves and shots allowed.",
+      "properties": {
+        "shifts": {
+          "type": "string",
+          "description": "Number of shifts played."
+        },
+        "shiftsPowerPlay": {
+          "type": "string",
+          "description": "Number of power-play shifts played."
+        },
+        "shiftsShortHanded": {
+          "type": "string",
+          "description": "Number of short-handed shifts played."
+        },
+        "shiftsAverage": {
+          "type": "string",
+          "description": "Average number of shifts played."
+        },
+        "timeAveragePerShift": {
+          "type": "string",
+          "description": "Average amount of time played per shift."
+        },
+        "timeAverageEvenStrength": {
+          "type": "string",
+          "description": "Average amount of time played at even strength."
+        },
+        "timeAverageShortHanded": {
+          "type": "string",
+          "description": "Average amount of time played short-handed."
+        },
+        "timeAveragePowerPlay": {
+          "type": "string",
+          "description": "Average amount of time played on power play."
+        },
+        "timePowerPlay": {
+          "type": "string",
+          "description": "Amount of time played on power play."
+        },
+        "timeShortHanded": {
+          "type": "string",
+          "description": "Amount of time played short-handed."
+        },
+        "timeEvenStrength": {
+          "type": "string",
+          "description": "Amount of time played at even strength."
+        },
+        "timeEmptyNet": {
+          "type": "string",
+          "description": "Amount of time played with an empty net."
+        },
+        "timePowerPlayEmptyNet": {
+          "type": "string",
+          "description": "Amount of time played on power play with empty net."
+        },
+        "timeShortHandedEmptyNet": {
+          "type": "string",
+          "description": "Amount of time played short-handed with empty net."
+        },
+        "timeEvenStrengthEmptyNet": {
+          "type": "string",
+          "description": "Amount of time played even strength with empty net."
+        }
+      }
+    },
+    "eventStateIceHockey": {
+      "type": "object",
+      "description": "",
+      "properties": {
+        "powerPlayTimeRemaining": {
+          "type": "string",
+          "description": "The time remaining in the power-play."
+        },
+        "powerPlayTeamIdref": {
+          "type": "string",
+          "description": "The key of the team on power-play."
+        },
+        "powerPlayPlayerAdvantage": {
+          "type": "string",
+          "description": "The number of extra players on ice for the team on power play."
+        },
+        "scoreTeam": {
+          "type": "string",
+          "description": "After an action has taken place, the score of the team that team-idref points to."
+        },
+        "scoreTeamOpposing": {
+          "type": "string",
+          "description": "After an action has taken place, the score of the team opposing that listed in team-idref."
+        }
+      }
+    },
+    "commonPropertiesIceHockey": {
+      "type": "object",
+      "description": "",
+      "properties": {
+        "playerCount": {
+          "type": "string",
+          "description": "Number of players on the ice for the stat or action."
+        },
+        "playerCountOpposing": {
+          "type": "string",
+          "description": "Number of opposing players on the ice for the stat or action."
+        },
+        "zone": {
+          "type": "string",
+          "enum": [
+            "offensive",
+            "defensive",
+            "neutral"
+          ],
+          "description": "The zone on the rink for the stat or action: offensive | defensive | neutral."
+        },
+        "location": {
+          "type": "string",
+          "description": "Location of the action on the rink."
+        }
+      }
+    }
+  }
+}
