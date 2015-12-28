@@ -2098,7 +2098,7 @@
         {
           "properties": {
             "eventMetadata": {
-              "$ref": "#/definitions/sportsMetadata"
+              "$ref": "#/definitions/eventMetadata"
             },
             "eventStats": {
               "$ref": "#/definitions/eventStats"
