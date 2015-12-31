@@ -995,9 +995,6 @@
       "allOf": [
         {
           "$ref": "#/definitions/baseGenericEntityStats"
-        },
-        {
-          "$ref": "SportsInJSON-Extensions.json#/definitions/teamStatsExtension"
         }
       ]
     },
@@ -2191,6 +2188,10 @@
           "description": "A consistent key for the type of regularly-published document being transmitted.",
           "type": "string"
         },
+        "fixtureName": {
+          "description": "A key label for the type of regularly-published document being transmitted.",
+          "type": "string"
+        },
         "catalog": {
           "description": "A reference to the document listing externally-supplied controlled vocabularies.",
           "type": "string"
@@ -2564,7 +2565,15 @@
       ]
     },
     "teamStats": {
-      "type": "object"
+      "type": "object",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseTeamStats"
+        },
+        {
+          "$ref": "SportsInJSON-Extensions.json#/definitions/teamStatsExtension"
+        }
+      ]
     },
     "teams": {
       "type": "array",

@@ -4,7 +4,7 @@ var tv4 = require('tv4');
 var path = require('path');
 var fs = require('fs');
 
-var sample  = require('../samples/sportsEvent.json');
+var sample  = require('../samples/americanFootballEventSummary.json');
 var core = require('../schema/SportsInJSON.json');
 
 var schemaDir = '../schema/';
@@ -16,6 +16,6 @@ fs.readdirSync(schemaDir).forEach(function(name) {
     }
 });
 
-var result =  tv4.validateMultiple(sample, core, true);
+var result =  tv4.validateMultiple(sample, core, true, true);
 console.log(JSON.stringify(result, null, 4));
 
