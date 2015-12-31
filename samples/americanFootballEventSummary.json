@@ -1,16 +1,16 @@
 {
   "sportsMetadata": {
     "docId": "6c71abe8-372c-4d00-b5a9-c002803cce12",
-    "fixtureKey": "event-summary",
+    "fixtureKey": "fixture:event-summary",
     "fixtureName": "Event Summary"
   },
   "sportsEvent": {
     "eventMetadata": {
       "eventKey": "fc66659e-3c56-43ed-b0b4-b6b0725d1620",
       "dateCoverageType": "event",
-      "seasonKey": "2015",
-      "seasonType": "season-regular",
-      "eventStatus": "post-event",
+      "seasonKey": "season:2015",
+      "seasonType": "seasonType:season-regular",
+      "eventStatus": "eventStatus:post-event",
       "startDateTime": "2015-12-14T20:30:00-05:00",
       "eventName": "2015 New York Giants at Miami Dolphins | 2015-12-14 08:30 PM",
       "americanFootballEventMetadata": {
@@ -29,7 +29,7 @@
           "alignment": "home"
         },
         "teamStats": {
-          "score": 24,
+          "score": "24",
           "scoreOpposing": "31",
           "subScores": [
             {

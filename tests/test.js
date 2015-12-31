@@ -5,7 +5,7 @@ var path = require('path');
 var fs = require('fs');
 
 var sample  = require('../samples/americanFootballEventSummary.json');
-var core = require('../schema/SportsInJSON.json');
+var core = require('../schema/SportsInJSON-Core.json');
 
 var schemaDir = '../schema/';
 fs.readdirSync(schemaDir).forEach(function(name) {

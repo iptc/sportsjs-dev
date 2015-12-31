@@ -13,11 +13,11 @@
       "description": "Metadata for a player. | Specific to ice-hockey.",
       "properties": {
         "shootingHand": {
-          "$ref": "SportsInJSON.json#/definitions/bodySideList",
+          "$ref": "SportsInJSON-Core.json#/definitions/bodySideList",
           "description": "The side from which a player normally shoots."
         },
         "catchingHand": {
-          "$ref": "SportsInJSON.json#/definitions/bodySideList",
+          "$ref": "SportsInJSON-Core.json#/definitions/bodySideList",
           "description": "The hand with which a player, generally a goaltender, catches the puck."
         }
       }

@@ -22,7 +22,7 @@
       "description": "For holding metadata having to do with a tennis tournament. Includes an attribute for the name of the tennis tour.",
       "properties": {
         "tourName": {
-          "$ref": "SportsInJSON.json#/definitions/conceptNameType",
+          "$ref": "SportsInJSON-Core.json#/definitions/conceptNameType",
           "description": "The name of the tour."
         }
       }
