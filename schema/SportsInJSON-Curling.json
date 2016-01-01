@@ -4,7 +4,6 @@
   "description": "The SportsInJSON Soccer schema contains properties common to Curling",
   "definitions": {
     "curlingEventMetadata": {
-      "type": "object",
       "description": "An element holding sport-specific metadata about a curling game.",
       "properties": {
         "sheet": {
@@ -18,8 +17,12 @@
       }
     },
     "curlingPlayerMetadata": {
-      "type": "object",
       "description": "Holds metadata specific to a curling player.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        }
+      ],
       "properties": {
         "delivery": {
           "type": "string",
@@ -32,8 +35,15 @@
       }
     },
     "curlingPlayerStats": {
-      "type": "object",
       "description": "Holds curling-specific stats for certain player.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "statsCurlingAccuracy": {
           "$ref": "#/definitions/curlingStatsAccuracy",
@@ -42,8 +52,15 @@
       }
     },
     "curlingTeamStats": {
-      "type": "object",
       "description": "Statistics summarizing the actions of one team.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "statsCurlingStone": {
           "$ref": "#/definitions/curlingStatsStone",
@@ -64,8 +81,15 @@
       }
     },
     "curlingStatsStone": {
-      "type": "object",
       "description": "Description of an individual stone used in a curling game.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "stoneNumber": {
           "type": "string",
@@ -78,8 +102,15 @@
       }
     },
     "curlingStatsEnd": {
-      "type": "object",
       "description": "Statistics for one end (round) for one team in a curling game.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "endNumber": {
           "type": "string",
@@ -91,7 +122,10 @@
         },
         "throwOrder": {
           "type": "string",
-          "enum": ["first", "last"],
+          "enum": [
+            "first",
+            "last"
+          ],
           "description": "What order of play, did this team play the first or last stone this end."
         },
         "timeUsed": {
@@ -101,17 +135,44 @@
       }
     },
     "curlingStatsAccuracy": {
-      "type": "object",
       "description": "Holds the summary for shots and percentage for one team or one player and optionally for just one type of shots.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "shotType": {
           "type": "string",
-          "enum": ["draw","come around","front","guard","raise","freeze","split","tick","takeout","hit and roll","clearing","double","raise takeout","not considered","team fault","blank"],
+          "enum": [
+            "draw",
+            "come around",
+            "front",
+            "guard",
+            "raise",
+            "freeze",
+            "split",
+            "tick",
+            "takeout",
+            "hit and roll",
+            "clearing",
+            "double",
+            "raise takeout",
+            "not considered",
+            "team fault",
+            "blank"
+          ],
           "description": "If the stats cover a specific shot-type."
         },
         "turn": {
           "type": "string",
-          "enum": ["inturn", "outturn"],
+          "enum": [
+            "inturn",
+            "outturn"
+          ],
           "description": "If the stats show the values for a specific turn-type inhand or outhand."
         },
         "percentage": {
@@ -127,7 +188,6 @@
       }
     },
     "eventStateCurling": {
-      "type": "object",
       "description": "",
       "properties": {
         "stoneIdref": {

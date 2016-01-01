@@ -3,23 +3,13 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The SportsInJSON Soccer schema contains properties common to Tennis.",
   "definitions": {
-    "tennisGameResult": {
-      "type": "string",
-      "description": "The score of the player or team presently serving, either love, 15, 30, 40, game.",
-      "enum": [
-        "love",
-        "15",
-        "30",
-        "40",
-        "game",
-        "ad",
-        "deuce"
-      ]
-    },
     "tennisTournamentMetadata": {
-      "type": "object",
-
       "description": "For holding metadata having to do with a tennis tournament. Includes an attribute for the name of the tennis tour.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        }
+      ],
       "properties": {
         "tourName": {
           "$ref": "SportsInJSON-Core.json#/definitions/conceptNameType",
@@ -28,9 +18,12 @@
       }
     },
     "tennisEventMetadata": {
-      "type": "object",
-
       "description": "Metadata about the specific tennis match. | When in the match this document was issued.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/eventStateTennis"
+        }
+      ],
       "properties": {
         "numberOfSets": {
           "type": "string",
@@ -39,9 +32,12 @@
       }
     },
     "tennisPlayerStats": {
-      "type": "object",
-      "_extension": "baseTennisStats",
       "description": "Holds tennis-specific stats. Used for singles matches. | Generally having to do with the score of the match.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseTennisStats"
+        }
+      ],
       "properties": {
         "statsTennisSet": {
           "$ref": "#/definitions/tennisStatsSet",
@@ -50,9 +46,12 @@
       }
     },
     "tennisTeamStats": {
-      "type": "object",
-      "_extension": "baseTennisStats",
       "description": "Holds tennis-specific stats. Used for doubles matches. | Generally having to do with the score of the match.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseTennisStats"
+        }
+      ],
       "properties": {
         "statsTennisSet": {
           "$ref": "#/definitions/tennisStatsSet",
@@ -61,9 +60,12 @@
       }
     },
     "tennisStatsSet": {
-      "type": "object",
-      "_extension": "baseTennisStats",
       "description": "Holds the score of a set. | Includes an attribute for a set's tiebreaker score.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseTennisStats"
+        }
+      ],
       "properties": {
         "statsTennisGame": {
           "$ref": "#/definitions/tennisStatsGame",
@@ -88,9 +90,12 @@
       }
     },
     "tennisStatsGame": {
-      "type": "object",
-      "_extension": "baseTennisStats",
       "description": "Holds the score of a game. | Also holds details of each point.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseTennisStats"
+        }
+      ],
       "properties": {
         "score": {
           "$ref": "#/definitions/tennisGameResult",
@@ -103,9 +108,18 @@
       }
     },
     "baseTennisStats": {
-      "type": "object",
-
       "description": "Basic elements and attributes for tennis statistics",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        },
+        {
+          "$ref": "#/definitions/statsTennis"
+        }
+      ],
       "properties": {
         "statsTennisService": {
           "$ref": "#/definitions/tennisStatsService",
@@ -118,9 +132,15 @@
       }
     },
     "tennisStatsService": {
-      "type": "object",
-
       "description": "Stats for the play where the player served.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "aces": {
           "type": "string",
@@ -217,9 +237,15 @@
       }
     },
     "tennisStatsReturn": {
-      "type": "object",
-
       "description": "Stats for play where the player is receiving the serve.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "returnsPlayed": {
           "type": "string",
@@ -276,8 +302,6 @@
       }
     },
     "statsTennis": {
-      "type": "object",
-
       "description": "",
       "properties": {
         "netPointsWon": {
@@ -319,8 +343,6 @@
       }
     },
     "eventStateTennis": {
-      "type": "object",
-
       "description": "A group of attributes (set, game, server, server-score, receiver receiver-score, serve-number) that can be used for tennis actions.",
       "properties": {
         "set": {
@@ -332,7 +354,7 @@
           "description": "Wich game in the current set this item covers. Generally 1 through 7."
         },
         "serverIdref": {
-          "$ref": "#/definitions/idRef",
+          "$ref": "SportsInJSON-Core.json#/definitions/idRef",
           "description": "A pointer to the player-id or team-id who served the ball on this point."
         },
         "serverScore": {
@@ -340,7 +362,7 @@
           "description": "The score of the player or team presently serving, either love, 15, 30, 40, game."
         },
         "receiverIdref": {
-          "$ref": "#/definitions/idRef",
+          "$ref": "SportsInJSON-Core.json#/definitions/idRef",
           "description": "A pointer to the player-id or team-id who received the served ball on this point."
         },
         "receiverScore": {
@@ -348,10 +370,24 @@
           "description": "The score of the player or team presently receiving, either love, 15, 30, 40, game."
         },
         "serveNumber": {
-          "_type": "",
+          "type": "string",
+          "enum": ["first", "second"],
           "description": "Identifying either the first or second serve."
         }
       }
+    },
+    "tennisGameResult": {
+      "type": "string",
+      "description": "The score of the player or team presently serving, either love, 15, 30, 40, game.",
+      "enum": [
+        "love",
+        "15",
+        "30",
+        "40",
+        "game",
+        "ad",
+        "deuce"
+      ]
     }
   }
 }

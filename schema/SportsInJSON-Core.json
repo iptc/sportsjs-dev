@@ -957,7 +957,7 @@
         },
         "place": {
           "type": "string",
-          "description": "The place for which this prize is offered. For example, place=\"1\" means the first-place prize."
+          "description": "The place for which this prize is offered. For example, place='1' means the first-place prize."
         },
         "value": {
           "type": "string",
@@ -1270,7 +1270,7 @@
         },
         "partIndex": {
           "type": "string",
-          "description": "For provider-specific tournament indexing systems. DPA, for example, has one that looks like this: part-name=\"Group A\" part-index=\"p1/1/p2/A\""
+          "description": "For provider-specific tournament indexing systems. DPA, for example, has one that looks like this: part-name='Group A' part-index='p1/1/p2/A'"
         }
       }
     },
@@ -2018,7 +2018,7 @@
         },
         "result": {
           "$ref": "#/definitions/qCodeType",
-          "description": "The result of the play or action. See \"result\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spamfresult/ http://cv.iptc.org/newscodes/spsocresult/"
+          "description": "The result of the play or action. See 'result' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spamfresult/ http://cv.iptc.org/newscodes/spsocresult/"
         },
         "sequenceNumber": {
           "type": "integer",
@@ -2030,7 +2030,7 @@
         },
         "type": {
           "$ref": "#/definitions/qCodeType",
-          "description": "The type of competitive action taken on the field of play. See \"action\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spamfaction/ http://cv.iptc.org/newscodes/spbblaction/ http://cv.iptc.org/newscodes/spbkbaction/ http://cv.iptc.org/newscodes/spichaction/ http://cv.iptc.org/newscodes/spmcraction/ http://cv.iptc.org/newscodes/rgxaction/ http://cv.iptc.org/newscodes/spsocaction/ http://cv.iptc.org/newscodes/sptenaction/"
+          "description": "The type of competitive action taken on the field of play. See 'action' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spamfaction/ http://cv.iptc.org/newscodes/spbblaction/ http://cv.iptc.org/newscodes/spbkbaction/ http://cv.iptc.org/newscodes/spichaction/ http://cv.iptc.org/newscodes/spmcraction/ http://cv.iptc.org/newscodes/rgxaction/ http://cv.iptc.org/newscodes/spsocaction/ http://cv.iptc.org/newscodes/sptenaction/"
         },
         "timeElapsed": {
           "$ref": "#/definitions/truncatedTimeType",
@@ -2042,7 +2042,7 @@
         },
         "playerCount": {
           "type": "integer",
-          "description": "Number of players in the \"current\" team"
+          "description": "Number of players in the 'current' team"
         },
         "playerCountOpposing": {
           "type": "integer",
@@ -2094,7 +2094,7 @@
         },
         "scoreTeam": {
           "type": "string",
-          "description": "Score of the \"current\" team"
+          "description": "Score of the 'current' team"
         },
         "scoreTeamOpposing": {
           "type": "string",
@@ -2102,7 +2102,7 @@
         },
         "timeoutsLeft": {
           "type": "integer",
-          "description": "Timeouts left for the \"current\" team"
+          "description": "Timeouts left for the 'current' team"
         },
         "timeoutDuration": {
           "type": "string",
@@ -2138,7 +2138,7 @@
         },
         "shotType": {
           "$ref": "#/definitions/qCodeType",
-          "description": "The type of shot taken. See \"infractionresult\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spgolshot/ http://cv.iptc.org/newscodes/sptenshot/"
+          "description": "The type of shot taken. See 'infractionresult' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spgolshot/ http://cv.iptc.org/newscodes/sptenshot/"
         },
         "shotDistance": {
           "type": "number",
@@ -2166,7 +2166,7 @@
         },
         "penaltyLevel": {
           "$ref": "#/definitions/qCodeType",
-          "description": "The severity or classification of the penalty eg. major, minor, game misconduct. See \"infractionresult\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbpenaltylevel/ http://cv.iptc.org/newscodes/spichpenaltylevel/ http://cv.iptc.org/newscodes/sprgxpenaltylevel/ http://cv.iptc.org/newscodes/spsocpenaltylevel/"
+          "description": "The severity or classification of the penalty eg. major, minor, game misconduct. See 'infractionresult' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbpenaltylevel/ http://cv.iptc.org/newscodes/spichpenaltylevel/ http://cv.iptc.org/newscodes/sprgxpenaltylevel/ http://cv.iptc.org/newscodes/spsocpenaltylevel/"
         },
         "penaltyStatus": {
           "type": "string",
@@ -2178,11 +2178,11 @@
         },
         "scoreAttemptType": {
           "$ref": "#/definitions/qCodeType",
-          "description": "The type of score that was attempted. See \"scoreattempt\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbscoreattempt/ http://cv.iptc.org/newscodes/spichscoreattempt/ http://cv.iptc.org/newscodes/sprgxscoreattempt/ http://cv.iptc.org/newscodes/spsocscoreattempt/"
+          "description": "The type of score that was attempted. See 'scoreattempt' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbscoreattempt/ http://cv.iptc.org/newscodes/spichscoreattempt/ http://cv.iptc.org/newscodes/sprgxscoreattempt/ http://cv.iptc.org/newscodes/spsocscoreattempt/"
         },
         "scoreAttemptResult": {
           "$ref": "#/definitions/qCodeType",
-          "description": "The result of the score attempt eg. blocked, missed, etc. See \"scoreattemptresult\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbscoreattemptresult/ http://cv.iptc.org/newscodes/spichscoreattemtresult/ http://cv.iptc.org/newscodes/sprgxscoreattemptresult/ http://cv.iptc.org/newscodes/spsocscoreattemptresult/"
+          "description": "The result of the score attempt eg. blocked, missed, etc. See 'scoreattemptresult' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbscoreattemptresult/ http://cv.iptc.org/newscodes/spichscoreattemtresult/ http://cv.iptc.org/newscodes/sprgxscoreattemptresult/ http://cv.iptc.org/newscodes/spsocscoreattemptresult/"
         },
         "scoreAttemptSide": {
           "$ref": "#/definitions/bodySideList",
@@ -2190,7 +2190,7 @@
         },
         "scoreAttemptMethod": {
           "$ref": "#/definitions/qCodeType",
-          "description": "What part of the body or equipment the player used to attempt to score. See \"scoreattemptmethod\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spsocscoreattemptmethod/"
+          "description": "What part of the body or equipment the player used to attempt to score. See 'scoreattemptmethod' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spsocscoreattemptmethod/"
         },
         "scoreAttemptSituation": {
           "$ref": "#/definitions/qCodeType",
@@ -2230,15 +2230,15 @@
         },
         "infractionType": {
           "$ref": "#/definitions/qCodeType",
-          "description": "The name of the type of infraction. See \"infraction\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spamfinfraction/ http://cv.iptc.org/newscodes/spichinfraction/ http://cv.iptc.org/newscodes/sprgxinfraction/ http://cv.iptc.org/newscodes/spsocinfraction/"
+          "description": "The name of the type of infraction. See 'infraction' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spamfinfraction/ http://cv.iptc.org/newscodes/spichinfraction/ http://cv.iptc.org/newscodes/sprgxinfraction/ http://cv.iptc.org/newscodes/spsocinfraction/"
         },
         "infractionLevel": {
           "$ref": "#/definitions/qCodeType",
-          "description": "The degree of punishment for the infraction eg. yellow or red card. See \"penaltylevel\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbpenaltylevel/ http://cv.iptc.org/newscodes/spichpenaltylevel/ http://cv.iptc.org/newscodes/sprgxpenaltylevel/ http://cv.iptc.org/newscodes/spsocpenaltylevel/"
+          "description": "The degree of punishment for the infraction eg. yellow or red card. See 'penaltylevel' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbpenaltylevel/ http://cv.iptc.org/newscodes/spichpenaltylevel/ http://cv.iptc.org/newscodes/sprgxpenaltylevel/ http://cv.iptc.org/newscodes/spsocpenaltylevel/"
         },
         "infractionResult": {
           "$ref": "#/definitions/qCodeType",
-          "description": "What the foul resulted in. See \"infractionresult\" SportsML vocabs for various sports: http://cv.iptc.org/newscodes/sprgxinfractionresult/ http://cv.iptc.org/newscodes/spsocinfractionresult/"
+          "description": "What the foul resulted in. See 'infractionresult' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/sprgxinfractionresult/ http://cv.iptc.org/newscodes/spsocinfractionresult/"
         },
         "infractionSide": {
           "$ref": "#/definitions/qCodeType",
@@ -2695,7 +2695,7 @@
         },
         "eventSpan": {
           "$ref": "#/definitions/nonNegativeInteger",
-          "description": "Qualifier of \"most-recent-events\" value for temporal-unit attribute. Specify the number of events eg. 10 for last 10 games."
+          "description": "Qualifier of 'most-recent-events' value for temporal-unit attribute. Specify the number of events eg. 10 for last 10 games."
         },
         "opponentValue": {
           "$ref": "#/definitions/qCodeType",
@@ -2828,7 +2828,7 @@
         },
         "scoreType": {
           "type": "string",
-          "description": "Qualifies \"score\" attribute."
+          "description": "Qualifies 'score' attribute."
         },
         "eventsRemaining": {
           "type": "string",
@@ -2897,7 +2897,7 @@
             "home",
             "away"
           ],
-          "description": "Which side of the field the event is taking place. Either \"home\" or \"away\"."
+          "description": "Which side of the field the event is taking place. Either 'home' or 'away'."
         },
         "fieldLine": {
           "type": "integer",

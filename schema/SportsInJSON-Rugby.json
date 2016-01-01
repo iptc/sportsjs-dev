@@ -4,9 +4,8 @@
   "description": "The SportsInJSON Soccer schema contains properties common to Rugby",
   "definitions": {
     "rugbyEventMetadata": {
-      "type": "object",
-
       "description": "Rugby-specific metadata for events. | Metadata that is specific to rugby for events.",
+      "allOf": [],
       "properties": {
         "timeAdjustment": {
           "$ref": "#/definitions/rugbyTimeAdjustment",
@@ -19,33 +18,51 @@
       }
     },
     "rugbyTimeAdjustment": {
-      "type": "object",
-      "_extension": "baseTimeAdjustment",
       "description": "Record time added by referee. | Holds values for the time added by the referee and how much extra time was actually played.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseTimeAdjustment"
+        }
+      ],
       "properties": {}
     },
     "rugbyTeamMetadata": {
-      "type": "object",
-
       "description": "Rugby specific metadata for one team. | The team-metadata that is specific for rugby and does not apply in all sports.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        }
+      ],
       "properties": {}
     },
     "rugbyPlayerStats": {
-      "type": "object",
-      "_extension": "baseRugbyStats",
       "description": "Player statistics that are specific to rugby. | Rugby specific statistic information about a player.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseRugbyStats"
+        }
+      ],
       "properties": {}
     },
     "rugbyTeamStats": {
-      "type": "object",
-      "_extension": "baseRugbyStats",
       "description": "Rugby specific stats for one team. | Team-stats that are specific to rugby and does not apply to all sports.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseRugbyStats"
+        }
+      ],
       "properties": {}
     },
     "baseRugbyStats": {
-      "type": "object",
-
       "description": "",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "statsRugbyOffensive": {
           "$ref": "#/definitions/rugbyStatsOffensive",
@@ -62,9 +79,15 @@
       }
     },
     "rugbyStatsOffensive": {
-      "type": "object",
-
       "description": "Offensive stats specific to rugby. | Offensive stats for one team, specific to rugby.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "triesScored": {
           "type": "string",
@@ -185,9 +208,15 @@
       }
     },
     "rugbyStatsDefensive": {
-      "type": "object",
-
       "description": "Defensive stats specific to rugby. | Defensive stats for one team, specific to rugby.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "tackles": {
           "type": "string",
@@ -224,9 +253,15 @@
       }
     },
     "rugbyStatsFoul": {
-      "type": "object",
-
       "description": "Stats specific to fauls, cautions, and ejections. | Could occur while players are on the offense, the defense, or even the bench.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "cautionsTotal": {
           "type": "string",

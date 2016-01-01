@@ -4,13 +4,21 @@
   "description": "The SportsInJSON Soccer schema contains properties common to Motor Racing.",
   "definitions": {
     "motorRacingEventMetadata": {
-      "type": "object",
       "description": "Metadata about the event itself. | Includes what state the game is in.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/eventStateMotorRacing"
+        }
+      ],
       "properties": {}
     },
     "motorRacingTeamMetadata": {
-      "type": "object",
       "description": "Metadata about the team. | Specific to the sport of motor racing.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        }
+      ],
       "properties": {
         "metadataMotorRacingVehicle": {
           "$ref": "#/definitions/motorRacingMetadataVehicle",
@@ -19,8 +27,12 @@
       }
     },
     "motorRacingPlayerMetadata": {
-      "type": "object",
       "description": "Metadata about the driver. | Specific to the sport of motor racing.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        }
+      ],
       "properties": {
         "metadataMotorRacingVehicle": {
           "$ref": "#/definitions/motorRacingMetadataVehicle",
@@ -29,8 +41,12 @@
       }
     },
     "motorRacingAssociateMetadata": {
-      "type": "object",
       "description": "Metadata about the associate. | Specific to the sport of motor racing.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        }
+      ],
       "properties": {
         "metadataMotorRacingVehicle": {
           "$ref": "#/definitions/motorRacingMetadataVehicle",
@@ -39,11 +55,15 @@
       }
     },
     "motorRacingMetadataVehicle": {
-      "type": "object",
       "description": "Details on the car, motorcycle, etc., being driven. | Includes manufacturing information.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        }
+      ],
       "properties": {
         "makeName": {
-          "$ref": "SportsInJSON-Core.json#/definitions/conceptNameType",
+          "$ref": "#/definitions/ConceptNameType",
           "description": "A display-name for the make-key."
         },
         "number": {
@@ -51,7 +71,7 @@
           "description": "The number written on the side of the vehicle."
         },
         "makeKey": {
-          "$ref": "SportsInJSON-Core.json#/definitions/qCodeType",
+          "$ref": "#/definitions/QCodeType",
           "description": "A unique identifier for the make of the car. For example: m.dodge"
         },
         "sponsor": {
@@ -73,26 +93,33 @@
       }
     },
     "motorRacingTeamStats": {
-      "type": "object",
       "description": "Specific statistics for motor racing. | Includes stats about the qualifying round, as well as for the race itself.",
       "allOf": [
         {
           "$ref": "#/definitions/baseMotorRacingPlayerStats"
         }
-      ]
+      ],
+      "properties": {}
     },
     "motorRacingPlayerStats": {
-      "type": "object",
       "description": "Specific statistics for motor racing. | Includes stats about the qualifying round, as well as for the race itself.",
       "allOf": [
         {
           "$ref": "#/definitions/baseMotorRacingPlayerStats"
         }
-      ]
+      ],
+      "properties": {}
     },
     "baseMotorRacingPlayerStats": {
-      "type": "object",
       "description": "Specific statistics for motor racing. | Includes stats about the qualifying round, as well as for the race itself.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "statsMotorRacingQualifying": {
           "$ref": "#/definitions/motorRacingStatsQualifying",
@@ -105,8 +132,15 @@
       }
     },
     "motorRacingEventStats": {
-      "type": "object",
       "description": "Statistics about the event itself. | Includes the total number of lead changes, and the average speed.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "speedAverageRace": {
           "type": "string",
@@ -155,8 +189,15 @@
       }
     },
     "motorRacingStatsQualifying": {
-      "type": "object",
       "description": "Statistics for the qualifying round of a race. | Includes pole position and qualifying times.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "grid": {
           "type": "string",
@@ -189,8 +230,15 @@
       }
     },
     "motorRacingStatsRace": {
-      "type": "object",
       "description": "Statistics for the race itself. | Includes time information and can include cumulative stats for the driver or team.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "statsMotorRacingLap": {
           "$ref": "#/definitions/motorRacingStatsLap",
@@ -307,8 +355,15 @@
       }
     },
     "motorRacingStatsLap": {
-      "type": "object",
       "description": "Statistics for a particular lap. | Can be used for all laps in a race, or just say for the fastest lap.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "speedRange": {
           "type": "string",
@@ -341,7 +396,6 @@
       }
     },
     "eventStateMotorRacing": {
-      "type": "object",
       "description": "",
       "properties": {
         "lap": {
@@ -357,7 +411,7 @@
           "description": "The time elapsed in the race."
         },
         "flagState": {
-          "$ref": "SportsInJSON-Core.json#/definitions/qCodeType",
+          "$ref": "#/definitions/QCodeType",
           "description": "The current flag issued within the race."
         }
       }

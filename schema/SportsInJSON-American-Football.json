@@ -4,8 +4,15 @@
   "description": "The SportsInJSON American Football schema contains properties common to American Football I.E. NFL",
   "definitions": {
     "americanFootballEventMetadata": {
-      "type": "object",
       "description": "Metadata about the event itself. | Includes the time left, and where the ball is.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "#/definitions/eventStateAmericanFootball"
+        }
+      ],
       "properties": {
         "week": {
           "type": "string",
@@ -14,15 +21,24 @@
       }
     },
     "americanFootballPlayerStats": {
-      "type": "object",
       "description": "Player statistics for football. | Includes the same elements as team statistics.",
-      "allOf": [{
-        "$ref": "#/definitions/baseAmericanFootballStats"
-      }]
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseAmericanFootballStats"
+        }
+      ],
+      "properties": {}
     },
     "baseAmericanFootballStats": {
-      "type": "object",
       "description": "Player statistics for football. | Includes the same elements as team statistics.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "statsAmericanFootballOffensive": {
           "$ref": "#/definitions/americanFootballStatsOffensive",
@@ -51,46 +67,53 @@
       }
     },
     "americanFootballTeamStats": {
-      "type": "object",
       "description": "Statistics about a particular team. | Holds elements that divide statistics into categories.",
-      "allOf": [{
-        "$ref": "#/definitions/baseAmericanFootballStats"
-      }, {
-        "properties": {
-          "yardsPerAttempt": {
-            "type": "string",
-            "description": "The average yards gained per play."
-          },
-          "numberOfPlays": {
-            "type": "string",
-            "description": "The number of plays this team has completed, including for offensive, defensive, and special teams."
-          },
-          "numberOfPlaysGaining": {
-            "type": "string",
-            "description": "The number of plays this team has completed for which yards were gained, including for offensive, defensive, and special teams."
-          },
-          "numberOfPlaysLosing": {
-            "type": "string",
-            "description": "The number of plays this team has completed for which yards were lost, including for offensive, defensive, and special teams."
-          },
-          "averageStartingPosition": {
-            "type": "string",
-            "description": "Average yard-line that the team started on per-drive."
-          },
-          "timeouts": {
-            "type": "string",
-            "description": "The number of timeouts a team has remaining, either in regulation or in overtime, whichever state the game is currently in."
-          },
-          "turnoverRatio": {
-            "type": "string",
-            "description": "Derived by subtracting turnovers-giveaways from turnovers-takeaways."
-          }
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseAmericanFootballStats"
         }
-      }]
+      ],
+      "properties": {
+        "yardsPerAttempt": {
+          "type": "string",
+          "description": "The average yards gained per play."
+        },
+        "numberOfPlays": {
+          "type": "string",
+          "description": "The number of plays this team has completed, including for offensive, defensive, and special teams."
+        },
+        "numberOfPlaysGaining": {
+          "type": "string",
+          "description": "The number of plays this team has completed for which yards were gained, including for offensive, defensive, and special teams."
+        },
+        "numberOfPlaysLosing": {
+          "type": "string",
+          "description": "The number of plays this team has completed for which yards were lost, including for offensive, defensive, and special teams."
+        },
+        "averageStartingPosition": {
+          "type": "string",
+          "description": "Average yard-line that the team started on per-drive."
+        },
+        "timeouts": {
+          "type": "string",
+          "description": "The number of timeouts a team has remaining, either in regulation or in overtime, whichever state the game is currently in."
+        },
+        "turnoverRatio": {
+          "type": "string",
+          "description": "Derived by subtracting turnovers-giveaways from turnovers-takeaways."
+        }
+      }
     },
     "americanFootballStatsOffensive": {
-      "type": "object",
       "description": "Statistics about a particular team or player's offensive performance. | Further breaks down stats into passing, rushing, etc.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "statsAmericanFootballPassing": {
           "$ref": "#/definitions/americanFootballStatsPassing",
@@ -167,8 +190,15 @@
       }
     },
     "americanFootballStatsPassing": {
-      "type": "object",
       "description": "Statistics about a particular team or player's passing performance. | Used for quarterbacks and receivers.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "passesAttempts": {
           "type": "string",
@@ -301,8 +331,15 @@
       }
     },
     "americanFootballStatsRushing": {
-      "type": "object",
       "description": "Statistics about a particular team or player's rushing performance. | How well they ran with the ball.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "rushesAttempts": {
           "type": "string",
@@ -355,8 +392,15 @@
       }
     },
     "americanFootballStatsDownProgress": {
-      "type": "object",
       "description": "Statistics about a particular team or player's performance on downs. | Covers first downs and conversions.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "firstDownsTotal": {
           "type": "string",
@@ -421,8 +465,15 @@
       }
     },
     "americanFootballStatsSacksAgainst": {
-      "type": "object",
       "description": "Statistics about the sacks suffered by the offensive team. | How many times and the team was sacked, and for how many yards.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "sacksAgainstYards": {
           "type": "string",
@@ -443,8 +494,15 @@
       }
     },
     "americanFootballStatsDefensive": {
-      "type": "object",
       "description": "Statistics about a particular player or team's defensive performance. | Covers tackles, interceptions, sacks.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "statsAmericanFootballPassing": {
           "$ref": "#/definitions/americanFootballStatsPassing",
@@ -577,8 +635,15 @@
       }
     },
     "americanFootballStatsScoring": {
-      "type": "object",
       "description": "Statistics about a particular team's scoring performance. | For touchdowns, field goals, etc.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "statsAmericanFootballFieldGoals": {
           "$ref": "#/definitions/americanFootballStatsFieldGoals",
@@ -699,8 +764,15 @@
       }
     },
     "americanFootballStatsFieldGoals": {
-      "type": "object",
       "description": "Statistics about attempted and made field goals. | Allows for breakdowns between particular yard markers.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "minimumDistance": {
           "type": "string",
@@ -721,8 +793,15 @@
       }
     },
     "americanFootballStatsSpecialTeams": {
-      "type": "object",
       "description": "Statistics about a particular team's special teams performance. | Covers punts, touchbacks.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "returnsPuntTotal": {
           "type": "string",
@@ -1007,8 +1086,15 @@
       }
     },
     "americanFootballStatsFumbles": {
-      "type": "object",
       "description": "For tracking fumble stats. | Covers teams that do the fumbling and the recovering.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "fumblesCommitted": {
           "type": "string",
@@ -1149,8 +1235,15 @@
       }
     },
     "americanFootballStatsPenalties": {
-      "type": "object",
       "description": "Statistics about penalties. | Applies to both offensive and defensive penalties.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "penaltiesTotal": {
           "type": "string",
@@ -1187,18 +1280,18 @@
       }
     },
     "eventStateAmericanFootball": {
-      "type": "object",
+      "description": "",
       "properties": {
         "clockState": {
           "type": "string",
-          "description": "Whether the clock is running or stopped.",
           "enum": [
             "running",
             "stopped"
-          ]
+          ],
+          "description": "Whether the clock is running or stopped."
         },
         "teamInPossessionIdref": {
-          "$ref": "#/definitions/idRef",
+          "$ref": "SportsInJSON-Core.json#/definitions/idRef",
           "description": "The ID of the team with the football."
         },
         "down": {
@@ -1213,11 +1306,11 @@
         },
         "fieldSide": {
           "type": "string",
-          "description": "Which side of the field the event is taking place. Either 'home' or 'away'.",
           "enum": [
             "home",
             "away"
-          ]
+          ],
+          "description": "Which side of the field the event is taking place. Either 'home' or 'away'."
         },
         "fieldLine": {
           "type": "string",

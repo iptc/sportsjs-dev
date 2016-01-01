@@ -1,8 +1,0 @@
-{
-  "id": "",
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "The SportsInJSON Data Structures are custom objects that can be used across all the sports schemas.",
-  "definitions": {
-
-  }
-}

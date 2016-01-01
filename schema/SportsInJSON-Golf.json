@@ -4,13 +4,21 @@
   "description": "The SportsInJSON Soccer schema contains properties common to Golf.",
   "definitions": {
     "golfTournamentMetadata": {
-      "type": "object",
       "description": "Holds metadata about a golf tournament. | Currently only holds the rank of the team. ???",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        }
+      ],
       "properties": {}
     },
     "golfTournamentDivisionMetadata": {
-      "type": "object",
       "description": "Metadata about a particular division within a golf tournament. | Includes information about the course as a whole.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        }
+      ],
       "properties": {
         "courseYardage": {
           "type": "string",
@@ -23,8 +31,15 @@
       }
     },
     "golfEventMetadata": {
-      "type": "object",
       "description": "Holds event metadata specific to golf. | Includes data about the course on which the event is held.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "#/definitions/eventStateGolf"
+        }
+      ],
       "properties": {
         "courseYardage": {
           "type": "string",
@@ -40,31 +55,35 @@
         },
         "slopeRating": {
           "type": "string",
-          "description": "A Slope Rating is a mark of the USGA representing an integer number which describes the difficulty of a golf course from a particular set of tees for a bogey (average) golfer. Slope Ratings vary from 55 (very easy) to 155 (very difficult). The Slope Rating of a course which has not officially been rated is 113, the Slope Rating of a course of \"average\" difficulty."
+          "description": "A Slope Rating is a mark of the USGA representing an integer number which describes the difficulty of a golf course from a particular set of tees for a bogey (average) golfer. Slope Ratings vary from 55 (very easy) to 155 (very difficult). The Slope Rating of a course which has not officially been rated is 113, the Slope Rating of a course of ''average'' difficulty."
         }
       }
     },
     "golfTeamMetadata": {
-      "type": "object",
       "description": "Holds metadata about a team (foursome perhaps) playing in the match. | Currently only holds the rank of the team.",
       "allOf": [
         {
           "$ref": "#/definitions/baseGolfMetadata"
         }
-      ]
+      ],
+      "properties": {}
     },
     "golfPlayerMetadata": {
-      "type": "object",
       "description": "Holds metadata about a golf player. | Currently only holds the rank of the player.",
       "allOf": [
         {
           "$ref": "#/definitions/baseGolfMetadata"
         }
-      ]
+      ],
+      "properties": {}
     },
     "baseGolfMetadata": {
-      "type": "object",
       "description": "Holds metadata about a golf player. | Currently only holds the rank of the player.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/commonAttributes"
+        }
+      ],
       "properties": {
         "rank": {
           "type": "string",
@@ -73,25 +92,29 @@
       }
     },
     "golfPlayerStats": {
-      "type": "object",
       "description": "Holds statistics particular to the player. | Includes performance statistics during the timespan described in date-coverage-scope attributes.",
       "allOf": [
         {
-          "$ref": "#/definitions/baseGolfMetadata"
-        },
-        {
-          "properties": {
-            "handicap": {
-              "type": "string",
-              "description": "The handicap-value of this player. This will normally not be used in professional tournaments."
-            }
-          }
+          "$ref": "#/definitions/baseGolfStats"
         }
-      ]
+      ],
+      "properties": {
+        "handicap": {
+          "type": "string",
+          "description": "The handicap-value of this player. This will normally not be used in professional tournaments."
+        }
+      }
     },
     "golfStats": {
-      "type": "object",
       "description": "",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "rounds": {
           "type": "string",
@@ -308,8 +331,12 @@
       }
     },
     "golfStatsRound": {
-      "type": "object",
       "description": "Statistics pertinent to a round within a tournament. | Allows for hole-by-hole breakdowns.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseGolfStats"
+        }
+      ],
       "properties": {
         "statsGolf": {
           "$ref": "#/definitions/golfStats",
@@ -326,8 +353,12 @@
       }
     },
     "golfStatsHole": {
-      "type": "object",
       "description": "Statistics pertinent to a particular hole within a golf round. | Includes what score was recorded at that hole, and the par value of the hole.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseGolfStats"
+        }
+      ],
       "properties": {
         "holeType": {
           "type": "string",
@@ -345,8 +376,15 @@
       }
     },
     "baseGolfStats": {
-      "type": "object",
-      "description": "Holds statistics particular to a team of golf players.",
+      "description": "",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "statsGolf": {
           "$ref": "#/definitions/golfStats",
@@ -375,7 +413,6 @@
       }
     },
     "eventStateGolf": {
-      "type": "object",
       "description": "",
       "properties": {
         "round": {

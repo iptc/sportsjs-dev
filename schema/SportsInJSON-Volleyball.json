@@ -4,9 +4,15 @@
   "description": "The SportsInJSON Soccer schema contains properties common to Volleyball.",
   "definitions": {
     "volleyballTeamStats": {
-      "type": "object",
-
       "description": "Volleyball specific stats for one team. | Team-stats that are specific to volleyball and does not apply to all sports.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "statsVolleyballAttacks": {
           "$ref": "#/definitions/volleyballStatsAttacks",
@@ -51,9 +57,15 @@
       }
     },
     "volleyballStatsAttacks": {
-      "type": "object",
-
       "description": "Attack stats specific to volleyball.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "attacksRank": {
           "type": "string",
@@ -82,9 +94,15 @@
       }
     },
     "volleyballStatsBlocks": {
-      "type": "object",
-
       "description": "Blocking stats specific to volleyball.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "blocksRank": {
           "type": "string",
@@ -113,9 +131,15 @@
       }
     },
     "volleyballStatsService": {
-      "type": "object",
-
       "description": "Service stats specific to volleyball.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "serviceRank": {
           "type": "string",
@@ -144,9 +168,15 @@
       }
     },
     "volleyballStatsDefense": {
-      "type": "object",
-
       "description": "Defensive stats (or digs) specific to volleyball.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "defenseRank": {
           "type": "string",
@@ -175,9 +205,15 @@
       }
     },
     "volleyballStatsSetting": {
-      "type": "object",
-
       "description": "Sets stats specific to volleyball",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "defenseRankSets": {
           "type": "string",
@@ -206,9 +242,15 @@
       }
     },
     "volleyballStatsReceiving": {
-      "type": "object",
-
       "description": "Reception stats specific to volleyball.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "receptionsRank": {
           "type": "string",
@@ -237,9 +279,15 @@
       }
     },
     "volleyballPlayerStats": {
-      "type": "object",
-
       "description": "Player statistics that are specific to volleyball. | Volleyball specific statistic information about a player.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "statsVolleyballAttacks": {
           "$ref": "#/definitions/volleyballStatsAttacks",

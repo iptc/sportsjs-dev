@@ -2,79 +2,81 @@
   "id": "",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The SportsInJSON Soccer schema contains properties common to Basketball.",
-  "definitions": {
+  "definitions":{
     "basketballPlayerStats": {
-      "type": "object",
       "description": "Specific statistics for basketball players. | Includes offensive, rebounding, and defensive stats.",
       "allOf": [
         {
           "$ref": "#/definitions/baseBasketballStats"
-        },
-        {
-          "properties": {
-            "minutesPlayed": {
-              "type": "string",
-              "description": "Number of minutes this player has spent playing during a particular game."
-            },
-            "gamesPlayed": {
-              "type": "string",
-              "description": "Number of games played."
-            },
-            "gamesStarted": {
-              "type": "string",
-              "description": "Number of games that started with this player on the court,."
-            },
-            "averageMinutesPerGame": {
-              "type": "string",
-              "description": "Average number of minutes per game played by this player."
-            },
-            "personalFoulsPerGame": {
-              "type": "string",
-              "description": "Average number of fouls made by the player per game."
-            },
-            "doubleDoubles": {
-              "type": "string",
-              "description": "A double digit number in any two of these categories: points, rebounds, assists, steals, and blocked shots."
-            },
-            "tripleDoubles": {
-              "type": "string",
-              "description": "A double digit number in any three of these categories: points, rebounds, assists, steals, and blocked shots."
-            }
-          }
         }
-      ]
+      ],
+      "properties": {
+        "minutesPlayed": {
+          "type": "string",
+          "description": "Number of minutes this player has spent playing during a particular game."
+        },
+        "gamesPlayed": {
+          "type": "string",
+          "description": "Number of games played."
+        },
+        "gamesStarted": {
+          "type": "string",
+          "description": "Number of games that started with this player on the court,."
+        },
+        "averageMinutesPerGame": {
+          "type": "string",
+          "description": "Average number of minutes per game played by this player."
+        },
+        "personalFoulsPerGame": {
+          "type": "string",
+          "description": "Average number of fouls made by the player per game."
+        },
+        "doubleDoubles": {
+          "type": "string",
+          "description": "A double digit number in any two of these categories: points, rebounds, assists, steals, and blocked shots."
+        },
+        "tripleDoubles": {
+          "type": "string",
+          "description": "A double digit number in any three of these categories: points, rebounds, assists, steals, and blocked shots."
+        }
+      }
     },
     "basketballTeamStats": {
-      "type": "object",
       "description": "Specific statistics for basketball. | Includes offensive, rebounding, and defensive stats.",
       "allOf": [
         {
           "$ref": "#/definitions/baseBasketballStats"
-        },
-        {
-          "properties": {
-            "timeoutsLeft": {
-              "type": "string",
-              "description": "Number of timeouts a team has left during the current event."
-            },
-            "largestLead": {
-              "type": "string",
-              "description": "Largest number of points this team has led the opposition. Could be a negative number."
-            },
-            "foulsTotal": {
-              "type": "string",
-              "description": "Total number of fouls comitted by the team during this event."
-            },
-            "turnoverMargin": {
-              "type": "string",
-              "description": "Turnover margain is the number of turnovers made by this team minus the number of turnovers made by the opposing team."
-            }
-          }
         }
-      ]
+      ],
+      "properties": {
+        "timeoutsLeft": {
+          "type": "string",
+          "description": "Number of timeouts a team has left during the current event."
+        },
+        "largestLead": {
+          "type": "string",
+          "description": "Largest number of points this team has led the opposition. Could be a negative number."
+        },
+        "foulsTotal": {
+          "type": "string",
+          "description": "Total number of fouls comitted by the team during this event."
+        },
+        "turnoverMargin": {
+          "type": "string",
+          "description": "Turnover margain is the number of turnovers made by this team minus the number of turnovers made by the opposing team."
+        }
+      }
     },
     "baseBasketballStats": {
-      "type": "object",
+      "description": "",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "statsBasketballOffensive": {
           "$ref": "#/definitions/basketballStatsOffensive",
@@ -91,8 +93,15 @@
       }
     },
     "basketballStatsOffensive": {
-      "type": "object",
       "description": "Statistics for a team or player while they had possession of the ball. | Includes scoring and assisting stats.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "fieldGoalsMade": {
           "type": "string",
@@ -217,8 +226,15 @@
       }
     },
     "basketballStatsRebounding": {
-      "type": "object",
       "description": "Statistics for a team or player revolving around rebounds. | Includes rebounds credited to particular players, and credited to the entire team.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "reboundsTotal": {
           "type": "string",
@@ -315,8 +331,15 @@
       }
     },
     "basketballStatsDefensive": {
-      "type": "object",
       "description": "Statistics for a team or player while the other team was in possession of the ball. | Includes information on steals and blocks.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "stealsTotal": {
           "type": "string",

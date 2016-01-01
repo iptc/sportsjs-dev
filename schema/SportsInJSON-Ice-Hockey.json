@@ -4,53 +4,68 @@
   "description": "The SportsInJSON Soccer schema contains properties common to Ice Hockey.",
   "definitions": {
     "iceHockeyEventMetadata": {
-      "type": "object",
       "description": "Metadata about the event itself. | Specific to ice-hockey.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "#/definitions/eventStateIceHockey"
+        }
+      ],
       "properties": {}
     },
     "iceHockeyPlayerMetadata": {
-      "type": "object",
       "description": "Metadata for a player. | Specific to ice-hockey.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        }
+      ],
       "properties": {
         "shootingHand": {
-          "$ref": "SportsInJSON-Core.json#/definitions/bodySideList",
+          "$ref": "#/definitions/bodySideList",
           "description": "The side from which a player normally shoots."
         },
         "catchingHand": {
-          "$ref": "SportsInJSON-Core.json#/definitions/bodySideList",
+          "$ref": "#/definitions/bodySideList",
           "description": "The hand with which a player, generally a goaltender, catches the puck."
         }
       }
     },
     "iceHockeyTeamStats": {
-      "type": "object",
       "description": "Stats about one team. | Specific to ice-hockey.",
       "allOf": [
         {
           "$ref": "#/definitions/baseIceHockeyStats"
         }
-      ]
+      ],
+      "properties": {}
     },
     "iceHockeyPlayerStats": {
-      "type": "object",
       "description": "Stats for a player specific to ice-hockey. | Includes the same offensive and defensive stats available for a team.",
       "allOf": [
         {
           "$ref": "#/definitions/baseIceHockeyStats"
-        },
-        {
-          "properties": {
-            "minutesPlayed": {
-              "type": "string",
-              "description": "Number of minutes player was on ice."
-            }
-          }
         }
-      ]
+      ],
+      "properties": {
+        "minutesPlayed": {
+          "type": "string",
+          "description": "Number of minutes player was on ice."
+        }
+      }
     },
     "baseIceHockeyStats": {
-      "type": "object",
       "description": "Stats for a player specific to ice-hockey. | Includes the same offensive and defensive stats available for a team.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "statsIceHockeyOffensive": {
           "$ref": "#/definitions/iceHockeyStatsOffensive",
@@ -87,8 +102,18 @@
       }
     },
     "iceHockeyStatsOffensive": {
-      "type": "object",
       "description": "Offensive stats for one team. | Specific to ice-hockey, including stats on shots, goals, and faceoffs.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        },
+        {
+          "$ref": "#/definitions/commonPropertiesIceHockey"
+        }
+      ],
       "properties": {
         "goalsTotal": {
           "type": "string",
@@ -233,8 +258,18 @@
       }
     },
     "iceHockeyStatsDefensive": {
-      "type": "object",
       "description": "Defensive stats for the team. | Specific to ice-hockey, including saves and shots allowed.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        },
+        {
+          "$ref": "#/definitions/commonPropertiesIceHockey"
+        }
+      ],
       "properties": {
         "shotsPowerPlayAllowed": {
           "type": "string",
@@ -335,8 +370,18 @@
       }
     },
     "iceHockeyStatsFaceoffs": {
-      "type": "object",
       "description": "Defensive stats for the team. | Specific to ice-hockey, including saves and shots allowed.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        },
+        {
+          "$ref": "#/definitions/commonPropertiesIceHockey"
+        }
+      ],
       "properties": {
         "faceoffsTotal": {
           "type": "string",
@@ -405,8 +450,18 @@
       }
     },
     "iceHockeyStatsTimeOnIce": {
-      "type": "object",
       "description": "Defensive stats for the team. | Specific to ice-hockey, including saves and shots allowed.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+        },
+        {
+          "$ref": "#/definitions/commonPropertiesIceHockey"
+        }
+      ],
       "properties": {
         "shifts": {
           "type": "string",
@@ -471,7 +526,6 @@
       }
     },
     "eventStateIceHockey": {
-      "type": "object",
       "description": "",
       "properties": {
         "powerPlayTimeRemaining": {
@@ -497,7 +551,6 @@
       }
     },
     "commonPropertiesIceHockey": {
-      "type": "object",
       "description": "",
       "properties": {
         "playerCount": {

@@ -4,13 +4,24 @@
   "description": "The SportsInJSON Soccer schema contains properties common to Baseball.",
   "definitions": {
     "baseballEventMetadata": {
-      "type": "object",
       "description": "Metadata about the event itself. | Includes what state the game is in.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "#/definitions/eventStateBaseball"
+        }
+      ],
       "properties": {}
     },
     "baseballTeamMetadata": {
-      "type": "object",
       "description": "Metadata about the team. | Specific to the sport of baseball.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        }
+      ],
       "properties": {
         "probableStartingPitcherIdref": {
           "$ref": "SportsInJSON-Core.json#/definitions/idRef",
@@ -19,40 +30,51 @@
       }
     },
     "baseballPlayerMetadata": {
-      "type": "object",
       "description": "Metadata about the player. | Specific to the sport of baseball.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        }
+      ],
       "properties": {
         "battingHand": {
-          "$ref": "SportsInJSON-Core.json#/definitions/bodySideList",
+          "$ref": "SportsInJSON-core.json#/definitions/bodySideList",
           "description": "Indicates whether player bats left, right, or is a switch-hitter."
         },
         "throwingHand": {
-          "$ref": "SportsInJSON-Core.json#/definitions/bodySideList",
+          "$ref": "SportsInJSON-core.json#/definitions/bodySideList",
           "description": "Indicates whether player throws left, right, or is a switch-thrower."
         }
       }
     },
     "baseballPlayerStats": {
-      "type": "object",
       "description": "Stats collected by a player. | Includes offensive, pitching, and defensive stats.",
       "allOf": [
         {
           "$ref": "#/definitions/baseBaseballStats"
         }
-      ]
+      ],
+      "properties": {}
     },
     "baseballTeamStats": {
-      "type": "object",
       "description": "Specific statistics for baseball. | Includes offensive, pitching, and defensive stats.",
       "allOf": [
         {
           "$ref": "#/definitions/baseBaseballStats"
         }
-      ]
+      ],
+      "properties": {}
     },
     "baseBaseballStats": {
-      "type": "object",
       "description": "Specific statistics for baseball. | Includes offensive, pitching, and defensive stats.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "statsBaseballOffensive": {
           "$ref": "#/definitions/baseballStatsOffensive",
@@ -69,8 +91,15 @@
       }
     },
     "baseballStatsOffensive": {
-      "type": "object",
       "description": "Stats accumulated while a team is at bat. | Includes hits and runs.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "average": {
           "type": "string",
@@ -275,8 +304,15 @@
       }
     },
     "baseballStatsPitching": {
-      "type": "object",
       "description": "Stats accumulated while a team is pitching. | Includes strikeouts and shutouts.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "runsAllowed": {
           "type": "string",
@@ -491,8 +527,15 @@
       }
     },
     "baseballStatsDefensive": {
-      "type": "object",
       "description": "Stats accumulated while a team is out in the field. | Includes double-plays and errors.",
+      "allOf": [
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+        }
+      ],
       "properties": {
         "doublePlays": {
           "type": "string",
@@ -557,7 +600,6 @@
       }
     },
     "eventStateBaseball": {
-      "type": "object",
       "description": "",
       "properties": {
         "inningValue": {
@@ -621,7 +663,7 @@
           "description": "A pointer to the player element for the batter at the plate."
         },
         "batterSide": {
-          "$ref": "SportsInJSON-Core.json#/definitions/bodySideList",
+          "$ref": "SportsInJSON-core.json#/definitions/bodySideList",
           "description": "Which side of the plate the batter was on when taking the pitch."
         },
         "atBatNumber": {
