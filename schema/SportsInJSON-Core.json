@@ -47,9 +47,54 @@
       "properties": {}
     },
     "conceptNameType": {
-      "description": "",
+      "description": "Name of a player, official, associate, team, etc. | Sometimes a person is referred-to by different names, depending upon the language in which the document is displayed.",
       "type": "object",
-      "properties": {}
+      "properties": {
+        "role": {
+          "type": "#/definitions/qCodeType",
+          "description": ""
+        },
+        "part": {
+          "type": "#/definitions/qCodeType",
+          "description": ""
+        },
+        "full": {
+          "type": "string",
+          "description": "The entire name."
+        },
+        "first": {
+          "type": "string",
+          "description": "The first name refered to. For people, should be the given name. Also, if person has only one name, like Pele or Ronaldo, use this one."
+        },
+        "middle": {
+          "type": "string",
+          "description": "The middle name refered to."
+        },
+        "last": {
+          "type": "string",
+          "description": "The last name referred to. For people, should be the surname."
+        },
+        "nickname": {
+          "type": "string",
+          "description": "A nickname ascribed to the person or team."
+        },
+        "prefix": {
+          "type": "string",
+          "description": "A part of a name such as Mr. or Mrs. or Dr."
+        },
+        "suffix": {
+          "type": "string",
+          "description": "A part of a name such as Jr. or III."
+        },
+        "abbreviation": {
+          "type": "string",
+          "description": "An abbreviation, usually used for teams in display locations where space is constrained."
+        },
+        "language": {
+          "type": "#/definitions/language",
+          "description": "A language code in which it is appropriate to display this name."
+        }
+      }
     },
     "sportsContent": {
       "type": "object",
@@ -114,6 +159,7 @@
     "eventActions": {
       "description": "a set of event actions",
       "type": "array",
+      "additionalItems": false,
       "items": {
         "$ref": "#/definitions/eventAction"
       }
@@ -432,6 +478,7 @@
     },
     "sportsProperties": {
       "type": "array",
+      "additionalItems": false,
       "items": {
         "$ref": "#/definitions/sportsProperty"
       }
@@ -467,8 +514,9 @@
       }
     },
     "sportsEvents": {
-      "descripton": "A set of sports events",
+      "description": "A set of sports events",
       "type": "array",
+      "additionalItems": false,
       "items": {
         "$ref": "#/definitions/sportsEvent"
       }
@@ -526,6 +574,7 @@
     "eventSponsors": {
       "description": "A set of event sponsors.",
       "type": "array",
+      "additionalItems": false,
       "items": {
         "$ref": "#/definitions/eventSponsor"
       }
@@ -549,8 +598,9 @@
       }
     },
     "highlights": {
-      "description": "a set of higlights",
+      "description": "a set of highlights",
       "type": "array",
+      "additionalItems": false,
       "items": {
         "$ref": "#/definitions/highlight"
       }
@@ -700,6 +750,7 @@
     "teams": {
       "description": "A set of teams.",
       "type": "array",
+      "additionalItems": false,
       "items": {
         "$ref": "#/definitions/team"
       }
@@ -736,6 +787,14 @@
           "$ref": "#/definitions/affiliation",
           "description": ""
         }
+      }
+    },
+    "subScores": {
+      "description": "A set of sub scores",
+      "type": "array",
+      "additionalItems": false,
+      "items": {
+        "$ref": "#/definitions/subScore"
       }
     },
     "subScore": {
@@ -800,6 +859,7 @@
     "outcomeTotals": {
       "description": "A set of outcome totals",
       "type": "array",
+      "additionalItems": false,
       "items": {
         "$ref": "#/definitions/outcomeTotal"
       }
@@ -896,6 +956,7 @@
     "outcomeResults": {
       "description": "A set of outcome results",
       "type": "array",
+      "additionalItems": false,
       "items": {
         "$ref": "#/definitions/outcomeResults"
       }
@@ -927,6 +988,7 @@
     },
     "awards": {
       "type": "array",
+      "additionalItems": false,
       "items": {
         "$ref": "#/definitions/award"
       }
@@ -984,6 +1046,7 @@
     },
     "ranks": {
       "type": "array",
+      "additionalItems": false,
       "description": " A set of ranks",
       "items": {
         "$ref": "#/definitions/rank"
@@ -1020,6 +1083,7 @@
     },
     "ratings": {
       "type": "array",
+      "additionalItems": false,
       "items": {
         "$ref": "#/definitions/rating"
       }
@@ -1052,6 +1116,7 @@
     },
     "players": {
       "type": "array",
+      "additionalItems": false,
       "description": "A set of players",
       "items": {
         "$ref": "#/definitions/player"
@@ -1125,6 +1190,7 @@
     },
     "associates": {
       "type": "array",
+      "additionalItems": false,
       "description": "A set of associates",
       "items": {
         "$ref": "#/definitions/associate"
@@ -1154,6 +1220,7 @@
     },
     "affiliations": {
       "type": "array",
+      "additionalItems": false,
       "description": "A set of affiliations",
       "items": {
         "$ref": "#/definitions/affiliation"
@@ -1455,6 +1522,7 @@
     },
     "groups": {
       "type": "array",
+      "additionalItems": false,
       "description": "A set of groups",
       "items": {
         "$ref": "#/definitions/group"
@@ -1523,6 +1591,7 @@
     },
     "genericStats": {
       "type": "array",
+      "additionalItems": false,
       "description": " A set of rating",
       "items": {
         "$ref": "#/definitions/genericStat"
@@ -1859,8 +1928,8 @@
         }
       ],
       "properties": {
-        "subScore": {
-          "$ref": "#/definitions/subScore",
+        "subScores": {
+          "$ref": "#/definitions/subScores",
           "description": ""
         },
         "eventRecord": {
@@ -2256,6 +2325,7 @@
     },
     "participants": {
       "type": "array",
+      "additionalItems": false,
       "items": {
         "$ref": "#/definitions/participant"
       }
@@ -2645,7 +2715,8 @@
           "type": "string",
           "enum": [
             "home",
-            "away"
+            "away",
+            "none"
           ],
           "description": "Indicates that the included statistics apply only to events played either at home or away."
         },
