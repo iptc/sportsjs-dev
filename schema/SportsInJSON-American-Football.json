@@ -7,7 +7,7 @@
       "description": "Metadata about the event itself. | Includes the time left, and where the ball is.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
           "$ref": "#/definitions/eventStateAmericanFootball"
@@ -33,10 +33,10 @@
       "description": "Player statistics for football. | Includes the same elements as team statistics.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -108,10 +108,10 @@
       "description": "Statistics about a particular team or player's offensive performance. | Further breaks down stats into passing, rushing, etc.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -193,10 +193,10 @@
       "description": "Statistics about a particular team or player's passing performance. | Used for quarterbacks and receivers.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -334,10 +334,10 @@
       "description": "Statistics about a particular team or player's rushing performance. | How well they ran with the ball.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -395,10 +395,10 @@
       "description": "Statistics about a particular team or player's performance on downs. | Covers first downs and conversions.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -468,10 +468,10 @@
       "description": "Statistics about the sacks suffered by the offensive team. | How many times and the team was sacked, and for how many yards.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -497,10 +497,10 @@
       "description": "Statistics about a particular player or team's defensive performance. | Covers tackles, interceptions, sacks.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -638,10 +638,10 @@
       "description": "Statistics about a particular team's scoring performance. | For touchdowns, field goals, etc.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -767,10 +767,10 @@
       "description": "Statistics about attempted and made field goals. | Allows for breakdowns between particular yard markers.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -796,10 +796,10 @@
       "description": "Statistics about a particular team's special teams performance. | Covers punts, touchbacks.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -1089,10 +1089,10 @@
       "description": "For tracking fumble stats. | Covers teams that do the fumbling and the recovering.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -1238,10 +1238,10 @@
       "description": "Statistics about penalties. | Applies to both offensive and defensive penalties.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {

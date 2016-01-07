@@ -323,7 +323,12 @@
         }
       ],
       "type": "object",
-      "properties": {}
+      "properties": {
+        "href": {
+          "description": "The URL for the catalog.",
+          "$ref": "#/definitions/uri"
+        }
+      }
     },
     "advisory": {
       "description": "",
@@ -333,7 +338,12 @@
         }
       ],
       "type": "object",
-      "properties": {}
+      "properties": {
+        "featureName": {
+          "description": "A displayable name for the resource identified by the fixture-key.",
+          "$ref": "#/definitions/conceptNameType"
+        }
+      }
     },
     "sportsMetadata": {
       "description": "",

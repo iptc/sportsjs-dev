@@ -7,7 +7,7 @@
       "description": "Metadata about the event itself. | Includes what state the game is in.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
           "$ref": "#/definitions/eventStateBaseball"
@@ -19,7 +19,7 @@
       "description": "Metadata about the team. | Specific to the sport of baseball.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
@@ -33,16 +33,16 @@
       "description": "Metadata about the player. | Specific to the sport of baseball.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
         "battingHand": {
-          "$ref": "SportsInJSON-core.json#/definitions/bodySideList",
+          "$ref": "SportsInJSON-Core.json#/definitions/bodySideList",
           "description": "Indicates whether player bats left, right, or is a switch-hitter."
         },
         "throwingHand": {
-          "$ref": "SportsInJSON-core.json#/definitions/bodySideList",
+          "$ref": "SportsInJSON-Core.json#/definitions/bodySideList",
           "description": "Indicates whether player throws left, right, or is a switch-thrower."
         }
       }
@@ -69,10 +69,10 @@
       "description": "Specific statistics for baseball. | Includes offensive, pitching, and defensive stats.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -94,10 +94,10 @@
       "description": "Stats accumulated while a team is at bat. | Includes hits and runs.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -307,10 +307,10 @@
       "description": "Stats accumulated while a team is pitching. | Includes strikeouts and shutouts.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -530,10 +530,10 @@
       "description": "Stats accumulated while a team is out in the field. | Includes double-plays and errors.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-core.json#/definitions/commonAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-core.json#/definitions/coverageAttributes"
+          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -663,7 +663,7 @@
           "description": "A pointer to the player element for the batter at the plate."
         },
         "batterSide": {
-          "$ref": "SportsInJSON-core.json#/definitions/bodySideList",
+          "$ref": "SportsInJSON-Core.json#/definitions/bodySideList",
           "description": "Which side of the plate the batter was on when taking the pitch."
         },
         "atBatNumber": {
