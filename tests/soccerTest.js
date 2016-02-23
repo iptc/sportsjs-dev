@@ -4,7 +4,7 @@ var tv4 = require('tv4');
 var path = require('path');
 var fs = require('fs');
 
-var sample  = require('C:/Utvikling/SportsData_SportLite/json/2016-02-23-134548-1118347.json');
+var sample  = require('C:/Utvikling/SportsData_SportLite/json/2016-02-23-163920-1118347.json');
 var core = require('../schema/SportsInJSON-Core.json');
 
 var schemaDir = '../schema/';
