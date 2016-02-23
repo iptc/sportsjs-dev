@@ -19,7 +19,6 @@
     },
     "nCName": {
       "type": "string",
-      "pattern": "[\\i-[:]][\\c-[:]]*",
       "description": "pattern matches production 4 from the Namespaces in XML spec"
     },
     "truncatedDateTime": {
@@ -105,6 +104,9 @@
         },
         "sportsEvent": {
           "$ref": "#/definitions/sportsEvent"
+        },
+       "sportsEvents": {
+          "$ref": "#/definitions/sportsEvents"
         },
         "tournament": {
           "$ref": "#/definitions/tournament"
@@ -3435,7 +3437,7 @@
       "description": "",
       "properties": {
         "id": {
-          "$ref": "#/definitions/id",
+          "$ref": "#/definitions/idRef",
           "description": "An XML-specific identifier for the element."
         },
         "class": {
