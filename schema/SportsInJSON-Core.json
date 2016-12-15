@@ -15,15 +15,12 @@
       "pattern": "[^\\s:]+:[^\\s]+"
     },
     "idRef": {
-      "$ref": "#/definitions/nCName"
-    },
-    "nCName": {
-      "type": "string",
-      "description": "pattern matches production 4 from the Namespaces in XML spec"
+      "type": "string"
     },
     "truncatedDateTime": {
       "type": "string",
-      "description": "The type of a calendar date with an optional time part which may be truncated from the second part to the month part."
+      "description": "The type of a calendar date with an optional time part which may be truncated from the second part to the month part.",
+      "pattern": "(\\d{4})-(\\d{2})-(\\d{2})"
     },
     "isoDateTime": {
       "type": "string",
@@ -739,7 +736,7 @@
           "description": ""
         },
         "siteStats": {
-          "$ref": "#/definitions/siteStatsComnplexType",
+          "$ref": "#/definitions/siteStats",
           "description": ""
         }
       }
@@ -802,7 +799,7 @@
         }
       }
     },
-    "siteStatsComnplexType": {
+    "siteStats": {
       "description": "Holder for statistics about the site.",
       "allOf": [
         {
