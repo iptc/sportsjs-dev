@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "",
+  "id": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#",
   "description": "The SportsInJSON schema contains properties common to all (or many) sports.",
   "$ref": "#/definitions/sportsContent",
   "definitions": {
@@ -40,61 +40,161 @@
         "right"
       ]
     },
-    "flexLocationPropType": {
-      "description": "",
-      "type": "object",
-      "properties": {}
-    },
-    "conceptNameType": {
-      "description": "Name of a player, official, associate, team, etc. | Sometimes a person is referred-to by different names, depending upon the language in which the document is displayed.",
-      "type": "object",
-      "properties": {
-        "role": {
-          "type": "#/definitions/qCodeType",
-          "description": ""
-        },
-        "part": {
-          "type": "#/definitions/qCodeType",
-          "description": ""
-        },
-        "full": {
-          "type": "string",
-          "description": "The entire name."
-        },
-        "first": {
-          "type": "string",
-          "description": "The first name refered to. For people, should be the given name. Also, if person has only one name, like Pele or Ronaldo, use this one."
-        },
-        "middle": {
-          "type": "string",
-          "description": "The middle name refered to."
-        },
-        "last": {
-          "type": "string",
-          "description": "The last name referred to. For people, should be the surname."
-        },
-        "nickname": {
-          "type": "string",
-          "description": "A nickname ascribed to the person or team."
-        },
-        "prefix": {
-          "type": "string",
-          "description": "A part of a name such as Mr. or Mrs. or Dr."
-        },
-        "suffix": {
-          "type": "string",
-          "description": "A part of a name such as Jr. or III."
-        },
-        "abbreviation": {
-          "type": "string",
-          "description": "An abbreviation, usually used for teams in display locations where space is constrained."
-        },
-        "language": {
-          "type": "#/definitions/language",
-          "description": "A language code in which it is appropriate to display this name."
-        }
-      }
-    },
+    "location": {
+			"description": "The location considered as the home of the entity.",
+			"type": "object",
+			"properties": {
+				"contactInfo": {
+					"$ref": "#/definitions/contactInfo"
+				},
+				"address": {
+					"$ref": "#/definitions/address"
+				},
+				"position": {
+					"$ref": "#/definitions/position"
+				}
+			}
+		},
+    "contactInfo": {
+			"description": "Wrapper for different renditions of contact information.",
+			"type": "object",
+			"patternProperties": {
+				"^[a-zA-Z0-9]+": {
+					"type": "object",
+					"properties": {
+						"email": {
+							"description": "An email address.",
+							"type": "string"
+						},
+						"phone": {
+							"description": "A phone number, preferred in an international format.",
+							"type": "string"
+						},
+						"fax": {
+							"description": "A fax number, preferred in an international format.",
+							"type": "string"
+						},
+						"web": {
+							"description": "A web address.",
+							"type": "string"
+						},
+						"address": {
+							"$ref": "#/definitions/address"
+						}
+					}
+				}
+			}
+		},
+    "address": {
+			"description": " An address. Its use is refined by the object wrapping it.",
+			"type": "object",
+			"properties": {
+				"lines": {
+					"description": "Lines of address information, in the format expected by a postal service. City, country area, country and postal code are expressed separately.",
+					"type": "array",
+					"uniqueItems": true,
+					"items": {
+						"type": "string"
+					}
+				},
+				"locality": {
+					"description": "The city or locality.",
+					"type": "string"
+				},
+				"county": {
+					"description": "Name of a subdivision of the region.",
+					"type": "string"
+				},
+				"region": {
+					"description": " Name of the region, state or province of a country",
+					"type": "string"
+				},
+				"postalCode": {
+					"description": "The postal code.",
+					"type": "string"
+				},
+				"countryName": {
+					"description": "Name of the country.",
+					"type": "string"
+				},
+				"countryCode": {
+					"description": "An ISO two-letter or three-letter country-code.",
+					"type": "string"
+				},
+				"worldRegion": {
+					"description": "The world region.",
+					"type": "string"
+				}
+			}
+		},
+    "position": {
+			"description": "The geospatial data of the location. Default Coordinate Reference Systems is WGS84",
+			"type": "object",
+			"properties": {
+				"latitude": {
+					"description": "The latitude in decimal degrees.",
+					"type": "number"
+				},
+				"longitude": {
+					"description": "The longitude in decimal degrees.",
+					"type": "number"
+				},
+				"altitudeMetres": {
+					"description": "The altitude in metres above the zero elevation of the reference system (sea level).",
+					"type": "number"
+				},
+				"altitudeFeet": {
+					"description": "The altitude in feet above the zero elevation of the reference system (sea level).",
+					"type": "number"
+				}
+			}
+		},
+    "name": {
+			"description": "Name of the entity, could be a player, official, associate, team, etc. Sometimes a person is referred-to by different names, depending upon the language in which the document is displayed.",
+			"type": "object",
+			"properties": {
+				"salutation": {
+					"description": "Any salutation used with the name.",
+					"type": "string"
+				},
+				"given": {
+					"description": "The first name refered to. For people, should be the given name. Also, if person has only one name, like Pele or Ronaldo, use this one.",
+					"type": "string"
+				},
+				"middle": {
+					"description": "The middle name refered to.",
+					"type": "string"
+				},
+				"family": {
+					"description": "The family last name referred to. For people, should be the surname.",
+					"type": "string"
+				},
+				"nickname": {
+					"description": "A nickname ascribed to the person or team.",
+					"type": "string"
+				},
+				"alternate": {
+					"description": " Alternative version of a name, this may be an alias.",
+					"type": "string"
+				},
+				"display": {
+					"description": "Used for any display purposes",
+					"type": "string"
+				},
+				"full": {
+					"description": "Long and exhaustive name",
+					"type": "string"
+				},
+				"short": {
+					"description": "concise name",
+					"type": "string"
+				},
+				"abbreviation": {
+					"description": "An abbreviation, usually used for teams in display locations where space is constrained.",
+					"type": "string"
+				}
+			}
+		},
     "sportsContent": {
       "type": "object",
       "description": "Metadata and coverage of sporting news. | Good for scores, schedules, standings, statistics, etc.",
@@ -343,7 +443,7 @@
       "properties": {
         "featureName": {
           "description": "A displayable name for the resource identified by the fixture-key.",
-          "$ref": "#/definitions/conceptNameType"
+          "$ref": "#/definitions/name"
         }
       }
     },
@@ -367,7 +467,7 @@
           "description": "The URL for the catalog."
         },
         "sportsTitle": {
-          "$ref": "#/definitions/conceptNameType",
+          "$ref": "#/definitions/name",
           "description": "A short textual description of the document. | Can show up in search results."
         },
         "advisory": {
@@ -375,7 +475,7 @@
           "description": "A short textual message to editors receiving the document. | Not generally published through to end-users."
         },
         "featureName": {
-          "$ref": "#/definitions/conceptNameType",
+          "$ref": "#/definitions/name",
           "description": "A displayable name for the resource identified by the fixture-key."
         },
         "docId": {
@@ -600,7 +700,7 @@
       ],
       "properties": {
         "name": {
-          "$ref": "#/definitions/conceptNameType",
+          "$ref": "#/definitions/name",
           "description": ""
         },
         "type": {
@@ -1014,7 +1114,7 @@
       ],
       "properties": {
         "name": {
-          "$ref": "#/definitions/conceptNameType",
+          "$ref": "#/definitions/name",
           "description": ""
         },
         "awardType": {
@@ -1621,7 +1721,7 @@
       ],
       "properties": {
         "name": {
-          "$ref": "#/definitions/conceptNameType",
+          "$ref": "#/definitions/name",
           "description": "The name of the stat. SportsML names are same as attribute names of stats in the sport-specific plugins."
         },
         "stat": {
@@ -1843,7 +1943,7 @@
       ],
       "properties": {
         "name": {
-          "$ref": "#/definitions/conceptNameType",
+          "$ref": "#/definitions/name",
           "description": ""
         },
         "site": {
@@ -2452,7 +2552,7 @@
           "description": ""
         },
         "eventRecurringName": {
-          "$ref": "#/definitions/conceptNameType",
+          "$ref": "#/definitions/name",
           "description": "A displayable name for the event-recurring-key."
         },
         "eventRecurringKey": {
@@ -2538,11 +2638,11 @@
       ],
       "properties": {
         "name": {
-          "$ref": "#/definitions/conceptNameType",
+          "$ref": "#/definitions/name",
           "description": ""
         },
         "homeLocation": {
-          "$ref": "#/definitions/flexLocationPropType",
+          "$ref": "#/definitions/location",
           "description": ""
         },
         "sportsProperty": {

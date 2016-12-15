@@ -1,5 +1,5 @@
 {
-  "id": "",
+  "id": "http://www.iptc.org/std/sportsjs/sportsjs-motor-racing_1.0.draft.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The SportsInJSON Soccer schema contains properties common to Motor Racing.",
   "definitions": {
@@ -63,7 +63,7 @@
       ],
       "properties": {
         "makeName": {
-          "$ref": "#/definitions/ConceptNameType",
+          "$ref": "#/definitions/name",
           "description": "A display-name for the make-key."
         },
         "number": {

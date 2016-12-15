@@ -1,5 +1,5 @@
 {
-  "id": "",
+  "id": "http://www.iptc.org/std/sportsjs/sportsjs-baseball_1.0.draft.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The SportsInJSON Soccer schema contains properties common to Baseball.",
   "definitions": {

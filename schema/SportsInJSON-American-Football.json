@@ -1,5 +1,5 @@
 {
-  "id": "",
+  "id": "http://www.iptc.org/std/sportsjs/sportsjs-american-football_1.0.draft.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The SportsInJSON American Football schema contains properties common to American Football I.E. NFL",
   "definitions": {
