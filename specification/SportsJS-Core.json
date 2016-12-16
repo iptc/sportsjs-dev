@@ -38,160 +38,160 @@
       ]
     },
     "location": {
-			"description": "The location considered as the home of the entity.",
-			"type": "object",
-			"properties": {
-				"contactInfo": {
-					"$ref": "#/definitions/contactInfo"
-				},
-				"address": {
-					"$ref": "#/definitions/address"
-				},
-				"position": {
-					"$ref": "#/definitions/position"
-				}
-			}
-		},
+      "description": "The location considered as the home of the entity.",
+      "type": "object",
+      "properties": {
+        "contactInfo": {
+          "$ref": "#/definitions/contactInfo"
+        },
+        "address": {
+          "$ref": "#/definitions/address"
+        },
+        "position": {
+          "$ref": "#/definitions/position"
+        }
+      }
+    },
     "contactInfo": {
-			"description": "Wrapper for different renditions of contact information.",
-			"type": "object",
-			"patternProperties": {
-				"^[a-zA-Z0-9]+": {
-					"type": "object",
-					"properties": {
-						"email": {
-							"description": "An email address.",
-							"type": "string"
-						},
-						"phone": {
-							"description": "A phone number, preferred in an international format.",
-							"type": "string"
-						},
-						"fax": {
-							"description": "A fax number, preferred in an international format.",
-							"type": "string"
-						},
-						"web": {
-							"description": "A web address.",
-							"type": "string"
-						},
-						"address": {
-							"$ref": "#/definitions/address"
-						}
-					}
-				}
-			}
-		},
+      "description": "Wrapper for different renditions of contact information.",
+      "type": "object",
+      "patternProperties": {
+        "^[a-zA-Z0-9]+": {
+          "type": "object",
+          "properties": {
+            "email": {
+              "description": "An email address.",
+              "type": "string"
+            },
+            "phone": {
+              "description": "A phone number, preferred in an international format.",
+              "type": "string"
+            },
+            "fax": {
+              "description": "A fax number, preferred in an international format.",
+              "type": "string"
+            },
+            "web": {
+              "description": "A web address.",
+              "type": "string"
+            },
+            "address": {
+              "$ref": "#/definitions/address"
+            }
+          }
+        }
+      }
+    },
     "address": {
-			"description": " An address. Its use is refined by the object wrapping it.",
-			"type": "object",
-			"properties": {
-				"lines": {
-					"description": "Lines of address information, in the format expected by a postal service. City, country area, country and postal code are expressed separately.",
-					"type": "array",
-					"uniqueItems": true,
-					"items": {
-						"type": "string"
-					}
-				},
-				"locality": {
-					"description": "The city or locality.",
-					"type": "string"
-				},
-				"county": {
-					"description": "Name of a subdivision of the region.",
-					"type": "string"
-				},
-				"region": {
-					"description": " Name of the region, state or province of a country",
-					"type": "string"
-				},
-				"postalCode": {
-					"description": "The postal code.",
-					"type": "string"
-				},
-				"countryName": {
-					"description": "Name of the country.",
-					"type": "string"
-				},
-				"countryCode": {
-					"description": "An ISO two-letter or three-letter country-code.",
-					"type": "string"
-				},
-				"worldRegion": {
-					"description": "The world region.",
-					"type": "string"
-				}
-			}
-		},
+      "description": " An address. Its use is refined by the object wrapping it.",
+      "type": "object",
+      "properties": {
+        "lines": {
+          "description": "Lines of address information, in the format expected by a postal service. City, country area, country and postal code are expressed separately.",
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "locality": {
+          "description": "The city or locality.",
+          "type": "string"
+        },
+        "county": {
+          "description": "Name of a subdivision of the region.",
+          "type": "string"
+        },
+        "region": {
+          "description": " Name of the region, state or province of a country",
+          "type": "string"
+        },
+        "postalCode": {
+          "description": "The postal code.",
+          "type": "string"
+        },
+        "countryName": {
+          "description": "Name of the country.",
+          "type": "string"
+        },
+        "countryCode": {
+          "description": "An ISO two-letter or three-letter country-code.",
+          "type": "string"
+        },
+        "worldRegion": {
+          "description": "The world region.",
+          "type": "string"
+        }
+      }
+    },
     "position": {
-			"description": "The geospatial data of the location. Default Coordinate Reference Systems is WGS84",
-			"type": "object",
-			"properties": {
-				"latitude": {
-					"description": "The latitude in decimal degrees.",
-					"type": "number"
-				},
-				"longitude": {
-					"description": "The longitude in decimal degrees.",
-					"type": "number"
-				},
-				"altitudeMetres": {
-					"description": "The altitude in metres above the zero elevation of the reference system (sea level).",
-					"type": "number"
-				},
-				"altitudeFeet": {
-					"description": "The altitude in feet above the zero elevation of the reference system (sea level).",
-					"type": "number"
-				}
-			}
-		},
+      "description": "The geospatial data of the location. Default Coordinate Reference Systems is WGS84",
+      "type": "object",
+      "properties": {
+        "latitude": {
+          "description": "The latitude in decimal degrees.",
+          "type": "number"
+        },
+        "longitude": {
+          "description": "The longitude in decimal degrees.",
+          "type": "number"
+        },
+        "altitudeMetres": {
+          "description": "The altitude in metres above the zero elevation of the reference system (sea level).",
+          "type": "number"
+        },
+        "altitudeFeet": {
+          "description": "The altitude in feet above the zero elevation of the reference system (sea level).",
+          "type": "number"
+        }
+      }
+    },
     "name": {
-			"description": "Name of the entity, could be a player, official, associate, team, etc. Sometimes a person is referred-to by different names, depending upon the language in which the document is displayed.",
-			"type": "object",
-			"properties": {
-				"salutation": {
-					"description": "Any salutation used with the name.",
-					"type": "string"
-				},
-				"given": {
-					"description": "The first name refered to. For people, should be the given name. Also, if person has only one name, like Pele or Ronaldo, use this one.",
-					"type": "string"
-				},
-				"middle": {
-					"description": "The middle name refered to.",
-					"type": "string"
-				},
-				"family": {
-					"description": "The family last name referred to. For people, should be the surname.",
-					"type": "string"
-				},
-				"nickname": {
-					"description": "A nickname ascribed to the person or team.",
-					"type": "string"
-				},
-				"alternate": {
-					"description": " Alternative version of a name, this may be an alias.",
-					"type": "string"
-				},
-				"display": {
-					"description": "Used for any display purposes",
-					"type": "string"
-				},
-				"full": {
-					"description": "Long and exhaustive name",
-					"type": "string"
-				},
-				"short": {
-					"description": "concise name",
-					"type": "string"
-				},
-				"abbreviation": {
-					"description": "An abbreviation, usually used for teams in display locations where space is constrained.",
-					"type": "string"
-				}
-			}
-		},
+      "description": "Name of the entity, could be a player, official, associate, team, etc. Sometimes a person is referred-to by different names, depending upon the language in which the document is displayed.",
+      "type": "object",
+      "properties": {
+        "salutation": {
+          "description": "Any salutation used with the name.",
+          "type": "string"
+        },
+        "given": {
+          "description": "The first name refered to. For people, should be the given name. Also, if person has only one name, like Pele or Ronaldo, use this one.",
+          "type": "string"
+        },
+        "middle": {
+          "description": "The middle name refered to.",
+          "type": "string"
+        },
+        "family": {
+          "description": "The family last name referred to. For people, should be the surname.",
+          "type": "string"
+        },
+        "nickname": {
+          "description": "A nickname ascribed to the person or team.",
+          "type": "string"
+        },
+        "alternate": {
+          "description": " Alternative version of a name, this may be an alias.",
+          "type": "string"
+        },
+        "display": {
+          "description": "Used for any display purposes",
+          "type": "string"
+        },
+        "full": {
+          "description": "Long and exhaustive name",
+          "type": "string"
+        },
+        "short": {
+          "description": "concise name",
+          "type": "string"
+        },
+        "abbreviation": {
+          "description": "An abbreviation, usually used for teams in display locations where space is constrained.",
+          "type": "string"
+        }
+      }
+    },
     "sportsContent": {
       "type": "object",
       "description": "Metadata and coverage of sporting news. | Good for scores, schedules, standings, statistics, etc.",
@@ -202,7 +202,7 @@
         "sportsEvent": {
           "$ref": "#/definitions/sportsEvent"
         },
-       "sportsEvents": {
+        "sportsEvents": {
           "$ref": "#/definitions/sportsEvents"
         },
         "tournament": {
@@ -232,8 +232,7 @@
           "$ref": "SportsJS-Extensions.json#/definitions/eventMetadataExtension"
         }
       ],
-      "properties": {
-      }
+      "properties": {}
     },
     "eventStats": {
       "description": "Stats applying to the game as a whole. Initially designed for motor-racing, but potentially applicable to many sports.",
@@ -287,8 +286,7 @@
           "$ref": "SportsJS-Extensions.json#/definitions/tournamentMetadataExtension"
         }
       ],
-      "properties": {
-      }
+      "properties": {}
     },
     "tournamentDivisionMetadata": {
       "description": "General information about the division of this tournament. | Where and when this division is competing.",
@@ -332,8 +330,7 @@
           "$ref": "SportsJS-Extensions.json#/definitions/teamMetadataExtension"
         }
       ],
-      "properties": {
-      }
+      "properties": {}
     },
     "teamStats": {
       "description": "",
@@ -345,8 +342,7 @@
           "$ref": "SportsJS-Extensions.json#/definitions/teamStatsExtension"
         }
       ],
-      "properties": {
-      }
+      "properties": {}
     },
     "playerMetadata": {
       "description": "",
@@ -358,8 +354,7 @@
           "$ref": "SportsJS-Extensions.json#/definitions/playerMetadataExtension"
         }
       ],
-      "properties": {
-      }
+      "properties": {}
     },
     "playerStats": {
       "description": "",
@@ -371,8 +366,7 @@
           "$ref": "SportsJS-Extensions.json#/definitions/playerStatsExtension"
         }
       ],
-      "properties": {
-      }
+      "properties": {}
     },
     "officialMetadata": {
       "description": "",
@@ -411,8 +405,7 @@
           "$ref": "SportsJS-Extensions.json#/definitions/associateMetadataExtension"
         }
       ],
-      "properties": {
-      }
+      "properties": {}
     },
     "catalog": {
       "description": "",
