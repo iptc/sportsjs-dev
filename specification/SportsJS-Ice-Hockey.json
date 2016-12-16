@@ -1,13 +1,13 @@
 {
   "id": "http://www.iptc.org/std/sportsjs/sportsjs-ice-hockey_1.0.draft.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "The SportsInJSON Soccer schema contains properties common to Ice Hockey.",
+  "description": "The SportsJS Soccer schema contains properties common to Ice Hockey.",
   "definitions": {
     "iceHockeyEventMetadata": {
       "description": "Metadata about the event itself. | Specific to ice-hockey.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
           "$ref": "#/definitions/eventStateIceHockey"
@@ -19,7 +19,7 @@
       "description": "Metadata for a player. | Specific to ice-hockey.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
@@ -60,10 +60,10 @@
       "description": "Stats for a player specific to ice-hockey. | Includes the same offensive and defensive stats available for a team.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -105,10 +105,10 @@
       "description": "Offensive stats for one team. | Specific to ice-hockey, including stats on shots, goals, and faceoffs.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         },
         {
           "$ref": "#/definitions/commonPropertiesIceHockey"
@@ -261,10 +261,10 @@
       "description": "Defensive stats for the team. | Specific to ice-hockey, including saves and shots allowed.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         },
         {
           "$ref": "#/definitions/commonPropertiesIceHockey"
@@ -373,10 +373,10 @@
       "description": "Defensive stats for the team. | Specific to ice-hockey, including saves and shots allowed.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         },
         {
           "$ref": "#/definitions/commonPropertiesIceHockey"
@@ -453,10 +453,10 @@
       "description": "Defensive stats for the team. | Specific to ice-hockey, including saves and shots allowed.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         },
         {
           "$ref": "#/definitions/commonPropertiesIceHockey"

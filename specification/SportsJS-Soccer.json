@@ -1,7 +1,7 @@
 {
   "id": "http://www.iptc.org/std/sportsjs/sportsjs-soccer_1.0.draft.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "The SportsInJSON Soccer schema contains properties common to Soccer.",
+  "description": "The SportsJS Soccer schema contains properties common to Soccer.",
   "definitions": {
     "soccerEventMetadata": {
       "description": "Soccer-specific metadata for events. | Metadata that is specific to soccer for events.",
@@ -12,7 +12,7 @@
           "description": ""
         },
         "kickOffTeamIdref": {
-          "$ref": "SportsInJSON-Core.json#/definitions/idRef",
+          "$ref": "SportsJS-Core.json#/definitions/idRef",
           "description": "Pointer to the team doing the kick-off for the period covered."
         },
         "week": {
@@ -34,7 +34,7 @@
       "description": "Player metadata specific to soccer. | Metadata for one player, specific to soccer.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
@@ -84,10 +84,10 @@
       "description": "",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -109,10 +109,10 @@
       "description": "Offensive stats specific to soccer. | Offensive stats for one team, specific to soccer.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -234,10 +234,10 @@
       "description": "Defensive stats specific to soccer. | Defensive stats for one team, specific to soccer.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -295,10 +295,10 @@
       "description": "Stats specific to fauls, cautions, and ejections. | Could occur while players are on the offense, the defense, or even the bench.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {

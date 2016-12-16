@@ -1,7 +1,7 @@
 {
   "id": "http://www.iptc.org/std/sportsjs/sportsjs-curling_1.0.draft.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "The SportsInJSON Soccer schema contains properties common to Curling",
+  "description": "The SportsJS Soccer schema contains properties common to Curling",
   "definitions": {
     "curlingEventMetadata": {
       "description": "An element holding sport-specific metadata about a curling game.",
@@ -20,7 +20,7 @@
       "description": "Holds metadata specific to a curling player.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
@@ -38,10 +38,10 @@
       "description": "Holds curling-specific stats for certain player.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -55,10 +55,10 @@
       "description": "Statistics summarizing the actions of one team.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -84,10 +84,10 @@
       "description": "Description of an individual stone used in a curling game.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -105,10 +105,10 @@
       "description": "Statistics for one end (round) for one team in a curling game.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -138,10 +138,10 @@
       "description": "Holds the summary for shots and percentage for one team or one player and optionally for just one type of shots.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "id": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#",
-  "description": "The SportsInJSON schema contains properties common to all (or many) sports.",
+  "description": "The SportsJS schema contains properties common to all (or many) sports.",
   "$ref": "#/definitions/sportsContent",
   "definitions": {
     "duration": {
@@ -229,7 +229,7 @@
           "$ref": "#/definitions/baseEventMetadata"
         },
         {
-          "$ref": "SportsInJSON-Extensions.json#/definitions/eventMetadataExtension"
+          "$ref": "SportsJS-Extensions.json#/definitions/eventMetadataExtension"
         }
       ],
       "properties": {
@@ -245,7 +245,7 @@
           "$ref": "#/definitions/coverageAttributes"
         },
         {
-          "$ref": "SportsInJSON-Extensions.json#/definitions/eventStatsExtension"
+          "$ref": "SportsJS-Extensions.json#/definitions/eventStatsExtension"
         }
       ],
       "properties": {
@@ -284,7 +284,7 @@
           "$ref": "#/definitions/baseTournamentMetadata"
         },
         {
-          "$ref": "SportsInJSON-Extensions.json#/definitions/tournamentMetadataExtension"
+          "$ref": "SportsJS-Extensions.json#/definitions/tournamentMetadataExtension"
         }
       ],
       "properties": {
@@ -329,7 +329,7 @@
           "$ref": "#/definitions/baseTeamMetadata"
         },
         {
-          "$ref": "SportsInJSON-Extensions.json#/definitions/teamMetadataExtension"
+          "$ref": "SportsJS-Extensions.json#/definitions/teamMetadataExtension"
         }
       ],
       "properties": {
@@ -342,7 +342,7 @@
           "$ref": "#/definitions/baseTeamStats"
         },
         {
-          "$ref": "SportsInJSON-Extensions.json#/definitions/teamStatsExtension"
+          "$ref": "SportsJS-Extensions.json#/definitions/teamStatsExtension"
         }
       ],
       "properties": {
@@ -355,7 +355,7 @@
           "$ref": "#/definitions/basePlayerMetadata"
         },
         {
-          "$ref": "SportsInJSON-Extensions.json#/definitions/playerMetadataExtension"
+          "$ref": "SportsJS-Extensions.json#/definitions/playerMetadataExtension"
         }
       ],
       "properties": {
@@ -368,7 +368,7 @@
           "$ref": "#/definitions/basePlayerStats"
         },
         {
-          "$ref": "SportsInJSON-Extensions.json#/definitions/playerStatsExtension"
+          "$ref": "SportsJS-Extensions.json#/definitions/playerStatsExtension"
         }
       ],
       "properties": {
@@ -408,7 +408,7 @@
           "$ref": "#/definitions/baseAssociateMetadata"
         },
         {
-          "$ref": "SportsInJSON-Extensions.json#/definitions/associateMetadataExtension"
+          "$ref": "SportsJS-Extensions.json#/definitions/associateMetadataExtension"
         }
       ],
       "properties": {

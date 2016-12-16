@@ -1,13 +1,13 @@
 {
   "id": "http://www.iptc.org/std/sportsjs/sportsjs-golf_1.0.draft.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "description": "The SportsInJSON Soccer schema contains properties common to Golf.",
+  "description": "The SportsJS Soccer schema contains properties common to Golf.",
   "definitions": {
     "golfTournamentMetadata": {
       "description": "Holds metadata about a golf tournament. | Currently only holds the rank of the team. ???",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {}
@@ -16,7 +16,7 @@
       "description": "Metadata about a particular division within a golf tournament. | Includes information about the course as a whole.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
@@ -34,7 +34,7 @@
       "description": "Holds event metadata specific to golf. | Includes data about the course on which the event is held.",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
           "$ref": "#/definitions/eventStateGolf"
@@ -109,10 +109,10 @@
       "description": "",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -379,10 +379,10 @@
       "description": "",
       "allOf": [
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/commonAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsInJSON-Core.json#/definitions/coverageAttributes"
+          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
