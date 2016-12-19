@@ -1,7 +1,7 @@
 {
   "name": "sportsjs-validator",
   "version": "1.0.0",
-  "description": "Test suite for SportsInJSON Schemas.",
+  "description": "Test suite for SportsJS Schemas.",
   "main": "test.js",
   "dependencies": {
     "fs": "0.0.2",
