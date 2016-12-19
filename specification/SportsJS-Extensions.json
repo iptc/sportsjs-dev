@@ -82,6 +82,13 @@
         }
       }
     },
+    "tournamentDivisionMetadataExtension": {
+      "properties": {
+        "tournamentDivisionMetadataGolf": {
+          "$ref": "SportsJS-Golf.json#/definitions/tournamentDivisionMetadataExtension"
+        }
+      }
+    },
     "teamMetadataExtension": {
       "properties": {
         "baseballTeamMetadata": {

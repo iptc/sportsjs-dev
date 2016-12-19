@@ -199,6 +199,23 @@
           "description": "The number of the end. Rounds of normally 8+8 stones are called ends in curling."
         }
       }
+    },
+    "curlingEquipmentAttributes": {
+      "description": "",
+      "properties": {
+        "stoneColor": {
+          "type": "string",
+          "description": ""
+        },
+        "stoneId": {
+          "type": "string",
+          "description": ""
+        },
+        "stoneNumber": {
+          "type": "integer",
+          "description": ""
+        }
+      }
     }
   }
 }

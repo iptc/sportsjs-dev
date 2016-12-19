@@ -71,7 +71,7 @@
           "description": "The number written on the side of the vehicle."
         },
         "makeKey": {
-          "$ref": "#/definitions/QCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "A unique identifier for the make of the car. For example: m.dodge"
         },
         "sponsor": {
@@ -411,7 +411,7 @@
           "description": "The time elapsed in the race."
         },
         "flagState": {
-          "$ref": "#/definitions/QCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The current flag issued within the race."
         }
       }

@@ -2,29 +2,24 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "id": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#",
   "description": "The SportsJS schema contains properties common to all (or many) sports.",
+  "type": "object",
   "$ref": "#/definitions/sportsContent",
   "definitions": {
-    "duration": {
-      "type": "string"
-    },
-    "uri": {
-      "type": "string"
-    },
-    "qCodeType": {
-      "type": "string",
-      "pattern": "[^\\s:]+:[^\\s]+"
-    },
     "idRef": {
       "type": "string"
+    },
+    "duration": {
+      "type": "string",
+      "pattern": "/^P([0-9]+(?:[,\\.][0-9]+)?Y)?([0-9]+(?:[,\\.][0-9]+)?M)?([0-9]+(?:[,\\.][0-9]+)?D)?(?:T([0-9]+(?:[,\\.][0-9]+)?H)?([0-9]+(?:[,\\.][0-9]+)?M)?([0-9]+(?:[,\\.][0-9]+)?S)?)?$/"
+    },
+    "qCode": {
+      "type": "string",
+      "pattern": "[^\\s:]+:[^\\s]+"
     },
     "truncatedDateTime": {
       "type": "string",
       "description": "The type of a calendar date with an optional time part which may be truncated from the second part to the month part.",
       "pattern": "(\\d{4})-(\\d{2})-(\\d{2})"
-    },
-    "isoDateTime": {
-      "type": "string",
-      "pattern": "(\\d{4})-(\\d{2})-(\\d{2})T(\\d{2}):(\\d{2}):(\\d{2})"
     },
     "nonNegativeInteger": {
       "type": "integer",
@@ -195,6 +190,11 @@
     "sportsContent": {
       "type": "object",
       "description": "Metadata and coverage of sporting news. | Good for scores, schedules, standings, statistics, etc.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/commonAttributes"
+        }
+      ],
       "properties": {
         "sportsMetadata": {
           "$ref": "#/definitions/sportsMetadata"
@@ -248,14 +248,14 @@
         }
       ],
       "properties": {
-        "sportsProperty": {
-          "$ref": "#/definitions/sportsProperty",
+        "sportsProperties": {
+          "$ref": "#/definitions/sportsProperties",
           "description": ""
         }
       }
     },
     "eventActions": {
-      "description": "a set of event actions",
+      "description": "Complex type for sports events, both generic and sport specific.",
       "type": "array",
       "additionalItems": false,
       "items": {
@@ -297,7 +297,7 @@
       ],
       "properties": {
         "tournamentDivisionMetadataGolf": {
-          "$ref": "#/definitions/golfTournamentDivisionMetadata",
+          "$ref": "SportsJS-Extensions.json#/definitions/tournamentDivisionMetadataExtension",
           "description": ""
         },
         "divisionNumber": {
@@ -315,8 +315,12 @@
       ],
       "properties": {
         "type": {
-          "$ref": "#/definitions/qCodeType",
-          "description": ""
+          "$ref": "#/definitions/qCode",
+          "description": "The phase of the tournament: semi-final, quarter-final, etc. SportsML vocab uri: http://cv.iptc.org/newscodes/sptournamentphase/"
+        },
+        "formatType": {
+          "$ref": "#/definitions/qCode",
+          "description": "The format type of tournament or tournament phase: group, elimination, etc. SportsML vocab uri: http://cv.iptc.org/newscodes/sptournamentform/"
         }
       }
     },
@@ -408,7 +412,7 @@
       "properties": {}
     },
     "catalog": {
-      "description": "",
+      "description": "A reference to the document listing externally-supplied controlled vocabularies. | The catalog file can be in NewsML 1",
       "allOf": [
         {
           "$ref": "#/definitions/commonAttributes"
@@ -418,12 +422,13 @@
       "properties": {
         "href": {
           "description": "The URL for the catalog.",
-          "$ref": "#/definitions/uri"
+          "type": "string",
+          "format": "uri"
         }
       }
     },
     "advisory": {
-      "description": "",
+      "description": "A short textual message to editors receiving the document. | Not generally published through to end-users.",
       "allOf": [
         {
           "$ref": "#/definitions/commonAttributes"
@@ -453,8 +458,9 @@
           "description": "A reference to the document listing externally-supplied controlled vocabularies. | The catalog file can be in NewsML 1."
         },
         "href": {
-          "$ref": "#/definitions/uri",
-          "description": "The URL for the catalog."
+          "description": "The URL for the catalog.",
+          "type": "string",
+          "format": "uri"
         },
         "sportsTitle": {
           "$ref": "#/definitions/name",
@@ -477,7 +483,8 @@
           "description": "Publisher of the data."
         },
         "dateTime": {
-          "$ref": "#/definitions/DateOptTimeType",
+          "type": "string",
+          "format": "date-time",
           "description": "Date-timestamp for the document, normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available"
         },
         "language": {
@@ -489,22 +496,17 @@
           "description": "A keyword used by editors to refer to the document."
         },
         "documentClass": {
-          "type": "string",
+          "$ref": "#/definitions/qCode",
           "description": "A category code for the fixture-key. Recommended categories are news (non-event-specific news reports for player, team, league, etc.), standings (or tables), schedules, statistics (for non-event-specific statistical reports), event-summary (for event-specific reports whether prose (i.e. previews and reviews) or statistical (i.e. boxscores)), event-action (for play actions within a single event), dynamic-resource-file (for team rosters (squad lists), athlete lists, league groupings and teams, etc.)"
         },
         "fixtureKey": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "A consistent key for the type of regularly-published document being transmitted. External controlled vocabulary: fixture-key.list"
         }
       }
     },
     "sportsContentCodes": {
       "description": "A container for content-codes. | Can hold as many codes as needed to describe all contents at this level and below.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/commonAttributes"
-        }
-      ],
       "items": {
         "$ref": "#/definitions/sportsContentCode"
       }
@@ -522,11 +524,11 @@
           "description": ""
         },
         "codeType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "What type of item is being described."
         },
         "codeKey": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The symbol for the identified content. SportsML vocabulary uri: http://cv.iptc.org/newscodes/spcode/"
         },
         "codeName": {
@@ -553,15 +555,15 @@
           "description": "One specific gender or mixed."
         },
         "participantCount": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Number of participants playing on a team or side in the events covered. SportsML vocabulary uri: http://cv.iptc.org/newscodes/spparticipantcount/"
         },
         "professionalStatus": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The professional-status of the events covered. SportsML vocabulary uri: http://cv.iptc.org/newscodes/spprofessionalstatus/"
         },
         "specialGroup": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "If the events covered are for special groups. Can be school-oriented, age-oriented, or group names, like Firefighters."
         },
         "minimumAge": {
@@ -573,7 +575,7 @@
           "description": "Highest age for participants, in years. Examples: 8, 65, 120."
         },
         "specialNeeds": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Events for persons with special-needs."
         }
       }
@@ -632,40 +634,32 @@
       ],
       "properties": {
         "eventMetadata": {
-          "$ref": "#/definitions/eventMetadata",
-          "description": ""
+          "$ref": "#/definitions/eventMetadata"
         },
         "eventStats": {
-          "$ref": "#/definitions/eventStats",
-          "description": ""
+          "$ref": "#/definitions/eventStats"
         },
         "teams": {
-          "$ref": "#/definitions/teams",
-          "description": ""
+          "$ref": "#/definitions/teams"
         },
         "players": {
-          "$ref": "#/definitions/players",
-          "description": ""
+          "$ref": "#/definitions/players"
         },
         "wageringStats": {
-          "$ref": "#/definitions/wageringStats",
-          "description": ""
+          "$ref": "#/definitions/wageringStats"
         },
         "officials": {
-          "$ref": "#/definitions/officials",
-          "description": ""
+          "$ref": "#/definitions/officials"
         },
         "actions": {
           "$ref": "#/definitions/eventActions",
           "description": "Single element that can hold multiple action elements"
         },
         "highlights": {
-          "$ref": "#/definitions/highlights",
-          "description": ""
+          "$ref": "#/definitions/highlights"
         },
         "awards": {
-          "$ref": "#/definitions/awards",
-          "description": ""
+          "$ref": "#/definitions/awards"
         },
         "sportsEvents": {
           "$ref": "#/definitions/sportsEvents",
@@ -714,7 +708,14 @@
           "$ref": "#/definitions/commonAttributes"
         }
       ],
-      "properties": {}
+      "properties": {
+        "content": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
     },
     "site": {
       "description": "An element housing data having to do with a venue, stadium, arena, field, etc.",
@@ -743,23 +744,22 @@
       ],
       "properties": {
         "sportsContentCodes": {
-          "$ref": "#/definitions/sportsContentCodes",
-          "description": ""
+          "$ref": "#/definitions/sportsContentCodes"
         },
         "capacity": {
           "type": "string",
           "description": "How many spectators can fill the site."
         },
-        "site_style": {
-          "$ref": "#/definitions/qCodeType",
+        "siteStyle": {
+          "$ref": "#/definitions/qCode",
           "description": "Whether it is an indoor or outdoor site."
         },
         "surface": {
-          "type": "string",
+          "$ref": "#/definitions/qCode",
           "description": "Describes the surface upon which events are played. For example, in tennis, could be hard-court or grass or clay."
         },
         "shape": {
-          "type": "string",
+          "$ref": "#/definitions/qCode",
           "description": "A controlled vocabulary for the site's shape. Example for motor-racing: oval."
         },
         "incline": {
@@ -779,8 +779,9 @@
           "description": "A controlled vocabulary for the type or class of arena. Example for motor-racing: super-speedway."
         },
         "homePageUrl": {
-          "$ref": "#/definitions/uri",
-          "description": "The website for the venue or arena."
+          "description": "The website for the venue or arena.",
+          "type": "string",
+          "format": "uri"
         },
         "created": {
           "$ref": "#/definitions/truncatedDateTime",
@@ -807,7 +808,7 @@
           "type": "string",
           "enum": [
             "home",
-            "away"
+            "neutral"
           ],
           "description": "Statistics about the site, accurate for a particular occasion. home means the site is home for one of the teams or players. neutral that it is neutral to all participants in the event."
         },
@@ -840,7 +841,7 @@
           "description": "Wind reading of the event recorded during the competition."
         },
         "weatherPrediction": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Predicted weather conditions for the event."
         },
         "probabilityOfPrecipitation": {
@@ -866,28 +867,22 @@
       ],
       "properties": {
         "teamMetadata": {
-          "$ref": "#/definitions/teamMetadata",
-          "description": ""
+          "$ref": "#/definitions/teamMetadata"
         },
         "teamStats": {
-          "$ref": "#/definitions/teamStats",
-          "description": ""
+          "$ref": "#/definitions/teamStats"
         },
         "player": {
-          "$ref": "#/definitions/player",
-          "description": ""
+          "$ref": "#/definitions/player"
         },
         "wageringStats": {
-          "$ref": "#/definitions/wagering-stats",
-          "description": ""
+          "$ref": "#/definitions/wageringStats"
         },
         "associate": {
-          "$ref": "#/definitions/associate",
-          "description": ""
+          "$ref": "#/definitions/associate"
         },
         "affiliation": {
-          "$ref": "#/definitions/affiliation",
-          "description": ""
+          "$ref": "#/definitions/affiliation"
         }
       }
     },
@@ -911,11 +906,11 @@
           "description": "The score for that period (or scoring unit)."
         },
         "subScoreType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The type of sub-score."
         },
         "subScoreKey": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The symbol for the sub-score unit."
         },
         "subScoreName": {
@@ -1018,7 +1013,7 @@
           "description": "Points counted against a team in rankings. Used in European handball standings, for example."
         },
         "streakType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Whether this is a streak of wins, of losses, etc. SportsML vocabulary uri: http://cv.iptc.org/newscodes/spstreaktype/"
         },
         "streakDuration": {
@@ -1104,11 +1099,10 @@
       ],
       "properties": {
         "name": {
-          "$ref": "#/definitions/name",
-          "description": ""
+          "$ref": "#/definitions/name"
         },
         "awardType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Type of award."
         },
         "playerOrTeamIdref": {
@@ -1166,7 +1160,7 @@
       ],
       "properties": {
         "type": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The type of the rank. Generally a publisher-specific controlled vocabulary."
         },
         "issuer": {
@@ -1233,39 +1227,27 @@
       ],
       "properties": {
         "playerMetadata": {
-          "$ref": "#/definitions/playerMetadata",
-          "description": ""
+          "$ref": "#/definitions/playerMetadata"
         },
         "playerStats": {
-          "$ref": "#/definitions/playerStats",
-          "description": ""
+          "$ref": "#/definitions/playerStats"
         },
         "wageringStats": {
-          "$ref": "#/definitions/wagering-stats",
-          "description": ""
+          "$ref": "#/definitions/wageringStats"
         },
         "associate": {
-          "$ref": "#/definitions/associate",
-          "description": ""
+          "$ref": "#/definitions/associate"
         },
         "affiliation": {
-          "$ref": "#/definitions/affiliation",
-          "description": ""
+          "$ref": "#/definitions/affiliation"
         }
       }
     },
     "officials": {
       "description": "A set of officials. | May hold zero or more.",
-      "allOf": [
-        {
-          "$ref": "#/definitions/commonAttributes"
-        }
-      ],
-      "properties": {
-        "official": {
-          "$ref": "#/definitions/official",
-          "description": ""
-        }
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/offical"
       }
     },
     "official": {
@@ -1307,16 +1289,13 @@
       ],
       "properties": {
         "associateMetadata": {
-          "$ref": "#/definitions/associateMetadata",
-          "description": ""
+          "$ref": "#/definitions/associateMetadata"
         },
         "associateStats": {
-          "$ref": "#/definitions/associateStats",
-          "description": ""
+          "$ref": "#/definitions/associateStats"
         },
         "affiliation": {
-          "$ref": "#/definitions/affiliation",
-          "description": ""
+          "$ref": "#/definitions/affiliations"
         }
       }
     },
@@ -1348,7 +1327,7 @@
           "description": "The type of organizational structure in which this item is a member."
         },
         "membershipKey": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "A unique key for the organizational structure in which this item is a member."
         },
         "membershipName": {
@@ -1381,8 +1360,8 @@
           "$ref": "#/definitions/tournamentPart",
           "description": ""
         },
-        "sportsEvent": {
-          "$ref": "#/definitions/sportsEvent",
+        "sportsEvents": {
+          "$ref": "#/definitions/sportsEvents",
           "description": ""
         }
       }
@@ -1396,20 +1375,16 @@
       ],
       "properties": {
         "tournamentDivisionMetadata": {
-          "$ref": "#/definitions/tournamentDivisionMetadata",
-          "description": ""
+          "$ref": "#/definitions/tournamentDivisionMetadata"
         },
         "standing": {
-          "$ref": "#/definitions/standing",
-          "description": ""
+          "$ref": "#/definitions/standing"
         },
         "tournamentPart": {
-          "$ref": "#/definitions/tournamentPart",
-          "description": ""
+          "$ref": "#/definitions/tournamentPart"
         },
         "sportsEvent": {
-          "$ref": "#/definitions/sportsEvent",
-          "description": ""
+          "$ref": "#/definitions/sportsEvent"
         }
       }
     },
@@ -1422,20 +1397,16 @@
       ],
       "properties": {
         "tournamentPartMetadata": {
-          "$ref": "#/definitions/tournamentPartMetadata",
-          "description": ""
+          "$ref": "#/definitions/tournamentPartMetadata"
         },
         "standing": {
-          "$ref": "#/definitions/standing",
-          "description": ""
+          "$ref": "#/definitions/standing"
         },
         "tournamentPart": {
-          "$ref": "#/definitions/tournamentPart",
-          "description": ""
+          "$ref": "#/definitions/tournamentPart"
         },
         "sportsEvent": {
-          "$ref": "#/definitions/sportsEvent",
-          "description": ""
+          "$ref": "#/definitions/sportsEvent"
         },
         "partIndex": {
           "type": "string",
@@ -1462,7 +1433,7 @@
       }
     },
     "standing": {
-      "description": "",
+      "description": "Also known as a (league) table | A ranked, comparative list of team or individual records.",
       "allOf": [
         {
           "$ref": "#/definitions/commonAttributes"
@@ -1508,9 +1479,8 @@
           "$ref": "#/definitions/scheduleMetadata",
           "description": ""
         },
-        "sportsEvent": {
-          "$ref": "#/definitions/sportsEvent",
-          "description": ""
+        "sportsEvents": {
+          "$ref": "#/definitions/sportsEvents"
         },
         "dateLabel": {
           "type": "string",
@@ -1550,16 +1520,16 @@
           "$ref": "#/definitions/group",
           "description": ""
         },
-        "team": {
-          "$ref": "#/definitions/team",
+        "teams": {
+          "$ref": "#/definitions/teams",
           "description": ""
         },
-        "player": {
-          "$ref": "#/definitions/player",
+        "players": {
+          "$ref": "#/definitions/players",
           "description": ""
         },
-        "associate": {
-          "$ref": "#/definitions/associate",
+        "associates": {
+          "$ref": "#/definitions/associates",
           "description": ""
         },
         "statusChange": {
@@ -1601,7 +1571,7 @@
           "description": "A pointer to the player or team that has undergone the status change."
         },
         "statusChangeType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "What type of change was made in the status of a player or team. Examples are injury, trade, cut."
         },
         "originalStatus": {
@@ -1639,28 +1609,22 @@
       ],
       "properties": {
         "groupMetadata": {
-          "$ref": "#/definitions/groupMetadata",
-          "description": ""
+          "$ref": "#/definitions/groupMetadata"
         },
         "groupStats": {
-          "$ref": "#/definitions/groupStats",
-          "description": ""
+          "$ref": "#/definitions/groupStats"
         },
         "group": {
-          "$ref": "#/definitions/group",
-          "description": ""
+          "$ref": "#/definitions/group"
         },
-        "team": {
-          "$ref": "#/definitions/team",
-          "description": ""
+        "teams": {
+          "$ref": "#/definitions/teams"
         },
-        "player": {
-          "$ref": "#/definitions/player",
-          "description": ""
+        "players": {
+          "$ref": "#/definitions/players"
         },
-        "affiliation": {
-          "$ref": "#/definitions/affiliation",
-          "description": ""
+        "affiliations": {
+          "$ref": "#/definitions/affiliations"
         }
       }
     },
@@ -1715,8 +1679,7 @@
           "description": "The name of the stat. SportsML names are same as attribute names of stats in the sport-specific plugins."
         },
         "stat": {
-          "$ref": "#/definitions/genericStat",
-          "description": ""
+          "$ref": "#/definitions/genericStat"
         }
       }
     },
@@ -1729,24 +1692,19 @@
       ],
       "properties": {
         "wageringMoneyline": {
-          "$ref": "#/definitions/wagering-moneyline",
-          "description": ""
+          "$ref": "#/definitions/wageringMoneyline"
         },
         "wageringTotalScore": {
-          "$ref": "#/definitions/wagering-total-score",
-          "description": ""
+          "$ref": "#/definitions/wageringTotalScore"
         },
         "wageringRunline": {
-          "$ref": "#/definitions/wagering-runline",
-          "description": ""
+          "$ref": "#/definitions/wageringRunline"
         },
         "wageringOdds": {
-          "$ref": "#/definitions/wagering-odds",
-          "description": ""
+          "$ref": "#/definitions/wageringOdds"
         },
         "wageringStraightSpread": {
-          "$ref": "#/definitions/wagering-straight-spread",
-          "description": ""
+          "$ref": "#/definitions/wageringStraightSpread"
         },
         "comment": {
           "type": "string",
@@ -1898,7 +1856,7 @@
       ],
       "properties": {
         "prediction": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Whether this team or player is the favorite or the underdog."
         }
       }
@@ -1915,12 +1873,10 @@
       ],
       "properties": {
         "sportsContentCodes": {
-          "$ref": "#/definitions/sportsContentCodes",
-          "description": ""
+          "$ref": "#/definitions/sportsContentCodes"
         },
         "sportsProperty": {
-          "$ref": "#/definitions/sportsProperty",
-          "description": ""
+          "$ref": "#/definitions/sportsProperty"
         }
       }
     },
@@ -1933,19 +1889,16 @@
       ],
       "properties": {
         "name": {
-          "$ref": "#/definitions/name",
-          "description": ""
+          "$ref": "#/definitions/name"
         },
         "site": {
-          "$ref": "#/definitions/site",
-          "description": ""
+          "$ref": "#/definitions/site"
         },
         "award": {
-          "$ref": "#/definitions/award",
-          "description": ""
+          "$ref": "#/definitions/award"
         },
         "key": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The symbol or identifying key for the tournament or tournament part."
         }
       }
@@ -1959,16 +1912,13 @@
       ],
       "properties": {
         "rating": {
-          "$ref": "#/definitions/rating",
-          "description": ""
+          "$ref": "#/definitions/rating"
         },
-        "sportsProperty": {
-          "$ref": "#/definitions/sportsProperty",
-          "description": ""
+        "sportsProperties": {
+          "$ref": "#/definitions/sportsProperties"
         },
         "stats": {
-          "$ref": "#/definitions/genericStat",
-          "description": ""
+          "$ref": "#/definitions/genericStats"
         }
       }
     },
@@ -1981,12 +1931,10 @@
       ],
       "properties": {
         "outcomeTotals": {
-          "$ref": "#/definitions/outcomeTotals",
-          "description": ""
+          "$ref": "#/definitions/outcomeTotals"
         },
         "outcomeResult": {
-          "$ref": "#/definitions/outcomeResult",
-          "description": ""
+          "$ref": "#/definitions/outcomeResult"
         },
         "points": {
           "$ref": "#/definitions/nonNegativeInteger",
@@ -2009,16 +1957,13 @@
       ],
       "properties": {
         "penaltyStats": {
-          "$ref": "#/definitions/penaltyStats",
-          "description": ""
+          "$ref": "#/definitions/penaltyStats"
         },
         "award": {
-          "$ref": "#/definitions/award",
-          "description": ""
+          "$ref": "#/definitions/award"
         },
         "rank": {
-          "$ref": "#/definitions/rank",
-          "description": ""
+          "$ref": "#/definitions/rank"
         }
       }
     },
@@ -2031,12 +1976,10 @@
       ],
       "properties": {
         "subScores": {
-          "$ref": "#/definitions/subScores",
-          "description": ""
+          "$ref": "#/definitions/subScores"
         },
         "eventRecord": {
-          "$ref": "#/definitions/eventRecord",
-          "description": ""
+          "$ref": "#/definitions/eventRecord"
         },
         "eventsPlayed": {
           "$ref": "#/definitions/nonNegativeInteger",
@@ -2066,18 +2009,17 @@
       ],
       "properties": {
         "site": {
-          "$ref": "#/definitions/site",
-          "description": ""
+          "$ref": "#/definitions/site"
         },
         "sportsContentCodes": {
-          "$ref": "#/definitions/sportsContentCodes",
-          "description": ""
+          "$ref": "#/definitions/sportsContentCodes"
         },
         "alignment": {
           "type": "string",
           "enum": [
             "home",
-            "away"
+            "away",
+            "none"
           ],
           "description": "Home or visiting. This is more information about the alignment of the team or player in the event regarding rules etc. It does not necessarily indicate that it is the geographical home-site of the team or player."
         },
@@ -2094,8 +2036,9 @@
           "description": "Optional reference to a team in which this team is a member. Example: The U.S. Davis Cup team consists of many sub-teams."
         },
         "homePageUrl": {
-          "$ref": "#/definitions/uri",
-          "description": "The fully-qualified URL for the official home page of the team."
+          "description": "The fully-qualified URL for the official home page of the team.",
+          "type": "string",
+          "format": "uri"
         },
         "roundPosition": {
           "type": "string",
@@ -2122,6 +2065,24 @@
         "eventsStarted": {
           "$ref": "#/definitions/nonNegativeInteger",
           "description": "Number of sports-events the player has played in since the start of the event."
+        },
+        "dateTimeEntered": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Exact universal time player entered event. For example, the time a downhill skiier began a run."
+        },
+        "dateTimeExited": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Exact universal time player exited event. For example, the time a downhill skiier finished a run."
+        },
+        "eventTimeEntered": {
+          "type": "string",
+          "description": "Time player entered event expressed as conventional game-clock time. For example, the game minute a soccer player was subbed on to the field."
+        },
+        "eventTimeExited":  {
+          "type": "string",
+          "description": "Time player exited event expressed as conventional game-clock time. For example, the game minute a soccer player was subbed off the field."
         }
       }
     },
@@ -2138,8 +2099,7 @@
           "description": "Any number of action inside the actions holder."
         },
         "participant": {
-          "$ref": "#/definitions/baseParticipant",
-          "description": ""
+          "$ref": "#/definitions/baseParticipant"
         }
       }
     },
@@ -2177,18 +2137,26 @@
       "properties": {
         "teamIdref": {
           "type": "string",
-          "description": ""
+          "description": "This is considered the 'current' team in action"
         },
         "opposingTeamIdref": {
           "type": "string",
-          "description": ""
+          "description": "This is the opposing team, if any"
         },
         "created": {
-          "$ref": "#/definitions/isoDateTime",
-          "description": ""
+          "type": "string",
+          "format": "date-time"
+        },
+        "lastModified": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "dateTime": {
+          "type": "string",
+          "format": "date-time"
         },
         "result": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The result of the play or action. See 'result' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spamfresult/ http://cv.iptc.org/newscodes/spsocresult/"
         },
         "sequenceNumber": {
@@ -2200,7 +2168,7 @@
           "description": "Textual comment of the action"
         },
         "type": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The type of competitive action taken on the field of play. See 'action' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spamfaction/ http://cv.iptc.org/newscodes/spbblaction/ http://cv.iptc.org/newscodes/spbkbaction/ http://cv.iptc.org/newscodes/spichaction/ http://cv.iptc.org/newscodes/spmcraction/ http://cv.iptc.org/newscodes/rgxaction/ http://cv.iptc.org/newscodes/spsocaction/ http://cv.iptc.org/newscodes/sptenaction/"
         },
         "timeElapsed": {
@@ -2228,7 +2196,7 @@
           "description": "A string indicating where on the court the action occured. Could be an approximate region, or a more complex value adhering to some elaborate coordinate system."
         },
         "zone": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The zone on the playing field where the action took place. qcoded value that can be sport specific"
         },
         "powerPlayTimeRemaining": {
@@ -2240,11 +2208,11 @@
           "description": "Number of players more on the team in power play, also see the player count attributes"
         },
         "callerType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Who called the timeout, either team or official. ID is given under participant. SportsML vocab uri: http://cv.iptc.org/newscodes/spamfcaller/"
         },
         "strength": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "points": {
@@ -2252,7 +2220,7 @@
           "description": "How many points this score was worth for the scoring team."
         },
         "turnoverType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "How the initiative changed. Steal, lost-ball etc."
         },
         "periodValue": {
@@ -2280,35 +2248,35 @@
           "description": "Length of timeout"
         },
         "timeoutType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Type of timeout. SportsML vocab uri: http://cv.iptc.org/newscodes/spamftimeout/"
         },
         "scoreType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The type of score for sports with more than one way to gain points (american-football) in which every play is a score attempt. For other sports use score-attempt-type. SportsML vocab uri: http://cv.iptc.org/newscodes/spamfscore/"
         },
         "saveType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "saveMethod": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "passType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "passDescription": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "passMethod": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "shotType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The type of shot taken. See 'infractionresult' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spgolshot/ http://cv.iptc.org/newscodes/sptenshot/"
         },
         "shotDistance": {
@@ -2316,11 +2284,11 @@
           "description": ""
         },
         "shotDistanceUnits": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "SportsML vocab uri: http://cv.iptc.org/newscodes/spshotdistanceunits/"
         },
         "penaltyType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Whether the receiver of the penalty was the team, the player, a coach, a ref, etc."
         },
         "penaltyLength": {
@@ -2336,7 +2304,7 @@
           "description": "The sum of penalties recieved by this team/participant this event"
         },
         "penaltyLevel": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The severity or classification of the penalty eg. major, minor, game misconduct. See 'infractionresult' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbpenaltylevel/ http://cv.iptc.org/newscodes/spichpenaltylevel/ http://cv.iptc.org/newscodes/sprgxpenaltylevel/ http://cv.iptc.org/newscodes/spsocpenaltylevel/"
         },
         "penaltyStatus": {
@@ -2344,15 +2312,15 @@
           "description": ""
         },
         "recipientType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Whether the receiver of the penalty was the team, the player, a coach, a ref, etc. SportsML vocab uri: http://cv.iptc.org/newscodes/sprecipienttype/"
         },
         "scoreAttemptType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The type of score that was attempted. See 'scoreattempt' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbscoreattempt/ http://cv.iptc.org/newscodes/spichscoreattempt/ http://cv.iptc.org/newscodes/sprgxscoreattempt/ http://cv.iptc.org/newscodes/spsocscoreattempt/"
         },
         "scoreAttemptResult": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The result of the score attempt eg. blocked, missed, etc. See 'scoreattemptresult' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbscoreattemptresult/ http://cv.iptc.org/newscodes/spichscoreattemtresult/ http://cv.iptc.org/newscodes/sprgxscoreattemptresult/ http://cv.iptc.org/newscodes/spsocscoreattemptresult/"
         },
         "scoreAttemptSide": {
@@ -2360,15 +2328,15 @@
           "description": "Side of the body of the player attempting to score"
         },
         "scoreAttemptMethod": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "What part of the body or equipment the player used to attempt to score. See 'scoreattemptmethod' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spsocscoreattemptmethod/"
         },
         "scoreAttemptSituation": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "goalZone": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Part of the goal where the score or score-attempt was aimed."
         },
         "angle": {
@@ -2380,7 +2348,7 @@
           "description": "Angle on the field of the play."
         },
         "bodyPart": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Angle on the field of the play."
         },
         "fieldLocation": {
@@ -2400,19 +2368,19 @@
           "description": "When this shot was take, amongst all the shootout shots of a game for one particular team. For example: 3 (if it was the third shot of the shootout)."
         },
         "infractionType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The name of the type of infraction. See 'infraction' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spamfinfraction/ http://cv.iptc.org/newscodes/spichinfraction/ http://cv.iptc.org/newscodes/sprgxinfraction/ http://cv.iptc.org/newscodes/spsocinfraction/"
         },
         "infractionLevel": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The degree of punishment for the infraction eg. yellow or red card. See 'penaltylevel' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spbkbpenaltylevel/ http://cv.iptc.org/newscodes/spichpenaltylevel/ http://cv.iptc.org/newscodes/sprgxpenaltylevel/ http://cv.iptc.org/newscodes/spsocpenaltylevel/"
         },
         "infractionResult": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "What the foul resulted in. See 'infractionresult' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/sprgxinfractionresult/ http://cv.iptc.org/newscodes/spsocinfractionresult/"
         },
         "infractionSide": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Which side committed the infraction, usually offense or defense. SportsML vocab uri: http://cv.iptc.org/newscodes/spinfractionside/"
         },
         "faceoffWinner": {
@@ -2487,7 +2455,7 @@
           "$ref": "#/definitions/commonParticipantAttributes"
         },
         {
-          "$ref": "#/definitions/curlingEquipmentAttributes"
+          "$ref": "SportsJS-Curling.json#/definitions/curlingEquipmentAttributes"
         }
       ],
       "properties": {}
@@ -2504,25 +2472,8 @@
           "description": "A pointer to the participant's team."
         },
         "role": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The role of the participant in the particular action, as opposed to their designated position on the team."
-        }
-      }
-    },
-    "curlingEquipmentAttributes": {
-      "description": "",
-      "properties": {
-        "stone_color": {
-          "type": "string",
-          "description": ""
-        },
-        "stone_id": {
-          "type": "string",
-          "description": ""
-        },
-        "stone_number": {
-          "type": "integer",
-          "description": ""
         }
       }
     },
@@ -2546,19 +2497,23 @@
           "description": "A displayable name for the event-recurring-key."
         },
         "eventRecurringKey": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The symbol for an identified sports-event that recurs every season. This same key should be used from season to season."
         },
         "eventStyle": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Indicates whether competitors are trying to defeat each other or just outdo one another. SportsML vocabulary uri: http://cv.iptc.org/newscodes/speventstyle/"
         },
         "eventNumber": {
           "$ref": "#/definitions/nonNegativeInteger",
           "description": "The ranked position this event had among other events."
         },
+        "eventType": {
+          "$ref": "#/definitions/qCode",
+          "description": "The type of event, esp. in relation to tournament phase. Recommended SportsML vocabulary uri: http://cv.iptc.org/newscodes/sptournamentphase/"
+        },
         "eventStatus": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The stage of the event, describing whether it has started, is in progress, etc."
         },
         "eventStatusReason": {
@@ -2578,11 +2533,11 @@
           "description": "How many events involving these competitors have been planned for that day."
         },
         "startWeekday": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Day of the week in which the game starts."
         },
         "endWeekday": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Day of the week in which the game ends."
         },
         "heatNumber": {
@@ -2602,11 +2557,11 @@
           "description": "For TBA times."
         },
         "seasonKey": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The season this event is in."
         },
         "seasonType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "A subcategory of the season."
         },
         "seriesIndex": {
@@ -2614,7 +2569,7 @@
           "description": "The tournament division or series to which an event belongs."
         },
         "eventOutcomeType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "What type of outcome. Includes overtime, random (eg. by coin toss), etc. SportsML vocab uri: http://cv.iptc.org/newscodes/speventoutcometype/"
         }
       }
@@ -2628,19 +2583,16 @@
       ],
       "properties": {
         "name": {
-          "$ref": "#/definitions/name",
-          "description": ""
+          "$ref": "#/definitions/name"
         },
         "homeLocation": {
-          "$ref": "#/definitions/location",
-          "description": ""
+          "$ref": "#/definitions/location"
         },
-        "sportsProperty": {
-          "$ref": "#/definitions/sportsProperty",
-          "description": ""
+        "sportsProperties": {
+          "$ref": "#/definitions/sportsProperties"
         },
         "key": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The symbol or identifying key for the entity."
         },
         "nationality": {
@@ -2674,11 +2626,11 @@
           "description": "Weight of a person. Generally in kg."
         },
         "positionRegular": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The code for the typical position of the person."
         },
         "positionEvent": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The code for the position held by the person at this particular sports-event."
         },
         "positionDepth": {
@@ -2686,7 +2638,7 @@
           "description": "A ranking amongst players on the team who share the same position."
         },
         "health": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "An indication of the health of the person."
         },
         "gender": {
@@ -2712,7 +2664,7 @@
           "description": "A reference to the team for which this player competes."
         },
         "status": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Whether a player starts playing at the beginning of a sports-event, joins mid-game, or is not available to participate."
         },
         "lineupSlot": {
@@ -2724,7 +2676,7 @@
           "description": "For baseball, cricket, relay races if they substituted for a player in the original lineup, the order in which they served at the above lineup-slot value. Defaults to 1."
         },
         "scratchReason": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "An indication as to why this player did not play in an event."
         },
         "uniformNumber": {
@@ -2732,8 +2684,9 @@
           "description": "The number currently displayed on the uniform or jersey of the player."
         },
         "homePageUrl": {
-          "$ref": "#/definitions/uri",
-          "description": "The fully-qualified URL for the official home page of the team."
+          "description": "The fully-qualified URL for the official home page of the team.",
+          "type": "string",
+          "format": "uri"
         },
         "roundPosition": {
           "type": "string",
@@ -2798,7 +2751,7 @@
       "description": "",
       "properties": {
         "statsCoverage": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "A relative indication of how many statistics are included in the item. SportsML vocab uri: http://cv.iptc.org/newscodes/spstatscoverage/"
         },
         "teamCoverage": {
@@ -2810,7 +2763,7 @@
           "description": "Indicates whether the item contains information about one team, or many teams."
         },
         "durationScope": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Indicates what class of events the included statistics apply. Example: those events that went into overtime. SportsML vocab uri: http://cv.iptc.org/newscodes/spdurationscope/"
         },
         "alignmentScope": {
@@ -2827,7 +2780,7 @@
           "description": "Indicates that the included statistics apply only to while played at a particular position."
         },
         "recordMakingScope": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Indicates that the included statistics apply only to values that set a record, such as a team-high, or an individual-low."
         },
         "scopingLabel": {
@@ -2839,7 +2792,7 @@
           "description": "Used for tracking stats and events by period."
         },
         "periodType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "For certain types of periods: overtime, declared (cricket), etc."
         },
         "startDateTime": {
@@ -2859,11 +2812,11 @@
           "description": "The ending date, with optional time, of the period for which the stats are relevant."
         },
         "temporalUnitType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The unit of performance to which the stats apply eg. single-event, season, career."
         },
         "temporalUnitValue": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The key of performance unit to which the stats apply."
         },
         "eventSpan": {
@@ -2871,51 +2824,51 @@
           "description": "Qualifier of 'most-recent-events' value for temporal-unit attribute. Specify the number of events eg. 10 for last 10 games."
         },
         "opponentValue": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The key of the player, team, division, conference, league or other unit which provide the opposition relevant to the stat."
         },
         "opponentType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Whether the opponent was a player, team, etc."
         },
         "team": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The key of the team for which the player or team generated the stats."
         },
         "competition": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The key of the league or competition for which the player or team generated the stats."
         },
         "unitValue": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The key, other than team or league/competition, of the competitive unit for which the player or team generated the stats."
         },
         "unitType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The type, other than team or league/competition, of the competitive unit for which the player or team generated the stats."
         },
         "situation": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Final or current score of the team or player."
         },
         "locationKey": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The key of the site,venue or location where the stats were generated."
         },
         "venueType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The type of event (eg. indoor, outdoor, etc.) in which the stats were generated."
         },
         "surfaceType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The type of surface (eg. clay, artificial grass, etc.) upon which the stats were generated."
         },
         "weatherType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "A code for the weather situation in which the stats were generated. SportsML weather codes recommended."
         },
         "scopeValue": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "A generic scope indicator. Use only if none of the other coverage attributes are suitable."
         },
         "distance": {
@@ -2952,7 +2905,7 @@
           "description": "Average per-game score for the opposing team or player."
         },
         "scoreUnits": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Describes how the score and score-opposing is valued."
         },
         "scoreBehind": {
@@ -2984,11 +2937,11 @@
           "description": "Percentage of attempted scores by opposing team or player that reached their mark."
         },
         "resultEffect": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Describes the effect that the result of the event or rank changing has had on the team. Example: Whether or not a team has qualified for the playoffs, or has been promoted or demoted to a different division."
         },
         "eventOutcome": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Whether the competitor won, lost, or tied. SportsML vocab uri: http://cv.iptc.org/newscodes/speventoutcome/"
         },
         "eventStandingPoints": {
@@ -3049,7 +3002,7 @@
       "description": "",
       "properties": {
         "touchdownType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "SportsML vocab uri: http://cv.iptc.org/newscodes/spamftouchdown/"
         },
         "clockState": {
@@ -3089,7 +3042,7 @@
           "description": "The time it took for the drive."
         },
         "driveResult": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "How a drive came to an end. SportsML vocab uri: http://cv.iptc.org/newscodes/spamfdriveresult/"
         },
         "down": {
@@ -3101,27 +3054,27 @@
           "description": ""
         },
         "penaltyYards": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "penaltyAcceptance": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "penaltyChallenge": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "penaltyReview": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "penaltyReviewRuling": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "kickType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "SportsML vocab uri: http://cv.iptc.org/newscodes/spamfkick/"
         }
       }
@@ -3150,7 +3103,7 @@
           "description": ""
         },
         "errorType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "hitByPitchType": {
@@ -3162,15 +3115,15 @@
           "description": ""
         },
         "hitLocation": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "hitType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "inningExiting": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "inningHalf": {
@@ -3186,19 +3139,19 @@
           "description": ""
         },
         "interferenceType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "leadEntering": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "leadExiting": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "outType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "How the batter got out. SportsML vocab uri: http://cv.iptc.org/newscodes/spbblout/"
         },
         "outs": {
@@ -3226,11 +3179,11 @@
           "description": ""
         },
         "runnerOnFirstAdvance": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "runnerOnFirstIdref": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "runnerOnSecond": {
@@ -3238,11 +3191,11 @@
           "description": ""
         },
         "runnerOnSecondAdvance": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "runnerOnSecondIdref": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "runnerOnThird": {
@@ -3250,11 +3203,11 @@
           "description": ""
         },
         "runnerOnThirdAdvance": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "runnerOnThirdIdref": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "runnersOnBase": {
@@ -3270,7 +3223,7 @@
           "description": ""
         },
         "sacrificeType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "strikeoutType": {
@@ -3286,11 +3239,11 @@
           "description": ""
         },
         "trajectoryCoordinates": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The path of the ball. SportsML vocab uri: http://cv.iptc.org/newscodes/spbbltrajectory/"
         },
         "velocity": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "walkType": {
@@ -3306,15 +3259,15 @@
           "description": ""
         },
         "ballLocationHorizontal": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Where the pitch was located horizontally. SportsML vocab uri: http://cv.iptc.org/newscodes/spbblballlocationhorizontal/"
         },
         "ballLocationVertical": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Where the pitch was located vertically. SportsML vocab uri: http://cv.iptc.org/newscodes/spbblballlocationvertical/"
         },
         "pitchType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "pitchVelocity": {
@@ -3373,7 +3326,7 @@
           "description": ""
         },
         "stoneSpeed": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         }
       }
@@ -3402,7 +3355,7 @@
           "description": "How the score of this player is compared to the course par"
         },
         "club": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Which club was used"
         },
         "startDistance": {
@@ -3414,7 +3367,7 @@
           "description": "The distance from the cup where the ball stopped after the stroke"
         },
         "landing": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The place or surface where a golf ball lands after being shot. SportsML vocab uri: http://cv.iptc.org/newscodes/spgollanding/"
         }
       }
@@ -3431,31 +3384,31 @@
           "description": "How many laps are remaining when this play takes place"
         },
         "flagState": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Types of motor racing communication flags. SportsML vocab uri: http://cv.iptc.org/newscodes/spmcrflag/"
         },
         "flagOriginal": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Types of motor racing communication flags. SportsML vocab uri: http://cv.iptc.org/newscodes/spmcrflag/"
         },
         "flagNew": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Types of motor racing communication flags. SportsML vocab uri: http://cv.iptc.org/newscodes/spmcrflag/"
         },
         "passerType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "passerKey": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "positionOriginal": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         },
         "positionNew": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         }
       }
@@ -3464,7 +3417,7 @@
       "description": "",
       "properties": {
         "cautionValue": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         }
       }
@@ -3489,15 +3442,15 @@
           "description": ""
         },
         "serverScore": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "SportsML vocab uri: http://cv.iptc.org/newscodes/sptengameresult/"
         },
         "receiverScore": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "SportsML vocab uri: http://cv.iptc.org/newscodes/sptengameresult/"
         },
         "serveNumber": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": ""
         }
       }
@@ -3506,7 +3459,7 @@
       "description": "Attributes that are used in all tournament constructions.",
       "properties": {
         "status": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The state of the tournament or tournament part, describing whether it has started, is in progress, etc."
         },
         "minimumSubparts": {
@@ -3544,19 +3497,19 @@
       "description": "List of attributes used in generic stats",
       "properties": {
         "sport": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The sport to which the stats belong."
         },
         "class": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The general classification of the stat within the sport eg ofensive, defensive, rebounding (basketball), special teams (american football)."
         },
         "statType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The formal identifier of the kind of stat."
         },
         "valueType": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The formal type of the stat value eg. integer, string, etc."
         },
         "value": {
@@ -3569,7 +3522,7 @@
       "description": "Basic wagering attributes, used in all wagering elements",
       "properties": {
         "bookmakerKey": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Unique ID for the make of the line."
         },
         "bookmakerName": {
@@ -3608,11 +3561,11 @@
       ],
       "properties": {
         "prediction": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "Whether this team or player is the favorite or the underdog."
         },
         "predictionOpening": {
-          "$ref": "#/definitions/qCodeType",
+          "$ref": "#/definitions/qCode",
           "description": "The opening value for this prediction."
         },
         "vigorish": {
