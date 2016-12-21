@@ -1,0 +1,9 @@
+{
+   "sportsMetadata": {
+      "fixtureKey": "heartbeat",
+      "fixtureName": "Heartbeat Health Check",
+      "documentClass": "heartbeat",
+      "dateTime": "2016-12-21T00:00:00-04:00",
+      "docId": "iptc.heartbeat.20161122132100"
+   }
+}

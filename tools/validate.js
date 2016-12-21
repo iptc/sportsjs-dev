@@ -1,27 +1,45 @@
 'use strict';
 
-var options = require('minimist')(process.argv.slice(2));
-console.dir(options);
-
 var fs = require('fs');
+var Ajv = require('ajv');
 
-var tv4 = require('tv4');
-var path = require('path');
+var ajvOps = {
+  allErrors: true,
+  verbose: true
+}
+
+var ajv = new Ajv(ajvOps);
+
+var options = require('minimist')(process.argv.slice(2));
 
 if (options.file != null) {
-  var sample  = fs.readFileSync(options.file);
+
   var schemaDir = '../specification/';
-  var core = fs.readFileSync(schemaDir + 'SportsJS-Core.json');
+  var coreSchemaName = 'SportsJS-Core.json';
+  var schema = JSON.parse(fs.readFileSync(schemaDir + coreSchemaName, "utf8"));
+
   fs.readdirSync(schemaDir).forEach(function(name) {
       if (name.indexOf('SportsJS') > -1) {
-          var filePath = path.join(schemaDir, name);
-          console.log('Adding ' + name);
-          tv4.addSchema(name, require(filePath));
+          var filePath = schemaDir + name;
+          var subSchema = JSON.parse(fs.readFileSync(filePath), "utf8");
+          ajv.addSchema(subSchema, name);
+          if (options.verbose == 'true') {
+            console.log('Added ' + name);
+            console.log('\t ' + subSchema.id);
+          }
       }
   });
 
-  var result =  tv4.validateMultiple(sample, core, true, true);
-  console.log(JSON.stringify(result, null, 4));
+  console.log(JSON.stringify(ajv.getSchema("http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions_1.0.draft.json#"), null, 4));
+  var data  = fs.readFileSync(options.file);
+  var valid = ajv.validate(schema, data);;
+
+  if (valid) {
+    console.log("Your sample is valid.");
+  } else {
+    console.log("Errors:" + JSON.stringify(ajv.errors, null, 4));
+  }
+
 } else {
   console.error("Unable to load file for validation.");
 }

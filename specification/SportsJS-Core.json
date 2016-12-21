@@ -1,8 +1,7 @@
 {
-	"$schema": "http://json-schema.org/draft-04/schema#",
 	"id": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#",
+	"$schema": "http://json-schema.org/draft-04/schema#",
 	"description": "The SportsJS schema contains properties common to all (or many) sports.",
-	"type": "object",
 	"$ref": "#/definitions/sportsContent",
 	"definitions": {
 		"idRef": {
@@ -41,6 +40,10 @@
 			"description": "",
 			"type": "string",
 			"pattern": "\\d{2}:\\d{2}"
+		},
+		"language": {
+			"description": "The language code.",
+			"type": "string"
 		},
 		"location": {
 			"description": "The location considered as the home of the entity.",
@@ -203,6 +206,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/commonAttributes"
 			}],
+			"additionalProperties": false,
 			"properties": {
 				"sportsMetadata": {
 					"$ref": "#/definitions/sportsMetadata"
@@ -416,6 +420,7 @@
 			}, {
 				"$ref": "#/definitions/baseMetadata"
 			}],
+			"additionalProperties": false,
 			"properties": {
 				"catalog": {
 					"$ref": "#/definitions/catalog",

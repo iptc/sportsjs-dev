@@ -5,7 +5,6 @@
   "definitions": {
     "rugbyEventMetadata": {
       "description": "Rugby-specific metadata for events. | Metadata that is specific to rugby for events.",
-      "allOf": [],
       "properties": {
         "timeAdjustment": {
           "$ref": "#/definitions/rugbyTimeAdjustment",

@@ -5,7 +5,6 @@
   "definitions": {
     "soccerEventMetadata": {
       "description": "Soccer-specific metadata for events. | Metadata that is specific to soccer for events.",
-      "allOf": [],
       "properties": {
         "timeAdjustment": {
           "$ref": "#/definitions/soccerTimeAdjustment",
