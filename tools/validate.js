@@ -22,7 +22,7 @@ if (options.file != null) {
       if (name.indexOf('SportsJS') > -1) {
           var filePath = schemaDir + name;
           var subSchema = JSON.parse(fs.readFileSync(filePath), "utf8");
-          ajv.addSchema(subSchema, name);
+          ajv.addSchema(subSchema, subSchema.id);
           if (options.verbose == 'true') {
             console.log('Added ' + name);
             console.log('\t ' + subSchema.id);
@@ -30,14 +30,13 @@ if (options.file != null) {
       }
   });
 
-  console.log(JSON.stringify(ajv.getSchema("http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions_1.0.draft.json#"), null, 4));
-  var data  = fs.readFileSync(options.file);
+  var data  = JSON.parse(fs.readFileSync(options.file), "utf8");
   var valid = ajv.validate(schema, data);;
 
   if (valid) {
     console.log("Your sample is valid.");
   } else {
-    console.log("Errors:" + JSON.stringify(ajv.errors, null, 4));
+    console.log(ajv.errors);
   }
 
 } else {

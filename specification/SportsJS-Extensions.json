@@ -6,193 +6,193 @@
     "metadataExtensions": {
       "properties": {
         "americanFootballEventMetadata": {
-          "$ref": "SportsJS-American-Football.json#/definitions/americanFootballEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-american-football_1.0.draft.json#/definitions/americanFootballEventMetadata"
         },
         "baseballEventMetadata": {
-          "$ref": "SportsJS-Baseball.json#/definitions/baseballEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-baseball_1.0.draft.json#/definitions/baseballEventMetadata"
         },
         "golfEventMetadata": {
-          "$ref": "SportsJS-Golf.json#/definitions/golfEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-golf_1.0.draft.json#/definitions/golfEventMetadata"
         },
         "iceHockeyEventMetadata": {
-          "$ref": "SportsJS-Ice-Hockey.json#/definitions/iceHockeyEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-ice-hockey_1.0.draft.json#/definitions/iceHockeyEventMetadata"
         },
         "soccerEventMetadata": {
-          "$ref": "SportsJS-Soccer.json#/definitions/soccerEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-soccer_1.0.draft.json#/definitions/soccerEventMetadata"
         },
         "tennisEventMetadata": {
-          "$ref": "SportsJS-Tennis.json#/definitions/tennisEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-tennis_1.0.draft.json#/definitions/tennisEventMetadata"
         },
         "motorRacingEventMetadata": {
-          "$ref": "SportsJS-Motor-Racing.json#/definitions/motorRacingEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-motor-racing_1.0.draft.json#/definitions/motorRacingEventMetadata"
         },
         "curlingEventMetadata": {
-          "$ref": "SportsJS-Curling.json#/definitions/curlingEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-curling_1.0.draft.json#/definitions/curlingEventMetadata"
         },
         "rugbyEventMetadata": {
-          "$ref": "SportsJS-Rugby.json#/definitions/rugbyEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-rugby_1.0.draft.json#/definitions/rugbyEventMetadata"
         }
       }
     },
     "eventMetadataExtension": {
       "properties": {
         "americanFootballEventMetadata": {
-          "$ref": "SportsJS-American-Football.json#/definitions/americanFootballEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-american-football_1.0.draft.json#/definitions/americanFootballEventMetadata"
         },
         "baseballEventMetadata": {
-          "$ref": "SportsJS-Baseball.json#/definitions/baseballEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-baseball_1.0.draft.json#/definitions/baseballEventMetadata"
         },
         "golfEventMetadata": {
-          "$ref": "SportsJS-Golf.json#/definitions/golfEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-golf_1.0.draft.json#/definitions/golfEventMetadata"
         },
         "iceHockeyEventMetadata": {
-          "$ref": "SportsJS-Ice-Hockey.json#/definitions/iceHockeyEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-ice-hockey_1.0.draft.json#/definitions/iceHockeyEventMetadata"
         },
         "soccerEventMetadata": {
-          "$ref": "SportsJS-Soccer.json#/definitions/soccerEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-soccer_1.0.draft.json#/definitions/soccerEventMetadata"
         },
         "tennisEventMetadata": {
-          "$ref": "SportsJS-Tennis.json#/definitions/tennisEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-tennis_1.0.draft.json#/definitions/tennisEventMetadata"
         },
         "motorRacingEventMetadata": {
-          "$ref": "SportsJS-Motor-Racing.json#/definitions/motorRacingEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-motor-racing_1.0.draft.json#/definitions/motorRacingEventMetadata"
         },
         "curlingEventMetadata": {
-          "$ref": "SportsJS-Curling.json#/definitions/curlingEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-curling_1.0.draft.json#/definitions/curlingEventMetadata"
         },
         "rugbyEventMetadata": {
-          "$ref": "SportsJS-Rugby.json#/definitions/rugbyEventMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-rugby_1.0.draft.json#/definitions/rugbyEventMetadata"
         }
       }
     },
     "eventStatsExtension": {
       "properties": {
         "motorRacingEventStats": {
-          "$ref": "SportsJS-Motor-Racing.json#/definitions/motorRacingEventStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-motor-racing_1.0.draft.json#/definitions/motorRacingEventStats"
         }
       }
     },
     "tournamentMetadataExtension": {
       "properties": {
         "golfTournamentMetadata": {
-          "$ref": "SportsJS-Golf.json#/definitions/golfTournamentMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-golf_1.0.draft.json#/definitions/golfTournamentMetadata"
         },
         "tennisTournamentMetadata": {
-          "$ref": "SportsJS-Tennis.json#/definitions/tennisTournamentMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-tennis_1.0.draft.json#/definitions/tennisTournamentMetadata"
         }
       }
     },
     "tournamentDivisionMetadataExtension": {
       "properties": {
         "tournamentDivisionMetadataGolf": {
-          "$ref": "SportsJS-Golf.json#/definitions/tournamentDivisionMetadataExtension"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-golf_1.0.draft.json#/definitions/golfTournamentDivisionMetadata"
         }
       }
     },
     "teamMetadataExtension": {
       "properties": {
         "baseballTeamMetadata": {
-          "$ref": "SportsJS-Baseball.json#/definitions/baseballTeamMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-baseball_1.0.draft.json#/definitions/baseballTeamMetadata"
         },
         "golfTeamMetadata": {
-          "$ref": "SportsJS-Golf.json#/definitions/golfTeamMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-golf_1.0.draft.json#/definitions/golfTeamMetadata"
         },
         "motorRacingTeamMetadata": {
-          "$ref": "SportsJS-Motor-Racing.json#/definitions/motorRacingTeamMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-motor-racing_1.0.draft.json#/definitions/motorRacingTeamMetadata"
         }
       }
     },
     "teamStatsExtension": {
       "properties": {
         "americanFootballTeamStats": {
-          "$ref": "SportsJS-American-Football.json#/definitions/americanFootballTeamStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-american-football_1.0.draft.json#/definitions/americanFootballTeamStats"
         },
         "baseballTeamStats": {
-          "$ref": "SportsJS-Baseball.json#/definitions/baseballTeamStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-baseball_1.0.draft.json#/definitions/baseballTeamStats"
         },
         "basketballTeamStats": {
-          "$ref": "SportsJS-Basketball.json#/definitions/basketballTeamStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-basketball_1.0.draft.json#/definitions/basketballTeamStats"
         },
         "iceHockeyTeamStats": {
-          "$ref": "SportsJS-Ice-Hockey.json#/definitions/iceHockeyTeamStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-ice-hockey_1.0.draft.json#/definitions/iceHockeyTeamStats"
         },
         "soccerTeamStats": {
-          "$ref": "SportsJS-Soccer.json#/definitions/soccerTeamStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-soccer_1.0.draft.json#/definitions/soccerTeamStats"
         },
         "tennisTeamStats": {
-          "$ref": "SportsJS-Tennis.json#/definitions/tennisTeamStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-tennis_1.0.draft.json#/definitions/tennisTeamStats"
         },
         "motorRacingTeamStats": {
-          "$ref": "SportsJS-Motor-Racing.json#/definitions/motorRacingTeamStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-motor-racing_1.0.draft.json#/definitions/motorRacingTeamStats"
         },
         "curlingTeamStats": {
-          "$ref": "SportsJS-Curling.json#/definitions/curlingTeamStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-curling_1.0.draft.json#/definitions/curlingTeamStats"
         },
         "rugbyTeamStats": {
-          "$ref": "SportsJS-Rugby.json#/definitions/rugbyTeamStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-rugby_1.0.draft.json#/definitions/rugbyTeamStats"
         }
       }
     },
     "playerMetadataExtension": {
       "properties": {
         "baseballPlayerMetadata": {
-          "$ref": "SportsJS-Baseball.json#/definitions/baseballPlayerMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-baseball_1.0.draft.json#/definitions/baseballPlayerMetadata"
         },
         "golfPlayerMetadata": {
-          "$ref": "SportsJS-Golf.json#/definitions/golfPlayerMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-golf_1.0.draft.json#/definitions/golfPlayerMetadata"
         },
         "iceHockeyPlayerMetadata": {
-          "$ref": "SportsJS-Ice-Hockey.json#/definitions/iceHockeyPlayerMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-ice-hockey_1.0.draft.json#/definitions/iceHockeyPlayerMetadata"
         },
         "soccerPlayerMetadata": {
-          "$ref": "SportsJS-Soccer.json#/definitions/soccerPlayerMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-soccer_1.0.draft.json#/definitions/soccerPlayerMetadata"
         },
         "motorRacingPlayerMetadata": {
-          "$ref": "SportsJS-Motor-Racing.json#/definitions/motorRacingPlayerMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-motor-racing_1.0.draft.json#/definitions/motorRacingPlayerMetadata"
         },
         "curlingPlayerMetadata": {
-          "$ref": "SportsJS-Curling.json#/definitions/curlingPlayerMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-curling_1.0.draft.json#/definitions/curlingPlayerMetadata"
         }
       }
     },
     "playerStatsExtension": {
       "properties": {
         "americanFootballPlayerStats": {
-          "$ref": "SportsJS-American-Football.json#/definitions/americanFootballPlayerStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-american-football_1.0.draft.json#/definitions/americanFootballPlayerStats"
         },
         "baseballPlayerStats": {
-          "$ref": "SportsJS-Baseball.json#/definitions/baseballPlayerStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-baseball_1.0.draft.json#/definitions/baseballPlayerStats"
         },
         "basketballPlayerStats": {
-          "$ref": "SportsJS-Basketball.json#/definitions/basketballPlayerStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-basketball_1.0.draft.json#/definitions/basketballPlayerStats"
         },
         "golfPlayerStats": {
-          "$ref": "SportsJS-Golf.json#/definitions/golfPlayerStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-golf_1.0.draft.json#/definitions/golfPlayerStats"
         },
         "iceHockeyPlayerStats": {
-          "$ref": "SportsJS-Ice-Hockey.json#/definitions/iceHockeyPlayerStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-ice-hockey_1.0.draft.json#/definitions/iceHockeyPlayerStats"
         },
         "soccerPlayerStats": {
-          "$ref": "SportsJS-Soccer.json#/definitions/soccerPlayerStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-soccer_1.0.draft.json#/definitions/soccerPlayerStats"
         },
         "tennisPlayerStats": {
-          "$ref": "SportsJS-Tennis.json#/definitions/tennisPlayerStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-tennis_1.0.draft.json#/definitions/tennisPlayerStats"
         },
         "motorRacingPlayerStats": {
-          "$ref": "SportsJS-Motor-Racing.json#/definitions/motorRacingPlayerStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-motor-racing_1.0.draft.json#/definitions/motorRacingPlayerStats"
         },
         "curlingPlayerStats": {
-          "$ref": "SportsJS-Curling.json#/definitions/curlingPlayerStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-curling_1.0.draft.json#/definitions/curlingPlayerStats"
         },
         "rugbyPlayerStats": {
-          "$ref": "SportsJS-Rugby.json#/definitions/rugbyPlayerStats"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-rugby_1.0.draft.json#/definitions/rugbyPlayerStats"
         }
       }
     },
     "associateMetadataExtension": {
       "properties": {
         "motorRacingAssociateMetadata": {
-          "$ref": "SportsJS-Motor-Racing.json#/definitions/motorRacingAssociateMetadata"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-motor-racing_1.0.draft.json#/definitions/motorRacingAssociateMetadata"
         }
       }
     }

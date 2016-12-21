@@ -239,7 +239,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/baseEventMetadata"
 			}, {
-				"$ref": "SportsJS-Extensions.json#/definitions/eventMetadataExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions_1.0.draft.json#/definitions/eventMetadataExtension"
 			}],
 			"properties": {}
 		},
@@ -250,7 +250,7 @@
 			}, {
 				"$ref": "#/definitions/coverageAttributes"
 			}, {
-				"$ref": "SportsJS-Extensions.json#/definitions/eventStatsExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions_1.0.draft.json#/definitions/eventStatsExtension"
 			}],
 			"properties": {
 				"sportsProperties": {
@@ -284,7 +284,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/baseTournamentMetadata"
 			}, {
-				"$ref": "SportsJS-Extensions.json#/definitions/tournamentMetadataExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions_1.0.draft.json#/definitions/tournamentMetadataExtension"
 			}],
 			"properties": {}
 		},
@@ -295,7 +295,7 @@
 			}],
 			"properties": {
 				"tournamentDivisionMetadataGolf": {
-					"$ref": "SportsJS-Extensions.json#/definitions/tournamentDivisionMetadataExtension",
+					"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions_1.0.draft.json#/definitions/tournamentDivisionMetadataExtension",
 					"description": ""
 				},
 				"divisionNumber": {
@@ -325,7 +325,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/baseTeamMetadata"
 			}, {
-				"$ref": "SportsJS-Extensions.json#/definitions/teamMetadataExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions_1.0.draft.json#/definitions/teamMetadataExtension"
 			}],
 			"properties": {}
 		},
@@ -334,7 +334,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/baseTeamStats"
 			}, {
-				"$ref": "SportsJS-Extensions.json#/definitions/teamStatsExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions_1.0.draft.json#/definitions/teamStatsExtension"
 			}],
 			"properties": {}
 		},
@@ -343,7 +343,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/basePlayerMetadata"
 			}, {
-				"$ref": "SportsJS-Extensions.json#/definitions/playerMetadataExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions_1.0.draft.json#/definitions/playerMetadataExtension"
 			}],
 			"properties": {}
 		},
@@ -352,7 +352,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/basePlayerStats"
 			}, {
-				"$ref": "SportsJS-Extensions.json#/definitions/playerStatsExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions_1.0.draft.json#/definitions/playerStatsExtension"
 			}],
 			"properties": {}
 		},
@@ -382,7 +382,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/baseAssociateMetadata"
 			}, {
-				"$ref": "SportsJS-Extensions.json#/definitions/associateMetadataExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions_1.0.draft.json#/definitions/associateMetadataExtension"
 			}],
 			"properties": {}
 		},
@@ -1178,7 +1178,7 @@
 			"description": "A set of officials. | May hold zero or more.",
 			"type": "array",
 			"items": {
-				"$ref": "#/definitions/offical"
+				"$ref": "#/definitions/official"
 			}
 		},
 		"official": {
@@ -1689,7 +1689,7 @@
 			}],
 			"properties": {
 				"wageringPrediction": {
-					"$ref": "#/definitions/wagering-prediction",
+					"$ref": "#/definitions/wageringPrediction",
 					"description": ""
 				},
 				"numerator": {
@@ -2286,7 +2286,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/commonParticipantAttributes"
 			}, {
-				"$ref": "SportsJS-Curling.json#/definitions/curlingEquipmentAttributes"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-curling_1.0.draft.json#/definitions/curlingEquipmentAttributes"
 			}],
 			"properties": {}
 		},
@@ -3393,11 +3393,11 @@
 					"description": "The minimum number of subparts for this level in a tournament. The subparts can either be tournament-part or sports-event."
 				},
 				"maximumSubparts": {
-					"$ref": "#/definitions/positiveInteger",
+					"$ref": "#/definitions/nonNegativeInteger",
 					"description": "The maximum number of subparts for this level in a tournament. The subparts can either be tournament-part or sports-event."
 				},
 				"number": {
-					"$ref": "#/definitions/positiveInteger",
+					"$ref": "#/definitions/nonNegativeInteger",
 					"description": "The number of the particular tournament part eg. 2 for second round or second leg"
 				}
 			}

@@ -7,7 +7,7 @@
       "description": "Metadata about the event itself. | Specific to ice-hockey.",
       "allOf": [
         {
-          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
         },
         {
           "$ref": "#/definitions/eventStateIceHockey"
@@ -19,16 +19,16 @@
       "description": "Metadata for a player. | Specific to ice-hockey.",
       "allOf": [
         {
-          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
         "shootingHand": {
-          "$ref": "#/definitions/bodySideList",
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/bodySideList",
           "description": "The side from which a player normally shoots."
         },
         "catchingHand": {
-          "$ref": "#/definitions/bodySideList",
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/bodySideList",
           "description": "The hand with which a player, generally a goaltender, catches the puck."
         }
       }
@@ -60,10 +60,10 @@
       "description": "Stats for a player specific to ice-hockey. | Includes the same offensive and defensive stats available for a team.",
       "allOf": [
         {
-          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -105,10 +105,10 @@
       "description": "Offensive stats for one team. | Specific to ice-hockey, including stats on shots, goals, and faceoffs.",
       "allOf": [
         {
-          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
         },
         {
           "$ref": "#/definitions/commonPropertiesIceHockey"
@@ -261,10 +261,10 @@
       "description": "Defensive stats for the team. | Specific to ice-hockey, including saves and shots allowed.",
       "allOf": [
         {
-          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
         },
         {
           "$ref": "#/definitions/commonPropertiesIceHockey"
@@ -373,10 +373,10 @@
       "description": "Defensive stats for the team. | Specific to ice-hockey, including saves and shots allowed.",
       "allOf": [
         {
-          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
         },
         {
           "$ref": "#/definitions/commonPropertiesIceHockey"
@@ -453,10 +453,10 @@
       "description": "Defensive stats for the team. | Specific to ice-hockey, including saves and shots allowed.",
       "allOf": [
         {
-          "$ref": "SportsJS-Core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "SportsJS-Core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
         },
         {
           "$ref": "#/definitions/commonPropertiesIceHockey"
