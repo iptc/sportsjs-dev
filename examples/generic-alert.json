@@ -1,8 +1,12 @@
 {
-   "sportsMetadata": {
-      "fixtureKey": "spfixt:alert",
-      "documentClass": "spfixt:alert",
-      "dateTime": "2016-12-21T00:00:00-04:00",
-      "docId": "iptc.alert.a2a204ad-db35-41d4-837d-cded49226292"
-   }
+  "sportsMetadata": {
+    "fixtureKey": "spfixt:alert",
+    "featureName": {
+      "full": "Generic Alert",
+      "short": "Alert"
+    },
+    "documentClass": "spfixt:alert",
+    "dateTime": "2016-12-21T00:00:00-04:00",
+    "docId": "iptc.alert.a2a204ad-db35-41d4-837d-cded49226292"
+  }
 }
