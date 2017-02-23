@@ -1,42 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xts="http://www.xmlteam.com"
+<xsl:stylesheet 
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xts="http://www.xmlteam.com"  
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:iptc="http://iptc.org/std/nar/2006-10-01/"
+    xmlns:iptc="http://iptc.org/std/nar/2006-10-01/"  
     xmlns:sportsml="http://iptc.org/std/SportsML/2008-04-01/"
-    xmlns:functx="http://www.functx.com"
-    xpath-default-namespace="http://iptc.org/std/nar/2006-10-01/"
-    exclude-result-prefixes="iptc sportsml functx xs xts"
-    version="2.0">
+     exclude-result-prefixes="xs xts iptc sportsml"
+    version="1.0">
+    
     
     <xsl:output method="xml" indent="yes"/>
+    
     
     <xsl:template match="/">
         <xsl:apply-templates select="//iptc:sports-content" />
     </xsl:template>
+    
     
     <xsl:template match="iptc:sports-content">
         <sportsContent>
             <xsl:apply-templates select="*" />
         </sportsContent>
     </xsl:template>
+    
+    
+    
     <!-- pass all elements through -->
     <xsl:template match="*">
         <xsl:choose>
             <xsl:when test="name() = 'sports-title'">
                 <sportsTitle>
                     <name>
-                        <full>
-                            <xsl:apply-templates select="@* | node()"/>                
-                        </full>
+                        <full><xsl:value-of select="."/></full>
                     </name>
                 </sportsTitle>
             </xsl:when>
             <xsl:when test="name() = 'name' and not(@*)" >
                 <name>
-                  <full>
-                      <xsl:apply-templates select="@* | node()"/>                
-                  </full>
+                  <full><xsl:value-of select="."/></full>
                 </name>
             </xsl:when>
             <xsl:when test="name() = 'name' and @*">
@@ -45,7 +46,7 @@
                 </name>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:variable name="elementName" select="functx:words-to-camel-case(replace(name(), '-', ' '))" />
+                <xsl:variable name="elementName"><xsl:call-template name="words-to-camel-case" ><xsl:with-param name="arg" select="name()"></xsl:with-param></xsl:call-template></xsl:variable>
                 <xsl:element name="{$elementName}">
                     <xsl:apply-templates select="@* | node()"/>
                 </xsl:element>
@@ -59,16 +60,15 @@
         <xsl:choose>
             <xsl:when test="name() = 'part'">
                 <part>
-                <xsl:variable name="elementName" select="tokenize(., ':')[last()]"/>
+                <xsl:variable name="elementName" select="substring-after(.,':')"></xsl:variable>
                 <xsl:element name="{$elementName}">
-                    <!--<xsl:apply-templates select="@* | node()"/>-->
                     <xsl:variable name="attributeValue" select="."/>
-                    <xsl:value-of select="//name[@part=$attributeValue]"/>
+                    <xsl:value-of select=".."/>
                 </xsl:element>
                 </part>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:variable name="elementName" select="functx:words-to-camel-case(replace(name(), '-', ' '))" />
+                <xsl:variable name="elementName"><xsl:call-template name="words-to-camel-case" ><xsl:with-param name="arg" select="name()"/></xsl:call-template></xsl:variable>
                 <xsl:element name="{$elementName}">
                     <xsl:value-of select="."/>
                 </xsl:element>        
@@ -101,27 +101,39 @@
         
     </xsl:template>
     
-    <xsl:function name="functx:words-to-camel-case" as="xs:string"
-        xmlns:functx="http://www.functx.com">
-        <xsl:param name="arg" as="xs:string?"/>
-        
-        <xsl:sequence select="string-join((tokenize($arg,'\s+')[1], 
-            for $word in tokenize($arg,'\s+')[position() > 1]
-            return functx:capitalize-first($word))
-            ,'')
-            "/>
-        
-    </xsl:function>
     
-    <xsl:function name="functx:capitalize-first" as="xs:string?"
-        xmlns:functx="http://www.functx.com">
-        <xsl:param name="arg" as="xs:string?"/>
+    
+    <xsl:template name="words-to-camel-case">
+        <xsl:param name="arg"/>
         
-        <xsl:sequence select="
-            concat(upper-case(substring($arg,1,1)),
-            substring($arg,2))
-            "/>
+        <xsl:if test="string-length($arg) &gt; 0">
+            <xsl:variable name="org" select="concat($arg,'-')"/>
+            
+            <xsl:variable name="first" select="substring-before($org,'-')"/>
+            
+            <xsl:if test="string-length($first) &gt; 0">
+               <xsl:call-template name="capitalize-first"><xsl:with-param name="arg" select="$first"/></xsl:call-template>
+            </xsl:if>
+            
+            <xsl:if test="contains($org,'-')">
+                <xsl:call-template name="words-to-camel-case"><xsl:with-param name="arg" select="substring-after($arg,'-')"/></xsl:call-template>
+            </xsl:if>
+            
+        </xsl:if>
         
-    </xsl:function>
+    </xsl:template>
+    
+    
+    <!-- Make sure first letter is capitalized -->    
+    <xsl:template name="capitalize-first">
+        <xsl:param name="arg"/>
+        
+        <xsl:choose>
+            <xsl:when test="string-length($arg) &gt; 0">
+                <xsl:value-of select="concat(translate(substring($arg,1,1),'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVXYZ'),substring($arg,2))"/>
+            </xsl:when>
+        </xsl:choose>
+        
+    </xsl:template>
     
 </xsl:stylesheet>
