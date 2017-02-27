@@ -46,7 +46,7 @@
                 </name>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:variable name="elementName"><xsl:call-template name="words-to-camel-case" ><xsl:with-param name="arg" select="name()"></xsl:with-param></xsl:call-template></xsl:variable>
+                <xsl:variable name="elementName"><xsl:call-template name="convertName" ><xsl:with-param name="arg" select="name()"></xsl:with-param></xsl:call-template></xsl:variable>
                 <xsl:element name="{$elementName}">
                     <xsl:apply-templates select="@* | node()"/>
                 </xsl:element>
@@ -68,7 +68,7 @@
                 </part>
             </xsl:when>
             <xsl:otherwise>
-                <xsl:variable name="elementName"><xsl:call-template name="words-to-camel-case" ><xsl:with-param name="arg" select="name()"/></xsl:call-template></xsl:variable>
+                <xsl:variable name="elementName"><xsl:call-template name="convertName" ><xsl:with-param name="arg" select="name()"/></xsl:call-template></xsl:variable>
                 <xsl:element name="{$elementName}">
                     <xsl:value-of select="."/>
                 </xsl:element>        
@@ -102,6 +102,17 @@
     </xsl:template>
     
     
+    <xsl:template name="convertName">
+        <xsl:param name="arg"/>
+        
+        <xsl:variable name="step1">
+            <xsl:call-template name="words-to-camel-case"><xsl:with-param name="arg" select="$arg"/></xsl:call-template>
+        </xsl:variable>
+        
+        <xsl:call-template name="lowercase-first"><xsl:with-param name="arg" select="$step1"/></xsl:call-template>
+        
+    </xsl:template>
+    
     
     <xsl:template name="words-to-camel-case">
         <xsl:param name="arg"/>
@@ -120,6 +131,19 @@
             </xsl:if>
             
         </xsl:if>
+               
+    </xsl:template>
+    
+    
+    <!-- Make sure first letter is lowercase -->    
+    <xsl:template name="lowercase-first">
+        <xsl:param name="arg"/>
+        
+        <xsl:choose>
+            <xsl:when test="string-length($arg) &gt; 0">
+                <xsl:value-of select="concat(translate(substring($arg,1,1),'ABCDEFGHIJKLMNOPQRSTUVXYZ','abcdefghijklmnopqrstuvwxyz'),substring($arg,2))"/>
+            </xsl:when>
+        </xsl:choose>
         
     </xsl:template>
     
