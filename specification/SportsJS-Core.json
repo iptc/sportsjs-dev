@@ -239,7 +239,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/baseEventMetadata"
 			}, {
-				"$ref": "./sportsjs-sport-extensions_1.0.draft.json#/definitions/eventMetadataExtension"
+				"$ref": "./sportsjs-sport-extensions.json#/definitions/eventMetadataExtension"
 			}],
 			"properties": {}
 		},
@@ -250,7 +250,7 @@
 			}, {
 				"$ref": "#/definitions/coverageAttributes"
 			}, {
-				"$ref": "./sportsjs-sport-extensions_1.0.draft.json#/definitions/eventStatsExtension"
+				"$ref": "./sportsjs-sport-extensions.json#/definitions/eventStatsExtension"
 			}],
 			"properties": {
 				"sportsProperties": {
@@ -284,7 +284,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/baseTournamentMetadata"
 			}, {
-				"$ref": "./sportsjs-sport-extensions_1.0.draft.json#/definitions/tournamentMetadataExtension"
+				"$ref": "./sportsjs-sport-extensions.json#/definitions/tournamentMetadataExtension"
 			}],
 			"properties": {}
 		},
@@ -295,7 +295,7 @@
 			}],
 			"properties": {
 				"tournamentDivisionMetadataGolf": {
-					"$ref": "./sportsjs-sport-extensions_1.0.draft.json#/definitions/tournamentDivisionMetadataExtension",
+					"$ref": "./sportsjs-sport-extensions.json#/definitions/tournamentDivisionMetadataExtension",
 					"description": ""
 				},
 				"divisionNumber": {
@@ -325,7 +325,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/baseTeamMetadata"
 			}, {
-				"$ref": "./sportsjs-sport-extensions_1.0.draft.json#/definitions/teamMetadataExtension"
+				"$ref": "./sportsjs-sport-extensions.json#/definitions/teamMetadataExtension"
 			}],
 			"properties": {}
 		},
@@ -334,7 +334,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/baseTeamStats"
 			}, {
-				"$ref": "./sportsjs-sport-extensions_1.0.draft.json#/definitions/teamStatsExtension"
+				"$ref": "./sportsjs-sport-extensions.json#/definitions/teamStatsExtension"
 			}],
 			"properties": {}
 		},
@@ -343,7 +343,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/basePlayerMetadata"
 			}, {
-				"$ref": "./sportsjs-sport-extensions_1.0.draft.json#/definitions/playerMetadataExtension"
+				"$ref": "./sportsjs-sport-extensions.json#/definitions/playerMetadataExtension"
 			}],
 			"properties": {}
 		},
@@ -352,7 +352,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/basePlayerStats"
 			}, {
-				"$ref": "./sportsjs-sport-extensions_1.0.draft.json#/definitions/playerStatsExtension"
+				"$ref": "./sportsjs-sport-extensions.json#/definitions/playerStatsExtension"
 			}],
 			"properties": {}
 		},
@@ -382,7 +382,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/baseAssociateMetadata"
 			}, {
-				"$ref": "./sportsjs-sport-extensions_1.0.draft.json#/definitions/associateMetadataExtension"
+				"$ref": "./sportsjs-sport-extensions.json#/definitions/associateMetadataExtension"
 			}],
 			"properties": {}
 		},
@@ -2286,7 +2286,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/commonParticipantAttributes"
 			}, {
-				"$ref": "./sportsjs-curling_1.0.draft.json#/definitions/curlingEquipmentAttributes"
+				"$ref": "./sportsjs-curling.json#/definitions/curlingEquipmentAttributes"
 			}],
 			"properties": {}
 		},
