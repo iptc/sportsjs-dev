@@ -1,13 +1,5 @@
 {
-<<<<<<< Updated upstream:specification/sportsjs-core.json
-	"id": "./sportsjs-core.json#",
-=======
-<<<<<<< Updated upstream:specification/SportsJS-Core.json
-	"id": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#",
-=======
-	"id": "http://example.com/sportsjs-core.json#",
->>>>>>> Stashed changes:specification/sportsjs-core.json
->>>>>>> Stashed changes:specification/SportsJS-Core.json
+	"id": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"description": "The SportsJS schema contains properties common to all (or many) sports.",
 	"$ref": "#/definitions/sportsContent",
@@ -247,7 +239,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/baseEventMetadata"
 			}, {
-				"$ref": "./sportsjs-sport-extensions.json#/definitions/eventMetadataExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions.json#/definitions/eventMetadataExtension"
 			}],
 			"properties": {}
 		},
@@ -258,7 +250,7 @@
 			}, {
 				"$ref": "#/definitions/coverageAttributes"
 			}, {
-				"$ref": "./sportsjs-sport-extensions.json#/definitions/eventStatsExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions.json#/definitions/eventStatsExtension"
 			}],
 			"properties": {
 				"sportsProperties": {
@@ -292,7 +284,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/baseTournamentMetadata"
 			}, {
-				"$ref": "./sportsjs-sport-extensions.json#/definitions/tournamentMetadataExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions.json#/definitions/tournamentMetadataExtension"
 			}],
 			"properties": {}
 		},
@@ -303,7 +295,7 @@
 			}],
 			"properties": {
 				"tournamentDivisionMetadataGolf": {
-					"$ref": "./sportsjs-sport-extensions.json#/definitions/tournamentDivisionMetadataExtension",
+					"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions.json#/definitions/tournamentDivisionMetadataExtension",
 					"description": ""
 				},
 				"divisionNumber": {
@@ -333,7 +325,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/baseTeamMetadata"
 			}, {
-				"$ref": "./sportsjs-sport-extensions.json#/definitions/teamMetadataExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions.json#/definitions/teamMetadataExtension"
 			}],
 			"properties": {}
 		},
@@ -342,7 +334,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/baseTeamStats"
 			}, {
-				"$ref": "./sportsjs-sport-extensions.json#/definitions/teamStatsExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions.json#/definitions/teamStatsExtension"
 			}],
 			"properties": {}
 		},
@@ -351,7 +343,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/basePlayerMetadata"
 			}, {
-				"$ref": "./sportsjs-sport-extensions.json#/definitions/playerMetadataExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions.json#/definitions/playerMetadataExtension"
 			}],
 			"properties": {}
 		},
@@ -360,7 +352,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/basePlayerStats"
 			}, {
-				"$ref": "./sportsjs-sport-extensions.json#/definitions/playerStatsExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions.json#/definitions/playerStatsExtension"
 			}],
 			"properties": {}
 		},
@@ -390,7 +382,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/baseAssociateMetadata"
 			}, {
-				"$ref": "./sportsjs-sport-extensions.json#/definitions/associateMetadataExtension"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-sport-extensions.json#/definitions/associateMetadataExtension"
 			}],
 			"properties": {}
 		},
@@ -2294,7 +2286,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/commonParticipantAttributes"
 			}, {
-				"$ref": "./sportsjs-curling.json#/definitions/curlingEquipmentAttributes"
+				"$ref": "http://www.iptc.org/std/sportsjs/sportsjs-curling.json#/definitions/curlingEquipmentAttributes"
 			}],
 			"properties": {}
 		},

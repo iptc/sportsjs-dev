@@ -1,5 +1,5 @@
 {
-  "id": "./sportsjs-rugby.json#",
+  "id": "http://www.iptc.org/std/sportsjs/sportsjs-rugby.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The SportsJS Soccer schema contains properties common to Rugby",
   "definitions": {
@@ -11,7 +11,7 @@
           "description": ""
         },
         "kickOffTeamIdref": {
-          "$ref": "./sportsjs-core.json#/definitions/idRef",
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/idRef",
           "description": "Pointer to the team doing the kick-off for the period covered."
         }
       }
@@ -20,7 +20,7 @@
       "description": "Record time added by referee. | Holds values for the time added by the referee and how much extra time was actually played.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/baseTimeAdjustment"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/baseTimeAdjustment"
         }
       ],
       "properties": {}
@@ -29,7 +29,7 @@
       "description": "Rugby specific metadata for one team. | The team-metadata that is specific for rugby and does not apply in all sports.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {}
@@ -56,10 +56,10 @@
       "description": "",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -81,10 +81,10 @@
       "description": "Offensive stats specific to rugby. | Offensive stats for one team, specific to rugby.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -210,10 +210,10 @@
       "description": "Defensive stats specific to rugby. | Defensive stats for one team, specific to rugby.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -255,10 +255,10 @@
       "description": "Stats specific to fauls, cautions, and ejections. | Could occur while players are on the offense, the defense, or even the bench.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {

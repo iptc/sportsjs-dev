@@ -14,12 +14,12 @@ var options = require('minimist')(process.argv.slice(2));
 
 if (options.file != null) {
 
-  var schemaDir = './';
+  var schemaDir = '../specification/';
   var coreSchemaName = 'sportsjs-core.json';
   var schema = JSON.parse(fs.readFileSync(schemaDir + coreSchemaName, "utf8"));
 
   fs.readdirSync(schemaDir).forEach(function(name) {
-      if (name.indexOf('SportsJS') > -1) {
+      if (name.indexOf('sportsjs') > -1) {
           var filePath = schemaDir + name;
           var subSchema = JSON.parse(fs.readFileSync(filePath), "utf8");
           ajv.addSchema(subSchema, subSchema.id);

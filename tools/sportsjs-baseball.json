@@ -1,5 +1,5 @@
 {
-  "id": "./sportsjs-baseball.json#",
+  "id": "http://www.iptc.org/std/sportsjs/sportsjs-baseball.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The SportsJS Soccer schema contains properties common to Baseball.",
   "definitions": {
@@ -7,7 +7,7 @@
       "description": "Metadata about the event itself. | Includes what state the game is in.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
           "$ref": "#/definitions/eventStateBaseball"
@@ -19,12 +19,12 @@
       "description": "Metadata about the team. | Specific to the sport of baseball.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
         "probableStartingPitcherIdref": {
-          "$ref": "./sportsjs-core.json#/definitions/idRef",
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/idRef",
           "description": "ID of the pitcher who will probably start the game."
         }
       }
@@ -33,16 +33,16 @@
       "description": "Metadata about the player. | Specific to the sport of baseball.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
         "battingHand": {
-          "$ref": "./sportsjs-core.json#/definitions/bodySideList",
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/bodySideList",
           "description": "Indicates whether player bats left, right, or is a switch-hitter."
         },
         "throwingHand": {
-          "$ref": "./sportsjs-core.json#/definitions/bodySideList",
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/bodySideList",
           "description": "Indicates whether player throws left, right, or is a switch-thrower."
         }
       }
@@ -69,10 +69,10 @@
       "description": "Specific statistics for baseball. | Includes offensive, pitching, and defensive stats.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -94,10 +94,10 @@
       "description": "Stats accumulated while a team is at bat. | Includes hits and runs.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -307,10 +307,10 @@
       "description": "Stats accumulated while a team is pitching. | Includes strikeouts and shutouts.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -530,10 +530,10 @@
       "description": "Stats accumulated while a team is out in the field. | Includes double-plays and errors.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -631,7 +631,7 @@
           "description": "Whether or not a player is standing on first base. Either true or false."
         },
         "runnerOnFirstIdref": {
-          "$ref": "./sportsjs-core.json#/definitions/idRef",
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/idRef",
           "description": "A pointer to the player on first base."
         },
         "runnerOnSecond": {
@@ -639,7 +639,7 @@
           "description": "Whether or not a player is standing on second base. Either true or false."
         },
         "runnerOnSecondIdref": {
-          "$ref": "./sportsjs-core.json#/definitions/idRef",
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/idRef",
           "description": "A pointer to the player on second base."
         },
         "runnerOnThird": {
@@ -647,7 +647,7 @@
           "description": "Whether or not a player is standing on third base. Either true or false."
         },
         "runnerOnThirdIdref": {
-          "$ref": "./sportsjs-core.json#/definitions/idRef",
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/idRef",
           "description": "A pointer to the player on third base."
         },
         "runsThisInningHalf": {
@@ -655,15 +655,15 @@
           "description": "An integer."
         },
         "pitcherIdref": {
-          "$ref": "./sportsjs-core.json#/definitions/idRef",
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/idRef",
           "description": "A pointer to the player element for the pitcher standing on the mound."
         },
         "batterIdref": {
-          "$ref": "./sportsjs-core.json#/definitions/idRef",
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/idRef",
           "description": "A pointer to the player element for the batter at the plate."
         },
         "batterSide": {
-          "$ref": "./sportsjs-core.json#/definitions/bodySideList",
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/bodySideList",
           "description": "Which side of the plate the batter was on when taking the pitch."
         },
         "atBatNumber": {

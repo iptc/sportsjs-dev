@@ -1,5 +1,5 @@
 {
-  "id": "./sportsjs-golf.json#",
+  "id": "http://www.iptc.org/std/sportsjs/sportsjs-golf.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The SportsJS Soccer schema contains properties common to Golf.",
   "definitions": {
@@ -7,7 +7,7 @@
       "description": "Holds metadata about a golf tournament. | Currently only holds the rank of the team. ???",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {}
@@ -16,7 +16,7 @@
       "description": "Metadata about a particular division within a golf tournament. | Includes information about the course as a whole.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
@@ -34,7 +34,7 @@
       "description": "Holds event metadata specific to golf. | Includes data about the course on which the event is held.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
           "$ref": "#/definitions/eventStateGolf"
@@ -81,7 +81,7 @@
       "description": "Holds metadata about a golf player. | Currently only holds the rank of the player.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
@@ -109,10 +109,10 @@
       "description": "",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -379,10 +379,10 @@
       "description": "",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {

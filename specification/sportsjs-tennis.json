@@ -1,5 +1,5 @@
 {
-  "id": "./sportsjs-tennis.json#",
+  "id": "http://www.iptc.org/std/sportsjs/sportsjs-tennis.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The SportsJS Soccer schema contains properties common to Tennis.",
   "definitions": {
@@ -7,12 +7,12 @@
       "description": "For holding metadata having to do with a tennis tournament. Includes an attribute for the name of the tennis tour.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
         "tourName": {
-          "$ref": "./sportsjs-core.json#/definitions/name",
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/name",
           "description": "The name of the tour."
         }
       }
@@ -111,10 +111,10 @@
       "description": "Basic elements and attributes for tennis statistics",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
         },
         {
           "$ref": "#/definitions/statsTennis"
@@ -135,10 +135,10 @@
       "description": "Stats for the play where the player served.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -240,10 +240,10 @@
       "description": "Stats for play where the player is receiving the serve.",
       "allOf": [
         {
-          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -354,7 +354,7 @@
           "description": "Wich game in the current set this item covers. Generally 1 through 7."
         },
         "serverIdref": {
-          "$ref": "./sportsjs-core.json#/definitions/idRef",
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/idRef",
           "description": "A pointer to the player-id or team-id who served the ball on this point."
         },
         "serverScore": {
@@ -362,7 +362,7 @@
           "description": "The score of the player or team presently serving, either love, 15, 30, 40, game."
         },
         "receiverIdref": {
-          "$ref": "./sportsjs-core.json#/definitions/idRef",
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/idRef",
           "description": "A pointer to the player-id or team-id who received the served ball on this point."
         },
         "receiverScore": {
