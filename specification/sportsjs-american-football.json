@@ -1,5 +1,5 @@
 {
-  "id": "http://www.iptc.org/std/sportsjs/sportsjs-american-football_1.0.draft.json#",
+  "id": "./sportsjs-american-football.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The SportsJS American Football schema contains properties common to American Football I.E. NFL",
   "definitions": {
@@ -7,7 +7,7 @@
       "description": "Metadata about the event itself. | Includes the time left, and where the ball is.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
         },
         {
           "$ref": "#/definitions/eventStateAmericanFootball"
@@ -33,10 +33,10 @@
       "description": "Player statistics for football. | Includes the same elements as team statistics.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -108,10 +108,10 @@
       "description": "Statistics about a particular team or player's offensive performance. | Further breaks down stats into passing, rushing, etc.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -193,10 +193,10 @@
       "description": "Statistics about a particular team or player's passing performance. | Used for quarterbacks and receivers.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -334,10 +334,10 @@
       "description": "Statistics about a particular team or player's rushing performance. | How well they ran with the ball.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -395,10 +395,10 @@
       "description": "Statistics about a particular team or player's performance on downs. | Covers first downs and conversions.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -468,10 +468,10 @@
       "description": "Statistics about the sacks suffered by the offensive team. | How many times and the team was sacked, and for how many yards.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -497,10 +497,10 @@
       "description": "Statistics about a particular player or team's defensive performance. | Covers tackles, interceptions, sacks.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -638,10 +638,10 @@
       "description": "Statistics about a particular team's scoring performance. | For touchdowns, field goals, etc.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -767,10 +767,10 @@
       "description": "Statistics about attempted and made field goals. | Allows for breakdowns between particular yard markers.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -796,10 +796,10 @@
       "description": "Statistics about a particular team's special teams performance. | Covers punts, touchbacks.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -1089,10 +1089,10 @@
       "description": "For tracking fumble stats. | Covers teams that do the fumbling and the recovering.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -1238,10 +1238,10 @@
       "description": "Statistics about penalties. | Applies to both offensive and defensive penalties.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -1291,7 +1291,7 @@
           "description": "Whether the clock is running or stopped."
         },
         "teamInPossessionIdref": {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/idRef",
+          "$ref": "./sportsjs-core.json#/definitions/idRef",
           "description": "The ID of the team with the football."
         },
         "down": {

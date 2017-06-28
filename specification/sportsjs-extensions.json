@@ -1,0 +1,200 @@
+{
+  "id": "./sportsjs-sport-extensions.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsJS Extension schema contains properties that group together all specific sport extensions.",
+  "definitions": {
+    "metadataExtensions": {
+      "properties": {
+        "americanFootballEventMetadata": {
+          "$ref": "./sportsjs-american-football.json#/definitions/americanFootballEventMetadata"
+        },
+        "baseballEventMetadata": {
+          "$ref": "./sportsjs-baseball.json#/definitions/baseballEventMetadata"
+        },
+        "golfEventMetadata": {
+          "$ref": "./sportsjs-golf.json#/definitions/golfEventMetadata"
+        },
+        "iceHockeyEventMetadata": {
+          "$ref": "./sportsjs-ice-hockey.json#/definitions/iceHockeyEventMetadata"
+        },
+        "soccerEventMetadata": {
+          "$ref": "./sportsjs-soccer.json#/definitions/soccerEventMetadata"
+        },
+        "tennisEventMetadata": {
+          "$ref": "./sportsjs-tennis.json#/definitions/tennisEventMetadata"
+        },
+        "motorRacingEventMetadata": {
+          "$ref": "./sportsjs-motor-racing.json#/definitions/motorRacingEventMetadata"
+        },
+        "curlingEventMetadata": {
+          "$ref": "./sportsjs-curling.json#/definitions/curlingEventMetadata"
+        },
+        "rugbyEventMetadata": {
+          "$ref": "./sportsjs-rugby.json#/definitions/rugbyEventMetadata"
+        }
+      }
+    },
+    "eventMetadataExtension": {
+      "properties": {
+        "americanFootballEventMetadata": {
+          "$ref": "./sportsjs-american-football.json#/definitions/americanFootballEventMetadata"
+        },
+        "baseballEventMetadata": {
+          "$ref": "./sportsjs-baseball.json#/definitions/baseballEventMetadata"
+        },
+        "golfEventMetadata": {
+          "$ref": "./sportsjs-golf.json#/definitions/golfEventMetadata"
+        },
+        "iceHockeyEventMetadata": {
+          "$ref": "./sportsjs-ice-hockey.json#/definitions/iceHockeyEventMetadata"
+        },
+        "soccerEventMetadata": {
+          "$ref": "./sportsjs-soccer.json#/definitions/soccerEventMetadata"
+        },
+        "tennisEventMetadata": {
+          "$ref": "./sportsjs-tennis.json#/definitions/tennisEventMetadata"
+        },
+        "motorRacingEventMetadata": {
+          "$ref": "./sportsjs-motor-racing.json#/definitions/motorRacingEventMetadata"
+        },
+        "curlingEventMetadata": {
+          "$ref": "./sportsjs-curling.json#/definitions/curlingEventMetadata"
+        },
+        "rugbyEventMetadata": {
+          "$ref": "./sportsjs-rugby.json#/definitions/rugbyEventMetadata"
+        }
+      }
+    },
+    "eventStatsExtension": {
+      "properties": {
+        "motorRacingEventStats": {
+          "$ref": "./sportsjs-motor-racing.json#/definitions/motorRacingEventStats"
+        }
+      }
+    },
+    "tournamentMetadataExtension": {
+      "properties": {
+        "golfTournamentMetadata": {
+          "$ref": "./sportsjs-golf.json#/definitions/golfTournamentMetadata"
+        },
+        "tennisTournamentMetadata": {
+          "$ref": "./sportsjs-tennis.json#/definitions/tennisTournamentMetadata"
+        }
+      }
+    },
+    "tournamentDivisionMetadataExtension": {
+      "properties": {
+        "tournamentDivisionMetadataGolf": {
+          "$ref": "./sportsjs-golf.json#/definitions/golfTournamentDivisionMetadata"
+        }
+      }
+    },
+    "teamMetadataExtension": {
+      "properties": {
+        "baseballTeamMetadata": {
+          "$ref": "./sportsjs-baseball.json#/definitions/baseballTeamMetadata"
+        },
+        "golfTeamMetadata": {
+          "$ref": "./sportsjs-golf.json#/definitions/golfTeamMetadata"
+        },
+        "motorRacingTeamMetadata": {
+          "$ref": "./sportsjs-motor-racing.json#/definitions/motorRacingTeamMetadata"
+        }
+      }
+    },
+    "teamStatsExtension": {
+      "properties": {
+        "americanFootballTeamStats": {
+          "$ref": "./sportsjs-american-football.json#/definitions/americanFootballTeamStats"
+        },
+        "baseballTeamStats": {
+          "$ref": "./sportsjs-baseball.json#/definitions/baseballTeamStats"
+        },
+        "basketballTeamStats": {
+          "$ref": "./sportsjs-basketball.json#/definitions/basketballTeamStats"
+        },
+        "iceHockeyTeamStats": {
+          "$ref": "./sportsjs-ice-hockey.json#/definitions/iceHockeyTeamStats"
+        },
+        "soccerTeamStats": {
+          "$ref": "./sportsjs-soccer.json#/definitions/soccerTeamStats"
+        },
+        "tennisTeamStats": {
+          "$ref": "./sportsjs-tennis.json#/definitions/tennisTeamStats"
+        },
+        "motorRacingTeamStats": {
+          "$ref": "./sportsjs-motor-racing.json#/definitions/motorRacingTeamStats"
+        },
+        "curlingTeamStats": {
+          "$ref": "./sportsjs-curling.json#/definitions/curlingTeamStats"
+        },
+        "rugbyTeamStats": {
+          "$ref": "./sportsjs-rugby.json#/definitions/rugbyTeamStats"
+        }
+      }
+    },
+    "playerMetadataExtension": {
+      "properties": {
+        "baseballPlayerMetadata": {
+          "$ref": "./sportsjs-baseball.json#/definitions/baseballPlayerMetadata"
+        },
+        "golfPlayerMetadata": {
+          "$ref": "./sportsjs-golf.json#/definitions/golfPlayerMetadata"
+        },
+        "iceHockeyPlayerMetadata": {
+          "$ref": "./sportsjs-ice-hockey.json#/definitions/iceHockeyPlayerMetadata"
+        },
+        "soccerPlayerMetadata": {
+          "$ref": "./sportsjs-soccer.json#/definitions/soccerPlayerMetadata"
+        },
+        "motorRacingPlayerMetadata": {
+          "$ref": "./sportsjs-motor-racing.json#/definitions/motorRacingPlayerMetadata"
+        },
+        "curlingPlayerMetadata": {
+          "$ref": "./sportsjs-curling.json#/definitions/curlingPlayerMetadata"
+        }
+      }
+    },
+    "playerStatsExtension": {
+      "properties": {
+        "americanFootballPlayerStats": {
+          "$ref": "./sportsjs-american-football.json#/definitions/americanFootballPlayerStats"
+        },
+        "baseballPlayerStats": {
+          "$ref": "./sportsjs-baseball.json#/definitions/baseballPlayerStats"
+        },
+        "basketballPlayerStats": {
+          "$ref": "./sportsjs-basketball.json#/definitions/basketballPlayerStats"
+        },
+        "golfPlayerStats": {
+          "$ref": "./sportsjs-golf.json#/definitions/golfPlayerStats"
+        },
+        "iceHockeyPlayerStats": {
+          "$ref": "./sportsjs-ice-hockey.json#/definitions/iceHockeyPlayerStats"
+        },
+        "soccerPlayerStats": {
+          "$ref": "./sportsjs-soccer.json#/definitions/soccerPlayerStats"
+        },
+        "tennisPlayerStats": {
+          "$ref": "./sportsjs-tennis.json#/definitions/tennisPlayerStats"
+        },
+        "motorRacingPlayerStats": {
+          "$ref": "./sportsjs-motor-racing.json#/definitions/motorRacingPlayerStats"
+        },
+        "curlingPlayerStats": {
+          "$ref": "./sportsjs-curling.json#/definitions/curlingPlayerStats"
+        },
+        "rugbyPlayerStats": {
+          "$ref": "./sportsjs-rugby.json#/definitions/rugbyPlayerStats"
+        }
+      }
+    },
+    "associateMetadataExtension": {
+      "properties": {
+        "motorRacingAssociateMetadata": {
+          "$ref": "./sportsjs-motor-racing.json#/definitions/motorRacingAssociateMetadata"
+        }
+      }
+    }
+  }
+}
