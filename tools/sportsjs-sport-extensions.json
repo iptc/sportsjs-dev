@@ -1,0 +1,200 @@
+{
+  "id": "http://example.com/sportsjs-sport-extensions.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsJS Extension schema contains properties that group together all specific sport extensions.",
+  "definitions": {
+    "metadataExtensions": {
+      "properties": {
+        "americanFootballEventMetadata": {
+          "$ref": "http://example.com/sportsjs-american-football.json#/definitions/americanFootballEventMetadata"
+        },
+        "baseballEventMetadata": {
+          "$ref": "http://example.com/sportsjs-baseball.json#/definitions/baseballEventMetadata"
+        },
+        "golfEventMetadata": {
+          "$ref": "http://example.com/sportsjs-golf.json#/definitions/golfEventMetadata"
+        },
+        "iceHockeyEventMetadata": {
+          "$ref": "http://example.com/sportsjs-ice-hockey.json#/definitions/iceHockeyEventMetadata"
+        },
+        "soccerEventMetadata": {
+          "$ref": "http://example.com/sportsjs-soccer.json#/definitions/soccerEventMetadata"
+        },
+        "tennisEventMetadata": {
+          "$ref": "http://example.com/sportsjs-tennis.json#/definitions/tennisEventMetadata"
+        },
+        "motorRacingEventMetadata": {
+          "$ref": "http://example.com/sportsjs-motor-racing.json#/definitions/motorRacingEventMetadata"
+        },
+        "curlingEventMetadata": {
+          "$ref": "http://example.com/sportsjs-curling.json#/definitions/curlingEventMetadata"
+        },
+        "rugbyEventMetadata": {
+          "$ref": "http://example.com/sportsjs-rugby.json#/definitions/rugbyEventMetadata"
+        }
+      }
+    },
+    "eventMetadataExtension": {
+      "properties": {
+        "americanFootballEventMetadata": {
+          "$ref": "http://example.com/sportsjs-american-football.json#/definitions/americanFootballEventMetadata"
+        },
+        "baseballEventMetadata": {
+          "$ref": "http://example.com/sportsjs-baseball.json#/definitions/baseballEventMetadata"
+        },
+        "golfEventMetadata": {
+          "$ref": "http://example.com/sportsjs-golf.json#/definitions/golfEventMetadata"
+        },
+        "iceHockeyEventMetadata": {
+          "$ref": "http://example.com/sportsjs-ice-hockey.json#/definitions/iceHockeyEventMetadata"
+        },
+        "soccerEventMetadata": {
+          "$ref": "http://example.com/sportsjs-soccer.json#/definitions/soccerEventMetadata"
+        },
+        "tennisEventMetadata": {
+          "$ref": "http://example.com/sportsjs-tennis.json#/definitions/tennisEventMetadata"
+        },
+        "motorRacingEventMetadata": {
+          "$ref": "http://example.com/sportsjs-motor-racing.json#/definitions/motorRacingEventMetadata"
+        },
+        "curlingEventMetadata": {
+          "$ref": "http://example.com/sportsjs-curling.json#/definitions/curlingEventMetadata"
+        },
+        "rugbyEventMetadata": {
+          "$ref": "http://example.com/sportsjs-rugby.json#/definitions/rugbyEventMetadata"
+        }
+      }
+    },
+    "eventStatsExtension": {
+      "properties": {
+        "motorRacingEventStats": {
+          "$ref": "http://example.com/sportsjs-motor-racing.json#/definitions/motorRacingEventStats"
+        }
+      }
+    },
+    "tournamentMetadataExtension": {
+      "properties": {
+        "golfTournamentMetadata": {
+          "$ref": "http://example.com/sportsjs-golf.json#/definitions/golfTournamentMetadata"
+        },
+        "tennisTournamentMetadata": {
+          "$ref": "http://example.com/sportsjs-tennis.json#/definitions/tennisTournamentMetadata"
+        }
+      }
+    },
+    "tournamentDivisionMetadataExtension": {
+      "properties": {
+        "tournamentDivisionMetadataGolf": {
+          "$ref": "http://example.com/sportsjs-golf.json#/definitions/golfTournamentDivisionMetadata"
+        }
+      }
+    },
+    "teamMetadataExtension": {
+      "properties": {
+        "baseballTeamMetadata": {
+          "$ref": "http://example.com/sportsjs-baseball.json#/definitions/baseballTeamMetadata"
+        },
+        "golfTeamMetadata": {
+          "$ref": "http://example.com/sportsjs-golf.json#/definitions/golfTeamMetadata"
+        },
+        "motorRacingTeamMetadata": {
+          "$ref": "http://example.com/sportsjs-motor-racing.json#/definitions/motorRacingTeamMetadata"
+        }
+      }
+    },
+    "teamStatsExtension": {
+      "properties": {
+        "americanFootballTeamStats": {
+          "$ref": "http://example.com/sportsjs-american-football.json#/definitions/americanFootballTeamStats"
+        },
+        "baseballTeamStats": {
+          "$ref": "http://example.com/sportsjs-baseball.json#/definitions/baseballTeamStats"
+        },
+        "basketballTeamStats": {
+          "$ref": "http://example.com/sportsjs-basketball.json#/definitions/basketballTeamStats"
+        },
+        "iceHockeyTeamStats": {
+          "$ref": "http://example.com/sportsjs-ice-hockey.json#/definitions/iceHockeyTeamStats"
+        },
+        "soccerTeamStats": {
+          "$ref": "http://example.com/sportsjs-soccer.json#/definitions/soccerTeamStats"
+        },
+        "tennisTeamStats": {
+          "$ref": "http://example.com/sportsjs-tennis.json#/definitions/tennisTeamStats"
+        },
+        "motorRacingTeamStats": {
+          "$ref": "http://example.com/sportsjs-motor-racing.json#/definitions/motorRacingTeamStats"
+        },
+        "curlingTeamStats": {
+          "$ref": "http://example.com/sportsjs-curling.json#/definitions/curlingTeamStats"
+        },
+        "rugbyTeamStats": {
+          "$ref": "http://example.com/sportsjs-rugby.json#/definitions/rugbyTeamStats"
+        }
+      }
+    },
+    "playerMetadataExtension": {
+      "properties": {
+        "baseballPlayerMetadata": {
+          "$ref": "http://example.com/sportsjs-baseball.json#/definitions/baseballPlayerMetadata"
+        },
+        "golfPlayerMetadata": {
+          "$ref": "http://example.com/sportsjs-golf.json#/definitions/golfPlayerMetadata"
+        },
+        "iceHockeyPlayerMetadata": {
+          "$ref": "http://example.com/sportsjs-ice-hockey.json#/definitions/iceHockeyPlayerMetadata"
+        },
+        "soccerPlayerMetadata": {
+          "$ref": "http://example.com/sportsjs-soccer.json#/definitions/soccerPlayerMetadata"
+        },
+        "motorRacingPlayerMetadata": {
+          "$ref": "http://example.com/sportsjs-motor-racing.json#/definitions/motorRacingPlayerMetadata"
+        },
+        "curlingPlayerMetadata": {
+          "$ref": "http://example.com/sportsjs-curling.json#/definitions/curlingPlayerMetadata"
+        }
+      }
+    },
+    "playerStatsExtension": {
+      "properties": {
+        "americanFootballPlayerStats": {
+          "$ref": "http://example.com/sportsjs-american-football.json#/definitions/americanFootballPlayerStats"
+        },
+        "baseballPlayerStats": {
+          "$ref": "http://example.com/sportsjs-baseball.json#/definitions/baseballPlayerStats"
+        },
+        "basketballPlayerStats": {
+          "$ref": "http://example.com/sportsjs-basketball.json#/definitions/basketballPlayerStats"
+        },
+        "golfPlayerStats": {
+          "$ref": "http://example.com/sportsjs-golf.json#/definitions/golfPlayerStats"
+        },
+        "iceHockeyPlayerStats": {
+          "$ref": "http://example.com/sportsjs-ice-hockey.json#/definitions/iceHockeyPlayerStats"
+        },
+        "soccerPlayerStats": {
+          "$ref": "http://example.com/sportsjs-soccer.json#/definitions/soccerPlayerStats"
+        },
+        "tennisPlayerStats": {
+          "$ref": "http://example.com/sportsjs-tennis.json#/definitions/tennisPlayerStats"
+        },
+        "motorRacingPlayerStats": {
+          "$ref": "http://example.com/sportsjs-motor-racing.json#/definitions/motorRacingPlayerStats"
+        },
+        "curlingPlayerStats": {
+          "$ref": "http://example.com/sportsjs-curling.json#/definitions/curlingPlayerStats"
+        },
+        "rugbyPlayerStats": {
+          "$ref": "http://example.com/sportsjs-rugby.json#/definitions/rugbyPlayerStats"
+        }
+      }
+    },
+    "associateMetadataExtension": {
+      "properties": {
+        "motorRacingAssociateMetadata": {
+          "$ref": "http://example.com/sportsjs-motor-racing.json#/definitions/motorRacingAssociateMetadata"
+        }
+      }
+    }
+  }
+}

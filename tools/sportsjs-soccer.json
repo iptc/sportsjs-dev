@@ -1,0 +1,335 @@
+{
+  "id": "./sportsjs-soccer.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsJS Soccer schema contains properties common to Soccer.",
+  "definitions": {
+    "soccerEventMetadata": {
+      "description": "Soccer-specific metadata for events. | Metadata that is specific to soccer for events.",
+      "properties": {
+        "timeAdjustment": {
+          "$ref": "#/definitions/soccerTimeAdjustment",
+          "description": ""
+        },
+        "kickOffTeamIdref": {
+          "$ref": "./sportsjs-core.json#/definitions/idRef",
+          "description": "Pointer to the team doing the kick-off for the period covered."
+        },
+        "week": {
+          "type": "string",
+          "description": "The week during the season in which this game is played."
+        }
+      }
+    },
+    "soccerTimeAdjustment": {
+      "description": "Record time added by referee. | Holds values for the time added by the referee and how much extra time was actually played.",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/baseTimeAdjustment"
+        }
+      ],
+      "properties": {}
+    },
+    "soccerPlayerMetadata": {
+      "description": "Player metadata specific to soccer. | Metadata for one player, specific to soccer.",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+        }
+      ],
+      "properties": {
+        "lineFormationRow": {
+          "type": "integer",
+          "description": "Integer value ascending from closest to the goalkeeper. All players in the row closest to the goalkeeper have 1 as value, the next row 2, etc. Indicates row the player belonged to at the start of the game or when they entered the game."
+        },
+        "lineFormationPosition": {
+          "type": "integer",
+          "description": "Integer value ascending from left side of field. Starts at 1 for the first player in each line-formation. | Indicates line-position player had at the start of the game or when the player entered the game."
+        }
+      }
+    },
+    "soccerTeamStats": {
+      "description": "Soccer specific stats for one team. | Team-stats that is specific to soccer and does not apply to all sports.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseSoccerStats"
+        }
+      ],
+      "properties": {
+        "lineFormation": {
+          "type": "string",
+          "description": "String representing the formation of the team on the field starting from the back of the field. This can be written as 4-4-2 where the hyphens separates the lines on the field from the defense at left to the forwards to the right. Depending on the formation of the team other than three digits can be used, for example 4-2-3-1."
+        }
+      }
+    },
+    "soccerPlayerStats": {
+      "description": "Player statistics that are specific to soccer. | Soccer specific statistic information about a player.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseSoccerStats"
+        }
+      ],
+      "properties": {
+        "timeEnteredEvent": {
+          "type": "integer",
+          "description": "Time in minutes when the player entered the event."
+        },
+        "timeExitedEvent": {
+          "type": "integer",
+          "description": "Time in minutes when the player exited the event."
+        }
+      }
+    },
+    "baseSoccerStats": {
+      "description": "",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+        }
+      ],
+      "properties": {
+        "statsSoccerOffensive": {
+          "$ref": "#/definitions/soccerStatsOffensive",
+          "description": ""
+        },
+        "statsSoccerDefensive": {
+          "$ref": "#/definitions/soccerStatsDefensive",
+          "description": ""
+        },
+        "statsSoccerFoul": {
+          "$ref": "#/definitions/soccerStatsFoul",
+          "description": ""
+        }
+      }
+    },
+    "soccerStatsOffensive": {
+      "description": "Offensive stats specific to soccer. | Offensive stats for one team, specific to soccer.",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+        }
+      ],
+      "properties": {
+        "goalsGameWinning": {
+          "type": "string",
+          "description": "Goals that meant winning a game."
+        },
+        "goalsGameTying": {
+          "type": "string",
+          "description": "Goals that meant tying a game."
+        },
+        "goalsOvertime": {
+          "type": "string",
+          "description": "Goals scored during overtime."
+        },
+        "goalsShootout": {
+          "type": "string",
+          "description": "Goals scored during shootout."
+        },
+        "goalsTotal": {
+          "type": "string",
+          "description": "Total number of goals by the team."
+        },
+        "assistsGameWinning": {
+          "type": "string",
+          "description": "Assists to goals that meant winning a game."
+        },
+        "assistsGameTying": {
+          "type": "string",
+          "description": "Assists to goals that meant tying a game."
+        },
+        "assistsOvertime": {
+          "type": "string",
+          "description": "Assists made on goals scored during overtime."
+        },
+        "assistsTotal": {
+          "type": "string",
+          "description": "Number of assists."
+        },
+        "points": {
+          "type": "string",
+          "description": "Sum of goals and assists."
+        },
+        "shotsTotal": {
+          "type": "string",
+          "description": "Total number of shots made in attempt to score goal."
+        },
+        "shotsOnGoalTotal": {
+          "type": "string",
+          "description": "Total number of shots on goal that did not hit the net."
+        },
+        "shotsOffGoalTotal": {
+          "type": "string",
+          "description": "Total number of shots towards the goal, but that would have missed the target anyway."
+        },
+        "shotsPenaltyShotTaken": {
+          "type": "string",
+          "description": "Total number of attempts to score as penalty-shot."
+        },
+        "shotsPenaltyShotScored": {
+          "type": "string",
+          "description": "Goals scored as penalty-shots."
+        },
+        "shotsPenaltyShotMissed": {
+          "type": "string",
+          "description": "Total number of attempts to score as penalty-shot that did not result in a goal."
+        },
+        "shotsPenaltyShotPercentage": {
+          "type": "string",
+          "description": "Percentage of penalty shots scored. Could be calculated from above values."
+        },
+        "shotsShootoutTaken": {
+          "type": "string",
+          "description": "Total number of attempts to score during shootout."
+        },
+        "shotsShootoutScored": {
+          "type": "string",
+          "description": "Goals scored during shootout."
+        },
+        "shotsShootoutMissed": {
+          "type": "string",
+          "description": "Goals missed during shootout."
+        },
+        "shotsShootoutPercentage": {
+          "type": "string",
+          "description": "Percentage of shootout goals scored."
+        },
+        "giveaways": {
+          "type": "string",
+          "description": "Changes in possession, usually as a result of poor play leading to the other team getting the ball."
+        },
+        "offsides": {
+          "type": "string",
+          "description": "Total number of offsides."
+        },
+        "cornerKicks": {
+          "type": "string",
+          "description": "Total number of corner kicks performed."
+        },
+        "hatTricks": {
+          "type": "string",
+          "description": "A record of the number of times a player scored three or more goals in a game. Sometimes, the rules that govern the assignment of a hat-trick varies."
+        },
+        "shotsHitFrame": {
+          "type": "string",
+          "description": "Total number of shots hitting the goal frame."
+        },
+        "goalsOwn": {
+          "type": "string",
+          "description": "Goals scored on own net."
+        },
+        "freeKicks": {
+          "type": "string",
+          "description": "Unopposed kicks on the field awarded to a team due to an opposing team's infraction."
+        }
+      }
+    },
+    "soccerStatsDefensive": {
+      "description": "Defensive stats specific to soccer. | Defensive stats for one team, specific to soccer.",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+        }
+      ],
+      "properties": {
+        "shotsPenaltyShotAllowed": {
+          "type": "string",
+          "description": "Total number of penalty-shots allowed from other teams."
+        },
+        "goalsPenaltyShotAllowed": {
+          "type": "string",
+          "description": "Total number of goals allowed as penalty shots."
+        },
+        "goalsAgainstAverage": {
+          "type": "string",
+          "description": "Average goals against per game for the given period."
+        },
+        "goalsAgainstTotal": {
+          "type": "string",
+          "description": "Total goals against per game for the given period."
+        },
+        "saves": {
+          "type": "string",
+          "description": "Score attempts that were saved by the goal-keeper."
+        },
+        "savePercentage": {
+          "type": "string",
+          "description": "Percentage of saves compared to score-attempts on goal."
+        },
+        "catchesPunches": {
+          "type": "string",
+          "description": "Situations when the goalie catches or punches the ball. Not a save attempt."
+        },
+        "shotsOnGoalAgainstTotal": {
+          "type": "string",
+          "description": "Total number of shots on goal against."
+        },
+        "shotsShootoutTotal": {
+          "type": "string",
+          "description": "Total number of attempts to score during shootout."
+        },
+        "shotsShootoutAllowed": {
+          "type": "string",
+          "description": "Goals allowed during shootout."
+        },
+        "shotsBlocked": {
+          "type": "string",
+          "description": "Score attempts that was blocked by someone else than the goal-keeper."
+        },
+        "shutouts": {
+          "type": "string",
+          "description": "Number of games when you did not allow the other team to score."
+        }
+      }
+    },
+    "soccerStatsFoul": {
+      "description": "Stats specific to fauls, cautions, and ejections. | Could occur while players are on the offense, the defense, or even the bench.",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+        }
+      ],
+      "properties": {
+        "foulsCommited": {
+          "type": "string",
+          "description": "Total number of fouls commited. Generally a defensive foul."
+        },
+        "foulsSuffered": {
+          "type": "string",
+          "description": "Total number of fouls the player has suffered. Generally an offensive foul."
+        },
+        "cautionsTotal": {
+          "type": "string",
+          "description": "Total number of cautions recieved."
+        },
+        "cautionsPending": {
+          "type": "string",
+          "description": "Number of cautions that could result in a game suspension."
+        },
+        "cautionPointsTotal": {
+          "type": "string",
+          "description": "Total amount of caution points. Can occur over various games in a season."
+        },
+        "cautionPointsPending": {
+          "type": "string",
+          "description": "Number of caution points that could result in a game suspension."
+        },
+        "ejectionsTotal": {
+          "type": "string",
+          "description": "Total number of ejections."
+        }
+      }
+    }
+  }
+}

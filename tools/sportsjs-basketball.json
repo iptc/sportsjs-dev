@@ -1,0 +1,399 @@
+{
+  "id": "./sportsjs-basketball.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsJS Soccer schema contains properties common to Basketball.",
+  "definitions":{
+    "basketballPlayerStats": {
+      "description": "Specific statistics for basketball players. | Includes offensive, rebounding, and defensive stats.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseBasketballStats"
+        }
+      ],
+      "properties": {
+        "minutesPlayed": {
+          "type": "string",
+          "description": "Number of minutes this player has spent playing during a particular game."
+        },
+        "gamesPlayed": {
+          "type": "string",
+          "description": "Number of games played."
+        },
+        "gamesStarted": {
+          "type": "string",
+          "description": "Number of games that started with this player on the court,."
+        },
+        "averageMinutesPerGame": {
+          "type": "string",
+          "description": "Average number of minutes per game played by this player."
+        },
+        "personalFoulsPerGame": {
+          "type": "string",
+          "description": "Average number of fouls made by the player per game."
+        },
+        "doubleDoubles": {
+          "type": "string",
+          "description": "A double digit number in any two of these categories: points, rebounds, assists, steals, and blocked shots."
+        },
+        "tripleDoubles": {
+          "type": "string",
+          "description": "A double digit number in any three of these categories: points, rebounds, assists, steals, and blocked shots."
+        }
+      }
+    },
+    "basketballTeamStats": {
+      "description": "Specific statistics for basketball. | Includes offensive, rebounding, and defensive stats.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseBasketballStats"
+        }
+      ],
+      "properties": {
+        "timeoutsLeft": {
+          "type": "string",
+          "description": "Number of timeouts a team has left during the current event."
+        },
+        "largestLead": {
+          "type": "string",
+          "description": "Largest number of points this team has led the opposition. Could be a negative number."
+        },
+        "foulsTotal": {
+          "type": "string",
+          "description": "Total number of fouls comitted by the team during this event."
+        },
+        "turnoverMargin": {
+          "type": "string",
+          "description": "Turnover margain is the number of turnovers made by this team minus the number of turnovers made by the opposing team."
+        }
+      }
+    },
+    "baseBasketballStats": {
+      "description": "",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+        }
+      ],
+      "properties": {
+        "statsBasketballOffensive": {
+          "$ref": "#/definitions/basketballStatsOffensive",
+          "description": ""
+        },
+        "statsBasketballRebounding": {
+          "$ref": "#/definitions/basketballStatsRebounding",
+          "description": ""
+        },
+        "statsBasketballDefensive": {
+          "$ref": "#/definitions/basketballStatsDefensive",
+          "description": ""
+        }
+      }
+    },
+    "basketballStatsOffensive": {
+      "description": "Statistics for a team or player while they had possession of the ball. | Includes scoring and assisting stats.",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+        }
+      ],
+      "properties": {
+        "fieldGoalsMade": {
+          "type": "string",
+          "description": "Shots made that were worth two points each."
+        },
+        "fieldGoalsAttempted": {
+          "type": "string",
+          "description": "Two-point shots that were attempted."
+        },
+        "fieldGoalsPercentage": {
+          "type": "string",
+          "description": "Field goals made versus attempted. This could also be calculated from the above."
+        },
+        "fieldGoalsPerGame": {
+          "type": "string",
+          "description": "Average number of field goals made per game."
+        },
+        "fieldGoalsAttemptedPerGame": {
+          "type": "string",
+          "description": "Average number of field goals attempted per game."
+        },
+        "fieldGoalsPercentageAdjusted": {
+          "type": "string",
+          "description": "A formula measuring shooting efficiency: [(points-scored-total - free-throws-made)/field-goals-attempted]/2."
+        },
+        "threePointersMade": {
+          "type": "string",
+          "description": "Shots made that were worth three points each."
+        },
+        "threePointersAttempted": {
+          "type": "string",
+          "description": "Three-point shots that were attempted."
+        },
+        "threePointersPercentage": {
+          "type": "string",
+          "description": "Three-pointers made versus attempted. This could be calculated."
+        },
+        "threePointersPerGame": {
+          "type": "string",
+          "description": "Average number of three-pointers made per game."
+        },
+        "threePointersAttemptedPerGame": {
+          "type": "string",
+          "description": "Average number of three-pointers attempted per game."
+        },
+        "freeThrowsMade": {
+          "type": "string",
+          "description": "Shots made that were worth one point each."
+        },
+        "freeThrowsAttempted": {
+          "type": "string",
+          "description": "One-point shots that were attempted."
+        },
+        "freeThrowsPercentage": {
+          "type": "string",
+          "description": "Free throws made versus attempted."
+        },
+        "freeThrowsPerGame": {
+          "type": "string",
+          "description": "Average number of free throws made per game."
+        },
+        "freeThrowsAttemptedPerGame": {
+          "type": "string",
+          "description": "Average number of free throws attempted per game."
+        },
+        "pointsScoredTotal": {
+          "type": "string",
+          "description": "Total number of points scored, over."
+        },
+        "pointsScoredPerGame": {
+          "type": "string",
+          "description": "Average number of points scored in games played."
+        },
+        "pointsScoredPerGameHighest": {
+          "type": "string",
+          "description": "Highest number of points scored in one game played."
+        },
+        "pointsScoredPerShot": {
+          "type": "string",
+          "description": "Calculated by dividing points-scored-total by field-goals-attempted."
+        },
+        "assistsTotal": {
+          "type": "string",
+          "description": "Total number of assists."
+        },
+        "assistsPerGame": {
+          "type": "string",
+          "description": "Total number of assists per games played."
+        },
+        "turnoversTotal": {
+          "type": "string",
+          "description": "Total number of turnovers."
+        },
+        "turnoversPerGame": {
+          "type": "string",
+          "description": "Average number of turnovers per game."
+        },
+        "teamTurnoversTotal": {
+          "type": "string",
+          "description": "Total number of team turnovers."
+        },
+        "teamTurnoversPerGame": {
+          "type": "string",
+          "description": "Average number of team turnovers per game."
+        },
+        "pointsScoredOffTurnovers": {
+          "type": "string",
+          "description": "Total number of points scored off turnovers."
+        },
+        "pointsScoredInPaint": {
+          "type": "string",
+          "description": "Total number of points scored from within the painted area surrounding the basket."
+        },
+        "pointsScoredOnSecondChance": {
+          "type": "string",
+          "description": "Total number of points scored after fielding an offensive rebound."
+        },
+        "pointsScoredOnFastBreak": {
+          "type": "string",
+          "description": "Total number of points scored off a fast break."
+        }
+      }
+    },
+    "basketballStatsRebounding": {
+      "description": "Statistics for a team or player revolving around rebounds. | Includes rebounds credited to particular players, and credited to the entire team.",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+        }
+      ],
+      "properties": {
+        "reboundsTotal": {
+          "type": "string",
+          "description": "The sum of all rebounds that were credited to particular players."
+        },
+        "reboundsTotalPercentage": {
+          "type": "string",
+          "description": "The percentage of rebounds total compared to total number of attempts."
+        },
+        "reboundsDefensive": {
+          "type": "string",
+          "description": "The sum of all defensive rebounds credited to particular players. A defensive rebound occurs when the team is in defence but gains possession through a rebound."
+        },
+        "reboundsOpponentDefensive": {
+          "type": "string",
+          "description": "The total defensive rebounds by the opposing team or player."
+        },
+        "reboundsDefensivePercentage": {
+          "type": "string",
+          "description": "The percentage of defensive rebounds."
+        },
+        "reboundsOffensive": {
+          "type": "string",
+          "description": "The sum of all offensive rebounds credited to particular player. An offensive rebound is when the team keep possession of the ball through a rebound."
+        },
+        "reboundsOffensivePercentage": {
+          "type": "string",
+          "description": "The percentage of offensive rebounds."
+        },
+        "reboundsOpponentOffensive": {
+          "type": "string",
+          "description": "The total offensive rebounds by the opposing team or player."
+        },
+        "teamReboundsTotal": {
+          "type": "string",
+          "description": "The number of rebounds that did not credited to individual players, but were instead credited to the team as a whole."
+        },
+        "teamReboundsTotalPercentage": {
+          "type": "string",
+          "description": "Percentage of team rebounds."
+        },
+        "teamReboundsDefensive": {
+          "type": "string",
+          "description": "The sum of all defensive rebounds credited to the team as a whole."
+        },
+        "teamReboundsDefensivePercentage": {
+          "type": "string",
+          "description": "The percentage of defensive rebounds credited to the team."
+        },
+        "teamReboundsOffensive": {
+          "type": "string",
+          "description": "The sum of all offensive rebounds credited to the team as a whol."
+        },
+        "teamReboundsOffensivePercentage": {
+          "type": "string",
+          "description": "The percentage of offensive rebounds credited to the team."
+        },
+        "teamReboundsOpponentDefensive": {
+          "type": "string",
+          "description": "The total defensive team rebounds by the opposing team or player."
+        },
+        "teamReboundsOpponentOffensive": {
+          "type": "string",
+          "description": "The total offensive team rebounds by the opposing team or player."
+        },
+        "reboundsPerGame": {
+          "type": "string",
+          "description": "The average number of personal rebounds per game."
+        },
+        "teamReboundsPerGame": {
+          "type": "string",
+          "description": "The average number of team rebounds per game."
+        },
+        "reboundsOffensivePerGame": {
+          "type": "string",
+          "description": "The average number of offensive personal rebounds per game."
+        },
+        "reboundsDefensivePerGame": {
+          "type": "string",
+          "description": "The average numer of defensive personal rebounds per game."
+        },
+        "reboundsDifferential": {
+          "type": "string",
+          "description": "The differential between the total number of rebounds from this team compared to the opposing team."
+        },
+        "reboundsOpponentTotal": {
+          "type": "string",
+          "description": "The total number of rebounds (ofensive and defensive) by the opposing team or player."
+        },
+        "teamReboundsOpponentTotal": {
+          "type": "string",
+          "description": "The total number of rebounds (ofensive and defensive) by the opponent which are credited to the team."
+        }
+      }
+    },
+    "basketballStatsDefensive": {
+      "description": "Statistics for a team or player while the other team was in possession of the ball. | Includes information on steals and blocks.",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+        }
+      ],
+      "properties": {
+        "stealsTotal": {
+          "type": "string",
+          "description": "Total number of steals."
+        },
+        "stealsPerGame": {
+          "type": "string",
+          "description": "Average number of steals per game."
+        },
+        "stealsOpponent": {
+          "type": "string",
+          "description": "Total number of steals-against by opponent."
+        },
+        "stealsDifferential": {
+          "type": "string",
+          "description": "The number of steals made by this team compared to steals made by the other team."
+        },
+        "blocksTotal": {
+          "type": "string",
+          "description": "Total number of blocks."
+        },
+        "blocksPerGame": {
+          "type": "string",
+          "description": "Average number of blocks per game."
+        },
+        "blocksOpponent": {
+          "type": "string",
+          "description": "Total number of blocks-against by opponent."
+        },
+        "blocksDifferential": {
+          "type": "string",
+          "description": "Total number of blocks made by this team compared to blocks made by the other team."
+        },
+        "pointsScoredAgainstPerGame": {
+          "type": "string",
+          "description": "Average of points scored against per game."
+        },
+        "pointsScoredAgainstPerGameHighest": {
+          "type": "string",
+          "description": "Highest number of points scored against in one game played."
+        },
+        "fieldGoalsAgainstPerGame": {
+          "type": "string",
+          "description": "The average number of field goals scored agains per game."
+        },
+        "fieldGoalsAgainstPercentage": {
+          "type": "string",
+          "description": "The percentage of field goals scored against."
+        },
+        "chargesTaken": {
+          "type": "string",
+          "description": "Total number of charges taken. A charge is when the referee toss the ball and one player of each team try to give their team possession of the ball."
+        }
+      }
+    }
+  }
+}

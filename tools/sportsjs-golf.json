@@ -1,0 +1,441 @@
+{
+  "id": "./sportsjs-golf.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsJS Soccer schema contains properties common to Golf.",
+  "definitions": {
+    "golfTournamentMetadata": {
+      "description": "Holds metadata about a golf tournament. | Currently only holds the rank of the team. ???",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+        }
+      ],
+      "properties": {}
+    },
+    "golfTournamentDivisionMetadata": {
+      "description": "Metadata about a particular division within a golf tournament. | Includes information about the course as a whole.",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+        }
+      ],
+      "properties": {
+        "courseYardage": {
+          "type": "string",
+          "description": "How many yards the course is, measured from tees to holes."
+        },
+        "coursePar": {
+          "type": "string",
+          "description": "The total par value of all holes."
+        }
+      }
+    },
+    "golfEventMetadata": {
+      "description": "Holds event metadata specific to golf. | Includes data about the course on which the event is held.",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "#/definitions/eventStateGolf"
+        }
+      ],
+      "properties": {
+        "courseYardage": {
+          "type": "string",
+          "description": "How long the total course is, in yards."
+        },
+        "coursePar": {
+          "type": "string",
+          "description": "What the par value is for the entire 18 holes of the course."
+        },
+        "courseRating": {
+          "type": "string",
+          "description": "A Course Rating is a mark of the USGA representing a number which describes the difficulty of a golf course from a particular set of tees for a scratch (zero handicap) player. Course Ratings are established by an evaluation of the course by members of a committee, usually from your regional golf association. Course Ratings are numbers like 68.5, 71.2, etc. In some golf jurisdictions, course ratings might be called something else, and may be expressed to a tenth or as whole numbers."
+        },
+        "slopeRating": {
+          "type": "string",
+          "description": "A Slope Rating is a mark of the USGA representing an integer number which describes the difficulty of a golf course from a particular set of tees for a bogey (average) golfer. Slope Ratings vary from 55 (very easy) to 155 (very difficult). The Slope Rating of a course which has not officially been rated is 113, the Slope Rating of a course of ''average'' difficulty."
+        }
+      }
+    },
+    "golfTeamMetadata": {
+      "description": "Holds metadata about a team (foursome perhaps) playing in the match. | Currently only holds the rank of the team.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseGolfMetadata"
+        }
+      ],
+      "properties": {}
+    },
+    "golfPlayerMetadata": {
+      "description": "Holds metadata about a golf player. | Currently only holds the rank of the player.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseGolfMetadata"
+        }
+      ],
+      "properties": {}
+    },
+    "baseGolfMetadata": {
+      "description": "Holds metadata about a golf player. | Currently only holds the rank of the player.",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+        }
+      ],
+      "properties": {
+        "rank": {
+          "type": "string",
+          "description": "How this player ranks among the other competing players."
+        }
+      }
+    },
+    "golfPlayerStats": {
+      "description": "Holds statistics particular to the player. | Includes performance statistics during the timespan described in date-coverage-scope attributes.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseGolfStats"
+        }
+      ],
+      "properties": {
+        "handicap": {
+          "type": "string",
+          "description": "The handicap-value of this player. This will normally not be used in professional tournaments."
+        }
+      }
+    },
+    "golfStats": {
+      "description": "",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+        }
+      ],
+      "properties": {
+        "rounds": {
+          "type": "string",
+          "description": "How many rounds the player or team has completed in this particular tournament."
+        },
+        "average": {
+          "type": "string",
+          "description": "Average score of the player or team. Number of shots devided by number of holes??"
+        },
+        "distanceLongest": {
+          "type": "string",
+          "description": "The longest distance the player shot."
+        },
+        "distanceRank": {
+          "type": "string",
+          "description": "The rank in the round or tournament for the player when comparing the longest distance shot."
+        },
+        "drives": {
+          "type": "string",
+          "description": "The number of drives made by the player."
+        },
+        "totalRounds": {
+          "type": "string",
+          "description": "Total number of rounds played during the current tournament."
+        },
+        "totalStrokes": {
+          "type": "string",
+          "description": "Total number of strokes (or swings) (or shots) made."
+        },
+        "totalHoles": {
+          "type": "string",
+          "description": "Total number of holes played."
+        },
+        "totalPutts": {
+          "type": "string",
+          "description": "Total number of putts attempted."
+        },
+        "totalPoints": {
+          "type": "string",
+          "description": "Total score of the player. Depending on the system used in the tournament the score could be something other than the actual number of strokes."
+        },
+        "totalDriving": {
+          "type": "string",
+          "description": "Total driving distance."
+        },
+        "totalParOrLess": {
+          "type": "string",
+          "description": "Total number of holes played by the player at par or less than par."
+        },
+        "birdies": {
+          "type": "string",
+          "description": "Number of birdies."
+        },
+        "birdiesRank": {
+          "type": "string",
+          "description": "How the player ranks in the round or tournament regarding birdies."
+        },
+        "eagles": {
+          "type": "string",
+          "description": "Number of eagles."
+        },
+        "eaglesRank": {
+          "type": "string",
+          "description": "How the player ranks in the round or tournament regarding eagles."
+        },
+        "saves": {
+          "type": "string",
+          "description": "Number of saves when the ball landed in a sand bunker."
+        },
+        "savesRank": {
+          "type": "string",
+          "description": "How the player ranks in the round or tournament regarding saves from the bunker."
+        },
+        "bunkers": {
+          "type": "string",
+          "description": "Number of bunker shots the player took."
+        },
+        "eaglePerHolesFrequency": {
+          "type": "string",
+          "description": "Frequency of hitting eagles."
+        },
+        "greensHit": {
+          "type": "string",
+          "description": "This is a very special golf term. To reach a green in regulation (GIR) the player must place the ball on the green with two strokes less than the par of the course. The attribute holds the number of times the player or team has achieved this in the timeframe the stats cover."
+        },
+        "greensHitRank": {
+          "type": "string",
+          "description": "How the player ranks in the tournament or round regarding greens hit in regulation."
+        },
+        "greensInRegulationMissed": {
+          "type": "string",
+          "description": "Number of greens missed during regulation play."
+        },
+        "greensInRegulationPutting": {
+          "type": "string",
+          "description": "The average number of puts needed to finish holes after hitting the green in regulation (GIR)."
+        },
+        "greensInRegulationRank": {
+          "type": "string",
+          "description": "Rank of player in terms of the greens-in-regulation putting."
+        },
+        "fairwaysHit": {
+          "type": "string",
+          "description": "Number of fairways hit."
+        },
+        "fairwaysPossible": {
+          "type": "string",
+          "description": "Maximum number of fairways it was possible to hit."
+        },
+        "puttsPerRound": {
+          "type": "string",
+          "description": "The average number of putts needed per complete round."
+        },
+        "puttsPerRoundRank": {
+          "type": "string",
+          "description": "How the player ranks when comparing the average putts-per-round."
+        },
+        "holesUnderPar": {
+          "type": "string",
+          "description": "Number of holes finished under par."
+        },
+        "scoringAdjustment": {
+          "type": "string",
+          "description": "Scoring adjustment."
+        },
+        "finishesTop10": {
+          "type": "string",
+          "description": "Number of finishes the player had in the top ten."
+        },
+        "finishesFirstPlace": {
+          "type": "string",
+          "description": "Number of first-place finishes the player had."
+        },
+        "finishesSecondPlace": {
+          "type": "string",
+          "description": "Number of second-place finishes the player had."
+        },
+        "performancePar3": {
+          "type": "string",
+          "description": "The performance of the player on par-3 holes."
+        },
+        "performancePar4": {
+          "type": "string",
+          "description": "The performance of the player on par-4 holes."
+        },
+        "performancePar5": {
+          "type": "string",
+          "description": "The performance of the player on par-5 holes."
+        },
+        "money": {
+          "type": "string",
+          "description": "Amount of money earned by the player."
+        },
+        "moneyValue": {
+          "type": "string",
+          "description": "Money value."
+        },
+        "points": {
+          "type": "string",
+          "description": "Number of points."
+        },
+        "pointsLost": {
+          "type": "string",
+          "description": "Number of points lost."
+        },
+        "pointsGained": {
+          "type": "string",
+          "description": "Number of points gained."
+        },
+        "driveAccuracy": {
+          "type": "string",
+          "description": "A percentage of how good the drives from the player or team has been in the given frame the stats cover."
+        },
+        "driveAccuracyRank": {
+          "type": "string",
+          "description": "How the player ranks when comparing drive-accuracy."
+        },
+        "roundsUnderPar": {
+          "type": "string",
+          "description": "The number of rounds the player has completed a course under par."
+        },
+        "bogeys": {
+          "type": "string",
+          "description": "The number of holes finished one above par for that hole."
+        },
+        "bogeysRank": {
+          "type": "string",
+          "description": "How the player ranks when comparing bogeys."
+        },
+        "doubleBogeys": {
+          "type": "string",
+          "description": "The number of holes finished two above par for that hole."
+        },
+        "doubleBogeysRank": {
+          "type": "string",
+          "description": "How the player ranks when comparing double-bogeys."
+        },
+        "finishOther": {
+          "type": "string",
+          "description": "The number of holes finished with either more than two under par or two over par."
+        },
+        "finishOtherRank": {
+          "type": "string",
+          "description": "How the player ranks when comparing finish-other."
+        },
+        "pars": {
+          "type": "string",
+          "description": "The number of holes finished on par."
+        },
+        "parsRank": {
+          "type": "string",
+          "description": "How the player ranks when comparing pars."
+        }
+      }
+    },
+    "golfStatsRound": {
+      "description": "Statistics pertinent to a round within a tournament. | Allows for hole-by-hole breakdowns.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseGolfStats"
+        }
+      ],
+      "properties": {
+        "statsGolf": {
+          "$ref": "#/definitions/golfStats",
+          "description": ""
+        },
+        "statsGolfHole": {
+          "$ref": "#/definitions/golfStatsHole",
+          "description": ""
+        },
+        "roundNumber": {
+          "type": "string",
+          "description": "The number of the round whose stats are being reported."
+        }
+      }
+    },
+    "golfStatsHole": {
+      "description": "Statistics pertinent to a particular hole within a golf round. | Includes what score was recorded at that hole, and the par value of the hole.",
+      "allOf": [
+        {
+          "$ref": "#/definitions/baseGolfStats"
+        }
+      ],
+      "properties": {
+        "holeType": {
+          "type": "string",
+          "enum": [
+            "regular",
+            "playoff",
+            "sudden-death"
+          ],
+          "description": "The type of hole played."
+        },
+        "hole": {
+          "type": "string",
+          "description": "A number, generally from 1 to 18. Alternately, the keyword finished."
+        }
+      }
+    },
+    "baseGolfStats": {
+      "description": "",
+      "allOf": [
+        {
+          "$ref": "./sportsjs-core.json#/definitions/commonAttributes"
+        },
+        {
+          "$ref": "./sportsjs-core.json#/definitions/coverageAttributes"
+        }
+      ],
+      "properties": {
+        "statsGolf": {
+          "$ref": "#/definitions/golfStats",
+          "description": ""
+        },
+        "statsGolfRound": {
+          "$ref": "#/definitions/golfStatsRound",
+          "description": ""
+        },
+        "par": {
+          "type": "string",
+          "description": "The par-value for the hole or the round. Number of strokes needed to reach par."
+        },
+        "strokes": {
+          "type": "string",
+          "description": "Total number of strokes in this round or hole."
+        },
+        "score": {
+          "type": "string",
+          "description": "Total score this round or hole. The score can be the same as strokes but it can also be some other type of scoring system used in golf."
+        },
+        "scoreAgainstPar": {
+          "type": "string",
+          "description": "The score compared to par on the hole or round. So a score equal par would put a 0 here and a score under par a negative value."
+        }
+      }
+    },
+    "eventStateGolf": {
+      "description": "",
+      "properties": {
+        "round": {
+          "type": "string",
+          "description": "The round in the tournament."
+        },
+        "hole": {
+          "type": "string",
+          "description": "Generally an integer, 1 through 18. Could be 19, for a playoff hole. But playoff holes are not numberd like that. They are both recorded as what ordinal number of playoff they are and on that numbered hole on the course thay are played on."
+        },
+        "strokes": {
+          "type": "string",
+          "description": "Total number of strokes in this round."
+        },
+        "score": {
+          "type": "string",
+          "description": "Total score this round. The score can be the same as strokes but it can also be some other type of scoring system used in golf."
+        },
+        "scoreAgainstPar": {
+          "type": "string",
+          "description": "The score compared to par on the hole. So a score equal par would put a 0 here and a score under par a negative value."
+        }
+      }
+    }
+  }
+}
