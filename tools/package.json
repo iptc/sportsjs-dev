@@ -1,0 +1,12 @@
+{
+  "name": "sportsjs-validator",
+  "version": "1.0.0",
+  "description": "Test suite for SportsJS Schemas.",
+  "main": "test.js",
+  "dependencies": {
+    "fs": "0.0.2",
+    "path": "0.12.7",
+    "ajv": "4.10.0",
+    "minimist": "1.2.0"
+  }
+}

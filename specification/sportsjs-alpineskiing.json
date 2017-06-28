@@ -1,0 +1,6 @@
+{
+  "id": "http://www.iptc.org/std/sportsjs/sportsjs-alpine-skiing.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsJS Soccer schema contains properties common to Alpine Skiing.",
+  "definitions": {}
+}
