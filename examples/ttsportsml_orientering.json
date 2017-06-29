@@ -1,0 +1,255 @@
+{"sportsContent": {
+    "sportsMetadata": {
+        "docId": "20170528:TT:0013:0",
+        "sportsContentCodes": {"sportsContentCode": [
+            {
+                "codeType": "spct:sport",
+                "codeKey": "medtop:20001011",
+                "codeName": "orientering"
+            },
+            {
+                "codeType": "spct:competition",
+                "codeName": "Världscupen"
+            }
+        ]},
+        "sportsProperty": {
+            "formalName": "location",
+            "value": "ÅBO, Finland"
+        },
+        "catalogRef": [
+            {"href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"},
+            {"href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"},
+            {"href": "http://tt.se/spec/catalog/catalog.tt-g2.1_0.xml"}
+        ]
+    },
+    "sportsEvent": [
+        {
+            "eventMetadata": {
+                "distance": "15,3",
+                "sportsContentCodes": {"sportsContentCode": {
+                    "codeType": "subj:qual",
+                    "sportsContentQualifier": {
+                        "gender": "male",
+                        "participantCount": "spparticipantcount:individual"
+                    }
+                }},
+                "name": {"full": "herrar, långdistans (15,3 km)"},
+                "site": {"siteMetadata": {
+                    "nationality": "Finland",
+                    "name": {"full": "Åbo"}
+                }}
+            },
+            "player": [
+                {
+                    "playerMetadata": {
+                        "nationality": "Norge",
+                        "name": {"full": "Magne Dæhli"}
+                    },
+                    "playerStats": {
+                        "score": "1.30.03",
+                        "rank": {"value": 1}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "William Lind"}
+                    },
+                    "playerStats": {
+                        "score": "1.30.05",
+                        "rank": {"value": 2}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Emil Svensk"}
+                    },
+                    "playerStats": {
+                        "score": "1.30.08",
+                        "rank": {"value": 3}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Johan Runesson"}
+                    },
+                    "playerStats": {
+                        "score": "1.30.37",
+                        "rank": {"value": 6}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Martin Regborn"}
+                    },
+                    "playerStats": {
+                        "score": "1.30.47",
+                        "rank": {"value": 8}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Albin Ridefelt"}
+                    },
+                    "playerStats": {
+                        "score": "1.32.59",
+                        "rank": {"value": 9}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Oskar Sjöberg"}
+                    },
+                    "playerStats": {
+                        "score": "1.33.00",
+                        "rank": {"value": 10}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Gustav Bergman"}
+                    },
+                    "playerStats": {
+                        "score": "1.36.23",
+                        "rank": {"value": 15}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Jonas Leandersson"}
+                    },
+                    "playerStats": {
+                        "score": "1.38.08",
+                        "rank": {"value": 22}
+                    }
+                }
+            ]
+        },
+        {
+            "eventMetadata": {
+                "distance": "11,1",
+                "sportsContentCodes": {"sportsContentCode": {
+                    "codeType": "subj:qual",
+                    "sportsContentQualifier": {
+                        "gender": "female",
+                        "participantCount": "spparticipantcount:individual"
+                    }
+                }},
+                "name": {"full": "Damer, långdistans (11,1 km)"},
+                "site": {"siteMetadata": {
+                    "nationality": "Finland",
+                    "name": {"full": "Åbo"}
+                }}
+            },
+            "player": [
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Tove Alexandersson"}
+                    },
+                    "playerStats": {
+                        "score": "1.17.27",
+                        "rank": {"value": 1}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Helena Jansson"}
+                    },
+                    "playerStats": {
+                        "score": "1.17.54",
+                        "rank": {"value": 2}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Danmark",
+                        "name": {"full": "Maja Alm"}
+                    },
+                    "playerStats": {
+                        "score": "1.17.58",
+                        "rank": {"value": 3}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Emma Johansson"}
+                    },
+                    "playerStats": {
+                        "score": "1.22.45",
+                        "rank": {"value": 6}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Alva Olsson"}
+                    },
+                    "playerStats": {
+                        "score": "1.23.51",
+                        "rank": {"value": 9}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Karolin Ohlsson"}
+                    },
+                    "playerStats": {
+                        "score": "1.24.32",
+                        "rank": {"value": 15}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Lina Strand"}
+                    },
+                    "playerStats": {
+                        "score": "1.24.52",
+                        "rank": {"value": 18}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Lilian Forsgren"}
+                    },
+                    "playerStats": {
+                        "score": "1.31.06",
+                        "rank": {"value": 22}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Josefin Tjernlund"}
+                    },
+                    "playerStats": {
+                        "score": "1.34.13",
+                        "rank": {"value": 27}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Sverige",
+                        "name": {"full": "Sara Hagström"}
+                    },
+                    "playerStats": {
+                        "score": "1.36.46",
+                        "rank": {"value": 33}
+                    }
+                }
+            ]
+        }
+    ]
+}}

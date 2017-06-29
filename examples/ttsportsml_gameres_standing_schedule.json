@@ -1,0 +1,650 @@
+{"sportsContent": {
+    "sportsMetadata": {
+        "competition": "tt:5841",
+        "docId": "20170529:TT:0035:0",
+        "sportsContentCodes": {"sportsContentCode": [
+            {
+                "codeType": "spct:sport",
+                "codeKey": "medtop:20001065",
+                "codeName": "Fotboll"
+            },
+            {
+                "codeType": "spct:competition",
+                "codeKey": "tt:5841",
+                "codeName": "Allsvenskan"
+            },
+            {
+                "codeType": "spct:season",
+                "codeKey": "season:55",
+                "codeName": 2017
+            }
+        ]},
+        "catalogRef": [
+            {"href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"},
+            {"href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"},
+            {"href": "http://tt.se/spec/catalog/catalog.tt-g2.1_0.xml"}
+        ]
+    },
+    "sportsEvent": [
+        {
+            "eventMetadata": {
+                "key": "tt:FF3491032",
+                "eventStatus": "speventstatus:post-event",
+                "eventOutcomeType": "speventoutcometype:regular",
+                "startDateTime": "2017-05-29",
+                "competition": "tt:5841",
+                "roundNumber": 11
+            },
+            "team": [
+                {
+                    "id": "et12408",
+                    "teamMetadata": {
+                        "alignment": "home",
+                        "key": "tt:12408",
+                        "name": {"full": "Örebro"}
+                    },
+                    "teamStats": {
+                        "score": 2,
+                        "scoreOpposing": 1,
+                        "eventStandingPoints": 3
+                    }
+                },
+                {
+                    "id": "et12753",
+                    "teamMetadata": {
+                        "alignment": "away",
+                        "key": "tt:12753",
+                        "name": {"full": "Sirius"}
+                    },
+                    "teamStats": {
+                        "score": 1,
+                        "scoreOpposing": 2,
+                        "eventStandingPoints": 0
+                    }
+                }
+            ]
+        },
+        {
+            "eventMetadata": {
+                "key": "tt:FF3491031",
+                "eventStatus": "speventstatus:post-event",
+                "eventOutcomeType": "speventoutcometype:regular",
+                "startDateTime": "2017-05-29",
+                "competition": "tt:5841",
+                "roundNumber": 11
+            },
+            "team": [
+                {
+                    "id": "et12414",
+                    "teamMetadata": {
+                        "alignment": "home",
+                        "key": "tt:12414",
+                        "name": {"full": "AIK"}
+                    },
+                    "teamStats": {
+                        "score": 0,
+                        "scoreOpposing": 1,
+                        "eventStandingPoints": 0
+                    }
+                },
+                {
+                    "id": "et12403",
+                    "teamMetadata": {
+                        "alignment": "away",
+                        "key": "tt:12403",
+                        "name": {"full": "Malmö FF"}
+                    },
+                    "teamStats": {
+                        "score": 1,
+                        "scoreOpposing": 0,
+                        "eventStandingPoints": 3
+                    }
+                }
+            ]
+        },
+        {
+            "eventMetadata": {
+                "key": "tt:FF3491029",
+                "eventStatus": "speventstatus:post-event",
+                "eventOutcomeType": "speventoutcometype:regular",
+                "startDateTime": "2017-05-29",
+                "competition": "tt:5841",
+                "roundNumber": 11
+            },
+            "team": [
+                {
+                    "id": "et12680",
+                    "teamMetadata": {
+                        "alignment": "home",
+                        "key": "tt:12680",
+                        "name": {"full": "Häcken"}
+                    },
+                    "teamStats": {
+                        "score": 0,
+                        "scoreOpposing": 1,
+                        "eventStandingPoints": 0
+                    }
+                },
+                {
+                    "id": "et12701",
+                    "teamMetadata": {
+                        "alignment": "away",
+                        "key": "tt:12701",
+                        "name": {"full": "Östersunds FK"}
+                    },
+                    "teamStats": {
+                        "score": 1,
+                        "scoreOpposing": 0,
+                        "eventStandingPoints": 3
+                    }
+                }
+            ]
+        }
+    ],
+    "standing": {
+        "standingMetadata": {"competition": "tt:5841"},
+        "team": [
+            {
+                "teamMetadata": {
+                    "key": "tt:12403",
+                    "name": {"full": "Malmö FF"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 11,
+                        "wins": 7,
+                        "ties": 3,
+                        "losses": 1,
+                        "pointsScoredFor": 18,
+                        "pointsScoredAgainst": 9,
+                        "standingPoints": 24
+                    },
+                    "award": {"class": "line_below"},
+                    "rank": {"value": 1}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12413",
+                    "name": {"full": "IFK Norrköping"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 11,
+                        "wins": 7,
+                        "ties": 2,
+                        "losses": 2,
+                        "pointsScoredFor": 19,
+                        "pointsScoredAgainst": 12,
+                        "standingPoints": 23
+                    },
+                    "award": {"class": "line_below"},
+                    "rank": {"value": 2}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12407",
+                    "name": {"full": "Djurgården"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 11,
+                        "wins": 5,
+                        "ties": 3,
+                        "losses": 3,
+                        "pointsScoredFor": 19,
+                        "pointsScoredAgainst": 11,
+                        "standingPoints": 18
+                    },
+                    "award": {"class": "line_below"},
+                    "rank": {"value": 3}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12701",
+                    "name": {"full": "Östersunds FK"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 11,
+                        "wins": 5,
+                        "ties": 3,
+                        "losses": 3,
+                        "pointsScoredFor": 16,
+                        "pointsScoredAgainst": 13,
+                        "standingPoints": 18
+                    },
+                    "rank": {"value": 4}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12680",
+                    "name": {"full": "Häcken"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 11,
+                        "wins": 4,
+                        "ties": 5,
+                        "losses": 2,
+                        "pointsScoredFor": 12,
+                        "pointsScoredAgainst": 7,
+                        "standingPoints": 17
+                    },
+                    "rank": {"value": 5}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12414",
+                    "name": {"full": "AIK"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 10,
+                        "wins": 5,
+                        "ties": 2,
+                        "losses": 3,
+                        "pointsScoredFor": 8,
+                        "pointsScoredAgainst": 6,
+                        "standingPoints": 17
+                    },
+                    "rank": {"value": 6}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12753",
+                    "name": {"full": "Sirius"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 11,
+                        "wins": 4,
+                        "ties": 4,
+                        "losses": 3,
+                        "pointsScoredFor": 16,
+                        "pointsScoredAgainst": 10,
+                        "standingPoints": 16
+                    },
+                    "rank": {"value": 7}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12409",
+                    "name": {"full": "Hammarby"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 11,
+                        "wins": 3,
+                        "ties": 6,
+                        "losses": 2,
+                        "pointsScoredFor": 16,
+                        "pointsScoredAgainst": 12,
+                        "standingPoints": 15
+                    },
+                    "rank": {"value": 8}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12406",
+                    "name": {"full": "Elfsborg"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 11,
+                        "wins": 4,
+                        "ties": 3,
+                        "losses": 4,
+                        "pointsScoredFor": 22,
+                        "pointsScoredAgainst": 19,
+                        "standingPoints": 15
+                    },
+                    "rank": {"value": 9}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12401",
+                    "name": {"full": "IFK Göteborg"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 10,
+                        "wins": 3,
+                        "ties": 5,
+                        "losses": 2,
+                        "pointsScoredFor": 14,
+                        "pointsScoredAgainst": 10,
+                        "standingPoints": 14
+                    },
+                    "rank": {"value": 10}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12729",
+                    "name": {"full": "Jönköpings S"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 11,
+                        "wins": 3,
+                        "ties": 5,
+                        "losses": 3,
+                        "pointsScoredFor": 13,
+                        "pointsScoredAgainst": 16,
+                        "standingPoints": 14
+                    },
+                    "rank": {"value": 11}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12408",
+                    "name": {"full": "Örebro"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 11,
+                        "wins": 3,
+                        "ties": 3,
+                        "losses": 5,
+                        "pointsScoredFor": 9,
+                        "pointsScoredAgainst": 17,
+                        "standingPoints": 12
+                    },
+                    "rank": {"value": 12}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12404",
+                    "name": {"full": "Gif Sundsvall"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 11,
+                        "wins": 2,
+                        "ties": 5,
+                        "losses": 4,
+                        "pointsScoredFor": 7,
+                        "pointsScoredAgainst": 13,
+                        "standingPoints": 11
+                    },
+                    "rank": {"value": 13}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12402",
+                    "name": {"full": "Kalmar FF"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 11,
+                        "wins": 2,
+                        "ties": 2,
+                        "losses": 7,
+                        "pointsScoredFor": 9,
+                        "pointsScoredAgainst": 20,
+                        "standingPoints": 8
+                    },
+                    "award": {"class": "line_above"},
+                    "rank": {"value": 14}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12412",
+                    "name": {"full": "Halmstad"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 11,
+                        "wins": 1,
+                        "ties": 3,
+                        "losses": 7,
+                        "pointsScoredFor": 7,
+                        "pointsScoredAgainst": 16,
+                        "standingPoints": 6
+                    },
+                    "award": {"class": "line_above"},
+                    "rank": {"value": 15}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:18803",
+                    "name": {"full": "AFC Eskilstuna"}
+                },
+                "teamStats": {
+                    "outcomeTotals": {
+                        "alignmentScope": "events-all",
+                        "competition": "tt:5841",
+                        "eventsPlayed": 11,
+                        "wins": 0,
+                        "ties": 4,
+                        "losses": 7,
+                        "pointsScoredFor": 8,
+                        "pointsScoredAgainst": 22,
+                        "standingPoints": 4
+                    },
+                    "rank": {"value": 16}
+                }
+            }
+        ]
+    },
+    "schedule": {
+        "scheduleMetadata": {"competition": "tt:5841"},
+        "sportsEvent": [
+            {
+                "eventMetadata": {
+                    "startDateTime": "2017-06-01T19:00:00",
+                    "eventStatus": "speventstatus:pre-event",
+                    "competition": "tt:5841"
+                },
+                "team": [
+                    {"teamMetadata": {
+                        "alignment": "home",
+                        "key": "tt:12413",
+                        "name": {"full": "IFK Norrköping"}
+                    }},
+                    {"teamMetadata": {
+                        "alignment": "away",
+                        "key": "tt:12414",
+                        "name": {"full": "AIK"}
+                    }}
+                ]
+            },
+            {
+                "eventMetadata": {
+                    "startDateTime": "2017-06-02T19:00:00",
+                    "eventStatus": "speventstatus:pre-event",
+                    "competition": "tt:5841"
+                },
+                "team": [
+                    {"teamMetadata": {
+                        "alignment": "home",
+                        "key": "tt:12406",
+                        "name": {"full": "Elfsborg"}
+                    }},
+                    {"teamMetadata": {
+                        "alignment": "away",
+                        "key": "tt:12680",
+                        "name": {"full": "Häcken"}
+                    }}
+                ]
+            },
+            {
+                "eventMetadata": {
+                    "startDateTime": "2017-06-03T16:00:00",
+                    "eventStatus": "speventstatus:pre-event",
+                    "competition": "tt:5841"
+                },
+                "team": [
+                    {"teamMetadata": {
+                        "alignment": "home",
+                        "key": "tt:12402",
+                        "name": {"full": "Kalmar FF"}
+                    }},
+                    {"teamMetadata": {
+                        "alignment": "away",
+                        "key": "tt:12408",
+                        "name": {"full": "Örebro"}
+                    }}
+                ]
+            },
+            {
+                "eventMetadata": {
+                    "startDateTime": "2017-06-03T16:00:00",
+                    "eventStatus": "speventstatus:pre-event",
+                    "competition": "tt:5841"
+                },
+                "team": [
+                    {"teamMetadata": {
+                        "alignment": "home",
+                        "key": "tt:12701",
+                        "name": {"full": "Östersunds FK"}
+                    }},
+                    {"teamMetadata": {
+                        "alignment": "away",
+                        "key": "tt:12404",
+                        "name": {"full": "Gif Sundsvall"}
+                    }}
+                ]
+            },
+            {
+                "eventMetadata": {
+                    "startDateTime": "2017-06-03T18:00:00",
+                    "eventStatus": "speventstatus:pre-event",
+                    "competition": "tt:5841"
+                },
+                "team": [
+                    {"teamMetadata": {
+                        "alignment": "home",
+                        "key": "tt:12729",
+                        "name": {"full": "Jönköpings S"}
+                    }},
+                    {"teamMetadata": {
+                        "alignment": "away",
+                        "key": "tt:12403",
+                        "name": {"full": "Malmö FF"}
+                    }}
+                ]
+            },
+            {
+                "eventMetadata": {
+                    "startDateTime": "2017-06-04T15:00:00",
+                    "eventStatus": "speventstatus:pre-event",
+                    "competition": "tt:5841"
+                },
+                "team": [
+                    {"teamMetadata": {
+                        "alignment": "home",
+                        "key": "tt:18803",
+                        "name": {"full": "AFC Eskilstuna"}
+                    }},
+                    {"teamMetadata": {
+                        "alignment": "away",
+                        "key": "tt:12414",
+                        "name": {"full": "AIK"}
+                    }}
+                ]
+            },
+            {
+                "eventMetadata": {
+                    "startDateTime": "2017-06-04T15:00:00",
+                    "eventStatus": "speventstatus:pre-event",
+                    "competition": "tt:5841"
+                },
+                "team": [
+                    {"teamMetadata": {
+                        "alignment": "home",
+                        "key": "tt:12409",
+                        "name": {"full": "Hammarby"}
+                    }},
+                    {"teamMetadata": {
+                        "alignment": "away",
+                        "key": "tt:12407",
+                        "name": {"full": "Djurgården"}
+                    }}
+                ]
+            },
+            {
+                "eventMetadata": {
+                    "startDateTime": "2017-06-04T17:30:00",
+                    "eventStatus": "speventstatus:pre-event",
+                    "competition": "tt:5841"
+                },
+                "team": [
+                    {"teamMetadata": {
+                        "alignment": "home",
+                        "key": "tt:12413",
+                        "name": {"full": "IFK Norrköping"}
+                    }},
+                    {"teamMetadata": {
+                        "alignment": "away",
+                        "key": "tt:12401",
+                        "name": {"full": "IFK Göteborg"}
+                    }}
+                ]
+            },
+            {
+                "eventMetadata": {
+                    "startDateTime": "2017-06-04T17:30:00",
+                    "eventStatus": "speventstatus:pre-event",
+                    "competition": "tt:5841"
+                },
+                "team": [
+                    {"teamMetadata": {
+                        "alignment": "home",
+                        "key": "tt:12753",
+                        "name": {"full": "Sirius"}
+                    }},
+                    {"teamMetadata": {
+                        "alignment": "away",
+                        "key": "tt:12412",
+                        "name": {"full": "Halmstad"}
+                    }}
+                ]
+            }
+        ]
+    }
+}}

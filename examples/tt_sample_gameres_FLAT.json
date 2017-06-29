@@ -1,0 +1,120 @@
+{"sportsContent": {
+    "sportsMetadata": {
+        "competition": "tt:8341",
+        "docId": "20170526:TT:0001:0",
+        "sportsContentCodes": {"sportsContentCode": [
+            {
+                "codeType": "spct:sport",
+                "codeKey": "medtop:20000965",
+                "codeName": "Ishockey"
+            },
+            {
+                "codeType": "spct:competition",
+                "codeKey": "tt:8341",
+                "codeName": "Stanley Cup"
+            },
+            {
+                "codeType": "spct:season",
+                "codeKey": "season:54",
+                "codeName": "2016-2017"
+            }
+        ]},
+        "catalogRef": [
+            {"href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"},
+            {"href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"},
+            {"href": "http://tt.se/spec/catalog/catalog.tt-g2.1_0.xml"}
+        ]
+    },
+    "sportsEvent": {
+        "eventMetadata": {
+            "key": "tt:130C2C5BCA",
+            "eventStatus": "speventstatus:post-event",
+            "eventOutcomeType": "speventoutcometype:regular",
+            "startDateTime": "2017-05-26",
+            "competition": "tt:8341",
+            "roundNumber": "",
+            "eventStatusNote": "semifinal 7 i bäst av 7",
+            "site": {
+                "siteMetadata": "",
+                "siteStats": {"attendance": "18 604."}
+            }
+        },
+        "team": [
+            {
+                "id": "et14834",
+                "teamMetadata": {
+                    "alignment": "home",
+                    "key": "tt:14834",
+                    "name": {"full": "Pittsburgh"}
+                },
+                "teamStats": {
+                    "score": 3,
+                    "scoreOpposing": 2,
+                    "eventStandingPoints": 1,
+                    "subScore": [
+                        {
+                            "periodValue": 1,
+                            "score": 0
+                        },
+                        {
+                            "periodValue": 2,
+                            "score": 1
+                        },
+                        {
+                            "periodValue": 3,
+                            "score": 1
+                        },
+                        {
+                            "periodValue": 4,
+                            "score": 0
+                        },
+                        {
+                            "periodValue": 5,
+                            "score": 1
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "et14824",
+                "teamMetadata": {
+                    "alignment": "away",
+                    "key": "tt:14824",
+                    "name": {"full": "Ottawa"}
+                },
+                "teamStats": {
+                    "score": 2,
+                    "scoreOpposing": 3,
+                    "eventStandingPoints": 1,
+                    "subScore": [
+                        {
+                            "periodValue": 1,
+                            "score": 0
+                        },
+                        {
+                            "periodValue": 2,
+                            "score": 1
+                        },
+                        {
+                            "periodValue": 3,
+                            "score": 1
+                        },
+                        {
+                            "periodValue": 4,
+                            "score": 0
+                        },
+                        {
+                            "periodValue": 5,
+                            "score": 0
+                        }
+                    ]
+                }
+            }
+        ],
+        "highlight": {"p": [
+            "",
+            "",
+            ""
+        ]}
+    }
+}}

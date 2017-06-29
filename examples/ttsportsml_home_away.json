@@ -1,0 +1,513 @@
+{"sportsContent": {
+    "sportsMetadata": {
+        "competition": "tt:16302",
+        "docId": "20170530:TT:0039:0",
+        "sportsContentCodes": {"sportsContentCode": [
+            {
+                "codeType": "spct:sport",
+                "codeKey": "medtop:20001065",
+                "codeName": "Fotboll"
+            },
+            {
+                "codeType": "spct:competition",
+                "codeKey": "tt:16302",
+                "codeName": "Division 1 Norrland, damer"
+            },
+            {
+                "codeType": "spct:season",
+                "codeKey": "season:55",
+                "codeName": 2017
+            }
+        ]},
+        "catalogRef": [
+            {"href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"},
+            {"href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"},
+            {"href": "http://tt.se/spec/catalog/catalog.tt-g2.1_0.xml"}
+        ]
+    },
+    "standing": {
+        "standingMetadata": {"competition": "tt:16302"},
+        "team": [
+            {
+                "teamMetadata": {
+                    "key": "tt:18667",
+                    "name": {"full": "Notviken"}
+                },
+                "teamStats": {
+                    "outcomeTotals": [
+                        {
+                            "alignmentScope": "events-all",
+                            "competition": "tt:16302",
+                            "eventsPlayed": 7,
+                            "wins": 6,
+                            "ties": 1,
+                            "losses": 0,
+                            "pointsScoredFor": 19,
+                            "pointsScoredAgainst": 4,
+                            "standingPoints": 19
+                        },
+                        {
+                            "alignmentScope": "events-home",
+                            "competition": "tt:16302",
+                            "wins": 3,
+                            "ties": 1,
+                            "losses": 0,
+                            "pointsScoredFor": 8,
+                            "pointsScoredAgainst": 2
+                        },
+                        {
+                            "alignmentScope": "events-away",
+                            "competition": "tt:16302",
+                            "wins": 3,
+                            "ties": 0,
+                            "losses": 0,
+                            "pointsScoredFor": 11,
+                            "pointsScoredAgainst": 2
+                        }
+                    ],
+                    "rank": {"value": 1}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:33603",
+                    "name": {"full": "Thorengruppen"}
+                },
+                "teamStats": {
+                    "outcomeTotals": [
+                        {
+                            "alignmentScope": "events-all",
+                            "competition": "tt:16302",
+                            "eventsPlayed": 7,
+                            "wins": 6,
+                            "ties": 0,
+                            "losses": 1,
+                            "pointsScoredFor": 22,
+                            "pointsScoredAgainst": 8,
+                            "standingPoints": 18
+                        },
+                        {
+                            "alignmentScope": "events-home",
+                            "competition": "tt:16302",
+                            "wins": 3,
+                            "ties": 0,
+                            "losses": 1,
+                            "pointsScoredFor": 12,
+                            "pointsScoredAgainst": 6
+                        },
+                        {
+                            "alignmentScope": "events-away",
+                            "competition": "tt:16302",
+                            "wins": 3,
+                            "ties": 0,
+                            "losses": 0,
+                            "pointsScoredFor": 10,
+                            "pointsScoredAgainst": 2
+                        }
+                    ],
+                    "rank": {"value": 2}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12952",
+                    "name": {"full": "Morön"}
+                },
+                "teamStats": {
+                    "outcomeTotals": [
+                        {
+                            "alignmentScope": "events-all",
+                            "competition": "tt:16302",
+                            "eventsPlayed": 7,
+                            "wins": 5,
+                            "ties": 1,
+                            "losses": 1,
+                            "pointsScoredFor": 24,
+                            "pointsScoredAgainst": 6,
+                            "standingPoints": 16
+                        },
+                        {
+                            "alignmentScope": "events-home",
+                            "competition": "tt:16302",
+                            "wins": 2,
+                            "ties": 0,
+                            "losses": 1,
+                            "pointsScoredFor": 11,
+                            "pointsScoredAgainst": 3
+                        },
+                        {
+                            "alignmentScope": "events-away",
+                            "competition": "tt:16302",
+                            "wins": 3,
+                            "ties": 1,
+                            "losses": 0,
+                            "pointsScoredFor": 13,
+                            "pointsScoredAgainst": 3
+                        }
+                    ],
+                    "rank": {"value": 3}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12914",
+                    "name": {"full": "Sunnanå"}
+                },
+                "teamStats": {
+                    "outcomeTotals": [
+                        {
+                            "alignmentScope": "events-all",
+                            "competition": "tt:16302",
+                            "eventsPlayed": 7,
+                            "wins": 4,
+                            "ties": 1,
+                            "losses": 2,
+                            "pointsScoredFor": 22,
+                            "pointsScoredAgainst": 12,
+                            "standingPoints": 13
+                        },
+                        {
+                            "alignmentScope": "events-home",
+                            "competition": "tt:16302",
+                            "wins": 3,
+                            "ties": 1,
+                            "losses": 0,
+                            "pointsScoredFor": 17,
+                            "pointsScoredAgainst": 6
+                        },
+                        {
+                            "alignmentScope": "events-away",
+                            "competition": "tt:16302",
+                            "wins": 1,
+                            "ties": 0,
+                            "losses": 2,
+                            "pointsScoredFor": 5,
+                            "pointsScoredAgainst": 6
+                        }
+                    ],
+                    "rank": {"value": 4}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12947",
+                    "name": {"full": "Umedalen"}
+                },
+                "teamStats": {
+                    "outcomeTotals": [
+                        {
+                            "alignmentScope": "events-all",
+                            "competition": "tt:16302",
+                            "eventsPlayed": 7,
+                            "wins": 4,
+                            "ties": 1,
+                            "losses": 2,
+                            "pointsScoredFor": 12,
+                            "pointsScoredAgainst": 9,
+                            "standingPoints": 13
+                        },
+                        {
+                            "alignmentScope": "events-home",
+                            "competition": "tt:16302",
+                            "wins": 2,
+                            "ties": 1,
+                            "losses": 0,
+                            "pointsScoredFor": 8,
+                            "pointsScoredAgainst": 4
+                        },
+                        {
+                            "alignmentScope": "events-away",
+                            "competition": "tt:16302",
+                            "wins": 2,
+                            "ties": 0,
+                            "losses": 2,
+                            "pointsScoredFor": 4,
+                            "pointsScoredAgainst": 5
+                        }
+                    ],
+                    "rank": {"value": 5}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:15425",
+                    "name": {"full": "Mariehem"}
+                },
+                "teamStats": {
+                    "outcomeTotals": [
+                        {
+                            "alignmentScope": "events-all",
+                            "competition": "tt:16302",
+                            "eventsPlayed": 7,
+                            "wins": 3,
+                            "ties": 1,
+                            "losses": 3,
+                            "pointsScoredFor": 7,
+                            "pointsScoredAgainst": 5,
+                            "standingPoints": 10
+                        },
+                        {
+                            "alignmentScope": "events-home",
+                            "competition": "tt:16302",
+                            "wins": 0,
+                            "ties": 1,
+                            "losses": 3,
+                            "pointsScoredFor": 2,
+                            "pointsScoredAgainst": 5
+                        },
+                        {
+                            "alignmentScope": "events-away",
+                            "competition": "tt:16302",
+                            "wins": 3,
+                            "ties": 0,
+                            "losses": 0,
+                            "pointsScoredFor": 5,
+                            "pointsScoredAgainst": 0
+                        }
+                    ],
+                    "rank": {"value": 6}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:18656",
+                    "name": {"full": "Timrå"}
+                },
+                "teamStats": {
+                    "outcomeTotals": [
+                        {
+                            "alignmentScope": "events-all",
+                            "competition": "tt:16302",
+                            "eventsPlayed": 7,
+                            "wins": 2,
+                            "ties": 1,
+                            "losses": 4,
+                            "pointsScoredFor": 10,
+                            "pointsScoredAgainst": 17,
+                            "standingPoints": 7
+                        },
+                        {
+                            "alignmentScope": "events-home",
+                            "competition": "tt:16302",
+                            "wins": 1,
+                            "ties": 0,
+                            "losses": 2,
+                            "pointsScoredFor": 3,
+                            "pointsScoredAgainst": 9
+                        },
+                        {
+                            "alignmentScope": "events-away",
+                            "competition": "tt:16302",
+                            "wins": 1,
+                            "ties": 1,
+                            "losses": 2,
+                            "pointsScoredFor": 7,
+                            "pointsScoredAgainst": 8
+                        }
+                    ],
+                    "rank": {"value": 7}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12929",
+                    "name": {"full": "Själevad"}
+                },
+                "teamStats": {
+                    "outcomeTotals": [
+                        {
+                            "alignmentScope": "events-all",
+                            "competition": "tt:16302",
+                            "eventsPlayed": 7,
+                            "wins": 2,
+                            "ties": 0,
+                            "losses": 5,
+                            "pointsScoredFor": 7,
+                            "pointsScoredAgainst": 11,
+                            "standingPoints": 6
+                        },
+                        {
+                            "alignmentScope": "events-home",
+                            "competition": "tt:16302",
+                            "wins": 1,
+                            "ties": 0,
+                            "losses": 2,
+                            "pointsScoredFor": 5,
+                            "pointsScoredAgainst": 6
+                        },
+                        {
+                            "alignmentScope": "events-away",
+                            "competition": "tt:16302",
+                            "wins": 1,
+                            "ties": 0,
+                            "losses": 3,
+                            "pointsScoredFor": 2,
+                            "pointsScoredAgainst": 5
+                        }
+                    ],
+                    "rank": {"value": 8}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:12917",
+                    "name": {"full": "Alviks IK"}
+                },
+                "teamStats": {
+                    "outcomeTotals": [
+                        {
+                            "alignmentScope": "events-all",
+                            "competition": "tt:16302",
+                            "eventsPlayed": 7,
+                            "wins": 2,
+                            "ties": 0,
+                            "losses": 5,
+                            "pointsScoredFor": 9,
+                            "pointsScoredAgainst": 22,
+                            "standingPoints": 6
+                        },
+                        {
+                            "alignmentScope": "events-home",
+                            "competition": "tt:16302",
+                            "wins": 2,
+                            "ties": 0,
+                            "losses": 2,
+                            "pointsScoredFor": 5,
+                            "pointsScoredAgainst": 10
+                        },
+                        {
+                            "alignmentScope": "events-away",
+                            "competition": "tt:16302",
+                            "wins": 0,
+                            "ties": 0,
+                            "losses": 3,
+                            "pointsScoredFor": 4,
+                            "pointsScoredAgainst": 12
+                        }
+                    ],
+                    "rank": {"value": 9}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:33602",
+                    "name": {"full": "Storfors"}
+                },
+                "teamStats": {
+                    "outcomeTotals": [
+                        {
+                            "alignmentScope": "events-all",
+                            "competition": "tt:16302",
+                            "eventsPlayed": 7,
+                            "wins": 2,
+                            "ties": 0,
+                            "losses": 5,
+                            "pointsScoredFor": 6,
+                            "pointsScoredAgainst": 29,
+                            "standingPoints": 6
+                        },
+                        {
+                            "alignmentScope": "events-home",
+                            "competition": "tt:16302",
+                            "wins": 1,
+                            "ties": 0,
+                            "losses": 2,
+                            "pointsScoredFor": 1,
+                            "pointsScoredAgainst": 9
+                        },
+                        {
+                            "alignmentScope": "events-away",
+                            "competition": "tt:16302",
+                            "wins": 1,
+                            "ties": 0,
+                            "losses": 3,
+                            "pointsScoredFor": 5,
+                            "pointsScoredAgainst": 20
+                        }
+                    ],
+                    "rank": {"value": 10}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:35504",
+                    "name": {"full": "IFK Östersund"}
+                },
+                "teamStats": {
+                    "outcomeTotals": [
+                        {
+                            "alignmentScope": "events-all",
+                            "competition": "tt:16302",
+                            "eventsPlayed": 7,
+                            "wins": 1,
+                            "ties": 2,
+                            "losses": 4,
+                            "pointsScoredFor": 9,
+                            "pointsScoredAgainst": 18,
+                            "standingPoints": 5
+                        },
+                        {
+                            "alignmentScope": "events-home",
+                            "competition": "tt:16302",
+                            "wins": 1,
+                            "ties": 0,
+                            "losses": 2,
+                            "pointsScoredFor": 6,
+                            "pointsScoredAgainst": 9
+                        },
+                        {
+                            "alignmentScope": "events-away",
+                            "competition": "tt:16302",
+                            "wins": 0,
+                            "ties": 2,
+                            "losses": 2,
+                            "pointsScoredFor": 3,
+                            "pointsScoredAgainst": 9
+                        }
+                    ],
+                    "rank": {"value": 11}
+                }
+            },
+            {
+                "teamMetadata": {
+                    "key": "tt:26641",
+                    "name": {"full": "Luleå DFC"}
+                },
+                "teamStats": {
+                    "outcomeTotals": [
+                        {
+                            "alignmentScope": "events-all",
+                            "competition": "tt:16302",
+                            "eventsPlayed": 7,
+                            "wins": 1,
+                            "ties": 0,
+                            "losses": 6,
+                            "pointsScoredFor": 9,
+                            "pointsScoredAgainst": 15,
+                            "standingPoints": 3
+                        },
+                        {
+                            "alignmentScope": "events-home",
+                            "competition": "tt:16302",
+                            "wins": 1,
+                            "ties": 0,
+                            "losses": 3,
+                            "pointsScoredFor": 4,
+                            "pointsScoredAgainst": 5
+                        },
+                        {
+                            "alignmentScope": "events-away",
+                            "competition": "tt:16302",
+                            "wins": 0,
+                            "ties": 0,
+                            "losses": 3,
+                            "pointsScoredFor": 5,
+                            "pointsScoredAgainst": 10
+                        }
+                    ],
+                    "rank": {"value": 12}
+                }
+            }
+        ]
+    }
+}}

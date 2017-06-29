@@ -1,0 +1,275 @@
+{"sportsContent": {
+    "sportsMetadata": {
+        "competition": "tt:5841",
+        "docId": "20170528:TT:0028:0",
+        "sportsContentCodes": {"sportsContentCode": [
+            {
+                "codeType": "spct:sport",
+                "codeKey": "medtop:20001065",
+                "codeName": "Fotboll"
+            },
+            {
+                "codeType": "spct:competition",
+                "codeKey": "tt:5841",
+                "codeName": "Allsvenskan"
+            },
+            {
+                "codeType": "spct:season",
+                "codeKey": "season:55",
+                "codeName": 2017
+            }
+        ]},
+        "catalogRef": [
+            {"href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"},
+            {"href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"},
+            {"href": "http://tt.se/spec/catalog/catalog.tt-g2.1_0.xml"}
+        ]
+    },
+    "sportsEvent": {
+        "eventMetadata": {
+            "key": "tt:FF3491033",
+            "eventStatus": "speventstatus:post-event",
+            "eventOutcomeType": "speventoutcometype:regular",
+            "startDateTime": "2017-05-28",
+            "competition": "tt:5841",
+            "roundNumber": 11,
+            "site": {
+                "siteMetadata": "",
+                "siteStats": {"attendance": "20 386."}
+            }
+        },
+        "team": [
+            {
+                "id": "et12409",
+                "teamMetadata": {
+                    "alignment": "home",
+                    "key": "tt:12409",
+                    "name": {"full": "Hammarby"}
+                },
+                "teamStats": {
+                    "score": 2,
+                    "scoreOpposing": 2,
+                    "eventStandingPoints": 1,
+                    "subScore": {
+                        "periodValue": 1,
+                        "score": 1
+                    },
+                    "teamStatsSoccer": {"lineFormation": "4-4-2"}
+                },
+                "player": [
+                    {
+                        "id": "ep12409-1",
+                        "playerMetadata": {"name": {"full": "Ögmundur Kristinsson"}}
+                    },
+                    {
+                        "id": "ep12409-2",
+                        "playerMetadata": {"name": {"full": "Birkir Mar Sævarsson"}}
+                    },
+                    {
+                        "id": "ep12409-3",
+                        "playerMetadata": {"name": {"full": "Joseph Aidoo"}}
+                    },
+                    {
+                        "id": "ep12409-4",
+                        "playerMetadata": {"name": {"full": "Richard Magyar"}}
+                    },
+                    {
+                        "id": "ep12409-5",
+                        "playerMetadata": {"name": {"full": "Mats Solheim"}}
+                    },
+                    {
+                        "id": "ep12409-6",
+                        "playerMetadata": {"name": {"full": "Arnor Smarason"}}
+                    },
+                    {
+                        "id": "ep12409-7",
+                        "playerMetadata": {"name": {"full": "Kennedy Bakircioglu"}},
+                        "playerStats": {"eventTimeExited": 28}
+                    },
+                    {
+                        "id": "ep12409-7-b",
+                        "playerMetadata": {"name": {"full": "Marcus Degerlund"}},
+                        "playerStats": {"eventTimeEntered": 28}
+                    },
+                    {
+                        "id": "ep12409-8",
+                        "playerMetadata": {"name": {"full": "Serge-Junior Martinsson Ngouali"}}
+                    },
+                    {
+                        "id": "ep12409-9",
+                        "playerMetadata": {"name": {"full": "Fredrik Torsteinbø"}},
+                        "playerStats": {"eventTimeExited": 78}
+                    },
+                    {
+                        "id": "ep12409-9-b",
+                        "playerMetadata": {"name": {"full": "Leo Bengtsson"}},
+                        "playerStats": {"eventTimeEntered": 78}
+                    },
+                    {
+                        "id": "ep12409-10",
+                        "playerMetadata": {"name": {"full": "Pa Dibba"}},
+                        "playerStats": {"eventTimeExited": 62}
+                    },
+                    {
+                        "id": "ep12409-10-b",
+                        "playerMetadata": {"name": {"full": "Romulo"}},
+                        "playerStats": {"eventTimeEntered": 62}
+                    },
+                    {
+                        "id": "ep12409-11",
+                        "playerMetadata": {"name": {"full": "Bjørn Paulsen"}}
+                    }
+                ]
+            },
+            {
+                "id": "et12729",
+                "teamMetadata": {
+                    "alignment": "away",
+                    "key": "tt:12729",
+                    "name": {"full": "Jönköpings S"}
+                },
+                "teamStats": {
+                    "score": 2,
+                    "scoreOpposing": 2,
+                    "eventStandingPoints": 1,
+                    "subScore": {
+                        "periodValue": 1,
+                        "score": 0
+                    },
+                    "teamStatsSoccer": {"lineFormation": "4-2-3-1"}
+                },
+                "player": [
+                    {
+                        "id": "ep12729-1",
+                        "playerMetadata": {"name": {"full": "Anton Cajtoft"}}
+                    },
+                    {
+                        "id": "ep12729-2",
+                        "playerMetadata": {"name": {"full": "Stefan Karlsson"}}
+                    },
+                    {
+                        "id": "ep12729-3",
+                        "playerMetadata": {"name": {"full": "André Calisir"}}
+                    },
+                    {
+                        "id": "ep12729-4",
+                        "playerMetadata": {"name": {"full": "Joakim Karlsson"}}
+                    },
+                    {
+                        "id": "ep12729-5",
+                        "playerMetadata": {"name": {"full": "Tom Siwe"}},
+                        "playerStats": {"eventTimeExited": 59}
+                    },
+                    {
+                        "id": "ep12729-5-b",
+                        "playerMetadata": {"name": {"full": "Eric Ayuk"}},
+                        "playerStats": {"eventTimeEntered": 59}
+                    },
+                    {
+                        "id": "ep12729-6",
+                        "playerMetadata": {"name": {"full": "Fredric Fendrich"}},
+                        "playerStats": {"eventTimeExited": 62}
+                    },
+                    {
+                        "id": "ep12729-6-b",
+                        "playerMetadata": {"name": {"full": "Christos Gravius"}},
+                        "playerStats": {"eventTimeEntered": 62}
+                    },
+                    {
+                        "id": "ep12729-7",
+                        "playerMetadata": {"name": {"full": "Robert Gojani"}}
+                    },
+                    {
+                        "id": "ep12729-8",
+                        "playerMetadata": {"name": {"full": "Jesper Svensson"}},
+                        "playerStats": {"eventTimeExited": 59}
+                    },
+                    {
+                        "id": "ep12729-8-b",
+                        "playerMetadata": {"name": {"full": "Jonathan Tamimi"}},
+                        "playerStats": {"eventTimeEntered": 59}
+                    },
+                    {
+                        "id": "ep12729-9",
+                        "playerMetadata": {"name": {"full": "Daryl Smylie"}}
+                    },
+                    {
+                        "id": "ep12729-10",
+                        "playerMetadata": {"name": {"full": "Tommy Thelin"}}
+                    },
+                    {
+                        "id": "ep12729-11",
+                        "playerMetadata": {"name": {"full": "Dzenis Kozica"}}
+                    }
+                ]
+            }
+        ],
+        "officials": {"official": {"officialMetadata": {
+            "name": {"full": "Kristoffer Karlsson"},
+            "homeLocation": {"name": {"full": "Höganäs"}}
+        }}},
+        "actions": {"action": [
+            {
+                "class": "spactionclass:score",
+                "teamIdref": "et12409",
+                "minutesElapsed": 18,
+                "scoreTeam": 1,
+                "scoreTeamOpposing": 0,
+                "comment": "1-0 Pa Dibba (18)",
+                "participant": {"idref": "ep12409-10"}
+            },
+            {
+                "class": "spactionclass:score",
+                "teamIdref": "et12729",
+                "minutesElapsed": 74,
+                "scoreTeam": 1,
+                "scoreTeamOpposing": 1,
+                "comment": "1-1 Dzenis Kozica (74)",
+                "participant": {"idref": "ep12729-11"}
+            },
+            {
+                "class": "spactionclass:score",
+                "teamIdref": "et12729",
+                "minutesElapsed": 77,
+                "scoreTeam": 2,
+                "scoreTeamOpposing": 1,
+                "comment": "1-2 Eric Ayuk (77)",
+                "participant": {"idref": "ep12729-5-b"}
+            },
+            {
+                "class": "spactionclass:score",
+                "teamIdref": "et12409",
+                "minutesElapsed": 90,
+                "scoreTeam": 2,
+                "scoreTeamOpposing": 2,
+                "comment": "2-2 Mats Solheim (90).",
+                "participant": {"idref": "ep12409-5"}
+            },
+            {
+                "class": "spactionclass:penalty",
+                "teamIdref": "et12409",
+                "penaltyType": "vendinfract:Foul",
+                "penaltyLevel": "spsocpenaltylevel:yellow-card",
+                "comment": "Arnor Smarason",
+                "participant": {"idref": "ep12409-6"}
+            },
+            {
+                "class": "spactionclass:penalty",
+                "teamIdref": "et12729",
+                "penaltyType": "vendinfract:Foul",
+                "penaltyLevel": "spsocpenaltylevel:yellow-card",
+                "comment": "Daryl Smylie",
+                "participant": {"idref": "ep12729-9"}
+            }
+        ]},
+        "highlight": {"p": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]}
+    }
+}}

@@ -1,0 +1,207 @@
+{"sportsContent": {
+    "sportsMetadata": {
+        "docId": "20170528:TT:0151:0",
+        "sportsContentCodes": {"sportsContentCode": [
+            {
+                "codeType": "spct:sport",
+                "codeKey": "medtop:20001085",
+                "codeName": "tennis"
+            },
+            {
+                "codeType": "spct:competition",
+                "codeName": "Franska mästerskapen"
+            }
+        ]},
+        "sportsProperty": {
+            "formalName": "location",
+            "value": "PARIS"
+        },
+        "catalogRef": [
+            {"href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"},
+            {"href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"},
+            {"href": "http://tt.se/spec/catalog/catalog.tt-g2.1_0.xml"}
+        ]
+    },
+    "tournament": {"tournamentDivision": [
+        {
+            "tournamentDivisionMetadata": {
+                "sportsContentCodes": {"sportsContentCode": {
+                    "codeType": "subj:qual",
+                    "sportsContentQualifier": {
+                        "gender": "male",
+                        "participantCount": "spparticipantcount:individual"
+                    }
+                }},
+                "name": {"full": "Herrsingel"}
+            },
+            "tournamentPart": {
+                "tournamentPartMetadata": {
+                    "type": "sptournamentphase:round",
+                    "number": 1,
+                    "status": "speventstatus:post-event",
+                    "name": {"full": "First round"}
+                },
+                "sportsEvent": {
+                    "eventMetadata": {
+                        "eventStatus": "speventstatus:post-event",
+                        "eventMetadataTennis": {"numberOfSets": 5}
+                    },
+                    "player": [
+                        {
+                            "playerMetadata": {
+                                "gender": "male",
+                                "nationality": "Argentina",
+                                "name": [
+                                    {"role": "nrol:first"},
+                                    {"role": "nrol:last"}
+                                ]
+                            },
+                            "playerStats": {
+                                "score": 3,
+                                "eventOutcome": "speventoutcome:win",
+                                "playerStatsTennis": {"statsTennisSet": [
+                                    {
+                                        "setNumber": 1,
+                                        "score": 3
+                                    },
+                                    {
+                                        "setNumber": 2,
+                                        "score": 6,
+                                        "scoreTiebreaker": 4
+                                    },
+                                    {
+                                        "setNumber": 3,
+                                        "score": 7,
+                                        "scoreTiebreaker": 7
+                                    },
+                                    {
+                                        "setNumber": 4,
+                                        "score": 6
+                                    },
+                                    {
+                                        "setNumber": 5,
+                                        "score": 6
+                                    }
+                                ]}
+                            }
+                        },
+                        {
+                            "playerMetadata": {
+                                "gender": "male",
+                                "nationality": "Frankrike",
+                                "name": [
+                                    {"role": "nrol:first"},
+                                    {"role": "nrol:last"}
+                                ]
+                            },
+                            "playerStats": {
+                                "score": 2,
+                                "eventOutcome": "speventoutcome:loss",
+                                "playerStatsTennis": {"statsTennisSet": [
+                                    {
+                                        "setNumber": 1,
+                                        "score": 6
+                                    },
+                                    {
+                                        "setNumber": 2,
+                                        "score": 7,
+                                        "scoreTiebreaker": 7
+                                    },
+                                    {
+                                        "setNumber": 3,
+                                        "score": 6,
+                                        "scoreTiebreaker": 2
+                                    },
+                                    {
+                                        "setNumber": 4,
+                                        "score": 4
+                                    },
+                                    {
+                                        "setNumber": 5,
+                                        "score": 4
+                                    }
+                                ]}
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "tournamentDivisionMetadata": {
+                "sportsContentCodes": {"sportsContentCode": {
+                    "codeType": "subj:qual",
+                    "sportsContentQualifier": {
+                        "gender": "female",
+                        "participantCount": "spparticipantcount:individual"
+                    }
+                }},
+                "name": {"full": "Damsingel"}
+            },
+            "tournamentPart": {
+                "tournamentPartMetadata": {
+                    "type": "sptournamentphase:round",
+                    "number": 1,
+                    "status": "speventstatus:post-event",
+                    "name": {"full": "First round"}
+                },
+                "sportsEvent": {
+                    "eventMetadata": {
+                        "eventStatus": "speventstatus:post-event",
+                        "eventMetadataTennis": {"numberOfSets": 3}
+                    },
+                    "player": [
+                        {
+                            "playerMetadata": {
+                                "gender": "male",
+                                "nationality": "Ryssland",
+                                "name": [
+                                    {"role": "nrol:first"},
+                                    {"role": "nrol:last"}
+                                ]
+                            },
+                            "playerStats": {
+                                "score": 2,
+                                "eventOutcome": "speventoutcome:win",
+                                "playerStatsTennis": {"statsTennisSet": [
+                                    {
+                                        "setNumber": 1,
+                                        "score": 6
+                                    },
+                                    {
+                                        "setNumber": 2,
+                                        "score": 6
+                                    }
+                                ]}
+                            }
+                        },
+                        {
+                            "playerMetadata": {
+                                "gender": "male",
+                                "nationality": "Tyskland",
+                                "name": [
+                                    {"role": "nrol:first"},
+                                    {"role": "nrol:last"}
+                                ]
+                            },
+                            "playerStats": {
+                                "score": 0,
+                                "eventOutcome": "speventoutcome:loss",
+                                "playerStatsTennis": {"statsTennisSet": [
+                                    {
+                                        "setNumber": 1,
+                                        "score": 2
+                                    },
+                                    {
+                                        "setNumber": 2,
+                                        "score": 2
+                                    }
+                                ]}
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    ]}
+}}

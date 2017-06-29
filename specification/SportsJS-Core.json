@@ -206,7 +206,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/commonAttributes"
 			}],
-			"additionalProperties": false,
+			"additionalProperties": true,
 			"properties": {
 				"sportsMetadata": {
 					"$ref": "#/definitions/sportsMetadata"
@@ -420,7 +420,7 @@
 			}, {
 				"$ref": "#/definitions/baseMetadata"
 			}],
-			"additionalProperties": false,
+			"additionalProperties": true,
 			"properties": {
 				"catalog": {
 					"$ref": "#/definitions/catalog",

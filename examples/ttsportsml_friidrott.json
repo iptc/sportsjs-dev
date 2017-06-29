@@ -1,0 +1,181 @@
+{"sportsContent": {
+    "sportsMetadata": {
+        "docId": "20170528:TT:0009:0",
+        "sportsContentCodes": {"sportsContentCode": [
+            {
+                "codeType": "spct:sport",
+                "codeKey": "medtop:20000827",
+                "codeName": "friidrott"
+            },
+            {
+                "codeType": "spct:competition",
+                "codeName": "Diamond League, deltävl 3 av 14"
+            }
+        ]},
+        "sportsProperty": {
+            "formalName": "location",
+            "value": "EUGENE, Oregon"
+        },
+        "catalogRef": [
+            {"href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"},
+            {"href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"},
+            {"href": "http://tt.se/spec/catalog/catalog.tt-g2.1_0.xml"}
+        ]
+    },
+    "sportsEvent": [
+        {
+            "eventMetadata": {
+                "distance": 110,
+                "sportsContentCodes": {"sportsContentCode": [
+                    {
+                        "codeType": "spct:sport",
+                        "codeKey": "medtop:20000834",
+                        "codeName": "110 m häck"
+                    },
+                    {
+                        "codeType": "subj:qual",
+                        "sportsContentQualifier": {
+                            "gender": "male",
+                            "participantCount": "spparticipantcount:individual"
+                        }
+                    }
+                ]},
+                "name": {"full": "herrar, 110 m häck"}
+            },
+            "player": [
+                {
+                    "playerMetadata": {
+                        "nationality": "Jamaica",
+                        "name": {"full": "Omar McLeod"}
+                    },
+                    "playerStats": {
+                        "score": "13,01",
+                        "rank": {"value": 1}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Jamaica",
+                        "name": {"full": "Ronald Levy"}
+                    },
+                    "playerStats": {
+                        "score": "13,10",
+                        "rank": {"value": 2}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "USA",
+                        "name": {"full": "Devon Allen"}
+                    },
+                    "playerStats": {
+                        "score": "13,11",
+                        "rank": {"value": 3}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "USA",
+                        "name": {"full": "Aries Merritt"}
+                    },
+                    "playerStats": {
+                        "score": "13,13",
+                        "rank": {"value": 4}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Storbritannien",
+                        "name": {"full": "Andrew Pozzi"}
+                    },
+                    "playerStats": {
+                        "score": "13,19",
+                        "rank": {"value": 5}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "USA",
+                        "name": {"full": "Alec Harris"}
+                    },
+                    "playerStats": {
+                        "score": "13,30",
+                        "rank": {"value": 6}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "USA",
+                        "name": {"full": "David Oliver"}
+                    },
+                    "playerStats": {
+                        "score": "13,40",
+                        "rank": {"value": 7}
+                    }
+                },
+                {
+                    "playerMetadata": {
+                        "nationality": "Frankrike",
+                        "name": {"full": "Dimitri Bascou"}
+                    },
+                    "playerStats": {
+                        "score": "13,55",
+                        "rank": {"value": 8}
+                    }
+                }
+            ]
+        },
+        {
+            "eventMetadata": {
+                "sportsContentCodes": {"sportsContentCode": [
+                    {
+                        "codeType": "spct:sport",
+                        "codeKey": "medtop:20000843",
+                        "codeName": "Kula"
+                    },
+                    {
+                        "codeType": "subj:qual",
+                        "sportsContentQualifier": {
+                            "gender": "male",
+                            "participantCount": "spparticipantcount:individual"
+                        }
+                    }
+                ]},
+                "name": {"full": "Kula"}
+            },
+            "player": {
+                "playerMetadata": {
+                    "nationality": "USA",
+                    "name": {"full": "Ryan Crouser"}
+                },
+                "playerStats": {
+                    "score": "22,43",
+                    "rank": {"value": 1}
+                }
+            }
+        },
+        {
+            "eventMetadata": {
+                "distance": 1500,
+                "sportsContentCodes": {"sportsContentCode": {
+                    "codeType": "subj:qual",
+                    "sportsContentQualifier": {
+                        "gender": "female",
+                        "participantCount": "spparticipantcount:individual"
+                    }
+                }},
+                "name": {"full": "Damer, 1 500 m"}
+            },
+            "player": {
+                "playerMetadata": {
+                    "nationality": "Kenya",
+                    "name": {"full": "Faith Kipyegon"}
+                },
+                "playerStats": {
+                    "score": "3.59,67",
+                    "rank": {"value": 1}
+                }
+            }
+        }
+    ]
+}}
