@@ -1,5 +1,5 @@
 {
-  "id": "http://www.iptc.org/std/sportsjs/sportsjs-volleyball.json#",
+  "id": "http://www.iptc.org/std/sportsjs/sportsjs-volleyball_1.0.draft.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The SportsJS Soccer schema contains properties common to Volleyball.",
   "definitions": {
@@ -7,10 +7,10 @@
       "description": "Volleyball specific stats for one team. | Team-stats that are specific to volleyball and does not apply to all sports.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -60,10 +60,10 @@
       "description": "Attack stats specific to volleyball.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -97,10 +97,10 @@
       "description": "Blocking stats specific to volleyball.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -134,10 +134,10 @@
       "description": "Service stats specific to volleyball.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -171,10 +171,10 @@
       "description": "Defensive stats (or digs) specific to volleyball.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -208,10 +208,10 @@
       "description": "Sets stats specific to volleyball",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -245,10 +245,10 @@
       "description": "Reception stats specific to volleyball.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -282,10 +282,10 @@
       "description": "Player statistics that are specific to volleyball. | Volleyball specific statistic information about a player.",
       "allOf": [
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://www.iptc.org/std/sportsjs/sportsjs-core_1.0.draft.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
