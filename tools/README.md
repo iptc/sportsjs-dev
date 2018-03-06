@@ -1,27 +1,12 @@
-# IPTC SportsJS 1.0 Draft
+# IPTC SportsJS Tools
 
-SportsJS is an open and highly flexible standard for the interchange of sports data in JSON. It is designed to be easy to understand and implement, and to cover a wide variety of sports competitions.
+This folder contains tools to be used to generate SportsJS sample files
 
-## Features
+## Folder content
 
-* Modular Multi-sport schema
-  * American Football
-  * Baseball
-  * Basketball
-  * Curling
-  * Golf
-  * Ice Hockey
-  * Motor Racing
-  * Rugby 
-  * Soccer 
-  * Tennis
-  * Generic Sport statistics
-* Flexible tournament structure
-* Flexible event structure
-* Flexible team structure
-* Flexible player structure
-* Generic statistic structures
-* Semantic structures and vocabularies
+* validating_json - a Node-script to validate your sportsJs file against the schema
+* php_xml_to_json - a php-script that turns SportsML into SportsJS
+
 
 ### Support
 
