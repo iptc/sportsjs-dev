@@ -16,4 +16,4 @@ node validate.js --file ../examples/generic-alert.json
 
 * validating_json - a Node-script to validate your sportsJs file against the schema
 
-This repository has been created by the IPTC © copyright 2018
+This repository has been created by IPTC - Copyright © 2018 IPTC - https://iptc.org
