@@ -14,7 +14,7 @@ var options = require('minimist')(process.argv.slice(2));
 
 if (options.file != null) {
 
-  var schemaDir = './specification/';
+  var schemaDir = '../specification/';
   var coreSchemaName = 'sportsjs-core.json';
   var schema = JSON.parse(fs.readFileSync(schemaDir + coreSchemaName, "utf8"));
 
