@@ -1,0 +1,11 @@
+{
+  "name": "xml_2_json",
+  "version": "1.0.0",
+  "description": "Convert SportsML(xml) to SportsJS(json).",
+  "main": "x2j.js",
+  "dependencies": {
+    "libxslt": "0.7.0",
+    "libxmljs": "0.18.7",
+    "xml2js": "0.4.19"
+  }
+}

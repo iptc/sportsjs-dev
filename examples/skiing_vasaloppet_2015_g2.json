@@ -1,0 +1,608 @@
+{
+    "tournament": {
+        "tournamentMetadata": {
+            "Status": "speventstatus:post-event",
+            "StartDateTime": "2015-03-08",
+            "VenueType": "spsitestyle:outdoor",
+            "SurfaceType": "vendst:snow",
+            "name": {
+                "full": "Vasaloppet 2015"
+            },
+            "Site": {
+                "SiteMetadata": {
+                    "HomeLocation": {
+                        "POIDetails": {
+                            "Address": {
+                                "Locality": {
+                                    "name": {
+                                        "full": "Mora"
+                                    }
+                                },
+                                "Country": {
+                                    "name": {
+                                        "full": "Sverige"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "tournamentDivision": [
+            {
+                "tournamentDivisionMetadata": {
+                    "SportsContentCodes": {
+                        "SportsContentCode": {
+                            "CodeType": "subj:qual",
+                            "SportsContentQualifier": {
+                                "Gender": "male",
+                                "ParticipantCount": "spparticipantcount:individual"
+                            }
+                        }
+                    }
+                },
+                "SportsEvent": {
+                    "Player": [
+                        {
+                            "PlayerMetadata": {
+                                "DateOfBirth": "1985",
+                                "Gender": "male",
+                                "Nationality": "Norge",
+                                "UniformNumber": "131",
+                                "name": [
+                                    {
+                                        "part": {
+                                            "first": "Petter"
+                                        }
+                                    },
+                                    {
+                                        "part": {
+                                            "last": "Eliassen"
+                                        }
+                                    }
+                                ],
+                                "HomeLocation": {
+                                    "POIDetails": {
+                                        "Address": {
+                                            "Locality": {
+                                                "name": {
+                                                    "full": "Nannestad"
+                                                }
+                                            },
+                                            "Area": {
+                                                "name": {
+                                                    "full": {}
+                                                }
+                                            },
+                                            "Country": {
+                                                "name": {
+                                                    "full": "Norge"
+                                                }
+                                            },
+                                            "PostalCode": {}
+                                        }
+                                    }
+                                }
+                            },
+                            "PlayerStats": {
+                                "Class": "M\u00e4n",
+                                "Score": "4.01.48",
+                                "Rank": {
+                                    "Value": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PlayerMetadata": {
+                                "DateOfBirth": "1972",
+                                "Gender": "male",
+                                "Nationality": "Norge",
+                                "UniformNumber": "123",
+                                "name": [
+                                    {
+                                        "part": {
+                                            "first": "Anders"
+                                        }
+                                    },
+                                    {
+                                        "part": {
+                                            "last": "Aukland"
+                                        }
+                                    }
+                                ],
+                                "HomeLocation": {
+                                    "POIDetails": {
+                                        "Address": {
+                                            "Locality": {
+                                                "name": {
+                                                    "full": "Oslo"
+                                                }
+                                            },
+                                            "Area": {
+                                                "name": {
+                                                    "full": {}
+                                                }
+                                            },
+                                            "Country": {
+                                                "name": {
+                                                    "full": "Norge"
+                                                }
+                                            },
+                                            "PostalCode": {}
+                                        }
+                                    }
+                                }
+                            },
+                            "PlayerStats": {
+                                "Class": "M\u00e4n",
+                                "Score": "4.01.53",
+                                "Rank": {
+                                    "Value": "2"
+                                }
+                            }
+                        },
+                        {
+                            "PlayerMetadata": {
+                                "DateOfBirth": "1973",
+                                "Gender": "male",
+                                "Nationality": "Tjeckien",
+                                "UniformNumber": "5",
+                                "name": [
+                                    {
+                                        "part": {
+                                            "first": "Stanislav"
+                                        }
+                                    },
+                                    {
+                                        "part": {
+                                            "last": "Rezac"
+                                        }
+                                    }
+                                ],
+                                "HomeLocation": {
+                                    "POIDetails": {
+                                        "Address": {
+                                            "Locality": {
+                                                "name": {
+                                                    "full": "Jablonec nad Nisous"
+                                                }
+                                            },
+                                            "Area": {
+                                                "name": {
+                                                    "full": {}
+                                                }
+                                            },
+                                            "Country": {
+                                                "name": {
+                                                    "full": "Tjeckien"
+                                                }
+                                            },
+                                            "PostalCode": {}
+                                        }
+                                    }
+                                }
+                            },
+                            "PlayerStats": {
+                                "Class": "M\u00e4n",
+                                "Score": "4.02.12",
+                                "Rank": {
+                                    "Value": "3"
+                                }
+                            }
+                        },
+                        {
+                            "PlayerMetadata": {
+                                "DateOfBirth": "1983",
+                                "Gender": "male",
+                                "Nationality": "Norge",
+                                "UniformNumber": "28",
+                                "name": [
+                                    {
+                                        "part": {
+                                            "first": "\u00d6ystein"
+                                        }
+                                    },
+                                    {
+                                        "part": {
+                                            "last": "Pettersen"
+                                        }
+                                    }
+                                ],
+                                "HomeLocation": {
+                                    "POIDetails": {
+                                        "Address": {
+                                            "Locality": {
+                                                "name": {
+                                                    "full": "Oslo"
+                                                }
+                                            },
+                                            "Area": {
+                                                "name": {
+                                                    "full": {}
+                                                }
+                                            },
+                                            "Country": {
+                                                "name": {
+                                                    "full": "Norge"
+                                                }
+                                            },
+                                            "PostalCode": {}
+                                        }
+                                    }
+                                }
+                            },
+                            "PlayerStats": {
+                                "Class": "M\u00e4n",
+                                "Score": "4.04.43",
+                                "Rank": {
+                                    "Value": "4"
+                                }
+                            }
+                        },
+                        {
+                            "PlayerMetadata": {
+                                "DateOfBirth": "1981",
+                                "Gender": "male",
+                                "Nationality": "Norge",
+                                "UniformNumber": "1",
+                                "name": [
+                                    {
+                                        "part": {
+                                            "first": "Kristian"
+                                        }
+                                    },
+                                    {
+                                        "part": {
+                                            "last": "Dahl"
+                                        }
+                                    }
+                                ],
+                                "HomeLocation": {
+                                    "POIDetails": {
+                                        "Address": {
+                                            "Locality": {
+                                                "name": {
+                                                    "full": "Trondheim"
+                                                }
+                                            },
+                                            "Area": {
+                                                "name": {
+                                                    "full": {}
+                                                }
+                                            },
+                                            "Country": {
+                                                "name": {
+                                                    "full": "Norge"
+                                                }
+                                            },
+                                            "PostalCode": {}
+                                        }
+                                    }
+                                }
+                            },
+                            "PlayerStats": {
+                                "Class": "M\u00e4n",
+                                "Score": "4.05.01",
+                                "Rank": {
+                                    "Value": "5"
+                                }
+                            }
+                        },
+                        {
+                            "PlayerMetadata": {
+                                "DateOfBirth": "1983",
+                                "Gender": "male",
+                                "Nationality": "Norge",
+                                "UniformNumber": "124",
+                                "name": [
+                                    {
+                                        "part": {
+                                            "first": "Tord Asle"
+                                        }
+                                    },
+                                    {
+                                        "part": {
+                                            "last": "Gjerdalen"
+                                        }
+                                    }
+                                ],
+                                "HomeLocation": {
+                                    "POIDetails": {
+                                        "Address": {
+                                            "Locality": {
+                                                "name": {
+                                                    "full": "Oslo"
+                                                }
+                                            },
+                                            "Area": {
+                                                "name": {
+                                                    "full": {}
+                                                }
+                                            },
+                                            "Country": {
+                                                "name": {
+                                                    "full": "Norge"
+                                                }
+                                            },
+                                            "PostalCode": {}
+                                        }
+                                    }
+                                }
+                            },
+                            "PlayerStats": {
+                                "Class": "M\u00e4n",
+                                "Score": "4.07.01",
+                                "Rank": {
+                                    "Value": "6"
+                                }
+                            }
+                        },
+                        {
+                            "PlayerMetadata": {
+                                "DateOfBirth": "1984",
+                                "Gender": "male",
+                                "Nationality": "Norge",
+                                "UniformNumber": "35",
+                                "name": [
+                                    {
+                                        "part": {
+                                            "first": {}
+                                        }
+                                    },
+                                    {
+                                        "part": {
+                                            "last": {}
+                                        }
+                                    }
+                                ],
+                                "HomeLocation": {
+                                    "POIDetails": {
+                                        "Address": {
+                                            "Locality": {
+                                                "name": {
+                                                    "full": "Hosle"
+                                                }
+                                            },
+                                            "Area": {
+                                                "name": {
+                                                    "full": {}
+                                                }
+                                            },
+                                            "Country": {
+                                                "name": {
+                                                    "full": "Norge"
+                                                }
+                                            },
+                                            "PostalCode": {}
+                                        }
+                                    }
+                                }
+                            },
+                            "PlayerStats": {
+                                "Class": "M\u00e4n",
+                                "Score": "4.07.23",
+                                "Rank": {
+                                    "Value": "7"
+                                }
+                            }
+                        },
+                        {
+                            "PlayerMetadata": {
+                                "DateOfBirth": "1978",
+                                "Gender": "male",
+                                "Nationality": "Sverige",
+                                "UniformNumber": "23",
+                                "name": [
+                                    {
+                                        "part": {
+                                            "first": "Jerry"
+                                        }
+                                    },
+                                    {
+                                        "part": {
+                                            "last": "Ahrlin"
+                                        }
+                                    }
+                                ],
+                                "HomeLocation": {
+                                    "POIDetails": {
+                                        "Address": {
+                                            "Locality": {
+                                                "name": {
+                                                    "full": "\u00d6stersund"
+                                                }
+                                            },
+                                            "Area": {
+                                                "name": {
+                                                    "full": "J\u00e4mtland"
+                                                }
+                                            },
+                                            "Country": {
+                                                "name": {
+                                                    "full": "Sverige"
+                                                }
+                                            },
+                                            "PostalCode": {}
+                                        }
+                                    }
+                                }
+                            },
+                            "PlayerStats": {
+                                "Class": "M\u00e4n",
+                                "Score": "4.07.30",
+                                "Rank": {
+                                    "Value": "8"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "tournamentDivisionMetadata": {
+                    "SportsContentCodes": {
+                        "SportsContentCode": {
+                            "CodeType": "subj:qual",
+                            "SportsContentQualifier": {
+                                "Gender": "female",
+                                "ParticipantCount": "spparticipantcount:individual"
+                            }
+                        }
+                    }
+                },
+                "SportsEvent": {
+                    "Player": [
+                        {
+                            "PlayerMetadata": {
+                                "DateOfBirth": "1983",
+                                "Gender": "female",
+                                "Nationality": "Polen",
+                                "UniformNumber": "513",
+                                "name": [
+                                    {
+                                        "part": {
+                                            "first": "Justyna"
+                                        }
+                                    },
+                                    {
+                                        "part": {
+                                            "last": "Kowalczyk"
+                                        }
+                                    }
+                                ],
+                                "HomeLocation": {
+                                    "POIDetails": {
+                                        "Address": {
+                                            "Locality": {
+                                                "name": {
+                                                    "full": {}
+                                                }
+                                            },
+                                            "Area": {
+                                                "name": {
+                                                    "full": {}
+                                                }
+                                            },
+                                            "Country": {
+                                                "name": {
+                                                    "full": "Polen"
+                                                }
+                                            },
+                                            "PostalCode": {}
+                                        }
+                                    }
+                                }
+                            },
+                            "PlayerStats": {
+                                "Class": "Damer",
+                                "Score": "4.41.02",
+                                "Rank": {
+                                    "Value": "1"
+                                }
+                            }
+                        },
+                        {
+                            "PlayerMetadata": {
+                                "DateOfBirth": "1983",
+                                "Gender": "female",
+                                "Nationality": "Sverige",
+                                "UniformNumber": "502",
+                                "name": [
+                                    {
+                                        "part": {
+                                            "first": "Britta"
+                                        }
+                                    },
+                                    {
+                                        "part": {
+                                            "last": "Johansson Norgren"
+                                        }
+                                    }
+                                ],
+                                "HomeLocation": {
+                                    "POIDetails": {
+                                        "Address": {
+                                            "Locality": {
+                                                "name": {
+                                                    "full": "\u00d6stersund"
+                                                }
+                                            },
+                                            "Area": {
+                                                "name": {
+                                                    "full": "J\u00e4mtland"
+                                                }
+                                            },
+                                            "Country": {
+                                                "name": {
+                                                    "full": "Sverige"
+                                                }
+                                            },
+                                            "PostalCode": {}
+                                        }
+                                    }
+                                }
+                            },
+                            "PlayerStats": {
+                                "Class": "Damer",
+                                "Score": "4.45.18",
+                                "Rank": {
+                                    "Value": "2"
+                                }
+                            }
+                        },
+                        {
+                            "PlayerMetadata": {
+                                "DateOfBirth": "1982",
+                                "Gender": "female",
+                                "Nationality": "Schweiz",
+                                "UniformNumber": "505",
+                                "name": [
+                                    {
+                                        "part": {
+                                            "first": "Seraina"
+                                        }
+                                    },
+                                    {
+                                        "part": {
+                                            "last": "Boner"
+                                        }
+                                    }
+                                ],
+                                "HomeLocation": {
+                                    "POIDetails": {
+                                        "Address": {
+                                            "Locality": {
+                                                "name": {
+                                                    "full": "Davos-Platz"
+                                                }
+                                            },
+                                            "Area": {
+                                                "name": {
+                                                    "full": "Graub\u00fcnden"
+                                                }
+                                            },
+                                            "Country": {
+                                                "name": {
+                                                    "full": "Schweiz"
+                                                }
+                                            },
+                                            "PostalCode": {}
+                                        }
+                                    }
+                                }
+                            },
+                            "PlayerStats": {
+                                "Class": "Damer",
+                                "Score": "4.49.16",
+                                "Rank": {
+                                    "Value": "3"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
