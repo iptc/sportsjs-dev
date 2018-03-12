@@ -2,7 +2,6 @@
 	"id": "sportsjs-core.json#",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"description": "The SportsJS schema contains properties common to all (or many) sports.",
-	"required" : ["sportsContent"],
 	"$ref": "#/definitions/sportsContent",
 	"definitions": {
 		"idRef": {
@@ -207,7 +206,7 @@
 			"allOf": [{
 				"$ref": "#/definitions/commonAttributes"
 			}],
-			"additionalProperties": false,
+			"additionalProperties": true,
 			"properties": {
 				"sportsMetadata": {
 					"$ref": "#/definitions/sportsMetadata"
