@@ -1,5 +1,4 @@
 'use strict';
-
 var fs = require('fs');
 var Ajv = require('ajv');
 
@@ -9,6 +8,7 @@ var ajvOps = {
 }
 
 var ajv = new Ajv(ajvOps);
+ajv.addMetaSchema(require('ajv/lib/refs/json-schema-draft-06.json'));
 
 var options = require('minimist')(process.argv.slice(2));
 

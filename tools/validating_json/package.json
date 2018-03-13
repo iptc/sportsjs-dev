@@ -4,9 +4,7 @@
   "description": "Test suite for SportsJS Schemas.",
   "main": "test.js",
   "dependencies": {
-    "fs": "0.0.2",
-    "path": "0.12.7",
-    "ajv": "4.10.0",
+    "ajv": "6.2.1",
     "minimist": "1.2.0"
   }
 }

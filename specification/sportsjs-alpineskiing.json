@@ -1,6 +1,6 @@
 {
-  "id": "sportsjs-alpine-skiing.json#",
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "sportsjs-alpine-skiing.json#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "description": "The SportsJS Soccer schema contains properties common to Alpine Skiing.",
   "definitions": {}
 }

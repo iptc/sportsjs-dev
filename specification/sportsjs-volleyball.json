@@ -1,6 +1,6 @@
 {
-  "id": "sportsjs-volleyball_1.0.draft.json#",
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "sportsjs-volleyball_1.0.draft.json#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "description": "The SportsJS Soccer schema contains properties common to Volleyball.",
   "definitions": {
     "volleyballTeamStats": {

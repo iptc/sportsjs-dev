@@ -1,6 +1,6 @@
 {
-  "id": "sportsjs-sport-extensions.json#",
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "sportsjs-sport-extensions.json#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "description": "The SportsJS Extension schema contains properties that group together all specific sport extensions.",
   "definitions": {
     "metadataExtensions": {

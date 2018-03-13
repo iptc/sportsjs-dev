@@ -1,6 +1,6 @@
 {
-  "id": "sportsjs-american-football.json#",
-  "$schema": "http://json-schema.org/draft-04/schema#",
+  "$id": "sportsjs-american-football.json#",
+  "$schema": "http://json-schema.org/draft-06/schema#",
   "description": "The SportsJS American Football schema contains properties common to American Football I.E. NFL",
   "definitions": {
     "americanFootballEventMetadata": {
