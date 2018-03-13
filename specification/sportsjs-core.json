@@ -1,5 +1,5 @@
 {
-	"id": "sportsjs-core.json#",
+	"$id": "sportsjs-core.json#",
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"description": "The SportsJS schema contains properties common to all (or many) sports.",
 	"$ref": "#/definitions/sportsContent",
@@ -3409,7 +3409,7 @@
 		"commonAttributes": {
 			"description": "",
 			"properties": {
-				"id": {
+				"$id": {
 					"$ref": "#/definitions/idRef",
 					"description": "An XML-specific identifier for the element."
 				},
