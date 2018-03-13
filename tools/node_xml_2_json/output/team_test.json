@@ -1,0 +1,62 @@
+{
+"team": [
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Spain"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "1"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:undecided"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Argentina"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "0"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:undecided"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+ }

@@ -1,0 +1,4029 @@
+{
+    "tournament": [
+      {
+        "tournamentDivision": [
+          {
+            "tournamentDivisionMetadata": [
+              {
+                "sportsContentCodes": [
+                  {
+                    "sportsContentCode": [
+                      {
+                        "codeType": [
+                          "subj:qual"
+                        ],
+                        "sportsContentQualifier": [
+                          {
+                            "gender": [
+                              "male"
+                            ],
+                            "participantCount": [
+                              "spparticipantcount:individual"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "name": [
+                  {
+                    "full": [
+                      "World group"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "tournamentPart": [
+              {
+                "tournamentPartMetadata": [
+                  {
+                    "type": [
+                      "sptournamentphase:final"
+                    ],
+                    "name": [
+                      {
+                        "full": [
+                          "Final"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "sportsEvent": [
+                  {
+                    "eventMetadata": [
+                      {
+                        "startDateTime": [
+                          "2011-12-02T10:00:00+02:00"
+                        ],
+                        "eventStatus": [
+                          "speventstatus:mid-event"
+                        ],
+                        "site": [
+                          {
+                            "siteMetadata": [
+                              {
+                                "surface": [
+                                  "spsitesurface:clay"
+                                ],
+                                "siteStyle": [
+                                  "spsitestyle:indoor"
+                                ],
+                                "name": [
+                                  {
+                                    "full": [
+                                      "Olympic stadium"
+                                    ]
+                                  }
+                                ],
+                                "homeLocation": [
+                                  {
+                                    "pOIDetails": [
+                                      {
+                                        "address": [
+                                          {
+                                            "locality": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Seville"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "country": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Spain"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "eventMetadataTennis": [
+                          {
+                            "numberOfSets": [
+                              "5"
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "team": [
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Spain"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "1"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:undecided"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Argentina"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "0"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:undecided"
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "sportsEvent": [
+                      {
+                        "eventMetadata": [
+                          {
+                            "eventNumber": [
+                              "1"
+                            ]
+                          }
+                        ],
+                        "player": [
+                          {
+                            "id": [
+                              "p_1"
+                            ],
+                            "playerMetadata": [
+                              {
+                                "name": [
+                                  {
+                                    "role": [
+                                      "nrol:first"
+                                    ]
+                                  },
+                                  {
+                                    "role": [
+                                      "nrol:last"
+                                    ]
+                                  }
+                                ],
+                                "homeLocation": [
+                                  {
+                                    "pOIDetails": [
+                                      {
+                                        "address": [
+                                          {
+                                            "country": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Spain"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "playerStats": [
+                              {
+                                "eventOutcome": [
+                                  "speventoutcome:win"
+                                ],
+                                "score": [
+                                  "3"
+                                ],
+                                "rank": [
+                                  {
+                                    "value": [
+                                      "2"
+                                    ],
+                                    "type": [
+                                      "vendrt:single"
+                                    ]
+                                  }
+                                ],
+                                "playerStatsTennis": [
+                                  {
+                                    "unforcedErrors": [
+                                      "21"
+                                    ],
+                                    "pointsXon": [
+                                      "93"
+                                    ],
+                                    "winners": [
+                                      "29"
+                                    ],
+                                    "netPointsPlayed": [
+                                      "19"
+                                    ],
+                                    "netPointsXon": [
+                                      "15"
+                                    ],
+                                    "netPointsXonPct": [
+                                      "79"
+                                    ],
+                                    "statsTennisService": [
+                                      {
+                                        "servePointsPlayed": [
+                                          "90"
+                                        ],
+                                        "aces": [
+                                          "5"
+                                        ],
+                                        "doubleFaults": [
+                                          "3"
+                                        ],
+                                        "firstServicesGood": [
+                                          "62"
+                                        ],
+                                        "firstServicesGoodPct": [
+                                          "69"
+                                        ],
+                                        "firstServicesPointsXon": [
+                                          "48"
+                                        ],
+                                        "firstServicesPointsXonPct": [
+                                          "77"
+                                        ],
+                                        "secondServicesGood": [
+                                          "25"
+                                        ],
+                                        "secondServicesGoodPct": [
+                                          "89"
+                                        ],
+                                        "secondServicesPointsXon": [
+                                          "18"
+                                        ],
+                                        "secondServicesPointsXonPct": [
+                                          "64"
+                                        ],
+                                        "breakPointsAgainst": [
+                                          "4"
+                                        ],
+                                        "breakPointsSaved": [
+                                          "4"
+                                        ],
+                                        "breakPointsSavedPct": [
+                                          "100"
+                                        ],
+                                        "firstServeAverageSpeed": [
+                                          "115"
+                                        ],
+                                        "firstServiceTopSpeed": [
+                                          "127"
+                                        ],
+                                        "secondServeAverageSpeed": [
+                                          "90"
+                                        ],
+                                        "speedUnits": [
+                                          "mph"
+                                        ]
+                                      }
+                                    ],
+                                    "statsTennisReturn": [
+                                      {
+                                        "returnsPlayed": [
+                                          "81"
+                                        ],
+                                        "receivePointsXon": [
+                                          "27"
+                                        ],
+                                        "receivePointsXonPct": [
+                                          "33"
+                                        ],
+                                        "breakPointsPlayed": [
+                                          "6"
+                                        ],
+                                        "breakPointsConverted": [
+                                          "4"
+                                        ],
+                                        "breakPointsConvertedPct": [
+                                          "67"
+                                        ]
+                                      }
+                                    ],
+                                    "statsTennisSet": [
+                                      {
+                                        "setNumber": [
+                                          "1"
+                                        ],
+                                        "score": [
+                                          "6"
+                                        ],
+                                        "duration": [
+                                          "34"
+                                        ],
+                                        "unforcedErrors": [
+                                          "3"
+                                        ],
+                                        "pointsXon": [
+                                          "26"
+                                        ],
+                                        "winners": [
+                                          "9"
+                                        ],
+                                        "netPointsPlayed": [
+                                          "3"
+                                        ],
+                                        "netPointsXon": [
+                                          "2"
+                                        ],
+                                        "netPointsXonPct": [
+                                          "67"
+                                        ],
+                                        "statsTennisService": [
+                                          {
+                                            "servePointsPlayed": [
+                                              "20"
+                                            ],
+                                            "aces": [
+                                              "4"
+                                            ],
+                                            "doubleFaults": [
+                                              "1"
+                                            ],
+                                            "firstServicesGood": [
+                                              "12"
+                                            ],
+                                            "firstServicesGoodPct": [
+                                              "60"
+                                            ],
+                                            "firstServicesPointsXon": [
+                                              "11"
+                                            ],
+                                            "firstServicesPointsXonPct": [
+                                              "92"
+                                            ],
+                                            "secondServicesGood": [
+                                              "7"
+                                            ],
+                                            "secondServicesGoodPct": [
+                                              "86"
+                                            ],
+                                            "secondServicesPointsXon": [
+                                              "5"
+                                            ],
+                                            "secondServicesPointsXonPct": [
+                                              "63"
+                                            ],
+                                            "breakPointsAgainst": [
+                                              "0"
+                                            ],
+                                            "breakPointsSaved": [
+                                              "0"
+                                            ],
+                                            "breakPointsSavedPct": [
+                                              "0"
+                                            ]
+                                          }
+                                        ],
+                                        "statsTennisReturn": [
+                                          {
+                                            "returnsPlayed": [
+                                              "25"
+                                            ],
+                                            "receivePointsXon": [
+                                              "10"
+                                            ],
+                                            "receivePointsXonPct": [
+                                              "40"
+                                            ],
+                                            "breakPointsPlayed": [
+                                              "4"
+                                            ],
+                                            "breakPointsConverted": [
+                                              "2"
+                                            ],
+                                            "breakPointsConvertedPct": [
+                                              "50"
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "2"
+                                        ],
+                                        "score": [
+                                          "7"
+                                        ],
+                                        "duration": [
+                                          "54"
+                                        ],
+                                        "unforcedErrors": [
+                                          "12"
+                                        ],
+                                        "pointsXon": [
+                                          "36"
+                                        ],
+                                        "winners": [
+                                          "10"
+                                        ],
+                                        "netPointsPlayed": [
+                                          "13"
+                                        ],
+                                        "netPointsXon": [
+                                          "11"
+                                        ],
+                                        "netPointsXonPct": [
+                                          "85"
+                                        ],
+                                        "statsTennisService": [
+                                          {
+                                            "servePointsPlayed": [
+                                              "40"
+                                            ],
+                                            "aces": [
+                                              "1"
+                                            ],
+                                            "doubleFaults": [
+                                              "2"
+                                            ],
+                                            "firstServicesGood": [
+                                              "26"
+                                            ],
+                                            "firstServicesGoodPct": [
+                                              "65"
+                                            ],
+                                            "firstServicesPointsXon": [
+                                              "19"
+                                            ],
+                                            "firstServicesPointsXonPct": [
+                                              "73"
+                                            ],
+                                            "secondServicesGood": [
+                                              "12"
+                                            ],
+                                            "secondServicesGoodPct": [
+                                              "85"
+                                            ],
+                                            "secondServicesPointsXon": [
+                                              "9"
+                                            ],
+                                            "secondServicesPointsXonPct": [
+                                              "64"
+                                            ],
+                                            "breakPointsAgainst": [
+                                              "3"
+                                            ],
+                                            "breakPointsSaved": [
+                                              "3"
+                                            ],
+                                            "breakPointsSavedPct": [
+                                              "100"
+                                            ]
+                                          }
+                                        ],
+                                        "statsTennisReturn": [
+                                          {
+                                            "returnsPlayed": [
+                                              "28"
+                                            ],
+                                            "receivePointsXon": [
+                                              "8"
+                                            ],
+                                            "receivePointsXonPct": [
+                                              "29"
+                                            ],
+                                            "breakPointsPlayed": [
+                                              "1"
+                                            ],
+                                            "breakPointsConverted": [
+                                              "1"
+                                            ],
+                                            "breakPointsConvertedPct": [
+                                              "100"
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "3"
+                                        ],
+                                        "score": [
+                                          "6"
+                                        ],
+                                        "duration": [
+                                          "45"
+                                        ],
+                                        "unforcedErrors": [
+                                          "6"
+                                        ],
+                                        "pointsXon": [
+                                          "31"
+                                        ],
+                                        "winners": [
+                                          "10"
+                                        ],
+                                        "netPointsPlayed": [
+                                          "3"
+                                        ],
+                                        "netPointsXon": [
+                                          "2"
+                                        ],
+                                        "netPointsXonPct": [
+                                          "67"
+                                        ],
+                                        "statsTennisService": [
+                                          {
+                                            "servePointsPlayed": [
+                                              "30"
+                                            ],
+                                            "aces": [
+                                              "0"
+                                            ],
+                                            "doubleFaults": [
+                                              "0"
+                                            ],
+                                            "firstServicesGood": [
+                                              "24"
+                                            ],
+                                            "firstServicesGoodPct": [
+                                              "80"
+                                            ],
+                                            "firstServicesPointsXon": [
+                                              "18"
+                                            ],
+                                            "firstServicesPointsXonPct": [
+                                              "75"
+                                            ],
+                                            "secondServicesGood": [
+                                              "6"
+                                            ],
+                                            "secondServicesGoodPct": [
+                                              "100"
+                                            ],
+                                            "secondServicesPointsXon": [
+                                              "4"
+                                            ],
+                                            "secondServicesPointsXonPct": [
+                                              "67"
+                                            ],
+                                            "breakPointsAgainst": [
+                                              "1"
+                                            ],
+                                            "breakPointsSaved": [
+                                              "1"
+                                            ],
+                                            "breakPointsSavedPct": [
+                                              "100"
+                                            ]
+                                          }
+                                        ],
+                                        "statsTennisReturn": [
+                                          {
+                                            "returnsPlayed": [
+                                              "28"
+                                            ],
+                                            "receivePointsXon": [
+                                              "9"
+                                            ],
+                                            "receivePointsXonPct": [
+                                              "32"
+                                            ],
+                                            "breakPointsPlayed": [
+                                              "1"
+                                            ],
+                                            "breakPointsConverted": [
+                                              "1"
+                                            ],
+                                            "breakPointsConvertedPct": [
+                                              "100"
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "id": [
+                              "p_2"
+                            ],
+                            "playerMetadata": [
+                              {
+                                "name": [
+                                  {
+                                    "role": [
+                                      "nrol:first"
+                                    ]
+                                  },
+                                  {
+                                    "role": [
+                                      "nrol:last"
+                                    ]
+                                  }
+                                ],
+                                "homeLocation": [
+                                  {
+                                    "pOIDetails": [
+                                      {
+                                        "address": [
+                                          {
+                                            "country": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Argentina"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "playerStats": [
+                              {
+                                "eventOutcome": [
+                                  "speventoutcome:loss"
+                                ],
+                                "score": [
+                                  "0"
+                                ],
+                                "rank": [
+                                  {
+                                    "type": [
+                                      "vendrt:single"
+                                    ],
+                                    "value": [
+                                      "12"
+                                    ]
+                                  }
+                                ],
+                                "playerStatsTennis": [
+                                  {
+                                    "unforcedErrors": [
+                                      "17"
+                                    ],
+                                    "pointsXon": [
+                                      "78"
+                                    ],
+                                    "winners": [
+                                      "27"
+                                    ],
+                                    "netPointsPlayed": [
+                                      "31"
+                                    ],
+                                    "netPointsXon": [
+                                      "19"
+                                    ],
+                                    "netPointsXonPct": [
+                                      "61"
+                                    ],
+                                    "statsTennisService": [
+                                      {
+                                        "servePointsPlayed": [
+                                          "81"
+                                        ],
+                                        "aces": [
+                                          "13"
+                                        ],
+                                        "doubleFaults": [
+                                          "0"
+                                        ],
+                                        "firstServicesGood": [
+                                          "48"
+                                        ],
+                                        "firstServicesGoodPct": [
+                                          "59"
+                                        ],
+                                        "firstServicesPointsXon": [
+                                          "35"
+                                        ],
+                                        "firstServicesPointsXonPct": [
+                                          "73"
+                                        ],
+                                        "secondServicesGood": [
+                                          "33"
+                                        ],
+                                        "secondServicesGoodPct": [
+                                          "100"
+                                        ],
+                                        "secondServicesPointsXon": [
+                                          "19"
+                                        ],
+                                        "secondServicesPointsXonPct": [
+                                          "58"
+                                        ],
+                                        "breakPointsAgainst": [
+                                          "6"
+                                        ],
+                                        "breakPointsSaved": [
+                                          "2"
+                                        ],
+                                        "breakPointsSavedPct": [
+                                          "33"
+                                        ],
+                                        "firstServeAverageSpeed": [
+                                          "124"
+                                        ],
+                                        "firstServiceTopSpeed": [
+                                          "135"
+                                        ],
+                                        "secondServeAverageSpeed": [
+                                          "95"
+                                        ],
+                                        "speedUnits": [
+                                          "mph"
+                                        ]
+                                      }
+                                    ],
+                                    "statsTennisReturn": [
+                                      {
+                                        "returnsPlayed": [
+                                          "90"
+                                        ],
+                                        "receivePointsXon": [
+                                          "24"
+                                        ],
+                                        "receivePointsXonPct": [
+                                          "27"
+                                        ],
+                                        "breakPointsPlayed": [
+                                          "4"
+                                        ],
+                                        "breakPointsConverted": [
+                                          "0"
+                                        ],
+                                        "breakPointsConvertedPct": [
+                                          "0"
+                                        ]
+                                      }
+                                    ],
+                                    "statsTennisSet": [
+                                      {
+                                        "setNumber": [
+                                          "1"
+                                        ],
+                                        "score": [
+                                          "3"
+                                        ],
+                                        "duration": [
+                                          "34"
+                                        ],
+                                        "unforcedErrors": [
+                                          "3"
+                                        ],
+                                        "pointsXon": [
+                                          "19"
+                                        ],
+                                        "winners": [
+                                          "9"
+                                        ],
+                                        "netPointsPlayed": [
+                                          "7"
+                                        ],
+                                        "netPointsXon": [
+                                          "5"
+                                        ],
+                                        "netPointsXonPct": [
+                                          "71"
+                                        ],
+                                        "statsTennisService": [
+                                          {
+                                            "servePointsPlayed": [
+                                              "25"
+                                            ],
+                                            "aces": [
+                                              "3"
+                                            ],
+                                            "doubleFaults": [
+                                              "0"
+                                            ],
+                                            "firstServicesGood": [
+                                              "12"
+                                            ],
+                                            "firstServicesGoodPct": [
+                                              "48"
+                                            ],
+                                            "firstServicesPointsXon": [
+                                              "8"
+                                            ],
+                                            "firstServicesPointsXonPct": [
+                                              "67"
+                                            ],
+                                            "secondServicesGood": [
+                                              "13"
+                                            ],
+                                            "secondServicesGoodPct": [
+                                              "100"
+                                            ],
+                                            "secondServicesPointsXon": [
+                                              "7"
+                                            ],
+                                            "secondServicesPointsXonPct": [
+                                              "54"
+                                            ],
+                                            "breakPointsAgainst": [
+                                              "4"
+                                            ],
+                                            "breakPointsSaved": [
+                                              "2"
+                                            ],
+                                            "breakPointsSavedPct": [
+                                              "50"
+                                            ]
+                                          }
+                                        ],
+                                        "statsTennisReturn": [
+                                          {
+                                            "returnsPlayed": [
+                                              "20"
+                                            ],
+                                            "receivePointsXon": [
+                                              "4"
+                                            ],
+                                            "receivePointsXonPct": [
+                                              "20"
+                                            ],
+                                            "breakPointsPlayed": [
+                                              "0"
+                                            ],
+                                            "breakPointsConverted": [
+                                              "0"
+                                            ],
+                                            "breakPointsConvertedPct": [
+                                              "0"
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "2"
+                                        ],
+                                        "score": [
+                                          "5"
+                                        ],
+                                        "duration": [
+                                          "54"
+                                        ],
+                                        "unforcedErrors": [
+                                          "11"
+                                        ],
+                                        "pointsXon": [
+                                          "32"
+                                        ],
+                                        "winners": [
+                                          "10"
+                                        ],
+                                        "netPointsPlayed": [
+                                          "11"
+                                        ],
+                                        "netPointsXon": [
+                                          "6"
+                                        ],
+                                        "netPointsXonPct": [
+                                          "55"
+                                        ],
+                                        "statsTennisService": [
+                                          {
+                                            "servePointsPlayed": [
+                                              "28"
+                                            ],
+                                            "aces": [
+                                              "7"
+                                            ],
+                                            "doubleFaults": [
+                                              "0"
+                                            ],
+                                            "firstServicesGood": [
+                                              "18"
+                                            ],
+                                            "firstServicesGoodPct": [
+                                              "64"
+                                            ],
+                                            "firstServicesPointsXon": [
+                                              "14"
+                                            ],
+                                            "firstServicesPointsXonPct": [
+                                              "78"
+                                            ],
+                                            "secondServicesGood": [
+                                              "10"
+                                            ],
+                                            "secondServicesGoodPct": [
+                                              "100"
+                                            ],
+                                            "secondServicesPointsXon": [
+                                              "6"
+                                            ],
+                                            "secondServicesPointsXonPct": [
+                                              "60"
+                                            ],
+                                            "breakPointsAgainst": [
+                                              "3"
+                                            ],
+                                            "breakPointsSaved": [
+                                              "0"
+                                            ],
+                                            "breakPointsSavedPct": [
+                                              "0"
+                                            ]
+                                          }
+                                        ],
+                                        "statsTennisReturn": [
+                                          {
+                                            "returnsPlayed": [
+                                              "40"
+                                            ],
+                                            "receivePointsXon": [
+                                              "12"
+                                            ],
+                                            "receivePointsXonPct": [
+                                              "30"
+                                            ],
+                                            "breakPointsPlayed": [
+                                              "1"
+                                            ],
+                                            "breakPointsConverted": [
+                                              "0"
+                                            ],
+                                            "breakPointsConvertedPct": [
+                                              "0"
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "3"
+                                        ],
+                                        "score": [
+                                          "4"
+                                        ],
+                                        "duration": [
+                                          "45"
+                                        ],
+                                        "unforcedErrors": [
+                                          "3"
+                                        ],
+                                        "pointsXon": [
+                                          "27"
+                                        ],
+                                        "winners": [
+                                          "8"
+                                        ],
+                                        "netPointsPlayed": [
+                                          "13"
+                                        ],
+                                        "netPointsXon": [
+                                          "8"
+                                        ],
+                                        "netPointsXonPct": [
+                                          "62"
+                                        ],
+                                        "statsTennisService": [
+                                          {
+                                            "servePointsPlayed": [
+                                              "28"
+                                            ],
+                                            "aces": [
+                                              "3"
+                                            ],
+                                            "doubleFaults": [
+                                              "0"
+                                            ],
+                                            "firstServicesGood": [
+                                              "18"
+                                            ],
+                                            "firstServicesGoodPct": [
+                                              "64"
+                                            ],
+                                            "firstServicesPointsXon": [
+                                              "13"
+                                            ],
+                                            "firstServicesPointsXonPct": [
+                                              "72"
+                                            ],
+                                            "secondServicesGood": [
+                                              "10"
+                                            ],
+                                            "secondServicesGoodPct": [
+                                              "100"
+                                            ],
+                                            "secondServicesPointsXon": [
+                                              "6"
+                                            ],
+                                            "secondServicesPointsXonPct": [
+                                              "60"
+                                            ],
+                                            "breakPointsAgainst": [
+                                              "1"
+                                            ],
+                                            "breakPointsSaved": [
+                                              "0"
+                                            ],
+                                            "breakPointsSavedPct": [
+                                              "0"
+                                            ]
+                                          }
+                                        ],
+                                        "statsTennisReturn": [
+                                          {
+                                            "returnsPlayed": [
+                                              "30"
+                                            ],
+                                            "receivePointsXon": [
+                                              "8"
+                                            ],
+                                            "receivePointsXonPct": [
+                                              "27"
+                                            ],
+                                            "breakPointsPlayed": [
+                                              "1"
+                                            ],
+                                            "breakPointsConverted": [
+                                              "0"
+                                            ],
+                                            "breakPointsConvertedPct": [
+                                              "0"
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "actions": [
+                          {
+                            "action": [
+                              {
+                                "set": [
+                                  "3"
+                                ],
+                                "game": [
+                                  "10"
+                                ],
+                                "action": [
+                                  {
+                                    "shotType": [
+                                      "sptenshot:volley"
+                                    ],
+                                    "receiverScore": [
+                                      "sptengameresult:30"
+                                    ],
+                                    "serveNumber": [
+                                      "vendtenserve:first"
+                                    ],
+                                    "serverScore": [
+                                      "sptengameresult:game"
+                                    ],
+                                    "participant": [
+                                      {
+                                        "idref": [
+                                          "p_1"
+                                        ],
+                                        "role": [
+                                          "vendtenrole:server"
+                                        ]
+                                      },
+                                      {
+                                        "idref": [
+                                          "p_2"
+                                        ],
+                                        "role": [
+                                          "vendtenrole:receiver"
+                                        ]
+                                      },
+                                      {
+                                        "idref": [
+                                          "p_1"
+                                        ],
+                                        "role": [
+                                          "vendtenrole:ball-winner"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tournamentPartMetadata": [
+                  {
+                    "type": [
+                      "sptournamentphase:semi-final"
+                    ],
+                    "status": [
+                      "speventstatus:post-event"
+                    ],
+                    "startDateTime": [
+                      "2011-09-16"
+                    ],
+                    "endDateTime": [
+                      "2011-09-18"
+                    ],
+                    "name": [
+                      {
+                        "full": [
+                          "Semi-final"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "sportsEvent": [
+                  {
+                    "eventMetadata": [
+                      {
+                        "eventStatus": [
+                          "speventstatus:post-event"
+                        ],
+                        "sportsProperty": [
+                          {
+                            "value": [
+                              "Dunlop Fort All Court"
+                            ],
+                            "formalName": [
+                              "Ball"
+                            ]
+                          }
+                        ],
+                        "site": [
+                          {
+                            "siteMetadata": [
+                              {
+                                "surface": [
+                                  "spsitesurface:hard-court"
+                                ],
+                                "style": [
+                                  "indoor"
+                                ],
+                                "name": [
+                                  {
+                                    "full": [
+                                      "Belgrade Arena"
+                                    ]
+                                  }
+                                ],
+                                "homeLocation": [
+                                  {
+                                    "pOIDetails": [
+                                      {
+                                        "address": [
+                                          {
+                                            "locality": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Belgrade"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "country": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Serbia"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "team": [
+                      {
+                        "id": [
+                          "DC_Seribia"
+                        ],
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Serbia"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "2"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:loss"
+                            ]
+                          }
+                        ],
+                        "player": [
+                          {
+                            "playerMetadata": [
+                              ""
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "id": [
+                          "DC_Argentina"
+                        ],
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Argentina"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "3"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:win"
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "sportsEvent": [
+                      {
+                        "eventMetadata": [
+                          {
+                            "eventNumber": [
+                              "1"
+                            ],
+                            "eventStatus": [
+                              "speventstatus:post-event"
+                            ],
+                            "startDateTime": [
+                              "2011-09-16T15:00:00"
+                            ],
+                            "endDateTime": [
+                              "2011-09-16"
+                            ],
+                            "eventMetadataTennis": [
+                              {
+                                "numberOfSets": [
+                                  "5"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "player": [
+                          {
+                            "playerMetadata": [
+                              {
+                                "teamIdref": [
+                                  "DC_Serbia"
+                                ],
+                                "dateOfBirth": [
+                                  "1986-02-10"
+                                ],
+                                "gender": [
+                                  "male"
+                                ],
+                                "nationality": [
+                                  "Serbian"
+                                ],
+                                "name": [
+                                  {
+                                    "role": [
+                                      "nrol:first"
+                                    ]
+                                  },
+                                  {
+                                    "role": [
+                                      "nrol:last"
+                                    ]
+                                  }
+                                ],
+                                "homeLocation": [
+                                  {
+                                    "pOIDetails": [
+                                      {
+                                        "address": [
+                                          {
+                                            "locality": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Belgrade"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "country": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Serbia"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "playerStats": [
+                              {
+                                "score": [
+                                  "1"
+                                ],
+                                "eventOutcome": [
+                                  "speventoutcome:loss"
+                                ],
+                                "rank": [
+                                  {
+                                    "value": [
+                                      "17"
+                                    ],
+                                    "type": [
+                                      "vendrt:single"
+                                    ]
+                                  },
+                                  {
+                                    "value": [
+                                      "90"
+                                    ],
+                                    "type": [
+                                      "vendrt:double"
+                                    ]
+                                  }
+                                ],
+                                "subScore": [
+                                  {
+                                    "score": [
+                                      "4"
+                                    ],
+                                    "periodValue": [
+                                      "1"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "6"
+                                    ],
+                                    "periodValue": [
+                                      "2"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "2"
+                                    ],
+                                    "periodValue": [
+                                      "3"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "3"
+                                    ],
+                                    "periodValue": [
+                                      "4"
+                                    ]
+                                  }
+                                ],
+                                "playerStatsTennis": [
+                                  {
+                                    "statsTennisSet": [
+                                      {
+                                        "setNumber": [
+                                          "1"
+                                        ],
+                                        "score": [
+                                          "4"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "2"
+                                        ],
+                                        "score": [
+                                          "6"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "3"
+                                        ],
+                                        "score": [
+                                          "2"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "4"
+                                        ],
+                                        "score": [
+                                          "3"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "playerMetadata": [
+                              {
+                                "dateOfBirth": [
+                                  "1982-01-01"
+                                ],
+                                "gender": [
+                                  "male"
+                                ],
+                                "nationality": [
+                                  "Argentinian"
+                                ],
+                                "name": [
+                                  {
+                                    "role": [
+                                      "nrol:first"
+                                    ]
+                                  },
+                                  {
+                                    "role": [
+                                      "nrol:last"
+                                    ]
+                                  }
+                                ],
+                                "homeLocation": [
+                                  {
+                                    "pOIDetails": [
+                                      {
+                                        "address": [
+                                          {
+                                            "locality": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Cordoba"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "country": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Argentina"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "playerStats": [
+                              {
+                                "score": [
+                                  "3"
+                                ],
+                                "eventOutcome": [
+                                  "speventoutcome:win"
+                                ],
+                                "rank": [
+                                  {
+                                    "value": [
+                                      "57"
+                                    ],
+                                    "type": [
+                                      "vendrt:single"
+                                    ]
+                                  }
+                                ],
+                                "subScore": [
+                                  {
+                                    "score": [
+                                      "6"
+                                    ],
+                                    "periodValue": [
+                                      "1"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "4"
+                                    ],
+                                    "periodValue": [
+                                      "2"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "6"
+                                    ],
+                                    "periodValue": [
+                                      "3"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "6"
+                                    ],
+                                    "periodValue": [
+                                      "4"
+                                    ]
+                                  }
+                                ],
+                                "playerStatsTennis": [
+                                  {
+                                    "statsTennisSet": [
+                                      {
+                                        "setNumber": [
+                                          "1"
+                                        ],
+                                        "score": [
+                                          "6"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "2"
+                                        ],
+                                        "score": [
+                                          "4"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "3"
+                                        ],
+                                        "score": [
+                                          "6"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "4"
+                                        ],
+                                        "score": [
+                                          "6"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "eventMetadata": [
+                          {
+                            "eventNumber": [
+                              "2"
+                            ],
+                            "eventStatus": [
+                              "speventstatus:post-event"
+                            ],
+                            "startDateTime": [
+                              "2011-09-16"
+                            ],
+                            "endDateTime": [
+                              "2011-09-16"
+                            ],
+                            "eventMetadataTennis": [
+                              {
+                                "numberOfSets": [
+                                  "5"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "player": [
+                          {
+                            "playerMetadata": [
+                              {
+                                "dateOfBirth": [
+                                  "1986-02-10"
+                                ],
+                                "gender": [
+                                  "male"
+                                ],
+                                "nationality": [
+                                  "Serbian"
+                                ],
+                                "name": [
+                                  {
+                                    "role": [
+                                      "nrol:first"
+                                    ]
+                                  },
+                                  {
+                                    "role": [
+                                      "nrol:last"
+                                    ]
+                                  }
+                                ],
+                                "homeLocation": [
+                                  {
+                                    "pOIDetails": [
+                                      {
+                                        "address": [
+                                          {
+                                            "locality": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Belgrade"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "country": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Servia"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "playerStats": [
+                              {
+                                "score": [
+                                  "0"
+                                ],
+                                "eventOutcome": [
+                                  "speventoutcome:loss"
+                                ],
+                                "rank": [
+                                  {
+                                    "value": [
+                                      "13"
+                                    ],
+                                    "type": [
+                                      "vendrt:single"
+                                    ]
+                                  },
+                                  {
+                                    "value": [
+                                      "69"
+                                    ],
+                                    "type": [
+                                      "vendrt:double"
+                                    ]
+                                  }
+                                ],
+                                "subScore": [
+                                  {
+                                    "score": [
+                                      "5"
+                                    ],
+                                    "periodValue": [
+                                      "1"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "3"
+                                    ],
+                                    "periodValue": [
+                                      "2"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "4"
+                                    ],
+                                    "periodValue": [
+                                      "3"
+                                    ]
+                                  }
+                                ],
+                                "playerStatsTennis": [
+                                  {
+                                    "statsTennisSet": [
+                                      {
+                                        "setNumber": [
+                                          "1"
+                                        ],
+                                        "score": [
+                                          "5"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "2"
+                                        ],
+                                        "score": [
+                                          "3"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "3"
+                                        ],
+                                        "score": [
+                                          "4"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "playerMetadata": [
+                              {
+                                "dateOfBirth": [
+                                  "1988-09-23"
+                                ],
+                                "gender": [
+                                  "male"
+                                ],
+                                "nationality": [
+                                  "Argentinian"
+                                ],
+                                "name": [
+                                  {
+                                    "role": [
+                                      "nrol:first"
+                                    ]
+                                  },
+                                  {
+                                    "role": [
+                                      "nrol:last"
+                                    ]
+                                  }
+                                ],
+                                "homeLocation": [
+                                  {
+                                    "pOIDetails": [
+                                      {
+                                        "address": [
+                                          {
+                                            "locality": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Tandil"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "country": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Argentina"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "playerStats": [
+                              {
+                                "score": [
+                                  "3"
+                                ],
+                                "eventOutcome": [
+                                  "speventoutcome:win"
+                                ],
+                                "rank": [
+                                  {
+                                    "value": [
+                                      "14"
+                                    ],
+                                    "type": [
+                                      "vendrt:single"
+                                    ]
+                                  },
+                                  {
+                                    "value": [
+                                      "169"
+                                    ],
+                                    "type": [
+                                      "vendrt:double"
+                                    ]
+                                  }
+                                ],
+                                "subScore": [
+                                  {
+                                    "score": [
+                                      "7"
+                                    ],
+                                    "periodValue": [
+                                      "1"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "6"
+                                    ],
+                                    "periodValue": [
+                                      "2"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "6"
+                                    ],
+                                    "periodValue": [
+                                      "3"
+                                    ]
+                                  }
+                                ],
+                                "playerStatsTennis": [
+                                  {
+                                    "statsTennisSet": [
+                                      {
+                                        "setNumber": [
+                                          "1"
+                                        ],
+                                        "score": [
+                                          "7"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "2"
+                                        ],
+                                        "score": [
+                                          "6"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "3"
+                                        ],
+                                        "score": [
+                                          "6"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "eventMetadata": [
+                          {
+                            "eventNumber": [
+                              "3"
+                            ],
+                            "startDateTime": [
+                              "2011-09-17"
+                            ],
+                            "endDateTime": [
+                              "2011-09-17T15:00:00"
+                            ],
+                            "eventStatus": [
+                              "speventstatus:post-event"
+                            ],
+                            "sportsProperty": [
+                              {
+                                "formalName": [
+                                  "playertype"
+                                ],
+                                "value": [
+                                  "double"
+                                ]
+                              }
+                            ],
+                            "eventMetadataTennis": [
+                              {
+                                "numberOfSets": [
+                                  "5"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "team": [
+                          {
+                            "teamMetadata": [
+                              {
+                                "name": [
+                                  {
+                                    "full": [
+                                      "Serbia"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "teamStats": [
+                              {
+                                "score": [
+                                  "3"
+                                ],
+                                "eventOutcome": [
+                                  "speventoutcome:win"
+                                ],
+                                "subScore": [
+                                  {
+                                    "score": [
+                                      "7"
+                                    ],
+                                    "periodValue": [
+                                      "1"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "6"
+                                    ],
+                                    "periodValue": [
+                                      "2"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "6"
+                                    ],
+                                    "periodValue": [
+                                      "3"
+                                    ]
+                                  }
+                                ],
+                                "teamStatsTennis": [
+                                  {
+                                    "statsTennisSet": [
+                                      {
+                                        "setNumber": [
+                                          "1"
+                                        ],
+                                        "score": [
+                                          "7"
+                                        ],
+                                        "scoreTiebreaker": [
+                                          "7"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "2"
+                                        ],
+                                        "score": [
+                                          "6"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "3"
+                                        ],
+                                        "score": [
+                                          "6"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "player": [
+                              {
+                                "playerMetadata": [
+                                  {
+                                    "teamIdref": [
+                                      "DC_Serbia"
+                                    ],
+                                    "dateOfBirth": [
+                                      "1986-02-10"
+                                    ],
+                                    "gender": [
+                                      "male"
+                                    ],
+                                    "nationality": [
+                                      "Serbian"
+                                    ],
+                                    "name": [
+                                      {
+                                        "role": [
+                                          "nrol:first"
+                                        ]
+                                      },
+                                      {
+                                        "role": [
+                                          "nrol:last"
+                                        ]
+                                      }
+                                    ],
+                                    "homeLocation": [
+                                      {
+                                        "pOIDetails": [
+                                          {
+                                            "address": [
+                                              {
+                                                "locality": [
+                                                  {
+                                                    "name": [
+                                                      {
+                                                        "full": [
+                                                          "Belgrade"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ],
+                                                "country": [
+                                                  {
+                                                    "name": [
+                                                      {
+                                                        "full": [
+                                                          "Serbia"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "playerStats": [
+                                  {
+                                    "rank": [
+                                      {
+                                        "value": [
+                                          "17"
+                                        ],
+                                        "type": [
+                                          "vendrt:single"
+                                        ]
+                                      },
+                                      {
+                                        "value": [
+                                          "90"
+                                        ],
+                                        "type": [
+                                          "vendrt:double"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "playerMetadata": [
+                                  {
+                                    "teamIdref": [
+                                      "DC_Serbia"
+                                    ],
+                                    "dateOfBirth": [
+                                      "1986-02-10"
+                                    ],
+                                    "gender": [
+                                      "male"
+                                    ],
+                                    "nationality": [
+                                      "Serbian"
+                                    ],
+                                    "name": [
+                                      {
+                                        "role": [
+                                          "nrol:first"
+                                        ]
+                                      },
+                                      {
+                                        "role": [
+                                          "nrol:last"
+                                        ]
+                                      }
+                                    ],
+                                    "homeLocation": [
+                                      {
+                                        "pOIDetails": [
+                                          {
+                                            "address": [
+                                              {
+                                                "locality": [
+                                                  {
+                                                    "name": [
+                                                      {
+                                                        "full": [
+                                                          "Belgrade"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ],
+                                                "country": [
+                                                  {
+                                                    "name": [
+                                                      {
+                                                        "full": [
+                                                          "Serbia"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "playerStats": [
+                                  {
+                                    "rank": [
+                                      {
+                                        "value": [
+                                          "3"
+                                        ],
+                                        "type": [
+                                          "vendrt:double"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "teamMetadata": [
+                              {
+                                "name": [
+                                  {
+                                    "full": [
+                                      "Argentina"
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "teamStats": [
+                              {
+                                "score": [
+                                  "0"
+                                ],
+                                "eventOutcome": [
+                                  "speventoutcome:loss"
+                                ],
+                                "subScore": [
+                                  {
+                                    "score": [
+                                      "6"
+                                    ],
+                                    "periodValue": [
+                                      "1"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "4"
+                                    ],
+                                    "periodValue": [
+                                      "2"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "2"
+                                    ],
+                                    "periodValue": [
+                                      "3"
+                                    ]
+                                  }
+                                ],
+                                "teamStatsTennis": [
+                                  {
+                                    "statsTennisSet": [
+                                      {
+                                        "setNumber": [
+                                          "1"
+                                        ],
+                                        "score": [
+                                          "6"
+                                        ],
+                                        "scoreTiebreaker": [
+                                          "4"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "2"
+                                        ],
+                                        "score": [
+                                          "4"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "3"
+                                        ],
+                                        "score": [
+                                          "2"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "player": [
+                              {
+                                "playerMetadata": [
+                                  {
+                                    "teamIdref": [
+                                      "DC_Argentina"
+                                    ],
+                                    "dateOfBirth": [
+                                      "1979-08-30"
+                                    ],
+                                    "gender": [
+                                      "male"
+                                    ],
+                                    "nationality": [
+                                      "Serbian"
+                                    ],
+                                    "name": [
+                                      {
+                                        "role": [
+                                          "nrol:first"
+                                        ]
+                                      },
+                                      {
+                                        "role": [
+                                          "nrol:last"
+                                        ]
+                                      }
+                                    ],
+                                    "homeLocation": [
+                                      {
+                                        "pOIDetails": [
+                                          {
+                                            "address": [
+                                              {
+                                                "locality": [
+                                                  {
+                                                    "name": [
+                                                      {
+                                                        "full": [
+                                                          "Buenos Aires"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ],
+                                                "country": [
+                                                  {
+                                                    "name": [
+                                                      {
+                                                        "full": [
+                                                          "Argentina"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "playerStats": [
+                                  {
+                                    "rank": [
+                                      {
+                                        "value": [
+                                          "28"
+                                        ],
+                                        "type": [
+                                          "vendrt:single"
+                                        ]
+                                      },
+                                      {
+                                        "value": [
+                                          "51"
+                                        ],
+                                        "type": [
+                                          "vendrt:double"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "playerMetadata": [
+                                  {
+                                    "teamIdref": [
+                                      "DC_Argentina"
+                                    ],
+                                    "dateOfBirth": [
+                                      "1984-03-29"
+                                    ],
+                                    "gender": [
+                                      "male"
+                                    ],
+                                    "nationality": [
+                                      "Serbian"
+                                    ],
+                                    "name": [
+                                      {
+                                        "role": [
+                                          "nrol:first"
+                                        ]
+                                      },
+                                      {
+                                        "role": [
+                                          "nrol:last"
+                                        ]
+                                      }
+                                    ],
+                                    "homeLocation": [
+                                      {
+                                        "pOIDetails": [
+                                          {
+                                            "address": [
+                                              {
+                                                "locality": [
+                                                  {
+                                                    "name": [
+                                                      {
+                                                        "full": [
+                                                          "Buenos Aires"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ],
+                                                "country": [
+                                                  {
+                                                    "name": [
+                                                      {
+                                                        "full": [
+                                                          "Argentina"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "playerStats": [
+                                  {
+                                    "rank": [
+                                      {
+                                        "value": [
+                                          "41"
+                                        ],
+                                        "type": [
+                                          "vendrt:single"
+                                        ]
+                                      },
+                                      {
+                                        "value": [
+                                          "181"
+                                        ],
+                                        "type": [
+                                          "vendrt:double"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "eventMetadata": [
+                          {
+                            "eventNumber": [
+                              "4"
+                            ],
+                            "eventStatus": [
+                              "speventstatus:post-event"
+                            ],
+                            "startDateTime": [
+                              "2011-09-18T14:00:00"
+                            ],
+                            "endDateTime": [
+                              "2011-09-18"
+                            ],
+                            "eventMetadataTennis": [
+                              {
+                                "numberOfSets": [
+                                  "5"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "player": [
+                          {
+                            "playerMetadata": [
+                              {
+                                "teamIdref": [
+                                  "DC_Serbia"
+                                ],
+                                "dateOfBirth": [
+                                  "1987-05-22"
+                                ],
+                                "gender": [
+                                  "male"
+                                ],
+                                "nationality": [
+                                  "Serbian"
+                                ],
+                                "name": [
+                                  {
+                                    "role": [
+                                      "nrol:first"
+                                    ]
+                                  },
+                                  {
+                                    "role": [
+                                      "nrol:last"
+                                    ]
+                                  }
+                                ],
+                                "homeLocation": [
+                                  {
+                                    "pOIDetails": [
+                                      {
+                                        "address": [
+                                          {
+                                            "locality": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Belgrade"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "country": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Serbia"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "playerStats": [
+                              {
+                                "score": [
+                                  "0"
+                                ],
+                                "eventOutcome": [
+                                  "speventoutcome:loss"
+                                ],
+                                "rank": [
+                                  {
+                                    "value": [
+                                      "1"
+                                    ],
+                                    "type": [
+                                      "vendrt:single"
+                                    ]
+                                  },
+                                  {
+                                    "value": [
+                                      "241"
+                                    ],
+                                    "type": [
+                                      "vendrt:double"
+                                    ]
+                                  }
+                                ],
+                                "subScore": [
+                                  {
+                                    "score": [
+                                      "6"
+                                    ],
+                                    "periodValue": [
+                                      "1"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "0"
+                                    ],
+                                    "periodValue": [
+                                      "2"
+                                    ]
+                                  }
+                                ],
+                                "playerStatsTennis": [
+                                  {
+                                    "statsTennisSet": [
+                                      {
+                                        "setNumber": [
+                                          "1"
+                                        ],
+                                        "score": [
+                                          "6"
+                                        ],
+                                        "scoreTiebreaker": [
+                                          "5"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "2"
+                                        ],
+                                        "score": [
+                                          "0"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "playerMetadata": [
+                              {
+                                "dateOfBirth": [
+                                  "1988-09-23"
+                                ],
+                                "gender": [
+                                  "male"
+                                ],
+                                "nationality": [
+                                  "Argentinian"
+                                ],
+                                "name": [
+                                  {
+                                    "role": [
+                                      "nrol:first"
+                                    ]
+                                  },
+                                  {
+                                    "role": [
+                                      "nrol:last"
+                                    ]
+                                  }
+                                ],
+                                "homeLocation": [
+                                  {
+                                    "pOIDetails": [
+                                      {
+                                        "address": [
+                                          {
+                                            "locality": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Tandil"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "country": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Argentina"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "playerStats": [
+                              {
+                                "score": [
+                                  "2"
+                                ],
+                                "eventOutcome": [
+                                  "speventoutcome:win"
+                                ],
+                                "rank": [
+                                  {
+                                    "value": [
+                                      "12"
+                                    ],
+                                    "type": [
+                                      "vendrt:single"
+                                    ]
+                                  },
+                                  {
+                                    "value": [
+                                      "183"
+                                    ],
+                                    "type": [
+                                      "vendrt:double"
+                                    ]
+                                  }
+                                ],
+                                "subScore": [
+                                  {
+                                    "score": [
+                                      "7"
+                                    ],
+                                    "periodValue": [
+                                      "1"
+                                    ]
+                                  },
+                                  {
+                                    "score": [
+                                      "3"
+                                    ],
+                                    "periodValue": [
+                                      "2"
+                                    ]
+                                  }
+                                ],
+                                "playerStatsTennis": [
+                                  {
+                                    "statsTennisSet": [
+                                      {
+                                        "setNumber": [
+                                          "1"
+                                        ],
+                                        "score": [
+                                          "7"
+                                        ],
+                                        "scoreTiebreaker": [
+                                          "7"
+                                        ]
+                                      },
+                                      {
+                                        "setNumber": [
+                                          "2"
+                                        ],
+                                        "score": [
+                                          "3"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "eventMetadata": [
+                          {
+                            "eventNumber": [
+                              "5"
+                            ],
+                            "eventStatus": [
+                              "speventstatus:post-event"
+                            ],
+                            "startDateTime": [
+                              "2011-09-18"
+                            ],
+                            "endDateTime": [
+                              "2011-09-18"
+                            ],
+                            "eventMetadataTennis": [
+                              {
+                                "numberOfSets": [
+                                  "5"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "player": [
+                          {
+                            "playerMetadata": [
+                              {
+                                "dateOfBirth": [
+                                  "1986-02-10"
+                                ],
+                                "gender": [
+                                  "male"
+                                ],
+                                "nationality": [
+                                  "Serbian"
+                                ],
+                                "name": [
+                                  {
+                                    "role": [
+                                      "nrol:first"
+                                    ]
+                                  },
+                                  {
+                                    "role": [
+                                      "nrol:last"
+                                    ]
+                                  }
+                                ],
+                                "homeLocation": [
+                                  {
+                                    "pOIDetails": [
+                                      {
+                                        "address": [
+                                          {
+                                            "locality": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Belgrade"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "country": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Servia"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "playerStats": [
+                              {
+                                "score": [
+                                  "1"
+                                ],
+                                "eventOutcome": [
+                                  "speventoutcome:win"
+                                ],
+                                "rank": [
+                                  {
+                                    "value": [
+                                      "13"
+                                    ],
+                                    "type": [
+                                      "vendrt:single"
+                                    ]
+                                  },
+                                  {
+                                    "value": [
+                                      "69"
+                                    ],
+                                    "type": [
+                                      "vendrt:double"
+                                    ]
+                                  }
+                                ],
+                                "subScore": [
+                                  {
+                                    "score": [
+                                      "6"
+                                    ],
+                                    "periodValue": [
+                                      "1"
+                                    ]
+                                  }
+                                ],
+                                "playerStatsTennis": [
+                                  {
+                                    "statsTennisSet": [
+                                      {
+                                        "setNumber": [
+                                          "1"
+                                        ],
+                                        "score": [
+                                          "6"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "playerMetadata": [
+                              {
+                                "dateOfBirth": [
+                                  "1984-03-29"
+                                ],
+                                "gender": [
+                                  "male"
+                                ],
+                                "nationality": [
+                                  "Argentinian"
+                                ],
+                                "name": [
+                                  {
+                                    "role": [
+                                      "nrol:first"
+                                    ]
+                                  },
+                                  {
+                                    "role": [
+                                      "nrol:last"
+                                    ]
+                                  }
+                                ],
+                                "homeLocation": [
+                                  {
+                                    "pOIDetails": [
+                                      {
+                                        "address": [
+                                          {
+                                            "locality": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Buenos Aires"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ],
+                                            "country": [
+                                              {
+                                                "name": [
+                                                  {
+                                                    "full": [
+                                                      "Argentina"
+                                                    ]
+                                                  }
+                                                ]
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ],
+                            "playerStats": [
+                              {
+                                "score": [
+                                  "0"
+                                ],
+                                "eventOutcome": [
+                                  "speventoutcome:loss"
+                                ],
+                                "rank": [
+                                  {
+                                    "value": [
+                                      "34"
+                                    ],
+                                    "type": [
+                                      "vendrt:single"
+                                    ]
+                                  },
+                                  {
+                                    "value": [
+                                      "178"
+                                    ],
+                                    "type": [
+                                      "vendrt:double"
+                                    ]
+                                  }
+                                ],
+                                "subScore": [
+                                  {
+                                    "score": [
+                                      "2"
+                                    ],
+                                    "periodValue": [
+                                      "1"
+                                    ]
+                                  }
+                                ],
+                                "playerStatsTennis": [
+                                  {
+                                    "statsTennisSet": [
+                                      {
+                                        "setNumber": [
+                                          "1"
+                                        ],
+                                        "score": [
+                                          "2"
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "eventMetadata": [
+                      {
+                        "eventStatus": [
+                          "speventstatus:post-event"
+                        ]
+                      }
+                    ],
+                    "team": [
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Spain"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "4"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:win"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "France"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "1"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:loss"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tournamentPartMetadata": [
+                  {
+                    "type": [
+                      "sptournamentphase:quarter-final"
+                    ],
+                    "status": [
+                      "speventstatus:post-event"
+                    ],
+                    "startDateTime": [
+                      "2011-07-08"
+                    ],
+                    "endDateTime": [
+                      "2011-07-10"
+                    ],
+                    "name": [
+                      {
+                        "full": [
+                          "Quarterfinals"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "sportsEvent": [
+                  {
+                    "eventMetadata": [
+                      {
+                        "eventStatus": [
+                          "speventstatus:post-event"
+                        ]
+                      }
+                    ],
+                    "team": [
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Serbia"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "4"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:win"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Sweden"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "1"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:loss"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "eventMetadata": [
+                      {
+                        "eventStatus": [
+                          "speventstatus:post-event"
+                        ]
+                      }
+                    ],
+                    "team": [
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Kazakhstan"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "0"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:loss"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Argentina"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "5"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:win"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "eventMetadata": [
+                      {
+                        "eventStatus": [
+                          "speventstatus:post-event"
+                        ]
+                      }
+                    ],
+                    "team": [
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "USA"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "1"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:loss"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Spain"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "3"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:win"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "eventMetadata": [
+                      {
+                        "eventStatus": [
+                          "speventstatus:post-event"
+                        ]
+                      }
+                    ],
+                    "team": [
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Germany"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "1"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:loss"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "France"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "4"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:win"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tournamentPartMetadata": [
+                  {
+                    "type": [
+                      "sptournamentphase:round"
+                    ],
+                    "number": [
+                      "1"
+                    ],
+                    "status": [
+                      "speventstatus:post-event"
+                    ],
+                    "startDateTime": [
+                      "2011-03-04"
+                    ],
+                    "endDateTime": [
+                      "2011-03-06"
+                    ],
+                    "name": [
+                      {
+                        "full": [
+                          "First round"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "sportsEvent": [
+                  {
+                    "eventMetadata": [
+                      {
+                        "eventStatus": [
+                          "speventstatus:post-event"
+                        ]
+                      }
+                    ],
+                    "team": [
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Serbia"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "4"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:win"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "India"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "1"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:loss"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "eventMetadata": [
+                      {
+                        "eventStatus": [
+                          "speventstatus:post-event"
+                        ]
+                      }
+                    ],
+                    "team": [
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Russia"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "2"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:loss"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Sweden"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "3"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:win"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "eventMetadata": [
+                      {
+                        "eventStatus": [
+                          "speventstatus:post-event"
+                        ]
+                      }
+                    ],
+                    "team": [
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Czech Republic"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "1"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:loss"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Kazakhstan"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "3"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:win"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "eventMetadata": [
+                      {
+                        "eventStatus": [
+                          "speventstatus:post-event"
+                        ]
+                      }
+                    ],
+                    "team": [
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Argentina"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "4"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:win"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Romania"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "1"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:loss"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "eventMetadata": [
+                      {
+                        "eventStatus": [
+                          "speventstatus:post-event"
+                        ]
+                      }
+                    ],
+                    "team": [
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Chile"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "1"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:loss"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "USA"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "4"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:win"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "eventMetadata": [
+                      {
+                        "eventStatus": [
+                          "speventstatus:post-event"
+                        ]
+                      }
+                    ],
+                    "team": [
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Belgium"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "1"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:loss"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Spain"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "4"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:win"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "eventMetadata": [
+                      {
+                        "eventStatus": [
+                          "speventstatus:post-event"
+                        ]
+                      }
+                    ],
+                    "team": [
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Germany"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "3"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:win"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Croatia"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "2"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:loss"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "eventMetadata": [
+                      {
+                        "eventStatus": [
+                          "speventstatus:post-event"
+                        ]
+                      }
+                    ],
+                    "team": [
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "home"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "Austria"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "2"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:loss"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "teamMetadata": [
+                          {
+                            "alignment": [
+                              "away"
+                            ],
+                            "roundPosition": [
+                              "seeded"
+                            ],
+                            "name": [
+                              {
+                                "full": [
+                                  "France"
+                                ]
+                              }
+                            ]
+                          }
+                        ],
+                        "teamStats": [
+                          {
+                            "score": [
+                              "3"
+                            ],
+                            "eventOutcome": [
+                              "speventoutcome:win"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

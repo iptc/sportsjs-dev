@@ -1,0 +1,4817 @@
+{
+  "sportsContent": {
+    "sportsMetadata": [
+      {
+        "dateTime": [
+          "2015-03-03T23:11:35-05:00"
+        ],
+        "docId": [
+          "xt.prog.20150303231135-20004-04.337-event-stats-progressive"
+        ],
+        "language": [
+          "en-US"
+        ],
+        "fixtureKey": [
+          "spfixt:event-stats-progressive"
+        ],
+        "documentClass": [
+          "spct:event-summary"
+        ],
+        "sportsContentCodes": [
+          {
+            "sportsContentCode": [
+              {
+                "codeName": [
+                  "The Sports Network, Inc."
+                ],
+                "codeKey": [
+                  "publisher:sportsnetwork.com"
+                ],
+                "codeType": [
+                  "spct:publisher"
+                ]
+              },
+              {
+                "codeName": [
+                  "XML Team Solutions, Inc."
+                ],
+                "codeKey": [
+                  "distributor:xmlteam.com"
+                ],
+                "codeType": [
+                  "spct:distributor"
+                ]
+              },
+              {
+                "codeType": [
+                  "spct:sport"
+                ],
+                "codeKey": [
+                  "sport:15008000"
+                ],
+                "codeName": [
+                  "Basketball"
+                ]
+              },
+              {
+                "codeType": [
+                  "spct:league"
+                ],
+                "codeKey": [
+                  "vendleague:l.nba.com"
+                ],
+                "codeName": [
+                  "National Basketball Association"
+                ]
+              },
+              {
+                "codeType": [
+                  "spct:season"
+                ],
+                "codeKey": [
+                  "season:2014"
+                ]
+              },
+              {
+                "codeType": [
+                  "spct:season-type"
+                ],
+                "codeKey": [
+                  "season-type:regular"
+                ]
+              },
+              {
+                "codeType": [
+                  "spct:conference"
+                ],
+                "codeKey": [
+                  "vendconf:c.eastern"
+                ],
+                "codeName": [
+                  "Eastern"
+                ]
+              },
+              {
+                "codeType": [
+                  "spct:conference"
+                ],
+                "codeKey": [
+                  "vendconf:c.western"
+                ],
+                "codeName": [
+                  "Western"
+                ]
+              },
+              {
+                "codeType": [
+                  "spct:team"
+                ],
+                "codeKey": [
+                  "vendteam:l.nba.com-t.17"
+                ],
+                "codeName": [
+                  "Denver Nuggets"
+                ]
+              },
+              {
+                "codeType": [
+                  "spct:team"
+                ],
+                "codeKey": [
+                  "vendteam:l.nba.com-t.14"
+                ],
+                "codeName": [
+                  "Milwaukee Bucks"
+                ]
+              }
+            ]
+          }
+        ],
+        "catalogRef": [
+          {
+            "href": [
+              "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
+            ]
+          },
+          {
+            "href": [
+              "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
+            ]
+          }
+        ]
+      }
+    ],
+    "sportsEvent": [
+      {
+        "eventMetadata": [
+          {
+            "key": [
+              "vendevent:l.nba.com-2014-e.20004"
+            ],
+            "eventStatus": [
+              "speventstatus:mid-event"
+            ],
+            "temporalUnitValue": [
+              "vendor:l.nba.com-2014-e.20004"
+            ],
+            "startDateTime": [
+              "2015-03-03T21:00:00-05:00"
+            ],
+            "periodValue": [
+              "4"
+            ],
+            "periodTimeRemaining": [
+              "4:51"
+            ]
+          }
+        ],
+        "team": [
+          {
+            "id": [
+              "l.nba.com-t.14"
+            ],
+            "teamMetadata": [
+              {
+                "key": [
+                  "vendteam:l.nba.com-t.14"
+                ],
+                "alignment": [
+                  "away"
+                ],
+                "name": [
+                  {
+                    "role": [
+                      "nrol:full"
+                    ]
+                  },
+                  {
+                    "part": [
+                      {
+                        "common": [
+                          "Milwaukee"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "part": [
+                      {
+                        "nickname": [
+                          "Bucks"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "teamStats": [
+              {
+                "stats": [
+                  {
+                    "stat": [
+                      {
+                        "statType": [
+                          "spstat:event-outcome"
+                        ],
+                        "value": [
+                          "undecided"
+                        ]
+                      },
+                      {
+                        "statType": [
+                          "spstat:score"
+                        ],
+                        "value": [
+                          "84"
+                        ]
+                      },
+                      {
+                        "statType": [
+                          "spstat:score-opposing"
+                        ],
+                        "value": [
+                          "93"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:field-goals-made"
+                        ],
+                        "value": [
+                          "31"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:field-goals-attempted"
+                        ],
+                        "value": [
+                          "79"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:three-pointers-made"
+                        ],
+                        "value": [
+                          "9"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:three-pointers-attempted"
+                        ],
+                        "value": [
+                          "22"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:free-throws-made"
+                        ],
+                        "value": [
+                          "13"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:free-throws-attempted"
+                        ],
+                        "value": [
+                          "20"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:assists-total"
+                        ],
+                        "value": [
+                          "19"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:team-turnovers-total"
+                        ],
+                        "value": [
+                          "14"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:turnovers-total"
+                        ],
+                        "value": [
+                          "0"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:rebounding"
+                        ],
+                        "statType": [
+                          "spbkbstat:rebounds-total"
+                        ],
+                        "value": [
+                          "51"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:rebounding"
+                        ],
+                        "statType": [
+                          "spbkbstat:rebounds-offensive"
+                        ],
+                        "value": [
+                          "8"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:rebounding"
+                        ],
+                        "statType": [
+                          "spbkbstat:rebounds-defensive"
+                        ],
+                        "value": [
+                          "29"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:rebounding"
+                        ],
+                        "statType": [
+                          "spbkbstat:team-rebounds-total"
+                        ],
+                        "value": [
+                          "14"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:defense"
+                        ],
+                        "statType": [
+                          "spbkbstat:steals-total"
+                        ],
+                        "value": [
+                          "6"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:defense"
+                        ],
+                        "statType": [
+                          "spbkbstat:blocks-total"
+                        ],
+                        "value": [
+                          "6"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "subScore": [
+                  {
+                    "periodValue": [
+                      "1"
+                    ],
+                    "score": [
+                      "29"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "2"
+                    ],
+                    "score": [
+                      "22"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "3"
+                    ],
+                    "score": [
+                      "19"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "4"
+                    ],
+                    "score": [
+                      "14"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "player": [
+              {
+                "id": [
+                  "l.nba.com-p.2404"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2404"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:forward"
+                    ],
+                    "uniformNumber": [
+                      "34"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "16"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "6"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "8"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "4"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "6"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "5"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "10"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "8"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1024"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1024"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:forward"
+                    ],
+                    "uniformNumber": [
+                      "7"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "17"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "7"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "13"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "6"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.641"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.641"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:center"
+                    ],
+                    "uniformNumber": [
+                      "27"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2289"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2289"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "22"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "20"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "6"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "19"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "4"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "5"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "5"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "4"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "7"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "6"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2411"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2411"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "5"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "7"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "10"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "5"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1504"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1504"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "19"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "7"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "8"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2281"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2281"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:center"
+                    ],
+                    "uniformNumber": [
+                      "31"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "10"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "4"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "6"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "5"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "4"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1292"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1292"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:forward"
+                    ],
+                    "uniformNumber": [
+                      "9"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "6"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "5"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "5"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2596"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2596"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "11"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "5"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "6"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "4"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2271"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2271"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:center"
+                    ],
+                    "uniformNumber": [
+                      "21"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": [
+              "l.nba.com-t.17"
+            ],
+            "teamMetadata": [
+              {
+                "key": [
+                  "vendteam:l.nba.com-t.17"
+                ],
+                "alignment": [
+                  "home"
+                ],
+                "name": [
+                  {
+                    "role": [
+                      "nrol:full"
+                    ]
+                  },
+                  {
+                    "part": [
+                      {
+                        "common": [
+                          "Denver"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "part": [
+                      {
+                        "nickname": [
+                          "Nuggets"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "teamStats": [
+              {
+                "stats": [
+                  {
+                    "stat": [
+                      {
+                        "statType": [
+                          "spstat:event-outcome"
+                        ],
+                        "value": [
+                          "undecided"
+                        ]
+                      },
+                      {
+                        "statType": [
+                          "spstat:score"
+                        ],
+                        "value": [
+                          "93"
+                        ]
+                      },
+                      {
+                        "statType": [
+                          "spstat:score-opposing"
+                        ],
+                        "value": [
+                          "84"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:field-goals-made"
+                        ],
+                        "value": [
+                          "35"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:field-goals-attempted"
+                        ],
+                        "value": [
+                          "77"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:three-pointers-made"
+                        ],
+                        "value": [
+                          "9"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:three-pointers-attempted"
+                        ],
+                        "value": [
+                          "28"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:free-throws-made"
+                        ],
+                        "value": [
+                          "14"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:free-throws-attempted"
+                        ],
+                        "value": [
+                          "18"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:assists-total"
+                        ],
+                        "value": [
+                          "22"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:team-turnovers-total"
+                        ],
+                        "value": [
+                          "13"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:offense"
+                        ],
+                        "statType": [
+                          "spbkbstat:turnovers-total"
+                        ],
+                        "value": [
+                          "0"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:rebounding"
+                        ],
+                        "statType": [
+                          "spbkbstat:rebounds-total"
+                        ],
+                        "value": [
+                          "50"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:rebounding"
+                        ],
+                        "statType": [
+                          "spbkbstat:rebounds-offensive"
+                        ],
+                        "value": [
+                          "7"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:rebounding"
+                        ],
+                        "statType": [
+                          "spbkbstat:rebounds-defensive"
+                        ],
+                        "value": [
+                          "32"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:rebounding"
+                        ],
+                        "statType": [
+                          "spbkbstat:team-rebounds-total"
+                        ],
+                        "value": [
+                          "11"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:defense"
+                        ],
+                        "statType": [
+                          "spbkbstat:steals-total"
+                        ],
+                        "value": [
+                          "8"
+                        ]
+                      },
+                      {
+                        "class": [
+                          "spct:defense"
+                        ],
+                        "statType": [
+                          "spbkbstat:blocks-total"
+                        ],
+                        "value": [
+                          "5"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "subScore": [
+                  {
+                    "periodValue": [
+                      "1"
+                    ],
+                    "score": [
+                      "29"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "2"
+                    ],
+                    "score": [
+                      "26"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "3"
+                    ],
+                    "score": [
+                      "21"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "4"
+                    ],
+                    "score": [
+                      "17"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "player": [
+              {
+                "id": [
+                  "l.nba.com-p.1441"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1441"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:forward"
+                    ],
+                    "uniformNumber": [
+                      "8"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "21"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "7"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "15"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "8"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "4"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "4"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "7"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "7"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1290"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1290"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:forward"
+                    ],
+                    "uniformNumber": [
+                      "21"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "12"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "5"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "10"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "4"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2107"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2107"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:center"
+                    ],
+                    "uniformNumber": [
+                      "35"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "14"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "5"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "10"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "4"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "5"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "11"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "9"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1184"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1184"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "4"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "6"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "7"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "6"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "4"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1616"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1616"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "3"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "11"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "4"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "8"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "8"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1467"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1467"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:center"
+                    ],
+                    "uniformNumber": [
+                      "7"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "6"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "9"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "10"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "7"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.871"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.871"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "28"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "9"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "4"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "7"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2256"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2256"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "5"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "5"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "3"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1433"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1433"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:forward"
+                    ],
+                    "uniformNumber": [
+                      "00"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "8"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "4"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "5"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2601"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2601"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "14"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2418"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2418"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "11"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "stats": [
+                      {
+                        "stat": [
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:points-scored-total"
+                            ],
+                            "value": [
+                              "4"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-made"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:field-goals-attempted"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-made"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:three-pointers-attempted"
+                            ],
+                            "value": [
+                              "2"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-made"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:free-throws-attempted"
+                            ],
+                            "value": [
+                              "1"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:assists-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:offense"
+                            ],
+                            "statType": [
+                              "spbkbstat:turnovers-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-offensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:rebounding"
+                            ],
+                            "statType": [
+                              "spbkbstat:rebounds-defensive"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:steals-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          },
+                          {
+                            "class": [
+                              "spct:defense"
+                            ],
+                            "statType": [
+                              "spbkbstat:blocks-total"
+                            ],
+                            "value": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "action": [
+              {
+                "class": [
+                  "spactionclass:score"
+                ],
+                "id": [
+                  "play.337"
+                ],
+                "sequenceNumber": [
+                  "337"
+                ],
+                "periodValue": [
+                  "4"
+                ],
+                "periodTimeRemaining": [
+                  "4:51"
+                ],
+                "comment": [
+                  "Ersan Ilyasova layup assisted by Khris Middleton."
+                ],
+                "scoreAttemptType": [
+                  "spbkbscoreattempt:fg"
+                ],
+                "scoreTeam": [
+                  "84"
+                ],
+                "scoreTeamOpposing": [
+                  "93"
+                ],
+                "points": [
+                  "2"
+                ],
+                "participant": [
+                  {
+                    "idref": [
+                      "l.nba.com-p.1024"
+                    ],
+                    "teamIdref": [
+                      "l.nba.com-t.14"
+                    ],
+                    "role": [
+                      "spbkbrole:scorer"
+                    ]
+                  },
+                  {
+                    "idref": [
+                      "l.nba.com-p.2289"
+                    ],
+                    "teamIdref": [
+                      "l.nba.com-t.14"
+                    ],
+                    "role": [
+                      "spbkbrole:assist"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

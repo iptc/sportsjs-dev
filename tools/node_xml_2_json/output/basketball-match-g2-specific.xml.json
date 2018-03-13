@@ -1,0 +1,2714 @@
+{
+  "sportsContent": {
+    "sportsEvent": [
+      {
+        "eventMetadata": [
+          {
+            "key": [
+              "vendevent:l.nba.com-2014-e.20004"
+            ],
+            "eventStatus": [
+              "speventstatus:mid-event"
+            ],
+            "temporalUnitValue": [
+              "vendor:l.nba.com-2014-e.20004"
+            ],
+            "startDateTime": [
+              "2015-03-03T21:00:00-05:00"
+            ],
+            "periodValue": [
+              "4"
+            ],
+            "periodTimeRemaining": [
+              "4:51"
+            ]
+          }
+        ],
+        "team": [
+          {
+            "id": [
+              "l.nba.com-t.14"
+            ],
+            "teamMetadata": [
+              {
+                "key": [
+                  "vendteam:l.nba.com-t.14"
+                ],
+                "alignment": [
+                  "away"
+                ],
+                "name": [
+                  {
+                    "role": [
+                      "nrol:full"
+                    ]
+                  },
+                  {
+                    "part": [
+                      {
+                        "common": [
+                          "Milwaukee"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "part": [
+                      {
+                        "nickname": [
+                          "Bucks"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "teamStats": [
+              {
+                "eventOutcome": [
+                  "speventoutcome:undecided"
+                ],
+                "score": [
+                  "84"
+                ],
+                "scoreOpposing": [
+                  "93"
+                ],
+                "penaltyStats": [
+                  {
+                    "count": [
+                      "0"
+                    ],
+                    "type": [
+                      "team technical fouls"
+                    ]
+                  },
+                  {
+                    "count": [
+                      "2"
+                    ],
+                    "type": [
+                      "technical fouls"
+                    ]
+                  },
+                  {
+                    "count": [
+                      "24"
+                    ],
+                    "type": [
+                      "personal fouls"
+                    ]
+                  }
+                ],
+                "subScore": [
+                  {
+                    "periodValue": [
+                      "1"
+                    ],
+                    "score": [
+                      "29"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "2"
+                    ],
+                    "score": [
+                      "22"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "3"
+                    ],
+                    "score": [
+                      "19"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "4"
+                    ],
+                    "score": [
+                      "14"
+                    ]
+                  }
+                ],
+                "teamStatsBasketball": [
+                  {
+                    "statsBasketballOffensive": [
+                      {
+                        "fieldGoalsMade": [
+                          "31"
+                        ],
+                        "fieldGoalsAttempted": [
+                          "79"
+                        ],
+                        "threePointersMade": [
+                          "9"
+                        ],
+                        "threePointersAttempted": [
+                          "22"
+                        ],
+                        "freeThrowsMade": [
+                          "13"
+                        ],
+                        "freeThrowsAttempted": [
+                          "20"
+                        ],
+                        "assistsTotal": [
+                          "19"
+                        ],
+                        "teamTurnoversTotal": [
+                          "14"
+                        ],
+                        "turnoversTotal": [
+                          "0"
+                        ]
+                      }
+                    ],
+                    "statsBasketballRebounding": [
+                      {
+                        "reboundsTotal": [
+                          "51"
+                        ],
+                        "reboundsOffensive": [
+                          "8"
+                        ],
+                        "reboundsDefensive": [
+                          "29"
+                        ],
+                        "teamReboundsTotal": [
+                          "14"
+                        ]
+                      }
+                    ],
+                    "statsBasketballDefensive": [
+                      {
+                        "stealsTotal": [
+                          "6"
+                        ],
+                        "blocksTotal": [
+                          "6"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "player": [
+              {
+                "id": [
+                  "l.nba.com-p.2404"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2404"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:forward"
+                    ],
+                    "uniformNumber": [
+                      "34"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "5"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "16"
+                            ],
+                            "fieldGoalsMade": [
+                              "6"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "8"
+                            ],
+                            "threePointersMade": [
+                              "0"
+                            ],
+                            "threePointersAttempted": [
+                              "0"
+                            ],
+                            "freeThrowsMade": [
+                              "4"
+                            ],
+                            "freeThrowsAttempted": [
+                              "6"
+                            ],
+                            "assistsTotal": [
+                              "2"
+                            ],
+                            "turnoversTotal": [
+                              "5"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "10"
+                            ],
+                            "reboundsOffensive": [
+                              "2"
+                            ],
+                            "reboundsDefensive": [
+                              "8"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "1"
+                            ],
+                            "blocksTotal": [
+                              "2"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1024"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1024"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:forward"
+                    ],
+                    "uniformNumber": [
+                      "7"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "3"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "17"
+                            ],
+                            "fieldGoalsMade": [
+                              "7"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "13"
+                            ],
+                            "threePointersMade": [
+                              "3"
+                            ],
+                            "threePointersAttempted": [
+                              "6"
+                            ],
+                            "freeThrowsMade": [
+                              "0"
+                            ],
+                            "freeThrowsAttempted": [
+                              "0"
+                            ],
+                            "assistsTotal": [
+                              "2"
+                            ],
+                            "turnoversTotal": [
+                              "1"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "3"
+                            ],
+                            "reboundsOffensive": [
+                              "1"
+                            ],
+                            "reboundsDefensive": [
+                              "2"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "1"
+                            ],
+                            "blocksTotal": [
+                              "1"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.641"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.641"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:center"
+                    ],
+                    "uniformNumber": [
+                      "27"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "1"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "2"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "0"
+                            ],
+                            "fieldGoalsMade": [
+                              "0"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "1"
+                            ],
+                            "threePointersMade": [
+                              "0"
+                            ],
+                            "threePointersAttempted": [
+                              "0"
+                            ],
+                            "freeThrowsMade": [
+                              "0"
+                            ],
+                            "freeThrowsAttempted": [
+                              "0"
+                            ],
+                            "assistsTotal": [
+                              "0"
+                            ],
+                            "turnoversTotal": [
+                              "3"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "0"
+                            ],
+                            "reboundsOffensive": [
+                              "0"
+                            ],
+                            "reboundsDefensive": [
+                              "0"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "0"
+                            ],
+                            "blocksTotal": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2289"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2289"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "22"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "1"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "3"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "20"
+                            ],
+                            "fieldGoalsMade": [
+                              "6"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "19"
+                            ],
+                            "threePointersMade": [
+                              "3"
+                            ],
+                            "threePointersAttempted": [
+                              "4"
+                            ],
+                            "freeThrowsMade": [
+                              "5"
+                            ],
+                            "freeThrowsAttempted": [
+                              "5"
+                            ],
+                            "assistsTotal": [
+                              "4"
+                            ],
+                            "turnoversTotal": [
+                              "0"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "7"
+                            ],
+                            "reboundsOffensive": [
+                              "1"
+                            ],
+                            "reboundsDefensive": [
+                              "6"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "2"
+                            ],
+                            "blocksTotal": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2411"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2411"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "5"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "3"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "7"
+                            ],
+                            "fieldGoalsMade": [
+                              "3"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "10"
+                            ],
+                            "threePointersMade": [
+                              "1"
+                            ],
+                            "threePointersAttempted": [
+                              "3"
+                            ],
+                            "freeThrowsMade": [
+                              "0"
+                            ],
+                            "freeThrowsAttempted": [
+                              "2"
+                            ],
+                            "assistsTotal": [
+                              "5"
+                            ],
+                            "turnoversTotal": [
+                              "2"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "2"
+                            ],
+                            "reboundsOffensive": [
+                              "0"
+                            ],
+                            "reboundsDefensive": [
+                              "2"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "0"
+                            ],
+                            "blocksTotal": [
+                              "1"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1504"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1504"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "19"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "1"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "7"
+                            ],
+                            "fieldGoalsMade": [
+                              "2"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "8"
+                            ],
+                            "threePointersMade": [
+                              "1"
+                            ],
+                            "threePointersAttempted": [
+                              "2"
+                            ],
+                            "freeThrowsMade": [
+                              "2"
+                            ],
+                            "freeThrowsAttempted": [
+                              "2"
+                            ],
+                            "assistsTotal": [
+                              "2"
+                            ],
+                            "turnoversTotal": [
+                              "1"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "3"
+                            ],
+                            "reboundsOffensive": [
+                              "0"
+                            ],
+                            "reboundsDefensive": [
+                              "3"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "0"
+                            ],
+                            "blocksTotal": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2281"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2281"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:center"
+                    ],
+                    "uniformNumber": [
+                      "31"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "2"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "10"
+                            ],
+                            "fieldGoalsMade": [
+                              "4"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "6"
+                            ],
+                            "threePointersMade": [
+                              "0"
+                            ],
+                            "threePointersAttempted": [
+                              "0"
+                            ],
+                            "freeThrowsMade": [
+                              "2"
+                            ],
+                            "freeThrowsAttempted": [
+                              "5"
+                            ],
+                            "assistsTotal": [
+                              "1"
+                            ],
+                            "turnoversTotal": [
+                              "0"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "4"
+                            ],
+                            "reboundsOffensive": [
+                              "2"
+                            ],
+                            "reboundsDefensive": [
+                              "2"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "1"
+                            ],
+                            "blocksTotal": [
+                              "2"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1292"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1292"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:forward"
+                    ],
+                    "uniformNumber": [
+                      "9"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "1"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "2"
+                            ],
+                            "fieldGoalsMade": [
+                              "1"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "6"
+                            ],
+                            "threePointersMade": [
+                              "0"
+                            ],
+                            "threePointersAttempted": [
+                              "3"
+                            ],
+                            "freeThrowsMade": [
+                              "0"
+                            ],
+                            "freeThrowsAttempted": [
+                              "0"
+                            ],
+                            "assistsTotal": [
+                              "1"
+                            ],
+                            "turnoversTotal": [
+                              "1"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "5"
+                            ],
+                            "reboundsOffensive": [
+                              "0"
+                            ],
+                            "reboundsDefensive": [
+                              "5"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "0"
+                            ],
+                            "blocksTotal": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2596"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2596"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "11"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "2"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "5"
+                            ],
+                            "fieldGoalsMade": [
+                              "2"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "6"
+                            ],
+                            "threePointersMade": [
+                              "1"
+                            ],
+                            "threePointersAttempted": [
+                              "4"
+                            ],
+                            "freeThrowsMade": [
+                              "0"
+                            ],
+                            "freeThrowsAttempted": [
+                              "0"
+                            ],
+                            "assistsTotal": [
+                              "2"
+                            ],
+                            "turnoversTotal": [
+                              "0"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "1"
+                            ],
+                            "reboundsOffensive": [
+                              "0"
+                            ],
+                            "reboundsDefensive": [
+                              "1"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "1"
+                            ],
+                            "blocksTotal": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2271"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2271"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:center"
+                    ],
+                    "uniformNumber": [
+                      "21"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "2"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "0"
+                            ],
+                            "fieldGoalsMade": [
+                              "0"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "2"
+                            ],
+                            "threePointersMade": [
+                              "0"
+                            ],
+                            "threePointersAttempted": [
+                              "0"
+                            ],
+                            "freeThrowsMade": [
+                              "0"
+                            ],
+                            "freeThrowsAttempted": [
+                              "0"
+                            ],
+                            "assistsTotal": [
+                              "0"
+                            ],
+                            "turnoversTotal": [
+                              "1"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "2"
+                            ],
+                            "reboundsOffensive": [
+                              "2"
+                            ],
+                            "reboundsDefensive": [
+                              "0"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "0"
+                            ],
+                            "blocksTotal": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": [
+              "l.nba.com-t.17"
+            ],
+            "teamMetadata": [
+              {
+                "key": [
+                  "vendteam:l.nba.com-t.17"
+                ],
+                "alignment": [
+                  "home"
+                ],
+                "name": [
+                  {
+                    "role": [
+                      "nrol:full"
+                    ]
+                  },
+                  {
+                    "part": [
+                      {
+                        "common": [
+                          "Denver"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "part": [
+                      {
+                        "nickname": [
+                          "Nuggets"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "teamStats": [
+              {
+                "eventOutcome": [
+                  "speventoutcome:undecided"
+                ],
+                "score": [
+                  "93"
+                ],
+                "scoreOpposing": [
+                  "84"
+                ],
+                "penaltyStats": [
+                  {
+                    "count": [
+                      "2"
+                    ],
+                    "type": [
+                      "team technical fouls"
+                    ]
+                  },
+                  {
+                    "count": [
+                      "3"
+                    ],
+                    "type": [
+                      "technical fouls"
+                    ]
+                  },
+                  {
+                    "count": [
+                      "23"
+                    ],
+                    "type": [
+                      "personal fouls"
+                    ]
+                  }
+                ],
+                "subScore": [
+                  {
+                    "periodValue": [
+                      "1"
+                    ],
+                    "score": [
+                      "29"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "2"
+                    ],
+                    "score": [
+                      "26"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "3"
+                    ],
+                    "score": [
+                      "21"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "4"
+                    ],
+                    "score": [
+                      "17"
+                    ]
+                  }
+                ],
+                "teamStatsBasketball": [
+                  {
+                    "statsBasketballOffensive": [
+                      {
+                        "fieldGoalsMade": [
+                          "35"
+                        ],
+                        "fieldGoalsAttempted": [
+                          "77"
+                        ],
+                        "threePointersMade": [
+                          "9"
+                        ],
+                        "threePointersAttempted": [
+                          "28"
+                        ],
+                        "freeThrowsMade": [
+                          "14"
+                        ],
+                        "freeThrowsAttempted": [
+                          "18"
+                        ],
+                        "assistsTotal": [
+                          "22"
+                        ],
+                        "teamTurnoversTotal": [
+                          "13"
+                        ],
+                        "turnoversTotal": [
+                          "0"
+                        ]
+                      }
+                    ],
+                    "statsBasketballRebounding": [
+                      {
+                        "reboundsTotal": [
+                          "50"
+                        ],
+                        "reboundsOffensive": [
+                          "7"
+                        ],
+                        "reboundsDefensive": [
+                          "32"
+                        ],
+                        "teamReboundsTotal": [
+                          "11"
+                        ]
+                      }
+                    ],
+                    "statsBasketballDefensive": [
+                      {
+                        "stealsTotal": [
+                          "8"
+                        ],
+                        "blocksTotal": [
+                          "5"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "player": [
+              {
+                "id": [
+                  "l.nba.com-p.1441"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1441"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:forward"
+                    ],
+                    "uniformNumber": [
+                      "8"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "3"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "21"
+                            ],
+                            "fieldGoalsMade": [
+                              "7"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "15"
+                            ],
+                            "threePointersMade": [
+                              "3"
+                            ],
+                            "threePointersAttempted": [
+                              "8"
+                            ],
+                            "freeThrowsMade": [
+                              "4"
+                            ],
+                            "freeThrowsAttempted": [
+                              "4"
+                            ],
+                            "assistsTotal": [
+                              "0"
+                            ],
+                            "turnoversTotal": [
+                              "3"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "7"
+                            ],
+                            "reboundsOffensive": [
+                              "0"
+                            ],
+                            "reboundsDefensive": [
+                              "7"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "1"
+                            ],
+                            "blocksTotal": [
+                              "1"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1290"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1290"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:forward"
+                    ],
+                    "uniformNumber": [
+                      "21"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "4"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "12"
+                            ],
+                            "fieldGoalsMade": [
+                              "5"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "10"
+                            ],
+                            "threePointersMade": [
+                              "2"
+                            ],
+                            "threePointersAttempted": [
+                              "4"
+                            ],
+                            "freeThrowsMade": [
+                              "0"
+                            ],
+                            "freeThrowsAttempted": [
+                              "0"
+                            ],
+                            "assistsTotal": [
+                              "3"
+                            ],
+                            "turnoversTotal": [
+                              "2"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "3"
+                            ],
+                            "reboundsOffensive": [
+                              "0"
+                            ],
+                            "reboundsDefensive": [
+                              "3"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "1"
+                            ],
+                            "blocksTotal": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2107"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2107"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:center"
+                    ],
+                    "uniformNumber": [
+                      "35"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "1"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "14"
+                            ],
+                            "fieldGoalsMade": [
+                              "5"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "10"
+                            ],
+                            "threePointersMade": [
+                              "0"
+                            ],
+                            "threePointersAttempted": [
+                              "0"
+                            ],
+                            "freeThrowsMade": [
+                              "4"
+                            ],
+                            "freeThrowsAttempted": [
+                              "5"
+                            ],
+                            "assistsTotal": [
+                              "0"
+                            ],
+                            "turnoversTotal": [
+                              "1"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "11"
+                            ],
+                            "reboundsOffensive": [
+                              "2"
+                            ],
+                            "reboundsDefensive": [
+                              "9"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "0"
+                            ],
+                            "blocksTotal": [
+                              "3"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1184"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1184"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "4"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "3"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "6"
+                            ],
+                            "fieldGoalsMade": [
+                              "2"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "7"
+                            ],
+                            "threePointersMade": [
+                              "2"
+                            ],
+                            "threePointersAttempted": [
+                              "6"
+                            ],
+                            "freeThrowsMade": [
+                              "0"
+                            ],
+                            "freeThrowsAttempted": [
+                              "0"
+                            ],
+                            "assistsTotal": [
+                              "4"
+                            ],
+                            "turnoversTotal": [
+                              "1"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "1"
+                            ],
+                            "reboundsOffensive": [
+                              "0"
+                            ],
+                            "reboundsDefensive": [
+                              "1"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "0"
+                            ],
+                            "blocksTotal": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1616"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1616"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "3"
+                    ],
+                    "status": [
+                      "spplayerstatus:starter"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "2"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "11"
+                            ],
+                            "fieldGoalsMade": [
+                              "4"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "8"
+                            ],
+                            "threePointersMade": [
+                              "1"
+                            ],
+                            "threePointersAttempted": [
+                              "3"
+                            ],
+                            "freeThrowsMade": [
+                              "2"
+                            ],
+                            "freeThrowsAttempted": [
+                              "2"
+                            ],
+                            "assistsTotal": [
+                              "8"
+                            ],
+                            "turnoversTotal": [
+                              "1"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "1"
+                            ],
+                            "reboundsOffensive": [
+                              "0"
+                            ],
+                            "reboundsDefensive": [
+                              "1"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "2"
+                            ],
+                            "blocksTotal": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1467"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1467"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:center"
+                    ],
+                    "uniformNumber": [
+                      "7"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "1"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "6"
+                            ],
+                            "fieldGoalsMade": [
+                              "3"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "9"
+                            ],
+                            "threePointersMade": [
+                              "0"
+                            ],
+                            "threePointersAttempted": [
+                              "0"
+                            ],
+                            "freeThrowsMade": [
+                              "0"
+                            ],
+                            "freeThrowsAttempted": [
+                              "0"
+                            ],
+                            "assistsTotal": [
+                              "1"
+                            ],
+                            "turnoversTotal": [
+                              "0"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "10"
+                            ],
+                            "reboundsOffensive": [
+                              "3"
+                            ],
+                            "reboundsDefensive": [
+                              "7"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "0"
+                            ],
+                            "blocksTotal": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.871"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.871"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "28"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "2"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "9"
+                            ],
+                            "fieldGoalsMade": [
+                              "4"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "7"
+                            ],
+                            "threePointersMade": [
+                              "0"
+                            ],
+                            "threePointersAttempted": [
+                              "3"
+                            ],
+                            "freeThrowsMade": [
+                              "1"
+                            ],
+                            "freeThrowsAttempted": [
+                              "1"
+                            ],
+                            "assistsTotal": [
+                              "2"
+                            ],
+                            "turnoversTotal": [
+                              "1"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "0"
+                            ],
+                            "reboundsOffensive": [
+                              "0"
+                            ],
+                            "reboundsDefensive": [
+                              "0"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "1"
+                            ],
+                            "blocksTotal": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2256"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2256"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "5"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "4"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "2"
+                            ],
+                            "fieldGoalsMade": [
+                              "0"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "2"
+                            ],
+                            "threePointersMade": [
+                              "0"
+                            ],
+                            "threePointersAttempted": [
+                              "1"
+                            ],
+                            "freeThrowsMade": [
+                              "2"
+                            ],
+                            "freeThrowsAttempted": [
+                              "5"
+                            ],
+                            "assistsTotal": [
+                              "3"
+                            ],
+                            "turnoversTotal": [
+                              "3"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "3"
+                            ],
+                            "reboundsOffensive": [
+                              "0"
+                            ],
+                            "reboundsDefensive": [
+                              "3"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "2"
+                            ],
+                            "blocksTotal": [
+                              "1"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.1433"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.1433"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:forward"
+                    ],
+                    "uniformNumber": [
+                      "00"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "2"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "8"
+                            ],
+                            "fieldGoalsMade": [
+                              "4"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "5"
+                            ],
+                            "threePointersMade": [
+                              "0"
+                            ],
+                            "threePointersAttempted": [
+                              "0"
+                            ],
+                            "freeThrowsMade": [
+                              "0"
+                            ],
+                            "freeThrowsAttempted": [
+                              "0"
+                            ],
+                            "assistsTotal": [
+                              "1"
+                            ],
+                            "turnoversTotal": [
+                              "0"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "2"
+                            ],
+                            "reboundsOffensive": [
+                              "1"
+                            ],
+                            "reboundsDefensive": [
+                              "1"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "1"
+                            ],
+                            "blocksTotal": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2601"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2601"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "14"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "1"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "0"
+                            ],
+                            "fieldGoalsMade": [
+                              "0"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "2"
+                            ],
+                            "threePointersMade": [
+                              "0"
+                            ],
+                            "threePointersAttempted": [
+                              "1"
+                            ],
+                            "freeThrowsMade": [
+                              "0"
+                            ],
+                            "freeThrowsAttempted": [
+                              "0"
+                            ],
+                            "assistsTotal": [
+                              "0"
+                            ],
+                            "turnoversTotal": [
+                              "1"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "1"
+                            ],
+                            "reboundsOffensive": [
+                              "1"
+                            ],
+                            "reboundsDefensive": [
+                              "0"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "0"
+                            ],
+                            "blocksTotal": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": [
+                  "l.nba.com-p.2418"
+                ],
+                "playerMetadata": [
+                  {
+                    "key": [
+                      "vendperson:l.nba.com-p.2418"
+                    ],
+                    "positionEvent": [
+                      "spbkbposition:guard"
+                    ],
+                    "uniformNumber": [
+                      "11"
+                    ],
+                    "status": [
+                      "spplayerstatus:bench"
+                    ],
+                    "name": [
+                      {
+                        "role": [
+                          "nrol:full"
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "penaltyStats": [
+                      {
+                        "count": [
+                          "0"
+                        ],
+                        "type": [
+                          "technical fouls"
+                        ]
+                      },
+                      {
+                        "count": [
+                          "1"
+                        ],
+                        "type": [
+                          "personal fouls"
+                        ]
+                      }
+                    ],
+                    "playerStatsBasketball": [
+                      {
+                        "statsBasketballOffensive": [
+                          {
+                            "pointsScoredTotal": [
+                              "4"
+                            ],
+                            "fieldGoalsMade": [
+                              "1"
+                            ],
+                            "fieldGoalsAttempted": [
+                              "2"
+                            ],
+                            "threePointersMade": [
+                              "1"
+                            ],
+                            "threePointersAttempted": [
+                              "2"
+                            ],
+                            "freeThrowsMade": [
+                              "1"
+                            ],
+                            "freeThrowsAttempted": [
+                              "1"
+                            ],
+                            "assistsTotal": [
+                              "0"
+                            ],
+                            "turnoversTotal": [
+                              "0"
+                            ]
+                          }
+                        ],
+                        "statsBasketballRebounding": [
+                          {
+                            "reboundsTotal": [
+                              "0"
+                            ],
+                            "reboundsOffensive": [
+                              "0"
+                            ],
+                            "reboundsDefensive": [
+                              "0"
+                            ]
+                          }
+                        ],
+                        "statsBasketballDefensive": [
+                          {
+                            "stealsTotal": [
+                              "0"
+                            ],
+                            "blocksTotal": [
+                              "0"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "actions": [
+          {
+            "action": [
+              {
+                "class": [
+                  "spactionclass:score"
+                ],
+                "id": [
+                  "play.337"
+                ],
+                "sequenceNumber": [
+                  "337"
+                ],
+                "periodValue": [
+                  "4"
+                ],
+                "periodTimeRemaining": [
+                  "4:51"
+                ],
+                "comment": [
+                  "Ersan Ilyasova layup assisted by Khris Middleton."
+                ],
+                "scoreAttemptType": [
+                  "spbkbscoreattempt:fg"
+                ],
+                "scoreTeam": [
+                  "84"
+                ],
+                "scoreTeamOpposing": [
+                  "93"
+                ],
+                "points": [
+                  "2"
+                ],
+                "participant": [
+                  {
+                    "idref": [
+                      "l.nba.com-p.1024"
+                    ],
+                    "teamIdref": [
+                      "l.nba.com-t.14"
+                    ],
+                    "role": [
+                      "spbkbrole:scorer"
+                    ]
+                  },
+                  {
+                    "idref": [
+                      "l.nba.com-p.2289"
+                    ],
+                    "teamIdref": [
+                      "l.nba.com-t.14"
+                    ],
+                    "role": [
+                      "spbkbrole:assist"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,939 @@
+{
+  "sportsContent": {
+    "sportsEvent": [
+      {
+        "eventMetadata": [
+          {
+            "startDateTime": [
+              "2014-11-30T14:30:00+01:00"
+            ],
+            "site": [
+              {
+                "siteMetadata": [
+                  {
+                    "name": [
+                      {
+                        "full": [
+                          "Östersunds skidstadion"
+                        ]
+                      }
+                    ],
+                    "homeLocation": [
+                      {
+                        "name": [
+                          {
+                            "full": [
+                              "Östersund"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "team": [
+          {
+            "id": [
+              "BIB6"
+            ],
+            "teamMetadata": [
+              {
+                "nationality": [
+                  "France"
+                ],
+                "key": [
+                  "vendBIB:6"
+                ],
+                "name": [
+                  {
+                    "full": [
+                      "France"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "teamStats": [
+              {
+                "score": [
+                  "1.15.05,5"
+                ],
+                "rank": [
+                  {
+                    "value": [
+                      "1"
+                    ]
+                  }
+                ],
+                "subScore": [
+                  {
+                    "periodValue": [
+                      "1"
+                    ],
+                    "score": [
+                      "0"
+                    ],
+                    "subScoreName": [
+                      "Penaltyrounds"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "1"
+                    ],
+                    "score": [
+                      "4"
+                    ],
+                    "subScoreName": [
+                      "Extra shots"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "2"
+                    ],
+                    "score": [
+                      "0"
+                    ],
+                    "subScoreName": [
+                      "Penaltyrounds"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "2"
+                    ],
+                    "score": [
+                      "7"
+                    ],
+                    "subScoreName": [
+                      "Extra shots"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "player": [
+              {
+                "playerMetadata": [
+                  {
+                    "teamIdref": [
+                      "BIB6"
+                    ],
+                    "nationality": [
+                      "France"
+                    ],
+                    "gender": [
+                      "female"
+                    ],
+                    "uniformNumber": [
+                      "6-1"
+                    ],
+                    "name": [
+                      {
+                        "part": [
+                          {
+                            "first": [
+                              "Anais"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "part": [
+                          {
+                            "last": [
+                              "Bescond"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "score": [
+                      "18.20,6"
+                    ],
+                    "subScore": [
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "3"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "playerMetadata": [
+                  {
+                    "teamIdref": [
+                      "BIB6"
+                    ],
+                    "nationality": [
+                      "France"
+                    ],
+                    "gender": [
+                      "female"
+                    ],
+                    "uniformNumber": [
+                      "6-2"
+                    ],
+                    "name": [
+                      {
+                        "part": [
+                          {
+                            "first": [
+                              "Anais"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "part": [
+                          {
+                            "last": [
+                              "Chevalier"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "score": [
+                      "19.26,8"
+                    ],
+                    "subScore": [
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "3"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "2"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "playerMetadata": [
+                  {
+                    "teamIdref": [
+                      "BIB6"
+                    ],
+                    "nationality": [
+                      "France"
+                    ],
+                    "gender": [
+                      "male"
+                    ],
+                    "uniformNumber": [
+                      "6-3"
+                    ],
+                    "name": [
+                      {
+                        "part": [
+                          {
+                            "first": [
+                              "Simon"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "part": [
+                          {
+                            "last": [
+                              "Fourcade"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "score": [
+                      "19.13,2"
+                    ],
+                    "subScore": [
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "1"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "playerMetadata": [
+                  {
+                    "teamIdref": [
+                      "BIB6"
+                    ],
+                    "nationality": [
+                      "France"
+                    ],
+                    "gender": [
+                      "male"
+                    ],
+                    "uniformNumber": [
+                      "6-4"
+                    ],
+                    "name": [
+                      {
+                        "part": [
+                          {
+                            "first": [
+                              "Martin"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "part": [
+                          {
+                            "last": [
+                              "Fourcade"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "score": [
+                      "18.05,5"
+                    ],
+                    "subScore": [
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "2"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": [
+              "BIB2"
+            ],
+            "teamMetadata": [
+              {
+                "nationality": [
+                  "Norway"
+                ],
+                "key": [
+                  "vendBIB:2"
+                ],
+                "name": [
+                  {
+                    "full": [
+                      "Norway"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "teamStats": [
+              {
+                "score": [
+                  "1.15.05,7"
+                ],
+                "rank": [
+                  {
+                    "value": [
+                      "2"
+                    ]
+                  }
+                ],
+                "subScore": [
+                  {
+                    "periodValue": [
+                      "1"
+                    ],
+                    "score": [
+                      "0"
+                    ],
+                    "subScoreName": [
+                      "Penaltyrounds"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "1"
+                    ],
+                    "score": [
+                      "4"
+                    ],
+                    "subScoreName": [
+                      "Extra shots"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "2"
+                    ],
+                    "score": [
+                      "1"
+                    ],
+                    "subScoreName": [
+                      "Penaltyrounds"
+                    ]
+                  },
+                  {
+                    "periodValue": [
+                      "2"
+                    ],
+                    "score": [
+                      "7"
+                    ],
+                    "subScoreName": [
+                      "Extra shots"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "player": [
+              {
+                "playerMetadata": [
+                  {
+                    "teamIdref": [
+                      "BIB2"
+                    ],
+                    "nationality": [
+                      "Norway"
+                    ],
+                    "gender": [
+                      "female"
+                    ],
+                    "uniformNumber": [
+                      "2-1"
+                    ],
+                    "name": [
+                      {
+                        "part": [
+                          {
+                            "first": [
+                              "Synnoeve"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "part": [
+                          {
+                            "last": [
+                              "Solemdal"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "score": [
+                      "19.39,0"
+                    ],
+                    "subScore": [
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "3"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "1"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "3"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "playerMetadata": [
+                  {
+                    "teamIdref": [
+                      "BIB2"
+                    ],
+                    "nationality": [
+                      "Norway"
+                    ],
+                    "gender": [
+                      "female"
+                    ],
+                    "uniformNumber": [
+                      "2-2"
+                    ],
+                    "name": [
+                      {
+                        "part": [
+                          {
+                            "first": [
+                              "Tiril"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "part": [
+                          {
+                            "last": [
+                              "Eckhoff"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "score": [
+                      "18.27,2"
+                    ],
+                    "subScore": [
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "1"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "1"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "playerMetadata": [
+                  {
+                    "teamIdref": [
+                      "BIB2"
+                    ],
+                    "nationality": [
+                      "Norway"
+                    ],
+                    "gender": [
+                      "male"
+                    ],
+                    "uniformNumber": [
+                      "2-3"
+                    ],
+                    "name": [
+                      {
+                        "part": [
+                          {
+                            "first": [
+                              "Vetle Sjastad"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "part": [
+                          {
+                            "last": [
+                              "Christiansen"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "score": [
+                      "18.46,3"
+                    ],
+                    "subScore": [
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "3"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "playerMetadata": [
+                  {
+                    "teamIdref": [
+                      "BIB2"
+                    ],
+                    "nationality": [
+                      "Norway"
+                    ],
+                    "gender": [
+                      "male"
+                    ],
+                    "uniformNumber": [
+                      "2-4"
+                    ],
+                    "name": [
+                      {
+                        "part": [
+                          {
+                            "first": [
+                              "Lars Helge"
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "part": [
+                          {
+                            "last": [
+                              "Birkeland"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "playerStats": [
+                  {
+                    "score": [
+                      "18.57,2"
+                    ],
+                    "subScore": [
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "1"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Penaltyrounds"
+                        ]
+                      },
+                      {
+                        "periodValue": [
+                          "2"
+                        ],
+                        "score": [
+                          "0"
+                        ],
+                        "subScoreName": [
+                          "Extra shots"
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
