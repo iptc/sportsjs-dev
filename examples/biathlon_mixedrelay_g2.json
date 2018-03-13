@@ -1,4 +1,5 @@
-{"sportsEvent": {
+{"sportsContent": {
+"sportsEvent": {
     "eventMetadata": {
         "startDateTime": "2014-11-30T14:30:00+01:00",
         "site": {"siteMetadata": {
@@ -6,17 +7,17 @@
             "homeLocation": {"name": {"full": "Östersund"}}
         }}
     },
-    "team": [
+    "teams": [
         {
             "id": "BIB6",
-            "teamMetadata": {
+            "team-Metadata": {
                 "nationality": "France",
                 "key": "vendBIB:6",
                 "name": {"full": "France"}
             },
             "teamStats": {
                 "score": "1.15.05,5",
-                "rank": {"value": 1},
+                "rank": {"value": "1"},
                 "subScore": [
                     {
                         "periodValue": 1,
@@ -40,7 +41,7 @@
                     }
                 ]
             },
-            "player": [
+            "players": [
                 {
                     "playerMetadata": {
                         "teamIdref": "BIB6",
@@ -200,7 +201,7 @@
             },
             "teamStats": {
                 "score": "1.15.05,7",
-                "rank": {"value": 2},
+                "rank": {"value": "2"},
                 "subScore": [
                     {
                         "periodValue": 1,
@@ -224,7 +225,7 @@
                     }
                 ]
             },
-            "player": [
+            "players": [
                 {
                     "playerMetadata": {
                         "teamIdref": "BIB2",
@@ -376,4 +377,4 @@
             ]
         }
     ]
-}}
+}}}
