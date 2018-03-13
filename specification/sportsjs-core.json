@@ -1,6 +1,6 @@
 {
 	"$id": "sportsjs-core.json#",
-	"$schema": "http://json-schema.org/draft-04/schema#",
+	"$schema": "http://json-schema.org/draft-06/schema#",
 	"description": "The SportsJS schema contains properties common to all (or many) sports.",
 	"$ref": "#/definitions/sportsContent",
 	"definitions": {
