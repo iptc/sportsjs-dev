@@ -208,6 +208,12 @@
 			}],
 			"additionalProperties": false,
 			"properties": {
+			    "sportsContent" : {
+			     "$ref": "#/definitions/sportsContent"
+			    },
+			    "player": {
+					"$ref": "#/definitions/player"
+				},
 				"sportsMetadata": {
 					"$ref": "#/definitions/sportsMetadata"
 				},
