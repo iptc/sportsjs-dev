@@ -71,6 +71,23 @@ Note that the `soccer-simple-sample-pre-game-not-to-validate.json` example has
 been deliberately modified in order to test that invalid instance files fail to
 validate.
 
+Or if you would prefer to validate using Python's `jsonschema`:
+    $ git clone https://github.com/iptc/sportsjs-dev.git
+    $ cd sportsjs-dev
+    $ mkvirtualenv --python=python3 sportsjs
+    (sportsjs) $ pip install jsonschema
+    (sportsjs) $ jsonschema -i examples/generic-alert.json specification/sportsjs-core.json
+    (sportsjs) $ jsonschema -i examples/americanFootballEventSummary.json specification/sportsjs-core.json
+    (sportsjs) $ jsonschema -i examples/biathlon_mixedrelay_g2.json specification/sportsjs-core.json
+    (sportsjs) $ jsonschema -i examples/golf-tour-for-sportsjs.json specification/sportsjs-core.json
+    (sportsjs) $ jsonschema -i examples/skiing_vasaloppet_2015_g2.json specification/sportsjs-core.json
+    (sportsjs) $ jsonschema -i examples/soccer-simple-sample-pre-game.json specification/sportsjs-core.json
+    (sportsjs) $ jsonschema -i examples/soccer-simple-sample-pre-game-not-to-validate.json specification/sportsjs-core.json
+    {'sportsetadata': {'docId': 'sjs-2016-00-23_Birmingham-Bolton'}, 'sportsEvents': [{'id': 'm_1118347', 'eventMetadata': {'startDateTime': '2016-02-23T20:45:00+01:00', 'endDateTime': '2016-02-23T22:45:00+01:00', 'name': {'full': 'Birmingham - Bolton'}}, 'teams': [{'id': 'nifs-t.tim_257_1118347', 'teamMetadata': {'key': 'Team:nifs-t.tim_257_1118347', 'alignment': 'home', 'name': {'full': 'Birmingham'}}, 'teamStats': {}}, {'id': 'nifs-t.tim_253_1118347', 'teamMetadata': {'key': 'Team:nifs-t.tim_253_1118347', 'alignment': 'away', 'name': {'full': 'Bolton'}}, 'teamStats': {}}]}]}: Additional properties are not allowed ('sportsetadata' was unexpected)
+
+Again, this error is expected as the example deliberately fails to validate
+against the schema.
+
 ## Tests
 
 We have created some unit tests for the schema itself to ensure that our schema
@@ -84,7 +101,7 @@ It is written in Python, and can be run with:
 
 ## Support
 
-The IPTC [Developer Site](http://dev.iptc.org/SportsML) provides technical
+The [IPTC Developer Site](http://dev.iptc.org/SportsML) provides technical
 information about both SportsJS and SportsML, the XML version of this standard.
 
 Please use the [SportsML Users Forum](https://groups.yahoo.com/neo/groups/sportsml/info)
