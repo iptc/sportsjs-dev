@@ -72,6 +72,7 @@ been deliberately modified in order to test that invalid instance files fail to
 validate.
 
 Or if you would prefer to validate using Python's `jsonschema`:
+
     $ git clone https://github.com/iptc/sportsjs-dev.git
     $ cd sportsjs-dev
     $ mkvirtualenv --python=python3 sportsjs
