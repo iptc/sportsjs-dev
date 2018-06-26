@@ -1,5 +1,5 @@
 {
-  "id": "sportsjs-basketball.json#",
+  "id": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-basketball.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The SportsJS Soccer schema contains properties common to Basketball.",
   "definitions":{
@@ -71,10 +71,10 @@
       "description": "",
       "allOf": [
         {
-          "$ref": "sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -96,10 +96,10 @@
       "description": "Statistics for a team or player while they had possession of the ball. | Includes scoring and assisting stats.",
       "allOf": [
         {
-          "$ref": "sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -229,10 +229,10 @@
       "description": "Statistics for a team or player revolving around rebounds. | Includes rebounds credited to particular players, and credited to the entire team.",
       "allOf": [
         {
-          "$ref": "sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -334,10 +334,10 @@
       "description": "Statistics for a team or player while the other team was in possession of the ball. | Includes information on steals and blocks.",
       "allOf": [
         {
-          "$ref": "sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {

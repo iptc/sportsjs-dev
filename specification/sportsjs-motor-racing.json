@@ -1,5 +1,5 @@
 {
-  "id": "sportsjs-motor-racing.json#",
+  "id": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-motor-racing.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "The SportsJS Soccer schema contains properties common to Motor Racing.",
   "definitions": {
@@ -16,7 +16,7 @@
       "description": "Metadata about the team. | Specific to the sport of motor racing.",
       "allOf": [
         {
-          "$ref": "sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
@@ -30,7 +30,7 @@
       "description": "Metadata about the driver. | Specific to the sport of motor racing.",
       "allOf": [
         {
-          "$ref": "sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
@@ -44,7 +44,7 @@
       "description": "Metadata about the associate. | Specific to the sport of motor racing.",
       "allOf": [
         {
-          "$ref": "sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
@@ -58,12 +58,12 @@
       "description": "Details on the car, motorcycle, etc., being driven. | Includes manufacturing information.",
       "allOf": [
         {
-          "$ref": "sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/commonAttributes"
         }
       ],
       "properties": {
         "makeName": {
-          "$ref": "sportsjs-core.json#/definitions/name",
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/name",
           "description": "A display-name for the make-key."
         },
         "number": {
@@ -71,7 +71,7 @@
           "description": "The number written on the side of the vehicle."
         },
         "makeKey": {
-          "$ref": "sportsjs-core.json#/definitions/qCode",
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/qCode",
           "description": "A unique identifier for the make of the car. For example: m.dodge"
         },
         "sponsor": {
@@ -114,10 +114,10 @@
       "description": "Specific statistics for motor racing. | Includes stats about the qualifying round, as well as for the race itself.",
       "allOf": [
         {
-          "$ref": "sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -135,10 +135,10 @@
       "description": "Statistics about the event itself. | Includes the total number of lead changes, and the average speed.",
       "allOf": [
         {
-          "$ref": "sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -192,10 +192,10 @@
       "description": "Statistics for the qualifying round of a race. | Includes pole position and qualifying times.",
       "allOf": [
         {
-          "$ref": "sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -233,10 +233,10 @@
       "description": "Statistics for the race itself. | Includes time information and can include cumulative stats for the driver or team.",
       "allOf": [
         {
-          "$ref": "sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -358,10 +358,10 @@
       "description": "Statistics for a particular lap. | Can be used for all laps in a race, or just say for the fastest lap.",
       "allOf": [
         {
-          "$ref": "sportsjs-core.json#/definitions/commonAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/commonAttributes"
         },
         {
-          "$ref": "sportsjs-core.json#/definitions/coverageAttributes"
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/coverageAttributes"
         }
       ],
       "properties": {
@@ -411,7 +411,7 @@
           "description": "The time elapsed in the race."
         },
         "flagState": {
-          "$ref": "sportsjs-core.json#/definitions/qCode",
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/qCode",
           "description": "The current flag issued within the race."
         }
       }
