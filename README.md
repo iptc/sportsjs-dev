@@ -71,6 +71,17 @@ Note that the `soccer-simple-sample-pre-game-not-to-validate.json` example has
 been deliberately modified in order to test that invalid instance files fail to
 validate.
 
+## Tests
+
+We have created some unit tests for the schema itself to ensure that our schema
+stays valid according to our examples. It contains some simple schemas embedded
+in the test script, and it also loads all of the example files in the `examples`
+folder.
+
+It is written in Python, and can be run with:
+
+    $ python tests/specification_tests.py
+
 ## Support
 
 The IPTC [Developer Site](http://dev.iptc.org/SportsML) provides technical
