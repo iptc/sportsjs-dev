@@ -40,8 +40,13 @@ class TestSportsJSSchema(unittest.TestCase):
         # if we put this in setUp() it would load the schema for each
         # test which is unnecessary.
         import os
-        current_path = os.path.dirname(os.path.realpath(__file__))
-        schema_filename = os.path.join(current_path, '..', 'specification', 'sportsjs-core.json')
+        self.current_path = os.path.dirname(os.path.realpath(__file__))
+        schema_filename = os.path.join(
+            self.current_path,
+            '..',
+            'specification',
+            'sportsjs-core.json'
+        )
         with open(schema_filename) as schemafile:
             self.sportsjs_schema = json.load(schemafile)
         return super(TestSportsJSSchema, self).__init__(*args, **kwargs)
@@ -130,7 +135,7 @@ class TestSportsJSSchema(unittest.TestCase):
 
     def load_file(self, filename):
         filename = os.path.join(
-                        os.path.dirname(os.path.realpath(__file__)),
+                        self.current_path,
                         '..',
                         'examples',
                         filename
