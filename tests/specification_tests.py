@@ -33,6 +33,8 @@ import json
 import jsonschema
 import os
 
+TEST_FILES_FOLDER = 'unit_test_files'
+
 class TestSportsJSSchema(unittest.TestCase):
     sportsjs_schema = None
 
@@ -58,6 +60,7 @@ class TestSportsJSSchema(unittest.TestCase):
         """
         self.assertIsNone(jsonschema.validate({}, self.sportsjs_schema))
 
+    """
     def test_garbage_fails(self):
         with self.assertRaises(jsonschema.exceptions.ValidationError):
             jsonschema.validate(
@@ -70,70 +73,13 @@ class TestSportsJSSchema(unittest.TestCase):
     def test_generic_alert(self):
         # examples/generic-alert.json
         instance = json.loads(
-        """
-        {
-          "sportsMetadata": {
-            "fixtureKey": "spfixt:alert",
-            "featureName": {
-              "full": "Generic Alert",
-              "short": "Alert"
-            },
-            "documentClass": "spfixt:alert",
-            "dateTime": "2016-12-21T00:00:00-04:00",
-            "docId": "iptc.alert.a2a204ad-db35-41d4-837d-cded49226292"
-          }
-        }
-        """)
         self.assertIsNone(jsonschema.validate(instance, self.sportsjs_schema))
 
     def test_simple_soccer_example(self):
         instance = json.loads(
-        """
-        {
-          "sportsMetadata": {
-            "docId": "sjs-2016-00-23_Birmingham-Bolton"
-          },
-          "sportsEvents": [
-            {
-              "id": "m_1118347",
-              "eventMetadata": {
-                "startDateTime": "2016-02-23T20:45:00+01:00",
-                "endDateTime": "2016-02-23T22:45:00+01:00",
-                "name": {
-                  "full": "Birmingham - Bolton"
-                }
-              },
-              "teams": [
-                {
-                  "id": "nifs-t.tim_257_1118347",
-                  "teamMetadata": {
-                    "key": "Team:nifs-t.tim_257_1118347",
-                    "alignment": "home",
-                    "name": {
-                      "full": "Birmingham"
-                    }
-                  },
-                  "teamStats": {}
-                },
-                {
-                  "id": "nifs-t.tim_253_1118347",
-                  "teamMetadata": {
-                    "key": "Team:nifs-t.tim_253_1118347",
-                    "alignment": "away",
-                    "name": {
-                      "full": "Bolton"
-                    }
-                  },
-                  "teamStats": {}
-                }
-              ]
-            }
-          ]
-        }
-        """)
         self.assertIsNone(jsonschema.validate(instance, self.sportsjs_schema))
 
-    def load_file(self, filename):
+    def load_example_file(self, filename):
         filename = os.path.join(
                         self.current_path,
                         '..',
@@ -145,34 +91,64 @@ class TestSportsJSSchema(unittest.TestCase):
         return instance
 
     def test_example_file_1(self):
-        instance = self.load_file('generic-alert.json')
+        instance = self.load_example_file('generic-alert.json')
         self.assertIsNone(jsonschema.validate(instance, self.sportsjs_schema))
     
     def test_example_file_2(self):
-        instance = self.load_file('americanFootballEventSummary.json')
+        instance = self.load_example_file('americanFootballEventSummary.json')
         self.assertIsNone(jsonschema.validate(instance, self.sportsjs_schema))
 
     def test_example_file_3(self):
-        instance = self.load_file('biathlon_mixedrelay_g2.json')
+        instance = self.load_example_file('biathlon_mixedrelay_g2.json')
         self.assertIsNone(jsonschema.validate(instance, self.sportsjs_schema))
 
     def test_example_file_4(self):
-        instance = self.load_file('golf-tour-for-sportsjs.json')
+        instance = self.load_example_file('golf-tour-for-sportsjs.json')
         self.assertIsNone(jsonschema.validate(instance, self.sportsjs_schema))
 
     def test_example_file_5(self):
-        instance = self.load_file('skiing_vasaloppet_2015_g2.json')
+        instance = self.load_example_file('skiing_vasaloppet_2015_g2.json')
         self.assertIsNone(jsonschema.validate(instance, self.sportsjs_schema))
 
     def test_example_file_6(self):
         # this example is supposed to fail
         with self.assertRaises(jsonschema.exceptions.ValidationError):
-            instance = self.load_file('soccer-simple-sample-pre-game-not-to-validate.json')
+            instance = self.load_example_file('soccer-simple-sample-pre-game-not-to-validate.json')
             self.assertIsNone(jsonschema.validate(instance, self.sportsjs_schema))
 
     def test_example_file_7(self):
-        instance = self.load_file('soccer-simple-sample-pre-game.json')
+        instance = self.load_example_file('soccer-simple-sample-pre-game.json')
         self.assertIsNone(jsonschema.validate(instance, self.sportsjs_schema))
+    """
+
+    def get_files_in_folder(self, folder_name):
+        folder_name = os.path.join(
+                        self.current_path,
+                        folder_name
+                    )
+        return os.listdir(folder_name)
+
+    def load_test_file(self, path, file_name):
+        with open(os.path.join(path, file_name), 'r') as jsonfile:
+            instance = json.load(jsonfile)
+        return instance
+
+    def test_all_passing_example_files(self):
+        test_files_path = os.path.join(self.current_path, TEST_FILES_FOLDER, 'should_pass')
+        testfiles = self.get_files_in_folder(test_files_path)
+        for file in testfiles:
+            with self.subTest(file=file):
+                instance = self.load_test_file(test_files_path, file)
+                self.assertIsNone(jsonschema.validate(instance, self.sportsjs_schema))
+
+    def test_all_failing_example_files(self):
+        test_files_path = os.path.join(self.current_path, TEST_FILES_FOLDER, 'should_fail')
+        testfiles = self.get_files_in_folder(test_files_path)
+        for file in testfiles:
+            with self.subTest(file=file):
+                with self.assertRaises(jsonschema.exceptions.ValidationError) or self.assertRaises(json.decoder.JSONDecodeError):
+                    instance = self.load_test_file(test_files_path, file)
+                    self.assertIsNone(jsonschema.validate(instance, self.sportsjs_schema))
 
 if __name__ == '__main__':
     unittest.main()

@@ -1,0 +1,97 @@
+{
+  "sportsMetadata": {
+    "docId": "6c71abe8-372c-4d00-b5a9-c002803cce12",
+    "fixtureKey": "fixture:event-summary"
+  },
+  "sportsEvent": {
+    "eventMetadata": {
+      "key": "event:fc66659e-3c56-43ed-b0b4-b6b0725d1620",
+      "seasonKey": "season:2015",
+      "seasonType": "seasonType:season-regular",
+      "eventStatus": "eventStatus:post-event",
+      "startDateTime": "2015-12-14T20:30:00-05:00",
+      "name": {
+        "full": "2015 New York Giants at Miami Dolphins | 2015-12-14 08:30 PM"
+      },
+      "americanFootballEventMetadata": {
+        "week": "14"
+      }
+    },
+    "teams": [
+      {
+        "teamMetadata": {
+          "key": "team:2700",
+          "name": {
+            "first": "Miami",
+            "full": "Miami Dolphins",
+            "abbreviation": "MIA"
+          },
+          "alignment": "home"
+        },
+        "teamStats": {
+          "score": "24",
+          "scoreOpposing": "31",
+          "subScores": [
+            {
+              "periodValue": "Q1",
+              "score": "7"
+            },
+            {
+              "periodValue": "Q2",
+              "score": "10"
+            },
+            {
+              "periodValue": "Q3",
+              "score": "7"
+            },
+            {
+              "periodValue": "Q4",
+              "score": "0"
+            },
+            {
+              "periodValue": "OT",
+              "score": "0"
+            }
+          ]
+        }
+      },
+      {
+        "teamMetadata": {
+          "key": "team:3410",
+          "name": {
+            "first": "New York Giants",
+            "full": "New York Giants",
+            "abbreviation": "NYG"
+          },
+          "alignment": "away"
+        },
+        "teamStats": {
+          "score": "31",
+          "scoreOpposing": "24",
+          "subScores": [
+            {
+              "periodValue": "Q1",
+              "score": "3"
+            },
+            {
+              "periodValue": "Q2",
+              "score": "14"
+            },
+            {
+              "periodValue": "Q3",
+              "score": "7"
+            },
+            {
+              "periodValue": "Q4",
+              "score": "7"
+            },
+            {
+              "periodValue": "OT",
+              "score": "0"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
