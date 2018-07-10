@@ -1,5 +1,6 @@
 {
     "tournament": {
+        "class" : "johan",
         "tournamentMetadata": {
             "Status": "speventstatus:post-event",
             "StartDateTime": "2015-03-08",
@@ -29,7 +30,7 @@
                 }
             }
         },
-        "tournamentDivision": [
+        "tournamentDivision_x": [
             {
                 "tournamentDivisionMetadata": {
                     "SportsContentCodes": {
