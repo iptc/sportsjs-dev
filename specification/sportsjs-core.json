@@ -46,6 +46,7 @@
         "location": {
             "description": "The location considered as the home of the entity.",
             "type": "object",
+            "additionalProperties": false,
             "properties": {
                 "contactInfo": {"$ref": "#/definitions/contactInfo"},
                 "address": {"$ref": "#/definitions/address"},
@@ -55,8 +56,10 @@
         "contactInfo": {
             "description": "Wrapper for different renditions of contact information.",
             "type": "object",
+            "additionalProperties": false,
             "patternProperties": {"^[a-zA-Z0-9]+": {
                 "type": "object",
+                "additionalProperties": false,
                 "properties": {
                     "email": {
                         "description": "An email address.",
@@ -81,6 +84,7 @@
         "address": {
             "description": " An address. Its use is refined by the object wrapping it.",
             "type": "object",
+            "additionalProperties": false,
             "properties": {
                 "lines": {
                     "description": "Lines of address information, in the format expected by a postal service. City, country area, country and postal code are expressed separately.",
@@ -121,6 +125,7 @@
         "position": {
             "description": "The geospatial data of the location. Default Coordinate Reference Systems is WGS84",
             "type": "object",
+            "additionalProperties": false,
             "properties": {
                 "latitude": {
                     "description": "The latitude in decimal degrees.",
@@ -143,6 +148,7 @@
         "name": {
             "description": "Name of the entity, could be a player, official, associate, team, etc. Sometimes a person is referred-to by different names, depending upon the language in which the document is displayed.",
             "type": "object",
+            "additionalProperties": false,
             "properties": {
                 "salutation": {
                     "description": "Any salutation used with the name.",
@@ -341,6 +347,7 @@
             "description": "A short textual message to editors receiving the document. | Not generally published through to end-users.",
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "type": "object",
+            "additionalProperties": false,
             "properties": {"featureName": {
                 "description": "A displayable name for the resource identified by the fixture-key.",
                 "$ref": "#/definitions/name"
@@ -412,6 +419,8 @@
         },
         "sportsContentCode": {
             "description": "An individual code that describes an entity one may want to filter for. Describes what sports, what teams, etc., are covered.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "sportsContentQualifier": {
@@ -434,6 +443,8 @@
         },
         "sportsContentQualifier": {
             "description": "Further refinement/elaboration of a sports-content-code. | If the document covers more than one of these, additional sports-content-qualifier elements may be used.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "gender": {
@@ -478,6 +489,8 @@
         },
         "sportsProperty": {
             "description": "An extensible property, similar to structures in NewsML 1.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "formalName": {
@@ -510,6 +523,8 @@
         },
         "sportsEvent": {
             "description": "A sporting competition. | A contest that generally ends with a winner.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "eventMetadata": {"$ref": "#/definitions/eventMetadata"},
@@ -538,6 +553,8 @@
         },
         "eventSponsor": {
             "description": "A sponsor for an event. | Events can have more than one sponsor.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "name": {
@@ -558,6 +575,8 @@
         },
         "highlight": {
             "description": "A textual highlight. | Can hold plain text, or could hold NITF.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {"content": {
                 "type": "array",
@@ -566,6 +585,8 @@
         },
         "site": {
             "description": "An element housing data having to do with a venue, stadium, arena, field, etc.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "siteMetadata": {
@@ -691,6 +712,8 @@
         },
         "team": {
             "description": "A team participating in a sporting event. | Holds metadata and statistical data for team.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "teamMetadata": {"$ref": "#/definitions/teamMetadata"},
@@ -709,6 +732,8 @@
         },
         "subScore": {
             "description": "Statistics that detail the score for a particular period or inning. Per-sport controlled vocabularies used for period- value.",
+            "type": "object",
+            "additionalProperties": false,
             "properties": {
                 "periodValue": {
                     "type": "string",
@@ -770,6 +795,8 @@
         },
         "outcomeTotal": {
             "description": "A report on the number of wins, losses, etc., the team or player had during a particular time period. | Can also be scoped with various coverage qualifications, such as just events played at home.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/coverageAttributes"}
@@ -861,6 +888,8 @@
         },
         "outcomeResult": {
             "description": "A report on the result, if any, from the event etc.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/coverageAttributes"}
@@ -887,6 +916,8 @@
         },
         "award": {
             "description": "A medal, ribbon, placement, or other type of award. | Can be assigned to an event, a team, or a player.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "name": {"$ref": "#/definitions/name"},
@@ -918,6 +949,8 @@
         },
         "eventRecord": {
             "description": "A world, national, state, or school record. | More than one record can be set by one participant at one sports-event.",
+            "type": "object",
+            "additionalProperties": false,
             "properties": {
                 "type": {
                     "type": "string",
@@ -937,6 +970,8 @@
         },
         "rank": {
             "description": "How a team is doing in comparison to other teams or players. | May be qualified, so that one ranks teams or players according to, say, how they play at home, or within their division.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/coverageAttributes"}
@@ -967,6 +1002,8 @@
         },
         "rating": {
             "description": "A judged value placed on the team or individual. | Often used in British soccer.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "ratingType": {
@@ -995,6 +1032,8 @@
         },
         "player": {
             "description": "A competitor. | Their athletic talents help them decide who wins a sports-event.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "playerMetadata": {"$ref": "#/definitions/playerMetadata"},
@@ -1011,6 +1050,8 @@
         },
         "official": {
             "description": "Also referred to as umpire or referree. | Ensures that the sports-event is played according to its rules.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "officialMetadata": {
@@ -1035,6 +1076,8 @@
         },
         "associate": {
             "description": "Manager or coach or jockey, etc. | An individual or a group that assists a team or player, and functions in a supporting capacity.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "associateMetadata": {"$ref": "#/definitions/associateMetadata"},
@@ -1050,6 +1093,8 @@
         },
         "affiliation": {
             "description": "A mechanism for assigning the membership of a player, team, or associate within a division or larger organizational structure. Also, to indicate an official's affiliation with a team, club or federation, for example.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/coverageAttributes"}
@@ -1075,6 +1120,8 @@
         },
         "tournament": {
             "description": "A structured series of competitions within one sport. | Generally organized by a particular sponsoring body. Can happen all in one day, or be spread out - like the Davis Cup in tennis.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"properties": {
@@ -1103,6 +1150,8 @@
         },
         "tournamentDivision": {
             "description": "A tournament subcategory, often with its own trophy and prize. | Use it to divide specific overall competitions in a large multi-sport tournament such as Olympics. Can also divide gender competitions, for example in tennis tournaments. Can be nested to divide gender at a higher level (tournament/tournament-division) and then to divide specific sport competitions futher down the tree (tournament-part/tournament-division).",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "tournamentDivisionMetadata": {"$ref": "#/definitions/tournamentDivisionMetadata"},
@@ -1113,6 +1162,8 @@
         },
         "tournamentPart": {
             "description": "A tournament part. Use it do group specific parts of a tournament, like a stage or a round.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "tournamentPartMetadata": {"$ref": "#/definitions/tournamentPartMetadata"},
@@ -1127,6 +1178,8 @@
         },
         "article": {
             "description": "Holds either an article or a reference to an article. | Recommended format is NITF.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "format": {
@@ -1141,6 +1194,8 @@
         },
         "standing": {
             "description": "Also known as a (league) table | A ranked, comparative list of team or individual records.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "standingMetadata": {
@@ -1168,6 +1223,8 @@
         },
         "schedule": {
             "description": "A series of games. | Usually grouped by date.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "scheduleMetadata": {
@@ -1192,6 +1249,8 @@
         },
         "statistic": {
             "description": "A table that generally compares the performance of teams or players. | The fixture-key can identify which regulary-running statistics are being presented. Also appropriate for rosters (squad listings).",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/coverageAttributes"}
@@ -1238,6 +1297,8 @@
         },
         "statusChange": {
             "description": "Indicates status change of an entity.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/coverageAttributes"}
@@ -1277,6 +1338,8 @@
         },
         "group": {
             "description": "A holder for statistics about a particular bracket or division or conference or league. | Holds metadata and stats. Also appropriate for expressing general organization/league membership and structure.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "groupMetadata": {"$ref": "#/definitions/groupMetadata"},
@@ -1314,6 +1377,8 @@
         },
         "genericStat": {
             "description": "A generic stat element that can be used together with or instead of more specific stat element and attributes. With nested stats the lower levels should be regarded as having the same value as their parents if that attribute is not specifically set.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/genericStatAttributes"},
                 {"$ref": "#/definitions/coverageAttributes"}
@@ -1351,6 +1416,8 @@
         },
         "wageringRunline": {
             "description": "A line used in baseball.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/wagering3Attributes"}
@@ -1368,6 +1435,8 @@
         },
         "wageringStraightSpread": {
             "description": "A wager built around the different between the scores of two teams.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/wagering3Attributes"}
@@ -1385,6 +1454,8 @@
         },
         "wageringTotalScore": {
             "description": "Total combined point/runs/goals scored in a game.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/wagering2Attributes"}
@@ -1418,6 +1489,8 @@
         },
         "wageringOdds": {
             "description": "A line that gives formal odds on a team or player winning, such as 3-to-1 odds.",
+            "type": "object",
+            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/wageringAttributes"}
@@ -1907,6 +1980,7 @@
         },
         "participant": {
             "type": "object",
+            "additionalProperties": false,
             "description": "Used for human participants, animals, equipment whatever.",
             "allOf": [{"$ref": "#/definitions/baseParticipant"}]
         },
