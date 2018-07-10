@@ -1,5 +1,5 @@
 {
-    "id": "https://github.com//iptc/sportsjs-dev/sportsjs-core.json#",
+    "id": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#",
     "$schema": "http://json-schema.org/draft-04/schema#",
     "description": "The SportsJS schema contains properties common to all (or many) sports.",
     "$ref": "#/definitions/sportsContent",
