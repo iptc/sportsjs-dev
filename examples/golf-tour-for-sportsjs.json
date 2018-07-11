@@ -4,9 +4,7 @@
         "dateTime": "2011-02-01T18:00:00+01:00",
         "language": "en",
         "sportsTitle": {
-            "name": {
-                "full": "PGA tour: Bob Hope Classic"
-            }
+            "full": "PGA tour: Bob Hope Classic"
         }
     },
     "tournament": {
@@ -34,31 +32,19 @@
             },
             "standing": {
                 "standingMetadata": {},
-                "player": [
+                "players": [
                     {
                         "playerMetadata": {
-                            "name": [
-                                {
-                                    "part": "nprt:first"
-                                },
-                                {
-                                    "part": "nprt:last"
-                                }
-                            ],
+                            "name": {
+                                "given": "nprt:first",
+                                "family": "nprt:last"
+                            },
                             "homeLocation": {
-                                "POIDetails": {
-                                    "address": {
-                                        "locality": {
-                                            "name": {}
-                                        },
-                                        "area": {
-                                            "name": {}
-                                        },
-                                        "country": {
-                                            "name": "Venezuela"
-                                        },
-                                        "postalCode": {}
-                                    }
+                                "address": {
+                                    "locality": "",
+                                    "region": "",
+                                    "countryName": "Venezuela",
+                                    "postalCode": ""
                                 }
                             }
                         },
@@ -130,21 +116,13 @@
                     },
                     {
                         "playerMetadata": {
-                            "name": "Gary Woodland",
+                            "name": { "full": "Gary Woodland" },
                             "homeLocation": {
-                                "POIDetails": {
-                                    "address": {
-                                        "locality": {
-                                            "name": {}
-                                        },
-                                        "area": {
-                                            "name": {}
-                                        },
-                                        "country": {
-                                            "name": "USA"
-                                        },
-                                        "postalCode": {}
-                                    }
+                                "address": {
+                                    "locality": "",
+                                    "region": "",
+                                    "countryName": "USA",
+                                    "postalCode": ""
                                 }
                             }
                         },
@@ -192,7 +170,7 @@
                     }
                 ]
             },
-            "tournamentPart": [
+            "tournamentParts": [
                 {
                     "tournamentPartMetadata": {
                         "startDateTime": "2011-01-19",
@@ -213,19 +191,11 @@
                                             "style": "outdoor",
                                             "name": "PGA West (Palmer Course)",
                                             "homeLocation": {
-                                                "POIDetails": {
-                                                    "address": {
-                                                        "locality": {
-                                                            "name": "La Quinta"
-                                                        },
-                                                        "area": {
-                                                            "name": "CA"
-                                                        },
-                                                        "country": {
-                                                            "name": "USA"
-                                                        },
-                                                        "postalCode": {}
-                                                    }
+                                                "address": {
+                                                    "locality": "La Quinta",
+                                                    "region": "CA",
+                                                    "countryName": "USA",
+                                                    "postalCode": ""
                                                 }
                                             }
                                         }

@@ -22,7 +22,7 @@
         "teamMetadata": {
           "key": "team:2700",
           "name": {
-            "first": "Miami",
+            "given": "Miami",
             "full": "Miami Dolphins",
             "abbreviation": "MIA"
           },
@@ -59,7 +59,7 @@
         "teamMetadata": {
           "key": "team:3410",
           "name": {
-            "first": "New York Giants",
+            "given": "New York Giants",
             "full": "New York Giants",
             "abbreviation": "NYG"
           },

@@ -2,29 +2,19 @@
     "tournament": {
         "class" : "johan",
         "tournamentMetadata": {
-            "Status": "speventstatus:post-event",
-            "StartDateTime": "2015-03-08",
-            "VenueType": "spsitestyle:outdoor",
-            "SurfaceType": "vendst:snow",
+            "status": "speventstatus:post-event",
+            "startDateTime": "2015-03-08",
+            "venueType": "spsitestyle:outdoor",
+            "surfaceType": "vendst:snow",
             "name": {
                 "full": "Vasaloppet 2015"
             },
-            "Site": {
-                "SiteMetadata": {
-                    "HomeLocation": {
-                        "POIDetails": {
-                            "Address": {
-                                "Locality": {
-                                    "name": {
-                                        "full": "Mora"
-                                    }
-                                },
-                                "Country": {
-                                    "name": {
-                                        "full": "Sverige"
-                                    }
-                                }
-                            }
+            "site": {
+                "siteMetadata": {
+                    "homeLocation": {
+                        "address": {
+                            "locality": "Mora",
+                            "countryName": "Sverige"
                         }
                     }
                 }
@@ -33,24 +23,24 @@
         "tournamentDivision_x": [
             {
                 "tournamentDivisionMetadata": {
-                    "SportsContentCodes": {
-                        "SportsContentCode": {
-                            "CodeType": "subj:qual",
-                            "SportsContentQualifier": {
-                                "Gender": "male",
+                    "sportsContentCodes": {
+                        "sportsContentCode": {
+                            "codeType": "subj:qual",
+                            "sportsContentQualifier": {
+                                "gender": "male",
                                 "ParticipantCount": "spparticipantcount:individual"
                             }
                         }
                     }
                 },
-                "SportsEvent": {
-                    "Player": [
+                "sportsEvent": {
+                    "player": [
                         {
-                            "PlayerMetadata": {
-                                "DateOfBirth": "1985",
-                                "Gender": "male",
-                                "Nationality": "Norge",
-                                "UniformNumber": "131",
+                            "playerMetadata": {
+                                "dateOfBirth": "1985",
+                                "gender": "male",
+                                "nationality": "Norge",
+                                "uniformNumber": "131",
                                 "name": [
                                     {
                                         "part": {
@@ -63,43 +53,43 @@
                                         }
                                     }
                                 ],
-                                "HomeLocation": {
+                                "homeLocation": {
                                     "POIDetails": {
-                                        "Address": {
-                                            "Locality": {
+                                        "address": {
+                                            "locality": {
                                                 "name": {
                                                     "full": "Nannestad"
                                                 }
                                             },
-                                            "Area": {
+                                            "area": {
                                                 "name": {
                                                     "full": {}
                                                 }
                                             },
-                                            "Country": {
+                                            "country": {
                                                 "name": {
                                                     "full": "Norge"
                                                 }
                                             },
-                                            "PostalCode": {}
+                                            "postalCode": {}
                                         }
                                     }
                                 }
                             },
-                            "PlayerStats": {
-                                "Class": "M\u00e4n",
-                                "Score": "4.01.48",
-                                "Rank": {
+                            "playerStats": {
+                                "class": "M\u00e4n",
+                                "score": "4.01.48",
+                                "rank": {
                                     "Value": "1"
                                 }
                             }
                         },
                         {
-                            "PlayerMetadata": {
-                                "DateOfBirth": "1972",
-                                "Gender": "male",
-                                "Nationality": "Norge",
-                                "UniformNumber": "123",
+                            "playerMetadata": {
+                                "dateOfBirth": "1972",
+                                "gender": "male",
+                                "nationality": "Norge",
+                                "uniformNumber": "123",
                                 "name": [
                                     {
                                         "part": {
@@ -112,7 +102,7 @@
                                         }
                                     }
                                 ],
-                                "HomeLocation": {
+                                "homeLocation": {
                                     "POIDetails": {
                                         "Address": {
                                             "Locality": {
@@ -135,20 +125,20 @@
                                     }
                                 }
                             },
-                            "PlayerStats": {
-                                "Class": "M\u00e4n",
-                                "Score": "4.01.53",
-                                "Rank": {
+                            "playerStats": {
+                                "class": "M\u00e4n",
+                                "score": "4.01.53",
+                                "rank": {
                                     "Value": "2"
                                 }
                             }
                         },
                         {
-                            "PlayerMetadata": {
-                                "DateOfBirth": "1973",
-                                "Gender": "male",
-                                "Nationality": "Tjeckien",
-                                "UniformNumber": "5",
+                            "playerMetadata": {
+                                "dateOfBirth": "1973",
+                                "gender": "male",
+                                "nationality": "Tjeckien",
+                                "uniformNumber": "5",
                                 "name": [
                                     {
                                         "part": {
@@ -161,7 +151,7 @@
                                         }
                                     }
                                 ],
-                                "HomeLocation": {
+                                "homeLocation": {
                                     "POIDetails": {
                                         "Address": {
                                             "Locality": {
@@ -184,20 +174,20 @@
                                     }
                                 }
                             },
-                            "PlayerStats": {
-                                "Class": "M\u00e4n",
-                                "Score": "4.02.12",
-                                "Rank": {
-                                    "Value": "3"
+                            "playerStats": {
+                                "class": "M\u00e4n",
+                                "score": "4.02.12",
+                                "rank": {
+                                    "value": "3"
                                 }
                             }
                         },
                         {
-                            "PlayerMetadata": {
-                                "DateOfBirth": "1983",
-                                "Gender": "male",
-                                "Nationality": "Norge",
-                                "UniformNumber": "28",
+                            "playerMetadata": {
+                                "dateOfBirth": "1983",
+                                "gender": "male",
+                                "nationality": "Norge",
+                                "uniformNumber": "28",
                                 "name": [
                                     {
                                         "part": {
@@ -210,7 +200,7 @@
                                         }
                                     }
                                 ],
-                                "HomeLocation": {
+                                "homeLocation": {
                                     "POIDetails": {
                                         "Address": {
                                             "Locality": {
@@ -233,7 +223,7 @@
                                     }
                                 }
                             },
-                            "PlayerStats": {
+                            "playerStats": {
                                 "Class": "M\u00e4n",
                                 "Score": "4.04.43",
                                 "Rank": {
@@ -242,11 +232,11 @@
                             }
                         },
                         {
-                            "PlayerMetadata": {
-                                "DateOfBirth": "1981",
-                                "Gender": "male",
-                                "Nationality": "Norge",
-                                "UniformNumber": "1",
+                            "playerMetadata": {
+                                "dateOfBirth": "1981",
+                                "gender": "male",
+                                "nationality": "Norge",
+                                "uniformNumber": "1",
                                 "name": [
                                     {
                                         "part": {
@@ -282,7 +272,7 @@
                                     }
                                 }
                             },
-                            "PlayerStats": {
+                            "playerStats": {
                                 "Class": "M\u00e4n",
                                 "Score": "4.05.01",
                                 "Rank": {
@@ -291,11 +281,11 @@
                             }
                         },
                         {
-                            "PlayerMetadata": {
-                                "DateOfBirth": "1983",
-                                "Gender": "male",
-                                "Nationality": "Norge",
-                                "UniformNumber": "124",
+                            "playerMetadata": {
+                                "dateOfBirth": "1983",
+                                "gender": "male",
+                                "nationality": "Norge",
+                                "uniformNumber": "124",
                                 "name": [
                                     {
                                         "part": {
@@ -331,7 +321,7 @@
                                     }
                                 }
                             },
-                            "PlayerStats": {
+                            "playerStats": {
                                 "Class": "M\u00e4n",
                                 "Score": "4.07.01",
                                 "Rank": {
@@ -340,11 +330,11 @@
                             }
                         },
                         {
-                            "PlayerMetadata": {
-                                "DateOfBirth": "1984",
-                                "Gender": "male",
-                                "Nationality": "Norge",
-                                "UniformNumber": "35",
+                            "playerMetadata": {
+                                "dateOfBirth": "1984",
+                                "gender": "male",
+                                "nationality": "Norge",
+                                "uniformNumber": "35",
                                 "name": [
                                     {
                                         "part": {
@@ -380,7 +370,7 @@
                                     }
                                 }
                             },
-                            "PlayerStats": {
+                            "playerStats": {
                                 "Class": "M\u00e4n",
                                 "Score": "4.07.23",
                                 "Rank": {
@@ -389,11 +379,11 @@
                             }
                         },
                         {
-                            "PlayerMetadata": {
-                                "DateOfBirth": "1978",
-                                "Gender": "male",
-                                "Nationality": "Sverige",
-                                "UniformNumber": "23",
+                            "playerMetadata": {
+                                "dateOfBirth": "1978",
+                                "gender": "male",
+                                "nationality": "Sverige",
+                                "uniformNumber": "23",
                                 "name": [
                                     {
                                         "part": {
@@ -429,7 +419,7 @@
                                     }
                                 }
                             },
-                            "PlayerStats": {
+                            "playerStats": {
                                 "Class": "M\u00e4n",
                                 "Score": "4.07.30",
                                 "Rank": {
@@ -442,24 +432,24 @@
             },
             {
                 "tournamentDivisionMetadata": {
-                    "SportsContentCodes": {
-                        "SportsContentCode": {
+                    "sportsContentCodes": {
+                        "sportsContentCode": {
                             "CodeType": "subj:qual",
-                            "SportsContentQualifier": {
-                                "Gender": "female",
+                            "sportsContentQualifier": {
+                                "gender": "female",
                                 "ParticipantCount": "spparticipantcount:individual"
                             }
                         }
                     }
                 },
-                "SportsEvent": {
+                "sportsEvent": {
                     "Player": [
                         {
-                            "PlayerMetadata": {
-                                "DateOfBirth": "1983",
-                                "Gender": "female",
-                                "Nationality": "Polen",
-                                "UniformNumber": "513",
+                            "playerMetadata": {
+                                "dateOfBirth": "1983",
+                                "gender": "female",
+                                "nationality": "Polen",
+                                "uniformNumber": "513",
                                 "name": [
                                     {
                                         "part": {
@@ -495,7 +485,7 @@
                                     }
                                 }
                             },
-                            "PlayerStats": {
+                            "playerStats": {
                                 "Class": "Damer",
                                 "Score": "4.41.02",
                                 "Rank": {
@@ -504,11 +494,11 @@
                             }
                         },
                         {
-                            "PlayerMetadata": {
-                                "DateOfBirth": "1983",
-                                "Gender": "female",
-                                "Nationality": "Sverige",
-                                "UniformNumber": "502",
+                            "playerMetadata": {
+                                "dateOfBirth": "1983",
+                                "gender": "female",
+                                "nationality": "Sverige",
+                                "uniformNumber": "502",
                                 "name": [
                                     {
                                         "part": {
@@ -544,7 +534,7 @@
                                     }
                                 }
                             },
-                            "PlayerStats": {
+                            "playerStats": {
                                 "Class": "Damer",
                                 "Score": "4.45.18",
                                 "Rank": {
@@ -553,11 +543,11 @@
                             }
                         },
                         {
-                            "PlayerMetadata": {
-                                "DateOfBirth": "1982",
-                                "Gender": "female",
-                                "Nationality": "Schweiz",
-                                "UniformNumber": "505",
+                            "playerMetadata": {
+                                "dateOfBirth": "1982",
+                                "gender": "female",
+                                "nationality": "Schweiz",
+                                "uniformNumber": "505",
                                 "name": [
                                     {
                                         "part": {
@@ -593,7 +583,7 @@
                                     }
                                 }
                             },
-                            "PlayerStats": {
+                            "playerStats": {
                                 "Class": "Damer",
                                 "Score": "4.49.16",
                                 "Rank": {
