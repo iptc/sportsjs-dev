@@ -1,7 +1,7 @@
 # IPTC SportsJS 1.0 Draft
 
 SportsJS is an open and highly flexible standard for the interchange of sports data
-in JSON, created by the International Press Telecommunications Council (IPTC).
+in JSON, created by the [International Press Telecommunications Council (IPTC)](https://iptc.org/).
 
 It is designed to be easy to understand and implement, and to cover a wide
 variety of sports competitions. It is based on a direct translation to JSON Schema
@@ -48,7 +48,7 @@ The examples are all in the `examples` folder and can be validated using any
 JSON Schema validator.
 
 For example, follow these steps to clone this repository, install the
-[`ajv-cli`|https://www.npmjs.com/package/ajv-cli] validator, and use it to
+[`ajv-cli`](https://www.npmjs.com/package/ajv-cli) validator, and use it to
 validate the provided examples:
 
     $ git clone https://github.com/iptc/sportsjs-dev.git
