@@ -1,0 +1,20 @@
+{
+    "article": {
+        "id": "reuters:article:USKBN1KO0KE",
+        "class": "reuters-article",
+        "style": "reuters-article",
+        "format": "HTML",
+        "articleRef": "https://www.reuters.com/article/us-tennis-atp-roundup/atp-roundup-murray-reaches-quarters-with-late-night-win-idUSKBN1KO0KE"
+    },
+    "tournament": {
+        "tournamentMetadata": {
+            "name": { "full": "ATP World Tour" },
+            "site": {
+                "siteMetadata": {
+                    "surface": "spsitesurface:hard-court"
+                }
+            },
+            "status": "speventstatus:mid-event"
+        }
+    }
+}

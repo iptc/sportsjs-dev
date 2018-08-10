@@ -3,9 +3,11 @@
         "class" : "johan",
         "tournamentMetadata": {
             "status": "speventstatus:post-event",
-            "startDateTime": "2015-03-08",
-            "venueType": "spsitestyle:outdoor",
-            "surfaceType": "vendst:snow",
+            "coverage": {
+                "startDateTime": "2015-03-08",
+                "venueType": "spsitestyle:outdoor",
+                "surfaceType": "vendst:snow"
+            },
             "name": {
                 "full": "Vasaloppet 2015"
             },
@@ -20,67 +22,47 @@
                 }
             }
         },
-        "tournamentDivision_x": [
+        "tournamentDivisions": [
             {
                 "tournamentDivisionMetadata": {
-                    "sportsContentCodes": {
-                        "sportsContentCode": {
+                    "sportsContentCodes": [
+                        {
                             "codeType": "subj:qual",
                             "sportsContentQualifier": {
                                 "gender": "male",
-                                "ParticipantCount": "spparticipantcount:individual"
+                                "participantCount": "spparticipantcount:individual"
                             }
                         }
-                    }
+                    ]
                 },
                 "sportsEvent": {
-                    "player": [
+                    "players": [
                         {
                             "playerMetadata": {
                                 "dateOfBirth": "1985",
                                 "gender": "male",
                                 "nationality": "Norge",
                                 "uniformNumber": "131",
-                                "name": [
-                                    {
-                                        "part": {
-                                            "first": "Petter"
-                                        }
-                                    },
-                                    {
-                                        "part": {
-                                            "last": "Eliassen"
-                                        }
-                                    }
-                                ],
+                                "name": {
+                                    "given": "Petter",
+                                    "family": "Eliassen"
+                                },
                                 "homeLocation": {
-                                    "POIDetails": {
-                                        "address": {
-                                            "locality": {
-                                                "name": {
-                                                    "full": "Nannestad"
-                                                }
-                                            },
-                                            "area": {
-                                                "name": {
-                                                    "full": {}
-                                                }
-                                            },
-                                            "country": {
-                                                "name": {
-                                                    "full": "Norge"
-                                                }
-                                            },
-                                            "postalCode": {}
-                                        }
+                                    "address": {
+                                        "locality": "Nannestad",
+                                        "region": "",
+                                        "countryName": "Norge",
+                                        "postalCode": ""
                                     }
                                 }
                             },
                             "playerStats": {
                                 "class": "M\u00e4n",
-                                "score": "4.01.48",
+                                "scoreStats": {
+                                    "score": "4.01.48"
+                                },
                                 "rank": {
-                                    "Value": "1"
+                                    "value": 1
                                 }
                             }
                         },
@@ -90,46 +72,26 @@
                                 "gender": "male",
                                 "nationality": "Norge",
                                 "uniformNumber": "123",
-                                "name": [
-                                    {
-                                        "part": {
-                                            "first": "Anders"
-                                        }
-                                    },
-                                    {
-                                        "part": {
-                                            "last": "Aukland"
-                                        }
-                                    }
-                                ],
+                                "name": {
+                                    "given": "Anders",
+                                    "family": "Aukland"
+                                },
                                 "homeLocation": {
-                                    "POIDetails": {
-                                        "Address": {
-                                            "Locality": {
-                                                "name": {
-                                                    "full": "Oslo"
-                                                }
-                                            },
-                                            "Area": {
-                                                "name": {
-                                                    "full": {}
-                                                }
-                                            },
-                                            "Country": {
-                                                "name": {
-                                                    "full": "Norge"
-                                                }
-                                            },
-                                            "PostalCode": {}
-                                        }
+                                    "address": {
+                                        "locality": "Oslo",
+                                        "region": "",
+                                        "countryName": "Norge",
+                                        "postalCode": ""
                                     }
                                 }
                             },
                             "playerStats": {
                                 "class": "M\u00e4n",
-                                "score": "4.01.53",
+                                "scoreStats": {
+                                    "score": "4.01.53"
+                                },
                                 "rank": {
-                                    "Value": "2"
+                                    "value": 2
                                 }
                             }
                         },
@@ -139,46 +101,26 @@
                                 "gender": "male",
                                 "nationality": "Tjeckien",
                                 "uniformNumber": "5",
-                                "name": [
-                                    {
-                                        "part": {
-                                            "first": "Stanislav"
-                                        }
-                                    },
-                                    {
-                                        "part": {
-                                            "last": "Rezac"
-                                        }
-                                    }
-                                ],
+                                "name": {
+                                    "given": "Stanislav",
+                                    "family": "Rezac"
+                                },
                                 "homeLocation": {
-                                    "POIDetails": {
-                                        "Address": {
-                                            "Locality": {
-                                                "name": {
-                                                    "full": "Jablonec nad Nisous"
-                                                }
-                                            },
-                                            "Area": {
-                                                "name": {
-                                                    "full": {}
-                                                }
-                                            },
-                                            "Country": {
-                                                "name": {
-                                                    "full": "Tjeckien"
-                                                }
-                                            },
-                                            "PostalCode": {}
-                                        }
+                                    "address": {
+                                        "locality": "Jablonec nad Nisous",
+                                        "region": "",
+                                        "countryName": "Tjeckien",
+                                        "postalCode": ""
                                     }
                                 }
                             },
                             "playerStats": {
                                 "class": "M\u00e4n",
-                                "score": "4.02.12",
+                                "scoreStats": {
+                                    "score": "4.02.12"
+                                },
                                 "rank": {
-                                    "value": "3"
+                                    "value": 3
                                 }
                             }
                         },
@@ -188,46 +130,26 @@
                                 "gender": "male",
                                 "nationality": "Norge",
                                 "uniformNumber": "28",
-                                "name": [
-                                    {
-                                        "part": {
-                                            "first": "\u00d6ystein"
-                                        }
-                                    },
-                                    {
-                                        "part": {
-                                            "last": "Pettersen"
-                                        }
-                                    }
-                                ],
+                                "name": {
+                                    "given": "\u00d6ystein",
+                                    "family": "Pettersen"
+                                },
                                 "homeLocation": {
-                                    "POIDetails": {
-                                        "Address": {
-                                            "Locality": {
-                                                "name": {
-                                                    "full": "Oslo"
-                                                }
-                                            },
-                                            "Area": {
-                                                "name": {
-                                                    "full": {}
-                                                }
-                                            },
-                                            "Country": {
-                                                "name": {
-                                                    "full": "Norge"
-                                                }
-                                            },
-                                            "PostalCode": {}
-                                        }
+                                    "address": {
+                                        "locality": "Oslo",
+                                        "region": "",
+                                        "countryName": "Norge",
+                                        "postalCode": ""
                                     }
                                 }
                             },
                             "playerStats": {
-                                "Class": "M\u00e4n",
-                                "Score": "4.04.43",
-                                "Rank": {
-                                    "Value": "4"
+                                "class": "M\u00e4n",
+                                "scoreStats": {
+                                    "score": "4.04.43"
+                                },
+                                "rank": {
+                                    "value": 4
                                 }
                             }
                         },
@@ -237,46 +159,26 @@
                                 "gender": "male",
                                 "nationality": "Norge",
                                 "uniformNumber": "1",
-                                "name": [
-                                    {
-                                        "part": {
-                                            "first": "Kristian"
-                                        }
-                                    },
-                                    {
-                                        "part": {
-                                            "last": "Dahl"
-                                        }
-                                    }
-                                ],
-                                "HomeLocation": {
-                                    "POIDetails": {
-                                        "Address": {
-                                            "Locality": {
-                                                "name": {
-                                                    "full": "Trondheim"
-                                                }
-                                            },
-                                            "Area": {
-                                                "name": {
-                                                    "full": {}
-                                                }
-                                            },
-                                            "Country": {
-                                                "name": {
-                                                    "full": "Norge"
-                                                }
-                                            },
-                                            "PostalCode": {}
-                                        }
+                                "name": {
+                                    "given": "Kristian",
+                                    "family": "Dahl"
+                                },
+                                "homeLocation": {
+                                    "address": {
+                                        "locality": "Trondheim",
+                                        "region": "",
+                                        "countryName": "Norge",
+                                        "postalCode": ""
                                     }
                                 }
                             },
                             "playerStats": {
-                                "Class": "M\u00e4n",
-                                "Score": "4.05.01",
-                                "Rank": {
-                                    "Value": "5"
+                                "class": "M\u00e4n",
+                                "scoreStats": {
+                                    "score": "4.05.01"
+                                },
+                                "rank": {
+                                    "value": 5
                                 }
                             }
                         },
@@ -286,46 +188,26 @@
                                 "gender": "male",
                                 "nationality": "Norge",
                                 "uniformNumber": "124",
-                                "name": [
-                                    {
-                                        "part": {
-                                            "first": "Tord Asle"
-                                        }
-                                    },
-                                    {
-                                        "part": {
-                                            "last": "Gjerdalen"
-                                        }
-                                    }
-                                ],
-                                "HomeLocation": {
-                                    "POIDetails": {
-                                        "Address": {
-                                            "Locality": {
-                                                "name": {
-                                                    "full": "Oslo"
-                                                }
-                                            },
-                                            "Area": {
-                                                "name": {
-                                                    "full": {}
-                                                }
-                                            },
-                                            "Country": {
-                                                "name": {
-                                                    "full": "Norge"
-                                                }
-                                            },
-                                            "PostalCode": {}
-                                        }
+                                "name": {
+                                    "given": "Tord Asle",
+                                    "family": "Gjerdalen"
+                                },
+                                "homeLocation": {
+                                    "address": {
+                                        "locality": "Oslo",
+                                        "region": "",
+                                        "countryName": "Norge",
+                                        "postalCode": ""
                                     }
                                 }
                             },
                             "playerStats": {
-                                "Class": "M\u00e4n",
-                                "Score": "4.07.01",
-                                "Rank": {
-                                    "Value": "6"
+                                "class": "M\u00e4n",
+                                "scoreStats": {
+                                    "score": "4.07.01"
+                                },
+                                "rank": {
+                                    "value": 6
                                 }
                             }
                         },
@@ -335,46 +217,26 @@
                                 "gender": "male",
                                 "nationality": "Norge",
                                 "uniformNumber": "35",
-                                "name": [
-                                    {
-                                        "part": {
-                                            "first": {}
-                                        }
-                                    },
-                                    {
-                                        "part": {
-                                            "last": {}
-                                        }
-                                    }
-                                ],
-                                "HomeLocation": {
-                                    "POIDetails": {
-                                        "Address": {
-                                            "Locality": {
-                                                "name": {
-                                                    "full": "Hosle"
-                                                }
-                                            },
-                                            "Area": {
-                                                "name": {
-                                                    "full": {}
-                                                }
-                                            },
-                                            "Country": {
-                                                "name": {
-                                                    "full": "Norge"
-                                                }
-                                            },
-                                            "PostalCode": {}
-                                        }
+                                "name": {
+                                    "given": "",
+                                    "family": ""
+                                },
+                                "homeLocation": {
+                                    "address": {
+                                        "locality": "Hosle",
+                                        "region": "",
+                                        "countryName": "Norge",
+                                        "postalCode": ""
                                     }
                                 }
                             },
                             "playerStats": {
-                                "Class": "M\u00e4n",
-                                "Score": "4.07.23",
-                                "Rank": {
-                                    "Value": "7"
+                                "class": "M\u00e4n",
+                                "scoreStats": {
+                                    "score": "4.07.23"
+                                },
+                                "rank": {
+                                    "value": 7
                                 }
                             }
                         },
@@ -384,46 +246,26 @@
                                 "gender": "male",
                                 "nationality": "Sverige",
                                 "uniformNumber": "23",
-                                "name": [
-                                    {
-                                        "part": {
-                                            "first": "Jerry"
-                                        }
-                                    },
-                                    {
-                                        "part": {
-                                            "last": "Ahrlin"
-                                        }
-                                    }
-                                ],
-                                "HomeLocation": {
-                                    "POIDetails": {
-                                        "Address": {
-                                            "Locality": {
-                                                "name": {
-                                                    "full": "\u00d6stersund"
-                                                }
-                                            },
-                                            "Area": {
-                                                "name": {
-                                                    "full": "J\u00e4mtland"
-                                                }
-                                            },
-                                            "Country": {
-                                                "name": {
-                                                    "full": "Sverige"
-                                                }
-                                            },
-                                            "PostalCode": {}
-                                        }
+                                "name": {
+                                    "given": "Jerry",
+                                    "family": "Ahrlin"
+                                },
+                                "homeLocation": {
+                                    "address": {
+                                        "locality": "\u00d6stersund",
+                                        "region": "J\u00e4mtland",
+                                        "countryName": "Sverige",
+                                        "postalCode": ""
                                     }
                                 }
                             },
                             "playerStats": {
-                                "Class": "M\u00e4n",
-                                "Score": "4.07.30",
-                                "Rank": {
-                                    "Value": "8"
+                                "class": "M\u00e4n",
+                                "scoreStats": {
+                                    "score": "4.07.30"
+                                },
+                                "rank": {
+                                    "value": 8
                                 }
                             }
                         }
@@ -432,64 +274,44 @@
             },
             {
                 "tournamentDivisionMetadata": {
-                    "sportsContentCodes": {
-                        "sportsContentCode": {
-                            "CodeType": "subj:qual",
+                    "sportsContentCodes": [
+                        {
+                            "codeType": "subj:qual",
                             "sportsContentQualifier": {
                                 "gender": "female",
-                                "ParticipantCount": "spparticipantcount:individual"
+                                "participantCount": "spparticipantcount:individual"
                             }
                         }
-                    }
+                    ]
                 },
                 "sportsEvent": {
-                    "Player": [
+                    "players": [
                         {
                             "playerMetadata": {
                                 "dateOfBirth": "1983",
                                 "gender": "female",
                                 "nationality": "Polen",
                                 "uniformNumber": "513",
-                                "name": [
-                                    {
-                                        "part": {
-                                            "first": "Justyna"
-                                        }
-                                    },
-                                    {
-                                        "part": {
-                                            "last": "Kowalczyk"
-                                        }
-                                    }
-                                ],
-                                "HomeLocation": {
-                                    "POIDetails": {
-                                        "Address": {
-                                            "Locality": {
-                                                "name": {
-                                                    "full": {}
-                                                }
-                                            },
-                                            "Area": {
-                                                "name": {
-                                                    "full": {}
-                                                }
-                                            },
-                                            "Country": {
-                                                "name": {
-                                                    "full": "Polen"
-                                                }
-                                            },
-                                            "PostalCode": {}
-                                        }
+                                "name": {
+                                    "given": "Justyna",
+                                    "family": "Kowalczyk"
+                                },
+                                "homeLocation": {
+                                    "address": {
+                                        "locality": "",
+                                        "region": "",
+                                        "countryName": "Polen",
+                                        "postalCode": ""
                                     }
                                 }
                             },
                             "playerStats": {
-                                "Class": "Damer",
-                                "Score": "4.41.02",
-                                "Rank": {
-                                    "Value": "1"
+                                "class": "Damer",
+                                "scoreStats": {
+                                    "score": "4.41.02"
+                                },
+                                "rank": {
+                                    "value": 1
                                 }
                             }
                         },
@@ -499,46 +321,26 @@
                                 "gender": "female",
                                 "nationality": "Sverige",
                                 "uniformNumber": "502",
-                                "name": [
-                                    {
-                                        "part": {
-                                            "first": "Britta"
-                                        }
-                                    },
-                                    {
-                                        "part": {
-                                            "last": "Johansson Norgren"
-                                        }
-                                    }
-                                ],
-                                "HomeLocation": {
-                                    "POIDetails": {
-                                        "Address": {
-                                            "Locality": {
-                                                "name": {
-                                                    "full": "\u00d6stersund"
-                                                }
-                                            },
-                                            "Area": {
-                                                "name": {
-                                                    "full": "J\u00e4mtland"
-                                                }
-                                            },
-                                            "Country": {
-                                                "name": {
-                                                    "full": "Sverige"
-                                                }
-                                            },
-                                            "PostalCode": {}
-                                        }
+                                "name": {
+                                    "given": "Britta",
+                                    "family": "Johansson Norgren"
+                                },
+                                "homeLocation": {
+                                    "address": {
+                                        "locality": "\u00d6stersund",
+                                        "region": "J\u00e4mtland",
+                                        "countryName": "Sverige",
+                                        "postalCode": ""
                                     }
                                 }
                             },
                             "playerStats": {
-                                "Class": "Damer",
-                                "Score": "4.45.18",
-                                "Rank": {
-                                    "Value": "2"
+                                "class": "Damer",
+                                "scoreStats": {
+                                    "score": "4.45.18"
+                                },
+                                "rank": {
+                                    "value": 2
                                 }
                             }
                         },
@@ -548,46 +350,26 @@
                                 "gender": "female",
                                 "nationality": "Schweiz",
                                 "uniformNumber": "505",
-                                "name": [
-                                    {
-                                        "part": {
-                                            "first": "Seraina"
-                                        }
-                                    },
-                                    {
-                                        "part": {
-                                            "last": "Boner"
-                                        }
-                                    }
-                                ],
-                                "HomeLocation": {
-                                    "POIDetails": {
-                                        "Address": {
-                                            "Locality": {
-                                                "name": {
-                                                    "full": "Davos-Platz"
-                                                }
-                                            },
-                                            "Area": {
-                                                "name": {
-                                                    "full": "Graub\u00fcnden"
-                                                }
-                                            },
-                                            "Country": {
-                                                "name": {
-                                                    "full": "Schweiz"
-                                                }
-                                            },
-                                            "PostalCode": {}
-                                        }
+                                "name": {
+                                    "given": "Seraina",
+                                    "family": "Boner"
+                                },
+                                "homeLocation": {
+                                    "address": {
+                                        "locality": "Davos-Platz",
+                                        "region": "Graub\u00fcnden",
+                                        "countryName":  "Schweiz",
+                                        "postalCode": ""
                                     }
                                 }
                             },
                             "playerStats": {
-                                "Class": "Damer",
-                                "Score": "4.49.16",
-                                "Rank": {
-                                    "Value": "3"
+                                "class": "Damer",
+                                "scoreStats": {
+                                    "score": "4.49.16"
+                                },
+                                "rank": {
+                                    "value": 3
                                 }
                             }
                         }

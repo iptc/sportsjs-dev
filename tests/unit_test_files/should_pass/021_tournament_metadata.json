@@ -1,0 +1,75 @@
+{
+    "tournament": {
+        "id": "",
+        "class": "",
+        "style": "",
+        "tournamentMetadata": {
+            "status": "qcode:blah",
+            "minimumSubparts": 1,
+            "maximumSubparts": 2,
+            "number": 1,
+            "coverage": {
+                "statsCoverage": "qcode:blah",
+                "teamCoverage": "single-team",
+                "durationScope": "qcode:blah",
+                "alignmentScope": "none",
+                "position": "",
+                "recordMakingScope": "qcode:blah",
+                "scopingLabel": "",
+                "periodValue": "",
+                "periodType": "qcode:blah",
+                "startDateTime": "2018-03-04",
+                "endDateTime": "2018-03-10",
+                "periodStartDateTime": "2018-03-04",
+                "periodEndDateTime": "2018-03-10",
+                "temporalUnitType": "qcode:blah",
+                "temporalUnitValue": "qcode:blah",
+                "eventSpan": 5,
+                "opponentValue": "qcode:blah",
+                "opponentType": "qcode:blah",
+                "team": "qcode:blah",
+                "competition": "qcode:blah",
+                "unitValue": "qcode:blah",
+                "unitType": "qcode:blah",
+                "situation": "qcode:blah",
+                "locationKey": "qcode:blah",
+                "venueType": "qcode:blah",
+                "surfaceType": "qcode:blah",
+                "weatherType": "qcode:blah",
+                "scopeValue": "qcode:blah",
+                "distance": "42 km",
+                "distanceMaximum": "",
+                "distanceMinimum": ""
+            },
+            "sportsContentCodes": [
+                {
+                    "id": "",
+                    "class": "",
+                    "style": "",
+                    "sportsContentQualifier": {
+                        "id": "blah",
+                        "class": "class",
+                        "style": "style",
+                        "gender": "female",
+                        "participantCount": "spparticipantcount:blah",
+                        "professionalStatus": "spprofessionalstatus:blah",
+                        "specialGroup": "qcode:blah",
+                        "minimumAge": "8",
+                        "maximumAge": "65+",
+                        "specialNeeds": "qocde:blah"
+                    },
+                    "codeType": "qcode:blah",
+                    "codeKey": "qcode:blah",
+                    "codeName": ""
+                }
+            ],
+            "sportsProperties": [ ],
+            "name": { },
+            "site": {},
+            "award": { },
+            "key": "qcode:blah",
+            "golfTournamentMetadata": {},
+            "tennisTournamentMetadata": {}
+        }
+    }
+}

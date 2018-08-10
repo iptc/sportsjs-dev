@@ -1,7 +1,7 @@
 {
     "sportsEvents": [
         {
-            "eventMetadata": {
+            "commonAttributes": {
                 "id": "xxx"
             }
         }

@@ -1,0 +1,19 @@
+{
+    "sportsMetadata": {
+        "id": "mySportsJSDocument-000001",
+        "class": "sportsjs-class",
+        "style": "sportsjs-style",
+        "catalog": {
+            "href": "https://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
+        },
+        "sportsTitle": {
+            "full": "sport description"
+        },
+        "advisory": {
+            "featureName": { "full": "advisory text" }
+        },
+        "featureName": {
+            "full": "name"
+        }
+    }
+}

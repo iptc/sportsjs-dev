@@ -1,0 +1,67 @@
+{
+    "sportsEvents": [
+        {
+            "eventMetadata": {
+                "americanFootballEventMetadata": {
+                    "id": "test-001",
+                    "class": "american-football-class",
+                    "style": "american-football-style",
+                    "clockState": "running"
+                }
+            },
+            "teams": [
+                {
+                    "teamMetadata": {
+                        "key": "team:2700",
+                        "name": {
+                            "given": "Miami",
+                            "full": "Miami Dolphins",
+                            "abbreviation": "MIA"
+                        },
+                        "alignment": "home"
+                    },
+                    "teamStats": {
+                        "scoreStats": {
+                            "score": "24",
+                            "scoreOpposing": "31"
+                        },
+                        "subScores": [
+                            {
+                                "periodValue": "Q1",
+                                "score": "7"
+                            },
+                            {
+                                "periodValue": "Q2",
+                                "score": "10"
+                            },
+                            {
+                                "periodValue": "Q3",
+                                "score": "7"
+                            },
+                            {
+                                "periodValue": "Q4",
+                                "score": "0"
+                            },
+                            {
+                                "periodValue": "OT",
+                                "score": "0"
+                            }
+                        ],
+                        "americanFootballTeamStats": {
+                            "statsAmericanFootballOffensive": {
+                            },
+                            "statsAmericanFootballDefensive": {
+                            },
+                            "statsAmericanFootballScoring": {
+                            },
+                            "statsAmericanFootballSpecialTeams": {
+                            },
+                            "statsAmericanFootballFumbles": {
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
