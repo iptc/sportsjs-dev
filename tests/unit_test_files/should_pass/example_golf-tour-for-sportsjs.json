@@ -721,7 +721,7 @@
                                         },
                                         "golfEventMetadata": {
                                             "round": "p1",
-                                            "coursepar": "5",
+                                            "coursePar": "5",
                                             "hole": "18"
                                         }
                                     },
