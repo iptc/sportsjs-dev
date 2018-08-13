@@ -1571,15 +1571,15 @@
                     "description": "The number of points scored against a team by its opponents during an extended time period."
                 },
                 "pointsDifference": {
-                    "type": "integer",
+                    "$ref": "#/definitions/nonNegativeInteger",
                     "description": "The final calculated difference between points-scored-for and points-scored-against. Possibly takes into account other scoring aspects, such as penalties and differences in score-values."
                 },
                 "standingPoints": {
-                    "type": "integer",
+                    "$ref": "#/definitions/nonNegativeInteger",
                     "description": "A quantity used to rank teams, usually within a division, in order to decide who comes in first at the end of a season. Localized to the coverage-attributes."
                 },
                 "standingPointsAgainst": {
-                    "type": "integer",
+                    "$ref": "#/definitions/nonNegativeInteger",
                     "description": "Points counted against a team in rankings. Used in European handball standings, for example."
                 },
                 "streakType": {
@@ -1611,7 +1611,7 @@
                     "description": "Number of events remaining within the scope of play."
                 },
                 "gamesBack": {
-                    "type": "integer",
+                    "$ref": "#/definitions/nonNegativeInteger",
                     "description": "A number used to measure how behind one team is from first place. The first place team is 0 games back."
                 },
                 "lossesOvertime": {
@@ -1726,11 +1726,11 @@
                     "description": "The entity or organization which issued the rank."
                 },
                 "value": {
-                    "type": "integer",
+                    "$ref": "#/definitions/nonNegativeInteger",
                     "description": "The value of the rank."
                 },
                 "valuePrevious": {
-                    "type": "integer",
+                    "$ref": "#/definitions/nonNegativeInteger",
                     "description": "The previous rank."
                 }
             }

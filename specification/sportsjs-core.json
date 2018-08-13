@@ -433,7 +433,6 @@
         "sportsContentCode": {
             "description": "An individual code that describes an entity one may want to filter for. Describes what sports, what teams, etc., are covered.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "sportsContentQualifier": {
@@ -457,7 +456,6 @@
         "sportsContentQualifier": {
             "description": "Further refinement/elaboration of a sports-content-code. | If the document covers more than one of these, additional sports-content-qualifier elements may be used.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "gender": {
@@ -841,15 +839,15 @@
                     "description": "The number of points scored against a team by its opponents during an extended time period."
                 },
                 "pointsDifference": {
-                    "type": "integer",
+                    "$ref": "#/definitions/nonNegativeInteger",
                     "description": "The final calculated difference between points-scored-for and points-scored-against. Possibly takes into account other scoring aspects, such as penalties and differences in score-values."
                 },
                 "standingPoints": {
-                    "type": "string",
+                    "$ref": "#/definitions/nonNegativeInteger",
                     "description": "A quantity used to rank teams, usually within a division, in order to decide who comes in first at the end of a season. Localized to the coverage-attributes."
                 },
                 "standingPointsAgainst": {
-                    "type": "string",
+                    "$ref": "#/definitions/nonNegativeInteger",
                     "description": "Points counted against a team in rankings. Used in European handball standings, for example."
                 },
                 "streakType": {
@@ -993,11 +991,11 @@
                     "description": "The entity or organization which issued the rank."
                 },
                 "value": {
-                    "type": "string",
+                    "$ref": "#/definitions/nonNegativeInteger",
                     "description": "The value of the rank."
                 },
                 "valuePrevious": {
-                    "type": "string",
+                    "$ref": "#/definitions/nonNegativeInteger",
                     "description": "The previous rank."
                 }
             }
@@ -1189,7 +1187,6 @@
         "article": {
             "description": "Holds either an article or a reference to an article. | Recommended format is NITF.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "format": {
