@@ -1,0 +1,662 @@
+{
+  "id": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-baseball.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsJS Soccer schema contains properties common to Baseball.",
+  "definitions": {
+    "baseballEventMetadata": {
+      "description": "Metadata about the event itself. | Includes what state the game is in.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "inningValue": {
+          "type": "string",
+          "description": "An integer. 1 through 9 for the main innings. 10, 11, 12, etc. for extra innings."
+        },
+        "inningHalf": {
+          "type": "string",
+          "enum": [
+            "top",
+            "bottom"
+          ],
+          "description": "Either top or bottom."
+        },
+        "outs": {
+          "type": "string",
+          "description": "Either 1, 2, or 3."
+        },
+        "balls": {
+          "type": "string",
+          "description": "Either 1, 2, 3, or 4."
+        },
+        "strikes": {
+          "type": "string",
+          "description": "Either 1, 2, or 3."
+        },
+        "runnerOnFirst": {
+          "type": "string",
+          "description": "Whether or not a player is standing on first base. Either true or false."
+        },
+        "runnerOnFirstIdref": {
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef",
+          "description": "A pointer to the player on first base."
+        },
+        "runnerOnSecond": {
+          "type": "string",
+          "description": "Whether or not a player is standing on second base. Either true or false."
+        },
+        "runnerOnSecondIdref": {
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef",
+          "description": "A pointer to the player on second base."
+        },
+        "runnerOnThird": {
+          "type": "string",
+          "description": "Whether or not a player is standing on third base. Either true or false."
+        },
+        "runnerOnThirdIdref": {
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef",
+          "description": "A pointer to the player on third base."
+        },
+        "runsThisInningHalf": {
+          "type": "string",
+          "description": "An integer."
+        },
+        "pitcherIdref": {
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef",
+          "description": "A pointer to the player element for the pitcher standing on the mound."
+        },
+        "batterIdref": {
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef",
+          "description": "A pointer to the player element for the batter at the plate."
+        },
+        "batterSide": {
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/bodySideList",
+          "description": "Which side of the plate the batter was on when taking the pitch."
+        },
+        "atBatNumber": {
+          "type": "string",
+          "description": "Incremented throughout game on a per-team basis. A perfect game would have at-bat-number go from 1 to 27 for the team that didn't get any hits."
+        }
+      }
+    },
+    "baseballTeamMetadata": {
+      "description": "Metadata about the team. | Specific to the sport of baseball.",
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "probableStartingPitcherIdref": {
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef",
+          "description": "ID of the pitcher who will probably start the game."
+        }
+      }
+    },
+    "baseballPlayerMetadata": {
+      "description": "Metadata about the player. | Specific to the sport of baseball.",
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "battingHand": {
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/bodySideList",
+          "description": "Indicates whether player bats left, right, or is a switch-hitter."
+        },
+        "throwingHand": {
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/bodySideList",
+          "description": "Indicates whether player throws left, right, or is a switch-thrower."
+        }
+      }
+    },
+    "baseballPlayerStats": {
+      "description": "Stats collected by a player. | Includes offensive, pitching, and defensive stats.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "statsBaseballOffensive": {
+          "$ref": "#/definitions/baseballStatsOffensive",
+          "description": ""
+        },
+        "statsBaseballPitching": {
+          "$ref": "#/definitions/baseballStatsPitching",
+          "description": ""
+        },
+        "statsBaseballDefensive": {
+          "$ref": "#/definitions/baseballStatsDefensive",
+          "description": ""
+        }
+      }
+    },
+    "baseballTeamStats": {
+      "description": "Specific statistics for baseball. | Includes offensive, pitching, and defensive stats.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "statsBaseballOffensive": {
+          "$ref": "#/definitions/baseballStatsOffensive",
+          "description": ""
+        },
+        "statsBaseballPitching": {
+          "$ref": "#/definitions/baseballStatsPitching",
+          "description": ""
+        },
+        "statsBaseballDefensive": {
+          "$ref": "#/definitions/baseballStatsDefensive",
+          "description": ""
+        }
+      }
+    },
+    "baseballStatsOffensive": {
+      "description": "Stats accumulated while a team is at bat. | Includes hits and runs.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "average": {
+          "type": "string",
+          "description": "Average number of hits per at-bats"
+        },
+        "runsScored": {
+          "type": "string",
+          "description": "Number of runs scored"
+        },
+        "atBats": {
+          "type": "string",
+          "description": "Number of at-bats (Does not include walks or Sacrifice Hits)"
+        },
+        "hits": {
+          "type": "string",
+          "description": "Number of hits"
+        },
+        "rbi": {
+          "type": "string",
+          "description": "Number of runs batted in"
+        },
+        "totalBases": {
+          "type": "string",
+          "description": "Calculated by hits + doubles + (triples times 2) + (home-runs times 3)."
+        },
+        "sluggingPercentage": {
+          "type": "string",
+          "description": "Total bases divided by at-bats."
+        },
+        "basesOnBalls": {
+          "type": "string",
+          "description": "Number of times batter was walked"
+        },
+        "basesOnBallsRate": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "basesOnBallsIntentional": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "strikeoutsAgainst": {
+          "type": "string",
+          "description": "Number of times batter struck out"
+        },
+        "strikeoutsLooking": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "outsGround": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "outsFly": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "leftOnBase": {
+          "type": "string",
+          "description": "Number of runners left on base"
+        },
+        "leftInScoringPosition": {
+          "type": "string",
+          "description": "Number of runners left on second and/or third base"
+        },
+        "singles": {
+          "type": "string",
+          "description": "Number of hits off of which batter advances to first base"
+        },
+        "doubles": {
+          "type": "string",
+          "description": "Number of hits off of which batter advances to second base"
+        },
+        "triples": {
+          "type": "string",
+          "description": "Number of hits off of which batter advances to third base"
+        },
+        "homeRuns": {
+          "type": "string",
+          "description": "Number of hits off of which batter advances to home plate"
+        },
+        "homeRunsSeason": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "grandSlams": {
+          "type": "string",
+          "description": "Number of home runs with bases loaded"
+        },
+        "streakHits": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "hitsEventWinning": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "atBatsPerRbi": {
+          "type": "string",
+          "description": "RBI per at-bat ratio"
+        },
+        "plateAppearancesPerRbi": {
+          "type": "string",
+          "description": "Plate appearances per at-bat ratio"
+        },
+        "atBatsPerHomeRun": {
+          "type": "string",
+          "description": "Home runs per at-bat ratio"
+        },
+        "plateAppearancesPerHomeRun": {
+          "type": "string",
+          "description": "Plate appearances per home run ratio"
+        },
+        "sacFlies": {
+          "type": "string",
+          "description": "Number of hits resulting in batter out which advance base runner(s)"
+        },
+        "sacBunts": {
+          "type": "string",
+          "description": "Number of bunts resulting in batter out which advance base runner(s)"
+        },
+        "sacrifices": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "groundedIntoDoublePlay": {
+          "type": "string",
+          "description": "Number of ground balls which result in batter and base runner outs"
+        },
+        "hitIntoDoublePlay": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "movedUp": {
+          "type": "string",
+          "description": "Number of times runner advances to another base"
+        },
+        "onBasePercentage": {
+          "type": "string",
+          "description": "Calculated as follows: (hits + bases-on-balls + hit-by-pitch) / (at-bats + bases-on-balls + hit-by-pitch + sac-flies)"
+        },
+        "stolenBases": {
+          "type": "string",
+          "description": "Number of successfully stolen bases."
+        },
+        "stolenBasesCaught": {
+          "type": "string",
+          "description": "Number of times the runner was caught while trying to steal bases."
+        },
+        "stolenBasesAverage": {
+          "type": "string",
+          "description": "Success rate for stealing bases."
+        },
+        "hitByPitch": {
+          "type": "string",
+          "description": "Number of times batter hit by pitch"
+        },
+        "reachedBaseDefensiveInterference": {
+          "type": "string",
+          "description": "The number of times the player reached a base due to interference by the defense."
+        },
+        "reachedBaseError": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "reachedBaseFielderChoice": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "onBasePlusSlugging": {
+          "type": "string",
+          "description": "Calculated by adding on-base-percentage to slugging-percentage."
+        },
+        "plateAppearances": {
+          "type": "string",
+          "description": "Calculated by adding at-bats, bases-on-balls, hit-by-pitch, sac-flies, sac-bunts, and defensive-interfance-reaches."
+        },
+        "hitsExtraBase": {
+          "type": "string",
+          "description": "Calculated by adding doubles, triples, and home-runs."
+        },
+        "strikeoutRate": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "doublePlaysAgainst": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "triplePlaysAgainst": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "pickOffsAgainst": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "gamesPlayed": {
+          "type": "string",
+          "description": "Number of games played."
+        }
+      }
+    },
+    "baseballStatsPitching": {
+      "description": "Stats accumulated while a team is pitching. | Includes strikeouts and shutouts.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "runsAllowed": {
+          "type": "string",
+          "description": "Number of runs against"
+        },
+        "homeRunsAllowed": {
+          "type": "string",
+          "description": "Number of home runs against"
+        },
+        "sacrificeBuntsAllowed": {
+          "type": "string",
+          "description": "Number of sacrifice bunts against"
+        },
+        "sacrificeHitsAllowed": {
+          "type": "string",
+          "description": "Number of sacrifice hits against"
+        },
+        "interferences": {
+          "type": "string",
+          "description": "Number of interference or obstruction calls"
+        },
+        "inningsPitched": {
+          "type": "string",
+          "description": "Number of innings pitched"
+        },
+        "inningsPitchedAverage": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "hitsAllowed": {
+          "type": "string",
+          "description": "Number of hits against"
+        },
+        "earnedRuns": {
+          "type": "string",
+          "description": "Number of earned runs against"
+        },
+        "unearnedRuns": {
+          "type": "string",
+          "description": "Number of unearned runs against"
+        },
+        "basesOnBallsAllowed": {
+          "type": "string",
+          "description": "Number of earned walks allowed"
+        },
+        "basesOnBallsIntentionalPitcher": {
+          "type": "string",
+          "description": "Number of batters intentionally walked"
+        },
+        "strikeouts": {
+          "type": "string",
+          "description": "Number of earned strikeouts"
+        },
+        "strikeoutToBbRatio": {
+          "type": "string",
+          "description": "Strikeout to walks ratio"
+        },
+        "numberOfPitches": {
+          "type": "string",
+          "description": "Number of pitches thrown"
+        },
+        "numberOfStrikes": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "era": {
+          "type": "string",
+          "description": "Earned run average: Number of earned runs divided by number of innings pitched multiplied by nine"
+        },
+        "whip": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "inheritedRunnersScored": {
+          "type": "string",
+          "description": "Number of runners which a previous pitcher allowed on base which scored"
+        },
+        "pickOffs": {
+          "type": "string",
+          "description": "The number of times the pitcher caught a player trying to steal, before making the pitch."
+        },
+        "errorsHitWithPitch": {
+          "type": "string",
+          "description": "Number of times pitcher hits batter with pitch"
+        },
+        "errorsWildPitch": {
+          "type": "string",
+          "description": "Number of wild pitches thrown"
+        },
+        "balks": {
+          "type": "string",
+          "description": "Number of balks"
+        },
+        "wins": {
+          "type": "string",
+          "description": "Number of games pitcher has won"
+        },
+        "losses": {
+          "type": "string",
+          "description": "Number of games pitcher has lost"
+        },
+        "saves": {
+          "type": "string",
+          "description": "Number of games pitcher has saved"
+        },
+        "holds": {
+          "type": "string",
+          "description": "Number of games relief pitcher has held the lead"
+        },
+        "savesBlown": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "savesTough": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "savesOpportunities": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "reliefPoints": {
+          "type": "string",
+          "description": "Formula for rating relief performances. 4 points for a tough save; 3 points for a save; 2 for a relief win; minus 2 for a relief loss and blown save."
+        },
+        "shutouts": {
+          "type": "string",
+          "description": "Number of games pitched in which opposing team did not score"
+        },
+        "gamesComplete": {
+          "type": "string",
+          "description": "Number of complete games pitched"
+        },
+        "gamesFinished": {
+          "type": "string",
+          "description": "Number of games pitched to the end"
+        },
+        "gamesPitched": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "winningPercentage": {
+          "type": "string",
+          "description": "Calculated by wins divided by (wins + losses)."
+        },
+        "eventCredit": {
+          "type": "string",
+          "enum": [
+            "win",
+            "loss",
+            "save"
+          ],
+          "description": "Whether a pitcher has received credit for winning or losing the game. TBD. Controlled Vocabulary. (win|loss|save|blown-save|win-blown-save|loss-blown-save|hold-win|hold-loss)"
+        },
+        "saveCredit": {
+          "type": "string",
+          "enum": [
+            "hold",
+            "blown",
+            "save"
+          ],
+          "description": "Whether a pitcher has received credit for winning or losing the game. TBD. Controlled Vocabulary. (win|loss|save|blown-save|win-blown-save|loss-blown-save|hold-win|hold-loss)"
+        },
+        "battersAverageAgainst": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "battersAtBatsAgainst": {
+          "type": "string",
+          "description": "Number of batters faced who were credited with at-bats."
+        },
+        "battersTotalAgainst": {
+          "type": "string",
+          "description": "Total number of batters faced."
+        },
+        "battersTotalBasesAgainst": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "battersSluggingPercentageAgainst": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "battersOnBasePercentageAgainst": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "battersDoublesAgainst": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "battersTriplesAgainst": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "battersHomeRunsAgainst": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "inheritedRunnersTotal": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "sacrificeFliesAllowed": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "shutoutsCombined": {
+          "type": "string",
+          "description": "TBD."
+        }
+      }
+    },
+    "baseballStatsDefensive": {
+      "description": "Stats accumulated while a team is out in the field. | Includes double-plays and errors.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "doublePlays": {
+          "type": "string",
+          "description": "Number of times two runners thrown out at the base."
+        },
+        "triplePlays": {
+          "type": "string",
+          "description": "Number of times three runners thrown out at the base."
+        },
+        "putouts": {
+          "type": "string",
+          "description": "Number of times a fielder caught a fly ball for an out."
+        },
+        "assists": {
+          "type": "string",
+          "description": "Number of plays in which a fielder throws a ball to another fielder for the out."
+        },
+        "errors": {
+          "type": "string",
+          "description": "Number of plays in which a fielder committed an error, such as dropping a ball."
+        },
+        "fieldingChances": {
+          "type": "string",
+          "description": "TBD."
+        },
+        "fieldingPercentage": {
+          "type": "string",
+          "description": "A measure of fielding success. Calculated as follows: (putouts + assists) / (putouts + assists + errors)."
+        },
+        "defensiveAverage": {
+          "type": "string",
+          "description": "Rate a fielder turns a bill hit to their area into an out."
+        },
+        "errorsPassedBall": {
+          "type": "string",
+          "description": "Number of times a catcher is faulted with letting a pitched ball go past."
+        },
+        "errorsCatchersInterference": {
+          "type": "string",
+          "description": "Number of times a catcher has improperly interfered with play."
+        },
+        "stolenBasesAgainst": {
+          "type": "string",
+          "description": "Number of bases successfully stolen while this player was on the field."
+        },
+        "stolenBasesCaughtDefense": {
+          "type": "string",
+          "description": "Number of times a runner was caught while trying to steal bases while this player was on the field."
+        },
+        "stolenBasesAverageDefense": {
+          "type": "string",
+          "description": "Success rate for stealing bases while this player was on the field."
+        },
+        "inningsPlayed": {
+          "type": "string",
+          "description": "Number of innings played at the named position."
+        },
+        "gamesPlayedPosition": {
+          "type": "string",
+          "description": "Number of games played at the named position."
+        }
+      }
+    }
+  }
+}

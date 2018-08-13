@@ -1,0 +1,423 @@
+{
+  "id": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-motor-racing.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsJS Soccer schema contains properties common to Motor Racing.",
+  "definitions": {
+    "motorRacingEventMetadata": {
+      "description": "Metadata about the event itself. | Includes what state the game is in.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "lap": {
+          "type": "string",
+          "description": "An integer. 1,2,3,4 for the current lap that (generally) the leader of the race is amidst."
+        },
+        "lapsRemaining": {
+          "type": "string",
+          "description": "The number of laps (generally for the leader) that are remaining in the race."
+        },
+        "timeElapsed": {
+          "type": "string",
+          "description": "The time elapsed in the race."
+        },
+        "flagState": {
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/qCode",
+          "description": "The current flag issued within the race."
+        }
+      }
+    },
+    "motorRacingTeamMetadata": {
+      "description": "Metadata about the team. | Specific to the sport of motor racing.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "metadataMotorRacingVehicle": {
+          "$ref": "#/definitions/motorRacingMetadataVehicle",
+          "description": ""
+        }
+      }
+    },
+    "motorRacingPlayerMetadata": {
+      "description": "Metadata about the driver. | Specific to the sport of motor racing.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "metadataMotorRacingVehicle": {
+          "$ref": "#/definitions/motorRacingMetadataVehicle",
+          "description": ""
+        }
+      }
+    },
+    "motorRacingAssociateMetadata": {
+      "description": "Metadata about the associate. | Specific to the sport of motor racing.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "metadataMotorRacingVehicle": {
+          "$ref": "#/definitions/motorRacingMetadataVehicle",
+          "description": ""
+        }
+      }
+    },
+    "motorRacingMetadataVehicle": {
+      "description": "Details on the car, motorcycle, etc., being driven. | Includes manufacturing information.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "makeName": {
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/name",
+          "description": "A display-name for the make-key."
+        },
+        "number": {
+          "type": "string",
+          "description": "The number written on the side of the vehicle."
+        },
+        "makeKey": {
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/qCode",
+          "description": "A unique identifier for the make of the car. For example: m.dodge"
+        },
+        "sponsor": {
+          "type": "string",
+          "description": "The name of the sponsor for the car."
+        },
+        "chassis": {
+          "type": "string",
+          "description": "The type of chassis."
+        },
+        "engine": {
+          "type": "string",
+          "description": "The type of engine."
+        },
+        "tire": {
+          "type": "string",
+          "description": "The type of tire."
+        }
+      }
+    },
+    "motorRacingTeamStats": {
+      "description": "Specific statistics for motor racing. | Includes stats about the qualifying round, as well as for the race itself.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "statsMotorRacingQualifying": {
+          "$ref": "#/definitions/motorRacingStatsQualifying",
+          "description": ""
+        },
+        "statsMotorRacingRace": {
+          "$ref": "#/definitions/motorRacingStatsRace",
+          "description": ""
+        }
+      }
+    },
+    "motorRacingPlayerStats": {
+      "description": "Specific statistics for motor racing. | Includes stats about the qualifying round, as well as for the race itself.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "statsMotorRacingQualifying": {
+          "$ref": "#/definitions/motorRacingStatsQualifying",
+          "description": ""
+        },
+        "statsMotorRacingRace": {
+          "$ref": "#/definitions/motorRacingStatsRace",
+          "description": ""
+        }
+      }
+    },
+    "baseMotorRacingPlayerStats": {
+      "description": "Specific statistics for motor racing. | Includes stats about the qualifying round, as well as for the race itself.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "statsMotorRacingQualifying": {
+          "$ref": "#/definitions/motorRacingStatsQualifying",
+          "description": ""
+        },
+        "statsMotorRacingRace": {
+          "$ref": "#/definitions/motorRacingStatsRace",
+          "description": ""
+        }
+      }
+    },
+    "motorRacingEventStats": {
+      "description": "Statistics about the event itself. | Includes the total number of lead changes, and the average speed.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "speedAverageRace": {
+          "type": "string",
+          "description": "The average speed of the race."
+        },
+        "speedUnits": {
+          "type": "string",
+          "description": "The units used for speed-average. For example: mph."
+        },
+        "leadChanges": {
+          "type": "string",
+          "description": "The number of times the lead changed in this race."
+        },
+        "leadChangesDrivers": {
+          "type": "string",
+          "description": "Total number of drivers that comprised the lead changes."
+        },
+        "marginOfVictory": {
+          "type": "string",
+          "description": "Time behind leader for 2nd place driver."
+        },
+        "cautionFlags": {
+          "type": "string",
+          "description": "Total number of flags for race."
+        },
+        "cautionFlagsLaps": {
+          "type": "string",
+          "description": "Total number of laps there were caution flags."
+        },
+        "lapsTotal": {
+          "type": "string",
+          "description": "Total number of laps for race."
+        },
+        "distanceLap": {
+          "type": "string",
+          "description": "Length of one lap."
+        },
+        "distanceTotal": {
+          "type": "string",
+          "description": "Total distance of race."
+        },
+        "distanceUnits": {
+          "type": "string",
+          "description": "Unit of measure for distance-lap and distance-total."
+        }
+      }
+    },
+    "motorRacingStatsQualifying": {
+      "description": "Statistics for the qualifying round of a race. | Includes pole position and qualifying times.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "grid": {
+          "type": "string",
+          "description": "The arrangement or order of cars in the starting lineup."
+        },
+        "polePosition": {
+          "type": "string",
+          "description": "Position relative to the inside wall, at the start of the race."
+        },
+        "poleWins": {
+          "type": "string",
+          "description": "Number of times this driver or team had a pole position of 1."
+        },
+        "qualifyingSpeed": {
+          "type": "string",
+          "description": "Speed of lap which qualified the driver."
+        },
+        "qualifyingSpeedUnits": {
+          "type": "string",
+          "description": "Units used for qualifying-speed."
+        },
+        "qualifyingTime": {
+          "type": "string",
+          "description": "Time received for qualifying lap."
+        },
+        "qualifyingPosition": {
+          "type": "string",
+          "description": "Where the car had ranked within the preliminary round."
+        }
+      }
+    },
+    "motorRacingStatsRace": {
+      "description": "Statistics for the race itself. | Includes time information and can include cumulative stats for the driver or team.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "statsMotorRacingLap": {
+          "$ref": "#/definitions/motorRacingStatsLap",
+          "description": ""
+        },
+        "timeBehindLeader": {
+          "type": "string",
+          "description": "Amount of time this driver was behind the car that is currently in first place."
+        },
+        "lapsBehindLeader": {
+          "type": "string",
+          "description": "Amount of laps this driver was behind the car that is currently in first place."
+        },
+        "timeAheadFollower": {
+          "type": "string",
+          "description": "Amount of time this driver was ahead of the car immediately behind it."
+        },
+        "lapsAheadFollower": {
+          "type": "string",
+          "description": "Amount of laps this driver was ahead of the car immediately behind it."
+        },
+        "time": {
+          "type": "string",
+          "description": "Total amount of time this driver has been competing in the race."
+        },
+        "points": {
+          "type": "string",
+          "description": "Total accumulation of points in the league-authorized standings for the season."
+        },
+        "pointsRookie": {
+          "type": "string",
+          "description": "Total accumulation of points in the league-authorized standings for the season, amongst other drivers who are competing in their first year."
+        },
+        "bonus": {
+          "type": "string",
+          "description": "Amount of bonus points driver has earned in this race. For example, NASCAR drivers may receive five bonus points for leading a lap, and an additional five points for leading the most laps."
+        },
+        "lapsCompleted": {
+          "type": "string",
+          "description": "Number of laps this driver has completed during this race."
+        },
+        "lapsLeadingTotal": {
+          "type": "string",
+          "description": "Number of laps in which this driver has led the field."
+        },
+        "distanceLeading": {
+          "type": "string",
+          "description": "Distance (in, say, miles or kilometers) that driver has led the race."
+        },
+        "distanceCompleted": {
+          "type": "string",
+          "description": "Distance (in, say, miles or kilometers) that driver has completed in this race."
+        },
+        "distanceUnits": {
+          "type": "string",
+          "description": "The unit of measure used for distances."
+        },
+        "speedAverage": {
+          "type": "string",
+          "description": "Average speed during the race."
+        },
+        "speedUnits": {
+          "type": "string",
+          "description": "Units used for denoting the speed."
+        },
+        "status": {
+          "type": "string",
+          "description": "Whether the driver is running, or is out of the race."
+        },
+        "finishesTop5": {
+          "type": "string",
+          "description": "Number of top-5 finishes this driver has had."
+        },
+        "finishesTop10": {
+          "type": "string",
+          "description": "Number of top-10 finishes this driver has had."
+        },
+        "starts": {
+          "type": "string",
+          "description": "Number of races this driver had started."
+        },
+        "finishes": {
+          "type": "string",
+          "description": "Number of races this driver had finished."
+        },
+        "nonFinishes": {
+          "type": "string",
+          "description": "Number of races this driver had started but had not finished."
+        },
+        "wins": {
+          "type": "string",
+          "description": "Number of races this driver had won."
+        },
+        "racesLeading": {
+          "type": "string",
+          "description": "Number of races in which this driver has held a lead."
+        },
+        "money": {
+          "type": "string",
+          "description": "Amount of money this driver had won."
+        },
+        "moneyUnits": {
+          "type": "string",
+          "description": "Units in which the money attribute is specified."
+        },
+        "leadsTotal": {
+          "type": "string",
+          "description": "Number of total leads this driver has had, presumably during this race."
+        },
+        "comment": {
+          "type": "string",
+          "description": "A comment or highlight on this driver."
+        }
+      }
+    },
+    "motorRacingStatsLap": {
+      "description": "Statistics for a particular lap. | Can be used for all laps in a race, or just say for the fastest lap.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "speedRange": {
+          "type": "string",
+          "description": "Either fastest or slowest."
+        },
+        "lapNumber": {
+          "type": "string",
+          "description": "The lap number in question."
+        },
+        "startTimeElapsed": {
+          "type": "string",
+          "description": "The time since the start of the race at which this lap was begun."
+        },
+        "speedAverageLap": {
+          "type": "string",
+          "description": "The average speed of this lap."
+        },
+        "speedUnits": {
+          "type": "string",
+          "description": "The units used for speed-average."
+        },
+        "duration": {
+          "type": "string",
+          "description": "The length of time this lap (or partial lap) was completed."
+        },
+        "splitLocation": {
+          "type": "string",
+          "description": "Used when partial laps are being timed. If omitted, it is assumed that the stats herein are for the entire lap. Sample values include: start | stretch | finish | marker-1 | marker-2"
+        }
+      }
+    }
+  }
+}

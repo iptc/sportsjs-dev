@@ -36,7 +36,8 @@ import os
 TEST_FILES_FOLDER = 'unit_test_files'
 
 class TestSportsJSSchema(unittest.TestCase):
-    sportsjs_schema = None
+    sportsjs_strict_schema = None
+    sportsjs_extensible_schema = None
 
     def __init__(self, *args, **kwargs):
         """
@@ -47,14 +48,23 @@ class TestSportsJSSchema(unittest.TestCase):
         """
         import os
         self.current_path = os.path.dirname(os.path.realpath(__file__))
-        schema_filename = os.path.join(
+        strict_schema_filename = os.path.join(
+            self.current_path,
+            '..',
+            'specification',
+            'strict',
+            'sportsjs-core.json'
+        )
+        extensible_schema_filename = os.path.join(
             self.current_path,
             '..',
             'specification',
             'sportsjs-core.json'
         )
-        with open(schema_filename) as schemafile:
-            self.sportsjs_schema = json.load(schemafile)
+        with open(strict_schema_filename) as schemafile:
+            self.sportsjs_strict_schema = json.load(schemafile)
+        with open(extensible_schema_filename) as schemafile:
+            self.sportsjs_extensible_schema = json.load(schemafile)
         return super(TestSportsJSSchema, self).__init__(*args, **kwargs)
 
     def test_simplest_instance(self):
@@ -62,7 +72,7 @@ class TestSportsJSSchema(unittest.TestCase):
         jsonschema.validate returns None if valid, raises an exception for
         schema validation errors. So we use assertIsNone.
         """
-        self.assertIsNone(jsonschema.validate({}, self.sportsjs_schema))
+        self.assertIsNone(jsonschema.validate({}, self.sportsjs_strict_schema))
 
     def get_files_in_folder(self, folder_name):
         folder_name = os.path.join(
@@ -76,28 +86,41 @@ class TestSportsJSSchema(unittest.TestCase):
             instance = json.load(jsonfile)
         return instance
 
-    def test_all_passing_unit_test_files(self):
+    def test_all_passing_unit_test_files_against_strict_schema(self):
         """
         Run all files in TEST_FILES_FOLDER/should_pass against the schema.
         They should all pass (ie they are all valid against the schema).
 
         We use "subTest" so we can see which file failed in test output.
         """
-        test_files_path = os.path.join(self.current_path, TEST_FILES_FOLDER, 'should_pass')
+        test_files_path = os.path.join(
+                            self.current_path,
+                            TEST_FILES_FOLDER,
+                            'should_pass'
+                          )
         testfiles = self.get_files_in_folder(test_files_path)
         for file in testfiles:
             with self.subTest(file=file):
                 instance = self.load_test_file(test_files_path, file)
-                self.assertIsNone(jsonschema.validate(instance, self.sportsjs_schema))
+                self.assertIsNone(
+                    jsonschema.validate(
+                        instance,
+                        self.sportsjs_strict_schema
+                    )
+                )
 
-    def test_all_failing_unit_test_files(self):
+    def test_all_failing_unit_test_files_against_strict_schema(self):
         """
         Run all files in TEST_FILES_FOLDER/should_fail against the schema.
         They should all fail (ie they are all invalid in some way).
 
         We use "subTest" so we can see which file failed in test output.
         """
-        test_files_path = os.path.join(self.current_path, TEST_FILES_FOLDER, 'should_fail')
+        test_files_path = os.path.join(
+                            self.current_path,
+                            TEST_FILES_FOLDER,
+                            'should_fail'
+                          )
         testfiles = self.get_files_in_folder(test_files_path)
         for file in testfiles:
             with self.subTest(file=file):
@@ -105,7 +128,62 @@ class TestSportsJSSchema(unittest.TestCase):
                     self.assertRaises(jsonschema.exceptions.ValidationError)
                     or self.assertRaises(json.decoder.JSONDecodeError)):
                     instance = self.load_test_file(test_files_path, file)
-                    self.assertIsNone(jsonschema.validate(instance, self.sportsjs_schema))
+                    self.assertIsNone(
+                        jsonschema.validate(
+                            instance,
+                            self.sportsjs_strict_schema
+                        )
+                    )
+
+    def test_all_passing_unit_test_files_against_extensible_schema(self):
+        """
+        Run all files in TEST_FILES_FOLDER/should_pass against the schema.
+        They should all pass (ie they are all valid against the schema).
+
+        We use "subTest" so we can see which file failed in test output.
+        """
+        test_files_path = os.path.join(
+                            self.current_path,
+                            TEST_FILES_FOLDER,
+                            'should_pass'
+                          )
+        testfiles = self.get_files_in_folder(test_files_path)
+        for file in testfiles:
+            with self.subTest(file=file):
+                instance = self.load_test_file(test_files_path, file)
+                self.assertIsNone(
+                    jsonschema.validate(
+                        instance,
+                        self.sportsjs_extensible_schema
+                    )
+                )
+
+    def test_all_failing_unit_test_files_against_extensible_schema(self):
+        """
+        Run all files in TEST_FILES_FOLDER/should_fail against the schema.
+        They should all fail (ie they are all invalid in some way).
+
+        We use "subTest" so we can see which file failed in test output.
+        """
+        test_files_path = os.path.join(
+                            self.current_path,
+                            TEST_FILES_FOLDER,
+                            'should_fail'
+                          )
+        testfiles = self.get_files_in_folder(test_files_path)
+        for file in testfiles:
+            with self.subTest(file=file):
+                with (
+                    self.assertRaises(jsonschema.exceptions.ValidationError)
+                    or self.assertRaises(json.decoder.JSONDecodeError)):
+                    instance = self.load_test_file(test_files_path, file)
+                    self.assertIsNone(
+                        jsonschema.validate(
+                            instance,
+                            self.sportsjs_extensible_schema
+                        )
+                    )
+
 
 if __name__ == '__main__':
     unittest.main()
