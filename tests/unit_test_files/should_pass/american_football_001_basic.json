@@ -6,9 +6,7 @@
                 "seasonKey": "season:2015",
                 "seasonType": "seasonType:season-regular",
                 "eventStatus": "eventStatus:post-event",
-                "coverage": {
-                    "startDateTime": "2015-12-14T20:30:00-05:00"
-                },
+                "startDateTime": "2015-12-14T20:30:00-05:00",
                 "name": {
                     "full": "2015 New York Giants at Miami Dolphins | 2015-12-14 08:30 PM"
                 },

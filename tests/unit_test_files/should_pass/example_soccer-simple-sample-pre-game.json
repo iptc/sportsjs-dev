@@ -6,10 +6,8 @@
     {
       "id": "m_1118347",
       "eventMetadata": {
-        "coverage": {
-            "startDateTime": "2016-02-23T20:45:00+01:00",
-            "endDateTime": "2016-02-23T22:45:00+01:00"
-        },
+        "startDateTime": "2016-02-23T20:45:00+01:00",
+        "endDateTime": "2016-02-23T22:45:00+01:00",
         "name": {
           "full": "Birmingham - Bolton"
         }

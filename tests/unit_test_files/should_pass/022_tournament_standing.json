@@ -4,11 +4,9 @@
         "tournamentMetadata": {
             "name": { "full": "2017/8 Premier League football Table"},
             "status": "spventstatus:post-event",
-            "coverage": {
-                "statsCoverage": "spstatscoverage:standard",
-                "teamCoverage": "multi-team",
-                "temporalUnitType": "sptemporalunit:season"
-            },
+            "statsCoverage": "spstatscoverage:standard",
+            "teamCoverage": "multi-team",
+            "temporalUnitType": "sptemporalunit:season",
             "sportsContentCodes": [
                 {
                     "codeKey": "spct:standings",
@@ -19,10 +17,8 @@
         "standing": {
             "contentLabel": "Premier League 2017/2018 end-of-season standings",
             "standingMetadata": {
-                "coverage": {
-                    "statsCoverage": "spstatscoverage:standard",
-                    "teamCoverage": "multi-team"
-                }
+                "statsCoverage": "spstatscoverage:standard",
+                "teamCoverage": "multi-team"
             },
             "teams": [
                 {

@@ -2,9 +2,7 @@
   "sportsEvents": [
   {
     "eventMetadata": {
-        "coverage": {
-            "startDateTime": "2014-11-30T14:30:00+01:00"
-        },
+        "startDateTime": "2014-11-30T14:30:00+01:00",
         "site": {"siteMetadata": {
             "name": {"full": "Östersunds skidstadion"},
             "homeLocation": {"address": {"region": "Östersund"}}

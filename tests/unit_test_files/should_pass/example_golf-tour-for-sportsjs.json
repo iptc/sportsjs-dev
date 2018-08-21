@@ -9,10 +9,8 @@
     },
     "tournament": {
         "tournamentMetadata": {
-            "coverage": {
-                "startDateTime": "2011-01-19",
-                "endDateTime": "2011-01-23"
-            },
+            "startDateTime": "2011-01-19",
+            "endDateTime": "2011-01-23",
             "name": {
                 "full": "FedExCup"
             }
@@ -182,9 +180,7 @@
                 "tournamentParts": [
                     {
                         "tournamentPartMetadata": {
-                            "coverage": {
-                                "startDateTime": "2011-01-19"
-                            },
+                            "startDateTime": "2011-01-19",
                             "type": "vendtourpart:preliminary",
                             "name": { "full": "Preliminary" }
                         },

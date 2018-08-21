@@ -3,11 +3,9 @@
         "class" : "johan",
         "tournamentMetadata": {
             "status": "speventstatus:post-event",
-            "coverage": {
-                "startDateTime": "2015-03-08",
-                "venueType": "spsitestyle:outdoor",
-                "surfaceType": "vendst:snow"
-            },
+            "startDateTime": "2015-03-08",
+            "venueType": "spsitestyle:outdoor",
+            "surfaceType": "vendst:snow",
             "name": {
                 "full": "Vasaloppet 2015"
             },
