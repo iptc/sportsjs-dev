@@ -9,7 +9,7 @@
         },
         "duration": {
             "type": "string",
-            "pattern": "/^P([0-9]+(?:[,\\.][0-9]+)?Y)?([0-9]+(?:[,\\.][0-9]+)?M)?([0-9]+(?:[,\\.][0-9]+)?D)?(?:T([0-9]+(?:[,\\.][0-9]+)?H)?([0-9]+(?:[,\\.][0-9]+)?M)?([0-9]+(?:[,\\.][0-9]+)?S)?)?$/"
+            "pattern": "^P([0-9]+(?:[,\\.][0-9]+)?Y)?([0-9]+(?:[,\\.][0-9]+)?M)?([0-9]+(?:[,\\.][0-9]+)?D)?(?:T([0-9]+(?:[,\\.][0-9]+)?H)?([0-9]+(?:[,\\.][0-9]+)?M)?([0-9]+(?:[,\\.][0-9]+)?S)?)?$"
         },
         "qCode": {
             "type": "string",
@@ -1377,13 +1377,12 @@
         },
         "genericStats": {
             "type": "array",
-            "description": " A set of rating",
+            "description": " A set of stats",
             "items": {"$ref": "#/definitions/genericStat"}
         },
         "genericStat": {
             "description": "A generic stat element that can be used together with or instead of more specific stat element and attributes. With nested stats the lower levels should be regarded as having the same value as their parents if that attribute is not specifically set.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/genericStatAttributes"},
                 {"$ref": "#/definitions/coverageAttributes"}
