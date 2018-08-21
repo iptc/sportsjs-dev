@@ -796,6 +796,11 @@
     },
     "americanFootballStatsFieldGoals": {
       "description": "Statistics about attempted and made field goals. | Allows for breakdowns between particular yard markers.",
+      "type": "array",
+      "items": { "$ref": "#/definitions/americanFootballStatsFieldGoal" }
+    },
+    "americanFootballStatsFieldGoal": {
+      "description": "Statistics about attempted and made field goals. | Allows for breakdowns between particular yard markers.",
       "type": "object",
       "additionalProperties": false,
       "properties": {

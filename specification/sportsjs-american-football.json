@@ -764,7 +764,12 @@
       }
     },
     "americanFootballStatsFieldGoals": {
-      "description": "Statistics about attempted and made field goals. | Allows for breakdowns between particular yard markers.",
+       "description": "Statistics about attempted and made field goals. | Allows for breakdowns between particular yard markers.",
+       "type": "array",
+       "items": { "$ref": "#/definitions/americanFootballStatsFieldGoal" }
+     },
+     "americanFootballStatsFieldGoal": {
+       "description": "Statistics about attempted and made field goals. | Allows for breakdowns between particular yard markers.",
       "allOf": [
         {
           "$ref": "http://iptc.org/std-dev/SportsJS/specification/sportsjs-core.json#/definitions/commonAttributes"
