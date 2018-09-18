@@ -1,0 +1,38 @@
+Team Sports
+-----------
+
+On this page we will describe Team sports and then of course the `team` element with its sub elements (`team-metadata`). But let us start with the definition of a team sport:
+
+According to Wikipedia a team sport is "any sport which involves players working together towards a shared objective."
+
+A team sport is an activity in which a group of individuals, on the same team, work together to accomplish an ultimate goal which is usually to win. This can be done in a number of ways such as outscoring the opposing team. Team members set goals, make decisions, communicate, manage conflict, and solve problems in a supportive, trusting atmosphere in order to accomplish their objectives. This can be seen in sports such as hockey, football, baseball, soccer, basketball, volleyball, tennis, water polo, lacrosse, rugby league, rugby union, cricket, and many others."
+
+Which is why SportsML has created a `team` element where you can assign players (individuals), managers and more.
+
+So let's dive into the `team` element.
+
+The `team` element
+~~~~~~~~~~~~~~~~~~
+
+This element is used to define one of more teams in a sport event (like a competition). The `team` element is followed by a `team-metadata` and you can also add `team-stats` and `player` elements. More about these elements later.
+
+The element has only one attribute, which is `id`. An ID in XML cannot start with numbers, so you need to have one character before add any number to a team.
+
+In this example we have used the shortened name of the team, but in the real world your `id`s will either come from some federation (national or international) or from a Sports Result Input Program.
+
+Adding `team-metadata`
+~~~~~~~~~~~~~~~~~~~~~~
+
+So after the team element you must add the `team-metadata` element. This element is used to describe the team. Here you state the name of the team, orgin and so on. It can be as complex or simple as you like, or as your system allows. Below is an example of a quite complex team definition:
+
+[source, xml]
+----
+<team id="example.com">
+    <team-metadata home-page-url="http://www.example.com" alignment="home">
+        <name first="Example" last="Com" full="Example.Com" />
+        <home-location city="London" country="England" />
+    </team-metadata>
+</team>
+----
+
+In the following sections you will learn how to mark up a match and add players and player actions. 
