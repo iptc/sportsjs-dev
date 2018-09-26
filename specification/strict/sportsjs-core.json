@@ -364,31 +364,31 @@
                     "$ref": "#/definitions/qCode",
                     "description": "What type of outcome. Includes overtime, random (eg. by coin toss), etc. SportsML vocab uri: http://cv.iptc.org/newscodes/speventoutcometype/"
                 },
-                "americanFootballEventMetadata": {
+                "eventMetadataAmericanFootball": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-american-football.json#/definitions/americanFootballEventMetadata"
                 },
-                "baseballEventMetadata": {
+                "eventMetadataBaseball": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-baseball.json#/definitions/baseballEventMetadata"
                 },
-                "golfEventMetadata": {
+                "eventMetadataGolf": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-golf.json#/definitions/golfEventMetadata"
                 },
-                "iceHockeyEventMetadata": {
+                "eventMetadataIceHockey": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-ice-hockey.json#/definitions/iceHockeyEventMetadata"
                 },
-                "soccerEventMetadata": {
+                "eventMetadataSoccer": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-soccer.json#/definitions/soccerEventMetadata"
                 },
-                "tennisEventMetadata": {
+                "eventMetadataTennis": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-tennis.json#/definitions/tennisEventMetadata"
                 },
-                "motorRacingEventMetadata": {
+                "eventMetadataMotorRacing": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-motor-racing.json#/definitions/motorRacingEventMetadata"
                 },
-                "curlingEventMetadata": {
+                "eventMetadataCurling": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-curling.json#/definitions/curlingEventMetadata"
                 },
-                "rugbyEventMetadata": {
+                "eventMetadataRugby": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-rugby.json#/definitions/rugbyEventMetadata"
                 }
             }
@@ -824,6 +824,114 @@
                 "penaltyStats": {"$ref": "#/definitions/penaltyStats"},
                 "award": {"$ref": "#/definitions/award"},
                 "rank": {"$ref": "#/definitions/rank"},
+                "score": {
+                    "type": "string",
+                    "description": "Final or current score of the team or player."
+                },
+                "scoreOpposing": {
+                    "type": "string",
+                    "description": "Final or current score of the opposing team or player."
+                },
+                "scoreAverage": {
+                    "type": "string",
+                    "description": "Average per-game score for the team or player."
+                },
+                "scoreOpposingAverage": {
+                    "type": "string",
+                    "description": "Average per-game score for the opposing team or player."
+                },
+                "scoreUnits": {
+                    "$ref": "#/definitions/qCode",
+                    "description": "Describes how the score and score-opposing is valued."
+                },
+                "scoreBehind": {
+                    "type": "string",
+                    "description": "The points or time behind the leading score."
+                },
+                "scoreAttempts": {
+                    "type": "string",
+                    "description": "Final or current number of attempts to score by a team or player. Example: in ice hockey, would represent total shots on goal."
+                },
+                "scoreAttemptsOpposing": {
+                    "type": "string",
+                    "description": "Final or current number of attempts to score by an opposing team or player."
+                },
+                "scoreAttemptsOnGoal": {
+                    "type": "string",
+                    "description": "A subset of score-attempts. Only counts those attempts that were on-goal."
+                },
+                "scoreAttemptsOnGoalOpposing": {
+                    "type": "string",
+                    "description": "Final or current number of attempts to score by an opposing team or player that were on-goal."
+                },
+                "scorePercentage": {
+                    "type": "string",
+                    "description": "Percentage of attempted scores that reached their mark."
+                },
+                "scorePercentageOpposing": {
+                    "type": "string",
+                    "description": "Percentage of attempted scores by opposing team or player that reached their mark."
+                },
+                "resultEffect": {
+                    "$ref": "#/definitions/qCode",
+                    "description": "Describes the effect that the result of the event or rank changing has had on the team. Example: Whether or not a team has qualified for the playoffs, or has been promoted or demoted to a different division."
+                },
+                "eventOutcome": {
+                    "$ref": "#/definitions/qCode",
+                    "description": "Whether the competitor won, lost, or tied. SportsML vocab uri: http://cv.iptc.org/newscodes/speventoutcome/"
+                },
+                "eventStandingPoints": {
+                    "type": "string",
+                    "description": "How many points were earned as a result of the outcome of this particular event."
+                },
+                "eventStandingPointsAgainst": {
+                    "type": "string",
+                    "description": "How many points were deducted as a result of the outcome of this particular event. This occurs, for example, in the German Handball leagues."
+                },
+                "scoreType": {
+                    "type": "string",
+                    "description": "Qualifies 'score' attribute."
+                },
+                "eventsRemaining": {
+                    "type": "string",
+                    "description": "Number of sports-events the player has yet to participate in."
+                },
+                "timeOfPossession": {
+                    "type": "string",
+                    "description": "Amount of time the team or player has possession of ball (or similar object like puck)."
+                },
+                "timeOfPossessionPercentage": {
+                    "type": "string",
+                    "description": "Amount of time the team or player has possession of ball (or similar object like puck) expressed as a percentage of the full time of the match."
+                },
+                "timeOfPossessionPercentageOpposing": {
+                    "type": "string",
+                    "description": "Amount of time the opposing team or player has possession of ball (or similar object like puck) expressed as a percentage of the full time of the match."
+                },
+                "timeOfPossessionAverage": {
+                    "type": "string",
+                    "description": "Amount of time the team or player has possession of ball (or similar object like puck) per game."
+                },
+                "timeOfPossessionAverageOpposing": {
+                    "type": "string",
+                    "description": "Amount of time the opposing team or player has possession of ball (or similar object like puck) per game."
+                },
+                "seriesScore": {
+                    "type": "string",
+                    "description": "Number of events in a series won by team or player."
+                },
+                "seriesScoreOpposing": {
+                    "type": "string",
+                    "description": "Number of events in a series won by opposing team or player."
+                },
+                "adjustedScoreFor": {
+                    "type": "string",
+                    "description": "The final score as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
+                },
+                "adjustedScoreAgainst": {
+                    "type": "string",
+                    "description": "The final score against as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
+                },
                 "scoreStats": { "$ref": "#/definitions/scoreStats" },
                 "subScores": {"$ref": "#/definitions/subScores"},
                 "eventRecord": {"$ref": "#/definitions/eventRecord"},
@@ -835,31 +943,31 @@
                     "type": "string",
                     "description": "Value for the amount of time played by the team or player over the course of a particular time-span, such as a season."
                 },
-                "americanFootballTeamStats": {
+                "teamStatsAmericanFootball": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-american-football.json#/definitions/americanFootballTeamStats"
                 },
-                "baseballTeamStats": {
+                "teamStatsBaseball": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-baseball.json#/definitions/baseballTeamStats"
                 },
-                "basketballTeamStats": {
+                "teamStatsBasketball": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-basketball.json#/definitions/basketballTeamStats"
                 },
-                "iceHockeyTeamStats": {
+                "teamStatsIceHockey": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-ice-hockey.json#/definitions/iceHockeyTeamStats"
                 },
-                "soccerTeamStats": {
+                "teamStatsSoccer": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-soccer.json#/definitions/soccerTeamStats"
                 },
-                "tennisTeamStats": {
+                "teamStatsTennis": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-tennis.json#/definitions/tennisTeamStats"
                 },
-                "motorRacingTeamStats": {
+                "teamStatsMotorRacing": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-motor-racing.json#/definitions/motorRacingTeamStats"
                 },
-                "curlingTeamStats": {
+                "teamStatsCurling": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-curling.json#/definitions/curlingTeamStats"
                 },
-                "rugbyTeamStats": {
+                "teamStatsRugby": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-rugby.json#/definitions/rugbyTeamStats"
                 }
             }
@@ -1071,34 +1179,34 @@
                     "type": "string",
                     "description": "Time player exited event expressed as conventional game-clock time. For example, the game minute a soccer player was subbed off the field."
                 },
-                "americanFootballPlayerStats": {
+                "playerStatsAmericanFootball": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-american-football.json#/definitions/americanFootballPlayerStats"
                 },
-                "baseballPlayerStats": {
+                "playerStatsBaseball": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-baseball.json#/definitions/baseballPlayerStats"
                 },
-                "basketballPlayerStats": {
+                "playerStatsBasketball": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-basketball.json#/definitions/basketballPlayerStats"
                 },
-                "golfPlayerStats": {
+                "playerStatsGolf": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-golf.json#/definitions/golfPlayerStats"
                 },
-                "iceHockeyPlayerStats": {
+                "playerStatsIceHockey": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-ice-hockey.json#/definitions/iceHockeyPlayerStats"
                 },
-                "soccerPlayerStats": {
+                "playerStatsSoccer": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-soccer.json#/definitions/soccerPlayerStats"
                 },
-                "tennisPlayerStats": {
+                "playerStatsTennis": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-tennis.json#/definitions/tennisPlayerStats"
                 },
-                "motorRacingPlayerStats": {
+                "playerStatsMotorRacing": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-motor-racing.json#/definitions/motorRacingPlayerStats"
                 },
-                "curlingPlayerStats": {
+                "playerStatsCurling": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-curling.json#/definitions/curlingPlayerStats"
                 },
-                "rugbyPlayerStats": {
+                "playerStatsRugby": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-rugby.json#/definitions/rugbyPlayerStats"
                 }
             }

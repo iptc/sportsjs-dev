@@ -2,7 +2,7 @@
     "sportsEvents": [
         {
             "eventMetadata": {
-                "americanFootballEventMetadata": {
+                "eventMetadataAmericanFootball": {
                     "id": "test-001",
                     "class": "american-football-class",
                     "style": "american-football-style",
@@ -47,7 +47,7 @@
                                 "score": "0"
                             }
                         ],
-                        "americanFootballTeamStats": {
+                        "teamStatsAmericanFootball": {
                             "statsAmericanFootballOffensive": {
                             },
                             "statsAmericanFootballDefensive": {

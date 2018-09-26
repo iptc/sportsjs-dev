@@ -56,7 +56,7 @@
                                 "rank": {
                                     "value": 1
                                 },
-                                "golfPlayerStats": {
+                                "playerStatsGolf": {
                                     "statsGolf": {
                                         "money": "900,000",
                                         "moneyValue": "USD",
@@ -138,7 +138,7 @@
                                 "rank": {
                                     "value": 2
                                 },
-                                "golfPlayerStats": {
+                                "playerStatsGolf": {
                                     "statsGolf": {
                                         "money": "100,000",
                                         "moneyValue": "USD",
@@ -206,7 +206,7 @@
                                                 }
                                             }
                                         },
-                                        "golfEventMetadata": {
+                                        "eventMetadataGolf": {
                                             "round": "1",
                                             "coursePar": "72"
                                         }
@@ -231,7 +231,7 @@
                                                 "rank": {
                                                     "value": 1
                                                 },
-                                                "golfPlayerStats": {
+                                                "playerStatsGolf": {
                                                     "statsGolf": {
                                                         "totalHoles": "18",
                                                         "holesUnderPar": "10",
@@ -378,7 +378,7 @@
                                                 "rank": {
                                                     "value": 2
                                                 },
-                                                "golfPlayerStats": {
+                                                "playerStatsGolf": {
                                                     "statsGolf": {
                                                         "totalHoles": "18",
                                                         "holesUnderPar": "9",
@@ -532,7 +532,7 @@
                                         }
                                     }
                                 },
-                                "golfEventMetadata": {
+                                "eventMetadataGolf": {
                                     "round": "2",
                                     "coursePar": "72"
                                 }
@@ -557,7 +557,7 @@
                                     "rank": {
                                         "value": 1
                                     },
-                                    "golfPlayerStats": {
+                                    "playerStatsGolf": {
                                         "statsGolf": {
                                             "totalHoles": "18",
                                             "holesUnderPar": "10",
@@ -715,7 +715,7 @@
                                                 }
                                             }
                                         },
-                                        "golfEventMetadata": {
+                                        "eventMetadataGolf": {
                                             "round": "p1",
                                             "coursePar": "5",
                                             "hole": "18"
@@ -808,7 +808,7 @@
                                         }
                                     }
                                 },
-                                "golfEventMetadata": {
+                                "eventMetadataGolf": {
                                     "round": "P2",
                                     "coursePar": "4",
                                     "hole": "10"
