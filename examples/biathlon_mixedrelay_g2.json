@@ -1,4 +1,6 @@
-{"sportsEvent": {
+{
+  "sportsEvents": [
+  {
     "eventMetadata": {
         "startDateTime": "2014-11-30T14:30:00+01:00",
         "site": {"siteMetadata": {
@@ -6,7 +8,7 @@
             "homeLocation": {"address": {"region": "Östersund"}}
         }}
     },
-    "team": [
+    "teams": [
         {
             "id": "BIB6",
             "teamMetadata": {
@@ -15,64 +17,68 @@
                 "name": {"full": "France"}
             },
             "teamStats": {
-                "score": "1.15.05,5",
+                "scoreStats": {
+                    "score": "1.15.05,5"
+                },
                 "rank": {"value": 1},
-                "subScore": [
+                "subScores": [
                     {
-                        "periodValue": 1,
-                        "score": 0,
+                        "periodValue": "1",
+                        "score": "0",
                         "subScoreName": "Penaltyrounds"
                     },
                     {
-                        "periodValue": 1,
-                        "score": 4,
+                        "periodValue": "1",
+                        "score": "4",
                         "subScoreName": "Extra shots"
                     },
                     {
-                        "periodValue": 2,
-                        "score": 0,
+                        "periodValue": "2",
+                        "score": "0",
                         "subScoreName": "Penaltyrounds"
                     },
                     {
-                        "periodValue": 2,
-                        "score": 7,
+                        "periodValue": "2",
+                        "score": "7",
                         "subScoreName": "Extra shots"
                     }
                 ]
             },
-            "player": [
+            "players": [
                 {
                     "playerMetadata": {
                         "teamIdref": "BIB6",
                         "nationality": "France",
                         "gender": "female",
                         "uniformNumber": "6-1",
-                        "name": [
-                            {"part": {"first": "Anais"}},
-                            {"part": {"last": "Bescond"}}
-                        ]
+                        "name": {
+                            "given": "Anais",
+                            "family": "Bescond"
+                        }
                     },
                     "playerStats": {
-                        "score": "18.20,6",
-                        "subScore": [
+                        "scoreStats": {
+                            "score": "18.20,6"
+                        },
+                        "subScores": [
                             {
-                                "periodValue": 1,
-                                "score": 0,
+                                "periodValue": "1",
+                                "score": "0",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 1,
-                                "score": 0,
+                                "periodValue": "1",
+                                "score": "0",
                                 "subScoreName": "Extra shots"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 0,
+                                "periodValue": "2",
+                                "score": "0",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 3,
+                                "periodValue": "2",
+                                "score": "3",
                                 "subScoreName": "Extra shots"
                             }
                         ]
@@ -84,32 +90,34 @@
                         "nationality": "France",
                         "gender": "female",
                         "uniformNumber": "6-2",
-                        "name": [
-                            {"part": {"first": "Anais"}},
-                            {"part": {"last": "Chevalier"}}
-                        ]
+                        "name": {
+                            "given": "Anais",
+                            "family": "Chevalier"
+                        }
                     },
                     "playerStats": {
-                        "score": "19.26,8",
-                        "subScore": [
+                        "scoreStats": {
+                            "score": "19.26,8"
+                        },
+                        "subScores": [
                             {
-                                "periodValue": 1,
-                                "score": 0,
+                                "periodValue": "1",
+                                "score": "0",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 1,
-                                "score": 3,
+                                "periodValue": "1",
+                                "score": "3",
                                 "subScoreName": "Extra shots"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 0,
+                                "periodValue": "2",
+                                "score": "0",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 2,
+                                "periodValue": "2",
+                                "score": "2",
                                 "subScoreName": "Extra shots"
                             }
                         ]
@@ -121,32 +129,34 @@
                         "nationality": "France",
                         "gender": "male",
                         "uniformNumber": "6-3",
-                        "name": [
-                            {"part": {"first": "Simon"}},
-                            {"part": {"last": "Fourcade"}}
-                        ]
+                        "name": {
+                            "given": "Simon",
+                            "family": "Fourcade"
+                        }
                     },
                     "playerStats": {
-                        "score": "19.13,2",
-                        "subScore": [
+                        "scoreStats": {
+                            "score": "19.13,2"
+                        },
+                        "subScores": [
                             {
-                                "periodValue": 1,
-                                "score": 0,
+                                "periodValue": "1",
+                                "score": "0",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 1,
-                                "score": 1,
+                                "periodValue": "1",
+                                "score": "1",
                                 "subScoreName": "Extra shots"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 0,
+                                "periodValue": "2",
+                                "score": "0",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 0,
+                                "periodValue": "2",
+                                "score": "0",
                                 "subScoreName": "Extra shots"
                             }
                         ]
@@ -158,32 +168,34 @@
                         "nationality": "France",
                         "gender": "male",
                         "uniformNumber": "6-4",
-                        "name": [
-                            {"part": {"first": "Martin"}},
-                            {"part": {"last": "Fourcade"}}
-                        ]
+                        "name": {
+                            "given": "Martin",
+                            "family": "Fourcade"
+                        }
                     },
                     "playerStats": {
-                        "score": "18.05,5",
-                        "subScore": [
+                        "scoreStats": {
+                            "score": "18.05,5"
+                        },
+                        "subScores": [
                             {
-                                "periodValue": 1,
-                                "score": 0,
+                                "periodValue": "1",
+                                "score": "0",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 1,
-                                "score": 0,
+                                "periodValue": "1",
+                                "score": "0",
                                 "subScoreName": "Extra shots"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 0,
+                                "periodValue": "2",
+                                "score": "0",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 2,
+                                "periodValue": "2",
+                                "score": "2",
                                 "subScoreName": "Extra shots"
                             }
                         ]
@@ -199,64 +211,68 @@
                 "name": {"full": "Norway"}
             },
             "teamStats": {
-                "score": "1.15.05,7",
+                "scoreStats": {
+                    "score": "1.15.05,7"
+                },
                 "rank": {"value": 2},
-                "subScore": [
+                "subScores": [
                     {
-                        "periodValue": 1,
-                        "score": 0,
+                        "periodValue": "1",
+                        "score": "0",
                         "subScoreName": "Penaltyrounds"
                     },
                     {
-                        "periodValue": 1,
-                        "score": 4,
+                        "periodValue": "1",
+                        "score": "4",
                         "subScoreName": "Extra shots"
                     },
                     {
-                        "periodValue": 2,
-                        "score": 1,
+                        "periodValue": "2",
+                        "score": "1",
                         "subScoreName": "Penaltyrounds"
                     },
                     {
-                        "periodValue": 2,
-                        "score": 7,
+                        "periodValue": "2",
+                        "score": "7",
                         "subScoreName": "Extra shots"
                     }
                 ]
             },
-            "player": [
+            "players": [
                 {
                     "playerMetadata": {
                         "teamIdref": "BIB2",
                         "nationality": "Norway",
                         "gender": "female",
                         "uniformNumber": "2-1",
-                        "name": [
-                            {"part": {"first": "Synnoeve"}},
-                            {"part": {"last": "Solemdal"}}
-                        ]
+                        "name": {
+                            "given": "Synnoeve",
+                            "family": "Solemdal"
+                        }
                     },
                     "playerStats": {
-                        "score": "19.39,0",
-                        "subScore": [
+                        "scoreStats": {
+                            "score": "19.39,0"
+                        },
+                        "subScores": [
                             {
-                                "periodValue": 1,
-                                "score": 0,
+                                "periodValue": "1",
+                                "score": "0",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 1,
-                                "score": 3,
+                                "periodValue": "1",
+                                "score": "3",
                                 "subScoreName": "Extra shots"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 1,
+                                "periodValue": "2",
+                                "score": "1",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 3,
+                                "periodValue": "2",
+                                "score": "3",
                                 "subScoreName": "Extra shots"
                             }
                         ]
@@ -268,32 +284,34 @@
                         "nationality": "Norway",
                         "gender": "female",
                         "uniformNumber": "2-2",
-                        "name": [
-                            {"part": {"first": "Tiril"}},
-                            {"part": {"last": "Eckhoff"}}
-                        ]
+                        "name": {
+                            "given": "Tiril",
+                            "family": "Eckhoff"
+                        }
                     },
                     "playerStats": {
-                        "score": "18.27,2",
-                        "subScore": [
+                        "scoreStats": {
+                            "score": "18.27,2"
+                        },
+                        "subScores": [
                             {
-                                "periodValue": 1,
-                                "score": 0,
+                                "periodValue": "1",
+                                "score": "0",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 1,
-                                "score": 1,
+                                "periodValue": "1",
+                                "score": "1",
                                 "subScoreName": "Extra shots"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 0,
+                                "periodValue": "2",
+                                "score": "0",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 1,
+                                "periodValue": "2",
+                                "score": "1",
                                 "subScoreName": "Extra shots"
                             }
                         ]
@@ -305,32 +323,34 @@
                         "nationality": "Norway",
                         "gender": "male",
                         "uniformNumber": "2-3",
-                        "name": [
-                            {"part": {"first": "Vetle Sjastad"}},
-                            {"part": {"last": "Christiansen"}}
-                        ]
+                        "name": {
+                            "given": "Vetle Sjastad",
+                            "family": "Christiansen"
+                        }
                     },
                     "playerStats": {
-                        "score": "18.46,3",
-                        "subScore": [
+                        "scoreStats": {
+                            "score": "18.46,3"
+                        },
+                        "subScores": [
                             {
-                                "periodValue": 1,
-                                "score": 0,
+                                "periodValue": "1",
+                                "score": "0",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 1,
-                                "score": 0,
+                                "periodValue": "1",
+                                "score": "0",
                                 "subScoreName": "Extra shots"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 0,
+                                "periodValue": "2",
+                                "score": "0",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 3,
+                                "periodValue": "2",
+                                "score": "3",
                                 "subScoreName": "Extra shots"
                             }
                         ]
@@ -342,32 +362,34 @@
                         "nationality": "Norway",
                         "gender": "male",
                         "uniformNumber": "2-4",
-                        "name": [
-                            {"part": {"first": "Lars Helge"}},
-                            {"part": {"last": "Birkeland"}}
-                        ]
+                        "name": {
+                            "given": "Lars Helge",
+                            "family": "Birkeland"
+                        }
                     },
                     "playerStats": {
-                        "score": "18.57,2",
-                        "subScore": [
+                        "scoreStats": {
+                            "score": "18.57,2"
+                        },
+                        "subScores": [
                             {
-                                "periodValue": 1,
-                                "score": 0,
+                                "periodValue": "1",
+                                "score": "0",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 1,
-                                "score": 0,
+                                "periodValue": "1",
+                                "score": "0",
                                 "subScoreName": "Extra shots"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 0,
+                                "periodValue": "2",
+                                "score": "0",
                                 "subScoreName": "Penaltyrounds"
                             },
                             {
-                                "periodValue": 2,
-                                "score": 0,
+                                "periodValue": "2",
+                                "score": "0",
                                 "subScoreName": "Extra shots"
                             }
                         ]
@@ -376,4 +398,6 @@
             ]
         }
     ]
-}}
+  }
+ ]
+}
