@@ -27,9 +27,9 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-          "id": { "$ref": "#/definitions/idRef" },
-          "class": { "$ref": "#/definitions/class" },
-          "style": { "$ref": "#/definitions/style" },
+          "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+          "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+          "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
           "periodExtraTimeAdded": {
               "type": "string",
               "description": "How many minutes the referee has decided to add to the period."
