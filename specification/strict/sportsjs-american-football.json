@@ -1087,7 +1087,7 @@
           "type": "string",
           "description": "The number of tackles made while playing for a special-team."
         },
-        "tacklesSpecialTeamsAssists": {
+        "tacklesAssistsSpecialTeams": {
           "type": "string",
           "description": "The number of tackle assists performed while on special-teams."
         },
