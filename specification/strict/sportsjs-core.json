@@ -34,6 +34,11 @@
             "description": "The type of a calendar date with an optional time part which may be truncated from the second part to the month part.",
             "pattern": "(\\d{4})(-(\\d{2})-(\\d{2}))?"
         },
+        "truncatedTime": {
+            "type": "string",
+            "description": "In XML, union of xs:time xs:nonNegativeInteger MinutesAndSeconds",
+            "pattern": "(\\d{2})(:(\\d{2}):(\\d{2}))?"
+        },
         "nonNegativeInteger": {
             "type": "integer",
             "minimum": 0
@@ -66,7 +71,8 @@
             "properties": {
                 "contactInfo": {"$ref": "#/definitions/contactInfo"},
                 "address": {"$ref": "#/definitions/address"},
-                "position": {"$ref": "#/definitions/position"}
+                "position": {"$ref": "#/definitions/position"},
+                "names": {"$ref": "#/definitions/names"}
             }
         },
         "contactInfo": {
@@ -157,6 +163,10 @@
                 }
             }
         },
+        "names": {
+            "type": "array",
+            "items": {"$ref": "#/definitions/name"}
+        },
         "name": {
             "description": "Name of the entity, could be a player, official, associate, team, etc. Sometimes a person is referred to by different names, depending upon the language in which the document is displayed.",
             "type": "object",
@@ -201,6 +211,19 @@
                 "abbreviation": {
                     "description": "An abbreviation, usually used for teams in display locations where space is constrained.",
                     "type": "string"
+                },
+                "part": {
+                    "description": "Specifies which part of a full name this property provides - expressed by a QCode",
+                    "type": "string"
+                },
+                "parturi": {
+                    "description": "Specifies which part of a full name this property provides - expressed by a URI",
+                    "type": "string",
+                    "format": "uri"
+                },
+                "name": {
+                    "description": "The part of the name that the name part describes",
+                    "type": "string"
                 }
             }
         },
@@ -209,13 +232,13 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
-                "sportsMetadata": {"$ref": "#/definitions/sportsMetadata"},
+                "sportsMetadata": {"$ref": "#/definitions/sportsMetadataSet"},
                 "sportsEvents": {"$ref": "#/definitions/sportsEvents"},
-                "tournament": {"$ref": "#/definitions/tournament"},
-                "schedule": {"$ref": "#/definitions/schedule"},
-                "standing": {"$ref": "#/definitions/standing"},
-                "statistic": {"$ref": "#/definitions/statistic"},
-                "article": {"$ref": "#/definitions/article"}
+                "tournaments": {"$ref": "#/definitions/tournaments"},
+                "schedules": {"$ref": "#/definitions/schedules"},
+                "standings": {"$ref": "#/definitions/standings"},
+                "statistics": {"$ref": "#/definitions/statistics"},
+                "articles": {"$ref": "#/definitions/articles"}
             }
         },
         "eventMetadata": {
@@ -276,9 +299,9 @@
                 },
                 "sportsContentCodes": {"$ref": "#/definitions/sportsContentCodes"},
                 "sportsProperties": {"$ref": "#/definitions/sportsProperties"},
-                "name": {"$ref": "#/definitions/name"},
-                "site": {"$ref": "#/definitions/site"},
-                "award": {"$ref": "#/definitions/award"},
+                "names": {"$ref": "#/definitions/names"},
+                "sites": {"$ref": "#/definitions/sites"},
+                "awards": {"$ref": "#/definitions/awards"},
                 "key": {"$ref": "#/definitions/tournamentKey"},
                 "eventSponsor": {
                     "$ref": "#/definitions/eventSponsor",
@@ -505,9 +528,9 @@
                     "$ref": "#/definitions/nonNegativeInteger",
                     "description": "The number of the particular tournament part eg. 2 for second round or second leg"
                 },
-                "name": {"$ref": "#/definitions/name"},
-                "site": {"$ref": "#/definitions/site"},
-                "award": {"$ref": "#/definitions/award"},
+                "names": {"$ref": "#/definitions/names"},
+                "sites": {"$ref": "#/definitions/sites"},
+                "awards": {"$ref": "#/definitions/awards"},
                 "key": {"$ref": "#/definitions/tournamentKey"},
                 "golfTournamentMetadata": {
                     "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-golf.json#/definitions/golfTournamentMetadata"
@@ -575,9 +598,9 @@
                     "$ref": "#/definitions/nonNegativeInteger",
                     "description": "The number of the particular tournament part eg. 2 for second round or second leg"
                 },
-                "name": {"$ref": "#/definitions/name"},
-                "site": {"$ref": "#/definitions/site"},
-                "award": {"$ref": "#/definitions/award"},
+                "names": {"$ref": "#/definitions/names"},
+                "sites": {"$ref": "#/definitions/sites"},
+                "awards": {"$ref": "#/definitions/awards"},
                 "key": {"$ref": "#/definitions/tournamentKey"},
                 "tournamentDivisionMetadataGolf": {
                     "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-golf.json#/definitions/golfTournamentDivisionMetadata"
@@ -646,9 +669,9 @@
                     "$ref": "#/definitions/nonNegativeInteger",
                     "description": "The number of the particular tournament part eg. 2 for second round or second leg"
                 },
-                "name": {"$ref": "#/definitions/name"},
-                "site": {"$ref": "#/definitions/site"},
-                "award": {"$ref": "#/definitions/award"},
+                "names": {"$ref": "#/definitions/names"},
+                "sites": {"$ref": "#/definitions/sites"},
+                "awards": {"$ref": "#/definitions/awards"},
                 "key": {"$ref": "#/definitions/tournamentKey"},
                 "type": {
                     "$ref": "#/definitions/qCode",
@@ -700,7 +723,7 @@
                 "distanceMaximum": { "$ref": "#/definitions/distanceMaximum" },
                 "distanceMinimum": { "$ref": "#/definitions/distanceMinimum" },
                 "measurementUnits": { "$ref": "#/definitions/measurementUnits" },
-                "name": {"$ref": "#/definitions/name"},
+                "names": {"$ref": "#/definitions/names"},
                 "homeLocation": {"$ref": "#/definitions/location"},
                 "sportsProperties": {"$ref": "#/definitions/sportsProperties"},
                 "key": {
@@ -758,8 +781,8 @@
                     "$ref": "#/definitions/nonNegativeInteger",
                     "description": "The number of the particular tournament part eg. 2 for second round or second leg"
                 },
-                "site": {"$ref": "#/definitions/site"},
-                "award": {"$ref": "#/definitions/award"},
+                "sites": {"$ref": "#/definitions/sites"},
+                "awards": {"$ref": "#/definitions/awards"},
                 "key": {"$ref": "#/definitions/tournamentKey"},
                 "baseballTeamMetadata": {
                     "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-baseball.json#/definitions/baseballTeamMetadata"
@@ -771,6 +794,10 @@
                     "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-motor-racing.json#/definitions/motorRacingTeamMetadata"
                 }
             }
+        },
+        "teamStatsSet": {
+            "type": "array",
+            "items": {"$ref": "#/definitions/teamStats"}
         },
         "teamStats": {
             "description": "",
@@ -821,8 +848,8 @@
                     "$ref": "#/definitions/nonNegativeInteger",
                     "description": "Points accumulated by this associate. For example, points earned by a NASCAR owner."
                 },
-                "penaltyStats": {"$ref": "#/definitions/penaltyStats"},
-                "award": {"$ref": "#/definitions/award"},
+                "penaltyStats": {"$ref": "#/definitions/penaltyStatsSet"},
+                "awards": {"$ref": "#/definitions/awards"},
                 "rank": {"$ref": "#/definitions/rank"},
                 "score": {
                     "type": "string",
@@ -932,7 +959,114 @@
                     "type": "string",
                     "description": "The final score against as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
                 },
-                "scoreStats": { "$ref": "#/definitions/scoreStats" },
+                "score": {
+                    "type": "string",
+                    "description": "Final or current score of the team or player."
+                },
+                "scoreOpposing": {
+                    "type": "string",
+                    "description": "Final or current score of the opposing team or player."
+                },
+                "scoreAverage": {
+                    "type": "string",
+                    "description": "Average per-game score for the team or player."
+                },
+                "scoreOpposingAverage": {
+                    "type": "string",
+                    "description": "Average per-game score for the opposing team or player."
+                },
+                "scoreUnits": {
+                    "$ref": "#/definitions/qCode",
+                    "description": "Describes how the score and score-opposing is valued."
+                },
+                "scoreBehind": {
+                    "type": "string",
+                    "description": "The points or time behind the leading score."
+                },
+                "scoreAttempts": {
+                    "type": "string",
+                    "description": "Final or current number of attempts to score by a team or player. Example: in ice hockey, would represent total shots on goal."
+                },
+                "scoreAttemptsOpposing": {
+                    "type": "string",
+                    "description": "Final or current number of attempts to score by an opposing team or player."
+                },
+                "scoreAttemptsOnGoal": {
+                    "type": "string",
+                    "description": "A subset of score-attempts. Only counts those attempts that were on-goal."
+                },
+                "scoreAttemptsOnGoalOpposing": {
+                    "type": "string",
+                    "description": "Final or current number of attempts to score by an opposing team or player that were on-goal."
+                },
+                "scorePercentage": {
+                    "type": "string",
+                    "description": "Percentage of attempted scores that reached their mark."
+                },
+                "scorePercentageOpposing": {
+                    "type": "string",
+                    "description": "Percentage of attempted scores by opposing team or player that reached their mark."
+                },
+                "resultEffect": {
+                    "$ref": "#/definitions/qCode",
+                    "description": "Describes the effect that the result of the event or rank changing has had on the team. Example: Whether or not a team has qualified for the playoffs, or has been promoted or demoted to a different division."
+                },
+                "eventOutcome": {
+                    "$ref": "#/definitions/qCode",
+                    "description": "Whether the competitor won, lost, or tied. SportsML vocab uri: http://cv.iptc.org/newscodes/speventoutcome/"
+                },
+                "eventStandingPoints": {
+                    "type": "string",
+                    "description": "How many points were earned as a result of the outcome of this particular event."
+                },
+                "eventStandingPointsAgainst": {
+                    "type": "string",
+                    "description": "How many points were deducted as a result of the outcome of this particular event. This occurs, for example, in the German Handball leagues."
+                },
+                "scoreType": {
+                    "type": "string",
+                    "description": "Qualifies 'score' attribute."
+                },
+                "eventsRemaining": {
+                    "type": "string",
+                    "description": "Number of sports-events the player has yet to participate in."
+                },
+                "timeOfPossession": {
+                    "type": "string",
+                    "description": "Amount of time the team or player has possession of ball (or similar object like puck)."
+                },
+                "timeOfPossessionPercentage": {
+                    "type": "string",
+                    "description": "Amount of time the team or player has possession of ball (or similar object like puck) expressed as a percentage of the full time of the match."
+                },
+                "timeOfPossessionPercentageOpposing": {
+                    "type": "string",
+                    "description": "Amount of time the opposing team or player has possession of ball (or similar object like puck) expressed as a percentage of the full time of the match."
+                },
+                "timeOfPossessionAverage": {
+                    "type": "string",
+                    "description": "Amount of time the team or player has possession of ball (or similar object like puck) per game."
+                },
+                "timeOfPossessionAverageOpposing": {
+                    "type": "string",
+                    "description": "Amount of time the opposing team or player has possession of ball (or similar object like puck) per game."
+                },
+                "seriesScore": {
+                    "type": "string",
+                    "description": "Number of events in a series won by team or player."
+                },
+                "seriesScoreOpposing": {
+                    "type": "string",
+                    "description": "Number of events in a series won by opposing team or player."
+                },
+                "adjustedScoreFor": {
+                    "type": "string",
+                    "description": "The final score as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
+                },
+                "adjustedScoreAgainst": {
+                    "type": "string",
+                    "description": "The final score against as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
+                },
                 "subScores": {"$ref": "#/definitions/subScores"},
                 "eventRecord": {"$ref": "#/definitions/eventRecord"},
                 "eventsPlayed": {
@@ -980,7 +1114,7 @@
                 "id": { "$ref": "#/definitions/idRef" },
                 "class": { "$ref": "#/definitions/class" },
                 "style": { "$ref": "#/definitions/style" },
-                "name": {"$ref": "#/definitions/name"},
+                "names": {"$ref": "#/definitions/names"},
                 "homeLocation": {"$ref": "#/definitions/location"},
                 "sportsProperties": {"$ref": "#/definitions/sportsProperties"},
                 "key": {
@@ -1086,6 +1220,10 @@
                 }
             }
         },
+        "playerStatsSet": {
+            "type": "array",
+            "items": {"$ref": "#/definitions/playerStats"}
+        },
         "playerStats": {
             "description": "Statistics that capture how a player has performed. Generally changes over the course of a sportsEvent.",
             "type": "object",
@@ -1135,10 +1273,117 @@
                     "$ref": "#/definitions/nonNegativeInteger",
                     "description": "Points accumulated by this associate. For example, points earned by a NASCAR owner."
                 },
-                "penaltyStats": {"$ref": "#/definitions/penaltyStats"},
-                "award": {"$ref": "#/definitions/award"},
+                "penaltyStats": {"$ref": "#/definitions/penaltyStatsSet"},
+                "awards": {"$ref": "#/definitions/awards"},
                 "rank": {"$ref": "#/definitions/rank"},
-                "scoreStats": { "$ref": "#/definitions/scoreStats" },
+                "score": {
+                    "type": "string",
+                    "description": "Final or current score of the team or player."
+                },
+                "scoreOpposing": {
+                    "type": "string",
+                    "description": "Final or current score of the opposing team or player."
+                },
+                "scoreAverage": {
+                    "type": "string",
+                    "description": "Average per-game score for the team or player."
+                },
+                "scoreOpposingAverage": {
+                    "type": "string",
+                    "description": "Average per-game score for the opposing team or player."
+                },
+                "scoreUnits": {
+                    "$ref": "#/definitions/qCode",
+                    "description": "Describes how the score and score-opposing is valued."
+                },
+                "scoreBehind": {
+                    "type": "string",
+                    "description": "The points or time behind the leading score."
+                },
+                "scoreAttempts": {
+                    "type": "string",
+                    "description": "Final or current number of attempts to score by a team or player. Example: in ice hockey, would represent total shots on goal."
+                },
+                "scoreAttemptsOpposing": {
+                    "type": "string",
+                    "description": "Final or current number of attempts to score by an opposing team or player."
+                },
+                "scoreAttemptsOnGoal": {
+                    "type": "string",
+                    "description": "A subset of score-attempts. Only counts those attempts that were on-goal."
+                },
+                "scoreAttemptsOnGoalOpposing": {
+                    "type": "string",
+                    "description": "Final or current number of attempts to score by an opposing team or player that were on-goal."
+                },
+                "scorePercentage": {
+                    "type": "string",
+                    "description": "Percentage of attempted scores that reached their mark."
+                },
+                "scorePercentageOpposing": {
+                    "type": "string",
+                    "description": "Percentage of attempted scores by opposing team or player that reached their mark."
+                },
+                "resultEffect": {
+                    "$ref": "#/definitions/qCode",
+                    "description": "Describes the effect that the result of the event or rank changing has had on the team. Example: Whether or not a team has qualified for the playoffs, or has been promoted or demoted to a different division."
+                },
+                "eventOutcome": {
+                    "$ref": "#/definitions/qCode",
+                    "description": "Whether the competitor won, lost, or tied. SportsML vocab uri: http://cv.iptc.org/newscodes/speventoutcome/"
+                },
+                "eventStandingPoints": {
+                    "type": "string",
+                    "description": "How many points were earned as a result of the outcome of this particular event."
+                },
+                "eventStandingPointsAgainst": {
+                    "type": "string",
+                    "description": "How many points were deducted as a result of the outcome of this particular event. This occurs, for example, in the German Handball leagues."
+                },
+                "scoreType": {
+                    "type": "string",
+                    "description": "Qualifies 'score' attribute."
+                },
+                "eventsRemaining": {
+                    "type": "string",
+                    "description": "Number of sports-events the player has yet to participate in."
+                },
+                "timeOfPossession": {
+                    "type": "string",
+                    "description": "Amount of time the team or player has possession of ball (or similar object like puck)."
+                },
+                "timeOfPossessionPercentage": {
+                    "type": "string",
+                    "description": "Amount of time the team or player has possession of ball (or similar object like puck) expressed as a percentage of the full time of the match."
+                },
+                "timeOfPossessionPercentageOpposing": {
+                    "type": "string",
+                    "description": "Amount of time the opposing team or player has possession of ball (or similar object like puck) expressed as a percentage of the full time of the match."
+                },
+                "timeOfPossessionAverage": {
+                    "type": "string",
+                    "description": "Amount of time the team or player has possession of ball (or similar object like puck) per game."
+                },
+                "timeOfPossessionAverageOpposing": {
+                    "type": "string",
+                    "description": "Amount of time the opposing team or player has possession of ball (or similar object like puck) per game."
+                },
+                "seriesScore": {
+                    "type": "string",
+                    "description": "Number of events in a series won by team or player."
+                },
+                "seriesScoreOpposing": {
+                    "type": "string",
+                    "description": "Number of events in a series won by opposing team or player."
+                },
+                "adjustedScoreFor": {
+                    "type": "string",
+                    "description": "The final score as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
+                },
+                "adjustedScoreAgainst": {
+                    "type": "string",
+                    "description": "The final score against as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
+                },
                 "subScores": {"$ref": "#/definitions/subScores"},
                 "eventRecord": {"$ref": "#/definitions/eventRecord"},
                 "eventsPlayed": {
@@ -1178,6 +1423,114 @@
                 "eventTimeExited": {
                     "type": "string",
                     "description": "Time player exited event expressed as conventional game-clock time. For example, the game minute a soccer player was subbed off the field."
+                },
+                "score": {
+                    "type": "string",
+                    "description": "Final or current score of the team or player."
+                },
+                "scoreOpposing": {
+                    "type": "string",
+                    "description": "Final or current score of the opposing team or player."
+                },
+                "scoreAverage": {
+                    "type": "string",
+                    "description": "Average per-game score for the team or player."
+                },
+                "scoreOpposingAverage": {
+                    "type": "string",
+                    "description": "Average per-game score for the opposing team or player."
+                },
+                "scoreUnits": {
+                    "$ref": "#/definitions/qCode",
+                    "description": "Describes how the score and score-opposing is valued."
+                },
+                "scoreBehind": {
+                    "type": "string",
+                    "description": "The points or time behind the leading score."
+                },
+                "scoreAttempts": {
+                    "type": "string",
+                    "description": "Final or current number of attempts to score by a team or player. Example: in ice hockey, would represent total shots on goal."
+                },
+                "scoreAttemptsOpposing": {
+                    "type": "string",
+                    "description": "Final or current number of attempts to score by an opposing team or player."
+                },
+                "scoreAttemptsOnGoal": {
+                    "type": "string",
+                    "description": "A subset of score-attempts. Only counts those attempts that were on-goal."
+                },
+                "scoreAttemptsOnGoalOpposing": {
+                    "type": "string",
+                    "description": "Final or current number of attempts to score by an opposing team or player that were on-goal."
+                },
+                "scorePercentage": {
+                    "type": "string",
+                    "description": "Percentage of attempted scores that reached their mark."
+                },
+                "scorePercentageOpposing": {
+                    "type": "string",
+                    "description": "Percentage of attempted scores by opposing team or player that reached their mark."
+                },
+                "resultEffect": {
+                    "$ref": "#/definitions/qCode",
+                    "description": "Describes the effect that the result of the event or rank changing has had on the team. Example: Whether or not a team has qualified for the playoffs, or has been promoted or demoted to a different division."
+                },
+                "eventOutcome": {
+                    "$ref": "#/definitions/qCode",
+                    "description": "Whether the competitor won, lost, or tied. SportsML vocab uri: http://cv.iptc.org/newscodes/speventoutcome/"
+                },
+                "eventStandingPoints": {
+                    "type": "string",
+                    "description": "How many points were earned as a result of the outcome of this particular event."
+                },
+                "eventStandingPointsAgainst": {
+                    "type": "string",
+                    "description": "How many points were deducted as a result of the outcome of this particular event. This occurs, for example, in the German Handball leagues."
+                },
+                "scoreType": {
+                    "type": "string",
+                    "description": "Qualifies 'score' attribute."
+                },
+                "eventsRemaining": {
+                    "type": "string",
+                    "description": "Number of sports-events the player has yet to participate in."
+                },
+                "timeOfPossession": {
+                    "type": "string",
+                    "description": "Amount of time the team or player has possession of ball (or similar object like puck)."
+                },
+                "timeOfPossessionPercentage": {
+                    "type": "string",
+                    "description": "Amount of time the team or player has possession of ball (or similar object like puck) expressed as a percentage of the full time of the match."
+                },
+                "timeOfPossessionPercentageOpposing": {
+                    "type": "string",
+                    "description": "Amount of time the opposing team or player has possession of ball (or similar object like puck) expressed as a percentage of the full time of the match."
+                },
+                "timeOfPossessionAverage": {
+                    "type": "string",
+                    "description": "Amount of time the team or player has possession of ball (or similar object like puck) per game."
+                },
+                "timeOfPossessionAverageOpposing": {
+                    "type": "string",
+                    "description": "Amount of time the opposing team or player has possession of ball (or similar object like puck) per game."
+                },
+                "seriesScore": {
+                    "type": "string",
+                    "description": "Number of events in a series won by team or player."
+                },
+                "seriesScoreOpposing": {
+                    "type": "string",
+                    "description": "Number of events in a series won by opposing team or player."
+                },
+                "adjustedScoreFor": {
+                    "type": "string",
+                    "description": "The final score as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
+                },
+                "adjustedScoreAgainst": {
+                    "type": "string",
+                    "description": "The final score against as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
                 },
                 "playerStatsAmericanFootball": {
                   "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-american-football.json#/definitions/americanFootballPlayerStats"
@@ -1219,7 +1572,7 @@
                 "id": { "$ref": "#/definitions/idRef" },
                 "class": { "$ref": "#/definitions/class" },
                 "style": { "$ref": "#/definitions/style" },
-                "name": {"$ref": "#/definitions/name"},
+                "names": {"$ref": "#/definitions/names"},
                 "homeLocation": {"$ref": "#/definitions/location"},
                 "sportsProperties": {"$ref": "#/definitions/sportsProperties"},
                 "key": {
@@ -1316,7 +1669,7 @@
                 "id": { "$ref": "#/definitions/idRef" },
                 "class": { "$ref": "#/definitions/class" },
                 "style": { "$ref": "#/definitions/style" },
-                "name": {"$ref": "#/definitions/name"},
+                "names": {"$ref": "#/definitions/names"},
                 "homeLocation": {"$ref": "#/definitions/location"},
                 "sportsProperties": {"$ref": "#/definitions/sportsProperties"},
                 "key": {
@@ -1387,6 +1740,35 @@
                 }
             }
         },
+        "titles": {
+            "type": "array",
+            "items": {"$ref": "#/definitions/title"}
+        },
+        "title": {
+            "description": "A short natural language name for the catalog.",
+            "type": "string"
+        },
+        "catalogRefs": {
+            "type": "array",
+            "items": {"$ref": "#/definitions/catalogRef"}
+        },
+        "catalogRef": {
+            "description": "A reference to a remote catalog. A hyperlink to a set of scheme alias declarations.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": { "$ref": "#/definitions/idRef" },
+                "class": { "$ref": "#/definitions/class" },
+                "style": { "$ref": "#/definitions/style" },
+                "titles": { "$ref": "#/definitions/titles" },
+                "href": {
+                    "description": "A hyperlink to a remote Catalog.",
+                    "type": "string",
+                    "format": "uri"
+                }
+            }
+
+        },
         "advisory": {
             "description": "A short textual message to editors receiving the document. | Not generally published through to end-users.",
             "type": "object",
@@ -1400,6 +1782,18 @@
                     "$ref": "#/definitions/name"
                 }
             }
+        },
+        "sportsTitles": {
+            "type": "array",
+            "items": {"$ref": "#/definitions/sportsTitle"}
+        },
+        "sportsTitle": {
+            "$ref": "#/definitions/name",
+            "description": "A short textual description of the document. | Can show up in search results."
+        },
+        "sportsMetadataSet": {
+            "type": "array",
+            "items": {"$ref": "#/definitions/sportsMetadata"}
         },
         "sportsMetadata": {
             "description": "Generic metadata object for many SportsJS elements.",
@@ -1442,14 +1836,15 @@
                 "measurementUnits": { "$ref": "#/definitions/measurementUnits" },
                 "sportsContentCodes": {"$ref": "#/definitions/sportsContentCodes"},
                 "sportsProperties": {"$ref": "#/definitions/sportsProperties"},
+                "catalogRefs": {
+                    "$ref": "#/definitions/catalogRefs",
+                    "description": "A reference to the document listing externally-supplied controlled vocabularies. | The catalog file can be in NewsML 1."
+                },
                 "catalog": {
                     "$ref": "#/definitions/catalog",
                     "description": "A reference to the document listing externally-supplied controlled vocabularies. | The catalog file can be in NewsML 1."
                 },
-                "sportsTitle": {
-                    "$ref": "#/definitions/name",
-                    "description": "A short textual description of the document. | Can show up in search results."
-                },
+                "sportsTitles": {"$ref": "#/definitions/sportsTitles"},
                 "advisory": {
                     "$ref": "#/definitions/advisory",
                     "description": "A short textual message to editors receiving the document. | Not generally published through to end-users."
@@ -1492,7 +1887,6 @@
         "sportsContentCodes": {
             "description": "A container for content-codes. | Can hold as many codes as needed to describe all contents at this level and below.",
             "type": "array",
-            "additionalProperties": false,
             "items": {"$ref": "#/definitions/sportsContentCode"}
         },
         "sportsContentCode": {
@@ -1503,8 +1897,8 @@
                 "id": { "$ref": "#/definitions/idRef" },
                 "class": { "$ref": "#/definitions/class" },
                 "style": { "$ref": "#/definitions/style" },
-                "sportsContentQualifier": {
-                    "$ref": "#/definitions/sportsContentQualifier",
+                "sportsContentQualifiers": {
+                    "$ref": "#/definitions/sportsContentQualifiers",
                     "description": ""
                 },
                 "codeType": {
@@ -1521,9 +1915,12 @@
                 }
             }
         },
+        "sportsContentQualifiers": {
+            "type": "array",
+            "items": {"$ref": "#/definitions/sportsContentQualifier"}
+        },
         "sportsContentQualifier": {
-            "$comment": "Going by the description, this should be an array",
-            "description": "Further refinement/elaboration of a sports-content-code. | If the document covers more than one of these, additional sports-content-qualifier elements may be used.",
+            "description": "Further refinement/elaboration of a sports-content-code.",
             "type": "object",
             "additionalProperties": false,
             "properties": {
@@ -1675,6 +2072,10 @@
                 }
             }
         },
+        "sites": {
+            "type": "array",
+            "items": {"$ref": "#/definitions/site"}
+        },
         "site": {
             "description": "An element housing data having to do with a venue, stadium, arena, field, etc.",
             "type": "object",
@@ -1688,7 +2089,7 @@
                     "description": ""
                 },
                 "siteStats": {
-                    "$ref": "#/definitions/siteStats",
+                    "$ref": "#/definitions/siteStatsSet",
                     "description": ""
                 }
             }
@@ -1701,7 +2102,7 @@
                 "id": { "$ref": "#/definitions/idRef" },
                 "class": { "$ref": "#/definitions/class" },
                 "style": { "$ref": "#/definitions/style" },
-                "name": {"$ref": "#/definitions/name"},
+                "names": {"$ref": "#/definitions/names"},
                 "homeLocation": {"$ref": "#/definitions/location"},
                 "sportsProperties": {"$ref": "#/definitions/sportsProperties"},
                 "key": {
@@ -1759,6 +2160,10 @@
                     "description": "Date (and time) when a place ceased to exist."
                 }
             }
+        },
+        "siteStatsSet": {
+            "type": "array",
+            "items": {"$ref": "#/definitions/siteStats"}
         },
         "siteStats": {
             "description": "Holder for statistics about the site.",
@@ -1860,7 +2265,7 @@
                 "class": { "$ref": "#/definitions/class" },
                 "style": { "$ref": "#/definitions/style" },
                 "teamMetadata": {"$ref": "#/definitions/teamMetadata"},
-                "teamStats": {"$ref": "#/definitions/teamStats"},
+                "teamStats": {"$ref": "#/definitions/teamStatsSet"},
                 "players": {"$ref": "#/definitions/players"},
                 "wageringStats": {"$ref": "#/definitions/wageringStats"},
                 "associates": {"$ref": "#/definitions/associates"},
@@ -1910,6 +2315,10 @@
                     "description": "The attempts to score during the period (or scoring unit)."
                 }
             }
+        },
+        "penaltyStatsSet": {
+            "type": "array",
+            "items": {"$ref": "#/definitions/penaltyStats"}
         },
         "penaltyStats": {
             "description": "Statistics that detail the number of each type of penalty. | Can be recorded for either a team or a player.",
@@ -2128,7 +2537,7 @@
                 "id": { "$ref": "#/definitions/idRef" },
                 "class": { "$ref": "#/definitions/class" },
                 "style": { "$ref": "#/definitions/style" },
-                "name": {"$ref": "#/definitions/name"},
+                "names": {"$ref": "#/definitions/names"},
                 "awardType": {
                     "$ref": "#/definitions/qCode",
                     "description": "Type of award."
@@ -2278,7 +2687,7 @@
                 "class": { "$ref": "#/definitions/class" },
                 "style": { "$ref": "#/definitions/style" },
                 "playerMetadata": {"$ref": "#/definitions/playerMetadata"},
-                "playerStats": {"$ref": "#/definitions/playerStats"},
+                "playerStats": {"$ref": "#/definitions/playerStatsSet"},
                 "wageringStats": {"$ref": "#/definitions/wageringStats"},
                 "associate": {"$ref": "#/definitions/associate"},
                 "affiliation": {"$ref": "#/definitions/affiliation"}
@@ -2312,7 +2721,7 @@
             }
         },
         "associates": {
-            "description": "A set of associates",
+            "description": "A set of associate objects",
             "type": "array",
             "items": {"$ref": "#/definitions/associate"}
         },
@@ -2392,6 +2801,10 @@
                 }
             }
         },
+        "tournaments": {
+            "type": "array",
+            "items": {"$ref": "#/definitions/tournament"}
+        },
         "tournament": {
             "description": "A structured series of competitions within one sport. | Generally organized by a particular sponsoring body. Can happen all in one day, or be spread out - like the Davis Cup in tennis.",
             "type": "object",
@@ -2436,13 +2849,13 @@
                 "class": { "$ref": "#/definitions/class" },
                 "style": { "$ref": "#/definitions/style" },
                 "tournamentDivisionMetadata": {"$ref": "#/definitions/tournamentDivisionMetadata"},
-                "standing": {"$ref": "#/definitions/standing"},
+                "standings": {"$ref": "#/definitions/standings"},
                 "tournamentParts": {"$ref": "#/definitions/tournamentParts"},
-                "sportsEvent": {"$ref": "#/definitions/sportsEvent"}
+                "sportsEvents": {"$ref": "#/definitions/sportsEvents"}
             }
         },
         "tournamentParts": {
-            "description": "A set of tournament parts",
+            "description": "A set of tournament part objects",
             "type": "array",
             "items": {"$ref": "#/definitions/tournamentPart"}
         },
@@ -2456,13 +2869,18 @@
                 "style": { "$ref": "#/definitions/style" },
                 "tournamentPartMetadata": {"$ref": "#/definitions/tournamentPartMetadata"},
                 "standing": {"$ref": "#/definitions/standing"},
-                "tournamentPart": {"$ref": "#/definitions/tournamentPart"},
-                "sportsEvent": {"$ref": "#/definitions/sportsEvent"},
+                "tournamentParts": {"$ref": "#/definitions/tournamentParts"},
+                "sportsEvents": {"$ref": "#/definitions/sportsEvents"},
                 "partIndex": {
                     "type": "string",
                     "description": "For provider-specific tournament indexing systems. DPA, for example, has one that looks like this: part-name='Group A' part-index='p1/1/p2/A'"
                 }
             }
+        },
+        "articles": {
+            "type": "array",
+            "description": "A set of articles",
+            "items": {"$ref": "#/definitions/article"}
         },
         "article": {
             "description": "Holds either an article or a reference to an article. | Recommended format is NITF.",
@@ -2490,6 +2908,11 @@
                     "description": "URL or system identifier (or IDREF?) to an externally-located news article."
                 }
             }
+        },
+        "standings": {
+            "type": "array",
+            "description": "A set of standings",
+            "items": {"$ref": "#/definitions/standing"}
         },
         "standing": {
             "description": "Also known as a (league) table | A ranked, comparative list of team or individual records.",
@@ -2561,6 +2984,11 @@
                 "sportsProperties": {"$ref": "#/definitions/sportsProperties"}
             }
         },
+        "schedules": {
+            "type": "array",
+            "description": "A set of schedules",
+            "items": {"$ref": "#/definitions/schedule"}
+        },
         "schedule": {
             "description": "A series of games. | Usually grouped by date.",
             "type": "object",
@@ -2627,6 +3055,11 @@
                 "sportsContentCodes": {"$ref": "#/definitions/sportsContentCodes"},
                 "sportsProperties": {"$ref": "#/definitions/sportsProperties"}
             }
+        },
+        "statistics": {
+            "type": "array",
+            "description": "A set of statistic objects",
+            "items": {"$ref": "#/definitions/statistic"}
         },
         "statistic": {
             "description": "A table that generally compares the performance of teams or players. | The fixture-key can identify which regulary-running statistics are being presented. Also appropriate for rosters (squad listings).",
@@ -2875,9 +3308,9 @@
                 "measurementUnits": { "$ref": "#/definitions/measurementUnits" },
                 "sportsContentCodes": {"$ref": "#/definitions/sportsContentCodes"},
                 "sportsProperties": {"$ref": "#/definitions/sportsProperties"},
-                "name": {"$ref": "#/definitions/name"},
-                "site": {"$ref": "#/definitions/site"},
-                "award": {"$ref": "#/definitions/award"},
+                "names": {"$ref": "#/definitions/names"},
+                "sites": {"$ref": "#/definitions/sites"},
+                "awards": {"$ref": "#/definitions/awards"},
                 "key": {"$ref": "#/definitions/tournamentKey"},
                 "groupType": {
                     "type": "string",
@@ -2938,10 +3371,117 @@
                     "$ref": "#/definitions/nonNegativeInteger",
                     "description": "Points accumulated by this associate. For example, points earned by a NASCAR owner."
                 },
-                "penaltyStats": {"$ref": "#/definitions/penaltyStats"},
-                "award": {"$ref": "#/definitions/award"},
+                "penaltyStats": {"$ref": "#/definitions/penaltyStatsSet"},
+                "awards": {"$ref": "#/definitions/awards"},
                 "rank": {"$ref": "#/definitions/rank"},
-                "scoreStats": { "$ref": "#/definitions/scoreStats" }
+                "score": {
+                    "type": "string",
+                    "description": "Final or current score of the team or player."
+                },
+                "scoreOpposing": {
+                    "type": "string",
+                    "description": "Final or current score of the opposing team or player."
+                },
+                "scoreAverage": {
+                    "type": "string",
+                    "description": "Average per-game score for the team or player."
+                },
+                "scoreOpposingAverage": {
+                    "type": "string",
+                    "description": "Average per-game score for the opposing team or player."
+                },
+                "scoreUnits": {
+                    "$ref": "#/definitions/qCode",
+                    "description": "Describes how the score and score-opposing is valued."
+                },
+                "scoreBehind": {
+                    "type": "string",
+                    "description": "The points or time behind the leading score."
+                },
+                "scoreAttempts": {
+                    "type": "string",
+                    "description": "Final or current number of attempts to score by a team or player. Example: in ice hockey, would represent total shots on goal."
+                },
+                "scoreAttemptsOpposing": {
+                    "type": "string",
+                    "description": "Final or current number of attempts to score by an opposing team or player."
+                },
+                "scoreAttemptsOnGoal": {
+                    "type": "string",
+                    "description": "A subset of score-attempts. Only counts those attempts that were on-goal."
+                },
+                "scoreAttemptsOnGoalOpposing": {
+                    "type": "string",
+                    "description": "Final or current number of attempts to score by an opposing team or player that were on-goal."
+                },
+                "scorePercentage": {
+                    "type": "string",
+                    "description": "Percentage of attempted scores that reached their mark."
+                },
+                "scorePercentageOpposing": {
+                    "type": "string",
+                    "description": "Percentage of attempted scores by opposing team or player that reached their mark."
+                },
+                "resultEffect": {
+                    "$ref": "#/definitions/qCode",
+                    "description": "Describes the effect that the result of the event or rank changing has had on the team. Example: Whether or not a team has qualified for the playoffs, or has been promoted or demoted to a different division."
+                },
+                "eventOutcome": {
+                    "$ref": "#/definitions/qCode",
+                    "description": "Whether the competitor won, lost, or tied. SportsML vocab uri: http://cv.iptc.org/newscodes/speventoutcome/"
+                },
+                "eventStandingPoints": {
+                    "type": "string",
+                    "description": "How many points were earned as a result of the outcome of this particular event."
+                },
+                "eventStandingPointsAgainst": {
+                    "type": "string",
+                    "description": "How many points were deducted as a result of the outcome of this particular event. This occurs, for example, in the German Handball leagues."
+                },
+                "scoreType": {
+                    "type": "string",
+                    "description": "Qualifies 'score' attribute."
+                },
+                "eventsRemaining": {
+                    "type": "string",
+                    "description": "Number of sports-events the player has yet to participate in."
+                },
+                "timeOfPossession": {
+                    "type": "string",
+                    "description": "Amount of time the team or player has possession of ball (or similar object like puck)."
+                },
+                "timeOfPossessionPercentage": {
+                    "type": "string",
+                    "description": "Amount of time the team or player has possession of ball (or similar object like puck) expressed as a percentage of the full time of the match."
+                },
+                "timeOfPossessionPercentageOpposing": {
+                    "type": "string",
+                    "description": "Amount of time the opposing team or player has possession of ball (or similar object like puck) expressed as a percentage of the full time of the match."
+                },
+                "timeOfPossessionAverage": {
+                    "type": "string",
+                    "description": "Amount of time the team or player has possession of ball (or similar object like puck) per game."
+                },
+                "timeOfPossessionAverageOpposing": {
+                    "type": "string",
+                    "description": "Amount of time the opposing team or player has possession of ball (or similar object like puck) per game."
+                },
+                "seriesScore": {
+                    "type": "string",
+                    "description": "Number of events in a series won by team or player."
+                },
+                "seriesScoreOpposing": {
+                    "type": "string",
+                    "description": "Number of events in a series won by opposing team or player."
+                },
+                "adjustedScoreFor": {
+                    "type": "string",
+                    "description": "The final score as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
+                },
+                "adjustedScoreAgainst": {
+                    "type": "string",
+                    "description": "The final score against as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
+                }
             }
         },
         "genericStats": {
@@ -3010,7 +3550,7 @@
                     "$ref": "#/definitions/name",
                     "description": "The name of the stat. SportsML names are same as attribute names of stats in the sport-specific plugins."
                 },
-                "stat": {"$ref": "#/definitions/genericStat"}
+                "stats": {"$ref": "#/definitions/genericStats"}
             }
         },
         "wageringStats": {
@@ -3487,11 +4027,11 @@
                     "description": "The type of competitive action taken on the field of play. See 'action' SportsML vocabs for various sports: http://cv.iptc.org/newscodes/spamfaction/ http://cv.iptc.org/newscodes/spbblaction/ http://cv.iptc.org/newscodes/spbkbaction/ http://cv.iptc.org/newscodes/spichaction/ http://cv.iptc.org/newscodes/spmcraction/ http://cv.iptc.org/newscodes/rgxaction/ http://cv.iptc.org/newscodes/spsocaction/ http://cv.iptc.org/newscodes/sptenaction/"
                 },
                 "timeElapsed": {
-                    "$ref": "#/definitions/truncatedDateTime",
+                    "$ref": "#/definitions/truncatedTime",
                     "description": "Total time elapsed of event"
                 },
                 "timeRemaining": {
-                    "$ref": "#/definitions/truncatedDateTime",
+                    "$ref": "#/definitions/truncatedTime",
                     "description": "Time remaining of event"
                 },
                 "playerCount": {
@@ -3515,7 +4055,7 @@
                     "description": "The zone on the playing field where the action took place. qcoded value that can be sport specific"
                 },
                 "powerPlayTimeRemaining": {
-                    "$ref": "#/definitions/truncatedDateTime",
+                    "$ref": "#/definitions/truncatedTime",
                     "description": "Time remaining of powerplay"
                 },
                 "powerPlayAdvantage": {
@@ -3543,7 +4083,7 @@
                     "description": "Number or name of current period of event. Normally a number but can be things like OT etc"
                 },
                 "periodLength": {
-                    "$ref": "#/definitions/truncatedDateTime",
+                    "$ref": "#/definitions/truncatedTime",
                     "description": "Length of current period of event"
                 },
                 "scoreTeam": {
@@ -4680,121 +5220,6 @@
         "measurementUnits": {
             "type": "string",
             "description": "The type of unit used to measure distance, speed, etc. Could be mph, kph, metres, yards, etc."
-        },
-        "scoreStats": {
-            "description": "",
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "score": {
-                    "type": "string",
-                    "description": "Final or current score of the team or player."
-                },
-                "scoreOpposing": {
-                    "type": "string",
-                    "description": "Final or current score of the opposing team or player."
-                },
-                "scoreAverage": {
-                    "type": "string",
-                    "description": "Average per-game score for the team or player."
-                },
-                "scoreOpposingAverage": {
-                    "type": "string",
-                    "description": "Average per-game score for the opposing team or player."
-                },
-                "scoreUnits": {
-                    "$ref": "#/definitions/qCode",
-                    "description": "Describes how the score and score-opposing is valued."
-                },
-                "scoreBehind": {
-                    "type": "string",
-                    "description": "The points or time behind the leading score."
-                },
-                "scoreAttempts": {
-                    "type": "string",
-                    "description": "Final or current number of attempts to score by a team or player. Example: in ice hockey, would represent total shots on goal."
-                },
-                "scoreAttemptsOpposing": {
-                    "type": "string",
-                    "description": "Final or current number of attempts to score by an opposing team or player."
-                },
-                "scoreAttemptsOnGoal": {
-                    "type": "string",
-                    "description": "A subset of score-attempts. Only counts those attempts that were on-goal."
-                },
-                "scoreAttemptsOnGoalOpposing": {
-                    "type": "string",
-                    "description": "Final or current number of attempts to score by an opposing team or player that were on-goal."
-                },
-                "scorePercentage": {
-                    "type": "string",
-                    "description": "Percentage of attempted scores that reached their mark."
-                },
-                "scorePercentageOpposing": {
-                    "type": "string",
-                    "description": "Percentage of attempted scores by opposing team or player that reached their mark."
-                },
-                "resultEffect": {
-                    "$ref": "#/definitions/qCode",
-                    "description": "Describes the effect that the result of the event or rank changing has had on the team. Example: Whether or not a team has qualified for the playoffs, or has been promoted or demoted to a different division."
-                },
-                "eventOutcome": {
-                    "$ref": "#/definitions/qCode",
-                    "description": "Whether the competitor won, lost, or tied. SportsML vocab uri: http://cv.iptc.org/newscodes/speventoutcome/"
-                },
-                "eventStandingPoints": {
-                    "type": "string",
-                    "description": "How many points were earned as a result of the outcome of this particular event."
-                },
-                "eventStandingPointsAgainst": {
-                    "type": "string",
-                    "description": "How many points were deducted as a result of the outcome of this particular event. This occurs, for example, in the German Handball leagues."
-                },
-                "scoreType": {
-                    "type": "string",
-                    "description": "Qualifies 'score' attribute."
-                },
-                "eventsRemaining": {
-                    "type": "string",
-                    "description": "Number of sports-events the player has yet to participate in."
-                },
-                "timeOfPossession": {
-                    "type": "string",
-                    "description": "Amount of time the team or player has possession of ball (or similar object like puck)."
-                },
-                "timeOfPossessionPercentage": {
-                    "type": "string",
-                    "description": "Amount of time the team or player has possession of ball (or similar object like puck) expressed as a percentage of the full time of the match."
-                },
-                "timeOfPossessionPercentageOpposing": {
-                    "type": "string",
-                    "description": "Amount of time the opposing team or player has possession of ball (or similar object like puck) expressed as a percentage of the full time of the match."
-                },
-                "timeOfPossessionAverage": {
-                    "type": "string",
-                    "description": "Amount of time the team or player has possession of ball (or similar object like puck) per game."
-                },
-                "timeOfPossessionAverageOpposing": {
-                    "type": "string",
-                    "description": "Amount of time the opposing team or player has possession of ball (or similar object like puck) per game."
-                },
-                "seriesScore": {
-                    "type": "string",
-                    "description": "Number of events in a series won by team or player."
-                },
-                "seriesScoreOpposing": {
-                    "type": "string",
-                    "description": "Number of events in a series won by opposing team or player."
-                },
-                "adjustedScoreFor": {
-                    "type": "string",
-                    "description": "The final score as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
-                },
-                "adjustedScoreAgainst": {
-                    "type": "string",
-                    "description": "The final score against as adjusted by some authority. Usually as a result of some dispute or transgression that must be settled post-event and rendered in the score. Will differ from the regular score reflecting the number of actual goals scored in play. Should be tested for before displaying actual score."
-                }
-            }
         }
     }
 }
