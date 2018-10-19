@@ -20,21 +20,21 @@
                 }
             }
         },
-        "tournamentDivision_x": [
+        "tournamentDivisions": [
             {
                 "tournamentDivisionMetadata": {
-                    "sportsContentCodes": {
-                        "sportsContentCode": {
+                    "sportsContentCodes": [
+                        {
                             "codeType": "subj:qual",
                             "sportsContentQualifier": {
                                 "gender": "male",
-                                "ParticipantCount": "spparticipantcount:individual"
+                                "participantCount": "spparticipantcount:individual"
                             }
                         }
-                    }
+                    ]
                 },
                 "sportsEvent": {
-                    "player": [
+                    "players": [
                         {
                             "playerMetadata": {
                                 "dateOfBirth": "1985",
