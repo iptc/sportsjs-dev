@@ -69,6 +69,7 @@
             "type": "object",
             "additionalProperties": false,
             "properties": {
+                "POIDetails": {"$ref": "#/definitions/location"},
                 "contactInfo": {"$ref": "#/definitions/contactInfo"},
                 "address": {"$ref": "#/definitions/address"},
                 "position": {"$ref": "#/definitions/position"},
@@ -99,6 +100,26 @@
                 "address": {"$ref": "#/definitions/address"}
             }
         },
+        "localities": {
+            "type": "array",
+            "items": {"$ref": "#/definitions/locality"}
+        },
+        "locality": {
+            "description": "The city or locality.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "names": {"$ref": "#/definitions/names"}
+            }
+        },
+        "country": {
+            "description": "Name of the country.",
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "names": {"$ref": "#/definitions/names"}
+            }
+        },
         "address": {
             "description": " An address. Its use is refined by the object wrapping it.",
             "type": "object",
@@ -114,6 +135,7 @@
                     "description": "The city or locality.",
                     "type": "string"
                 },
+                "localities": { "$ref": "#/definitions/localities" },
                 "county": {
                     "description": "Name of a subdivision of the region.",
                     "type": "string"
@@ -126,12 +148,13 @@
                     "description": "The postal code.",
                     "type": "string"
                 },
+                "country": { "$ref": "#/definitions/country" },
                 "countryName": {
-                    "description": "Name of the country.",
+                    "description": "Name of the country. (Not in XML Schema - added by group?)",
                     "type": "string"
                 },
                 "countryCode": {
-                    "description": "An ISO two-letter or three-letter country-code.",
+                    "description": "An ISO two-letter or three-letter country-code. (Not in XML Schema - added by group?)",
                     "type": "string"
                 },
                 "worldRegion": {
@@ -1134,7 +1157,7 @@
                     "description": "The day on which a person died, normalized to ISO 8601 extended format: YYYY-MM-DDTHH:MM:SS+HH:MM. Use YYYY-MM-DD when no time is available."
                 },
                 "height": {
-                    "$ref": "#/definitions/nonNegativeInteger",
+                    "type": "string",
                     "description": "Height of the person. Generally in cm."
                 },
                 "weight": {
