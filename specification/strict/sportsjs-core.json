@@ -1790,7 +1790,6 @@
                     "format": "uri"
                 }
             }
-
         },
         "advisory": {
             "description": "A short textual message to editors receiving the document. | Not generally published through to end-users.",

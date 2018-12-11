@@ -1,0 +1,1543 @@
+{
+    "statistics": [
+        {
+            "contentLabel": "Team Roster",
+            "statisticMetadata": {
+                "teamCoverage": "single-team",
+                "temporalUnitType": "spct:season-regular",
+                "temporalUnitValue": "vendor:2014"
+            },
+            "teams": [
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.21",
+                        "names": [
+                            {
+                                "full": "Dallas Stars"
+                            },
+                            {
+                                "alternate": "Dallas"
+                            },
+                            {
+                                "nickname": "Stars"
+                            }
+                        ]
+                    },
+                    "players": [
+                        {
+                            "id": "l.nhl.com-p.5099",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.5099",
+                                "dateOfDeath": "1995-12-03",
+                                "height": "5-7",
+                                "weight": 133,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Julius Honka"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.5121",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.5121",
+                                "dateOfDeath": "1996-03-17",
+                                "height": "6-2",
+                                "weight": 182,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Brett Pollock"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4460",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4460",
+                                "dateOfDeath": "1994-07-20",
+                                "height": "6-1",
+                                "weight": 169,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Ludwig Bystrom"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4464",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4464",
+                                "dateOfDeath": "1994-05-23",
+                                "height": "6-3",
+                                "weight": 194,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Esa Lindell"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4537",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4537",
+                                "dateOfDeath": "1994-03-20",
+                                "height": "6-2",
+                                "weight": 174,
+                                "positionRegular": "spichposition:right-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Branden Troock"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4546",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4546",
+                                "dateOfDeath": "1994-02-26",
+                                "height": "6-1",
+                                "weight": 167,
+                                "positionRegular": "spichposition:goalie",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Henri Kiviaho"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4427",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4427",
+                                "dateOfDeath": "1994-04-16",
+                                "height": "5-10",
+                                "weight": 161,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Gemel Smith"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.2106",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.2106",
+                                "dateOfDeath": "1984-04-21",
+                                "height": "5-11",
+                                "weight": 200,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Derek Meech"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4328",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4328",
+                                "dateOfDeath": "1989-03-12",
+                                "height": "5-11",
+                                "weight": 190,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Matt Mangene"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4740",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4740",
+                                "dateOfDeath": "1995-07-04",
+                                "height": "6-1",
+                                "weight": 179,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Jason Dickinson"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4054",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4054",
+                                "dateOfDeath": "1992-10-03",
+                                "height": "6-2",
+                                "weight": 169,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Mattias Backman"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4158",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4158",
+                                "dateOfDeath": "1993-02-03",
+                                "height": "6-0",
+                                "weight": 170,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Emil Molin"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4878",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4878",
+                                "dateOfDeath": "1992-12-08",
+                                "height": "6-1",
+                                "weight": 189,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Mattias Janmark-Nylen"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4806",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4806",
+                                "dateOfDeath": "1995-04-16",
+                                "height": "6-0",
+                                "weight": 203,
+                                "positionRegular": "spichposition:left-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Remi Elie"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4961",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4961",
+                                "dateOfDeath": "1991-01-06",
+                                "height": "6-2",
+                                "weight": 195,
+                                "positionRegular": "spichposition:right-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Ludwig Karlsson"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.2528",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.2528",
+                                "dateOfDeath": "1988-06-25",
+                                "height": "5-10",
+                                "weight": 166,
+                                "positionRegular": "spichposition:goalie",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Jhonas Enroth"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.3454",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.3454",
+                                "dateOfDeath": "1992-01-09",
+                                "height": "6-3",
+                                "weight": 190,
+                                "positionRegular": "spichposition:goalie",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Jack Campbell"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.2968",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.2968",
+                                "dateOfDeath": "1991-03-16",
+                                "height": "6-1",
+                                "weight": 210,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "William Wrenn"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4053",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4053",
+                                "dateOfDeath": "1991-08-20",
+                                "height": "6-3",
+                                "weight": 205,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Jyrki Jokipakka"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.3625",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.3625",
+                                "dateOfDeath": "1992-08-14",
+                                "height": "6-2",
+                                "weight": 180,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "John Klingberg"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.2732",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.2732",
+                                "dateOfDeath": "1988-06-09",
+                                "height": "6-1",
+                                "weight": 195,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Jason Demers"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.3872",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.3872",
+                                "dateOfDeath": "1992-12-21",
+                                "height": "6-7",
+                                "weight": 250,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Jamie Oleksiak"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.1440",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.1440",
+                                "dateOfDeath": "1983-10-09",
+                                "height": "5-11",
+                                "weight": 195,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Trevor Daley"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4314",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4314",
+                                "dateOfDeath": "1988-11-07",
+                                "height": "5-11",
+                                "weight": 180,
+                                "positionRegular": "spichposition:right-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Austin Smith"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.229",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.229",
+                                "dateOfDeath": "1978-09-17",
+                                "height": "6-1",
+                                "weight": 205,
+                                "positionRegular": "spichposition:right-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Shawn Horcoff"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.3724",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.3724",
+                                "dateOfDeath": "1990-10-01",
+                                "height": "5-10",
+                                "weight": 185,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Justin Dowling"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.3138",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.3138",
+                                "dateOfDeath": "1991-02-22",
+                                "height": "6-2",
+                                "weight": 210,
+                                "positionRegular": "spichposition:left-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Curtis McKenzie"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.2577",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.2577",
+                                "dateOfDeath": "1989-07-18",
+                                "height": "6-2",
+                                "weight": 210,
+                                "positionRegular": "spichposition:left-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Jamie Benn"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.2919",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.2919",
+                                "dateOfDeath": "1991-02-22",
+                                "height": "6-1",
+                                "weight": 185,
+                                "positionRegular": "spichposition:right-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Scott Glennie"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4253",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4253",
+                                "dateOfDeath": "1985-08-12",
+                                "height": "6-0",
+                                "weight": 195,
+                                "positionRegular": "spichposition:left-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Ryan Garbutt"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.2149",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.2149",
+                                "dateOfDeath": "1982-07-08",
+                                "height": "5-11",
+                                "weight": 195,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Rich Peverley"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.1907",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.1907",
+                                "dateOfDeath": "1984-05-01",
+                                "height": "6-0",
+                                "weight": 200,
+                                "positionRegular": "spichposition:right-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Patrick Eaves"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.485",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.485",
+                                "dateOfDeath": "1978-10-27",
+                                "height": "5-10",
+                                "weight": 195,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Toby Petersen"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.2940",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.2940",
+                                "dateOfDeath": "1991-05-24",
+                                "height": "6-0",
+                                "weight": 190,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Cody Eakin"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.3895",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.3895",
+                                "dateOfDeath": "1993-07-01",
+                                "height": "6-3",
+                                "weight": 220,
+                                "positionRegular": "spichposition:right-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Brett Ritchie"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.3716",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.3716",
+                                "dateOfDeath": "1989-11-21",
+                                "height": "6-0",
+                                "weight": 200,
+                                "positionRegular": "spichposition:left-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Antoine Roussel"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.2764",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.2764",
+                                "dateOfDeath": "1989-04-20",
+                                "height": "6-0",
+                                "weight": 200,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Colton Sceviour"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4254",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4254",
+                                "dateOfDeath": "1987-07-26",
+                                "height": "6-2",
+                                "weight": 200,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Jordie Benn"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4284",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4284",
+                                "dateOfDeath": "1992-01-24",
+                                "height": "6-2",
+                                "weight": 210,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Taylor Peters"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4435",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4435",
+                                "dateOfDeath": "1984-12-27",
+                                "height": "5-11",
+                                "weight": 190,
+                                "positionRegular": "spichposition:left-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Mike Hedden"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.1393",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.1393",
+                                "dateOfDeath": "1982-04-06",
+                                "height": "6-2",
+                                "weight": 212,
+                                "positionRegular": "spichposition:left-forward",
+                                "health": "sphealth:injured",
+                                "names": [
+                                    {
+                                        "full": "Travis Moen"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:injured",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4187",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4187",
+                                "dateOfDeath": "1993-07-11",
+                                "height": "6-3",
+                                "weight": 200,
+                                "positionRegular": "spichposition:right-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Matej Stransky"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.5032",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.5032",
+                                "dateOfDeath": "1989-12-01",
+                                "height": "6-1",
+                                "weight": 190,
+                                "positionRegular": "spichposition:goalie",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Josh Robinson"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.740",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.740",
+                                "dateOfDeath": "1974-04-15",
+                                "height": "5-11",
+                                "weight": 201,
+                                "positionRegular": "spichposition:goalie",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Tim Thomas"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.1362",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.1362",
+                                "dateOfDeath": "1983-11-16",
+                                "height": "6-4",
+                                "weight": 210,
+                                "positionRegular": "spichposition:goalie",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Kari Lehtonen"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.2377",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.2377",
+                                "dateOfDeath": "1985-07-30",
+                                "height": "5-11",
+                                "weight": 190,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Alex Goligoski"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.2841",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.2841",
+                                "dateOfDeath": "1990-03-19",
+                                "height": "6-1",
+                                "weight": 210,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Cameron Gaunce"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.3501",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.3501",
+                                "dateOfDeath": "1992-02-08",
+                                "height": "6-3",
+                                "weight": 230,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Patrick Nemeth"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.1192",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.1192",
+                                "dateOfDeath": "1980-05-09",
+                                "height": "5-11",
+                                "weight": 205,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Vernon Fiddler"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.2279",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.2279",
+                                "dateOfDeath": "1984-12-07",
+                                "height": "6-4",
+                                "weight": 210,
+                                "positionRegular": "spichposition:left-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Francis Wathier"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.3691",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.3691",
+                                "dateOfDeath": "1992-05-03",
+                                "height": "5-10",
+                                "weight": 185,
+                                "positionRegular": "spichposition:left-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Brendan Ranford"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.2200",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.2200",
+                                "dateOfDeath": "1984-01-09",
+                                "height": "6-1",
+                                "weight": 190,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Travis Morin"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.3385",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.3385",
+                                "dateOfDeath": "1987-05-22",
+                                "height": "6-5",
+                                "weight": 210,
+                                "positionRegular": "spichposition:goalie",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Jussi Rynnas"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4349",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4349",
+                                "dateOfDeath": "1984-02-16",
+                                "height": "6-3",
+                                "weight": 190,
+                                "positionRegular": "spichposition:goalie",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Cristopher Nilstorp"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4173",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4173",
+                                "dateOfDeath": "1993-08-02",
+                                "height": "6-4",
+                                "weight": 225,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Troy Vance"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4707",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4707",
+                                "dateOfDeath": "1995-03-04",
+                                "height": "6-4",
+                                "weight": 210,
+                                "positionRegular": "spichposition:right-forward",
+                                "health": "sphealth:injured",
+                                "names": [
+                                    {
+                                        "full": "Valeri Nichushkin"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:injured",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.2934",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.2934",
+                                "dateOfDeath": "1991-03-26",
+                                "height": "6-1",
+                                "weight": 195,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Ryan Button"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.3398",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.3398",
+                                "dateOfDeath": "1990-11-07",
+                                "height": "6-2",
+                                "weight": 190,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Tristan King"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4687",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4687",
+                                "dateOfDeath": "1995-08-16",
+                                "height": "6-1",
+                                "weight": 182,
+                                "positionRegular": "spichposition:goalie",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Philippe Desrosiers"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.2561",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.2561",
+                                "dateOfDeath": "1983-07-28",
+                                "height": "5-11",
+                                "weight": 202,
+                                "positionRegular": "spichposition:defenseman",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Maxime Fortunus"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.1165",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.1165",
+                                "dateOfDeath": "1983-08-13",
+                                "height": "6-0",
+                                "weight": 185,
+                                "positionRegular": "spichposition:right-forward",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Ales Hemsky"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.423",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.423",
+                                "dateOfDeath": "1983-06-13",
+                                "height": "6-3",
+                                "weight": 220,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Jason Spezza"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:active",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.3514",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.3514",
+                                "dateOfDeath": "1992-01-31",
+                                "height": "6-1",
+                                "weight": 200,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:injured",
+                                "names": [
+                                    {
+                                        "full": "Tyler Seguin"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "phaseStatus": "spphasestatus:injured",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.4397",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.4397",
+                                "dateOfDeath": "1994-01-09",
+                                "height": "6-3",
+                                "weight": 210,
+                                "positionRegular": "spichposition:center",
+                                "health": "sphealth:fine",
+                                "names": [
+                                    {
+                                        "full": "Radek Faksa"
+                                    }
+                                ],
+                                "homeLocation": {},
+                                "careerPhase": {
+                                    "key": "vendteam:l.nhl.com-t.21",
+                                    "phaseType": "spphase:professional",
+                                    "subphaseType": "spphase:minor-league",
+                                    "phaseStatus": "spphasestatus:inactive",
+                                    "phaseCaliber": "spct:team"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

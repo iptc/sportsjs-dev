@@ -34,6 +34,7 @@ import jsonschema
 import os
 
 TEST_FILES_FOLDER = 'unit_test_files'
+EXAMPLE_FILES_FOLDER = os.path.join('..', '..', 'examples')
 
 class TestSportsJSSchema(unittest.TestCase):
     sportsjs_strict_schema = None
@@ -79,7 +80,7 @@ class TestSportsJSSchema(unittest.TestCase):
                         self.current_path,
                         folder_name
                     )
-        return [os.path.join(folder_name, file) for file in os.listdir(folder_name)]
+        return [os.path.join(folder_name, file) for file in os.listdir(folder_name) if file.endswith('.json')]
 
     def get_test_files_in_folder(self, test_folder_name):
         return self.get_files_in_folder(
@@ -183,6 +184,19 @@ class TestSportsJSSchema(unittest.TestCase):
             schema=self.sportsjs_extensible_schema,
             folder_name='should_fail'
         )
+
+    def test_all_example_files_against_strict_schema(self):
+        """
+        Run all files in EXAMPLE_FILES_FOLDER/should_pass against the schema.
+        They should all pass (ie they are all valid against the schema).
+
+        We use "subTest" so we can see which file failed in test output.
+        """
+        self.folder_should_pass(
+            schema=self.sportsjs_strict_schema,
+            folder_name=EXAMPLE_FILES_FOLDER
+        )
+
 
 if __name__ == '__main__':
     unittest.main()

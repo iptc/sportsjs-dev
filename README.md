@@ -55,55 +55,35 @@ validate the provided examples:
     $ cd sportsjs-dev
     $ npm install -g ajv-cli
     $ ajv validate  -s specification/sportsjs-core.json -r "specification/sportsjs-*.json" -d "examples/*.json"
-    americanFootballEventSummary.json valid
-    biathlon_mixedrelay_g2.json valid
-    generic-alert.json valid
-    golf-tour-for-sportsjs.json valid
-    skiing_vasaloppet_2015_g2.json valid
-    soccer-simple-sample-pre-game-not-to-validate.json invalid
-    [ { keyword: 'additionalProperties',
-        dataPath: '',
-        schemaPath: '#/additionalProperties',
-        params: { additionalProperty: 'sportsetadata' },
-        message: 'should NOT have additional properties' } ]
-    soccer-simple-sample-pre-game.json valid
-
-Note that the `soccer-simple-sample-pre-game-not-to-validate.json` example has
-been deliberately modified in order to test that invalid instance files fail to
-validate.
+    examples/amfoot-match-classic-generic.json valid
+    examples/amfoot-match-classic-specific.json valid
+    examples/amfoot-match-g2-generic.json valid
+    examples/amfoot-match-g2-specific.json valid
+    [ ... ]
+    examples/soccer-standings-classic-specific.json valid
+    examples/soccer-standings-g2-specific.json valid
+    examples/tennis_davis_cup_tournament.json valid
+    examples/tournament-cl-classic.json valid
+    examples/tournament-cl-g2.json valid
 
 Or if you would prefer to validate using Python's `jsonschema`, follow these
-steps:
+steps (unfortunately the command-line version of jsonschema doesn't allow file
+globbing so we have to do some magic with `find -exec`):
 
     $ git clone https://github.com/iptc/sportsjs-dev.git
     $ cd sportsjs-dev
     $ mkvirtualenv --python=python3 sportsjs
     (sportsjs) $ pip install jsonschema
-    (sportsjs) $ jsonschema -i examples/generic-alert.json specification/sportsjs-core.json
-    (sportsjs) $ jsonschema -i examples/americanFootballEventSummary.json specification/sportsjs-core.json
-    (sportsjs) $ jsonschema -i examples/biathlon_mixedrelay_g2.json specification/sportsjs-core.json
-    (sportsjs) $ jsonschema -i examples/golf-tour-for-sportsjs.json specification/sportsjs-core.json
-    (sportsjs) $ jsonschema -i examples/skiing_vasaloppet_2015_g2.json specification/sportsjs-core.json
-    (sportsjs) $ jsonschema -i examples/soccer-simple-sample-pre-game.json specification/sportsjs-core.json
-    (sportsjs) $ jsonschema -i examples/soccer-simple-sample-pre-game-not-to-validate.json specification/sportsjs-core.json
-    {'sportsetadata': {'docId': 'sjs-2016-00-23_Birmingham-Bolton'}, 'sportsEvents': [
-    {'id': 'm_1118347', 'eventMetadata': {'startDateTime': '2016-02-23T20:45:00+01:00',
-    'endDateTime': '2016-02-23T22:45:00+01:00', 'name': {'full': 'Birmingham - Bolton'}},
-    'teams': [{'id': 'nifs-t.tim_257_1118347', 'teamMetadata': {'key': 'Team:nifs-t.tim_257_1118347',
-    'alignment': 'home', 'name': {'full': 'Birmingham'}}, 'teamStats': {}}, {'id':
-    'nifs-t.tim_253_1118347', 'teamMetadata': {'key': 'Team:nifs-t.tim_253_1118347', 'alignment': 
-    'away', 'name': {'full': 'Bolton'}}, 'teamStats': {}}]}]}:
-    Additional properties are not allowed ('sportsetadata' was unexpected)
-
-Again, this error is expected as the example deliberately fails to validate
-against the schema.
+    (sportsjs) $ find examples/*.json -exec jsonschema -i {} specification/sportsjs-core.json \;
+    (sportsjs) $
+    (no response means there were no validation errors)
 
 ## Tests
 
 We have created some unit tests for the schema itself to ensure that our schema
 stays valid according to our examples. It loads a series of test instance documents
-stored in `tests/unit_test_files/should_pass` and `should_fail`, which includes
-copies of the examples from the `examples` folder.
+stored in `tests/unit_test_files/should_pass` and `should_fail`, and also tests
+against all examples in the `examples` folder.
 
 It is written in Python, and can be run with:
 
@@ -114,6 +94,6 @@ It is written in Python, and can be run with:
 The [IPTC Developer Site](http://dev.iptc.org/SportsML) provides technical
 information about both SportsJS and SportsML, the XML version of this standard.
 
-Please use the [SportsML Users Forum](https://groups.yahoo.com/neo/groups/sportsml/info)
+Please use the [SportsML Users Forum](https://groups.io/g/iptc-sportsml)
 mailing list to raise questions, or raise an issue on the
 [SportsJS GitHub repository](https://github.com/iptc/sportsjs-dev/issues).

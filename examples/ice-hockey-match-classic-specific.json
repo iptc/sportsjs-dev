@@ -1,0 +1,1648 @@
+{
+    "sportsMetadata": [
+        {
+            "docId": "xt.nhl.20001-BXG-20151007T221450-0400-FIN-FC0",
+            "dateTime": "2015-10-07T22:14:50-04:00",
+            "language": "en-US",
+            "documentClass": "spct:event-summary",
+            "fixtureKey": "spfixt:event-stats-progressive",
+            "sportsContentCodes": [
+                {
+                    "codeType": "spct:publisher",
+                    "codeKey": "publisher:nhl.com",
+                    "codeName": "National Hockey League"
+                },
+                {
+                    "codeType": "spct:distributor",
+                    "codeKey": "distributor:xmlteam.com",
+                    "codeName": "XML Team Solutions, Inc."
+                },
+                {
+                    "codeType": "spct:sport",
+                    "codeKey": "sport:15031000",
+                    "codeName": "Ice Hockey"
+                },
+                {
+                    "codeType": "spct:league",
+                    "codeKey": "vendleague:l.nhl.com",
+                    "codeName": "National Hockey League"
+                },
+                {
+                    "codeType": "spct:season",
+                    "codeKey": "season:2015"
+                },
+                {
+                    "codeType": "spct:season-type",
+                    "codeKey": "season-type:season-regular"
+                },
+                {
+                    "codeType": "spct:team",
+                    "codeKey": "vendteam:l.nhl.com-t.8",
+                    "codeName": "Montreal Canadiens"
+                },
+                {
+                    "codeType": "spct:team",
+                    "codeKey": "vendteam:l.nhl.com-t.10",
+                    "codeName": "Toronto Maple Leafs"
+                }
+            ],
+            "catalogRefs": [
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
+                },
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
+                }
+            ]
+        }
+    ],
+    "sportsEvents": [
+        {
+            "eventMetadata": {
+                "startDateTime": "2015-10-07T19:20:43-04:00",
+                "endDateTime": "2015-10-07T21:56:38-04:00",
+                "temporalUnitValue": "vendor:l.nhl.com-2015-e.20001",
+                "key": "vendevent:l.nhl.com-2015-e.20001",
+                "eventStatus": "speventstatus:post-event",
+                "sites": [
+                    {
+                        "siteMetadata": {
+                            "key": "vendsite:s.Air_Canada_Centre",
+                            "names": [
+                                {
+                                    "full": "Air Canada Centre"
+                                }
+                            ]
+                        },
+                        "siteStats": [
+                            {
+                                "attendance": "19241"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "teams": [
+                {
+                    "id": "l.nhl.com-t.10",
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.10",
+                        "alignment": "home",
+                        "names": [
+                            {
+                                "full": "Toronto Maple Leafs"
+                            },
+                            {
+                                "alternate": "Toronto"
+                            },
+                            {
+                                "nickname": "Maple Leafs"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "score": "1",
+                            "temporalUnitType": "sptemporalunit:event",
+                            "temporalUnitValue": "vendor:l.nhl.com-2015-e.20001",
+                            "timePlayedTotal": "60:00",
+                            "penaltyStats": [
+                                {
+                                    "count": 2,
+                                    "value": "4"
+                                }
+                            ]
+                        }
+                    ],
+                    "players": [
+                        {
+                            "id": "l.nhl.com-p.8474037",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8474037",
+                                "positionEvent": "spichposition:left-forward",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "JAMES VAN RIEMSDYK"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "1",
+                                    "timePlayedTotal": "16:41",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8476062",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8476062",
+                                "positionEvent": "spichposition:right-forward",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "MARK ARCOBELLO"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "12:15",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8473541",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8473541",
+                                "positionEvent": "spichposition:goalie",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "JONATHAN BERNIER"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "temporalUnitType": "sptemporalunit:period",
+                                    "temporalUnitValue": "vendor:1"
+                                },
+                                {
+                                    "temporalUnitType": "sptemporalunit:period",
+                                    "temporalUnitValue": "vendor:2"
+                                },
+                                {
+                                    "temporalUnitType": "sptemporalunit:period",
+                                    "temporalUnitValue": "vendor:3"
+                                },
+                                {
+                                    "temporalUnitType": "sptemporalunit:event",
+                                    "temporalUnitValue": "vendor:l.nhl.com-2015-e.20001",
+                                    "timePlayedTotal": "57:43",
+                                    "eventsStarted": 1,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ],
+                                    "awards": [
+                                        {
+                                            "value": "2",
+                                            "names": [
+                                                {
+                                                    "name": "Second Star"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8468504",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8468504",
+                                "positionEvent": "spichposition:right-forward",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "BRAD BOYES"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "17:12",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8475098",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8475098",
+                                "positionEvent": "spichposition:center",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "TYLER BOZAK"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "19:03",
+                                    "eventsStarted": 1,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8476302",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8476302",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:scratched",
+                                "names": [
+                                    {
+                                        "full": "FRANK CORRADO"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.8474581",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8474581",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "JAKE GARDINER"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "21:28",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8473546",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8473546",
+                                "positionEvent": "spichposition:right-forward",
+                                "status": "spplayerstatus:scratched",
+                                "names": [
+                                    {
+                                        "full": "MICHAEL GRABNER"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.8476449",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8476449",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "SCOTT HARRINGTON"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "16:36",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8475180",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8475180",
+                                "positionEvent": "spichposition:center",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "PETER HOLLAND"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "14:26",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8471436",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8471436",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "MATT HUNWICK"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "20:28",
+                                    "eventsStarted": 1,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8475172",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8475172",
+                                "positionEvent": "spichposition:center",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "NAZEM KADRI"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "17:17",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 1,
+                                            "value": "2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8473463",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8473463",
+                                "positionEvent": "spichposition:center",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "LEO KOMAROV"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "09:07",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 1,
+                                            "value": "2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8470207",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8470207",
+                                "positionEvent": "spichposition:right-forward",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "JOFFREY LUPUL"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "17:44",
+                                    "eventsStarted": 1,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8475716",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8475716",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "MARTIN MARINCIN"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "15:57",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8473574",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8473574",
+                                "positionEvent": "spichposition:center",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "SHAWN MATTHIAS"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "13:24",
+                                    "eventsStarted": 1,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8469707",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8469707",
+                                "positionEvent": "spichposition:right-forward",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "PIERRE-ALEXANDRE PARENTEAU"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "14:56",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8470602",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8470602",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "DION PHANEUF"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "20:56",
+                                    "eventsStarted": 1,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8471392",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8471392",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:scratched",
+                                "names": [
+                                    {
+                                        "full": "ROMAN POLAK"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.8473503",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8473503",
+                                "positionEvent": "spichposition:goalie",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "JAMES REIMER"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "temporalUnitType": "sptemporalunit:period",
+                                    "temporalUnitValue": "vendor:1"
+                                },
+                                {
+                                    "temporalUnitType": "sptemporalunit:period",
+                                    "temporalUnitValue": "vendor:2"
+                                },
+                                {
+                                    "temporalUnitType": "sptemporalunit:period",
+                                    "temporalUnitValue": "vendor:3"
+                                },
+                                {
+                                    "temporalUnitType": "sptemporalunit:event",
+                                    "temporalUnitValue": "vendor:l.nhl.com-2015-e.20001",
+                                    "timePlayedTotal": "00:00",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8476853",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8476853",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "MORGAN RIELLY"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "20:38",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8474096",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8474096",
+                                "positionEvent": "spichposition:center",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "NICK SPALING"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "15:02",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8471476",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8471476",
+                                "positionEvent": "spichposition:center",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "DANIEL WINNIK"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "15:07",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "l.nhl.com-t.8",
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.8",
+                        "alignment": "away",
+                        "names": [
+                            {
+                                "full": "Montreal Canadiens"
+                            },
+                            {
+                                "alternate": "Montreal"
+                            },
+                            {
+                                "nickname": "Canadiens"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "score": "3",
+                            "temporalUnitType": "sptemporalunit:event",
+                            "temporalUnitValue": "vendor:l.nhl.com-2015-e.20001",
+                            "timePlayedTotal": "60:00",
+                            "penaltyStats": [
+                                {
+                                    "count": 4,
+                                    "value": "8"
+                                }
+                            ]
+                        }
+                    ],
+                    "players": [
+                        {
+                            "id": "l.nhl.com-p.8476470",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8476470",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "NATHAN BEAULIEU"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "14:27",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8474038",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8474038",
+                                "positionEvent": "spichposition:left-forward",
+                                "status": "spplayerstatus:scratched",
+                                "names": [
+                                    {
+                                        "full": "PAUL BYRON"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.8477237",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8477237",
+                                "positionEvent": "spichposition:goalie",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "MIKE CONDON"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "temporalUnitType": "sptemporalunit:period",
+                                    "temporalUnitValue": "vendor:1"
+                                },
+                                {
+                                    "temporalUnitType": "sptemporalunit:period",
+                                    "temporalUnitValue": "vendor:2"
+                                },
+                                {
+                                    "temporalUnitType": "sptemporalunit:period",
+                                    "temporalUnitValue": "vendor:3"
+                                },
+                                {
+                                    "temporalUnitType": "sptemporalunit:event",
+                                    "temporalUnitValue": "vendor:l.nhl.com-2015-e.20001",
+                                    "timePlayedTotal": "00:00",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8471976",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8471976",
+                                "positionEvent": "spichposition:center",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "DAVID DESHARNAIS"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "16:51",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8474189",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8474189",
+                                "positionEvent": "spichposition:center",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "LARS ELLER"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "14:21",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 1,
+                                            "value": "2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8471296",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8471296",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "ALEXEI EMELIN"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "22:03",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8470039",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8470039",
+                                "positionEvent": "spichposition:left-forward",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "TOMAS FLEISCHMANN"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "17:27",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8476808",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8476808",
+                                "positionEvent": "spichposition:center",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "BRIAN FLYNN"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "09:56",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8476851",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8476851",
+                                "positionEvent": "spichposition:center",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "ALEX GALCHENYUK"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "1",
+                                    "timePlayedTotal": "14:35",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ],
+                                    "awards": [
+                                        {
+                                            "value": "3",
+                                            "names": [
+                                                {
+                                                    "name": "Third Star"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8475848",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8475848",
+                                "positionEvent": "spichposition:right-forward",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "BRENDAN GALLAGHER"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "13:56",
+                                    "eventsStarted": 1,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 1,
+                                            "value": "2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8470104",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8470104",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "TOM GILBERT"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "14:19",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8467496",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8467496",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "ANDREI MARKOV"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "21:44",
+                                    "eventsStarted": 1,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8471338",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8471338",
+                                "positionEvent": "spichposition:center",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "TORREY MITCHELL"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "08:54",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 1,
+                                            "value": "2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8474157",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8474157",
+                                "positionEvent": "spichposition:left-forward",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "MAX PACIORETTY"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "2",
+                                    "timePlayedTotal": "18:07",
+                                    "eventsStarted": 1,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8474688",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8474688",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:scratched",
+                                "names": [
+                                    {
+                                        "full": "GREG PATERYN"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.8473507",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8473507",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "JEFF PETRY"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "22:52",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8469521",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8469521",
+                                "positionEvent": "spichposition:center",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "TOMAS PLEKANEC"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "18:29",
+                                    "eventsStarted": 1,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8471679",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8471679",
+                                "positionEvent": "spichposition:goalie",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "CAREY PRICE"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "temporalUnitType": "sptemporalunit:period",
+                                    "temporalUnitValue": "vendor:1"
+                                },
+                                {
+                                    "temporalUnitType": "sptemporalunit:period",
+                                    "temporalUnitValue": "vendor:2"
+                                },
+                                {
+                                    "temporalUnitType": "sptemporalunit:period",
+                                    "temporalUnitValue": "vendor:3"
+                                },
+                                {
+                                    "temporalUnitType": "sptemporalunit:event",
+                                    "temporalUnitValue": "vendor:l.nhl.com-2015-e.20001",
+                                    "timePlayedTotal": "60:00",
+                                    "eventsStarted": 1,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ],
+                                    "awards": [
+                                        {
+                                            "value": "1",
+                                            "names": [
+                                                {
+                                                    "name": "First Star"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8470120",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8470120",
+                                "positionEvent": "spichposition:right-forward",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "ALEXANDER SEMIN"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "16:05",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8475758",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8475758",
+                                "positionEvent": "spichposition:right-forward",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "DEVANTE SMITH-PELLY"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "10:00",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 1,
+                                            "value": "2"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8474056",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8474056",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "P.K. SUBBAN"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "24:35",
+                                    "eventsStarted": 1,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nhl.com-p.8475797",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8475797",
+                                "positionEvent": "spichposition:defenseman",
+                                "status": "spplayerstatus:scratched",
+                                "names": [
+                                    {
+                                        "full": "JARRED TINORDI"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "l.nhl.com-p.8474668",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nhl.com-p.8474668",
+                                "positionEvent": "spichposition:right-forward",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "DALE WEISE"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "score": "0",
+                                    "timePlayedTotal": "15:13",
+                                    "eventsStarted": 0,
+                                    "penaltyStats": [
+                                        {
+                                            "count": 0,
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "officials": [
+                {
+                    "officialMetadata": {
+                        "key": "vendperson:l.nhl.com-o.Frederick_L'Ecuyer",
+                        "positionEvent": "vendoffpos:Referee",
+                        "names": [
+                            {
+                                "full": "Frederick L'Ecuyer"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "officialMetadata": {
+                        "key": "vendperson:l.nhl.com-o.Dan_O'Rourke",
+                        "positionEvent": "vendoffpos:Referee",
+                        "names": [
+                            {
+                                "full": "Dan O'Rourke"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "officialMetadata": {
+                        "key": "vendperson:l.nhl.com-o.Ryan_Galloway",
+                        "positionEvent": "vendoffpos:Linesman",
+                        "names": [
+                            {
+                                "full": "Ryan Galloway"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "officialMetadata": {
+                        "key": "vendperson:l.nhl.com-o.Bryan_Pancich",
+                        "positionEvent": "vendoffpos:Linesman",
+                        "names": [
+                            {
+                                "full": "Bryan Pancich"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "actions": [
+                {
+                    "periodTimeElapsed": "03:09",
+                    "periodTimeRemaining": "16:51",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nhl.com-t.8",
+                    "strength": "spichstrength:even-strength",
+                    "periodValue": "1",
+                    "shotType": "vendshot:Wrist",
+                    "shotDistance": 38,
+                    "scoreAttemptType": "spichscoreattempt:regular",
+                    "fieldLocation": "63,-27",
+                    "participants": [
+                        {
+                            "idref": "l.nhl.com-p.8474157",
+                            "teamIdref": "l.nhl.com-t.8",
+                            "role": "spichrole:scorer"
+                        },
+                        {
+                            "idref": "l.nhl.com-p.8474056",
+                            "teamIdref": "l.nhl.com-t.8",
+                            "role": "spichrole:assist"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "00:19",
+                    "periodTimeRemaining": "19:41",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nhl.com-t.10",
+                    "strength": "spichstrength:power-play",
+                    "periodValue": "2",
+                    "shotType": "vendshot:Deflected",
+                    "shotDistance": 163,
+                    "scoreAttemptType": "spichscoreattempt:regular",
+                    "fieldLocation": "-73,-1",
+                    "participants": [
+                        {
+                            "idref": "l.nhl.com-p.8474037",
+                            "teamIdref": "l.nhl.com-t.10",
+                            "role": "spichrole:scorer"
+                        },
+                        {
+                            "idref": "l.nhl.com-p.8475172",
+                            "teamIdref": "l.nhl.com-t.10",
+                            "role": "spichrole:assist"
+                        },
+                        {
+                            "idref": "l.nhl.com-p.8470602",
+                            "teamIdref": "l.nhl.com-t.10",
+                            "role": "spichrole:assist"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "12:02",
+                    "periodTimeRemaining": "07:58",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nhl.com-t.8",
+                    "strength": "spichstrength:even-strength",
+                    "periodValue": "3",
+                    "shotType": "vendshot:Snap",
+                    "shotDistance": 23,
+                    "scoreAttemptType": "spichscoreattempt:regular",
+                    "fieldLocation": "67,0",
+                    "participants": [
+                        {
+                            "idref": "l.nhl.com-p.8476851",
+                            "teamIdref": "l.nhl.com-t.8",
+                            "role": "spichrole:scorer"
+                        },
+                        {
+                            "idref": "l.nhl.com-p.8467496",
+                            "teamIdref": "l.nhl.com-t.8",
+                            "role": "spichrole:assist"
+                        },
+                        {
+                            "idref": "l.nhl.com-p.8474056",
+                            "teamIdref": "l.nhl.com-t.8",
+                            "role": "spichrole:assist"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "19:29",
+                    "periodTimeRemaining": "00:31",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nhl.com-t.8",
+                    "strength": "spichstrength:even-strength",
+                    "periodValue": "3",
+                    "shotType": "vendshot:Wrist",
+                    "shotDistance": 38,
+                    "scoreAttemptType": "spichscoreattempt:empty-net",
+                    "fieldLocation": "52,4",
+                    "participants": [
+                        {
+                            "idref": "l.nhl.com-p.8474157",
+                            "teamIdref": "l.nhl.com-t.8",
+                            "role": "spichrole:scorer"
+                        },
+                        {
+                            "idref": "l.nhl.com-p.8474056",
+                            "teamIdref": "l.nhl.com-t.8",
+                            "role": "spichrole:assist"
+                        },
+                        {
+                            "idref": "l.nhl.com-p.8476808",
+                            "teamIdref": "l.nhl.com-t.8",
+                            "role": "spichrole:assist"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "05:11",
+                    "class": "spactionclass:penalty",
+                    "teamIdref": "l.nhl.com-t.10",
+                    "zone": "spichzone:offense",
+                    "periodValue": "1",
+                    "penaltyLength": "2",
+                    "penaltyName": "Boarding",
+                    "recipientType": "sprecipienttype:player",
+                    "participants": [
+                        {
+                            "idref": "l.nhl.com-p.8473463",
+                            "teamIdref": "l.nhl.com-t.10",
+                            "role": "spichrole:penalty-committed-by"
+                        },
+                        {
+                            "idref": "l.nhl.com-p.8474056",
+                            "teamIdref": "l.nhl.com-t.8",
+                            "role": "spichrole:penalty-committed-against"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "05:11",
+                    "class": "spactionclass:penalty",
+                    "teamIdref": "l.nhl.com-t.8",
+                    "zone": "spichzone:defense",
+                    "periodValue": "1",
+                    "penaltyLength": "2",
+                    "penaltyName": "Roughing",
+                    "recipientType": "sprecipienttype:player",
+                    "participants": [
+                        {
+                            "idref": "l.nhl.com-p.8475758",
+                            "teamIdref": "l.nhl.com-t.8",
+                            "role": "spichrole:penalty-committed-by"
+                        },
+                        {
+                            "idref": "l.nhl.com-p.8473463",
+                            "teamIdref": "l.nhl.com-t.10",
+                            "role": "spichrole:penalty-committed-against"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "12:17",
+                    "class": "spactionclass:penalty",
+                    "teamIdref": "l.nhl.com-t.10",
+                    "zone": "spichzone:offense",
+                    "periodValue": "1",
+                    "penaltyLength": "2",
+                    "penaltyName": "Interference",
+                    "recipientType": "sprecipienttype:player",
+                    "participants": [
+                        {
+                            "idref": "l.nhl.com-p.8475172",
+                            "teamIdref": "l.nhl.com-t.10",
+                            "role": "spichrole:penalty-committed-by"
+                        },
+                        {
+                            "idref": "l.nhl.com-p.8471296",
+                            "teamIdref": "l.nhl.com-t.8",
+                            "role": "spichrole:penalty-committed-against"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "00:13",
+                    "class": "spactionclass:penalty",
+                    "teamIdref": "l.nhl.com-t.8",
+                    "zone": "spichzone:offense",
+                    "periodValue": "2",
+                    "penaltyLength": "2",
+                    "penaltyName": "Interference on goalkeeper",
+                    "recipientType": "sprecipienttype:player",
+                    "participants": [
+                        {
+                            "idref": "l.nhl.com-p.8475848",
+                            "teamIdref": "l.nhl.com-t.8",
+                            "role": "spichrole:penalty-committed-by"
+                        },
+                        {
+                            "idref": "l.nhl.com-p.8473541",
+                            "teamIdref": "l.nhl.com-t.10",
+                            "role": "spichrole:penalty-committed-against"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "08:11",
+                    "class": "spactionclass:penalty",
+                    "teamIdref": "l.nhl.com-t.8",
+                    "zone": "spichzone:offense",
+                    "periodValue": "2",
+                    "penaltyLength": "2",
+                    "penaltyName": "Tripping",
+                    "recipientType": "sprecipienttype:player",
+                    "participants": [
+                        {
+                            "idref": "l.nhl.com-p.8474189",
+                            "teamIdref": "l.nhl.com-t.8",
+                            "role": "spichrole:penalty-committed-by"
+                        },
+                        {
+                            "idref": "l.nhl.com-p.8475172",
+                            "teamIdref": "l.nhl.com-t.10",
+                            "role": "spichrole:penalty-committed-against"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "14:17",
+                    "class": "spactionclass:penalty",
+                    "teamIdref": "l.nhl.com-t.8",
+                    "zone": "spichzone:defense",
+                    "periodValue": "3",
+                    "penaltyLength": "2",
+                    "penaltyName": "Interference",
+                    "recipientType": "sprecipienttype:player",
+                    "participants": [
+                        {
+                            "idref": "l.nhl.com-p.8471338",
+                            "teamIdref": "l.nhl.com-t.8",
+                            "role": "spichrole:penalty-committed-by"
+                        },
+                        {
+                            "idref": "l.nhl.com-p.8473463",
+                            "teamIdref": "l.nhl.com-t.10",
+                            "role": "spichrole:penalty-committed-against"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

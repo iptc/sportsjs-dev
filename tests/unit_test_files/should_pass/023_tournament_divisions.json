@@ -1,29 +1,31 @@
 {
-    "tournament": {
-        "id": "",
-        "class": "",
-        "style": "",
-        "tournamentMetadata": {
-            "status": "qcode:blah",
-            "minimumSubparts": 1,
-            "maximumSubparts": 2,
-            "number": 1,
-            "sportsProperties": [ ],
-            "name": { },
-            "site": {},
-            "award": { },
-            "key": "qcode:blah",
-            "golfTournamentMetadata": {},
-            "tennisTournamentMetadata": {}
-        },
-        "tournamentDivisions": [
-            {
-                "tournamentDivisionMetadata": {
-                    "number": 1
-                },
-                "sportsEvent": {
+    "tournaments": [
+        {
+            "id": "",
+            "class": "",
+            "style": "",
+            "tournamentMetadata": {
+                "status": "qcode:blah",
+                "minimumSubparts": 1,
+                "maximumSubparts": 2,
+                "number": 1,
+                "sportsProperties": [ ],
+                "names": [ ],
+                "sites": [ ],
+                "awards": [ ],
+                "key": "qcode:blah",
+                "golfTournamentMetadata": {},
+                "tennisTournamentMetadata": {}
+            },
+            "tournamentDivisions": [
+                {
+                    "tournamentDivisionMetadata": {
+                        "number": 1
+                    },
+                    "sportsEvents": [
+                    ]
                 }
-            }
-        ]
-    }
+            ]
+        }
+    ]
 }

@@ -1,0 +1,553 @@
+{
+    "sportsMetadata": [
+        {
+            "docId": "sample_123456",
+            "dateTime": "2011-02-01T18:00:00+01:00",
+            "language": "en",
+            "sportsTitles": [
+                {
+                    "name": "PGA tour: Bob Hope Classic"
+                }
+            ]
+        }
+    ],
+    "tournaments": [
+        {
+            "tournamentMetadata": {
+                "startDateTime": "2011-01-19",
+                "endDateTime": "2011-01-23",
+                "names": [
+                    {
+                        "name": "FedExCup"
+                    }
+                ]
+            },
+            "tournamentDivisions": [
+                {
+                    "tournamentDivisionMetadata": {
+                        "sportsContentCodes": [
+                            {
+                                "codeType": "subj:qual",
+                                "sportsContentQualifiers": [
+                                    {
+                                        "gender": "male",
+                                        "participantCount": "spparticipantcount:individual"
+                                    }
+                                ]
+                            }
+                        ],
+                        "names": [
+                            {
+                                "name": "Men"
+                            }
+                        ]
+                    },
+                    "standings": [
+                        {
+                            "teams": [],
+                            "players": []
+                        }
+                    ],
+                    "tournamentParts": [
+                        {
+                            "tournamentPartMetadata": {
+                                "startDateTime": "2011-01-19",
+                                "type": "vendtourpart:preliminary",
+                                "names": [
+                                    {
+                                        "name": "Preliminary"
+                                    }
+                                ]
+                            },
+                            "tournamentParts": [
+                                {
+                                    "tournamentPartMetadata": {
+                                        "number": 1,
+                                        "type": "vendtourpart:round"
+                                    },
+                                    "sportsEvents": [
+                                        {
+                                            "eventMetadata": {
+                                                "sites": [
+                                                    {
+                                                        "siteMetadata": {
+                                                            "style": "outdoor",
+                                                            "surface": "vendst:grass",
+                                                            "names": [
+                                                                {
+                                                                    "name": "PGA West (Palmer Course)"
+                                                                }
+                                                            ],
+                                                            "homeLocation": {
+                                                                "POIDetails": {
+                                                                    "address": {
+                                                                        "localities": [
+                                                                            {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "La Quinta"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ],
+                                                                        "country": {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "USA"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "players": [
+                                                {
+                                                    "playerMetadata": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Derek Lamely"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "USA"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "-9"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "playerMetadata": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Jhonattan Vegas"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Venezuela"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "-8"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tournamentPartMetadata": {
+                                        "number": 2,
+                                        "type": "vendtourpart:round"
+                                    },
+                                    "sportsEvents": [
+                                        {
+                                            "eventMetadata": {
+                                                "sites": [
+                                                    {
+                                                        "siteMetadata": {
+                                                            "style": "outdoor",
+                                                            "surface": "vendst:grass",
+                                                            "names": [
+                                                                {
+                                                                    "name": "PGA West (Nicklaus Course)"
+                                                                }
+                                                            ],
+                                                            "homeLocation": {
+                                                                "POIDetails": {
+                                                                    "address": {
+                                                                        "localities": [
+                                                                            {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "La Quinta"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ],
+                                                                        "country": {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "USA"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "players": [
+                                                {
+                                                    "playerMetadata": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Bill Lunde"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "USA"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "-8"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tournamentPartMetadata": {
+                                "type": "vendtourpart:playoff",
+                                "names": [
+                                    {
+                                        "name": "Playoff"
+                                    }
+                                ]
+                            },
+                            "tournamentParts": [
+                                {
+                                    "tournamentPartMetadata": {
+                                        "key": "vendtourpart:P1",
+                                        "type": "vendtourpart:P1"
+                                    },
+                                    "sportsEvents": [
+                                        {
+                                            "eventMetadata": {
+                                                "sites": [
+                                                    {
+                                                        "siteMetadata": {
+                                                            "style": "outdoor",
+                                                            "surface": "vendst:grass",
+                                                            "names": [
+                                                                {
+                                                                    "name": "PGA West (Palmer Course)"
+                                                                }
+                                                            ],
+                                                            "homeLocation": {
+                                                                "POIDetails": {
+                                                                    "address": {
+                                                                        "localities": [
+                                                                            {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "La Quinta"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ],
+                                                                        "country": {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "USA"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "players": [
+                                                {
+                                                    "playerMetadata": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Jhonattan Vegas"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Venezuela"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "4"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "playerMetadata": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Gary Woodland"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "USA"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "4"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "playerMetadata": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Bill Haas"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "USA"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "5"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tournamentPartMetadata": {
+                                        "key": "vendtourpart:P2",
+                                        "type": "vendtourpart:P2"
+                                    },
+                                    "sportsEvents": [
+                                        {
+                                            "eventMetadata": {
+                                                "sites": [
+                                                    {
+                                                        "siteMetadata": {
+                                                            "style": "outdoor",
+                                                            "surface": "vendst:grass",
+                                                            "names": [
+                                                                {
+                                                                    "name": "PGA West (Palmer Course)"
+                                                                }
+                                                            ],
+                                                            "homeLocation": {
+                                                                "POIDetails": {
+                                                                    "address": {
+                                                                        "localities": [
+                                                                            {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "La Quinta"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        ],
+                                                                        "country": {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "USA"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "players": [
+                                                {
+                                                    "playerMetadata": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Jhonattan Vegas"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Venezuela"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "4"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "playerMetadata": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Gary Woodland"
+                                                            },
+                                                            {
+                                                                "name": "PGA West (Palmer Course)"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {}
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "USA"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "-"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

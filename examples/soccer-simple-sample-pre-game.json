@@ -1,16 +1,20 @@
 {
-  "sportsMetadata": {
-     "docId": "sjs-2016-00-23_Birmingham-Bolton"
-  },
+  "sportsMetadata": [
+    {
+        "docId": "sjs-2016-00-23_Birmingham-Bolton"
+    }
+  ],
   "sportsEvents": [
     {
       "id": "m_1118347",
       "eventMetadata": {
         "startDateTime": "2016-02-23T20:45:00+01:00",
         "endDateTime": "2016-02-23T22:45:00+01:00",
-        "name": {
-          "full": "Birmingham - Bolton"
-        }
+        "names": [
+            {
+                "full": "Birmingham - Bolton"
+            }
+        ]
       },
       "teams": [
         {
@@ -18,22 +22,26 @@
           "teamMetadata": {
             "key": "Team:nifs-t.tim_257_1118347",
             "alignment": "home",
-            "name": {
-              "full": "Birmingham"
-            }
+            "names": [
+                {
+                    "full": "Birmingham"
+                }
+            ]
           },
-          "teamStats": {}
+          "teamStats": []
         },
         {
           "id": "nifs-t.tim_253_1118347",
           "teamMetadata": {
             "key": "Team:nifs-t.tim_253_1118347",
             "alignment": "away",
-            "name": {
-              "full": "Bolton"
-            }
+            "names": [
+                {
+                    "full": "Bolton"
+                }
+            ]
           },
-          "teamStats": {}
+          "teamStats": []
         }
       ]
     }

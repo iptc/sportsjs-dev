@@ -1,0 +1,789 @@
+{
+    "sportsMetadata": [
+        {
+            "docId": "xt.prog.20150303231135-20004-04.337-event-stats-progressive",
+            "dateTime": "2015-03-03T23:11:35-05:00",
+            "language": "en-US",
+            "documentClass": "spct:event-summary",
+            "fixtureKey": "spfixt:event-stats-progressive",
+            "sportsContentCodes": [
+                {
+                    "codeType": "spct:publisher",
+                    "codeKey": "publisher:sportsnetwork.com",
+                    "codeName": "The Sports Network, Inc."
+                },
+                {
+                    "codeType": "spct:distributor",
+                    "codeKey": "distributor:xmlteam.com",
+                    "codeName": "XML Team Solutions, Inc."
+                },
+                {
+                    "codeType": "spct:sport",
+                    "codeKey": "sport:15008000",
+                    "codeName": "Basketball"
+                },
+                {
+                    "codeType": "spct:league",
+                    "codeKey": "vendleague:l.nba.com",
+                    "codeName": "National Basketball Association"
+                },
+                {
+                    "codeType": "spct:season",
+                    "codeKey": "season:2014"
+                },
+                {
+                    "codeType": "spct:season-type",
+                    "codeKey": "season-type:regular"
+                },
+                {
+                    "codeType": "spct:conference",
+                    "codeKey": "vendconf:c.eastern",
+                    "codeName": "Eastern"
+                },
+                {
+                    "codeType": "spct:conference",
+                    "codeKey": "vendconf:c.western",
+                    "codeName": "Western"
+                },
+                {
+                    "codeType": "spct:team",
+                    "codeKey": "vendteam:l.nba.com-t.17",
+                    "codeName": "Denver Nuggets"
+                },
+                {
+                    "codeType": "spct:team",
+                    "codeKey": "vendteam:l.nba.com-t.14",
+                    "codeName": "Milwaukee Bucks"
+                }
+            ],
+            "catalogRefs": [
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
+                },
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
+                }
+            ]
+        }
+    ],
+    "sportsEvents": [
+        {
+            "eventMetadata": {
+                "periodTimeRemaining": "4:51",
+                "periodValue": "4",
+                "startDateTime": "2015-03-03T21:00:00-05:00",
+                "temporalUnitValue": "vendor:l.nba.com-2014-e.20004",
+                "key": "vendevent:l.nba.com-2014-e.20004",
+                "eventStatus": "speventstatus:mid-event"
+            },
+            "teams": [
+                {
+                    "id": "l.nba.com-t.14",
+                    "teamMetadata": {
+                        "key": "vendteam:l.nba.com-t.14",
+                        "alignment": "away",
+                        "names": [
+                            {
+                                "full": "Milwaukee Bucks"
+                            },
+                            {
+                                "alternate": "Milwaukee"
+                            },
+                            {
+                                "nickname": "Bucks"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "score": "84",
+                            "penaltyStats": [
+                                {
+                                    "type": "team technical fouls",
+                                    "count": 0
+                                },
+                                {
+                                    "type": "technical fouls",
+                                    "count": 2
+                                },
+                                {
+                                    "type": "personal fouls",
+                                    "count": 24
+                                }
+                            ],
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "29"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "22"
+                                },
+                                {
+                                    "periodValue": "3",
+                                    "score": "19"
+                                },
+                                {
+                                    "periodValue": "4",
+                                    "score": "14"
+                                }
+                            ]
+                        }
+                    ],
+                    "players": [
+                        {
+                            "id": "l.nba.com-p.2404",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.2404",
+                                "positionEvent": "spbkbposition:forward",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Giannis Antetokounmpo"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 5
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.1024",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.1024",
+                                "positionEvent": "spbkbposition:forward",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Ersan Ilyasova"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 3
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.641",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.641",
+                                "positionEvent": "spbkbposition:center",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Zaza Pachulia"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 1
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 2
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.2289",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.2289",
+                                "positionEvent": "spbkbposition:guard",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Khris Middleton"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 1
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 3
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.2411",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.2411",
+                                "positionEvent": "spbkbposition:guard",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Michael Carter-Williams"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 3
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.1504",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.1504",
+                                "positionEvent": "spbkbposition:guard",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Jerryd Bayless"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 1
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.2281",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.2281",
+                                "positionEvent": "spbkbposition:center",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "John Henson"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 2
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.1292",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.1292",
+                                "positionEvent": "spbkbposition:forward",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Jared Dudley"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 1
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.2596",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.2596",
+                                "positionEvent": "spbkbposition:guard",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Tyler Ennis"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 2
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.2271",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.2271",
+                                "positionEvent": "spbkbposition:center",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Miles Plumlee"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 2
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "l.nba.com-t.17",
+                    "teamMetadata": {
+                        "key": "vendteam:l.nba.com-t.17",
+                        "alignment": "home",
+                        "names": [
+                            {
+                                "full": "Denver Nuggets"
+                            },
+                            {
+                                "alternate": "Denver"
+                            },
+                            {
+                                "nickname": "Nuggets"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "score": "93",
+                            "penaltyStats": [
+                                {
+                                    "type": "team technical fouls",
+                                    "count": 2
+                                },
+                                {
+                                    "type": "technical fouls",
+                                    "count": 3
+                                },
+                                {
+                                    "type": "personal fouls",
+                                    "count": 23
+                                }
+                            ],
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "29"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "26"
+                                },
+                                {
+                                    "periodValue": "3",
+                                    "score": "21"
+                                },
+                                {
+                                    "periodValue": "4",
+                                    "score": "17"
+                                }
+                            ]
+                        }
+                    ],
+                    "players": [
+                        {
+                            "id": "l.nba.com-p.1441",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.1441",
+                                "positionEvent": "spbkbposition:forward",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Danilo Gallinari"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 3
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.1290",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.1290",
+                                "positionEvent": "spbkbposition:forward",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Wilson Chandler"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 4
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.2107",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.2107",
+                                "positionEvent": "spbkbposition:center",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Kenneth Faried"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 1
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 0
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.1184",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.1184",
+                                "positionEvent": "spbkbposition:guard",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Randy Foye"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 3
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.1616",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.1616",
+                                "positionEvent": "spbkbposition:guard",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Ty Lawson"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 2
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.1467",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.1467",
+                                "positionEvent": "spbkbposition:center",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "J.J. Hickson"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 1
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.871",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.871",
+                                "positionEvent": "spbkbposition:guard",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Jameer Nelson"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 2
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.2256",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.2256",
+                                "positionEvent": "spbkbposition:guard",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Will Barton"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 4
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.1433",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.1433",
+                                "positionEvent": "spbkbposition:forward",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Darrell Arthur"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 2
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.2601",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.2601",
+                                "positionEvent": "spbkbposition:guard",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Gary Harris"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 1
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "l.nba.com-p.2418",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nba.com-p.2418",
+                                "positionEvent": "spbkbposition:guard",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Erick Green"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "penaltyStats": [
+                                        {
+                                            "type": "technical fouls",
+                                            "count": 0
+                                        },
+                                        {
+                                            "type": "personal fouls",
+                                            "count": 1
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "actions": [
+                {
+                    "periodTimeRemaining": "4:51",
+                    "id": "play.337",
+                    "class": "spactionclass:score",
+                    "comment": "Ersan Ilyasova layup assisted by Khris Middleton.",
+                    "points": 2,
+                    "periodValue": "4",
+                    "scoreTeam": "84",
+                    "scoreTeamOpposing": "93",
+                    "scoreAttemptType": "spbkbscoreattempt:fg",
+                    "participants": [
+                        {
+                            "idref": "l.nba.com-p.1024",
+                            "teamIdref": "l.nba.com-t.14",
+                            "role": "spbkbrole:scorer"
+                        },
+                        {
+                            "idref": "l.nba.com-p.2289",
+                            "teamIdref": "l.nba.com-t.14",
+                            "role": "spbkbrole:assist"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

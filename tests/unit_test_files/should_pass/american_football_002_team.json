@@ -13,53 +13,55 @@
                 {
                     "teamMetadata": {
                         "key": "team:2700",
-                        "name": {
+                        "names": [
+                            {
                             "given": "Miami",
                             "full": "Miami Dolphins",
                             "abbreviation": "MIA"
-                        },
-                        "alignment": "home"
-                    },
-                    "teamStats": {
-                        "scoreStats": {
-                            "score": "24",
-                            "scoreOpposing": "31"
-                        },
-                        "subScores": [
-                            {
-                                "periodValue": "Q1",
-                                "score": "7"
-                            },
-                            {
-                                "periodValue": "Q2",
-                                "score": "10"
-                            },
-                            {
-                                "periodValue": "Q3",
-                                "score": "7"
-                            },
-                            {
-                                "periodValue": "Q4",
-                                "score": "0"
-                            },
-                            {
-                                "periodValue": "OT",
-                                "score": "0"
                             }
                         ],
-                        "teamStatsAmericanFootball": {
-                            "statsAmericanFootballOffensive": {
-                            },
-                            "statsAmericanFootballDefensive": {
-                            },
-                            "statsAmericanFootballScoring": {
-                            },
-                            "statsAmericanFootballSpecialTeams": {
-                            },
-                            "statsAmericanFootballFumbles": {
+                        "alignment": "home"
+                    },
+                    "teamStats": [
+                        {
+                            "score": "24",
+                            "scoreOpposing": "31",
+                            "subScores": [
+                                {
+                                    "periodValue": "Q1",
+                                    "score": "7"
+                                },
+                                {
+                                    "periodValue": "Q2",
+                                    "score": "10"
+                                },
+                                {
+                                    "periodValue": "Q3",
+                                    "score": "7"
+                                },
+                                {
+                                    "periodValue": "Q4",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "OT",
+                                    "score": "0"
+                                }
+                            ],
+                            "teamStatsAmericanFootball": {
+                                "statsAmericanFootballOffensive": {
+                                },
+                                "statsAmericanFootballDefensive": {
+                                },
+                                "statsAmericanFootballScoring": {
+                                },
+                                "statsAmericanFootballSpecialTeams": {
+                                },
+                                "statsAmericanFootballFumbles": {
+                                }
                             }
                         }
-                    }
+                    ]
                 }
             ]
         }

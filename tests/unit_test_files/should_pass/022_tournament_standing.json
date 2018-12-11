@@ -1,407 +1,449 @@
 {
-    "tournament": {
-        "id": "iptc-unittest-022-tournament-standings-premierleague-standings-2017-2018",
-        "tournamentMetadata": {
-            "name": { "full": "2017/8 Premier League football Table"},
-            "status": "spventstatus:post-event",
-            "statsCoverage": "spstatscoverage:standard",
-            "teamCoverage": "multi-team",
-            "temporalUnitType": "sptemporalunit:season",
-            "sportsContentCodes": [
-                {
-                    "codeKey": "spct:standings",
-                    "codeName": "2017/8 Premier League football Table"
-                }
-            ]
-        },
-        "standing": {
-            "contentLabel": "Premier League 2017/2018 end-of-season standings",
-            "standingMetadata": {
+    "tournaments": [
+        {
+            "id": "iptc-unittest-022-tournament-standings-premierleague-standings-2017-2018",
+            "tournamentMetadata": {
+                "names": [ { "full": "2017/8 Premier League football Table"} ],
+                "status": "spventstatus:post-event",
                 "statsCoverage": "spstatscoverage:standard",
-                "teamCoverage": "multi-team"
+                "teamCoverage": "multi-team",
+                "temporalUnitType": "sptemporalunit:season",
+                "sportsContentCodes": [
+                    {
+                        "codeKey": "spct:standings",
+                        "codeName": "2017/8 Premier League football Table"
+                    }
+                ]
             },
-            "teams": [
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Manchester City" }
-                    },
-                    "teamStats": {
-                        "rank": { "value": 1 },
-                        "eventsPlayed": 38,
-                        "outcomeTotals": [
-                            {
-                                "wins": 32,
-                                "ties": 4,
-                                "losses": 2,
-                                "pointsScoredFor": 106,
-                                "pointsScoredAgainst": 27,
-                                "standingPoints": 100
-                            }
-                        ]
-                    }
+            "standing": {
+                "contentLabel": "Premier League 2017/2018 end-of-season standings",
+                "standingMetadata": {
+                    "statsCoverage": "spstatscoverage:standard",
+                    "teamCoverage": "multi-team"
                 },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Manchester United" }
-                    },
-                    "teamStats": {
-                        "rank": { "value": 2 },
-                        "outcomeTotals": [
+                "teams": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Manchester City" } ]
+                        },
+                        "teamStats": [
                             {
+                                "rank": { "value": 1 },
                                 "eventsPlayed": 38,
-                                "wins": 25,
-                                "ties": 6,
-                                "losses": 7,
-                                "pointsScoredFor": 66,
-                                "pointsScoredAgainst": 28,
-                                "standingPoints": 81
+                                "outcomeTotals": [
+                                    {
+                                        "wins": 32,
+                                        "ties": 4,
+                                        "losses": 2,
+                                        "pointsScoredFor": 106,
+                                        "pointsScoredAgainst": 27,
+                                        "standingPoints": 100
+                                    }
+                                ]
                             }
                         ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Tottenham" }
                     },
-                    "teamStats": {
-                        "rank": { "value": 3 },
-                        "outcomeTotals": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Manchester United" } ]
+                        },
+                        "teamStats": [
                             {
+                                "rank": { "value": 2 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 25,
+                                        "ties": 6,
+                                        "losses": 7,
+                                        "pointsScoredFor": 66,
+                                        "pointsScoredAgainst": 28,
+                                        "standingPoints": 81
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Tottenham" } ]
+                        },
+                        "teamStats": [
+                            {
+                                "rank": { "value": 3 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 23,
+                                        "ties": 8,
+                                        "losses": 7,
+                                        "pointsScoredFor": 74,
+                                        "pointsScoredAgainst": 36,
+                                        "standingPoints": 77
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Liverpool" } ]
+                        },
+                        "teamStats": [
+                            {
+                                "rank": { "value": 4 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 21,
+                                        "ties": 12,
+                                        "losses": 5,
+                                        "pointsScoredFor": 84,
+                                        "pointsScoredAgainst": 38,
+                                        "standingPoints": 75
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Chelsea" } ]
+                        },
+                        "teamStats": [
+                            {
+                                "rank": { "value": 5 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 21,
+                                        "ties": 7,
+                                        "losses": 10,
+                                        "pointsScoredFor": 62,
+                                        "pointsScoredAgainst": 38,
+                                        "standingPoints": 70
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Arsenal" } ]
+                        },
+                        "teamStats": [
+                            {
+                                "rank": { "value": 6 },
                                 "eventsPlayed": 38,
-                                "wins": 23,
-                                "ties": 8,
-                                "losses": 7,
-                                "pointsScoredFor": 74,
-                                "pointsScoredAgainst": 36,
-                                "standingPoints": 77
+                                "outcomeTotals": [
+                                    {
+                                        "wins": 19,
+                                        "ties": 6,
+                                        "losses": 13,
+                                        "pointsScoredFor": 74,
+                                        "pointsScoredAgainst": 51,
+                                        "standingPoints": 63
+                                    }
+                                ]
                             }
                         ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Liverpool" }
                     },
-                    "teamStats": {
-                        "rank": { "value": 4 },
-                        "outcomeTotals": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Burnley" } ]
+                        },
+                        "teamStats": [
                             {
-                                "eventsPlayed": 38,
-                                "wins": 21,
-                                "ties": 12,
-                                "losses": 5,
-                                "pointsScoredFor": 84,
-                                "pointsScoredAgainst": 38,
-                                "standingPoints": 75
+                                "rank": { "value": 7 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 14,
+                                        "ties": 12,
+                                        "losses": 12,
+                                        "pointsScoredFor": 36,
+                                        "pointsScoredAgainst": 39,
+                                        "standingPoints": 54
+                                    }
+                                ]
                             }
                         ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Chelsea" }
                     },
-                    "teamStats": {
-                        "rank": { "value": 5 },
-                        "outcomeTotals": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Everton" } ]
+                        },
+                        "teamStats": [
                             {
-                                "eventsPlayed": 38,
-                                "wins": 21,
-                                "ties": 7,
-                                "losses": 10,
-                                "pointsScoredFor": 62,
-                                "pointsScoredAgainst": 38,
-                                "standingPoints": 70
+                                "rank": { "value": 8 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 13,
+                                        "ties": 10,
+                                        "losses": 15,
+                                        "pointsScoredFor": 44,
+                                        "pointsScoredAgainst": 58,
+                                        "standingPoints": 49
+                                    }
+                                ]
                             }
                         ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Arsenal" }
                     },
-                    "teamStats": {
-                        "rank": { "value": 6 },
-                        "eventsPlayed": 38,
-                        "outcomeTotals": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Leicester" } ]
+                        },
+                        "teamStats": [
                             {
-                                "wins": 19,
-                                "ties": 6,
-                                "losses": 13,
-                                "pointsScoredFor": 74,
-                                "pointsScoredAgainst": 51,
-                                "standingPoints": 63
+                                "rank": { "value": 9 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 12,
+                                        "ties": 11,
+                                        "losses": 15,
+                                        "pointsScoredFor": 56,
+                                        "pointsScoredAgainst": 60,
+                                        "standingPoints": 47
+                                    }
+                                ]
                             }
                         ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Burnley" }
                     },
-                    "teamStats": {
-                        "rank": { "value": 7 },
-                        "outcomeTotals": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Newcastle" } ]
+                        },
+                        "teamStats": [
                             {
-                                "eventsPlayed": 38,
-                                "wins": 14,
-                                "ties": 12,
-                                "losses": 12,
-                                "pointsScoredFor": 36,
-                                "pointsScoredAgainst": 39,
-                                "standingPoints": 54
+                                "rank": { "value": 10 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 12,
+                                        "ties": 8,
+                                        "losses": 18,
+                                        "pointsScoredFor": 39,
+                                        "pointsScoredAgainst": 47,
+                                        "standingPoints": 44
+                                    }
+                                ]
                             }
                         ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Everton" }
                     },
-                    "teamStats": {
-                        "rank": { "value": 8 },
-                        "outcomeTotals": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Crystal Palace" } ]
+                        },
+                        "teamStats": [
                             {
-                                "eventsPlayed": 38,
-                                "wins": 13,
-                                "ties": 10,
-                                "losses": 15,
-                                "pointsScoredFor": 44,
-                                "pointsScoredAgainst": 58,
-                                "standingPoints": 49
+                                "rank": { "value": 11 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 11,
+                                        "ties": 11,
+                                        "losses": 16,
+                                        "pointsScoredFor": 45,
+                                        "pointsScoredAgainst": 55,
+                                        "standingPoints": 44
+                                    }
+                                ]
                             }
                         ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Leicester" }
                     },
-                    "teamStats": {
-                        "rank": { "value": 9 },
-                        "outcomeTotals": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Bournemouth" } ]
+                        },
+                        "teamStats": [
                             {
-                                "eventsPlayed": 38,
-                                "wins": 12,
-                                "ties": 11,
-                                "losses": 15,
-                                "pointsScoredFor": 56,
-                                "pointsScoredAgainst": 60,
-                                "standingPoints": 47
+                                "rank": { "value": 12 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 11,
+                                        "ties": 11,
+                                        "losses": 16,
+                                        "pointsScoredFor": 45,
+                                        "pointsScoredAgainst": 61,
+                                        "standingPoints": 44
+                                    }
+                                ]
                             }
                         ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Newcastle" }
                     },
-                    "teamStats": {
-                        "rank": { "value": 10 },
-                        "outcomeTotals": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "West Ham" } ]
+                        },
+                        "teamStats": [
                             {
-                                "eventsPlayed": 38,
-                                "wins": 12,
-                                "ties": 8,
-                                "losses": 18,
-                                "pointsScoredFor": 39,
-                                "pointsScoredAgainst": 47,
-                                "standingPoints": 44
+                                "rank": { "value": 13 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 10,
+                                        "ties": 12,
+                                        "losses": 16,
+                                        "pointsScoredFor": 48,
+                                        "pointsScoredAgainst": 68,
+                                        "standingPoints": 42
+                                    }
+                                ]
                             }
                         ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Crystal Palace" }
                     },
-                    "teamStats": {
-                        "rank": { "value": 11 },
-                        "outcomeTotals": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Watford" } ]
+                        },
+                        "teamStats": [
                             {
-                                "eventsPlayed": 38,
-                                "wins": 11,
-                                "ties": 11,
-                                "losses": 16,
-                                "pointsScoredFor": 45,
-                                "pointsScoredAgainst": 55,
-                                "standingPoints": 44
+                                "rank": { "value": 14 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 11,
+                                        "ties":  8,
+                                        "losses": 19,
+                                        "pointsScoredFor": 44,
+                                        "pointsScoredAgainst": 64,
+                                        "standingPoints": 41
+                                    }
+                                ]
                             }
                         ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Bournemouth" }
                     },
-                    "teamStats": {
-                        "rank": { "value": 12 },
-                        "outcomeTotals": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Brighton" } ]
+                        },
+                        "teamStats": [
                             {
-                                "eventsPlayed": 38,
-                                "wins": 11,
-                                "ties": 11,
-                                "losses": 16,
-                                "pointsScoredFor": 45,
-                                "pointsScoredAgainst": 61,
-                                "standingPoints": 44
+                                "rank": { "value": 15 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 9,
+                                        "ties": 13,
+                                        "losses": 16,
+                                        "pointsScoredFor": 34,
+                                        "pointsScoredAgainst": 54,
+                                        "standingPoints": 40
+                                    }
+                                ]
                             }
                         ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "West Ham" }
                     },
-                    "teamStats": {
-                        "rank": { "value": 13 },
-                        "outcomeTotals": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Huddersfield" } ]
+                        },
+                        "teamStats": [
                             {
-                                "eventsPlayed": 38,
-                                "wins": 10,
-                                "ties": 12,
-                                "losses": 16,
-                                "pointsScoredFor": 48,
-                                "pointsScoredAgainst": 68,
-                                "standingPoints": 42
+                                "rank": { "value": 16 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 9,
+                                        "ties": 10,
+                                        "losses": 19,
+                                        "pointsScoredFor": 28,
+                                        "pointsScoredAgainst": 58,
+                                        "standingPoints": 37
+                                    }
+                                ]
                             }
                         ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Watford" }
                     },
-                    "teamStats": {
-                        "rank": { "value": 14 },
-                        "outcomeTotals": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Southampton" } ]
+                        },
+                        "teamStats": [
                             {
-                                "eventsPlayed": 38,
-                                "wins": 11,
-                                "ties":  8,
-                                "losses": 19,
-                                "pointsScoredFor": 44,
-                                "pointsScoredAgainst": 64,
-                                "standingPoints": 41
+                                "rank": { "value": 17 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 7,
+                                        "ties": 15,
+                                        "losses": 16,
+                                        "pointsScoredFor": 37,
+                                        "pointsScoredAgainst": 56,
+                                        "standingPoints": 36
+                                    }
+                                ]
                             }
                         ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Brighton" }
                     },
-                    "teamStats": {
-                        "rank": { "value": 15 },
-                        "outcomeTotals": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Swansea" } ]
+                        },
+                        "teamStats": [
                             {
-                                "eventsPlayed": 38,
-                                "wins": 9,
-                                "ties": 13,
-                                "losses": 16,
-                                "pointsScoredFor": 34,
-                                "pointsScoredAgainst": 54,
-                                "standingPoints": 40
+                                "rank": { "value": 18 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 8,
+                                        "ties": 9,
+                                        "losses": 21,
+                                        "pointsScoredFor": 28,
+                                        "pointsScoredAgainst": 56,
+                                        "standingPoints": 33
+                                    }
+                                ]
                             }
                         ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Huddersfield" }
                     },
-                    "teamStats": {
-                        "rank": { "value": 16 },
-                        "outcomeTotals": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "Stoke" } ]
+                        },
+                        "teamStats": [
                             {
-                                "eventsPlayed": 38,
-                                "wins": 9,
-                                "ties": 10,
-                                "losses": 19,
-                                "pointsScoredFor": 28,
-                                "pointsScoredAgainst": 58,
-                                "standingPoints": 37
+                                "rank": { "value": 19 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 7,
+                                        "ties": 12,
+                                        "losses": 19,
+                                        "pointsScoredFor": 35,
+                                        "pointsScoredAgainst": 68,
+                                        "standingPoints": 33
+                                    }
+                                ]
                             }
                         ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Southampton" }
                     },
-                    "teamStats": {
-                        "rank": { "value": 17 },
-                        "outcomeTotals": [
+                    {
+                        "teamMetadata": {
+                            "names": [ { "full": "West Brom" } ]
+                        },
+                        "teamStats": [
                             {
-                                "eventsPlayed": 38,
-                                "wins": 7,
-                                "ties": 15,
-                                "losses": 16,
-                                "pointsScoredFor": 37,
-                                "pointsScoredAgainst": 56,
-                                "standingPoints": 36
+                                "rank": { "value": 20 },
+                                "outcomeTotals": [
+                                    {
+                                        "eventsPlayed": 38,
+                                        "wins": 6,
+                                        "ties": 13,
+                                        "losses": 19,
+                                        "pointsScoredFor": 31,
+                                        "pointsScoredAgainst": 56,
+                                        "standingPoints": 31
+                                    }
+                                ]
                             }
                         ]
                     }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Swansea" }
-                    },
-                    "teamStats": {
-                        "rank": { "value": 18 },
-                        "outcomeTotals": [
-                            {
-                                "eventsPlayed": 38,
-                                "wins": 8,
-                                "ties": 9,
-                                "losses": 21,
-                                "pointsScoredFor": 28,
-                                "pointsScoredAgainst": 56,
-                                "standingPoints": 33
-                            }
-                        ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "Stoke" }
-                    },
-                    "teamStats": {
-                        "rank": { "value": 19 },
-                        "outcomeTotals": [
-                            {
-                                "eventsPlayed": 38,
-                                "wins": 7,
-                                "ties": 12,
-                                "losses": 19,
-                                "pointsScoredFor": 35,
-                                "pointsScoredAgainst": 68,
-                                "standingPoints": 33
-                            }
-                        ]
-                    }
-                },
-                {
-                    "teamMetadata": {
-                        "name": { "full": "West Brom" }
-                    },
-                    "teamStats": {
-                        "rank": { "value": 20 },
-                        "outcomeTotals": [
-                            {
-                                "eventsPlayed": 38,
-                                "wins": 6,
-                                "ties": 13,
-                                "losses": 19,
-                                "pointsScoredFor": 31,
-                                "pointsScoredAgainst": 56,
-                                "standingPoints": 31
-                            }
-                        ]
-                    }
-                }
-            ]
+                ]
+            }
         }
-    }
+    ]
 }

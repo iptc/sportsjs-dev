@@ -1,8 +1,10 @@
 {
-    "sportsMetadata": {
-        "docId": "6c71abe8-372c-4d00-b5a9-c002803cce12",
-        "fixtureKey": "fixture:event-summary"
-    },
+    "sportsMetadata": [
+        {
+            "docId": "6c71abe8-372c-4d00-b5a9-c002803cce12",
+            "fixtureKey": "fixture:event-summary"
+        }
+    ],
     "sportsEvents": [
      {
         "eventMetadata": {
@@ -11,9 +13,11 @@
             "seasonType": "seasonType:season-regular",
             "eventStatus": "eventStatus:post-event",
             "startDateTime": "2015-12-14T20:30:00-05:00",
-            "name": {
-                "full": "2015 New York Giants at Miami Dolphins | 2015-12-14 08:30 PM"
-            },
+            "names": [
+                {
+                    "full": "2015 New York Giants at Miami Dolphins | 2015-12-14 08:30 PM"
+                }
+            ],
             "eventMetadataAmericanFootball": {
                 "week": "14"
             }
@@ -22,80 +26,84 @@
             {
                 "teamMetadata": {
                     "key": "team:2700",
-                    "name": {
+                    "names": [
+                        {
                         "given": "Miami",
                         "full": "Miami Dolphins",
                         "abbreviation": "MIA"
-                    },
+                        }
+                    ],
                     "alignment": "home"
                 },
-                "teamStats": {
-                    "scoreStats": {
+                "teamStats": [
+                    {
                         "score": "24",
-                        "scoreOpposing": "31"
-                    },
-                    "subScores": [
-                        {
-                            "periodValue": "Q1",
-                            "score": "7"
-                        },
-                        {
-                            "periodValue": "Q2",
-                            "score": "10"
-                        },
-                        {
-                            "periodValue": "Q3",
-                            "score": "7"
-                        },
-                        {
-                            "periodValue": "Q4",
-                            "score": "0"
-                        },
-                        {
-                            "periodValue": "OT",
-                            "score": "0"
-                        }
-                    ]
-                }
+                        "scoreOpposing": "31",
+                        "subScores": [
+                            {
+                                "periodValue": "Q1",
+                                "score": "7"
+                            },
+                            {
+                                "periodValue": "Q2",
+                                "score": "10"
+                            },
+                            {
+                                "periodValue": "Q3",
+                                "score": "7"
+                            },
+                            {
+                                "periodValue": "Q4",
+                                "score": "0"
+                            },
+                            {
+                                "periodValue": "OT",
+                                "score": "0"
+                            }
+                        ]
+                    }
+                ]
             },
             {
                 "teamMetadata": {
                     "key": "team:3410",
-                    "name": {
-                        "given": "New York Giants",
-                        "full": "New York Giants",
-                        "abbreviation": "NYG"
-                    },
+                    "names": [
+                        {
+                            "given": "New York Giants",
+                            "full": "New York Giants",
+                            "abbreviation": "NYG"
+                        }
+                    ],
                     "alignment": "away"
                 },
-                "teamStats": {
-                    "scoreStats": {
+                "teamStats": [
+                    {
                         "score": "31",
-                        "scoreOpposing": "24"
-                    },
-                    "subScores": [
-                        {
-                            "periodValue": "Q1",
-                            "score": "3"
-                        },
-                        {
-                            "periodValue": "Q2",
-                            "score": "14"
-                        },
-                        {
-                            "periodValue": "Q3",
-                            "score": "7"
-                        },
-                        {
-                            "periodValue": "Q4",
-                            "score": "7"
-                        },
-                        {
-                            "periodValue": "OT",
-                            "score": "0"
-                        }
-                    ]
-                }
+                        "scoreOpposing": "24",
+                        "subScores": [
+                            {
+                                "periodValue": "Q1",
+                                "score": "3"
+                            },
+                            {
+                                "periodValue": "Q2",
+                                "score": "14"
+                            },
+                            {
+                                "periodValue": "Q3",
+                                "score": "7"
+                            },
+                            {
+                                "periodValue": "Q4",
+                                "score": "7"
+                            },
+                            {
+                                "periodValue": "OT",
+                                "score": "0"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     }
