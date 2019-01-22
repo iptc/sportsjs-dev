@@ -220,7 +220,7 @@
         "sportsContent": {
             "description": "Metadata and coverage of sporting news. | Good for scores, schedules, standings, statistics, etc.",
             "type": "object",
-            "additionalProperties": false,
+            "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "sportsMetadata": {"$ref": "#/definitions/sportsMetadataSet"},
                 "sportsEvent": {"$ref": "#/definitions/sportsEvent"},
@@ -568,7 +568,6 @@
         "sportsProperty": {
             "description": "An extensible property, similar to structures in NewsML 1.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "formalName": {
@@ -632,7 +631,6 @@
         "eventSponsor": {
             "description": "A sponsor for an event. | Events can have more than one sponsor.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "names": {
@@ -653,7 +651,6 @@
         "highlight": {
             "description": "A textual highlight. | Can hold plain text, or could hold NITF.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {"content": {
                 "type": "array",
@@ -667,7 +664,6 @@
         "site": {
             "description": "An element housing data having to do with a venue, stadium, arena, field, etc.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "siteMetadata": {
@@ -884,7 +880,6 @@
         "outcomeTotal": {
             "description": "A report on the number of wins, losses, etc., the team or player had during a particular time period. | Can also be scoped with various coverage qualifications, such as just events played at home.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/coverageAttributes"}
@@ -976,7 +971,6 @@
         "outcomeResult": {
             "description": "A report on the result, if any, from the event etc.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/coverageAttributes"}
@@ -1004,7 +998,6 @@
         "award": {
             "description": "A medal, ribbon, placement, or other type of award. | Can be assigned to an event, a team, or a player.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "names": {"$ref": "#/definitions/names"},
@@ -1057,7 +1050,6 @@
         "rank": {
             "description": "How a team is doing in comparison to other teams or players. | May be qualified, so that one ranks teams or players according to, say, how they play at home, or within their division.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/coverageAttributes"}
@@ -1088,7 +1080,6 @@
         "rating": {
             "description": "A judged value placed on the team or individual. | Often used in British soccer.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "ratingType": {
@@ -1117,7 +1108,6 @@
         "player": {
             "description": "A competitor. | Their athletic talents help them decide who wins a sports-event.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "playerMetadata": {"$ref": "#/definitions/playerMetadata"},
@@ -1135,7 +1125,6 @@
         "official": {
             "description": "Also referred to as umpire or referree. | Ensures that the sports-event is played according to its rules.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "officialMetadata": {
@@ -1160,7 +1149,6 @@
         "associate": {
             "description": "Manager or coach or jockey, etc. | An individual or a group that assists a team or player, and functions in a supporting capacity.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "associateMetadata": {"$ref": "#/definitions/associateMetadata"},
@@ -1176,7 +1164,6 @@
         "affiliation": {
             "description": "A mechanism for assigning the membership of a player, team, or associate within a division or larger organizational structure. Also, to indicate an official's affiliation with a team, club or federation, for example.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/coverageAttributes"}
@@ -1255,7 +1242,6 @@
         "tournamentPart": {
             "description": "A tournament part. Use it do group specific parts of a tournament, like a stage or a round.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "tournamentPartMetadata": {"$ref": "#/definitions/tournamentPartMetadata"},
@@ -1296,7 +1282,6 @@
         "standing": {
             "description": "Also known as a (league) table | A ranked, comparative list of team or individual records.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "standingMetadata": {
@@ -1330,7 +1315,6 @@
         "schedule": {
             "description": "A series of games. | Usually grouped by date.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "scheduleMetadata": {
@@ -1361,7 +1345,6 @@
         "statistic": {
             "description": "A table that generally compares the performance of teams or players. | The fixture-key can identify which regulary-running statistics are being presented. Also appropriate for rosters (squad listings).",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/coverageAttributes"}
@@ -1409,7 +1392,6 @@
         "statusChange": {
             "description": "Indicates status change of an entity.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/coverageAttributes"}
@@ -1449,7 +1431,6 @@
         "group": {
             "description": "A holder for statistics about a particular bracket or division or conference or league. | Holds metadata and stats. Also appropriate for expressing general organization/league membership and structure.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [{"$ref": "#/definitions/commonAttributes"}],
             "properties": {
                 "groupMetadata": {"$ref": "#/definitions/groupMetadata"},
@@ -1525,7 +1506,6 @@
         "wageringRunline": {
             "description": "A line used in baseball.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/wagering3Attributes"}
@@ -1544,7 +1524,6 @@
         "wageringStraightSpread": {
             "description": "A wager built around the different between the scores of two teams.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/wagering3Attributes"}
@@ -1563,7 +1542,6 @@
         "wageringTotalScore": {
             "description": "Total combined point/runs/goals scored in a game.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/wagering2Attributes"}
@@ -1598,7 +1576,6 @@
         "wageringOdds": {
             "description": "A line that gives formal odds on a team or player winning, such as 3-to-1 odds.",
             "type": "object",
-            "additionalProperties": false,
             "allOf": [
                 {"$ref": "#/definitions/commonAttributes"},
                 {"$ref": "#/definitions/wageringAttributes"}
