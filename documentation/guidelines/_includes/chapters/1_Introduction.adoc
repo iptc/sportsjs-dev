@@ -1,0 +1,95 @@
+[[introduction]]
+Introduction
+------------
+
+The IPTC launched the SportsML project in March, 2001, as part of a larger effort to create specialized formats for data of interest to the news industry. The format has been designed to be as easy to understand an implement as possible. SportsML allows for the exchange of sports scores, schedules, standings, and statistics for a wide variety of sports competitions.
+
+In 2008 the SportsML joined the family of IPTC G2-Standards. The format cooperates with current IPTC standards NewsML-G2 and NITF to enable publishers to package sports statistics alongside edited coverage of sports.
+
+It is our hope that non-IPTC members, such as major sports leagues and special-event producers, will rally behind SportsML as a global standard. Our shared goal is to make the deployment of interactive sports data applications as easy as possible for customers of sports data feeds.
+
+What's in SportsML
+~~~~~~~~~~~~~~~~~~
+
+SportsML supports the identification and description of a tremendous number of sports characteristics. Highlights include:
+
+* *Scores*: Who's winning, and how did the score change? 
+* *Schedules*: Who's playing who, when, and where? 
+* *Standings*: Who's in first place? Who's closest to qualifying for the championship? 
+* *Statistics*: How do the players and/or teams measure up against one another in various categories? 
+* *News*: How do we combine editorial coverage of sports with all these data feeds? How do we package metadata- and multimedia-filled articles together with sports data?
+
+SportsML consists of a core Schema that contains a great amount of properties that describe a wide range of sports coverage. Much useful sports reporting can be done through the core Schema. In addition, SportsML contains several "plug-in" specific-sport Schemas, which are only necessary when the publisher needs to go in-depth for a specific sport. The core Schema provides an excellent starting point for many sports, and the development process for other plug-ins will continue. Interested users are more than welcome to take part in SportsML's expansion and growth.
+
+SportsML 3.0
+~~~~~~~~~~~~
+
+SportsML 3.0 was approved 15 June 2016. Here are the main features:
+
+* Semantic tech capabilities
+* Generic statistical structure
+* Generic tournament formation
+* Schema redesign
+* Full compatibility with IPTC NewsML-G2 structures
+* Using semantic web technology for controlled vocabularies
+
+SportsML 3.0 features 114 sports controlled vocabularies for everything from `event-status` (`pre-event`, `mid-event`, `suspended`, `halted`, etc.) to statistical concepts for 11 major sports, with more to come. The vocabularies come in the form of NewsML-G2 Knowledge Items. Terms are be available publicly at the IPTC's CV Server and available in human-readable (HTML), and machine readable NewsML-G2 KnowledgeItem XML, RDF/XML and RDF/Turtle formats.
+
+In addition, SportsML a mechanism to incorporate vocabularies outside of SportsML, such as the IOC's ODF or any other vendor of sports data. This is done by using qcodes in a generic stats formation. Here is an example:
+
+[source, xml]
+----
+<stat stat-class="spclass:offensive" name="sml:passes-total" value="32"/>
+<stat stat-class="spclass:offensive" name="odf:FB_PASS" value="32"/>
+<stat stat-class="spclass:offensive" name="sml:passes-complete" value="18"/>
+<stat stat-class="spclass:defensive" name="vendor:accurate_pull_back" value="2"/>
+<stat stat-class="spclass:defensive" name="vendor:good_high_claim" value="5"/>
+----
+
+Generic statistics
+^^^^^^^^^^^^^^^^^^
+
+SportsML currently houses sports-specific stats in specific element like `stats-soccer-offensive`. Some users prefer this, but others, particularly those dealing with multiple sports, prefer the flexibility of a general property that would have the same xpath address from sport to sport. SportsML 3 retains both the specific and generic formations and each will share the same names - that is, a sports-specific attribute will have the same name as in the type vocabulary of the generic element.
+
+Here is an example using the specific formation:
+
+[source, xml]
+----
+<player>
+  <player-metadata player-key="PO2060" position-regular="midfielder" uniform-number="26">
+    <name first="Joe" last="Cole" full="Joe Cole" abbreviation="Cole" />
+  </player-metadata>
+  <player-stats events-played="2" events-started="1" time-played-total="115">
+    <player-stats-soccer> 
+      <stats-soccer-offensive goals-total="1" shots-total="4" shots-on-goal-total="2" corner-kicks="3" offsides="2" shots-off-goal-total="2" /> 
+      <stats-soccer-defensive shots-blocked="2" />
+      <stats-soccer-foul fouls-commited="2" />
+    </player-stats-soccer>
+  </player-stats>
+</player>
+----
+
+In SportsML 3 these stats can also be expressed as follows using the generic formation:
+
+[source, xml]
+----
+<stat sport="sp:soccer" class="spclass:offensive" name="spsoc:goals-total">1</stat>
+<stat sport="sp:soccer" class="spclass:offensive" name="spsoc:shots-total">4</stat>
+<stat sport="sp:soccer" class="spclass:defensive" name="spsoc:shots-blocked">4</stat>
+<stat sport="sp:soccer" class="spclass:foul" name="spsoc:fouls-commited">2</stat>
+----
+
+Generic tournament formation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SportsML 2 has elements specifying the following tournament sections: `division`, `stage` and `round`. However, there is little agreement on where to use each or even what consititutes a stage versus a round. SportsML 3 deprecates these specific elements and replaces them with a more generic `tournament-part` element with a typing vocabulary.
+
+Schema redesign
+^^^^^^^^^^^^^^^
+
+The SportsML 2 schema does not fully exploit the typing and modular features of XML Schema technology. This is addressed in SportsML 3. This makes custom schemas easier to create.
+
+Full compatibility with IPTC NewsML-G2 structures
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+IPTC's NewsML-G2 standard specifies structures for names, locations, dates, keys and qcodes for vocabulary management. SportsML 2 is minimally compliant with NewsML-G2. SportsML 3 is fully compliant. Benefits are internationalisation of names, more flexible markup for locations, more easily processible date formats and better and standardised management of vocabularies and taxonomies.

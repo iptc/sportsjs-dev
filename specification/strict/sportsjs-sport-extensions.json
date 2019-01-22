@@ -1,0 +1,7 @@
+{
+  "id": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-sport-extensions.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsJS Extension schema contains properties that group together all specific sport extensions.",
+  "definitions": {
+  }
+}

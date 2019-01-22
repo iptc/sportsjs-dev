@@ -1,0 +1,315 @@
+{
+  "id": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-volleyball_1.0.draft.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsJS Soccer schema contains properties common to Volleyball.",
+  "definitions": {
+    "volleyballTeamStats": {
+      "description": "Volleyball specific stats for one team. | Team-stats that are specific to volleyball and does not apply to all sports.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "statsVolleyballAttacks": {
+          "$ref": "#/definitions/volleyballStatsAttacks",
+          "description": ""
+        },
+        "statsVolleyballBlocks": {
+          "$ref": "#/definitions/volleyballStatsBlocks",
+          "description": ""
+        },
+        "statsVolleyballService": {
+          "$ref": "#/definitions/volleyballStatsService",
+          "description": ""
+        },
+        "statsVolleyballDefense": {
+          "$ref": "#/definitions/volleyballStatsDefense",
+          "description": ""
+        },
+        "statsVolleyballSetting": {
+          "$ref": "#/definitions/volleyballStatsSetting",
+          "description": ""
+        },
+        "statsVolleyballReceiving": {
+          "$ref": "#/definitions/volleyballStatsReceiving",
+          "description": ""
+        },
+        "errorsOppenent": {
+          "type": "string",
+          "description": ""
+        },
+        "faultsOpponent": {
+          "type": "string",
+          "description": ""
+        },
+        "points": {
+          "type": "string",
+          "description": ""
+        },
+        "pointAttempts": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "volleyballStatsAttacks": {
+      "description": "Attack stats specific to volleyball.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "attacksRank": {
+          "type": "string",
+          "description": ""
+        },
+        "attacksTotal": {
+          "type": "string",
+          "description": ""
+        },
+        "attackAttempts": {
+          "type": "string",
+          "description": ""
+        },
+        "attackFaults": {
+          "type": "string",
+          "description": ""
+        },
+        "attacksInPlay": {
+          "type": "string",
+          "description": ""
+        },
+        "attacksPercentage": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "volleyballStatsBlocks": {
+      "description": "Blocking stats specific to volleyball.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "blocksRank": {
+          "type": "string",
+          "description": ""
+        },
+        "blocksTotal": {
+          "type": "string",
+          "description": ""
+        },
+        "blockAttempts": {
+          "type": "string",
+          "description": ""
+        },
+        "blockFaults": {
+          "type": "string",
+          "description": ""
+        },
+        "blocksInPlay": {
+          "type": "string",
+          "description": ""
+        },
+        "blocksAveragePerSet": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "volleyballStatsService": {
+      "description": "Service stats specific to volleyball.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "serviceRank": {
+          "type": "string",
+          "description": ""
+        },
+        "aces": {
+          "type": "string",
+          "description": ""
+        },
+        "servicesTotal": {
+          "type": "string",
+          "description": ""
+        },
+        "serviceFaults": {
+          "type": "string",
+          "description": ""
+        },
+        "servicesInPlay": {
+          "type": "string",
+          "description": ""
+        },
+        "acesAveragePerSet": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "volleyballStatsDefense": {
+      "description": "Defensive stats (or digs) specific to volleyball.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "defenseRank": {
+          "type": "string",
+          "description": ""
+        },
+        "digsTotal": {
+          "type": "string",
+          "description": ""
+        },
+        "digAttempts": {
+          "type": "string",
+          "description": ""
+        },
+        "digsFaults": {
+          "type": "string",
+          "description": ""
+        },
+        "digsInPlay": {
+          "type": "string",
+          "description": ""
+        },
+        "digsAveragePerSet": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "volleyballStatsSetting": {
+      "description": "Sets stats specific to volleyball",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "defenseRankSets": {
+          "type": "string",
+          "description": ""
+        },
+        "runningSetsTotal": {
+          "type": "string",
+          "description": ""
+        },
+        "setsAttempts": {
+          "type": "string",
+          "description": ""
+        },
+        "setsFaults": {
+          "type": "string",
+          "description": ""
+        },
+        "setsInPlay": {
+          "type": "string",
+          "description": ""
+        },
+        "setsAveragePerSet": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "volleyballStatsReceiving": {
+      "description": "Reception stats specific to volleyball.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "receptionsRank": {
+          "type": "string",
+          "description": ""
+        },
+        "receptionsExcellent": {
+          "type": "string",
+          "description": ""
+        },
+        "receptionsAttempts": {
+          "type": "string",
+          "description": ""
+        },
+        "receptionFaults": {
+          "type": "string",
+          "description": ""
+        },
+        "receptionsInPlay": {
+          "type": "string",
+          "description": ""
+        },
+        "receptionPercentage": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    },
+    "volleyballPlayerStats": {
+      "description": "Player statistics that are specific to volleyball. | Volleyball specific statistic information about a player.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core_1.0.draft.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "statsVolleyballAttacks": {
+          "$ref": "#/definitions/volleyballStatsAttacks",
+          "description": ""
+        },
+        "statsVolleyballBlocks": {
+          "$ref": "#/definitions/volleyballStatsBlocks",
+          "description": ""
+        },
+        "statsVolleyballService": {
+          "$ref": "#/definitions/volleyballStatsService",
+          "description": ""
+        },
+        "statsVolleyballDefense": {
+          "$ref": "#/definitions/volleyballStatsDefense",
+          "description": ""
+        },
+        "statsVolleyballSetting": {
+          "$ref": "#/definitions/volleyballStatsSetting",
+          "description": ""
+        },
+        "statsVolleyballReceiving": {
+          "$ref": "#/definitions/volleyballStatsReceiving",
+          "description": ""
+        },
+        "pointsPlayer": {
+          "type": "string",
+          "description": ""
+        },
+        "pointAttemptsPlayer": {
+          "type": "string",
+          "description": ""
+        },
+        "pointsPercentageOfTeam": {
+          "type": "string",
+          "description": ""
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+= image:iptc_sv_gradient_70x70.jpg[IPTC logo] SportsML/SportsJS Specification and Guidelines
+keywords: iptc, sportsml, sportsjs, xml, sport, format, news, multimedia, multi-media, metadata, standard
+:doctype: book
+:imagesdir: ./images
+:includedir: ./_includes
+:stylesdir: stylesheets/
+:stylesheet: asciidoctor-iptc-stds-02.css
+:source-highlighter: coderay
+:source-language: asciidoc
+:icons: font
+:stem:
+:author: Brendan Quinn
+:email: office@iptc.org
+:revnumber: 1.0
+:revremark: Status: DRAFT
+:toc: left
+:toclevels: 3
+:nofooter:
+:sectnumlevels: 3
+
+include::{includedir}/chapters/Preface.adoc[]
+
+:sectnums:
+
+include::{includedir}/chapters/1_Introduction.adoc[]
+
+include::{includedir}/chapters/2_Getting_Started.adoc[]
+
+include::{includedir}/chapters/3_Basic_Structure.adoc[]
+
+include::{includedir}/chapters/4_Team_Sports.adoc[]
+
+include::{includedir}/chapters/5_Players_and_Actions.adoc[]
+
+include::{includedir}/chapters/6_Manage_Concepts.adoc[]
+
+include::{includedir}/chapters/7_Knowledge_Item.adoc[]
+
+include::{includedir}/chapters/8_Package_Item.adoc[]
+
+include::{includedir}/chapters/9_Planning_Item.adoc[]
+
+include::{includedir}/chapters/10_Controlled_Values.adoc[]
+
+include::{includedir}/chapters/11_Catalog_Item.adoc[]
+
+include::{includedir}/chapters/12_Labels_and_Blocks.adoc[]
+
+include::{includedir}/chapters/13_News_Message.adoc[]
+
+include::{includedir}/chapters/14_Specification_Reference.adoc[]
+
+include::{includedir}/chapters/15_Glossary.adoc[]
+
+// include::{includedir}/chapters/table-separator.adoc[]
+
+include::{includedir}/chapters/16_References.adoc[]
+
+include::{includedir}/chapters/Contact_Information.adoc[]
+
+

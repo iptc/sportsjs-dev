@@ -1,0 +1,1347 @@
+{
+    "sportsMetadata": [
+        {
+            "docId": "xt.sdi.20151012022705-standings_NHL",
+            "dateTime": "2015-10-12T02:27:05-04:00",
+            "language": "en-US",
+            "documentClass": "spct:standings",
+            "fixtureKey": "spfixt:standings",
+            "sportsContentCodes": [
+                {
+                    "codeType": "spct:publisher",
+                    "codeKey": "publisher:sportsdirectinc.com",
+                    "codeName": "Sports Direct, Inc."
+                },
+                {
+                    "codeType": "spct:distributor",
+                    "codeKey": "distributor:xmlteam.com",
+                    "codeName": "XML Team Solutions, Inc."
+                },
+                {
+                    "codeType": "spct:sport",
+                    "codeKey": "sport:15031000",
+                    "codeName": "Ice Hockey"
+                },
+                {
+                    "codeType": "spct:league",
+                    "codeKey": "vendleague:l.nhl.com",
+                    "codeName": "National Hockey League"
+                },
+                {
+                    "codeType": "spct:season",
+                    "codeKey": "season:2015"
+                }
+            ],
+            "catalogRefs": [
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
+                },
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
+                }
+            ]
+        }
+    ],
+    "standings": [
+        {
+            "teams": [
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.24",
+                        "names": [
+                            {
+                                "full": "San Jose Sharks"
+                            },
+                            {
+                                "alternate": "San Jose"
+                            },
+                            {
+                                "nickname": "Sharks"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.28",
+                        "names": [
+                            {
+                                "full": "Calgary Flames"
+                            },
+                            {
+                                "alternate": "Calgary"
+                            },
+                            {
+                                "nickname": "Flames"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.25",
+                        "names": [
+                            {
+                                "full": "Arizona Coyotes"
+                            },
+                            {
+                                "alternate": "Arizona"
+                            },
+                            {
+                                "nickname": "Coyotes"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.22",
+                        "names": [
+                            {
+                                "full": "Anaheim Ducks"
+                            },
+                            {
+                                "alternate": "Anaheim"
+                            },
+                            {
+                                "nickname": "Ducks"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.23",
+                        "names": [
+                            {
+                                "full": "Los Angeles Kings"
+                            },
+                            {
+                                "alternate": "Los Angeles"
+                            },
+                            {
+                                "nickname": "Kings"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.29",
+                        "names": [
+                            {
+                                "full": "Edmonton Oilers"
+                            },
+                            {
+                                "alternate": "Edmonton"
+                            },
+                            {
+                                "nickname": "Oilers"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.26",
+                        "names": [
+                            {
+                                "full": "Vancouver Canucks"
+                            },
+                            {
+                                "alternate": "Vancouver"
+                            },
+                            {
+                                "nickname": "Canucks"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        },
+        {
+            "teams": [
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.24",
+                        "names": [
+                            {
+                                "full": "San Jose Sharks"
+                            },
+                            {
+                                "alternate": "San Jose"
+                            },
+                            {
+                                "nickname": "Sharks"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.28",
+                        "names": [
+                            {
+                                "full": "Calgary Flames"
+                            },
+                            {
+                                "alternate": "Calgary"
+                            },
+                            {
+                                "nickname": "Flames"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.25",
+                        "names": [
+                            {
+                                "full": "Arizona Coyotes"
+                            },
+                            {
+                                "alternate": "Arizona"
+                            },
+                            {
+                                "nickname": "Coyotes"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.22",
+                        "names": [
+                            {
+                                "full": "Anaheim Ducks"
+                            },
+                            {
+                                "alternate": "Anaheim"
+                            },
+                            {
+                                "nickname": "Ducks"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.23",
+                        "names": [
+                            {
+                                "full": "Los Angeles Kings"
+                            },
+                            {
+                                "alternate": "Los Angeles"
+                            },
+                            {
+                                "nickname": "Kings"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.29",
+                        "names": [
+                            {
+                                "full": "Edmonton Oilers"
+                            },
+                            {
+                                "alternate": "Edmonton"
+                            },
+                            {
+                                "nickname": "Oilers"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.26",
+                        "names": [
+                            {
+                                "full": "Vancouver Canucks"
+                            },
+                            {
+                                "alternate": "Vancouver"
+                            },
+                            {
+                                "nickname": "Canucks"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        },
+        {
+            "teams": [
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.18",
+                        "names": [
+                            {
+                                "full": "St. Louis Blues"
+                            },
+                            {
+                                "alternate": "St. Louis"
+                            },
+                            {
+                                "nickname": "Blues"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.21",
+                        "names": [
+                            {
+                                "full": "Dallas Stars"
+                            },
+                            {
+                                "alternate": "Dallas"
+                            },
+                            {
+                                "nickname": "Stars"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.27",
+                        "names": [
+                            {
+                                "full": "Colorado Avalanche"
+                            },
+                            {
+                                "alternate": "Colorado"
+                            },
+                            {
+                                "nickname": "Avalanche"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.16",
+                        "names": [
+                            {
+                                "full": "Chicago Blackhawks"
+                            },
+                            {
+                                "alternate": "Chicago"
+                            },
+                            {
+                                "nickname": "Blackhawks"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.19",
+                        "names": [
+                            {
+                                "full": "Nashville Predators"
+                            },
+                            {
+                                "alternate": "Nashville"
+                            },
+                            {
+                                "nickname": "Predators"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.30",
+                        "names": [
+                            {
+                                "full": "Minnesota Wild"
+                            },
+                            {
+                                "alternate": "Minnesota"
+                            },
+                            {
+                                "nickname": "Wild"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.9",
+                        "names": [
+                            {
+                                "full": "Winnipeg Jets"
+                            },
+                            {
+                                "alternate": "Winnipeg"
+                            },
+                            {
+                                "nickname": "Jets"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        },
+        {
+            "teams": [
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.18",
+                        "names": [
+                            {
+                                "full": "St. Louis Blues"
+                            },
+                            {
+                                "alternate": "St. Louis"
+                            },
+                            {
+                                "nickname": "Blues"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.21",
+                        "names": [
+                            {
+                                "full": "Dallas Stars"
+                            },
+                            {
+                                "alternate": "Dallas"
+                            },
+                            {
+                                "nickname": "Stars"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.27",
+                        "names": [
+                            {
+                                "full": "Colorado Avalanche"
+                            },
+                            {
+                                "alternate": "Colorado"
+                            },
+                            {
+                                "nickname": "Avalanche"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.16",
+                        "names": [
+                            {
+                                "full": "Chicago Blackhawks"
+                            },
+                            {
+                                "alternate": "Chicago"
+                            },
+                            {
+                                "nickname": "Blackhawks"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.19",
+                        "names": [
+                            {
+                                "full": "Nashville Predators"
+                            },
+                            {
+                                "alternate": "Nashville"
+                            },
+                            {
+                                "nickname": "Predators"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.30",
+                        "names": [
+                            {
+                                "full": "Minnesota Wild"
+                            },
+                            {
+                                "alternate": "Minnesota"
+                            },
+                            {
+                                "nickname": "Wild"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.9",
+                        "names": [
+                            {
+                                "full": "Winnipeg Jets"
+                            },
+                            {
+                                "alternate": "Winnipeg"
+                            },
+                            {
+                                "nickname": "Jets"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        },
+        {
+            "teams": [
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.20",
+                        "names": [
+                            {
+                                "full": "Columbus Blue Jackets"
+                            },
+                            {
+                                "alternate": "Columbus"
+                            },
+                            {
+                                "nickname": "Blue Jackets"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.5",
+                        "names": [
+                            {
+                                "full": "Pittsburgh Penguins"
+                            },
+                            {
+                                "alternate": "Pittsburgh"
+                            },
+                            {
+                                "nickname": "Penguins"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.6",
+                        "names": [
+                            {
+                                "full": "Carolina Hurricanes"
+                            },
+                            {
+                                "alternate": "Carolina"
+                            },
+                            {
+                                "nickname": "Hurricanes"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.4",
+                        "names": [
+                            {
+                                "full": "Philadelphia Flyers"
+                            },
+                            {
+                                "alternate": "Philadelphia"
+                            },
+                            {
+                                "nickname": "Flyers"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.2",
+                        "names": [
+                            {
+                                "full": "New York Islanders"
+                            },
+                            {
+                                "alternate": "New York"
+                            },
+                            {
+                                "nickname": "Islanders"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.3",
+                        "names": [
+                            {
+                                "full": "New York Rangers"
+                            },
+                            {
+                                "alternate": "New York"
+                            },
+                            {
+                                "nickname": "Rangers"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.1",
+                        "names": [
+                            {
+                                "full": "New Jersey Devils"
+                            },
+                            {
+                                "alternate": "New Jersey"
+                            },
+                            {
+                                "nickname": "Devils"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.8",
+                        "names": [
+                            {
+                                "full": "Washington Capitals"
+                            },
+                            {
+                                "alternate": "Washington"
+                            },
+                            {
+                                "nickname": "Capitals"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        },
+        {
+            "teams": [
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.20",
+                        "names": [
+                            {
+                                "full": "Columbus Blue Jackets"
+                            },
+                            {
+                                "alternate": "Columbus"
+                            },
+                            {
+                                "nickname": "Blue Jackets"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.5",
+                        "names": [
+                            {
+                                "full": "Pittsburgh Penguins"
+                            },
+                            {
+                                "alternate": "Pittsburgh"
+                            },
+                            {
+                                "nickname": "Penguins"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.6",
+                        "names": [
+                            {
+                                "full": "Carolina Hurricanes"
+                            },
+                            {
+                                "alternate": "Carolina"
+                            },
+                            {
+                                "nickname": "Hurricanes"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.4",
+                        "names": [
+                            {
+                                "full": "Philadelphia Flyers"
+                            },
+                            {
+                                "alternate": "Philadelphia"
+                            },
+                            {
+                                "nickname": "Flyers"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.2",
+                        "names": [
+                            {
+                                "full": "New York Islanders"
+                            },
+                            {
+                                "alternate": "New York"
+                            },
+                            {
+                                "nickname": "Islanders"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.3",
+                        "names": [
+                            {
+                                "full": "New York Rangers"
+                            },
+                            {
+                                "alternate": "New York"
+                            },
+                            {
+                                "nickname": "Rangers"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.1",
+                        "names": [
+                            {
+                                "full": "New Jersey Devils"
+                            },
+                            {
+                                "alternate": "New Jersey"
+                            },
+                            {
+                                "nickname": "Devils"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.8",
+                        "names": [
+                            {
+                                "full": "Washington Capitals"
+                            },
+                            {
+                                "alternate": "Washington"
+                            },
+                            {
+                                "nickname": "Capitals"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        },
+        {
+            "teams": [
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.7",
+                        "names": [
+                            {
+                                "full": "Tampa Bay Lightning"
+                            },
+                            {
+                                "alternate": "Tampa Bay"
+                            },
+                            {
+                                "nickname": "Lightning"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.14",
+                        "names": [
+                            {
+                                "full": "Ottawa Senators"
+                            },
+                            {
+                                "alternate": "Ottawa"
+                            },
+                            {
+                                "nickname": "Senators"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.12",
+                        "names": [
+                            {
+                                "full": "Buffalo Sabres"
+                            },
+                            {
+                                "alternate": "Buffalo"
+                            },
+                            {
+                                "nickname": "Sabres"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.11",
+                        "names": [
+                            {
+                                "full": "Boston Bruins"
+                            },
+                            {
+                                "alternate": "Boston"
+                            },
+                            {
+                                "nickname": "Bruins"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.13",
+                        "names": [
+                            {
+                                "full": "Montreal Canadiens"
+                            },
+                            {
+                                "alternate": "Montreal"
+                            },
+                            {
+                                "nickname": "Canadiens"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.10",
+                        "names": [
+                            {
+                                "full": "Florida Panthers"
+                            },
+                            {
+                                "alternate": "Florida"
+                            },
+                            {
+                                "nickname": "Panthers"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.15",
+                        "names": [
+                            {
+                                "full": "Toronto Maple Leafs"
+                            },
+                            {
+                                "alternate": "Toronto"
+                            },
+                            {
+                                "nickname": "Maple Leafs"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.17",
+                        "names": [
+                            {
+                                "full": "Detroit Red Wings"
+                            },
+                            {
+                                "alternate": "Detroit"
+                            },
+                            {
+                                "nickname": "Red Wings"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-exhibition"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        },
+        {
+            "teams": [
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.7",
+                        "names": [
+                            {
+                                "full": "Tampa Bay Lightning"
+                            },
+                            {
+                                "alternate": "Tampa Bay"
+                            },
+                            {
+                                "nickname": "Lightning"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.14",
+                        "names": [
+                            {
+                                "full": "Ottawa Senators"
+                            },
+                            {
+                                "alternate": "Ottawa"
+                            },
+                            {
+                                "nickname": "Senators"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.12",
+                        "names": [
+                            {
+                                "full": "Buffalo Sabres"
+                            },
+                            {
+                                "alternate": "Buffalo"
+                            },
+                            {
+                                "nickname": "Sabres"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.11",
+                        "names": [
+                            {
+                                "full": "Boston Bruins"
+                            },
+                            {
+                                "alternate": "Boston"
+                            },
+                            {
+                                "nickname": "Bruins"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.13",
+                        "names": [
+                            {
+                                "full": "Montreal Canadiens"
+                            },
+                            {
+                                "alternate": "Montreal"
+                            },
+                            {
+                                "nickname": "Canadiens"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.10",
+                        "names": [
+                            {
+                                "full": "Florida Panthers"
+                            },
+                            {
+                                "alternate": "Florida"
+                            },
+                            {
+                                "nickname": "Panthers"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.15",
+                        "names": [
+                            {
+                                "full": "Toronto Maple Leafs"
+                            },
+                            {
+                                "alternate": "Toronto"
+                            },
+                            {
+                                "nickname": "Maple Leafs"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                },
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:l.nhl.com-t.17",
+                        "names": [
+                            {
+                                "full": "Detroit Red Wings"
+                            },
+                            {
+                                "alternate": "Detroit"
+                            },
+                            {
+                                "nickname": "Red Wings"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "temporalUnitType": "spct:season-regular"
+                        }
+                    ]
+                }
+            ],
+            "players": []
+        }
+    ]
+}

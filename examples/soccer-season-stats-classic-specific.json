@@ -1,0 +1,545 @@
+{
+    "sportsMetadata": [
+        {
+            "docId": "xt.opta.stats-20151021085919-8",
+            "dateTime": "2015-10-21T08:59:19-04:00",
+            "language": "en-US",
+            "documentClass": "spct:statistics",
+            "fixtureKey": "spfixt:season-stats",
+            "sportsContentCodes": [
+                {
+                    "codeType": "spct:publisher",
+                    "codeKey": "publisher:optasports.com",
+                    "codeName": "Opta"
+                },
+                {
+                    "codeType": "spct:distributor",
+                    "codeKey": "distributor:xmlteam.com",
+                    "codeName": "XML Team Solutions, Inc."
+                },
+                {
+                    "codeType": "spct:sport",
+                    "codeKey": "sport:15054000",
+                    "codeName": "Soccer"
+                },
+                {
+                    "codeType": "spct:league",
+                    "codeKey": "vendleague:l.premierleague.com",
+                    "codeName": "English Barclays Premier League"
+                },
+                {
+                    "codeType": "spct:season",
+                    "codeKey": "season:2015"
+                },
+                {
+                    "codeType": "spct:team",
+                    "codeKey": "vendteam:o.thefa.com-t.5",
+                    "codeName": "Chelsea Blues"
+                }
+            ],
+            "catalogRefs": [
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
+                },
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
+                }
+            ]
+        }
+    ],
+    "statistics": [
+        {
+            "statisticMetadata": {
+                "teamCoverage": "single-team",
+                "temporalUnitType": "spct:season",
+                "temporalUnitValue": "vendor:2015"
+            },
+            "teams": [
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:o.thefa.com-t.5",
+                        "names": [
+                            {
+                                "full": "Chelsea"
+                            },
+                            {
+                                "alternate": "Chelsea"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "eventsPlayed": 9
+                        }
+                    ],
+                    "players": [
+                        {
+                            "id": "p.41328",
+                            "playerMetadata": {
+                                "key": "vendperson:p.41328",
+                                "positionRegular": "spsocposition:defender",
+                                "names": [
+                                    {
+                                        "full": "C\u00e9sar Azpilicueta"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 9,
+                                    "timePlayedTotal": "788",
+                                    "eventsStarted": 9
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.118335",
+                            "playerMetadata": {
+                                "key": "vendperson:p.118335",
+                                "positionRegular": "spsocposition:defender",
+                                "names": [
+                                    {
+                                        "full": "Abdul Rahman Baba"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 1,
+                                    "timePlayedTotal": "90",
+                                    "eventsStarted": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.40349",
+                            "playerMetadata": {
+                                "key": "vendperson:p.40349",
+                                "positionRegular": "spsocposition:goalkeeper",
+                                "names": [
+                                    {
+                                        "full": "Asmir Begovic"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 7,
+                                    "timePlayedTotal": "576",
+                                    "eventsStarted": 6
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.108132",
+                            "playerMetadata": {
+                                "key": "vendperson:p.108132",
+                                "positionRegular": "spsocposition:goalkeeper",
+                                "names": [
+                                    {
+                                        "full": "Jamal Blackman"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "p.47431",
+                            "playerMetadata": {
+                                "key": "vendperson:p.47431",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Willian Borges Da Silva"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 8,
+                                    "timePlayedTotal": "483",
+                                    "eventsStarted": 6
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.19419",
+                            "playerMetadata": {
+                                "key": "vendperson:p.19419",
+                                "positionRegular": "spsocposition:defender",
+                                "names": [
+                                    {
+                                        "full": "Gary Cahill"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 7,
+                                    "timePlayedTotal": "574",
+                                    "eventsStarted": 6
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.60772",
+                            "playerMetadata": {
+                                "key": "vendperson:p.60772",
+                                "positionRegular": "spsocposition:goalkeeper",
+                                "names": [
+                                    {
+                                        "full": "Thibaut Courtois"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 3,
+                                    "timePlayedTotal": "232",
+                                    "eventsStarted": 3
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.18507",
+                            "playerMetadata": {
+                                "key": "vendperson:p.18507",
+                                "positionRegular": "spsocposition:forward",
+                                "names": [
+                                    {
+                                        "full": "Diego Da Silva Costa"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 7,
+                                    "timePlayedTotal": "610",
+                                    "eventsStarted": 7
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.17878",
+                            "playerMetadata": {
+                                "key": "vendperson:p.17878",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Cesc F\u00e0bregas"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 9,
+                                    "timePlayedTotal": "779",
+                                    "eventsStarted": 9
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.48847",
+                            "playerMetadata": {
+                                "key": "vendperson:p.48847",
+                                "positionRegular": "spsocposition:forward",
+                                "names": [
+                                    {
+                                        "full": "Radamel Falcao Garc\u00eda Z\u00e1rate"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 7,
+                                    "timePlayedTotal": "192",
+                                    "eventsStarted": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.42786",
+                            "playerMetadata": {
+                                "key": "vendperson:p.42786",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Eden Hazard"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 9,
+                                    "timePlayedTotal": "727",
+                                    "eventsStarted": 8
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.41135",
+                            "playerMetadata": {
+                                "key": "vendperson:p.41135",
+                                "positionRegular": "spsocposition:defender",
+                                "names": [
+                                    {
+                                        "full": "Branislav Ivanovic"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 8,
+                                    "timePlayedTotal": "720",
+                                    "eventsStarted": 8
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.126187",
+                            "playerMetadata": {
+                                "key": "vendperson:p.126187",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Ruben Loftus-Cheek"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 2,
+                                    "timePlayedTotal": "62",
+                                    "eventsStarted": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.62398",
+                            "playerMetadata": {
+                                "key": "vendperson:p.62398",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Nemanja Matic"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 9,
+                                    "timePlayedTotal": "657",
+                                    "eventsStarted": 7
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.28495",
+                            "playerMetadata": {
+                                "key": "vendperson:p.28495",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "John Obi Mikel"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 3,
+                                    "timePlayedTotal": "62",
+                                    "eventsStarted": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.167767",
+                            "playerMetadata": {
+                                "key": "vendperson:p.167767",
+                                "positionRegular": "spsocposition:forward",
+                                "names": [
+                                    {
+                                        "full": "Robert Kenedy Nunes do Nascimento"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 2,
+                                    "timePlayedTotal": "57"
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.38419",
+                            "playerMetadata": {
+                                "key": "vendperson:p.38419",
+                                "positionRegular": "spsocposition:forward",
+                                "names": [
+                                    {
+                                        "full": "Lo\u00efc Remy"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 4,
+                                    "timePlayedTotal": "87",
+                                    "eventsStarted": 1
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.49579",
+                            "playerMetadata": {
+                                "key": "vendperson:p.49579",
+                                "positionRegular": "spsocposition:forward",
+                                "names": [
+                                    {
+                                        "full": "Pedro Rodr\u00edguez Ledesma"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 7,
+                                    "timePlayedTotal": "533",
+                                    "eventsStarted": 6
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.53392",
+                            "playerMetadata": {
+                                "key": "vendperson:p.53392",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Ramires Santos do Nascimento"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 5,
+                                    "timePlayedTotal": "237",
+                                    "eventsStarted": 3
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.1718",
+                            "playerMetadata": {
+                                "key": "vendperson:p.1718",
+                                "positionRegular": "spsocposition:defender",
+                                "names": [
+                                    {
+                                        "full": "John Terry"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 6,
+                                    "timePlayedTotal": "459",
+                                    "eventsStarted": 6
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.110504",
+                            "playerMetadata": {
+                                "key": "vendperson:p.110504",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Bertrand Traore"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "p.103192",
+                            "playerMetadata": {
+                                "key": "vendperson:p.103192",
+                                "positionRegular": "spsocposition:defender",
+                                "names": [
+                                    {
+                                        "full": "Kurt Zouma"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 8,
+                                    "timePlayedTotal": "599",
+                                    "eventsStarted": 6
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.61262",
+                            "playerMetadata": {
+                                "key": "vendperson:p.61262",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Oscar dos Santos Emboaba Junior"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "teamCoverage": "single-team",
+                                    "temporalUnitType": "spct:season",
+                                    "eventsPlayed": 4,
+                                    "timePlayedTotal": "286",
+                                    "eventsStarted": 4
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

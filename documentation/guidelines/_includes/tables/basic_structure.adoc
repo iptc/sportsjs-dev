@@ -1,0 +1,23 @@
+[%autowidth,options="header"]
+|===
+|Element|Structure
+
+|`sports-event`
+|A set of teams or a set of players, followed by optional information about officials/referrees, play-by-play actions, highlights, and awards
+
+|`tournament`
+|Broken into tournament-divisions, which have rounds of sports-events
+
+|`schedule`
+|A structured set of sports-events.
+
+|`standing`
+|A set of teams or players.
+
+|`statistic`
+|Also a set of teams or players.
+
+|`article`
+|A container for an NITF news article.
+
+|===

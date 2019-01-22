@@ -1,0 +1,1548 @@
+{
+    "tournaments": [
+        {
+            "tournamentDivisions": [
+                {
+                    "tournamentDivisionMetadata": {
+                        "sportsContentCodes": [
+                            {
+                                "codeType": "subj:qual",
+                                "sportsContentQualifiers": [
+                                    {
+                                        "gender": "male",
+                                        "participantCount": "spparticipantcount:individual"
+                                    }
+                                ]
+                            }
+                        ],
+                        "names": [
+                            {
+                                "name": "World group"
+                            }
+                        ]
+                    },
+                    "tournamentParts": [
+                        {
+                            "tournamentPartMetadata": {
+                                "type": "sptournamentphase:final",
+                                "names": [
+                                    {
+                                        "name": "Final"
+                                    }
+                                ]
+                            },
+                            "sportsEvents": [
+                                {
+                                    "eventMetadata": {
+                                        "startDateTime": "2011-12-02T10:00:00+02:00",
+                                        "eventStatus": "speventstatus:mid-event",
+                                        "sites": [
+                                            {
+                                                "siteMetadata": {
+                                                    "siteStyle": "spsitestyle:indoor",
+                                                    "surface": "spsitesurface:clay",
+                                                    "names": [
+                                                        {
+                                                            "name": "Olympic stadium"
+                                                        }
+                                                    ],
+                                                    "homeLocation": {
+                                                        "POIDetails": {
+                                                            "address": {
+                                                                "localities": [
+                                                                    {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Seville"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "country": {
+                                                                    "names": [
+                                                                        {
+                                                                            "name": "Spain"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Spain"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Argentina"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "0"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "sportsEvents": [
+                                        {
+                                            "eventMetadata": {
+                                                "eventNumber": 1
+                                            },
+                                            "players": [
+                                                {
+                                                    "id": "p_1",
+                                                    "playerMetadata": {
+                                                        "names": [
+                                                            {
+                                                                "given": "Rafael"
+                                                            },
+                                                            {
+                                                                "family": "Nadal"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Spain"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "3"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "id": "p_2",
+                                                    "playerMetadata": {
+                                                        "names": [
+                                                            {
+                                                                "given": "David"
+                                                            },
+                                                            {
+                                                                "family": "Nalbandian"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Argentina"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "0"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "actions": [
+                                                {
+                                                    "actions": [
+                                                        {
+                                                            "shotType": "sptenshot:volley",
+                                                            "participants": [
+                                                                {
+                                                                    "idref": "p_1",
+                                                                    "role": "vendtenrole:server"
+                                                                },
+                                                                {
+                                                                    "idref": "p_2",
+                                                                    "role": "vendtenrole:receiver"
+                                                                },
+                                                                {
+                                                                    "idref": "p_1",
+                                                                    "role": "vendtenrole:ball-winner"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tournamentPartMetadata": {
+                                "status": "speventstatus:post-event",
+                                "startDateTime": "2011-09-16",
+                                "endDateTime": "2011-09-18",
+                                "type": "sptournamentphase:semi-final",
+                                "names": [
+                                    {
+                                        "name": "Semi-final"
+                                    }
+                                ]
+                            },
+                            "sportsEvents": [
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event",
+                                        "sportsProperties": [
+                                            {
+                                                "formalName": "Ball",
+                                                "value": "Dunlop Fort All Court"
+                                            }
+                                        ],
+                                        "sites": [
+                                            {
+                                                "siteMetadata": {
+                                                    "style": "indoor",
+                                                    "surface": "spsitesurface:hard-court",
+                                                    "names": [
+                                                        {
+                                                            "name": "Belgrade Arena"
+                                                        }
+                                                    ],
+                                                    "homeLocation": {
+                                                        "POIDetails": {
+                                                            "address": {
+                                                                "localities": [
+                                                                    {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Belgrade"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "country": {
+                                                                    "names": [
+                                                                        {
+                                                                            "name": "Serbia"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "teams": [
+                                        {
+                                            "id": "DC_Seribia",
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Serbia"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "2"
+                                                }
+                                            ],
+                                            "players": [
+                                                {}
+                                            ]
+                                        },
+                                        {
+                                            "id": "DC_Argentina",
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Argentina"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "3"
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "sportsEvents": [
+                                        {
+                                            "eventMetadata": {
+                                                "startDateTime": "2011-09-16T15:00:00",
+                                                "endDateTime": "2011-09-16",
+                                                "eventNumber": 1,
+                                                "eventStatus": "speventstatus:post-event"
+                                            },
+                                            "players": [
+                                                {
+                                                    "playerMetadata": {
+                                                        "nationality": "Serbian",
+                                                        "dateOfDeath": "1986-02-10",
+                                                        "gender": "male",
+                                                        "names": [
+                                                            {
+                                                                "given": "Viktor"
+                                                            },
+                                                            {
+                                                                "family": "Troicki"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Belgrade"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Serbia"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "1",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "4"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "6"
+                                                                },
+                                                                {
+                                                                    "periodValue": "3",
+                                                                    "score": "2"
+                                                                },
+                                                                {
+                                                                    "periodValue": "4",
+                                                                    "score": "3"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "playerMetadata": {
+                                                        "nationality": "Argentinian",
+                                                        "dateOfDeath": "1982-01-01",
+                                                        "gender": "male",
+                                                        "names": [
+                                                            {
+                                                                "given": "David"
+                                                            },
+                                                            {
+                                                                "family": "Nalbandian"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Cordoba"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Argentina"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "3",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "6"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "4"
+                                                                },
+                                                                {
+                                                                    "periodValue": "3",
+                                                                    "score": "6"
+                                                                },
+                                                                {
+                                                                    "periodValue": "4",
+                                                                    "score": "6"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "eventMetadata": {
+                                                "startDateTime": "2011-09-16",
+                                                "endDateTime": "2011-09-16",
+                                                "eventNumber": 2,
+                                                "eventStatus": "speventstatus:post-event"
+                                            },
+                                            "players": [
+                                                {
+                                                    "playerMetadata": {
+                                                        "nationality": "Serbian",
+                                                        "dateOfDeath": "1986-02-10",
+                                                        "gender": "male",
+                                                        "names": [
+                                                            {
+                                                                "given": "Janko"
+                                                            },
+                                                            {
+                                                                "family": "Tipsarevic"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Belgrade"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Servia"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "0",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "5"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "3"
+                                                                },
+                                                                {
+                                                                    "periodValue": "3",
+                                                                    "score": "4"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "playerMetadata": {
+                                                        "nationality": "Argentinian",
+                                                        "dateOfDeath": "1988-09-23",
+                                                        "gender": "male",
+                                                        "names": [
+                                                            {
+                                                                "given": "Juan Martin"
+                                                            },
+                                                            {
+                                                                "family": "Del Potro"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Tandil"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Argentina"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "3",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "7"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "6"
+                                                                },
+                                                                {
+                                                                    "periodValue": "3",
+                                                                    "score": "6"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "eventMetadata": {
+                                                "startDateTime": "2011-09-17",
+                                                "endDateTime": "2011-09-17T15:00:00",
+                                                "eventNumber": 3,
+                                                "eventStatus": "speventstatus:post-event",
+                                                "sportsProperties": [
+                                                    {
+                                                        "formalName": "playertype",
+                                                        "value": "double"
+                                                    }
+                                                ]
+                                            },
+                                            "teams": [
+                                                {
+                                                    "teamMetadata": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Serbia"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "teamStats": [
+                                                        {
+                                                            "score": "3",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "7"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "6"
+                                                                },
+                                                                {
+                                                                    "periodValue": "3",
+                                                                    "score": "6"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "players": [
+                                                        {
+                                                            "playerMetadata": {
+                                                                "nationality": "Serbian",
+                                                                "dateOfDeath": "1986-02-10",
+                                                                "gender": "male",
+                                                                "names": [
+                                                                    {
+                                                                        "given": "Viktor"
+                                                                    },
+                                                                    {
+                                                                        "family": "Troicki"
+                                                                    }
+                                                                ],
+                                                                "homeLocation": {
+                                                                    "POIDetails": {
+                                                                        "address": {
+                                                                            "localities": [
+                                                                                {
+                                                                                    "names": [
+                                                                                        {
+                                                                                            "name": "Belgrade"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "country": {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "Serbia"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "playerStats": [
+                                                                {}
+                                                            ]
+                                                        },
+                                                        {
+                                                            "playerMetadata": {
+                                                                "nationality": "Serbian",
+                                                                "dateOfDeath": "1986-02-10",
+                                                                "gender": "male",
+                                                                "names": [
+                                                                    {
+                                                                        "given": "Nenad"
+                                                                    },
+                                                                    {
+                                                                        "family": "Zimonjic"
+                                                                    }
+                                                                ],
+                                                                "homeLocation": {
+                                                                    "POIDetails": {
+                                                                        "address": {
+                                                                            "localities": [
+                                                                                {
+                                                                                    "names": [
+                                                                                        {
+                                                                                            "name": "Belgrade"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "country": {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "Serbia"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "playerStats": [
+                                                                {}
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "teamMetadata": {
+                                                        "names": [
+                                                            {
+                                                                "name": "Argentina"
+                                                            }
+                                                        ]
+                                                    },
+                                                    "teamStats": [
+                                                        {
+                                                            "score": "0",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "6"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "4"
+                                                                },
+                                                                {
+                                                                    "periodValue": "3",
+                                                                    "score": "2"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ],
+                                                    "players": [
+                                                        {
+                                                            "playerMetadata": {
+                                                                "nationality": "Serbian",
+                                                                "dateOfDeath": "1979-08-30",
+                                                                "gender": "male",
+                                                                "names": [
+                                                                    {
+                                                                        "given": "Juan Ignacio"
+                                                                    },
+                                                                    {
+                                                                        "family": "Chela"
+                                                                    }
+                                                                ],
+                                                                "homeLocation": {
+                                                                    "POIDetails": {
+                                                                        "address": {
+                                                                            "localities": [
+                                                                                {
+                                                                                    "names": [
+                                                                                        {
+                                                                                            "name": "Buenos Aires"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "country": {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "Argentina"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "playerStats": [
+                                                                {}
+                                                            ]
+                                                        },
+                                                        {
+                                                            "playerMetadata": {
+                                                                "nationality": "Serbian",
+                                                                "dateOfDeath": "1984-03-29",
+                                                                "gender": "male",
+                                                                "names": [
+                                                                    {
+                                                                        "given": "Juan"
+                                                                    },
+                                                                    {
+                                                                        "family": "Monaco"
+                                                                    }
+                                                                ],
+                                                                "homeLocation": {
+                                                                    "POIDetails": {
+                                                                        "address": {
+                                                                            "localities": [
+                                                                                {
+                                                                                    "names": [
+                                                                                        {
+                                                                                            "name": "Buenos Aires"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ],
+                                                                            "country": {
+                                                                                "names": [
+                                                                                    {
+                                                                                        "name": "Argentina"
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            },
+                                                            "playerStats": [
+                                                                {}
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "eventMetadata": {
+                                                "startDateTime": "2011-09-18T14:00:00",
+                                                "endDateTime": "2011-09-18",
+                                                "eventNumber": 4,
+                                                "eventStatus": "speventstatus:post-event"
+                                            },
+                                            "players": [
+                                                {
+                                                    "playerMetadata": {
+                                                        "nationality": "Serbian",
+                                                        "dateOfDeath": "1987-05-22",
+                                                        "gender": "male",
+                                                        "names": [
+                                                            {
+                                                                "given": "Novak"
+                                                            },
+                                                            {
+                                                                "family": "Djokovic"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Belgrade"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Serbia"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "0",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "6"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "0"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "playerMetadata": {
+                                                        "nationality": "Argentinian",
+                                                        "dateOfDeath": "1988-09-23",
+                                                        "gender": "male",
+                                                        "names": [
+                                                            {
+                                                                "given": "Juan Martin"
+                                                            },
+                                                            {
+                                                                "family": "Del Potro"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Tandil"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Argentina"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "2",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "7"
+                                                                },
+                                                                {
+                                                                    "periodValue": "2",
+                                                                    "score": "3"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "eventMetadata": {
+                                                "startDateTime": "2011-09-18",
+                                                "endDateTime": "2011-09-18",
+                                                "eventNumber": 5,
+                                                "eventStatus": "speventstatus:post-event"
+                                            },
+                                            "players": [
+                                                {
+                                                    "playerMetadata": {
+                                                        "nationality": "Serbian",
+                                                        "dateOfDeath": "1986-02-10",
+                                                        "gender": "male",
+                                                        "names": [
+                                                            {
+                                                                "given": "Janko"
+                                                            },
+                                                            {
+                                                                "family": "Tipsarevic"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Belgrade"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Servia"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "1",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "6"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "playerMetadata": {
+                                                        "nationality": "Argentinian",
+                                                        "dateOfDeath": "1984-03-29",
+                                                        "gender": "male",
+                                                        "names": [
+                                                            {
+                                                                "given": "Juan"
+                                                            },
+                                                            {
+                                                                "family": "Monaco"
+                                                            }
+                                                        ],
+                                                        "homeLocation": {
+                                                            "POIDetails": {
+                                                                "address": {
+                                                                    "localities": [
+                                                                        {
+                                                                            "names": [
+                                                                                {
+                                                                                    "name": "Buenos Aires"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ],
+                                                                    "country": {
+                                                                        "names": [
+                                                                            {
+                                                                                "name": "Argentina"
+                                                                            }
+                                                                        ]
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    },
+                                                    "playerStats": [
+                                                        {
+                                                            "score": "0",
+                                                            "subScores": [
+                                                                {
+                                                                    "periodValue": "1",
+                                                                    "score": "2"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Spain"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "4"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "France"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tournamentPartMetadata": {
+                                "status": "speventstatus:post-event",
+                                "startDateTime": "2011-07-08",
+                                "endDateTime": "2011-07-10",
+                                "type": "sptournamentphase:quarter-final",
+                                "names": [
+                                    {
+                                        "name": "Quarterfinals"
+                                    }
+                                ]
+                            },
+                            "sportsEvents": [
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Serbia"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "4"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "names": [
+                                                    {
+                                                        "name": "Sweden"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "names": [
+                                                    {
+                                                        "name": "Kazakhstan"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "0"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Argentina"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "5"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "USA"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Spain"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "names": [
+                                                    {
+                                                        "name": "Germany"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "France"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "4"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "tournamentPartMetadata": {
+                                "status": "speventstatus:post-event",
+                                "number": 1,
+                                "startDateTime": "2011-03-04",
+                                "endDateTime": "2011-03-06",
+                                "type": "sptournamentphase:round",
+                                "names": [
+                                    {
+                                        "name": "First round"
+                                    }
+                                ]
+                            },
+                            "sportsEvents": [
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Serbia"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "4"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "names": [
+                                                    {
+                                                        "name": "India"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Russia"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "2"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "names": [
+                                                    {
+                                                        "name": "Sweden"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Czech Republic"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "names": [
+                                                    {
+                                                        "name": "Kazakhstan"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Argentina"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "4"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "names": [
+                                                    {
+                                                        "name": "Romania"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "names": [
+                                                    {
+                                                        "name": "Chile"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "USA"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "4"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "names": [
+                                                    {
+                                                        "name": "Belgium"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "1"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Spain"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "4"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "names": [
+                                                    {
+                                                        "name": "Germany"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "3"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "Croatia"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "2"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "eventMetadata": {
+                                        "eventStatus": "speventstatus:post-event"
+                                    },
+                                    "teams": [
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "home",
+                                                "names": [
+                                                    {
+                                                        "name": "Austria"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "2"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "teamMetadata": {
+                                                "alignment": "away",
+                                                "roundPosition": "seeded",
+                                                "names": [
+                                                    {
+                                                        "name": "France"
+                                                    }
+                                                ]
+                                            },
+                                            "teamStats": [
+                                                {
+                                                    "score": "3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

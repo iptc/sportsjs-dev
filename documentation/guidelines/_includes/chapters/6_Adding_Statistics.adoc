@@ -1,0 +1,29 @@
+Adding Statistics
+-----------------
+
+We have come a long way since the first document which only contained `sports-content`. We have added actions so that we can mark up who scored and some other events that happened during the match. And we now have a result file that looks something like this:
+
+    Manchester United - Barcelona 1-3 (1-1)
+    Scores: 0-1 Pedro Rodriguez(27), 1-1 Wayne Rooney (34), 1-2 Lionel Messi (54), 1-3 David Villa (69).
+ 
+But we are stilling missing some data. And those are related to the site and other statistics.
+
+Let's add where the match was played and how many people was there. And why not also tell how many people this stadium can hold so that, if you want, you could do some math and tell how full/empty the stadium was, and a little bit more. In order to add this information, we need to add more information under the event-metadata element. I will show just this part in the code below:
+
+<event-metadata start-date-time="2011-05-28T204500+00">
+            <site>
+                <site-metadata capacity="90000" home-page-url="http://www.wembleystadium.com/" surface="grass" >
+                    <name first="Wembley" last="Stadium" />
+                    <home-location city="London" country="England" timezone="Europe/London" />
+                </site-metadata>
+                <site-stats attendance="87695" />
+            </site>
+</event-metadata>
+So let's explain the code above:
+First we have added when the event took place with the start-date-time attribute in event-metadata. 
+Then we have added the site, site-metadata and site-stats elements to mark up information about the site. So now we can write up this code, and we can even link to the website for the stadium:
+
+Manchester United - Barcelona 1-3 (1-1)
+Wembley Stadium, London, England. 
+Attendenace: 87695
+Scores: 0-1 Pedro Rodriguez(27), 1-1 Wayne Rooney (34), 1-2 Lionel Messi (54), 1-3 David Villa (69).

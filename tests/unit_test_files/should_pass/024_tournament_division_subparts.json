@@ -1,0 +1,70 @@
+{
+    "tournaments": [
+        {
+            "id": "",
+            "class": "",
+            "style": "",
+            "tournamentMetadata": {
+                "status": "qcode:blah",
+                "minimumSubparts": 1,
+                "maximumSubparts": 2,
+                "number": 1,
+                "sportsProperties": [ ],
+                "names": [ ],
+                "sites": [ ],
+                "awards": [ ],
+                "key": "qcode:blah",
+                "golfTournamentMetadata": {},
+                "tennisTournamentMetadata": {}
+            },
+            "tournamentDivisions": [
+                {
+                    "tournamentDivisionMetadata": {
+                        "number": 1
+                    },
+                    "tournamentParts": [
+                        {
+                            "tournamentPartMetadata": {
+                                "names": [ { "full": "Division 1 part 1" } ],
+                                "number": 1
+                            },
+                            "tournamentParts": [
+                            ]
+                        },
+                        {
+                            "tournamentPartMetadata": {
+                                "names": [ { "full": "Division 1 part 2" } ],
+                                "number": 2
+                            },
+                            "tournamentParts": [
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "tournamentDivisionMetadata": {
+                        "number": 2
+                    },
+                    "tournamentParts": [
+                        {
+                            "tournamentPartMetadata": {
+                                "names": [ { "full": "Division 2 part 1" } ],
+                                "number": 1
+                            },
+                            "tournamentParts": [
+                            ]
+                        },
+                        {
+                            "tournamentPartMetadata": {
+                                "names": [ { "full": "Division 2 part 2" } ],
+                                "number": 2
+                            },
+                            "tournamentParts": [
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

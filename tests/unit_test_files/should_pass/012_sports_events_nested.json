@@ -1,0 +1,23 @@
+{
+    "sportsEvents": [
+        {
+            "eventMetadata": {
+                "id": "xxx"
+            },
+            "sportsEvents": [
+                {
+                    "eventMetadata": {
+                    }
+                },
+                {
+                    "eventStats": {
+                    },
+                    "teams": [
+                    ],
+                    "players": [
+                    ]
+                }
+            ]
+        }
+    ]
+}

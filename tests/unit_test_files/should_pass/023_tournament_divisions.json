@@ -1,0 +1,31 @@
+{
+    "tournaments": [
+        {
+            "id": "",
+            "class": "",
+            "style": "",
+            "tournamentMetadata": {
+                "status": "qcode:blah",
+                "minimumSubparts": 1,
+                "maximumSubparts": 2,
+                "number": 1,
+                "sportsProperties": [ ],
+                "names": [ ],
+                "sites": [ ],
+                "awards": [ ],
+                "key": "qcode:blah",
+                "golfTournamentMetadata": {},
+                "tennisTournamentMetadata": {}
+            },
+            "tournamentDivisions": [
+                {
+                    "tournamentDivisionMetadata": {
+                        "number": 1
+                    },
+                    "sportsEvents": [
+                    ]
+                }
+            ]
+        }
+    ]
+}

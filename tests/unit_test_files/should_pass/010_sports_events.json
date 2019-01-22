@@ -1,0 +1,18 @@
+{
+    "sportsEvents": [
+        {
+            "id": "iptc:test:sports-event-unit-test",
+            "eventMetadata": {
+            },
+            "eventStats": {},
+            "teams": [
+            ],
+            "players": [
+            ],
+            "officials": [
+            ],
+            "actions": [
+            ]
+        }
+    ]
+}

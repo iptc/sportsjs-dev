@@ -1,0 +1,2727 @@
+{
+    "sportsMetadata": [
+        {
+            "docId": "xt.pa.20150303113515-28-3740642-post-event",
+            "dateTime": "2015-03-03T11:35:15-05:00",
+            "language": "en-US",
+            "documentClass": "spct:event-summary",
+            "fixtureKey": "spfixt:event-stats",
+            "sportsContentCodes": [
+                {
+                    "codeType": "spct:publisher",
+                    "codeKey": "publisher:padatasports.com",
+                    "codeName": "The Press Association"
+                },
+                {
+                    "codeType": "spct:distributor",
+                    "codeKey": "distributor:xmlteam.com",
+                    "codeName": "XML Team Solutions, Inc."
+                },
+                {
+                    "codeType": "spct:sport",
+                    "codeKey": "sport:15049000",
+                    "codeName": "Rugby Union"
+                },
+                {
+                    "codeType": "spct:league",
+                    "codeKey": "vendleague:l.rugby.england.premiership",
+                    "codeName": "Aviva Premiership Rugby"
+                },
+                {
+                    "codeType": "spct:season",
+                    "codeKey": "season:2014"
+                }
+            ],
+            "catalogRefs": [
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
+                },
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
+                }
+            ]
+        }
+    ],
+    "sportsEvents": [
+        {
+            "eventMetadata": {
+                "startDateTime": "2015-02-21T15:15:00+00:00",
+                "temporalUnitType": "cpnat:event",
+                "key": "vendevent:l.rugby.england.premiership-2014-e.3740642",
+                "eventStatus": "speventstatus:post-event",
+                "eventStatusNote": "Result",
+                "eventOutcomeType": "speventoutcometype:regular",
+                "sites": [
+                    {
+                        "siteMetadata": {
+                            "names": [
+                                {
+                                    "full": "The Recreation Ground"
+                                },
+                                {
+                                    "alternate": "The Recreation Ground"
+                                }
+                            ]
+                        },
+                        "siteStats": [
+                            {
+                                "attendance": "13,300"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "teams": [
+                {
+                    "id": "t.33094",
+                    "teamMetadata": {
+                        "key": "vendteam:t.33094",
+                        "alignment": "home",
+                        "names": [
+                            {
+                                "full": "Bath"
+                            },
+                            {
+                                "alternate": "Bath"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "stats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "statType": "spstat:score",
+                                            "value": "13"
+                                        },
+                                        {
+                                            "statType": "spstat:score-opposing",
+                                            "value": "21"
+                                        },
+                                        {
+                                            "statType": "spstat:event-outcome",
+                                            "value": "loss"
+                                        },
+                                        {
+                                            "statType": "sprgxstat:tries-scored",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "statType": "sprgxstat:conversions-scored",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "statType": "sprgxstat:penalty-goals-scored",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "statType": "sprgxstat:drop-goals-scored",
+                                            "value": "0"
+                                        },
+                                        {
+                                            "statType": "sprgxstat:cautions-total",
+                                            "value": "0"
+                                        },
+                                        {
+                                            "statType": "sprgxstat:ejections-total",
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "10"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "3"
+                                },
+                                {
+                                    "score": "7"
+                                },
+                                {
+                                    "score": "13"
+                                }
+                            ]
+                        }
+                    ],
+                    "players": [
+                        {
+                            "id": "p.416094",
+                            "playerMetadata": {
+                                "key": "vendperson:p.416094",
+                                "positionEvent": "sprgxposition:fullback",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Tom Homer"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.501168",
+                            "playerMetadata": {
+                                "key": "vendperson:p.501168",
+                                "positionEvent": "sprgxposition:fullback",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Semesa Rokoduguni"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.343059",
+                            "playerMetadata": {
+                                "key": "vendperson:p.343059",
+                                "positionEvent": "sprgxposition:center",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Sam Burgess"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.378841",
+                            "playerMetadata": {
+                                "key": "vendperson:p.378841",
+                                "positionEvent": "sprgxposition:center",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Kyle Eastmond"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.476085",
+                            "playerMetadata": {
+                                "key": "vendperson:p.476085",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Ollie Woodburn"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.496022",
+                            "playerMetadata": {
+                                "key": "vendperson:p.496022",
+                                "positionEvent": "sprgxposition:center",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Ollie Devoto"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.390533",
+                            "playerMetadata": {
+                                "key": "vendperson:p.390533",
+                                "positionEvent": "sprgxposition:scrum-half",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Micky Young"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.18797",
+                            "playerMetadata": {
+                                "key": "vendperson:p.18797",
+                                "positionEvent": "sprgxposition:prop",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Paul James"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.340055",
+                            "playerMetadata": {
+                                "key": "vendperson:p.340055",
+                                "positionEvent": "sprgxposition:hooker",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Rob Webber"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.457961",
+                            "playerMetadata": {
+                                "key": "vendperson:p.457961",
+                                "positionEvent": "sprgxposition:prop",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Henry Thomas"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.213443",
+                            "playerMetadata": {
+                                "key": "vendperson:p.213443",
+                                "positionEvent": "sprgxposition:flanker",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Stuart Hooper"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.343889",
+                            "playerMetadata": {
+                                "key": "vendperson:p.343889",
+                                "positionEvent": "sprgxposition:lock",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Dominic Day"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.423067",
+                            "playerMetadata": {
+                                "key": "vendperson:p.423067",
+                                "positionEvent": "sprgxposition:lock",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Matt Garvey"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.360868",
+                            "playerMetadata": {
+                                "key": "vendperson:p.360868",
+                                "positionEvent": "sprgxposition:flanker",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Francois Louw"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.415765",
+                            "playerMetadata": {
+                                "key": "vendperson:p.415765",
+                                "positionEvent": "sprgxposition:flanker",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Carl Fearns"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.404699",
+                            "playerMetadata": {
+                                "key": "vendperson:p.404699",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Ross Batty"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.477874",
+                            "playerMetadata": {
+                                "key": "vendperson:p.477874",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Nick Auterac"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.442159",
+                            "playerMetadata": {
+                                "key": "vendperson:p.442159",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Kane Palma-Newport"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.412155",
+                            "playerMetadata": {
+                                "key": "vendperson:p.412155",
+                                "positionEvent": "sprgxposition:back-row",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Alafoti Faosiliva"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.333959",
+                            "playerMetadata": {
+                                "key": "vendperson:p.333959",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Leroy Houston"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.177851",
+                            "playerMetadata": {
+                                "key": "vendperson:p.177851",
+                                "positionEvent": "sprgxposition:scrum-half",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Peter Stringer"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.547213",
+                            "playerMetadata": {
+                                "key": "vendperson:p.547213",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Rory Jennings"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.539400",
+                            "playerMetadata": {
+                                "key": "vendperson:p.539400",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Luke Arscott"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "t.33286",
+                    "teamMetadata": {
+                        "key": "vendteam:t.33286",
+                        "alignment": "away",
+                        "names": [
+                            {
+                                "full": "Northampton"
+                            },
+                            {
+                                "alternate": "Northampton"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "stats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "statType": "spstat:score",
+                                            "value": "21"
+                                        },
+                                        {
+                                            "statType": "spstat:score-opposing",
+                                            "value": "13"
+                                        },
+                                        {
+                                            "statType": "spstat:event-outcome",
+                                            "value": "win"
+                                        },
+                                        {
+                                            "statType": "sprgxstat:tries-scored",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "statType": "sprgxstat:conversions-scored",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "statType": "sprgxstat:penalty-goals-scored",
+                                            "value": "3"
+                                        },
+                                        {
+                                            "statType": "sprgxstat:drop-goals-scored",
+                                            "value": "0"
+                                        },
+                                        {
+                                            "statType": "sprgxstat:cautions-total",
+                                            "value": "1"
+                                        },
+                                        {
+                                            "statType": "sprgxstat:ejections-total",
+                                            "value": "0"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "12"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "9"
+                                },
+                                {
+                                    "score": "0"
+                                },
+                                {
+                                    "score": "18"
+                                }
+                            ]
+                        }
+                    ],
+                    "players": [
+                        {
+                            "id": "p.373518",
+                            "playerMetadata": {
+                                "key": "vendperson:p.373518",
+                                "positionEvent": "sprgxposition:fullback",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "James Wilson"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.437613",
+                            "playerMetadata": {
+                                "key": "vendperson:p.437613",
+                                "positionEvent": "sprgxposition:fullback",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Ken Pisi"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.324028",
+                            "playerMetadata": {
+                                "key": "vendperson:p.324028",
+                                "positionEvent": "sprgxposition:center",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "George Pisi"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.501169",
+                            "playerMetadata": {
+                                "key": "vendperson:p.501169",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Tom Stephenson"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.454870",
+                            "playerMetadata": {
+                                "key": "vendperson:p.454870",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Jamie Elliott"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.240140",
+                            "playerMetadata": {
+                                "key": "vendperson:p.240140",
+                                "positionEvent": "sprgxposition:fly-half",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Stephen Myler"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.301540",
+                            "playerMetadata": {
+                                "key": "vendperson:p.301540",
+                                "positionEvent": "sprgxposition:scrum-half",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Lee Dickson"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.424118",
+                            "playerMetadata": {
+                                "key": "vendperson:p.424118",
+                                "positionEvent": "sprgxposition:prop",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Alex Waller"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.454872",
+                            "playerMetadata": {
+                                "key": "vendperson:p.454872",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Mike Haywood"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.436606",
+                            "playerMetadata": {
+                                "key": "vendperson:p.436606",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Gareth Denman"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.171234",
+                            "playerMetadata": {
+                                "key": "vendperson:p.171234",
+                                "positionEvent": "sprgxposition:fullback",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "James Craig"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.255724",
+                            "playerMetadata": {
+                                "key": "vendperson:p.255724",
+                                "positionEvent": "sprgxposition:lock",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Christian Day"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.429208",
+                            "playerMetadata": {
+                                "key": "vendperson:p.429208",
+                                "positionEvent": "sprgxposition:back-row",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Samu Manoa"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.387549",
+                            "playerMetadata": {
+                                "key": "vendperson:p.387549",
+                                "positionEvent": "sprgxposition:back-row",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Calum Clark"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.434761",
+                            "playerMetadata": {
+                                "key": "vendperson:p.434761",
+                                "positionEvent": "sprgxposition:back-row",
+                                "status": "spplayerstatus:starter",
+                                "names": [
+                                    {
+                                        "full": "Sam Dickinson"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.523205",
+                            "playerMetadata": {
+                                "key": "vendperson:p.523205",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Matt Williams"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.412577",
+                            "playerMetadata": {
+                                "key": "vendperson:p.412577",
+                                "positionEvent": "sprgxposition:prop",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Alex Corbisiero"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.342203",
+                            "playerMetadata": {
+                                "key": "vendperson:p.342203",
+                                "positionEvent": "sprgxposition:prop",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Tom Mercey"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.487121",
+                            "playerMetadata": {
+                                "key": "vendperson:p.487121",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Teimana Harrison"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.231887",
+                            "playerMetadata": {
+                                "key": "vendperson:p.231887",
+                                "positionEvent": "sprgxposition:back-row",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Phil Dowson"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.377667",
+                            "playerMetadata": {
+                                "key": "vendperson:p.377667",
+                                "positionEvent": "sprgxposition:scrum-half",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Kahn Fotuali'i"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.246714",
+                            "playerMetadata": {
+                                "key": "vendperson:p.246714",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Sam Oliver"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.547569",
+                            "playerMetadata": {
+                                "key": "vendperson:p.547569",
+                                "status": "spplayerstatus:bench",
+                                "names": [
+                                    {
+                                        "full": "Ahsee Tuala"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "stats": [
+                                                {
+                                                    "statType": "sprgxstat:tries-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:conversions-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:penalty-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:drop-goals-scored",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:cautions-total",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "statType": "sprgxstat:ejections-total",
+                                                    "value": "0"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "officials": [
+                {
+                    "officialMetadata": {
+                        "key": "vendperson:PO291476",
+                        "names": [
+                            {
+                                "full": "Greg Garner"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "actions": [
+                {
+                    "minutesElapsed": "3",
+                    "class": "spactionclass:score",
+                    "teamIdref": "t.33094",
+                    "scoreAttemptType": "sprgxscoreattempt:try",
+                    "participants": [
+                        {
+                            "idref": "p.476085",
+                            "role": "sprgxrole:scorer"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "3",
+                    "class": "spactionclass:score",
+                    "teamIdref": "t.33094",
+                    "scoreAttemptType": "sprgxscoreattempt:conversion",
+                    "participants": [
+                        {
+                            "idref": "p.416094",
+                            "role": "sprgxrole:scorer"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "24",
+                    "class": "spactionclass:score",
+                    "teamIdref": "t.33094",
+                    "scoreAttemptType": "sprgxscoreattempt:penalty",
+                    "participants": [
+                        {
+                            "idref": "p.416094",
+                            "role": "sprgxrole:scorer"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "28",
+                    "class": "spactionclass:score",
+                    "teamIdref": "t.33286",
+                    "scoreAttemptType": "sprgxscoreattempt:try",
+                    "participants": [
+                        {
+                            "idref": "p.373518",
+                            "role": "sprgxrole:scorer"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "35",
+                    "class": "spactionclass:score",
+                    "teamIdref": "t.33286",
+                    "scoreAttemptType": "sprgxscoreattempt:try",
+                    "participants": [
+                        {
+                            "idref": "p.454872",
+                            "role": "sprgxrole:scorer"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "35",
+                    "class": "spactionclass:score",
+                    "teamIdref": "t.33286",
+                    "scoreAttemptType": "sprgxscoreattempt:conversion",
+                    "participants": [
+                        {
+                            "idref": "p.240140",
+                            "role": "sprgxrole:scorer"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "48",
+                    "class": "spactionclass:score",
+                    "teamIdref": "t.33286",
+                    "scoreAttemptType": "sprgxscoreattempt:penalty",
+                    "participants": [
+                        {
+                            "idref": "p.240140",
+                            "role": "sprgxrole:scorer"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "53",
+                    "class": "spactionclass:score",
+                    "teamIdref": "t.33286",
+                    "scoreAttemptType": "sprgxscoreattempt:penalty",
+                    "participants": [
+                        {
+                            "idref": "p.240140",
+                            "role": "sprgxrole:scorer"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "58",
+                    "class": "spactionclass:score",
+                    "teamIdref": "t.33094",
+                    "scoreAttemptType": "sprgxscoreattempt:penalty",
+                    "participants": [
+                        {
+                            "idref": "p.416094",
+                            "role": "sprgxrole:scorer"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "71",
+                    "class": "spactionclass:score",
+                    "teamIdref": "t.33286",
+                    "scoreAttemptType": "sprgxscoreattempt:penalty",
+                    "participants": [
+                        {
+                            "idref": "p.240140",
+                            "role": "sprgxrole:scorer"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "30",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33286",
+                    "participants": [
+                        {
+                            "idref": "p.171234",
+                            "role": "sprgxrole:sub-off"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "30",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33286",
+                    "participants": [
+                        {
+                            "idref": "p.231887",
+                            "role": "sprgxrole:sub-on"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "47",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33286",
+                    "participants": [
+                        {
+                            "idref": "p.424118",
+                            "role": "sprgxrole:sub-off"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "47",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33286",
+                    "participants": [
+                        {
+                            "idref": "p.412577",
+                            "role": "sprgxrole:sub-on"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "53",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33094",
+                    "participants": [
+                        {
+                            "idref": "p.340055",
+                            "role": "sprgxrole:sub-off"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "53",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33094",
+                    "participants": [
+                        {
+                            "idref": "p.404699",
+                            "role": "sprgxrole:sub-on"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "53",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33094",
+                    "participants": [
+                        {
+                            "idref": "p.423067",
+                            "role": "sprgxrole:sub-off"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "53",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33094",
+                    "participants": [
+                        {
+                            "idref": "p.412155",
+                            "role": "sprgxrole:sub-on"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "53",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33094",
+                    "participants": [
+                        {
+                            "idref": "p.18797",
+                            "role": "sprgxrole:sub-off"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "53",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33094",
+                    "participants": [
+                        {
+                            "idref": "p.477874",
+                            "role": "sprgxrole:sub-on"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "53",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33094",
+                    "participants": [
+                        {
+                            "idref": "p.415765",
+                            "role": "sprgxrole:sub-off"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "53",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33094",
+                    "participants": [
+                        {
+                            "idref": "p.333959",
+                            "role": "sprgxrole:sub-on"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "59",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33094",
+                    "participants": [
+                        {
+                            "idref": "p.390533",
+                            "role": "sprgxrole:sub-off"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "59",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33094",
+                    "participants": [
+                        {
+                            "idref": "p.177851",
+                            "role": "sprgxrole:sub-on"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "59",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33286",
+                    "participants": [
+                        {
+                            "idref": "p.301540",
+                            "role": "sprgxrole:sub-off"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "59",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33286",
+                    "participants": [
+                        {
+                            "idref": "p.377667",
+                            "role": "sprgxrole:sub-on"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "70",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33094",
+                    "participants": [
+                        {
+                            "idref": "p.457961",
+                            "role": "sprgxrole:sub-off"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "70",
+                    "class": "spactionclass:substitution",
+                    "teamIdref": "t.33094",
+                    "participants": [
+                        {
+                            "idref": "p.442159",
+                            "role": "sprgxrole:sub-on"
+                        }
+                    ]
+                },
+                {
+                    "minutesElapsed": "71",
+                    "class": "spactionclass:penalty",
+                    "teamIdref": "t.33286",
+                    "penaltyLevel": "sprgxpenaltylevel:yellow-card",
+                    "participants": [
+                        {
+                            "idref": "p.324028",
+                            "role": "sprgxrole:infraction-by"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

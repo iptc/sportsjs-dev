@@ -1,0 +1,1422 @@
+{
+    "sportsMetadata": [
+        {
+            "docId": "xt.22956338-box",
+            "dateTime": "2015-02-02T00:35:00-05:00",
+            "language": "en-US",
+            "documentClass": "spct:event-summary",
+            "fixtureKey": "spfixt:event-stats",
+            "sportsContentCodes": [
+                {
+                    "codeType": "spct:publisher",
+                    "codeKey": "publisher:sportsnetwork.com",
+                    "codeName": "The Sports Network"
+                },
+                {
+                    "codeType": "spct:distributor",
+                    "codeKey": "distributor:xmlteam.com",
+                    "codeName": "XML Team Solutions, Inc."
+                },
+                {
+                    "codeType": "spct:sport",
+                    "codeKey": "sport:15003000",
+                    "codeName": "American Football"
+                },
+                {
+                    "codeType": "spct:league",
+                    "codeKey": "vendleague:l.nfl.com",
+                    "codeName": "National Football League"
+                },
+                {
+                    "codeType": "spct:season-type",
+                    "codeKey": "season-type:post-season"
+                },
+                {
+                    "codeType": "spct:season",
+                    "codeKey": "season:2014"
+                },
+                {
+                    "codeType": "spct:priority",
+                    "codeKey": "priority:normal"
+                },
+                {
+                    "codeType": "spct:conference",
+                    "codeKey": "vendconf:c.afc",
+                    "codeName": "American"
+                },
+                {
+                    "codeType": "spct:conference",
+                    "codeKey": "vendconf:c.nfc",
+                    "codeName": "National"
+                },
+                {
+                    "codeType": "spct:team",
+                    "codeKey": "vendteam:l.nfl.com-t.16",
+                    "codeName": "Seattle Seahawks"
+                },
+                {
+                    "codeType": "spct:team",
+                    "codeKey": "vendteam:l.nfl.com-t.4",
+                    "codeName": "New England Patriots"
+                }
+            ],
+            "catalogRefs": [
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-G2-Standards_27.xml"
+                },
+                {
+                    "href": "http://www.iptc.org/std/catalog/catalog.IPTC-Sports_1.xml"
+                }
+            ]
+        }
+    ],
+    "sportsEvents": [
+        {
+            "eventMetadata": {
+                "startDateTime": "2015-02-01T18:30:00-05:00",
+                "temporalUnitValue": "vendor:l.nfl.com-2014-e.4481",
+                "key": "vendevent:l.nfl.com-2014-e.4481",
+                "eventStatus": "speventstatus:post-event",
+                "duration": "PT3H36M",
+                "sites": [
+                    {
+                        "siteMetadata": {
+                            "homeLocation": {}
+                        },
+                        "siteStats": [
+                            {
+                                "attendance": "70288"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "teams": [
+                {
+                    "id": "l.nfl.com-t.4",
+                    "teamMetadata": {
+                        "key": "vendteam:l.nfl.com-t.4",
+                        "alignment": "away",
+                        "names": [
+                            {
+                                "full": "New England Patriots"
+                            },
+                            {
+                                "alternate": "New England"
+                            },
+                            {
+                                "nickname": "Patriots"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "score": "28",
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "14"
+                                },
+                                {
+                                    "periodValue": "3",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "4",
+                                    "score": "14"
+                                }
+                            ]
+                        }
+                    ],
+                    "players": [
+                        {
+                            "id": "l.nfl.com-p.11652",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.11652",
+                                "positionEvent": "spamfposition:punter",
+                                "names": [
+                                    {
+                                        "full": "Ryan Allen"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.7756",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.7756",
+                                "positionEvent": "spamfposition:wide-receiver",
+                                "names": [
+                                    {
+                                        "full": "Danny Amendola"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.7722",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.7722",
+                                "positionEvent": "spamfposition:cornerback",
+                                "names": [
+                                    {
+                                        "full": "Kyle Arrington"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.9899",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.9899",
+                                "positionEvent": "spamfposition:linebacker",
+                                "names": [
+                                    {
+                                        "full": "Akeem Ayers"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.8806",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.8806",
+                                "positionEvent": "spamfposition:running-back",
+                                "names": [
+                                    {
+                                        "full": "LeGarrette Blount"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.10774",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.10774",
+                                "positionEvent": "spamfposition:running-back",
+                                "names": [
+                                    {
+                                        "full": "Brandon Bolden"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.678",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.678",
+                                "positionEvent": "spamfposition:quarterback",
+                                "names": [
+                                    {
+                                        "full": "Tom Brady"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.6509",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.6509",
+                                "positionEvent": "spamfposition:lineman-defensive",
+                                "names": [
+                                    {
+                                        "full": "Alan Branch"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.5519",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.5519",
+                                "positionEvent": "spamfposition:cornerback",
+                                "names": [
+                                    {
+                                        "full": "Brandon Browner"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.13234",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.13234",
+                                "positionEvent": "spamfposition:defensive-back",
+                                "names": [
+                                    {
+                                        "full": "Malcolm Butler"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.8288",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.8288",
+                                "positionEvent": "spamfposition:safety",
+                                "names": [
+                                    {
+                                        "full": "Patrick Chung"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.11730",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.11730",
+                                "positionEvent": "spamfposition:linebacker",
+                                "names": [
+                                    {
+                                        "full": "Jamie Collins"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.9582",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.9582",
+                                "positionEvent": "spamfposition:running-back",
+                                "names": [
+                                    {
+                                        "full": "James Develin"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.8444",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.8444",
+                                "positionEvent": "spamfposition:wide-receiver",
+                                "names": [
+                                    {
+                                        "full": "Julian Edelman"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.5978",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.5978",
+                                "positionEvent": "spamfposition:kicker",
+                                "names": [
+                                    {
+                                        "full": "Stephen Gostkowski"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.8896",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.8896",
+                                "positionEvent": "spamfposition:tight-end",
+                                "names": [
+                                    {
+                                        "full": "Rob Gronkowski"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.10646",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.10646",
+                                "positionEvent": "spamfposition:linebacker",
+                                "names": [
+                                    {
+                                        "full": "Dont'a Hightower"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.8898",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.8898",
+                                "positionEvent": "spamfposition:tight-end",
+                                "names": [
+                                    {
+                                        "full": "Michael Hoomanawanui"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.10587",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.10587",
+                                "positionEvent": "spamfposition:defensive-end",
+                                "names": [
+                                    {
+                                        "full": "Chandler Jones"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.8844",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.8844",
+                                "positionEvent": "spamfposition:wide-receiver",
+                                "names": [
+                                    {
+                                        "full": "Brandon LaFell"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.9079",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.9079",
+                                "positionEvent": "spamfposition:defensive-back",
+                                "names": [
+                                    {
+                                        "full": "Devin McCourty"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.5781",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.5781",
+                                "positionEvent": "spamfposition:lineman-defensive",
+                                "names": [
+                                    {
+                                        "full": "Rob Ninkovich"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.6631",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.6631",
+                                "positionEvent": "spamfposition:cornerback",
+                                "names": [
+                                    {
+                                        "full": "Darrelle Revis"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.11515",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.11515",
+                                "positionEvent": "spamfposition:cornerback",
+                                "names": [
+                                    {
+                                        "full": "Logan Ryan"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.10432",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.10432",
+                                "positionEvent": "spamfposition:tackle-defensive",
+                                "names": [
+                                    {
+                                        "full": "Sealver Siliga"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.7661",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.7661",
+                                "positionEvent": "spamfposition:wide-receiver",
+                                "names": [
+                                    {
+                                        "full": "Matthew Slater"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.9853",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.9853",
+                                "positionEvent": "spamfposition:running-back",
+                                "names": [
+                                    {
+                                        "full": "Shane Vereen"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.4347",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.4347",
+                                "positionEvent": "spamfposition:nose-tackle",
+                                "names": [
+                                    {
+                                        "full": "Vince Wilfork"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "l.nfl.com-t.16",
+                    "teamMetadata": {
+                        "key": "vendteam:l.nfl.com-t.16",
+                        "alignment": "home",
+                        "names": [
+                            {
+                                "full": "Seattle Seahawks"
+                            },
+                            {
+                                "alternate": "Seattle"
+                            },
+                            {
+                                "nickname": "Seahawks"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "score": "24",
+                            "subScores": [
+                                {
+                                    "periodValue": "1",
+                                    "score": "0"
+                                },
+                                {
+                                    "periodValue": "2",
+                                    "score": "14"
+                                },
+                                {
+                                    "periodValue": "3",
+                                    "score": "10"
+                                },
+                                {
+                                    "periodValue": "4",
+                                    "score": "0"
+                                }
+                            ]
+                        }
+                    ],
+                    "players": [
+                        {
+                            "id": "l.nfl.com-p.7565",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.7565",
+                                "positionEvent": "spamfposition:defensive-end",
+                                "names": [
+                                    {
+                                        "full": "Cliff Avril"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.10188",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.10188",
+                                "positionEvent": "spamfposition:wide-receiver",
+                                "names": [
+                                    {
+                                        "full": "Doug Baldwin"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.8656",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.8656",
+                                "positionEvent": "spamfposition:defensive-end",
+                                "names": [
+                                    {
+                                        "full": "Michael Bennett"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.9099",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.9099",
+                                "positionEvent": "spamfposition:safety-strong",
+                                "names": [
+                                    {
+                                        "full": "Kam Chancellor"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.12827",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.12827",
+                                "positionEvent": "spamfposition:linebacker",
+                                "names": [
+                                    {
+                                        "full": "Brock Coyle"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.7786",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.7786",
+                                "positionEvent": "spamfposition:kicker",
+                                "names": [
+                                    {
+                                        "full": "Steven Hauschka"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.10647",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.10647",
+                                "positionEvent": "spamfposition:defensive-end",
+                                "names": [
+                                    {
+                                        "full": "Bruce Irvin"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.9886",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.9886",
+                                "positionEvent": "spamfposition:safety-strong",
+                                "names": [
+                                    {
+                                        "full": "Jeron Johnson"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.10687",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.10687",
+                                "positionEvent": "spamfposition:wide-receiver",
+                                "names": [
+                                    {
+                                        "full": "Jermaine Kearse"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.10872",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.10872",
+                                "positionEvent": "spamfposition:cornerback",
+                                "names": [
+                                    {
+                                        "full": "Jeremy Lane"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.10212",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.10212",
+                                "positionEvent": "spamfposition:wide-receiver",
+                                "names": [
+                                    {
+                                        "full": "Ricardo Lockette"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.6695",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.6695",
+                                "positionEvent": "spamfposition:running-back",
+                                "names": [
+                                    {
+                                        "full": "Marshawn Lynch"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.10037",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.10037",
+                                "positionEvent": "spamfposition:wide-receiver",
+                                "names": [
+                                    {
+                                        "full": "Chris Matthews"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.9965",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.9965",
+                                "positionEvent": "spamfposition:cornerback",
+                                "names": [
+                                    {
+                                        "full": "Byron Maxwell"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.6266",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.6266",
+                                "positionEvent": "spamfposition:tackle-defensive",
+                                "names": [
+                                    {
+                                        "full": "Tony McDaniel"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.6057",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.6057",
+                                "positionEvent": "spamfposition:punter",
+                                "names": [
+                                    {
+                                        "full": "Jon Ryan"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.8999",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.8999",
+                                "positionEvent": "spamfposition:linebacker",
+                                "names": [
+                                    {
+                                        "full": "O'Brien Schofield"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.11220",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.11220",
+                                "positionEvent": "spamfposition:cornerback",
+                                "names": [
+                                    {
+                                        "full": "DeShawn Shead"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.9961",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.9961",
+                                "positionEvent": "spamfposition:cornerback",
+                                "names": [
+                                    {
+                                        "full": "Richard Sherman"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.11516",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.11516",
+                                "positionEvent": "spamfposition:cornerback",
+                                "names": [
+                                    {
+                                        "full": "Tharold Simon"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.12069",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.12069",
+                                "positionEvent": "spamfposition:safety-free",
+                                "names": [
+                                    {
+                                        "full": "Steven Terrell"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.9115",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.9115",
+                                "positionEvent": "spamfposition:safety-free",
+                                "names": [
+                                    {
+                                        "full": "Earl Thomas"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.10802",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.10802",
+                                "positionEvent": "spamfposition:running-back",
+                                "names": [
+                                    {
+                                        "full": "Robert Turbin"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.10661",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.10661",
+                                "positionEvent": "spamfposition:linebacker",
+                                "names": [
+                                    {
+                                        "full": "Bobby Wagner"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.9457",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.9457",
+                                "positionEvent": "spamfposition:wide-receiver",
+                                "names": [
+                                    {
+                                        "full": "Bryan Walters"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.3884",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.3884",
+                                "positionEvent": "spamfposition:tackle-defensive",
+                                "names": [
+                                    {
+                                        "full": "Kevin Williams"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.10767",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.10767",
+                                "positionEvent": "spamfposition:quarterback",
+                                "names": [
+                                    {
+                                        "full": "Russell Wilson"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        },
+                        {
+                            "id": "l.nfl.com-p.9941",
+                            "playerMetadata": {
+                                "key": "vendperson:l.nfl.com-p.9941",
+                                "positionEvent": "spamfposition:linebacker",
+                                "names": [
+                                    {
+                                        "full": "K.J. Wright"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {}
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "officials": [
+                {
+                    "officialMetadata": {
+                        "positionEvent": "vendoffpos:Referee",
+                        "names": [
+                            {
+                                "full": "Bill Vinovich"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "officialMetadata": {
+                        "positionEvent": "vendoffpos:Umpire",
+                        "names": [
+                            {
+                                "full": "Bill Schuster"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "officialMetadata": {
+                        "positionEvent": "vendoffpos:Head-Linesman",
+                        "names": [
+                            {
+                                "full": "Dana McKenzie"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "officialMetadata": {
+                        "positionEvent": "vendoffpos:Line-Judge",
+                        "names": [
+                            {
+                                "full": "Mark Perlman"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "officialMetadata": {
+                        "positionEvent": "vendoffpos:Side-Judge",
+                        "names": [
+                            {
+                                "full": "Adrian Hill"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "officialMetadata": {
+                        "positionEvent": "vendoffpos:Back-Judge",
+                        "names": [
+                            {
+                                "full": "Terrence Miles"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "officialMetadata": {
+                        "positionEvent": "vendoffpos:Field-Judge",
+                        "names": [
+                            {
+                                "full": "Bob Waggoner"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "actions": [
+                {
+                    "periodTimeElapsed": "5:13",
+                    "periodTimeRemaining": "9:47",
+                    "id": "play.42",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nfl.com-t.4",
+                    "comment": " New England Touchdown - 11-yard pass from Tom Brady to Brandon LaFell. (Stephen Gostkowski extra point is good). ",
+                    "type": "spamfaction:pass-complete",
+                    "points": 6,
+                    "periodValue": "2",
+                    "scoreTeam": "6",
+                    "scoreTeamOpposing": "0",
+                    "scoreAttemptType": "spamfscore:touchdown",
+                    "participants": [
+                        {
+                            "idref": "l.nfl.com-p.678",
+                            "role": "spamfrole:passer"
+                        },
+                        {
+                            "idref": "l.nfl.com-p.8844",
+                            "role": "spamfrole:receiver"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "5:13",
+                    "periodTimeRemaining": "9:47",
+                    "id": "play.43",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nfl.com-t.4",
+                    "comment": "Stephen Gostkowski extra point is good.",
+                    "type": "spamfaction:extra-point",
+                    "points": 1,
+                    "periodValue": "2",
+                    "scoreTeam": "7",
+                    "scoreTeamOpposing": "0",
+                    "scoreAttemptType": "spamfscore:extra-point",
+                    "participants": [
+                        {
+                            "idref": "l.nfl.com-p.5978",
+                            "role": "spamfrole:kicker"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "12:44",
+                    "periodTimeRemaining": "2:16",
+                    "id": "play.61",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nfl.com-t.16",
+                    "comment": " Seattle Touchdown - 3-yard run by Marshawn Lynch. (Steven Hauschka extra point is good). ",
+                    "type": "spamfaction:rush",
+                    "points": 6,
+                    "periodValue": "2",
+                    "scoreTeam": "6",
+                    "scoreTeamOpposing": "7",
+                    "scoreAttemptType": "spamfscore:touchdown",
+                    "participants": [
+                        {
+                            "idref": "l.nfl.com-p.6695",
+                            "role": "spamfrole:rusher"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "12:44",
+                    "periodTimeRemaining": "2:16",
+                    "id": "play.62",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nfl.com-t.16",
+                    "comment": "Steven Hauschka extra point is good.",
+                    "type": "spamfaction:extra-point",
+                    "points": 1,
+                    "periodValue": "2",
+                    "scoreTeam": "7",
+                    "scoreTeamOpposing": "7",
+                    "scoreAttemptType": "spamfscore:extra-point",
+                    "participants": [
+                        {
+                            "idref": "l.nfl.com-p.7786",
+                            "role": "spamfrole:kicker"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "14:29",
+                    "periodTimeRemaining": "0:31",
+                    "id": "play.72",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nfl.com-t.4",
+                    "comment": " New England Touchdown - 22-yard pass from Tom Brady to Rob Gronkowski. (Stephen Gostkowski extra point is good). ",
+                    "type": "spamfaction:pass-complete",
+                    "points": 6,
+                    "periodValue": "2",
+                    "scoreTeam": "13",
+                    "scoreTeamOpposing": "7",
+                    "scoreAttemptType": "spamfscore:touchdown",
+                    "participants": [
+                        {
+                            "idref": "l.nfl.com-p.678",
+                            "role": "spamfrole:passer"
+                        },
+                        {
+                            "idref": "l.nfl.com-p.8896",
+                            "role": "spamfrole:receiver"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "14:29",
+                    "periodTimeRemaining": "0:31",
+                    "id": "play.73",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nfl.com-t.4",
+                    "comment": "Stephen Gostkowski extra point is good.",
+                    "type": "spamfaction:extra-point",
+                    "points": 1,
+                    "periodValue": "2",
+                    "scoreTeam": "14",
+                    "scoreTeamOpposing": "7",
+                    "scoreAttemptType": "spamfscore:extra-point",
+                    "participants": [
+                        {
+                            "idref": "l.nfl.com-p.5978",
+                            "role": "spamfrole:kicker"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "14:58",
+                    "periodTimeRemaining": "0:02",
+                    "id": "play.80",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nfl.com-t.16",
+                    "comment": " Seattle Touchdown - 11-yard pass from Russell Wilson to Chris Matthews. (Steven Hauschka extra point is good). ",
+                    "type": "spamfaction:pass-complete",
+                    "points": 6,
+                    "periodValue": "2",
+                    "scoreTeam": "13",
+                    "scoreTeamOpposing": "14",
+                    "scoreAttemptType": "spamfscore:touchdown",
+                    "participants": [
+                        {
+                            "idref": "l.nfl.com-p.10767",
+                            "role": "spamfrole:passer"
+                        },
+                        {
+                            "idref": "l.nfl.com-p.10037",
+                            "role": "spamfrole:receiver"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "14:58",
+                    "periodTimeRemaining": "0:02",
+                    "id": "play.81",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nfl.com-t.16",
+                    "comment": "Steven Hauschka extra point is good.",
+                    "type": "spamfaction:extra-point",
+                    "points": 1,
+                    "periodValue": "2",
+                    "scoreTeam": "14",
+                    "scoreTeamOpposing": "14",
+                    "scoreAttemptType": "spamfscore:extra-point",
+                    "participants": [
+                        {
+                            "idref": "l.nfl.com-p.7786",
+                            "role": "spamfrole:kicker"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "3:51",
+                    "periodTimeRemaining": "11:09",
+                    "id": "play.92",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nfl.com-t.16",
+                    "comment": " Seattle Field Goal - 27-yarder by Steven Hauschka. ",
+                    "type": "spamfaction:field-goal",
+                    "points": 3,
+                    "periodValue": "3",
+                    "scoreTeam": "17",
+                    "scoreTeamOpposing": "14",
+                    "scoreAttemptType": "spamfscore:field-goal",
+                    "participants": [
+                        {
+                            "idref": "l.nfl.com-p.7786",
+                            "role": "spamfrole:kicker"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "10:06",
+                    "periodTimeRemaining": "4:54",
+                    "id": "play.107",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nfl.com-t.16",
+                    "comment": " Seattle Touchdown - 3-yard pass from Russell Wilson to Doug Baldwin. (Steven Hauschka extra point is good). ",
+                    "type": "spamfaction:pass-complete",
+                    "points": 6,
+                    "periodValue": "3",
+                    "scoreTeam": "23",
+                    "scoreTeamOpposing": "14",
+                    "scoreAttemptType": "spamfscore:touchdown",
+                    "participants": [
+                        {
+                            "idref": "l.nfl.com-p.10767",
+                            "role": "spamfrole:passer"
+                        },
+                        {
+                            "idref": "l.nfl.com-p.10188",
+                            "role": "spamfrole:receiver"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "10:06",
+                    "periodTimeRemaining": "4:54",
+                    "id": "play.108",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nfl.com-t.16",
+                    "comment": "Steven Hauschka extra point is good.",
+                    "type": "spamfaction:extra-point",
+                    "points": 1,
+                    "periodValue": "3",
+                    "scoreTeam": "24",
+                    "scoreTeamOpposing": "14",
+                    "scoreAttemptType": "spamfscore:extra-point",
+                    "participants": [
+                        {
+                            "idref": "l.nfl.com-p.7786",
+                            "role": "spamfrole:kicker"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "7:05",
+                    "periodTimeRemaining": "7:55",
+                    "id": "play.140",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nfl.com-t.4",
+                    "comment": " New England Touchdown - 4-yard pass from Tom Brady to Danny Amendola. (Stephen Gostkowski extra point is good). ",
+                    "type": "spamfaction:pass-complete",
+                    "points": 6,
+                    "periodValue": "4",
+                    "scoreTeam": "20",
+                    "scoreTeamOpposing": "24",
+                    "scoreAttemptType": "spamfscore:touchdown",
+                    "participants": [
+                        {
+                            "idref": "l.nfl.com-p.678",
+                            "role": "spamfrole:passer"
+                        },
+                        {
+                            "idref": "l.nfl.com-p.7756",
+                            "role": "spamfrole:receiver"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "7:05",
+                    "periodTimeRemaining": "7:55",
+                    "id": "play.141",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nfl.com-t.4",
+                    "comment": "Stephen Gostkowski extra point is good.",
+                    "type": "spamfaction:extra-point",
+                    "points": 1,
+                    "periodValue": "4",
+                    "scoreTeam": "21",
+                    "scoreTeamOpposing": "24",
+                    "scoreAttemptType": "spamfscore:extra-point",
+                    "participants": [
+                        {
+                            "idref": "l.nfl.com-p.5978",
+                            "role": "spamfrole:kicker"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "12:58",
+                    "periodTimeRemaining": "2:02",
+                    "id": "play.157",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nfl.com-t.4",
+                    "comment": " New England Touchdown - 3-yard pass from Tom Brady to Julian Edelman. (Stephen Gostkowski extra point is good). ",
+                    "type": "spamfaction:pass-complete",
+                    "points": 6,
+                    "periodValue": "4",
+                    "scoreTeam": "27",
+                    "scoreTeamOpposing": "24",
+                    "scoreAttemptType": "spamfscore:touchdown",
+                    "participants": [
+                        {
+                            "idref": "l.nfl.com-p.678",
+                            "role": "spamfrole:passer"
+                        },
+                        {
+                            "idref": "l.nfl.com-p.8444",
+                            "role": "spamfrole:receiver"
+                        }
+                    ]
+                },
+                {
+                    "periodTimeElapsed": "12:58",
+                    "periodTimeRemaining": "2:02",
+                    "id": "play.158",
+                    "class": "spactionclass:score",
+                    "teamIdref": "l.nfl.com-t.4",
+                    "comment": "Stephen Gostkowski extra point is good.",
+                    "type": "spamfaction:extra-point",
+                    "points": 1,
+                    "periodValue": "4",
+                    "scoreTeam": "28",
+                    "scoreTeamOpposing": "24",
+                    "scoreAttemptType": "spamfscore:extra-point",
+                    "participants": [
+                        {
+                            "idref": "l.nfl.com-p.5978",
+                            "role": "spamfrole:kicker"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

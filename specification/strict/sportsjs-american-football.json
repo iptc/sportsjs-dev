@@ -1,0 +1,1311 @@
+{
+  "id": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-american-football.json#",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "description": "The SportsJS American Football schema contains properties common to American Football I.E. NFL",
+  "definitions": {
+    "americanFootballEventMetadata": {
+      "description": "Metadata about the event itself. | Includes the time left, and where the ball is.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "clockState": {
+          "type": "string",
+          "enum": [
+            "running",
+            "stopped"
+          ],
+          "description": "Whether the clock is running or stopped."
+        },
+        "teamInPossessionIdref": {
+          "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef",
+          "description": "The ID of the team with the football."
+        },
+        "down": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "The current down. Valid values are 1,2,3,4,5."
+        },
+        "distanceFor1stDown": {
+          "type": "string",
+          "description": "The distance between the current line of scrimmage and the line to gain, 10 yards downfield from the start of possession. In yards. The word goal is used when the distance to the goal line is less than 10 yards. The word kick is used for kick-scoring attempt."
+        },
+        "fieldSide": {
+          "type": "string",
+          "enum": [
+            "home",
+            "away"
+          ],
+          "description": "Which side of the field the event is taking place. Either 'home' or 'away'."
+        },
+        "fieldLine": {
+          "type": "string",
+          "description": "The line of scrimmage. The yard line where the ball is placed at the start of play."
+        },
+        "week": {
+          "type": "string",
+          "description": "The week during the season in which this game is played. Usually an integer."
+        }
+      }
+    },
+    "americanFootballPlayerStats": {
+      "description": "Player statistics for football. | Includes the same elements as team statistics.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "statsAmericanFootballOffensive": {
+          "$ref": "#/definitions/americanFootballStatsOffensive",
+          "description": ""
+        },
+        "statsAmericanFootballDefensive": {
+          "$ref": "#/definitions/americanFootballStatsDefensive",
+          "description": ""
+        },
+        "statsAmericanFootballScoring": {
+          "$ref": "#/definitions/americanFootballStatsScoring",
+          "description": ""
+        },
+        "statsAmericanFootballSpecialTeams": {
+          "$ref": "#/definitions/americanFootballStatsSpecialTeams",
+          "description": ""
+        },
+        "statsAmericanFootballFumbles": {
+          "$ref": "#/definitions/americanFootballStatsFumbles",
+          "description": ""
+        },
+        "statsAmericanFootballPenalties": {
+          "$ref": "#/definitions/americanFootballStatsPenalties",
+          "description": ""
+        }
+      }
+    },
+    "americanFootballTeamStats": {
+      "description": "Statistics about a particular team. | Holds elements that divide statistics into categories.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "statsAmericanFootballOffensive": {
+          "$ref": "#/definitions/americanFootballStatsOffensive",
+          "description": ""
+        },
+        "statsAmericanFootballDefensive": {
+          "$ref": "#/definitions/americanFootballStatsDefensive",
+          "description": ""
+        },
+        "statsAmericanFootballScoring": {
+          "$ref": "#/definitions/americanFootballStatsScoring",
+          "description": ""
+        },
+        "statsAmericanFootballSpecialTeams": {
+          "$ref": "#/definitions/americanFootballStatsSpecialTeams",
+          "description": ""
+        },
+        "statsAmericanFootballFumbles": {
+          "$ref": "#/definitions/americanFootballStatsFumbles",
+          "description": ""
+        },
+        "statsAmericanFootballPenalties": {
+          "$ref": "#/definitions/americanFootballStatsPenalties",
+          "description": ""
+        },
+        "yardsPerAttempt": {
+          "type": "string",
+          "description": "The average yards gained per play."
+        },
+        "numberOfPlays": {
+          "type": "string",
+          "description": "The number of plays this team has completed, including for offensive, defensive, and special teams."
+        },
+        "numberOfPlaysGaining": {
+          "type": "string",
+          "description": "The number of plays this team has completed for which yards were gained, including for offensive, defensive, and special teams."
+        },
+        "numberOfPlaysLosing": {
+          "type": "string",
+          "description": "The number of plays this team has completed for which yards were lost, including for offensive, defensive, and special teams."
+        },
+        "averageStartingPosition": {
+          "type": "string",
+          "description": "Average yard-line that the team started on per-drive."
+        },
+        "timeouts": {
+          "type": "string",
+          "description": "The number of timeouts a team has remaining, either in regulation or in overtime, whichever state the game is currently in."
+        },
+        "turnoverRatio": {
+          "type": "string",
+          "description": "Derived by subtracting turnovers-giveaways from turnovers-takeaways."
+        }
+      }
+    },
+    "americanFootballStatsOffensive": {
+      "description": "Statistics about a particular team or player's offensive performance. | Further breaks down stats into passing, rushing, etc.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "statsAmericanFootballPassing": {
+          "$ref": "#/definitions/americanFootballStatsPassing",
+          "description": ""
+        },
+        "statsAmericanFootballRushing": {
+          "$ref": "#/definitions/americanFootballStatsRushing",
+          "description": ""
+        },
+        "statsAmericanFootballDownProgress": {
+          "$ref": "#/definitions/americanFootballStatsDownProgress",
+          "description": ""
+        },
+        "statsAmericanFootballSacksAgainst": {
+          "$ref": "#/definitions/americanFootballStatsSacksAgainst",
+          "description": ""
+        },
+        "statsAmericanFootballScoring": {
+          "$ref": "#/definitions/americanFootballStatsScoring",
+          "description": ""
+        },
+        "offensivePlaysYards": {
+          "type": "string",
+          "description": "The total yards accumulated through offensive plays."
+        },
+        "offensivePlaysNumber": {
+          "type": "string",
+          "description": "The number of offensive plays."
+        },
+        "offensivePlaysAverageYardsPer": {
+          "type": "string",
+          "description": "The average number of yards gained per play."
+        },
+        "offensivePlaysAverageYardsPerGame": {
+          "type": "string",
+          "description": "The average number of yards gained via offensive plays per game."
+        },
+        "offensiveRank": {
+          "type": "string",
+          "description": "How team's offense compares with rest of league or conference."
+        },
+        "possessionDuration": {
+          "type": "string",
+          "description": "The average amount of time the team had possession per-drive."
+        },
+        "possessionsInside20": {
+          "type": "string",
+          "description": "Number of times team has driven inside its opponent's 20 yard line."
+        },
+        "turnoversGiveaway": {
+          "type": "string",
+          "description": "Derived by adding passes-interceptions plus fumbles-own-lost."
+        },
+        "turnoversGiveawayAverage": {
+          "type": "string",
+          "description": "Average-per-game for turnovers-giveaway."
+        },
+        "handoffsTotal": {
+          "type": "string",
+          "description": "Usually, number of times QB has handed off, typically leading to a running play."
+        },
+        "pitchesTotal": {
+          "type": "string",
+          "description": "Usually, number of times QB has pitched back to another player, typically leading to a running play."
+        },
+        "tacklesOffense": {
+          "type": "string",
+          "description": "The number of tackles performed while on offense."
+        },
+        "tacklesAssistsOffense": {
+          "type": "string",
+          "description": "The number of tackle assists performed while on offense."
+        }
+      }
+    },
+    "americanFootballStatsPassing": {
+      "description": "Statistics about a particular team or player's passing performance. | Used for quarterbacks and receivers.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "passesAttempts": {
+          "type": "string",
+          "description": "The number of passes attempted."
+        },
+        "passesCompletions": {
+          "type": "string",
+          "description": "The number of passes completed successfully."
+        },
+        "passesCompletionsAveragePerGame": {
+          "type": "string",
+          "description": "Average number of completed passes a game."
+        },
+        "passesPercentage": {
+          "type": "string",
+          "description": "The percentage of all passes that are completed successfully."
+        },
+        "passesYardsGross": {
+          "type": "string",
+          "description": "The number of yards gained from passing."
+        },
+        "passesYardsNet": {
+          "type": "string",
+          "description": "Subtracts out the sacks-against-yards-lost value of stats-american-football-sacks-against element."
+        },
+        "passesYardsLost": {
+          "type": "string",
+          "description": "Amount of yards lost due to sacks and completed passing plays that ended behind the line of scrimmage."
+        },
+        "passesYardsPerAttempt": {
+          "type": "string",
+          "description": "Gross passing yards divided by number of pass attempts."
+        },
+        "passesFirstDown": {
+          "type": "string",
+          "description": "Number of passes a player or team has made for a first-down."
+        },
+        "passesTouchdownsPercentage": {
+          "type": "string",
+          "description": "The ratio of touchdown passes to attempted passes."
+        },
+        "passesInterceptions": {
+          "type": "string",
+          "description": "The number of passes that were intercepted."
+        },
+        "passesInterceptionsPercentage": {
+          "type": "string",
+          "description": "The ratio of intercepted passes to attempted passes."
+        },
+        "passesInterceptionsYards": {
+          "type": "string",
+          "description": "Opponent's yards gained after interceptions."
+        },
+        "passesInterceptionsAverage": {
+          "type": "string",
+          "description": "Average number of interceptions per game."
+        },
+        "passesInterceptionsLongest": {
+          "type": "string",
+          "description": "Longest interception return against a passer."
+        },
+        "passesInterceptionsTouchdown": {
+          "type": "string",
+          "description": "Number of opponents' touchdowns scored from passer's interceptions."
+        },
+        "passesLongest": {
+          "type": "string",
+          "description": "The yards gained by the single longest completion."
+        },
+        "passesAverageYardsPer": {
+          "type": "string",
+          "description": "Gross passing yards divided by number of pass completions."
+        },
+        "passesAverageYardsPerGame": {
+          "type": "string",
+          "description": "Total yards passing divided by number of games played."
+        },
+        "passerRating": {
+          "type": "string",
+          "description": "A complex formula designed to measure quarterback performance."
+        },
+        "receptionsTotal": {
+          "type": "string",
+          "description": "The total number of successful passes."
+        },
+        "receptionsAveragePerGame": {
+          "type": "string",
+          "description": "Average number of receptions per game."
+        },
+        "receptionsYards": {
+          "type": "string",
+          "description": "Number of yards a receiver is credited for."
+        },
+        "receptionsFirstDown": {
+          "type": "string",
+          "description": "Number of receptions a player has taken for a first-down."
+        },
+        "receptionsLongest": {
+          "type": "string",
+          "description": "The longest reception a player had, including to the point where they scored, were-tackled, etc."
+        },
+        "receptionsLooks": {
+          "type": "string",
+          "description": "The number of opportunities this receiver had to receive the ball."
+        },
+        "receptionsAverageYards": {
+          "type": "string",
+          "description": "Average yards per game from receptions."
+        },
+        "receptionsAverageYardsPer": {
+          "type": "string",
+          "description": "The average yards per reception."
+        },
+        "passingRank": {
+          "type": "string",
+          "description": "How a player or team's passing stats ranks in a league or conference, usually using total passing yards as the measure."
+        },
+        "timesThrownTotal": {
+          "type": "string",
+          "description": "Number of passes directed at receiver, including incompletions, interceptions, etc."
+        },
+        "receptionsCareer100YardGames": {
+          "type": "string",
+          "description": "Number of times in receiver's career where total receiving yardage per game exceeded 100."
+        },
+        "passingCareer300YardGames": {
+          "type": "string",
+          "description": "Number of times in passer's career where total passing yardage per game exceeded 300."
+        }
+      }
+    },
+    "americanFootballStatsRushing": {
+      "description": "Statistics about a particular team or player's rushing performance. | How well they ran with the ball.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "rushesAttempts": {
+          "type": "string",
+          "description": "The number of attempted rushes."
+        },
+        "rushesYards": {
+          "type": "string",
+          "description": "The number of yards gained by rushing."
+        },
+        "rushesYardsLeft": {
+          "type": "string",
+          "description": "The number of yards gained by rushing up the left side of the field."
+        },
+        "rushesYardsMiddle": {
+          "type": "string",
+          "description": "The number of yards gained by rushing up the middle of the field."
+        },
+        "rushesYardsRight": {
+          "type": "string",
+          "description": "The number of yards gained by rushing up the right side of the field."
+        },
+        "rushingAverageYardsPer": {
+          "type": "string",
+          "description": "The average number of yards per rush."
+        },
+        "rushesFirstDown": {
+          "type": "string",
+          "description": "The number of rushes that have resulted in a first-down."
+        },
+        "rushesLongest": {
+          "type": "string",
+          "description": "The number of yards gained by the single longest rushing play."
+        },
+        "rushesAverageAttemptsPerGame": {
+          "type": "string",
+          "description": "Average number of rushing attempts per game."
+        },
+        "rushesAverageYardsPerGame": {
+          "type": "string",
+          "description": "Average number of yards gaining from rushes a game."
+        },
+        "rushingRank": {
+          "type": "string",
+          "description": "How a player or team's rushing stats ranks in a league or conference, usually using total rushing yards as the measure."
+        },
+        "rushesCareer100YardGames": {
+          "type": "string",
+          "description": "Number of times in rusher's career where total rushing yardage per game exceeded 100."
+        }
+      }
+    },
+    "americanFootballStatsDownProgress": {
+      "description": "Statistics about a particular team or player's performance on downs. | Covers first downs and conversions.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "firstDownsTotal": {
+          "type": "string",
+          "description": "The number of first downs achieved."
+        },
+        "firstDownsPass": {
+          "type": "string",
+          "description": "The number of first downs achieved from passing."
+        },
+        "firstDownsRun": {
+          "type": "string",
+          "description": "The number of first downs achieved from rushing."
+        },
+        "firstDownsPenalty": {
+          "type": "string",
+          "description": "The number of first downs achieved from penalties on the other team."
+        },
+        "firstDownsYards": {
+          "type": "string",
+          "description": "Number of yards gained on first down plays."
+        },
+        "firstDownsAverageYardsPer": {
+          "type": "string",
+          "description": "Number of average yards gained on first down plays."
+        },
+        "conversionsSecondDown": {
+          "type": "string",
+          "description": "The number of first downs achieved on a second down."
+        },
+        "conversionsSecondDownAttempts": {
+          "type": "string",
+          "description": "The number of second downs."
+        },
+        "conversionsSecondDownPercentage": {
+          "type": "string",
+          "description": "The percentage of first down attempts on a second down that were successful."
+        },
+        "conversionsThirdDown": {
+          "type": "string",
+          "description": "The number of first downs achieved on a third down."
+        },
+        "conversionsThirdDownAttempts": {
+          "type": "string",
+          "description": "The number of third downs."
+        },
+        "conversionsThirdDownPercentage": {
+          "type": "string",
+          "description": "The percentage of first down attempts on a third down that were successful."
+        },
+        "conversionsFourthDown": {
+          "type": "string",
+          "description": "The number of first downs achieved on a fourth down."
+        },
+        "conversionsFourthDownAttempts": {
+          "type": "string",
+          "description": "The number of fourth downs."
+        },
+        "conversionsFourthDownPercentage": {
+          "type": "string",
+          "description": "The percentage of first down attempts on a fourth down that were successful."
+        }
+      }
+    },
+    "americanFootballStatsSacksAgainst": {
+      "description": "Statistics about the sacks suffered by the offensive team. | How many times and the team was sacked, and for how many yards.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "sacksAgainstYards": {
+          "type": "string",
+          "description": "Total number of yards lost by the offense from sacks."
+        },
+        "sacksAgainstTotal": {
+          "type": "string",
+          "description": "Total number of times that the offense was sacked."
+        },
+        "sacksAgainstAverage": {
+          "type": "string",
+          "description": "Average number of times per game a quarterback is sacked."
+        },
+        "sacksAgainstSafeties": {
+          "type": "string",
+          "description": "Number of sacks that resulted in safeties."
+        }
+      }
+    },
+    "americanFootballStatsDefensive": {
+      "description": "Statistics about a particular player or team's defensive performance. | Covers tackles, interceptions, sacks.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "statsAmericanFootballPassing": {
+          "$ref": "#/definitions/americanFootballStatsPassing",
+          "description": ""
+        },
+        "statsAmericanFootballRushing": {
+          "$ref": "#/definitions/americanFootballStatsRushing",
+          "description": ""
+        },
+        "statsAmericanFootballDownProgress": {
+          "$ref": "#/definitions/americanFootballStatsDownProgress",
+          "description": ""
+        },
+        "statsAmericanFootballSacksAgainst": {
+          "$ref": "#/definitions/americanFootballStatsSacksAgainst",
+          "description": ""
+        },
+        "statsAmericanFootballScoring": {
+          "$ref": "#/definitions/americanFootballStatsScoring",
+          "description": ""
+        },
+        "tacklesTotal": {
+          "type": "string",
+          "description": "The number of tackles made by the defense. Commonly the sum of tackles-solo and tackles-assists."
+        },
+        "tacklesSolo": {
+          "type": "string",
+          "description": "The number of tackles made where only one member of the defense commited the tackle."
+        },
+        "tacklesAssists": {
+          "type": "string",
+          "description": "The number of tackles made where multiple members of the defense commited the tackle."
+        },
+        "tacklesTeam": {
+          "type": "string",
+          "description": "The number of tackles made which were credited to the team as a whole."
+        },
+        "quarterbackHurries": {
+          "type": "string",
+          "description": "An unofficial stat given when a defensive player pressures and hurries the quarterback into making a throw to avoid being sacked."
+        },
+        "passesDefensed": {
+          "type": "string",
+          "description": "Total number of times a pass was deflected or otherwise defended against, causing a pass to be incomplete."
+        },
+        "turnoversTakeaway": {
+          "type": "string",
+          "description": "Derived by adding interceptions-total plus fumbles-opposing-recovered."
+        },
+        "yardsAllowedTotal": {
+          "type": "string",
+          "description": "Total yardage a defense allowed, usually through passing and rushing."
+        },
+        "yardsAllowedAverage": {
+          "type": "string",
+          "description": "Total yardage a defense allows per game."
+        },
+        "defensivePlaysNumber": {
+          "type": "string",
+          "description": "Number of plays a defense is on the field."
+        },
+        "inside20Plays": {
+          "type": "string",
+          "description": "Number of plays inside defensive team's 20 yard line."
+        },
+        "inside20PointsAgainst": {
+          "type": "string",
+          "description": "Number of points given up when opponents' possession starts inside defensive team's 20 yard line."
+        },
+        "inside20TouchdownsAgainst": {
+          "type": "string",
+          "description": "Number of touchdowns given up when opponents' possession starts inside defensive team's 20 yard line."
+        },
+        "inside20TouchdownsAgainstPercentage": {
+          "type": "string",
+          "description": "Ratio of touchdowns allowed to possessions when opponents' possession starts inside defensive team's 20 yard line."
+        },
+        "defenseRank": {
+          "type": "string",
+          "description": "How a team's defensive stats rank in a league or conference, usually using yards allowed per game as the measure."
+        },
+        "defenseRankPass": {
+          "type": "string",
+          "description": "How a team's passing defense stats rank in a league or conference, usually using passing yards allowed per game as the measure."
+        },
+        "defenseRankRush": {
+          "type": "string",
+          "description": "How a team's rushing defense stats rank in a league or conference, usually using rushing yards allowed per game as the measure."
+        },
+        "interceptionsTotal": {
+          "type": "string",
+          "description": "The number of passes the defense has intercepted."
+        },
+        "interceptionsYards": {
+          "type": "string",
+          "description": "The number of yards gained as a result of an interception."
+        },
+        "interceptionsAverage": {
+          "type": "string",
+          "description": "The average number of yards gained from interceptions."
+        },
+        "interceptionsPercentage": {
+          "type": "string",
+          "description": "Percentage of passes intercepted."
+        },
+        "interceptionsLongest": {
+          "type": "string",
+          "description": "The longest interception returned. Greatest number of yards gained on an interception."
+        },
+        "interceptionsTouchdown": {
+          "type": "string",
+          "description": "Number of interceptions that were run back for a touchdown."
+        },
+        "sacksTotal": {
+          "type": "string",
+          "description": "The number of sacks made by the defense."
+        },
+        "sacksYards": {
+          "type": "string",
+          "description": "Number of yards gained by the defense."
+        },
+        "sacksTeam": {
+          "type": "string",
+          "description": "The number of sacks credited to the team as a whole."
+        },
+        "sacksYardsTeam": {
+          "type": "string",
+          "description": "Number of yards gained by the defense on sacks credited to the team as a whole."
+        }
+      }
+    },
+    "americanFootballStatsScoring": {
+      "description": "Statistics about a particular team's scoring performance. | For touchdowns, field goals, etc.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "statsAmericanFootballFieldGoals": {
+          "$ref": "#/definitions/americanFootballStatsFieldGoals",
+          "description": ""
+        },
+        "touchdownsTotal": {
+          "type": "string",
+          "description": "The number of touchdowns scored by the offense."
+        },
+        "touchdownsPassing": {
+          "type": "string",
+          "description": "The number of touchdowns scored by passing."
+        },
+        "touchdownsRushing": {
+          "type": "string",
+          "description": "The number of touchdowns scored by rushing."
+        },
+        "touchdownsSpecialTeams": {
+          "type": "string",
+          "description": "The number of touchdowns scored by special teams."
+        },
+        "touchdownsDefensive": {
+          "type": "string",
+          "description": "The number of touchdowns scored by the defense."
+        },
+        "touchdownsReceptions": {
+          "type": "string",
+          "description": "The number of receptions resulting in a touchdown."
+        },
+        "extraPointsAttempts": {
+          "type": "string",
+          "description": "The number of extra points attempted by the offense."
+        },
+        "extraPointsMade": {
+          "type": "string",
+          "description": "The number of extra points made."
+        },
+        "extraPointsMissed": {
+          "type": "string",
+          "description": "The number of extra points missed."
+        },
+        "extraPointsBlocked": {
+          "type": "string",
+          "description": "The number of extra point attempts that were blocked."
+        },
+        "extraPointsPercentage": {
+          "type": "string",
+          "description": "Ratio of extra points completed to attempts."
+        },
+        "fieldGoalAttempts": {
+          "type": "string",
+          "description": "The number of field goals attempted."
+        },
+        "fieldGoalsMade": {
+          "type": "string",
+          "description": "The number of field goals made."
+        },
+        "fieldGoalsMissed": {
+          "type": "string",
+          "description": "The number of field goals missed."
+        },
+        "fieldGoalsBlocked": {
+          "type": "string",
+          "description": "The number of field goal attempts that were blocked."
+        },
+        "fieldGoalLongest": {
+          "type": "string",
+          "description": "Yardage of longest successful field goal attempt."
+        },
+        "fieldGoalsPercentage": {
+          "type": "string",
+          "description": "Ratio of field goals made to attempts."
+        },
+        "fieldGoalsAverage": {
+          "type": "string",
+          "description": "Average number of field goals made per game."
+        },
+        "safetiesAgainst": {
+          "type": "string",
+          "description": "The number of safeties scored against the offense."
+        },
+        "twoPointConversionsAttempts": {
+          "type": "string",
+          "description": "The number of two point conversions attempted."
+        },
+        "twoPointConversionsMade": {
+          "type": "string",
+          "description": "The number of successful two point conversions."
+        },
+        "twoPointConversionsMadeRushing": {
+          "type": "string",
+          "description": "Number of successful two-point conversions from running plays."
+        },
+        "twoPointConversionsMadePassing": {
+          "type": "string",
+          "description": "Number of successful two-point conversions from passing plays."
+        },
+        "touchbacks": {
+          "type": "string",
+          "description": "For Canadian Football. Used to record the number of touchbacks that resulted in scores."
+        },
+        "singlePoints": {
+          "type": "string",
+          "description": "Number of points earned from the single, a CFL-specific scoring play where a kicking team prevents its opponent from returning a kickoff, punt or missed field goal from outside the opponent's own end zone."
+        },
+        "inside20Points": {
+          "type": "string",
+          "description": "Points earned by offensive team when possession starts inside opponent's 20 yard line."
+        },
+        "inside20Touchdowns": {
+          "type": "string",
+          "description": "Touchdowns scored by offensive team when possession starts inside opponent's 20 yard line."
+        },
+        "inside20TouchdownsPercentage": {
+          "type": "string",
+          "description": "Ratio of touchdowns to possessions when possession starts inside opponent's 20 yard line."
+        }
+      }
+    },
+    "americanFootballStatsFieldGoals": {
+      "description": "Statistics about attempted and made field goals. | Allows for breakdowns between particular yard markers.",
+      "type": "array",
+      "items": { "$ref": "#/definitions/americanFootballStatsFieldGoal" }
+    },
+    "americanFootballStatsFieldGoal": {
+      "description": "Statistics about attempted and made field goals. | Allows for breakdowns between particular yard markers.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "minimumDistance": {
+          "type": "string",
+          "description": "The minimum distance in the range for the kick attempts. NOTE: Worth revisiting."
+        },
+        "maximumDistance": {
+          "type": "string",
+          "description": "The maximum distance in the range for the kick attempts. NOTE: Worth revisiting."
+        },
+        "attempts": {
+          "type": "string",
+          "description": "Number of attempted field goals."
+        },
+        "made": {
+          "type": "string",
+          "description": "Number of successful field goals."
+        }
+      }
+    },
+    "americanFootballStatsSpecialTeams": {
+      "description": "Statistics about a particular team's special teams performance. | Covers punts, touchbacks.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "returnsPuntTotal": {
+          "type": "string",
+          "description": "The number of punts returned."
+        },
+        "returnsPuntYards": {
+          "type": "string",
+          "description": "The number of yards gained from punt returns."
+        },
+        "returnsPuntAverage": {
+          "type": "string",
+          "description": "The average number of yards gained on each punt return."
+        },
+        "returnsPuntLongest": {
+          "type": "string",
+          "description": "The number of yards gained on the longest punt return."
+        },
+        "returnsPuntTouchdown": {
+          "type": "string",
+          "description": "The number of punts returned for a touchdown."
+        },
+        "returnsPuntAgainstTotal": {
+          "type": "string",
+          "description": "Total number of punt returns defended."
+        },
+        "returnsPuntAgainstYards": {
+          "type": "string",
+          "description": "Total number of yards allowed from punt returns."
+        },
+        "returnsPuntAgainstAverage": {
+          "type": "string",
+          "description": "Average number of yards allowed from punt returns."
+        },
+        "returnsPuntAgainstLongest": {
+          "type": "string",
+          "description": "Yardage of longest punt return allowed."
+        },
+        "returnsPuntAgainstTouchdown": {
+          "type": "string",
+          "description": "Number of touchdowns from punt returns allowed."
+        },
+        "kickoffsTotal": {
+          "type": "string",
+          "description": "Total number of kickoffs to opposition."
+        },
+        "kickoffsAdjusted": {
+          "type": "string",
+          "description": "Number of kickoffs excluding onside kicks or kickoffs at the end of a half unless either kickoff is returned for a touchdown."
+        },
+        "kickoffsToInside20": {
+          "type": "string",
+          "description": "Number of kickoffs resulting in opponent's possession starting inside own 20 yard line."
+        },
+        "kickoffsDriveStartAgainstAverage": {
+          "type": "string",
+          "description": "Average starting position of opponent's possession after a kickoff."
+        },
+        "onsideKicksAttempted": {
+          "type": "string",
+          "description": "Number of onside kicks attempted."
+        },
+        "onsideKicksRecovered": {
+          "type": "string",
+          "description": "Number of onside kicks recovered by kicking team."
+        },
+        "returnsKickoffTotal": {
+          "type": "string",
+          "description": "The number of kickoffs returned."
+        },
+        "returnsKickoffYards": {
+          "type": "string",
+          "description": "The number of yards gained from kickoff returns."
+        },
+        "returnsKickoffAverage": {
+          "type": "string",
+          "description": "The average number of yards gained on each kickoff return."
+        },
+        "returnsKickoffLongest": {
+          "type": "string",
+          "description": "The number of yards gained on the longest kickoff return."
+        },
+        "returnsKickoffTouchdown": {
+          "type": "string",
+          "description": "The number of kickoffs returned for a touchdown."
+        },
+        "returnsKickoffAdjusted": {
+          "type": "string",
+          "description": "Number kickoffs adjusted for onside and end-of-half (non-touchdown) kickoffs."
+        },
+        "returnsKickoffInside20": {
+          "type": "string",
+          "description": "Number of kickoff returns that failed to advance past the returning team's 20 yard line."
+        },
+        "returnsKickoffDriveStartAverage": {
+          "type": "string",
+          "description": "Average start position after kickoff returns."
+        },
+        "returnsKickoffAgainstTotal": {
+          "type": "string",
+          "description": "Total number of kickoff returns."
+        },
+        "returnsKickoffAgainstYards": {
+          "type": "string",
+          "description": "Yards allowed from kickoff returns."
+        },
+        "returnsKickoffAgainstAverage": {
+          "type": "string",
+          "description": "Average yards allowed per kickoff return."
+        },
+        "returnsKickoffAgainstLongest": {
+          "type": "string",
+          "description": "Yardage of longest kickoff return allowed."
+        },
+        "returnsKickoffAgainstTouchdown": {
+          "type": "string",
+          "description": "Touchdowns allowed from kickoff returns."
+        },
+        "returnsTotal": {
+          "type": "string",
+          "description": "The total number of returns. Punts + kickoffs."
+        },
+        "returnsYards": {
+          "type": "string",
+          "description": "The total number of yards gained on punts and kickoffs combined."
+        },
+        "puntsTotal": {
+          "type": "string",
+          "description": "The number of punts."
+        },
+        "puntsYardsGross": {
+          "type": "string",
+          "description": "The sum of the distances of all punts."
+        },
+        "puntsYardsNet": {
+          "type": "string",
+          "description": "The sum of the distances of all punts, minus the distances they were returned."
+        },
+        "puntsLongest": {
+          "type": "string",
+          "description": "The distance of the longest punt."
+        },
+        "puntsInside20": {
+          "type": "string",
+          "description": "The number of punts inside the 20 yard line."
+        },
+        "puntsInside20Percentage": {
+          "type": "string",
+          "description": "The percentage of punts inside the 20 yard line."
+        },
+        "puntsAverage": {
+          "type": "string",
+          "description": "The average gross punting yardage."
+        },
+        "puntsAverageNet": {
+          "type": "string",
+          "description": "Average net yards - punt length minus return - per punt."
+        },
+        "puntsAgainstTotal": {
+          "type": "string",
+          "description": "Number of punts forced by defensive team."
+        },
+        "puntsAgainstYardsGross": {
+          "type": "string",
+          "description": "Number of yards of opposing team's punts."
+        },
+        "puntsAgainstYardsNet": {
+          "type": "string",
+          "description": "Number of net yards - punt length minus return - of opposing team's punts."
+        },
+        "puntsAgainstLongest": {
+          "type": "string",
+          "description": "Longest punt by opposing team."
+        },
+        "puntsAgainstInside20": {
+          "type": "string",
+          "description": "Punt returns failed to advance beyond team's own 20."
+        },
+        "puntsAgainstInside20Percentage": {
+          "type": "string",
+          "description": "Ratio of punt returns failed to advance beyond team's own 20 and total punt returns."
+        },
+        "puntsAgainstAverage": {
+          "type": "string",
+          "description": "Average length of opponent's punt."
+        },
+        "puntsAgainstAverageNet": {
+          "type": "string",
+          "description": "Average net length - punt length minus return - of opponent's punt.."
+        },
+        "puntsBlocked": {
+          "type": "string",
+          "description": "The number of punts that were blocked."
+        },
+        "puntsAgainstBlocked": {
+          "type": "string",
+          "description": "The number of punts made by the opposing team that this team or player has blocked."
+        },
+        "touchbacksTotal": {
+          "type": "string",
+          "description": "The total number of touchbacks, from kickoffs, punts, interceptions, and fumbles."
+        },
+        "touchbacksTotalPercentage": {
+          "type": "string",
+          "description": "The percentage of kickoffs, punts, interceptions, and fumbles which resulted in a touchback."
+        },
+        "touchbacksKickoffs": {
+          "type": "string",
+          "description": "The number of kickoffs that went into the end zone and were not brought out."
+        },
+        "touchbacksKickoffsPercentage": {
+          "type": "string",
+          "description": "The percentage of kickoffs resulting in touchbacks."
+        },
+        "touchbacksPunts": {
+          "type": "string",
+          "description": "The number of punts that went into the end zone and were not brought out."
+        },
+        "touchbacksPuntsPercentage": {
+          "type": "string",
+          "description": "The percentage of punts resulting in touchbacks."
+        },
+        "touchbacksInterceptions": {
+          "type": "string",
+          "description": "The number of interceptions that went into the end zone and were not brought out."
+        },
+        "touchbacksInterceptionsPercentage": {
+          "type": "string",
+          "description": "The percentage of interceptions resulting in touchbacks."
+        },
+        "touchbacksPuntsAgainst": {
+          "type": "string",
+          "description": "Number of punts not returned out of receiving team's end zone."
+        },
+        "fairCatches": {
+          "type": "string",
+          "description": "The number of fair catches."
+        },
+        "fairCatchesAgainst": {
+          "type": "string",
+          "description": "Number of fair catches by opponents."
+        },
+        "totalReturnYardageNotKickoffs": {
+          "type": "string",
+          "description": "Net return yardage excluding kickoff returns."
+        },
+        "touchdownsAgainst": {
+          "type": "string",
+          "description": "Total number of special teams touchdowns allowed."
+        },
+        "tacklesSpecialTeams": {
+          "type": "string",
+          "description": "The number of tackles made while playing for a special-team."
+        },
+        "tacklesAssistsSpecialTeams": {
+          "type": "string",
+          "description": "The number of tackle assists performed while on special-teams."
+        },
+        "extraPointsAgainstMade": {
+          "type": "string",
+          "description": "Number of extra point attempts made by the opposing team that were successful."
+        },
+        "extraPointsAgainstMissed": {
+          "type": "string",
+          "description": "Number of extra point attempts made by the opposing team that were not successful."
+        },
+        "extraPointsAgainstBlocked": {
+          "type": "string",
+          "description": "Number of extra point attempts made by the opposing team that were blocked by this team or player."
+        },
+        "fieldGoalsAgainstMade": {
+          "type": "string",
+          "description": "Number of field goal attempts made by the opposing team that were successful."
+        },
+        "fieldGoalsAgainstMissed": {
+          "type": "string",
+          "description": "Number of field goal attempts made by the opposing team that were not successful."
+        },
+        "fieldGoalsAgainstBlocked": {
+          "type": "string",
+          "description": "Number of field goal attempts made by the opposing team that were blocked by this player or team."
+        }
+      }
+    },
+    "americanFootballStatsFumbles": {
+      "description": "For tracking fumble stats. | Covers teams that do the fumbling and the recovering.",
+      "type": "object",
+      "additionalPropetries": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "fumblesCommitted": {
+          "type": "string",
+          "description": "The total number of fumbles."
+        },
+        "fumblesForced": {
+          "type": "string",
+          "description": "The number of fumbles that were forced by the opposing team."
+        },
+        "fumblesRecovered": {
+          "type": "string",
+          "description": "The number of fumbles that were recovered by the fumbling team."
+        },
+        "fumblesLost": {
+          "type": "string",
+          "description": "The number of fumbles that were not recovered by the fumbling team."
+        },
+        "fumblesLostAveragePerGame": {
+          "type": "string",
+          "description": "Average number of fumbles lost per game."
+        },
+        "fumblesYardsGained": {
+          "type": "string",
+          "description": "The number of yards gained as a result of fumbles."
+        },
+        "fumblesOwnCommitted": {
+          "type": "string",
+          "description": "The number of fumbles committed by this team."
+        },
+        "fumblesOwnRecovered": {
+          "type": "string",
+          "description": "The number of fumbles committed by this team that were then also recovered by this team."
+        },
+        "fumblesOwnLost": {
+          "type": "string",
+          "description": "The number of fumbles committed by this team but recovered by the other team. A subset of turnovers. Also referred to as a giveaway."
+        },
+        "fumblesOwnYardsGained": {
+          "type": "string",
+          "description": "The number of yards gained as a result of fumbles by this team."
+        },
+        "fumblesOwnTouchdowns": {
+          "type": "string",
+          "description": "The number of touchdowns earned after a team recovers its own fumbles."
+        },
+        "fumblesOpposingCommitted": {
+          "type": "string",
+          "description": "The number of fumbles committed by the opposing team."
+        },
+        "fumblesOpposingRecovered": {
+          "type": "string",
+          "description": "The number of fumbles committed by the opposing but recovered by this team. A subset of turnovers. Also referred to a takeaway."
+        },
+        "fumblesOpposingRecoveredAveragePerGame": {
+          "type": "string",
+          "description": "Average number of opposing team's fumbles recovered per game."
+        },
+        "fumblesOpposingLost": {
+          "type": "string",
+          "description": "The number of fumbles committed by the opposing team that were subsequently lost to the opposing team."
+        },
+        "fumblesOpposingYardsGained": {
+          "type": "string",
+          "description": "The number of yards gained as a result of fumbles by the opposing team."
+        },
+        "fumblesOpposingTouchdowns": {
+          "type": "string",
+          "description": "The number of touchdowns scored as a result of fumbles by the opposing team.."
+        },
+        "fumblesCommittedDefense": {
+          "type": "string",
+          "description": "The number of fumbles committed by a player or team on defense."
+        },
+        "fumblesLostDefense": {
+          "type": "string",
+          "description": "The number of fumbles lost by a player or team on defense."
+        },
+        "fumblesForcedDefense": {
+          "type": "string",
+          "description": "The number of fumbles forced by a player or team on defense."
+        },
+        "fumblesRecoveredDefense": {
+          "type": "string",
+          "description": "The number of fumbles recovered by a player or team on defense."
+        },
+        "fumblesRecoveredYardsDefense": {
+          "type": "string",
+          "description": "The number of yards gained on fumbles recovered by a player or team on defense."
+        },
+        "fumblesCommittedSpecialTeams": {
+          "type": "string",
+          "description": "The number of fumbles committed by a player or team on special-teams."
+        },
+        "fumblesLostSpecialTeams": {
+          "type": "string",
+          "description": "The number of fumbles lost by a player or team on special-teams."
+        },
+        "fumblesForcedSpecialTeams": {
+          "type": "string",
+          "description": "The number of fumbles forced by a player or team on special-teams."
+        },
+        "fumblesRecoveredSpecialTeams": {
+          "type": "string",
+          "description": "The number of fumbles recovered by a player or team on special-teams."
+        },
+        "fumblesRecoveredYardsSpecialTeams": {
+          "type": "string",
+          "description": "The number of yards gained on fumbles recovered by a player or team on special-teams."
+        },
+        "fumblesCommittedOther": {
+          "type": "string",
+          "description": "The number of fumbles committed by a player or team on neither defense or special teams."
+        },
+        "fumblesLostOther": {
+          "type": "string",
+          "description": "The number of fumbles lost by a player or team on neither defense or special teams."
+        },
+        "fumblesForcedOther": {
+          "type": "string",
+          "description": "The number of fumbles forced by a player or team on neither defense or special teams."
+        },
+        "fumblesRecoveredOther": {
+          "type": "string",
+          "description": "The number of fumbles recovered by a player or team on neither defense or special teams."
+        },
+        "fumblesRecoveredYardsOther": {
+          "type": "string",
+          "description": "The number of yards gained on fumbles recovered by a player or team on neither defense or special teams."
+        },
+        "touchbacksFumbles": {
+          "type": "string",
+          "description": "The number of fumbles into the end zone that are not brought out."
+        },
+        "touchbacksFumblesPercentage": {
+          "type": "string",
+          "description": "The percentage of fumbles that resulted in touchbacks."
+        }
+      }
+    },
+    "americanFootballStatsPenalties": {
+      "description": "Statistics about penalties. | Applies to both offensive and defensive penalties.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/idRef" },
+        "class": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/class" },
+        "style": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/style" },
+        "coverage": { "$ref": "http://iptc.org/std-dev/SportsJS/specification/strict/sportsjs-core.json#/definitions/coverage" },
+        "penaltiesTotal": {
+          "type": "string",
+          "description": "The number of penalties."
+        },
+        "penaltyYards": {
+          "type": "string",
+          "description": "The yards gained as a result of penalties."
+        },
+        "penaltyFirstDowns": {
+          "type": "string",
+          "description": "The number of first downs gained as a result of penalties."
+        },
+        "penaltyOpponentYards": {
+          "type": "string",
+          "description": "Yards opponents gain as a result of penalties."
+        },
+        "penaltiesOpponentTotal": {
+          "type": "string",
+          "description": "Total of penalties by opposing team."
+        },
+        "penaltiesChallenged": {
+          "type": "string",
+          "description": "Includes penalty challenges that were both won and lost."
+        },
+        "penaltiesReviewed": {
+          "type": "string",
+          "description": "Includes both coach challenges and booth challenges (by the replay assistant in the NFL)."
+        },
+        "penaltiesOverturned": {
+          "type": "string",
+          "description": "The number of successful penalty challenges by a team, leading to the overturning of the original call."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,2567 @@
+{
+    "statistics": [
+        {
+            "statisticMetadata": {
+                "teamCoverage": "single-team",
+                "temporalUnitType": "spct:season",
+                "temporalUnitValue": "vendor:2015"
+            },
+            "teams": [
+                {
+                    "teamMetadata": {
+                        "key": "vendteam:o.thefa.com-t.5",
+                        "names": [
+                            {
+                                "full": "Chelsea"
+                            },
+                            {
+                                "alternate": "Chelsea"
+                            }
+                        ]
+                    },
+                    "teamStats": [
+                        {
+                            "stats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "statType": "spstat:time-of-possession-percentage",
+                                            "value": "58"
+                                        },
+                                        {
+                                            "statType": "spstat:events-played",
+                                            "value": "9"
+                                        },
+                                        {
+                                            "class": "spct:offense",
+                                            "statType": "spsocstat:shots-total",
+                                            "value": "90"
+                                        },
+                                        {
+                                            "class": "spct:offense",
+                                            "statType": "spsocstat:shots-on-goal-total",
+                                            "value": "38"
+                                        },
+                                        {
+                                            "class": "spct:offense",
+                                            "statType": "spsocstat:corner-kicks",
+                                            "value": "52"
+                                        },
+                                        {
+                                            "class": "spct:offense",
+                                            "statType": "spsocstat:goals-total",
+                                            "value": "14"
+                                        },
+                                        {
+                                            "class": "spct:offense",
+                                            "statType": "spsocstat:assists-total",
+                                            "value": "7"
+                                        },
+                                        {
+                                            "class": "spct:offense",
+                                            "statType": "spsocstat:offsides",
+                                            "value": "13"
+                                        },
+                                        {
+                                            "class": "spct:offense",
+                                            "statType": "spsocstat:shots-off-goal-total",
+                                            "value": "52"
+                                        },
+                                        {
+                                            "class": "spct:defense",
+                                            "statType": "spsocstat:shutouts",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "class": "spct:defense",
+                                            "statType": "spsocstat:goals-against-total",
+                                            "value": "17"
+                                        },
+                                        {
+                                            "class": "spct:defense",
+                                            "statType": "spsocstat:shots-blocked",
+                                            "value": "44"
+                                        },
+                                        {
+                                            "class": "spct:penalty",
+                                            "statType": "spsocstat:fouls-commited",
+                                            "value": "124"
+                                        },
+                                        {
+                                            "class": "spct:penalty",
+                                            "statType": "spsocstat:ejections-total",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "class": "spct:penalty",
+                                            "statType": "spsocstat:ejections-second-caution",
+                                            "value": "0"
+                                        },
+                                        {
+                                            "class": "spct:penalty",
+                                            "statType": "spsocstat:ejections-straight",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "class": "spct:penalty",
+                                            "statType": "spsocstat:cautions-total",
+                                            "value": "15"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "players": [
+                        {
+                            "id": "p.41328",
+                            "playerMetadata": {
+                                "key": "vendperson:p.41328",
+                                "positionRegular": "spsocposition:defender",
+                                "names": [
+                                    {
+                                        "full": "C\u00e9sar Azpilicueta"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "9"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "9"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "788"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-left-foot",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-right-foot",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-head",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-on-goal-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:offsides",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "478"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "378"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "100"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.791"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "30"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "23"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "0.767"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shutouts",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shots-blocked",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "11"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:cautions-total",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.118335",
+                            "playerMetadata": {
+                                "key": "vendperson:p.118335",
+                                "positionRegular": "spsocposition:defender",
+                                "names": [
+                                    {
+                                        "full": "Abdul Rahman Baba"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "90"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "37"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "30"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.811"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "1.000"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shutouts",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "2"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.40349",
+                            "playerMetadata": {
+                                "key": "vendperson:p.40349",
+                                "positionRegular": "spsocposition:goalkeeper",
+                                "names": [
+                                    {
+                                        "full": "Asmir Begovic"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "6"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "576"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "153"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "83"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "70"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.542"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shutouts",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:goals-against-total",
+                                                    "value": "12"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:goals-penalty-shot-allowed",
+                                                    "value": "12"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:saves",
+                                                    "value": "23"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:save-percentage",
+                                                    "value": "0.657"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.108132",
+                            "playerMetadata": {
+                                "key": "vendperson:p.108132",
+                                "positionRegular": "spsocposition:goalkeeper",
+                                "names": [
+                                    {
+                                        "full": "Jamal Blackman"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "p.47431",
+                            "playerMetadata": {
+                                "key": "vendperson:p.47431",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Willian Borges Da Silva"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "8"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "6"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "483"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-total",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-left-foot",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-right-foot",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-head",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "8"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-on-goal-total",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-off-goal-total",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:corner-kicks",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:assists-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:free-kicks",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:offsides",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "252"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "218"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "34"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.865"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "9"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "6"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "0.667"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shots-blocked",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:cautions-total",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.19419",
+                            "playerMetadata": {
+                                "key": "vendperson:p.19419",
+                                "positionRegular": "spsocposition:defender",
+                                "names": [
+                                    {
+                                        "full": "Gary Cahill"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "6"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "574"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-on-goal-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-off-goal-total",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "239"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "203"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "36"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.849"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "1.000"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shutouts",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "6"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:cautions-total",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.60772",
+                            "playerMetadata": {
+                                "key": "vendperson:p.60772",
+                                "positionRegular": "spsocposition:goalkeeper",
+                                "names": [
+                                    {
+                                        "full": "Thibaut Courtois"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "232"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "57"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "26"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "31"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.456"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:goals-against-total",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:goals-penalty-shot-allowed",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:saves",
+                                                    "value": "10"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:save-percentage",
+                                                    "value": "0.667"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:ejections-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:ejections-second-caution",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:ejections-straight",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.18507",
+                            "playerMetadata": {
+                                "key": "vendperson:p.18507",
+                                "positionRegular": "spsocposition:forward",
+                                "names": [
+                                    {
+                                        "full": "Diego Da Silva Costa"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "610"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-total",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-left-foot",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-right-foot",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-head",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "10"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-on-goal-total",
+                                                    "value": "6"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-off-goal-total",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:corner-kicks",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:assists-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:free-kicks",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:offsides",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "204"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "157"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "47"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.770"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "6"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "0.833"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shutouts",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shots-blocked",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "8"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:cautions-total",
+                                                    "value": "2"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.17878",
+                            "playerMetadata": {
+                                "key": "vendperson:p.17878",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Cesc F\u00e0bregas"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "9"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "9"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "779"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "10"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-on-goal-total",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-off-goal-total",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:corner-kicks",
+                                                    "value": "26"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:assists-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:free-kicks",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:offsides",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "710"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "588"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "122"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.828"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "19"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "14"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "0.737"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shutouts",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shots-blocked",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "14"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.48847",
+                            "playerMetadata": {
+                                "key": "vendperson:p.48847",
+                                "positionRegular": "spsocposition:forward",
+                                "names": [
+                                    {
+                                        "full": "Radamel Falcao Garc\u00eda Z\u00e1rate"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "192"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-left-foot",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-right-foot",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-head",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-on-goal-total",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-off-goal-total",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:offsides",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "65"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "50"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "15"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.769"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "1.000"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shots-blocked",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:cautions-total",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.42786",
+                            "playerMetadata": {
+                                "key": "vendperson:p.42786",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Eden Hazard"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "9"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "8"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "727"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "9"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-on-goal-total",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-off-goal-total",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:corner-kicks",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:assists-total",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:free-kicks",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "468"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "406"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "62"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.868"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "1.000"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shutouts",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shots-blocked",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "6"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:cautions-total",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.41135",
+                            "playerMetadata": {
+                                "key": "vendperson:p.41135",
+                                "positionRegular": "spsocposition:defender",
+                                "names": [
+                                    {
+                                        "full": "Branislav Ivanovic"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "8"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "8"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "720"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-off-goal-total",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "342"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "291"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "51"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.851"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "19"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "14"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "0.737"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shutouts",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shots-blocked",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "14"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:cautions-total",
+                                                    "value": "3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.126187",
+                            "playerMetadata": {
+                                "key": "vendperson:p.126187",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Ruben Loftus-Cheek"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "62"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "23"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "19"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.826"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "1.000"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shots-blocked",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.62398",
+                            "playerMetadata": {
+                                "key": "vendperson:p.62398",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Nemanja Matic"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "9"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "657"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-left-foot",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-right-foot",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-head",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-on-goal-total",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-off-goal-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:corner-kicks",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "443"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "393"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "50"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.887"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "35"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "28"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "0.800"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shutouts",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shots-blocked",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "19"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:cautions-total",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.28495",
+                            "playerMetadata": {
+                                "key": "vendperson:p.28495",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "John Obi Mikel"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "62"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:assists-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:free-kicks",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "61"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "56"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.918"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "0.000"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.167767",
+                            "playerMetadata": {
+                                "key": "vendperson:p.167767",
+                                "positionRegular": "spsocposition:forward",
+                                "names": [
+                                    {
+                                        "full": "Robert Kenedy Nunes do Nascimento"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "57"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-on-goal-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-off-goal-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "34"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "27"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.794"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "0.000"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.38419",
+                            "playerMetadata": {
+                                "key": "vendperson:p.38419",
+                                "positionRegular": "spsocposition:forward",
+                                "names": [
+                                    {
+                                        "full": "Lo\u00efc Remy"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "87"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-off-goal-total",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:offsides",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "27"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "21"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "6"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.778"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shots-blocked",
+                                                    "value": "2"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.49579",
+                            "playerMetadata": {
+                                "key": "vendperson:p.49579",
+                                "positionRegular": "spsocposition:forward",
+                                "names": [
+                                    {
+                                        "full": "Pedro Rodr\u00edguez Ledesma"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "6"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "533"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-left-foot",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-right-foot",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-head",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "13"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-on-goal-total",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-off-goal-total",
+                                                    "value": "10"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:corner-kicks",
+                                                    "value": "15"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:assists-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:free-kicks",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:offsides",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "233"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "192"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "41"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.824"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "13"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "12"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "0.923"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shutouts",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shots-blocked",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "9"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:cautions-total",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.53392",
+                            "playerMetadata": {
+                                "key": "vendperson:p.53392",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Ramires Santos do Nascimento"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "237"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-left-foot",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-right-foot",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-head",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-on-goal-total",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:offsides",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "120"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "89"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "31"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.742"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "14"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "9"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "0.643"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shutouts",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shots-blocked",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "11"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:cautions-total",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.1718",
+                            "playerMetadata": {
+                                "key": "vendperson:p.1718",
+                                "positionRegular": "spsocposition:defender",
+                                "names": [
+                                    {
+                                        "full": "John Terry"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "6"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "6"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "459"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-off-goal-total",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "235"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "212"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "23"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.902"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "0.750"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shutouts",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:ejections-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:ejections-second-caution",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:ejections-straight",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:cautions-total",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.110504",
+                            "playerMetadata": {
+                                "key": "vendperson:p.110504",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Bertrand Traore"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "id": "p.103192",
+                            "playerMetadata": {
+                                "key": "vendperson:p.103192",
+                                "positionRegular": "spsocposition:defender",
+                                "names": [
+                                    {
+                                        "full": "Kurt Zouma"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "8"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "6"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "599"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-left-foot",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-right-foot",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-head",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-on-goal-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-off-goal-total",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "262"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "220"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "42"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.840"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "9"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "6"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "0.667"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shutouts",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shots-blocked",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "3"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "p.61262",
+                            "playerMetadata": {
+                                "key": "vendperson:p.61262",
+                                "positionRegular": "spsocposition:midfielder",
+                                "names": [
+                                    {
+                                        "full": "Oscar dos Santos Emboaba Junior"
+                                    }
+                                ]
+                            },
+                            "playerStats": [
+                                {
+                                    "stats": [
+                                        {
+                                            "temporalUnitType": "sptemporalunit:season",
+                                            "team": "vendteam:o.thefa.com-t.5",
+                                            "stats": [
+                                                {
+                                                    "statType": "spstat:events-played",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "statType": "spstat:events-started",
+                                                    "value": "4"
+                                                },
+                                                {
+                                                    "statType": "spstat:time-played-total",
+                                                    "value": "286"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-total",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-left-foot",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-right-foot",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:goals-head",
+                                                    "value": "0"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-total",
+                                                    "value": "7"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-on-goal-total",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:shots-off-goal-total",
+                                                    "value": "5"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:corner-kicks",
+                                                    "value": "3"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:offsides",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-total",
+                                                    "value": "189"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete",
+                                                    "value": "147"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-incomplete",
+                                                    "value": "42"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:passes-complete-percentage",
+                                                    "value": "0.778"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-total",
+                                                    "value": "8"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won",
+                                                    "value": "6"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-lost",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:offense",
+                                                    "statType": "spsocstat:tackles-won-percentage",
+                                                    "value": "0.750"
+                                                },
+                                                {
+                                                    "class": "spct:defense",
+                                                    "statType": "spsocstat:shots-blocked",
+                                                    "value": "1"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:fouls-commited",
+                                                    "value": "2"
+                                                },
+                                                {
+                                                    "class": "spct:penalty",
+                                                    "statType": "spsocstat:cautions-total",
+                                                    "value": "1"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

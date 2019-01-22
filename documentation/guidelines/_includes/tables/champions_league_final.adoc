@@ -1,0 +1,10 @@
+[%autowidth,options="header"]
+|===
+|Team|Score
+
+|Manchester United
+|1
+
+|*Barcelona*
+|3
+|===

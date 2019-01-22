@@ -1,0 +1,118 @@
+Players and Actions
+-------------------
+
+Now that we have a little bit more of a grasp of SportsML, let's add some more data to our example. Having the final result is a good thing. Now let us add the half time score and also try and tell how many goals were scored in each period. This is how you would do this:
+
+[source, xml]
+----
+<sports-event>
+    <sports-metadata event-status="post-event"/>
+    <team id="manutd">
+        <team-metadata>
+            <name first="Manchester" last="United" 
+                  full="Manchester United"/>
+        </team-metadata>
+        <team-stats score="1" event-outcome="loss">
+            <sub-score score="1" period-value="1"/>
+            <sub-score score="0" period-value="2"/>
+        </team-stats>
+    </team>
+    <team id="barca">
+        <team-metadata>
+            <name first="Barcelona" />
+        </team-metadata>
+        <team-stats score="3" event-outcome="win">
+            <sub-score score="1" period-value="1"/>
+            <sub-score score="2" period-value="2"/>
+        </team-stats>
+    </team>
+</sports-event>
+----
+As you can see we have now added two `sub-score` elements inside the `team-stats` element. And we are stating in which period the goal came and also how many goals were scored in that period.
+
+So in a sports results document, we could now publish this result as:
+
+    Manchester United - Barcelona 1-3 (1-1)
+
+Let us now look at how to add a bit more data to this result. We are missing goal scorers, so let us add those.
+
+
+Player actions
+~~~~~~~~~~~~~~
+
+So we have now given our document valuable data about the site and the event, but we have not said anything about the actions that happened during the event. So let's add some information about each goal scored in the match. When it happened, who scored and so on. Again we will only show the parts added, because the document now is going to be much longer and harder to read.
+
+First we have to add the players. Players are added inside the team elements. Here we add the Barcelona players:
+
+[source, xml]
+----
+<player id="barca7">
+    <player-metadata uniform-number="7" nationality="Spain">
+        <name first="David" last="Villa"  full="David Villa" />
+    </player-metadata>
+</player>
+<player id="barca10">
+    <player-metadata uniform-number="10" nationality="Argentina">
+        <name first="Lionel" last="Messi"  full="Lionel Messi" />
+    </player-metadata>
+</player>
+<player id="barca17">
+    <player-metadata uniform-number="17" nationality="Spain">
+        <name first="Pedro" last="Rodríguez"  full="Pedro Rodríguez" />
+    </player-metadata>
+</player>
+----
+
+And here we add the Manchester United player. This time we have added the whole team structure to show how the `player` structure fits in to the `team` structure.
+
+[source, xml]
+----
+<team id="manutd">
+    <team-metadata>
+        <name first="Manchester" last="United" full="Manchester United"/>
+    </team-metadata>
+    <team-stats score="1" event-outcome="loss">
+        <sub-score score="1" period-value="1"/>
+        <sub-score score="0" period-value="2"/>
+    </team-stats>
+    <player id="manutd10">
+        <player-metadata uniform-number="10" nationality="England">
+            <name first="Wayne" last="Rooney" full="Wayne Rooney" />
+        </player-metadata>
+        <player-stats score="1" >
+            <sub-score score="1" period-value="1" />
+        </player-stats>
+    </player>
+</team>
+----
+
+Introducing sport-specific plugins
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In order to add actions you need to use the plugin for the sport you want to represent. Since we are creating a soccer results file, we must therefore use the soccer plugin. There is no need to add any references to this plugin, it is already included in to the main SportsML schema. So all you need to do is to add those elements and attributes that are related to this plugin.
+
+Adding score actions with the soccer plugin
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This is how it looks like for the soccer plugin:
+
+[source, xml]
+----
+<event-actions>
+    <event-actions-soccer>
+        <action-soccer-score player-idref="barca17" minutes-elapsed="27" />
+        <action-soccer-score player-idref="manutd10" minutes-elapsed="34" />
+        <action-soccer-score player-idref="barca10" minutes-elapsed="54" />
+        <action-soccer-score player-idref="barca7" minutes-elapsed="69" />
+    </event-actions-soccer>
+</event-actions>
+----
+
+So with this data we now have marked up the scores for the match. We have, as you may notice not written any names, but refered to the ID we have given the player.
+
+With the code above we can now publish the following results text: 
+
+    Manchester United - Barcelona 3-1 (1-1)
+    Scores: 0-1 Pedro Rodriguez(27), 1-1 Wayne Rooney (34), 1-2 Lionel Messi (54), 1-3 David Villa (69).
+
+In the next section, we shall add more information about the event location.

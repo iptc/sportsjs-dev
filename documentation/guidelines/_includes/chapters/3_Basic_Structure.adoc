@@ -1,0 +1,37 @@
+Basic Structure
+---------------
+
+Basic Structure of SportsML
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Now that you have looked at a first short example of SportsML. Let's dive a little bit more into the structure of a SportsML document. 
+
+As discussed in the previous section, the root element in SportsML is `sports-content`. This element requires a `sports-metadata` element. You can then add zero or more of the following elements:
+
+* `sports-event`
+* `tournament`
+* `schedule`
+* `standing`
+* `statistic`
+* `article`
+
+The first five of these items hold XML structures built upon various combinations of `team` and `player` elements. The `article` element is intended to hold a news story recommended to adhere to the [http://www.nitf.org/]News Industry Text Format, or NITF.
+
+Data structures for these items are outlined as follows:
+
+include::{includedir}/../../tables/basic_structure.adoc[]
+
+Each of these structures has an envelope for metadata. For example, `event-metadata` holds such properties as when and where the event takes place, and whether the game has started or not.
+
+Keys and Identifiers
+~~~~~~~~~~~~~~~~~~~~
+
+Behind SportsML is a comprehensive strategy for unambiguously identifying which player, team, league, sport, and event is being covered.
+
+These values are generally stored in attributes we call "keys." For example, a `team-key` might be "t.7". Where does one go to look up which team has the key of "t.7"? In what we call a Resource File.
+
+The Resource File is an XML file that lists and defines which keys are allowed where. The IPTC has come up with its contents for Resource Files. However, publishers are free to create their own files, either based on the IPTC's, or containing whole new sets of values.
+
+Besides listing items like leagues, conferences, associations, and teams, Resource Files also contain lists of controlled vocabularies used to describe other properties. For example, the various states of health a player is in could be described as "injured" or "fine," or could be described in much more detail.
+
+A quick aside: In an ideal world, we might also have a central repository for all player-keys in major sports, regardless of which team they're on or country they're in. This is obviously a long-term goal, and comments for how various agencies could go about putting such a reference database together would be warmly appreciated.

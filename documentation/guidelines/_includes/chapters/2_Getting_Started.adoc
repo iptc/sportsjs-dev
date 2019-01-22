@@ -1,0 +1,45 @@
+Getting started with SportsML
+-----------------------------
+
+A SportsML document always starts with the tag `<sports-content>`. So your first lines will look something like this:
+
+[source, xml]
+----
+<?xml version="1.0" encoding="UTF-8"?>
+<sports-content xmlns="http://iptc.org/std/SportsML/2008-04-01/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://iptc.org/std/SportsML/2008-04-01/ 
+    ......../schema/sportsml-loose.xsd">
+</sports-content>
+----
+
+The above code is valid SportsML. But it does not contain any valuable data. So let us add some:
+
+[source, xml]
+----
+<sports-event>
+  <sports-metadata event-status="post-event"/>
+  <team>
+      <team-metadata>
+          <name first="Manchester" last="United" full="Manchester United"/>
+      </team-metadata>
+      <team-stats score="1" event-outcome="loss"/>
+  </team>
+  <team>
+      <team-metadata>
+          <name first="Barcelona" />
+      </team-metadata>
+      <team-stats score="3" event-outcome="win"/>
+  </team>
+</sports-event>
+----
+
+So here we have added some metadata regarding a soccer match between Manchester United and Barcelona (the Champions League final in 2011). We have described that the match ended 3-1 and we have also marked up who won and who lost. This data can now be used to create the following output in HTML:
+
+include::{includedir}/../../tables/champions_league_final.adoc[]
+
+Let us dig a bit more into the code. First we start marking up the event with the `sports-event` tag. This is the tag you will be using when marking up a sports event - hence the name. To tell that the match score is final we set the `sports-metadata` to `post-event`.
+
+Then we use the `team` and `team-metadata` tags to mark up information about the participating teams. You can add as many teams as you like. So if you were to mark up a cycling competition all teams participating will be marked up using this structure.
+
+To give the outcome of this particular sport event we use the `team-stats` tags, and we used the `score` and `event-outcome` attributes to mark up the result. So a parser can now use the `event-outcome` to mark up which of the teams won or lost the match.
