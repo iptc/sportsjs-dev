@@ -224,7 +224,7 @@
                     "type": "string"
                 },
                 "full": {
-                    "description": "Long and exhaustive name. Equivalent to nrol:full in SportsML.",
+                    "description": "Long and exhaustive name. Equivalent to nrol:full in NewsML-G2.",
                     "type": "string"
                 },
                 "short": {
@@ -233,6 +233,10 @@
                 },
                 "abbreviation": {
                     "description": "An abbreviation, usually used for teams in display locations where space is constrained.",
+                    "type": "string"
+                },
+                "mnemonic": {
+                    "description": "A short string which is used to represent the concept. Where possible they are designed to be easy to remember. Equivalent to nrol:mnemonic in NewsML-G2.",
                     "type": "string"
                 },
                 "part": {
